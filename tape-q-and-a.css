@@ -545,13 +545,14 @@ a {
 
 .card-title {
   margin: 0;
-  font-size: clamp(1.45rem, 2vw, 1.95rem);
-  line-height: 1.12;
+  font-size: 1.05rem;
+  line-height: 1.55;
   letter-spacing: -0.05em;
+  font-weight: 800;
 }
 
 .qa-card:not(.featured) .card-title {
-  font-size: clamp(1.28rem, 1.55vw, 1.55rem);
+  font-size: 1.05rem;
 }
 
 .deck {
