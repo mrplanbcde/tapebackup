@@ -315,13 +315,17 @@ a {
 }
 
 .page {
-  padding: 2rem 0 5.25rem;
+  padding: 2.4rem 0 5.5rem;
+}
+
+.intro-band {
+  margin-bottom: 2.3rem;
 }
 
 .hub-layout {
   display: grid;
-  grid-template-columns: minmax(17rem, 18.5rem) minmax(0, 1fr);
-  gap: 2rem;
+  grid-template-columns: minmax(16rem, 17.5rem) minmax(0, 1fr);
+  gap: 2.5rem;
   align-items: start;
 }
 
@@ -341,7 +345,7 @@ a {
 .navigator,
 .detail-sidebar {
   position: sticky;
-  top: 5.7rem;
+  top: 6.2rem;
   padding: 1.5rem;
 }
 
@@ -472,12 +476,16 @@ a {
 
 .hub-main {
   display: grid;
-  gap: 1.6rem;
+  gap: 1.85rem;
 }
 
 .section-head {
   display: grid;
   gap: 1rem;
+}
+
+.intro-band .section-head {
+  max-width: 64rem;
 }
 
 .section-head h2 {
