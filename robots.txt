@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://tapebackup.org/sitemap.xml
+Host: tapebackup.org

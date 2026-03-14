@@ -569,6 +569,15 @@ def update_sitemap(entries: list[Entry]) -> None:
     path.write_text(updated)
 
 
+def update_robots() -> None:
+    (ROOT / "robots.txt").write_text(
+        "User-agent: *\n"
+        "Allow: /\n\n"
+        f"Sitemap: {SITE}/sitemap.xml\n"
+        "Host: tapebackup.org\n"
+    )
+
+
 def write_site(entries: list[Entry]) -> None:
     (ROOT / "tape-q-and-a.html").write_text(render_hub(entries))
     qa_root = ROOT / "tape-q-and-a"
@@ -581,6 +590,7 @@ def write_site(entries: list[Entry]) -> None:
         detail_dir.mkdir(parents=True, exist_ok=True)
         (detail_dir / "index.html").write_text(render_detail(entries, idx))
     update_sitemap(entries)
+    update_robots()
 
 
 def build_entries() -> list[Entry]:
