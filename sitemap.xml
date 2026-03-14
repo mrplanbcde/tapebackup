@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://tapebackup.org/</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/home</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/home"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/home"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/home"/>
+  </url>
+  
+  <!-- About LTO -->
+  <url>
+    <loc>https://tapebackup.org/about</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/about"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/about"/>
+  </url>
+  
+  <!-- Why Use Tape -->
+  <url>
+    <loc>https://tapebackup.org/why-tape</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/why-tape"/>
+  </url>
+  
+  <!-- LTO Tape Drive -->
+  <url>
+    <loc>https://tapebackup.org/why-tape/lto-tape-drive</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+  </url>
+  
+  <!-- LTO Tape Price Trend January 2026 -->
+  <url>
+    <loc>https://tapebackup.org/lto-tape-price-trend/jan-2026</loc>
+    <lastmod>2026-02-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/jan-2026"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/lto-tape-price-trend/jan-2026"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-trend/jan-2026"/>
+  </url>
+  
+  <!-- LTO Tape Price Trend Nov-Dec 2025 Archive -->
+  <url>
+    <loc>https://tapebackup.org/lto-tape-price-trend/nov-dec-2025</loc>
+    <lastmod>2026-02-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/nov-dec-2025"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/lto-tape-price-trend/nov-dec-2025"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-trend/nov-dec-2025"/>
+  </url>
+  
+  <!-- LTO Tape Price Inquiry -->
+  <url>
+    <loc>https://tapebackup.org/lto-tape-price-inquiry</loc>
+    <lastmod>2026-02-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-inquiry"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/lto-tape-price-inquiry"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-inquiry"/>
+  </url>
+  
+  <!-- Backup Calculator -->
+  <url>
+    <loc>https://tapebackup.org/backup-calculator</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/backup-calculator"/>
+  </url>
+  
+  <!-- Backup Software Finder -->
+  <url>
+    <loc>https://tapebackup.org/backup-software-finder</loc>
+    <lastmod>2025-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/backup-software-finder"/>
+  </url>
+  
+  <!-- Tape Q&A -->
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/tape-q-and-a"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/tape-q-and-a"/>
+  </url>
+
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a/resilient-data-protection-architecture</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a/resilient-data-protection-architecture"/>
+  </url>
+
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a/hybrid-cloud-object-storage</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a/hybrid-cloud-object-storage"/>
+  </url>
+
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a/collaborative-video-production-archive</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a/collaborative-video-production-archive"/>
+  </url>
+
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a/multi-tier-data-protection-strategy</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a/multi-tier-data-protection-strategy"/>
+  </url>
+
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a/mainframe-open-systems-archive</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a/mainframe-open-systems-archive"/>
+  </url>
+
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a/ai-media-workflow-automation</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a/ai-media-workflow-automation"/>
+  </url>
+
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a/ai-analytics-storage-at-scale</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a/ai-analytics-storage-at-scale"/>
+  </url>
+
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a/modern-data-infrastructure-for-ai</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a/modern-data-infrastructure-for-ai"/>
+  </url>
+
+  <url>
+    <loc>https://tapebackup.org/tape-q-and-a/modern-backup-infrastructure</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/tape-q-and-a/modern-backup-infrastructure"/>
+  </url>
+  <!-- Blog / Knowledge Center -->
+  <url>
+    <loc>https://tapebackup.org/blog</loc>
+    <lastmod>2025-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/blog"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/blog"/>
+  </url>
+  
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://tapebackup.org/blog/simple-lto-backup-software</loc>
+    <lastmod>2026-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/simple-lto-backup-software"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/tape-vs-disk-backup-battle</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/tape-vs-disk-backup-battle"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/offline-forever-diy-archive-service</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/offline-forever-diy-archive-service"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/data-hoarders-skeptical-tape-drives</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/data-hoarders-skeptical-tape-drives"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/inside-the-tape-deck-rabbit-hole</loc>
+    <lastmod>2025-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/inside-the-tape-deck-rabbit-hole"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/is-lto-still-worth-it</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/is-lto-still-worth-it"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/from-nas-to-lto-backup-journey</loc>
+    <lastmod>2025-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/from-nas-to-lto-backup-journey"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/why-tape-storage-isnt-dead</loc>
+    <lastmod>2025-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/why-tape-storage-isnt-dead"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/lto-10-spectra-logic-consumer-challenge</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/lto-10-spectra-logic-consumer-challenge"/>
+  </url>
+  
+  <!-- Comparisons -->
+  <url>
+    <loc>https://tapebackup.org/comparisons</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/comparisons"/>
+  </url>
+  
+  <!-- Resources -->
+  <url>
+    <loc>https://tapebackup.org/resources</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/resources"/>
+  </url>
+  
+  <!-- Catalogic DPX -->
+  <url>
+    <loc>https://tapebackup.org/resources/tape-backup-software/catalogicdpx</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact -->
+  <url>
+    <loc>https://tapebackup.org/contact</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/contact"/>
+  </url>
+  
+</urlset>
