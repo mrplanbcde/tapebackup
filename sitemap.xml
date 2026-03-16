@@ -13,16 +13,6 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/"/>
   </url>
   
-  <url>
-    <loc>https://tapebackup.org/home</loc>
-    <lastmod>2025-01-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/home"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/home"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/home"/>
-  </url>
-  
   <!-- About LTO -->
   <url>
     <loc>https://tapebackup.org/about</loc>
@@ -78,17 +68,6 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-trend/nov-dec-2025"/>
   </url>
   
-  <!-- LTO Tape Price Inquiry -->
-  <url>
-    <loc>https://tapebackup.org/lto-tape-price-inquiry</loc>
-    <lastmod>2026-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-inquiry"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/lto-tape-price-inquiry"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-inquiry"/>
-  </url>
-
   <!-- LTO10 Price -->
   <url>
     <loc>https://tapebackup.org/lto-tape-price-trend/lto10-price</loc>

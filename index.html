@@ -78,6 +78,62 @@
       "sameAs": []
     }
     </script>
+    <script>
+      (function () {
+        const origin = "https://tapebackup.org";
+        const canonicalAliases = {
+          "/home": "/",
+          "/qa": "/tape-q-and-a",
+          "/lto-tape-price-inquiry": "/lto-tape-price-trend"
+        };
+
+        function normalizePathname(pathname) {
+          if (!pathname || pathname === "/") {
+            return "/";
+          }
+          return pathname.endsWith("/") ? pathname.slice(0, -1) : pathname;
+        }
+
+        function updateCanonical() {
+          const pathname = normalizePathname(window.location.pathname);
+          const canonicalPath = canonicalAliases[pathname] || pathname;
+          const canonicalUrl = `${origin}${canonicalPath === "/" ? "" : canonicalPath}`;
+          const canonicalLink = document.querySelector('link[rel="canonical"]');
+          const ogUrl = document.querySelector('meta[property="og:url"]');
+          const twitterUrl = document.querySelector('meta[name="twitter:url"]');
+
+          if (canonicalLink) {
+            canonicalLink.href = canonicalUrl;
+          }
+
+          if (ogUrl) {
+            ogUrl.content = canonicalUrl;
+          }
+
+          if (twitterUrl) {
+            twitterUrl.content = canonicalUrl;
+          }
+        }
+
+        const originalPushState = history.pushState;
+        const originalReplaceState = history.replaceState;
+
+        history.pushState = function () {
+          const result = originalPushState.apply(this, arguments);
+          updateCanonical();
+          return result;
+        };
+
+        history.replaceState = function () {
+          const result = originalReplaceState.apply(this, arguments);
+          updateCanonical();
+          return result;
+        };
+
+        window.addEventListener("popstate", updateCanonical);
+        updateCanonical();
+      })();
+    </script>
     <script type="module" crossorigin src="/assets/index-k7LtoPrice.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-C26FQXRA.css">
   

@@ -55,13 +55,28 @@
   ],
   "redirects": [
     {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/news",
+      "destination": "/tape-q-and-a",
+      "permanent": true
+    },
+    {
+      "source": "/qa",
       "destination": "/tape-q-and-a",
       "permanent": true
     },
     {
       "source": "/questions",
       "destination": "/tape-q-and-a",
+      "permanent": true
+    },
+    {
+      "source": "/lto-tape-price-inquiry",
+      "destination": "/lto-tape-price-trend",
       "permanent": true
     }
   ],
