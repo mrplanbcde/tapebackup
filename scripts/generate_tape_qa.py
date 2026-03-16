@@ -79,8 +79,14 @@ def detect_theme(question: str, answer: str) -> str:
     haystack = f"{question} {answer}".lower()
     if any(word in haystack for word in ["webinar", "webinars", "on-demand"]):
         return "Knowledge resources"
+    if any(word in haystack for word in ["warranty", "return authorization", "ra number", "repair", "returned", "shipment", "cartridges for warranty", "defective"]):
+        return "Support operations"
+    if any(word in haystack for word in ["open source license", "license disclosure", "license information", "compliance teams"]):
+        return "Compliance"
     if any(word in haystack for word in ["meeting", "request", "outreach", "submit", "submitting", "contact"]):
         return "Buyer journey"
+    if any(word in haystack for word in ["vulnerability", "openssl", "heartbleed", "wannacry", "petya", "sambacry", "spectre", "meltdown", "kerberos", "security risk", "remote code execution", "logging library"]):
+        return "Security advisories"
     if any(word in question_lower for word in ["4k", "video", "editing", "editor", "nvme", "media asset", "production workflow"]):
         return "Media workflows"
     if any(word in question_lower for word in ["archive", "archives", "archival", "retention", "library", "libraries"]):
