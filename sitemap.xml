@@ -99,6 +99,50 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
   </url>
+
+  <!-- LTO9 Price -->
+  <url>
+    <loc>https://tapebackup.org/lto-tape-price-trend/lto9-price</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+  </url>
+
+  <!-- LTO8 Price -->
+  <url>
+    <loc>https://tapebackup.org/lto-tape-price-trend/lto8-price</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+  </url>
+
+  <!-- LTO7 Price -->
+  <url>
+    <loc>https://tapebackup.org/lto-tape-price-trend/lto7-price</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+  </url>
+
+  <!-- LTO6 Price -->
+  <url>
+    <loc>https://tapebackup.org/lto-tape-price-trend/lto6-price</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+  </url>
   
   <!-- Backup Calculator -->
   <url>

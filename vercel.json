@@ -33,6 +33,22 @@
       "destination": "/lto10-price.html"
     },
     {
+      "source": "/lto-tape-price-trend/lto9-price",
+      "destination": "/lto9-price.html"
+    },
+    {
+      "source": "/lto-tape-price-trend/lto8-price",
+      "destination": "/lto8-price.html"
+    },
+    {
+      "source": "/lto-tape-price-trend/lto7-price",
+      "destination": "/lto7-price.html"
+    },
+    {
+      "source": "/lto-tape-price-trend/lto6-price",
+      "destination": "/lto6-price.html"
+    },
+    {
       "source": "/:path*",
       "destination": "/index.html"
     }
