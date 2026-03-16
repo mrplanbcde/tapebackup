@@ -33,6 +33,71 @@
         max-width: 12ch;
       }
 
+      .price-dropdown {
+        position: relative;
+      }
+
+      .price-dropdown > a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+      }
+
+      .price-dropdown > a::after {
+        content: "";
+        width: 0.45rem;
+        height: 0.45rem;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: translateY(-0.08rem) rotate(45deg);
+      }
+
+      .price-dropdown-menu {
+        position: absolute;
+        top: calc(100% + 0.55rem);
+        right: 0;
+        min-width: 16rem;
+        display: grid;
+        gap: 0.2rem;
+        padding: 0.8rem;
+        border-radius: 1.2rem;
+        border: 1px solid color-mix(in oklab, var(--line) 90%, white);
+        background: color-mix(in oklab, white 94%, var(--background));
+        box-shadow: 0 18px 40px oklch(0.28 0.05 247 / 0.16);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-0.35rem);
+        transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+        z-index: 80;
+      }
+
+      .price-dropdown:hover .price-dropdown-menu,
+      .price-dropdown:focus-within .price-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .price-dropdown-menu a {
+        display: block;
+        padding: 0.8rem 0.9rem;
+        border-radius: 0.9rem;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--foreground);
+      }
+
+      .price-dropdown-menu a:hover,
+      .price-dropdown-menu a:focus-visible {
+        background: color-mix(in oklab, var(--primary) 10%, white);
+        outline: none;
+      }
+
+      .price-dropdown-menu a.current {
+        background: color-mix(in oklab, var(--primary) 14%, white);
+        color: var(--primary);
+      }
+
       .price-grid,
       .stats-grid,
       .vendor-grid,
@@ -175,6 +240,18 @@
         background: color-mix(in oklab, white 82%, var(--background));
       }
 
+      .hubspot-shell {
+        margin-top: 1.4rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 1px solid color-mix(in oklab, var(--line) 88%, white);
+        background: color-mix(in oklab, white 72%, var(--background));
+      }
+
+      .hubspot-shell .hs-form-frame {
+        min-height: 16rem;
+      }
+
       @media (max-width: 860px) {
         .price-grid,
         .stats-grid,
@@ -182,8 +259,15 @@
         .faq-grid {
           grid-template-columns: 1fr;
         }
+
+        .price-dropdown-menu {
+          right: auto;
+          left: 0;
+          min-width: min(18rem, calc(100vw - 2rem));
+        }
       }
     </style>
+    <script src="https://js-eu1.hsforms.net/forms/embed/147689578.js" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -240,7 +324,17 @@
             <a href="/tape-q-and-a">Q&amp;A</a>
             <a href="/blog">Blog</a>
             <a href="/contact">Contact</a>
-            <a href="/lto-tape-price-trend" class="current">LTO Tape Price</a>
+            <div class="price-dropdown">
+              <a href="/lto-tape-price-trend" class="current">LTO Tape Price</a>
+              <div class="price-dropdown-menu" aria-label="LTO Tape Price submenu">
+                <a href="/lto-tape-price-trend">Price Inquiry</a>
+                <a href="/lto-tape-price-trend/drive-price">Tape Drive Price</a>
+                <a href="/lto-tape-price-trend/lto10-price" class="current">LTO10 Price</a>
+                <a href="/lto-tape-price-trend/jan-2026">January 2026</a>
+                <a href="/lto-tape-price-trend/nov-dec-2025">Nov-Dec 2025</a>
+                <a href="/lto-tape-price-trend/sep-oct-2025">Sep-Oct 2025</a>
+              </div>
+            </div>
             <a href="/resources">Resources</a>
           </nav>
         </div>
@@ -398,10 +492,12 @@
 
             <section class="cta-band">
               <p class="eyebrow">CTA</p>
-              <h2>Download the latest LTO10 vendor pricebook bundle</h2>
-              <p>Because tape media pricing changes frequently, the best way to compare real market costs is by reviewing official vendor pricebooks. Use the bundle to compare HPE LTO10 media pricing, IBM cartridge pricing, Dell tape ecosystem pricing, Fujifilm price lists, and Sony LTO media pricing across standard and WORM options.</p>
+              <h2>Download the latest LTO tape pricebook</h2>
+              <p>Use the form below to request the latest LTO tape pricebook bundle and compare HPE, IBM, Dell, Fujifilm, and Sony pricing more accurately before you finalize your storage budget.</p>
+              <div class="hubspot-shell">
+                <div class="hs-form-frame" data-region="eu1" data-form-id="3f49124b-a1cb-4f2b-a54f-8f0c266fa59d" data-portal-id="147689578"></div>
+              </div>
               <div class="cta-actions">
-                <a class="cta-primary" href="/lto-tape-price-inquiry">Request LTO10 Pricebook Bundle</a>
                 <a class="cta-secondary" href="/contact">Talk to TapeBackup</a>
               </div>
             </section>
