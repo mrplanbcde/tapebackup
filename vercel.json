@@ -29,6 +29,10 @@
       "destination": "/sitemap.xml"
     },
     {
+      "source": "/lto-tape-price-trend/lto10-price",
+      "destination": "/lto10-price.html"
+    },
+    {
       "source": "/:path*",
       "destination": "/index.html"
     }
