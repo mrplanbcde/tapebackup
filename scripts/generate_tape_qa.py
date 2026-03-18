@@ -267,6 +267,7 @@ def render_hub(entries: list[Entry]) -> str:
     <meta name="theme-color" content="#183976" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/tape-q-and-a.css" />
+    <script defer src="/assets/outbound-links.js"></script>
     <script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@type": "CollectionPage", "name": "Tape Q&A", "url": f"{SITE}/tape-q-and-a", "description": description}, ensure_ascii=False)}</script>
   </head>
   <body>
@@ -422,6 +423,7 @@ def render_detail(entries: list[Entry], idx: int) -> str:
     <meta name="theme-color" content="#183976" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/tape-q-and-a.css" />
+    <script defer src="/assets/outbound-links.js"></script>
     <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>
   </head>
   <body>
