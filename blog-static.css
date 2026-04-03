@@ -336,9 +336,69 @@ a {
   font-weight: 700;
 }
 
+.listing-hero .hero-copy,
+.listing-hero .hero-panel {
+  min-height: 100%;
+}
+
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.listing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 100%;
+  padding: 24px;
+  border-radius: 28px;
+  border: 1px solid rgba(24, 57, 118, 0.14);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.listing-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.listing-card h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 2.15rem);
+  line-height: 1.08;
+}
+
+.listing-card p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.75;
+  font-family: Arial, sans-serif;
+}
+
+.listing-date {
+  color: var(--text-soft);
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+.listing-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  color: var(--brand);
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 @media (max-width: 920px) {
   .hero-grid,
-  .article-layout {
+  .article-layout,
+  .listing-grid {
     grid-template-columns: 1fr;
   }
 
