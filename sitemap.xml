@@ -666,6 +666,79 @@
   <!-- Blog Articles -->
   <url>
     <loc>https://tapebackup.org/blog/lto-tape-backup-costs-workflow-reality</loc>
+  <url>
+    <loc>https://tapebackup.org/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/offsite-tape-backups-still-beat-most-good-enough-plans</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/offsite-tape-backups-still-beat-most-good-enough-plans"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/buying-a-few-cheap-lto-tapes-is-how-the-rabbit-hole-starts</loc>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/buying-a-few-cheap-lto-tapes-is-how-the-rabbit-hole-starts"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/which-lto-drive-should-you-buy-without-regretting-it-later</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/which-lto-drive-should-you-buy-without-regretting-it-later"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/backup-strategy-gets-serious-when-your-archive-outgrows-disks</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/backup-strategy-gets-serious-when-your-archive-outgrows-disks"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/scriptable-linux-tape-backups-still-have-a-process-problem</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/scriptable-linux-tape-backups-still-have-a-process-problem"/>
+  </url>
+  
+  <url>
+    <loc>https://tapebackup.org/blog/the-home-lto-setup-gets-real-when-you-stop-treating-it-like-a-toy</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/the-home-lto-setup-gets-real-when-you-stop-treating-it-like-a-toy"/>
+  </url>
+  
+
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
