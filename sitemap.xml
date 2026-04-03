@@ -665,6 +665,14 @@
   
   <!-- Blog Articles -->
   <url>
+    <loc>https://tapebackup.org/blog/lto-tape-backup-costs-workflow-reality</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/lto-tape-backup-costs-workflow-reality"/>
+  </url>
+  
+  <url>
     <loc>https://tapebackup.org/blog/simple-lto-backup-software</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
