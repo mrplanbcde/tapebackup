@@ -790,4 +790,12 @@
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/the-home-lto-setup-gets-real-when-you-stop-treating-it-like-a-toy"/>
   </url>
+  <url>
+    <loc>https://tapebackup.org/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again"/>
+  </url>
+
 </urlset>
