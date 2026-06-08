@@ -1,111 +1,38 @@
 {
   "rewrites": [
-    {
-      "source": "/assets/:path*",
-      "destination": "/assets/:path*"
-    },
-    {
-      "source": "/tape-q-and-a",
-      "destination": "/tape-q-and-a.html"
-    },
-    {
-      "source": "/qa",
-      "destination": "/tape-q-and-a.html"
-    },
-    {
-      "source": "/favicon.png",
-      "destination": "/favicon.png"
-    },
-    {
-      "source": "/og-image.png",
-      "destination": "/og-image.png"
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "/robots.txt"
-    },
-    {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
-    },
-    {
-      "source": "/blog",
-      "destination": "/blog/index.html"
-    },
-    {
-      "source": "/blog/:slug",
-      "destination": "/blog/:slug/index.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto10-price",
-      "destination": "/lto10-price.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto9-price",
-      "destination": "/lto9-price.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto8-price",
-      "destination": "/lto8-price.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto7-price",
-      "destination": "/lto7-price.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto6-price",
-      "destination": "/lto6-price.html"
-    },
-    {
-      "source": "/:path*",
-      "destination": "/index.html"
-    }
+    { "source": "/assets/:path*",                     "destination": "/assets/:path*" },
+    { "source": "/styles.css",                        "destination": "/styles.css" },
+    { "source": "/tape-q-and-a.css",                  "destination": "/tape-q-and-a.css" },
+    { "source": "/blog-static.css",                   "destination": "/blog-static.css" },
+    { "source": "/favicon.png",                       "destination": "/favicon.png" },
+    { "source": "/og-image.png",                      "destination": "/og-image.png" },
+    { "source": "/robots.txt",                        "destination": "/robots.txt" },
+    { "source": "/sitemap.xml",                       "destination": "/sitemap.xml" },
+    { "source": "/tape-q-and-a",                      "destination": "/tape-q-and-a.html" },
+    { "source": "/blog",                              "destination": "/blog/index.html" },
+    { "source": "/blog/:slug",                        "destination": "/blog/:slug/index.html" },
+    { "source": "/lto-tape-price-trend/lto10-price",  "destination": "/lto10-price.html" },
+    { "source": "/lto-tape-price-trend/lto9-price",   "destination": "/lto9-price.html" },
+    { "source": "/lto-tape-price-trend/lto8-price",   "destination": "/lto8-price.html" },
+    { "source": "/lto-tape-price-trend/lto7-price",   "destination": "/lto7-price.html" },
+    { "source": "/lto-tape-price-trend/lto6-price",   "destination": "/lto6-price.html" },
+    { "source": "/:path*",                            "destination": "/index.html" }
   ],
   "redirects": [
-    {
-      "source": "/home",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/news",
-      "destination": "/tape-q-and-a",
-      "permanent": true
-    },
-    {
-      "source": "/qa",
-      "destination": "/tape-q-and-a",
-      "permanent": true
-    },
-    {
-      "source": "/questions",
-      "destination": "/tape-q-and-a",
-      "permanent": true
-    },
-    {
-      "source": "/lto-tape-price-inquiry",
-      "destination": "/lto-tape-price-trend",
-      "permanent": true
-    }
+    { "source": "/home",              "destination": "/",             "permanent": true },
+    { "source": "/news",              "destination": "/tape-q-and-a", "permanent": true },
+    { "source": "/qa",                "destination": "/tape-q-and-a", "permanent": true },
+    { "source": "/questions",         "destination": "/tape-q-and-a", "permanent": true },
+    { "source": "/lto-tape-price-inquiry", "destination": "/lto-tape-price-trend", "permanent": true }
   ],
   "headers": [
     {
       "source": "/assets/:path*",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
     },
     {
       "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        }
-      ]
+      "headers": [{ "key": "X-Content-Type-Options", "value": "nosniff" }]
     }
   ]
 }
