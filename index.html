@@ -1,85 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-L2S102SRML');
-  </script>
-
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/favicon.png" type="image/png" />
-
-  <title>TapeBackup.org — LTO Tape Backup Info, Pricing & Guides</title>
-  <meta name="title" content="TapeBackup.org — LTO Tape Backup Info, Pricing & Guides" />
+  <title>TapeBackup.org — LTO Tape Backup Info, Pricing &amp; Guides</title>
   <meta name="description" content="Independent resource for LTO tape backup. Compare LTO-6 through LTO-10 prices, learn air-gap security, WORM media, and why tape delivers the lowest cost per terabyte for long-term archive." />
-  <meta name="keywords" content="LTO tape backup, LTO tape price, LTO-9 price, LTO-10 price, air gap backup, ransomware protection, WORM tape, tape archive, offline backup, cost per terabyte" />
-  <meta name="author" content="TapeBackup.org" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://tapebackup.org" />
-
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tapebackup.org" />
-  <meta property="og:title" content="TapeBackup.org — LTO Tape Backup Info, Pricing & Guides" />
-  <meta property="og:description" content="Independent resource for LTO tape backup. Compare generation prices, explore air-gap security, and find why tape delivers the lowest TCO for long-term data archive." />
+  <meta property="og:title" content="TapeBackup.org — LTO Tape Backup Info, Pricing &amp; Guides" />
+  <meta property="og:description" content="Independent resource for LTO tape backup. Compare generation prices, explore air-gap security, and find why tape delivers the lowest TCO for long-term archive." />
   <meta property="og:image" content="https://tapebackup.org/og-image.png" />
-  <meta property="og:site_name" content="TapeBackup.org" />
-
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://tapebackup.org" />
-  <meta name="twitter:title" content="TapeBackup.org — LTO Tape Backup Info & Pricing" />
+  <meta name="twitter:title" content="TapeBackup.org — LTO Tape Backup Info &amp; Pricing" />
   <meta name="twitter:description" content="LTO tape backup guides, generation pricing, and air-gap security resources. Independent and free." />
   <meta name="twitter:image" content="https://tapebackup.org/og-image.png" />
-
   <meta name="theme-color" content="#5b27d6" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "TapeBackup.org",
-    "url": "https://tapebackup.org",
-    "description": "Independent resource for LTO tape backup technology, pricing, and long-term archive guidance.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://tapebackup.org/tape-q-and-a?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "TapeBackup.org",
-    "url": "https://tapebackup.org",
-    "logo": "https://tapebackup.org/favicon.png",
-    "description": "Independent resource for LTO tape backup technology and best practices"
-  }
-  </script>
-
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"TapeBackup.org","url":"https://tapebackup.org","description":"Independent resource for LTO tape backup technology, pricing, and long-term archive guidance."}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
-
   <script defer src="/assets/outbound-links.js"></script>
 </head>
 <body>
   <div id="root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+  <script type="text/babel">
+/* ── Icons ── */
+function Icon({name,size=20,stroke=1.7}){
+  const p={width:size,height:size,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:stroke,strokeLinecap:"round",strokeLinejoin:"round"};
+  const paths={
+    chevron:<polyline points="6 9 12 15 18 9"/>,
+    arrow:<><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></>,
+    left:<polyline points="15 18 9 12 15 6"/>,
+    right:<polyline points="9 18 15 12 9 6"/>,
+    check:<polyline points="20 6 9 17 4 12"/>,
+    database:<><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></>,
+    shield:<><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><polyline points="9 12 11 14 15 10"/></>,
+    leaf:<><path d="M11 20A7 7 0 0 1 4 13c0-5 5-9 16-9 0 7-3 16-9 16z"/><line x1="6" y1="18" x2="14" y2="10"/></>,
+    menu:<><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></>,
+  };
+  return <svg {...p} aria-hidden="true">{paths[name]}</svg>;
+}
 
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+function Social({name,size=18}){
+  if(name==="in") return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21H19.6v-4.9c0-1.17-.02-2.67-1.7-2.67-1.7 0-1.96 1.27-1.96 2.58V21H9z"/></svg>;
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2H21l-6.5 7.43L22 22h-6.1l-4.78-6.25L5.6 22H3l6.96-7.95L2 2h6.26l4.32 5.71zm-1.07 18h1.5L7.92 3.94H6.3z"/></svg>;
+}
 
-  <script type="text/babel" src="/ui.jsx"></script>
-  <script type="text/babel" src="/header-hero.jsx"></script>
-  <script type="text/babel" src="/sections.jsx"></script>
-  <script type="text/babel" src="/app.jsx"></script>
+function Brand({footer}){
+  return (
+    <a className="brand" href="/" aria-label="TapeBackup.org home">
+      <span className="mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3" y="6" width="18" height="12" rx="3" stroke="#fff" strokeWidth="1.8"/>
+          <circle cx="8" cy="12" r="2.2" fill="#fff"/>
+          <circle cx="16" cy="12" r="2.2" fill="#fff"/>
+          <line x1="10.2" y1="12" x2="13.8" y2="12" stroke="#fff" strokeWidth="1.4"/>
+        </svg>
+      </span>
+      <span className="wm">
+        <span className="t1">TapeBackup</span>
+        <span className="t2">LTO Tape Info</span>
+      </span>
+    </a>
+  );
+}
+
+/* ── Header ── */
+const NAV=[
+  {label:"About Tape",items:[["Why LTO Tape","/why-tape","Air-gap, WORM & economics"],["LTO Generations","/tape-q-and-a","From LTO-6 to LTO-14"],["Air-Gap Security","/tape-q-and-a","Offline ransomware defense"]]},
+  {label:"LTO Prices",items:[["LTO-6 Price","/lto-tape-price-trend/lto6-price","2.5 TB native"],["LTO-7 Price","/lto-tape-price-trend/lto7-price","6 TB native"],["LTO-8 Price","/lto-tape-price-trend/lto8-price","12 TB native"],["LTO-9 Price","/lto-tape-price-trend/lto9-price","18 TB native"],["LTO-10 Price","/lto-tape-price-trend/lto10-price","30 TB native"]]},
+  {label:"Resources",items:[["Tape Q&A","/tape-q-and-a","62 standalone answers"],["Blog","/blog","Real-world LTO workflows"]]},
+];
+
+function Header(){
+  return (
+    <React.Fragment>
+      <div className="topbar">
+        <div className="wrap">
+          <a href="/tape-q-and-a">Tape Q&amp;A</a>
+          <span className="sep"/>
+          <a href="/lto-tape-price-trend">LTO Prices</a>
+          <span className="sep"/>
+          <a href="/contact">Contact Us</a>
+        </div>
+      </div>
+      <header className="site-header">
+        <div className="wrap">
+          <Brand/>
+          <nav className="nav">
+            {NAV.map(n=>(
+              <div className="nav-item" key={n.label}>
+                <a className="nav-link" href="#" onClick={e=>e.preventDefault()}>
+                  {n.label}<span className="car"><Icon name="chevron" size={15}/></span>
+                </a>
+                <div className="dropdown">
+                  {n.items.map(([t,href,s])=>(
+                    <a className="dd-link" href={href} key={t}>{t}<span>{s}</span></a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </nav>
+          <div className="header-right">
+            <a className="btn btn-primary btn-sm" href="/contact">
+              Get Pricebook<span className="arr"><Icon name="arrow" size={16}/></span>
+            </a>
+            <button className="burger" aria-label="Menu">
+              <Icon name="menu" size={22}/>
+            </button>
+          </div>
+        </div>
+      </header>
+    </React.Fragment>
+  );
+}
+
+/* ── Cartridge visual ── */
+function Cartridge(){
+  return (
+    <div className="cart-stage">
+      <span className="cart-rings"/>
+      <span className="cart-halo"/>
+      <div className="cartridge">
+        <span className="cart-corner"/>
+        <span className="cart-window"/>
+        <span className="cart-chip">LTFS · WORM READY</span>
+        <div className="cart-grip"><i/><i/><i/><i/></div>
+        <div className="cart-label">
+          <div className="lt">ULTRIUM</div>
+          <div className="gen">10<small>+</small></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ── Hero ── */
+const SLIDES=[
+  {eye:"LTO Tape Backup · 2025",title:<>Built for your <span className="accent">long-term archive.</span></>,sub:"LTO tape delivers the lowest cost per terabyte in storage — open, interchangeable, and ready for data you need to keep for decades. Air-gapped and offline by design.",p1:"Why Choose Tape",h1:"/why-tape",p2:"View LTO Prices",h2:"/lto-tape-price-trend"},
+  {eye:"Security",title:<>Air-gapped. <span className="accent">Ransomware-proof.</span></>,sub:"An offline LTO cartridge is completely invisible to ransomware. Hardware AES-256 encryption and WORM media give you a last line of defense that simply cannot be reached over a network.",p1:"How Air-Gap Works",h1:"/why-tape",p2:"WORM & Encryption",h2:"/tape-q-and-a"},
+  {eye:"Economics",title:<>The lowest cost <span className="accent">per terabyte.</span></>,sub:"Idle tape draws zero power and scales by adding cartridges — not arrays. LTO-9 delivers ~$5/TB native. For cold archive and long-term retention, nothing else comes close on TCO.",p1:"See LTO-9 Pricing",h1:"/lto-tape-price-trend/lto9-price",p2:"Compare Generations",h2:"/lto-tape-price-trend"},
+];
+
+function Hero(){
+  const [i,setI]=React.useState(0);
+  const [paused,setPaused]=React.useState(false);
+  const go=n=>setI((n+SLIDES.length)%SLIDES.length);
+  React.useEffect(()=>{
+    if(paused)return;
+    const t=setInterval(()=>setI(v=>(v+1)%SLIDES.length),6500);
+    return ()=>clearInterval(t);
+  },[paused]);
+  const s=SLIDES[i];
+  return (
+    <section className="hero" onMouseEnter={()=>setPaused(true)} onMouseLeave={()=>setPaused(false)}>
+      <div className="wrap">
+        <div className="hero-grid">
+          <div className="hero-copy">
+            <div className="slide-fade" key={"c"+i}>
+              <span className="eyebrow"><span className="dot"/>{s.eye}</span>
+              <h1>{s.title}</h1>
+              <p className="hero-sub">{s.sub}</p>
+              <div className="hero-cta">
+                <a className="btn btn-primary" href={s.h1}>{s.p1}<span className="arr"><Icon name="arrow" size={18}/></span></a>
+                <a className="btn btn-ghost" href={s.h2}>{s.p2}</a>
+              </div>
+            </div>
+            <div className="hero-controls">
+              <div className="dots">
+                {SLIDES.map((_,n)=><button key={n} className={"dot-btn"+(n===i?" on":"")} onClick={()=>go(n)} aria-label={"Slide "+(n+1)}/>)}
+              </div>
+              <div className="arrows">
+                <button className="arrow" onClick={()=>go(i-1)} aria-label="Previous"><Icon name="left" size={18}/></button>
+                <button className="arrow" onClick={()=>go(i+1)} aria-label="Next"><Icon name="right" size={18}/></button>
+              </div>
+              <span className="slide-count"><b>{String(i+1).padStart(2,"0")}</b> / {String(SLIDES.length).padStart(2,"0")}</span>
+            </div>
+          </div>
+          <Cartridge/>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Stats ── */
+const STATS=[
+  {n:"30",u:"yr",l:"Archival shelf life per cartridge"},
+  {n:"~$5",u:"/TB",l:"Cost per terabyte on LTO-9"},
+  {n:"WORM",l:"Write-once compliance media"},
+  {n:"Air-gap",l:"True offline ransomware defense"},
+];
+function Stats(){
+  return (
+    <div className="stats">
+      <div className="wrap">
+        {STATS.map(s=>(
+          <div className="stat" key={s.l}>
+            <div className="n">{s.n}{s.u&&<span className="u">{s.u}</span>}</div>
+            <div className="l">{s.l}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ── Why Tape ── */
+const WHY=[
+  {ico:"database",h:"Capacity that scales",p:"LTO density roughly doubles every generation. Grow your archive by adding cartridges to a shelf — not arrays to a rack. LTO-9 holds 18 TB native; LTO-10 jumps to 30 TB.",feats:["Open, interchangeable media","Vendor-neutral standard","Petabyte-class library support"]},
+  {ico:"shield",h:"Security by design",p:"A removed cartridge cannot be reached over the network. Pair that physical air-gap with hardware AES-256 encryption and write-once WORM media for true data immutability.",feats:["Hardware AES-256 encryption","WORM tamper-proof media","True physical air-gap"]},
+  {ico:"leaf",h:"Cost & sustainability",p:"Idle tape draws no power. With the lowest cost per terabyte in storage and near-zero energy at rest, LTO keeps both your budget and carbon footprint down.",feats:["Lowest TCO per terabyte","Near-zero idle energy draw","Decades without forced migration"]},
+];
+function WhyTape(){
+  return (
+    <section className="block why" id="why">
+      <div className="wrap">
+        <div className="sec-head">
+          <span className="eyebrow"><span className="dot"/>Why LTO Tape</span>
+          <h2>Three reasons tape still wins the archive.</h2>
+          <p>For storage teams managing data that must survive for years, LTO Ultrium remains the quiet workhorse behind the world's most resilient archives.</p>
+        </div>
+        <div className="why-grid">
+          {WHY.map(c=>(
+            <article className="why-card" key={c.h}>
+              <div className="why-ico"><Icon name={c.ico} size={24}/></div>
+              <h3>{c.h}</h3>
+              <p>{c.p}</p>
+              <ul className="feats">
+                {c.feats.map(f=><li key={f}><Icon name="check" size={16}/>{f}</li>)}
+              </ul>
+              <a className="textlink" href="/why-tape">Learn more<span className="arr"><Icon name="arrow" size={16}/></span></a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Roadmap ── */
+const GENS=[
+  {g:"LTO-6",cap:"2.5 TB",st:"done",href:"/lto-tape-price-trend/lto6-price"},
+  {g:"LTO-7",cap:"6 TB",st:"done",href:"/lto-tape-price-trend/lto7-price"},
+  {g:"LTO-8",cap:"12 TB",st:"done",href:"/lto-tape-price-trend/lto8-price"},
+  {g:"LTO-9",cap:"18 TB",st:"done",href:"/lto-tape-price-trend/lto9-price"},
+  {g:"LTO-10",cap:"30 TB",st:"cur",href:"/lto-tape-price-trend/lto10-price"},
+  {g:"LTO-11",cap:"Planned",st:"next",href:"#"},
+  {g:"LTO-12",cap:"Planned",st:"next",href:"#"},
+  {g:"LTO-13",cap:"Planned",st:"next",href:"#"},
+  {g:"LTO-14",cap:"Planned",st:"next",href:"#"},
+];
+function Roadmap(){
+  const curIndex=GENS.findIndex(x=>x.st==="cur");
+  const fill=(curIndex/(GENS.length-1))*100;
+  return (
+    <section className="block roadmap" id="roadmap">
+      <div className="wrap">
+        <div className="sec-head">
+          <span className="eyebrow"><span className="dot"/>LTO Roadmap</span>
+          <h2>A format with a decade of headroom.</h2>
+          <p>The published LTO roadmap extends through Generation 14. Native capacities shown; compressed is typically 2.5×.</p>
+        </div>
+        <div className="rm-track">
+          <div className="rm-line"><span className="fill" style={{width:fill+"%"}}/></div>
+          <div className="rm-nodes">
+            {GENS.map(n=>(
+              <a className={"rm-node "+n.st} key={n.g} href={n.href} style={{textDecoration:"none"}}>
+                {n.st==="cur"&&<span className="tag">Current</span>}
+                <span className="cap">{n.cap}</span>
+                <span className="pt"/>
+                <span className="gen">{n.g}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="rm-legend">
+          <span><i style={{background:"var(--accent)"}}/> Shipping</span>
+          <span><i style={{background:"#fff",border:"2px solid var(--accent)"}}/> Current generation</span>
+          <span><i style={{background:"var(--line-2)"}}/> On the roadmap</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Blog posts ── */
+const BLOG=[
+  {cat:"Analysis",date:"May 2026",h:"Tape Is Dead, Right? Then Why Are People Quietly Building Backup Systems Around It Again",href:"/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again"},
+  {cat:"Guide",date:"Apr 2026",h:"Why an Air-Gapped Copy Belongs in Every 3-2-1 Backup Strategy",href:"/blog/offsite-tape-backups-still-beat-most-good-enough-plans"},
+  {cat:"Pricing",date:"Mar 2026",h:"Buying a Few Cheap LTO Tapes Is How the Rabbit Hole Starts",href:"/blog/buying-a-few-cheap-lto-tapes-is-how-the-rabbit-hole-starts"},
+];
+function BlogNews(){
+  return (
+    <section className="block news" id="blog">
+      <div className="wrap">
+        <div className="news-head">
+          <div className="sec-head" style={{margin:0}}>
+            <span className="eyebrow"><span className="dot"/>Latest from the Blog</span>
+            <h2>Real-world LTO backup</h2>
+          </div>
+          <a className="btn btn-ghost btn-sm" href="/blog">All posts<span className="arr"><Icon name="arrow" size={16}/></span></a>
+        </div>
+        <div className="news-grid">
+          {BLOG.map(a=>(
+            <article className="news-card" key={a.h}>
+              <a href={a.href} style={{display:"contents"}}>
+                <div className="news-thumb">
+                  <span className="gloss"/>
+                  <span className="tcart"/>
+                  <span className="cat">{a.cat}</span>
+                </div>
+                <div className="news-body">
+                  <span className="date">{a.date}</span>
+                  <h3>{a.h}</h3>
+                  <div className="more"><span className="textlink">Read more<span className="arr"><Icon name="arrow" size={16}/></span></span></div>
+                </div>
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── CTA ── */
+function PriceCTA(){
+  return (
+    <section className="licensing">
+      <div className="wrap">
+        <div className="lic-panel">
+          <div>
+            <span className="eyebrow"><span className="dot" style={{background:"#b69cf2"}}/>LTO Tape Pricing</span>
+            <h2>Get the latest LTO tape pricebook.</h2>
+            <p>Compare current HPE, IBM, Dell, Fujifilm, and Sony LTO media pricing across all generations — LTO-6 through LTO-10. Request the bundle or browse individual generation guides.</p>
+          </div>
+          <div className="lic-actions">
+            <a className="btn btn-white" href="/contact">Request pricebook<span className="arr"><Icon name="arrow" size={18}/></span></a>
+            <a className="btn btn-outline-w" href="/lto-tape-price-trend">Browse prices</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Footer ── */
+const FCOLS=[
+  {h:"LTO Prices",links:[["LTO-6 Price","/lto-tape-price-trend/lto6-price"],["LTO-7 Price","/lto-tape-price-trend/lto7-price"],["LTO-8 Price","/lto-tape-price-trend/lto8-price"],["LTO-9 Price","/lto-tape-price-trend/lto9-price"],["LTO-10 Price","/lto-tape-price-trend/lto10-price"]]},
+  {h:"Resources",links:[["Tape Q&A","/tape-q-and-a"],["Blog","/blog"],["Why Tape","/why-tape"],["Buying Guide","/resources"]]},
+  {h:"Company",links:[["About","/about"],["Contact","/contact"]]},
+  {h:"Legal",links:[["Privacy","/privacy"],["Terms","/terms"],["Sitemap","/sitemap.xml"]]},
+];
+function Footer(){
+  return (
+    <footer className="footer">
+      <div className="wrap">
+        <div className="footer-top">
+          <div>
+            <Brand footer/>
+            <p className="blurb">TapeBackup.org — an independent resource for LTO tape backup technology, pricing, and workflows. Not affiliated with the LTO Program consortium.</p>
+            <div className="soc">
+              <a href="#" aria-label="LinkedIn"><Social name="in" size={17}/></a>
+              <a href="#" aria-label="X"><Social name="x" size={15}/></a>
+            </div>
+          </div>
+          {FCOLS.map(c=>(
+            <div className="fcol" key={c.h}>
+              <h4>{c.h}</h4>
+              {c.links.map(([l,href])=><a href={href} key={l}>{l}</a>)}
+            </div>
+          ))}
+        </div>
+        <div className="footer-bot">
+          <span>© 2026 TapeBackup.org — Independent LTO tape backup resource.</span>
+          <div className="links">
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/sitemap.xml">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+/* ── App ── */
+function App(){
+  return (
+    <React.Fragment>
+      <Header/>
+      <Hero/>
+      <Stats/>
+      <WhyTape/>
+      <Roadmap/>
+      <BlogNews/>
+      <PriceCTA/>
+      <Footer/>
+    </React.Fragment>
+  );
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+  </script>
 </body>
 </html>
