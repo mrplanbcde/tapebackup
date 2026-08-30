@@ -9,7 +9,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 
-ROOT = Path("/Users/dali/Documents/tapebackup")
+ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://tapebackup.org"
 TODAY = date(2026, 4, 14)
 RANDOM_SEED = 20260414

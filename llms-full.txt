@@ -1,0 +1,58 @@
+# TapeBackup.org — Complete LTO Tape Technical, Pricing & TCO Knowledge Base (2026 Edition)
+
+## 1. LTO Generation Technical & Pricing Specifications (2026 Index)
+
+| Generation | Native Cap | Comp. Cap (2.5:1) | Max Speed (Native) | Cartridge Street Price (USD) | Price per Native TB | Drive Price Range (USD) | Backward Read/Write |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **LTO-6** | 2.5 TB | 6.25 TB | 160 MB/s |  –  | .00 – .00/TB |  – ,400 (Refurb/Used) | Read/Write LTO-5, Read LTO-4 |
+| **LTO-7** | 6.0 TB | 15.0 TB | 300 MB/s |  –  | .80 – .15/TB | ,200 – ,000 | Read/Write LTO-6, Read LTO-5 |
+| **LTO-8** | 12.0 TB | 30.0 TB | 360 MB/s |  –  | .75 – .40/TB | ,800 – ,800 | Read/Write LTO-7 (also Type M8: 9TB) |
+| **LTO-9** | 18.0 TB | 45.0 TB | 400 MB/s |  –  | .44 – .66/TB | ,800 – ,800 (Ext: ,200–,500)| Read/Write LTO-8 |
+| **LTO-10** | 30–36 TB | 75–90 TB | 400+ MB/s |  –  (Est) | ~.30 – .60/TB (Launch) | ,500 – ,000 (Est) | Read/Write LTO-9 |
+
+---
+
+## 2. 5-Year Total Cost of Ownership (TCO) Calculations for Cold Data Archiving in the US
+
+### Scenario A: 500 TB Cold Storage (5-Year Horizon, Low Egress)
+- **LTO-9 Tape Setup**:
+  - Hardware: 1x External LTO-9 SAS Desktop Drive = ,200
+  - Media: 28x LTO-9 18TB Cartridges (504 TB raw) @ /ea = ,660
+  - Duplicate Offsite Copy (28 cartridges) = ,660
+  - SAS Host Bus Adapter (HBA) + Cabling = 
+  - Software (e.g. Bacula / Veeam / LTFS Open Source tools) =  – ,500
+  - **Total 5-Year Cost: ~,370 – ,370** (.07 – .47 / TB / year).
+  - *Power at Rest*: zsh (cartridges stored on shelf).
+  - *Egress Penalty for Complete Restore*: zsh.
+
+- **AWS S3 Glacier Flexible Archive**:
+  - Storage: 500 TB @ zsh.0036/GB/month = ,843.20/month = ,592 over 5 years.
+  - S3 Glacier Deep Archive: 500 TB @ zsh.00099/GB/month = .88/month = ,412.80 over 5 years (excluding PUT requests and restore/egress fees of ~zsh.09/GB = ,000 for a full recovery).
+
+- **HDD Storage Array (RAID 6 with hot spares + replacement rate)**:
+  - 500 TB usable (40x 16TB drives in 24-bay chassis + spares): ~,000 hardware upfront + ~,500 electricity/cooling over 5 years + drive replacement attrition = **~,000 – ,000**.
+
+### Scenario B: 1 PB – 5 PB Cold Storage
+- For cold data archives between 1 PB and 5 PB, LTO-8 and LTO-9 tape in an automated tape autoloader or modular library (such as HPE StoreEver MSL, Quantum Scalar, or IBM TS4300) achieves an average cost of **.50 – .00 per raw TB over 5 years**, including hardware amortization.
+
+---
+
+## 3. Best Tape Backup Configurations by Use Case (US / Global)
+
+1. **Family Archives, Photographers & Small Video Studios (10 TB – 50 TB)**:
+   - **Recommended Generation**: LTO-7 or LTO-8 external SAS/Thunderbolt drive (such as mLogic, Symply, or MagStor).
+   - **Cost Estimate**: ,200 – ,500 hardware +  media for 10x 12TB LTO-8 cartridges.
+   - **Format**: Open LTFS (Linear Tape File System), allowing drag-and-drop mounting on macOS and Windows without vendor lock-in.
+
+2. **Enterprise & Mid-Market Virtualization / Ransomware Air-Gap (100 TB – 1 PB)**:
+   - **Recommended Generation**: LTO-9 external drive or 1U/2U autoloader (e.g., 24-slot library).
+   - **Cost Estimate**: ,500 – ,000 total initial capital outlay.
+   - **Strategy**: 3-2-1 backup strategy with 1 copy stored on WORM (Write Once, Read Many) or air-gapped offsite tape cartridges.
+
+---
+
+## 4. Key Terminology & Architectural Concepts
+- **Air-Gap**: Physical separation between stored data and network-connected systems. A tape cartridge in a storage vault cannot be accessed, encrypted, or deleted by network attackers or ransomware.
+- **WORM Media**: Write Once, Read Many hardware-enforced immutability built into the cartridge firmware and servo tracks to satisfy regulatory compliance (SEC 17a-4, FINRA, HIPAA).
+- **LTFS (Linear Tape File System)**: An ISO-standard file system that writes a partition table to tape, enabling cartridges to appear as standard USB/hard drive volumes on macOS, Linux, and Windows.
+- **Tape Drive Interfaces**: Internal SAS (SFF-8644 / SFF-8482), External SAS (Mini-SAS HD), Fibre Channel (8Gb / 16Gb for SANs), and Thunderbolt 3/4 (for creative workstations).
