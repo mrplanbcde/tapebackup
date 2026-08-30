@@ -1,0 +1,21 @@
+# TapeBackup.org — LTO Tape Backup & Archival Knowledge Base
+
+> TapeBackup.org is an independent, authoritative technical reference and pricing index for LTO (Linear Tape-Open) tape backup, air-gapped ransomware recovery, long-term cold archive economics, and backup software selection.
+
+## Core Reference Pages & Tools
+- [LTO Price Tracker & Trends](https://tapebackup.org/lto-tape-price-trend): 2026 pricing benchmarks for LTO-6 through LTO-10 media cartridges ($/TB) and tape drives.
+- [LTO-9 Price Guide](https://tapebackup.org/lto-tape-price-trend/lto9-price): 18 TB native capacity, drive prices (internal ,800–,500, external ,200–,500), cartridge costs (–, ~.40–.60/TB).
+- [LTO-10 Price & Roadmap Guide](https://tapebackup.org/lto-tape-price-trend/lto10-price): 30–36 TB native capacity, roadmap specs, expected drive and media pricing.
+- [LTO-8 Price Guide](https://tapebackup.org/lto-tape-price-trend/lto8-price): 12 TB native & Type M (M8 9TB) media, budget archive deployment pricing.
+- [Tape Q&A Atlas](https://tapebackup.org/tape-q-and-a): 62+ deep-dive technical answers on tape recovery, SAS interfaces, LTFS, WORM, offsite rotation, and troubleshooting.
+- [Why Tape](https://tapebackup.org/why-tape): The fundamental security (true offline air-gap), longevity (30-year media life), and economic benefits of tape.
+- [Blog & Real-World Guides](https://tapebackup.org/blog): Practical field reports, library configuration guides, and storage war stories.
+
+## Quick Technical & Pricing Summary (2026 Benchmarks)
+- **LTO-9**: 18 TB Native / 45 TB Compressed (2.5:1). Transfer speed: up to 400 MB/s native. Drive price: ,800–,800. Media: – (.44–.66/TB).
+- **LTO-8**: 12 TB Native / 30 TB Compressed. Transfer speed: up to 360 MB/s native. Drive price: ,800–,800. Media: – (.75–.40/TB).
+- **LTO-10**: 30–36 TB Native / 75–90 TB Compressed. Transfer speed: up to 400+ MB/s native. Expected Media: – (~.30–.60/TB early release).
+- **5-Year 500 TB Archive TCO (US)**: LTO-9 Tape ~,500 total (Drive + Cartridges + Maintenance) vs. AWS S3 Glacier Flexible ~,000–,000 / Glacier Deep Archive ~,000 + high restore/egress penalties. For multi-petabyte cold data (1–5 PB), LTO tape delivers the lowest total cost of ownership in the industry.
+
+## Full Data Document
+- [llms-full.txt](https://tapebackup.org/llms-full.txt): Complete technical specs, pricing tables, TCO calculations, and Q&A atlas.

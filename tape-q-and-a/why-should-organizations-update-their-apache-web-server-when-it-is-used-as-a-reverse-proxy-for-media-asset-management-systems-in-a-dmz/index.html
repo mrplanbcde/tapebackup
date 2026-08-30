@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Q 44 | Tape Q&amp;A | TapeBackup.org</title>
+    <title>Why should organizations update their Apache web server when... | Tape Q&amp;A</title>
     <meta name="description" content="Organizations that deploy media asset management systems within a demilitarized zone (DMZ) often use an Apache web server as a reverse proxy..." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://tapebackup.org/tape-q-and-a/why-should-organizations-update-their-apache-web-server-when-it-is-used-as-a-reverse-proxy-for-media-asset-management-systems-in-a-dmz" />
@@ -21,17 +21,18 @@
     <link rel="stylesheet" href="/tape-q-and-a.css" />
     <script defer src="/assets/outbound-links.js"></script>
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why should organizations update their Apache web server when it is used as a reverse proxy for media asset management systems in a DMZ?", "acceptedAnswer": {"@type": "Answer", "text": "Organizations that deploy media asset management systems within a demilitarized zone (DMZ) often use an Apache web server as a reverse proxy to handle incoming requests from external networks. This configuration improves security and performance by separating public-facing web traffic from the internal application servers that manage digital assets and workflows. However, when vulnerabilities are discovered in the Apache web server itself, systems using this architecture may become exposed to potential exploitation if the web server is not promptly updated. A critical vulnerability in certain versions of the Apache HTTP Server prompted security advisories recommending immediate updates. When the web server operates as a reverse proxy in a DMZ environment, it acts as the gateway between the internet and the internal application environment. If attackers exploit a vulnerability in the web server, they may be able to bypass security controls, manipulate requests, or gain unauthorized access to internal services behind the proxy. Systems that rely on this architecture are particularly sensitive because the DMZ configuration typically allows external traffic to interact with the reverse proxy. Without proper patching, attackers may use the vulnerability to compromise the web server and potentially pivot into the internal infrastructure. To mitigate this risk, administrators should upgrade the Apache HTTP Server to the latest secure version released by the maintainers. Updating the server ensures that known vulnerabilities are patched and reduces the likelihood of exploitation. It is also considered best practice to review security advisories regularly and apply updates as soon as they become available. Before performing the upgrade, administrators should create and verify a full backup of the application server and configuration environment. This precaution helps ensure the system can be restored quickly if any unexpected issues arise during the update process."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tapebackup.org/"}, {"@type": "ListItem", "position": 2, "name": "Tape Q&A", "item": "https://tapebackup.org/tape-q-and-a"}, {"@type": "ListItem", "position": 3, "name": "Why should organizations update their Apache web server when it is used as a reverse proxy for media asset management systems in a DMZ?", "item": "https://tapebackup.org/tape-q-and-a/why-should-organizations-update-their-apache-web-server-when-it-is-used-as-a-reverse-proxy-for-media-asset-management-systems-in-a-dmz"}]}</script>
   </head>
   <body>
 
     <div class="site-shell">
       <header class="topbar">
         <div class="container topbar-inner">
-          <a class="brand" href="/home">
+          <a class="brand" href="/">
             <img src="/assets/logo-BdaQDFFQ.png" alt="TapeBackup logo" />
             <span class="brand-copy"><strong>LTO Tape Info</strong><span>Tape Q&amp;A atlas</span></span>
           </a>
-          <nav class="topnav" aria-label="Primary"><a href="/home">Home</a>
+          <nav class="topnav" aria-label="Primary"><a href="/">Home</a>
           <a href="/why-tape">Why Tape</a>
           <a href="/resources">Resources</a>
           <a href="/blog">Blog</a>
@@ -63,7 +64,7 @@
       <main class="page">
         <div class="container article-layout">
           <article class="article-card">
-            <div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/tape-q-and-a">Tape Q&amp;A</a><span>/</span><span>Q 44</span></div>
+            <div class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/tape-q-and-a">Tape Q&amp;A</a><span>/</span><span>Q 44</span></div>
             <header class="article-header">
               <div class="detail-meta"><span class="q-pill">Q 44</span><span class="theme-chip">Buyer journey</span><span class="meta-chip">Standalone page</span></div>
               <h2 class="detail-title">Why should organizations update their Apache web server when it is used as a reverse proxy for media asset management systems in a DMZ?</h2>

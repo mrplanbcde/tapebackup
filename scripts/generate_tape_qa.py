@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-ROOT = Path("/private/tmp/tapebackup-static-project")
+ROOT = Path(__file__).resolve().parent.parent
 DOWNLOADS = Path("/Users/dali/Downloads/download")
 TODAY = date.today().isoformat()
 SITE = "https://tapebackup.org"
@@ -275,11 +275,11 @@ def render_hub(entries: list[Entry]) -> str:
     <div class="site-shell">
       <header class="topbar">
         <div class="container topbar-inner">
-          <a class="brand" href="/home">
+          <a class="brand" href="/">
             <img src="/assets/logo-BdaQDFFQ.png" alt="TapeBackup logo" />
             <span class="brand-copy"><strong>LTO Tape Info</strong><span>Tape Q&amp;A atlas</span></span>
           </a>
-          <nav class="topnav" aria-label="Primary"><a href="/home">Home</a>
+          <nav class="topnav" aria-label="Primary"><a href="/">Home</a>
           <a href="/why-tape">Why Tape</a>
           <a href="/resources">Resources</a>
           <a href="/blog">Blog</a>
@@ -364,7 +364,7 @@ def render_hub(entries: list[Entry]) -> str:
         <div class="container footer-inner">
           <span>TapeBackup.org Q&amp;A atlas</span>
           <nav class="footer-links" aria-label="Footer">
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
             <a href="/blog">Blog</a>
             <a href="/resources">Resources</a>
             <a href="/contact">Contact</a>
@@ -407,7 +407,7 @@ def render_detail(entries: list[Entry], idx: int) -> str:
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{escape(q_label(idx + 1))} | Tape Q&amp;A | TapeBackup.org</title>
+    <title>{escape(truncate(entry.question, 62))} | Tape Q&amp;A</title>
     <meta name="description" content="{escape(entry.deck)}" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="{SITE}/tape-q-and-a/{entry.slug}" />
@@ -431,11 +431,11 @@ def render_detail(entries: list[Entry], idx: int) -> str:
     <div class="site-shell">
       <header class="topbar">
         <div class="container topbar-inner">
-          <a class="brand" href="/home">
+          <a class="brand" href="/">
             <img src="/assets/logo-BdaQDFFQ.png" alt="TapeBackup logo" />
             <span class="brand-copy"><strong>LTO Tape Info</strong><span>Tape Q&amp;A atlas</span></span>
           </a>
-          <nav class="topnav" aria-label="Primary"><a href="/home">Home</a>
+          <nav class="topnav" aria-label="Primary"><a href="/">Home</a>
           <a href="/why-tape">Why Tape</a>
           <a href="/resources">Resources</a>
           <a href="/blog">Blog</a>
@@ -467,7 +467,7 @@ def render_detail(entries: list[Entry], idx: int) -> str:
       <main class="page">
         <div class="container article-layout">
           <article class="article-card">
-            <div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/tape-q-and-a">Tape Q&amp;A</a><span>/</span><span>{q_label(idx + 1)}</span></div>
+            <div class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/tape-q-and-a">Tape Q&amp;A</a><span>/</span><span>{q_label(idx + 1)}</span></div>
             <header class="article-header">
               <div class="detail-meta"><span class="q-pill">{q_label(idx + 1)}</span><span class="theme-chip">{escape(entry.theme)}</span><span class="meta-chip">Standalone page</span></div>
               <h2 class="detail-title">{escape(entry.question)}</h2>
@@ -549,9 +549,7 @@ def update_sitemap(entries: list[Entry]) -> None:
         "    <changefreq>weekly</changefreq>",
         "    <priority>0.7</priority>",
         f'    <xhtml:link rel="alternate" hreflang="en" href="{SITE}/tape-q-and-a"/>',
-        f'    <xhtml:link rel="alternate" hreflang="de" href="{SITE}/tape-q-and-a"/>',
-        f'    <xhtml:link rel="alternate" hreflang="pl" href="{SITE}/tape-q-and-a"/>',
-        "  </url>",
+        f'        f'        "  </url>",
         "",
     ]
     for entry in entries:
