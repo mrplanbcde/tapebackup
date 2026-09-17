@@ -585,7 +585,7 @@ def update_robots() -> None:
 
 
 def write_site(entries: list[Entry]) -> None:
-    (ROOT / "tape-q-and-a.html").write_text(render_hub(entries))
+    (ROOT / "tape-q-and-a" / "index.html").write_text(render_hub(entries))
     qa_root = ROOT / "tape-q-and-a"
     expected = {entry.slug for entry in entries}
     for child in qa_root.iterdir():
@@ -625,6 +625,9 @@ def main() -> None:
     entries = build_entries()
     write_site(entries)
     print(f"Generated {len(entries)} Q&A pages.")
+    # Reapply title overrides, noindex list and the full sitemap after regenerating HTML.
+    import subprocess, sys
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "build_site.py")], check=True)
 
 
 if __name__ == "__main__":

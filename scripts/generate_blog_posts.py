@@ -154,7 +154,8 @@ def parse_markdown_post(path: Path, published: date) -> Post:
 
 def parse_existing_post(path: Path) -> Post:
     text = path.read_text()
-    title = clean_text(re.search(r"<title>(.*?) \| TapeBackup\.org</title>", text, re.S).group(1))
+    # <title> may be an SEO override (data/meta-overrides.json); the JSON-LD headline is the real title.
+    title = clean_text(json.loads('"' + re.search(r'"headline":"(.*?)","description"', text, re.S).group(1) + '"'))
     description = clean_text(re.search(r'<meta name="description" content="(.*?)" />', text, re.S).group(1))
     category = clean_text(re.search(r'"articleSection":"(.*?)"', text, re.S).group(1))
     published_text = re.search(r'"datePublished":"(\d{4}-\d{2}-\d{2})"', text, re.S).group(1)
@@ -446,6 +447,10 @@ def main() -> None:
 
     for post in new_posts:
         print(f"{post.published.isoformat()}  {post.slug}")
+
+    # Reapply title overrides, noindex list and the full sitemap after regenerating HTML.
+    import subprocess, sys
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "build_site.py")], check=True)
 
 
 if __name__ == "__main__":

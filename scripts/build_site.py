@@ -58,6 +58,19 @@ def apply_meta_overrides():
     return changed
 
 
+def apply_qa_noindex():
+    """Noindex off-topic Q&A pages listed in data/qa-noindex.json (reversible: remove a slug and rebuild)."""
+    slugs = set(json.load(open(rel("data", "qa-noindex.json"), encoding="utf-8"))["slugs"])
+    for f in glob.glob(rel("tape-q-and-a", "*", "index.html")):
+        slug = f.split(os.sep)[-2]
+        s = open(f, encoding="utf-8").read()
+        want = "noindex, follow" if slug in slugs else "index, follow"
+        new = re.sub(r'<meta name="robots" content="[^"]*"', f'<meta name="robots" content="{want}"', s, count=1)
+        if new != s:
+            open(f, "w", encoding="utf-8").write(new)
+    return slugs
+
+
 def git_date(file):
     try:
         out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", file], cwd=ROOT, capture_output=True, text=True).stdout.strip()
@@ -94,7 +107,10 @@ def build_sitemap(today):
     for f in sorted(glob.glob(rel("blog", "*", "index.html"))):
         add("/blog/" + f.split(os.sep)[-2], f, "0.7", "monthly")
     add("/tape-q-and-a", rel("tape-q-and-a", "index.html"), "0.8", "monthly")
+    noindex = set(json.load(open(rel("data", "qa-noindex.json"), encoding="utf-8"))["slugs"])
     for f in sorted(glob.glob(rel("tape-q-and-a", "*", "index.html"))):
+        if f.split(os.sep)[-2] in noindex:
+            continue
         add("/tape-q-and-a/" + f.split(os.sep)[-2], f, "0.5", "yearly")
 
     for path, _, _, _ in entries:
@@ -178,6 +194,11 @@ def main():
     price_paths, current = build_prices.build_all()
     page_paths = build_pages.build_all(current)
     n = apply_meta_overrides()
+    apply_qa_noindex()
+    for f in glob.glob(rel("blog", "*", "index.html")) + glob.glob(rel("tape-q-and-a", "*", "index.html")):
+        t = re.search(r"<title>(.*?)</title>", open(f, encoding="utf-8").read(), re.S)
+        if t and len(html.unescape(t.group(1))) > 60:
+            print(f"warning: title over 60 chars, add it to data/meta-overrides.json: {os.path.relpath(f, ROOT)}")
     count = build_sitemap(build_prices.CURRENT_ISO)
     build_llms(current)
     print(f"price pages: {len(price_paths)}, other pages: {len(page_paths)}, meta overrides changed: {n}, sitemap urls: {count}")
