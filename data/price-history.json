@@ -1,0 +1,102 @@
+{
+  "snapshots": [
+    {
+      "slug": "aug-2026",
+      "label": "August 2026",
+      "period": "July to August 2026",
+      "published": "2026-08-30",
+      "source": "Generation guide ranges published on TapeBackup.org on 30 August 2026, before the September 2026 refresh.",
+      "summary": "Broad guide ranges used on the LTO-6 to LTO-10 price pages through the summer of 2026. These were rounded planning ranges rather than individual listings, so they are wider than the manufacturer snapshots from 2025.",
+      "cartridges": {
+        "LTO-6": {"range": "$10-$30", "perTB": "$4-$8/TB"},
+        "LTO-7": {"range": "$20-$45", "perTB": "$3-$7/TB"},
+        "LTO-8": {"range": "$40-$70", "perTB": "$3-$5/TB"},
+        "LTO-9": {"range": "$80-$120", "perTB": "about $5/TB"},
+        "LTO-10": {"range": "$265-$295 (30 TB), list prices from $400", "perTB": "about $9/TB"}
+      },
+      "notes": ["Drive price tables from this edition were not preserved in a usable form, so only cartridge ranges are archived here."]
+    },
+    {
+      "slug": "mar-2026",
+      "label": "March 2026",
+      "period": "Q1 2026",
+      "published": "2026-03-16",
+      "source": "TapeBackup.org LTO price summary and drive price guide, first published 16 March 2026.",
+      "summary": "LTO-8 and LTO-9 were the price to capacity sweet spots. LTO-10 drives and media carried an early adopter premium, while LTO-5 and LTO-6 drives were mostly refurbished.",
+      "cartridges": {
+        "LTO-5": {"range": "$25-$35"},
+        "LTO-6": {"range": "$30-$45"},
+        "LTO-7": {"range": "$55-$65", "perTB": "$9-$11/TB"},
+        "LTO-8": {"range": "$60-$70", "perTB": "$5-$6/TB"},
+        "LTO-9": {"range": "$85-$100", "perTB": "about $5/TB"},
+        "LTO-10": {"range": "$260-$300", "perTB": "$7-$10/TB"}
+      },
+      "drives": {
+        "LTO-5": {"internal": "$500-$1,500 (refurb)", "external": "$800-$2,500 (refurb)"},
+        "LTO-6": {"internal": "$500-$2,000 (refurb)", "external": "$700-$2,500 (refurb)"},
+        "LTO-7": {"internal": "$2,500-$4,500", "external": "$3,000-$4,000"},
+        "LTO-8": {"internal": "$3,500-$5,000", "external": "$4,000-$5,000"},
+        "LTO-9": {"internal": "$4,500-$6,500", "external": "$5,000-$8,000"},
+        "LTO-10": {"internal": "$9,000-$12,000", "external": "$11,000-$16,000"}
+      },
+      "driveVendors": [
+        {"vendor": "HPE StoreEver", "rows": [["LTO-9", "Internal / library upgrade $5,000-$6,500", "External $5,800-$7,000"], ["LTO-8", "Internal / library upgrade $3,200-$4,200", "External $4,000-$5,200"], ["LTO-7", "Internal $2,200-$3,000", "External $3,000-$4,000"]]},
+        {"vendor": "Quantum", "rows": [["LTO-9", "Internal bare drive about $4,700", "External tabletop kit $6,000-$8,200"], ["LTO-8", "Internal bare drive about $3,700", "External tabletop kit $4,500-$5,500"], ["LTO-7", "Internal bare drive about $3,400", "External tabletop kit $3,500-$4,500"]]},
+        {"vendor": "IBM", "rows": [["LTO-9", "Library module, half height SAS, $8,200+", "Library module, full height FC, $12,000+"], ["LTO-8", "Library module, half height, $6,000-$6,800", ""], ["LTO-7", "Library module, half height, $5,300-$6,000", ""]]},
+        {"vendor": "Dell PowerVault", "rows": [["LTO-9", "List price customer kit about $9,800", ""], ["LTO-8", "List price customer kit about $9,900", ""], ["LTO-7", "List price customer kit about $9,500", ""]]}
+      ],
+      "notes": ["Dell spare part list prices were far above street; third party and refurbished drives sold for $1,800-$2,500.", "External drives cost $800-$1,500 more than internal bare drives. Thunderbolt LTO-9 units listed around $6,299."]
+    },
+    {
+      "slug": "jan-2026",
+      "label": "January 2026",
+      "period": "January 2026 edition (data from November to December 2025)",
+      "published": "2026-01-05",
+      "source": "TapeBackup.org January 2026 market analysis, based on November to December 2025 listings.",
+      "summary": "Prices were stable for LTO-5 through LTO-9. LTO-10 media was softening as HPE and IBM priced below the launch Fujifilm listing.",
+      "cartridges": {
+        "LTO-5": {"range": "$18-$31", "trend": "stable", "vendors": [["Maxell", "$18"], ["Sony", "$21"], ["HPE", "$26"], ["IBM", "$29"], ["Quantum", "$31"]]},
+        "LTO-6": {"range": "$30-$47", "trend": "stable", "vendors": [["Quantum MP", "$30"], ["HPE", "$40"], ["IBM", "$43"], ["HPE BaFe", "$43"], ["Fujifilm", "$46"]]},
+        "LTO-7": {"range": "$58-$62", "trend": "stable", "vendors": [["Quantum", "$58"], ["HPE", "$60"], ["IBM", "$62"]]},
+        "LTO-8": {"range": "$65-$68", "trend": "stable", "vendors": [["Fujifilm", "$65.30"], ["Quantum", "$65.75"], ["HPE", "$65.95"], ["IBM", "$67.95"]]},
+        "LTO-9": {"range": "$85-$102", "trend": "stable", "vendors": [["Industry average", "$89"], ["HPE", "$93"], ["Quantum", "$94"], ["IBM", "$102"]]},
+        "LTO-10": {"range": "$265-$300", "trend": "softening", "previous": "$265-$312", "vendors": [["HPE", "$265"], ["IBM", "$275"], ["Fujifilm", "$295"]]}
+      },
+      "notes": ["The original edition quoted cost per TB against compressed capacity. Native cost per TB is shown in the table on this page."]
+    },
+    {
+      "slug": "nov-dec-2025",
+      "label": "November to December 2025",
+      "period": "November to December 2025",
+      "published": "2025-12-01",
+      "source": "TapeBackup.org price tracker, November to December 2025 listings.",
+      "summary": "LTO-8 kept the best cost per TB. LTO-10 media began to soften as IBM and HPE entered below the initial Fujifilm price, LTO-9 held steady with bulk discounts, and supply of LTO-5 to LTO-7 kept thinning.",
+      "cartridges": {
+        "LTO-5": {"range": "$18-$31", "trend": "stable", "previous": "$20-$31 (Nov 2025)", "vendors": [["Maxell", "$18.00"], ["Sony LTX1500G", "$21.18"], ["HPE C7975A", "$25.55"], ["IBM 46X1290", "$28.95"], ["Quantum MR-L5MQN-01", "$31.00"]]},
+        "LTO-6": {"range": "$30-$47", "trend": "stable", "previous": "$29.95-$46.75 (Nov 2025)", "vendors": [["Quantum MP MR-L6MQN-03", "about $30.00"], ["HPE C7976A", "$39.95"], ["IBM 00V7590", "$42.65"], ["HPE BaFe C7976B", "$43.00"], ["Fujifilm BaFe", "$45.80"], ["Quantum BaFe MR-L6MQN-01", "$46.75"]]},
+        "LTO-7": {"range": "$59-$62", "trend": "stable", "previous": "$60.75-$69.50 (Nov 2025)", "vendors": [["Quantum", "about $59.00"], ["5-pack bundle", "$292-$300"]]},
+        "LTO-8": {"range": "$65-$68", "trend": "stable", "previous": "$65.30-$67.95 (Nov 2025)", "vendors": [["Fujifilm 16551221", "$65.30"], ["Quantum MR-L8MQN-01", "$65.75"], ["HPE Q2078A", "$65.95"], ["IBM 01PL041", "$67.95"]]},
+        "LTO-9": {"range": "$85-$102", "trend": "stable", "previous": "$93.55-$101.55 (Nov 2025)", "vendors": [["Industry average", "$85-$93"], ["HPE LTO-9", "$92.95"], ["Quantum with barcode", "$93.55"], ["5-pack bundle", "$465-$508"]]},
+        "LTO-10": {"range": "$265-$300", "trend": "softening", "previous": "$265.60-$311.89 (Nov 2025)", "vendors": [["HPE LTO-10", "about $265"], ["IBM", "about $275"], ["Fujifilm 16944686", "$295.00 (list $449)"]]}
+      },
+      "notes": ["Barcode labels for library automation added $2-$5 per cartridge.", "5, 10 and 20 packs saved roughly 5-15% per cartridge."]
+    },
+    {
+      "slug": "sep-oct-2025",
+      "label": "September to October 2025",
+      "period": "September to October 2025",
+      "published": "2025-10-01",
+      "source": "TapeBackup.org price tracker, September to October 2025 vendor and manufacturer listings.",
+      "summary": "LTO-8 offered the best cost per TB. LTO-10 30 TB media had only just shipped and was essentially a single Fujifilm listing near $295.",
+      "cartridges": {
+        "LTO-5": {"range": "$18-$31", "vendors": [["Maxell", "$18.00"], ["Sony LTX1500G", "$21.18"], ["HPE C7975A", "$25.55"], ["IBM 46X1290", "$28.95"], ["Quantum MR-L5MQN-01", "$31.00"]]},
+        "LTO-6": {"range": "$30-$47", "vendors": [["Quantum MP MR-L6MQN-03", "$29.95"], ["HPE C7976A", "$39.95"], ["IBM 00V7590", "$42.65"], ["HPE BaFe C7976B", "$43.00"], ["Fujifilm BaFe", "$45.80"], ["Quantum BaFe MR-L6MQN-01", "$46.75"]]},
+        "LTO-7": {"range": "$59-$62", "vendors": [["Quantum", "about $59.00"], ["5-pack bundle", "$292-$300"]]},
+        "LTO-8": {"range": "$65-$68", "vendors": [["Fujifilm 16551221", "$65.30"], ["Quantum MR-L8MQN-01", "$65.75"], ["HPE Q2078A", "$65.95"], ["IBM 01PL041", "$67.95"]]},
+        "LTO-9": {"range": "$85-$102", "vendors": [["Industry average", "$85-$93"], ["Quantum with barcode", "$93.55"], ["5-pack bundle", "$465-$508"]]},
+        "LTO-10": {"range": "$295-$300", "vendors": [["Fujifilm 16944686", "$295.00 (list $449)"]]}
+      },
+      "notes": []
+    }
+  ]
+}

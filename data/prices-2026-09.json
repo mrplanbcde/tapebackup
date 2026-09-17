@@ -1,0 +1,1392 @@
+{
+  "asOf": "2026-09-17",
+  "currency": "USD",
+  "scope": "US street/reseller prices, single new cartridges from major brands unless noted; pack entries are excluded from the single-cartridge low/high but kept as datapoints with per-unit math in the note.",
+  "generations": {
+    "LTO-6": {
+      "nativeTB": 2.5,
+      "cartridge": {
+        "lowUSD": 38.0,
+        "highUSD": 56.45,
+        "datapoints": [
+          {
+            "seller": "Tape4Backup",
+            "sku": "229558 (Maxell)",
+            "priceUSD": 38.0,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "LTX2500G (Sony)",
+            "priceUSD": 41.25,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "priceUSD": 42.5,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "00V7590 (IBM)",
+            "priceUSD": 43.25,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "16310732 (Fujifilm)",
+            "priceUSD": 44.95,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "C7976A (HPE)",
+            "priceUSD": 51.15,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "00V7590 (IBM)",
+            "priceUSD": 52.25,
+            "url": "https://ltoworld.com/collections/lto-6-media",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "C7976A (HPE)",
+            "priceUSD": 51.75,
+            "url": "https://ltoworld.com/collections/lto-6-media",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "MR-L6MQN-01 (Quantum, IBM drives only)",
+            "priceUSD": 56.45,
+            "url": "https://ltoworld.com/collections/lto-6-media",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "16310732 (Fujifilm)",
+            "priceUSD": 50.52,
+            "url": "https://ltoworld.com/collections/lto-6-media",
+            "note": "seen 2026-09-17; sale price"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L6MQN-03-10PK (Quantum 10-pack)",
+            "priceUSD": 445.0,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17; 10-pack = $44.50/unit; not in single range"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "Q1G95A (HPE 10-pack library)",
+            "priceUSD": 515.5,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17; 10-pack = $51.55/unit; not in single range"
+          }
+        ],
+        "perTBLow": 15.2,
+        "perTBHigh": 22.58
+      },
+      "worm": {
+        "lowUSD": 71.29,
+        "highUSD": 95.0,
+        "datapoints": [
+          {
+            "seller": "Tape4Backup",
+            "sku": "C7976W (HPE)",
+            "priceUSD": 95.0,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L6WQN-04 (Quantum, MP)",
+            "priceUSD": 82.5,
+            "url": "https://www.tape4backup.com/collections/lto-6-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "C7976W (HPE)",
+            "priceUSD": 71.29,
+            "url": "https://ltoworld.com/collections/lto-6-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "MR-L6MQN-02 (Quantum)",
+            "priceUSD": 79.13,
+            "url": "https://ltoworld.com/collections/lto-6-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "00V7591 (IBM)",
+            "priceUSD": 91.29,
+            "url": "https://ltoworld.com/collections/lto-6-media",
+            "note": "seen 2026-09-17"
+          }
+        ],
+        "perTBLow": 28.52,
+        "perTBHigh": 38.0
+      },
+      "driveInternal": {
+        "lowUSD": null,
+        "highUSD": null,
+        "datapoints": []
+      },
+      "driveExternal": {
+        "lowUSD": 4937.0,
+        "highUSD": 4937.0,
+        "datapoints": [
+          {
+            "seller": "LTO World",
+            "sku": "3850-H6S (IBM TS2260 LTO-6 HH SAS external)",
+            "priceUSD": 4937.0,
+            "url": "https://ltoworld.com/collections/external-lto6-sas",
+            "note": "seen 2026-09-17; new, in stock; only new LTO-6 standalone drive found"
+          }
+        ]
+      },
+      "status": "Legacy. Media still widely stocked and cheap. New standalone drives scarce (one new IBM TS2260 listing found; no new internal drive found). Refurb HPE Ultrium 6250 (EH969A/EH970A) drives are sold quote-only (altatechnologies.com); no refurb price visible on a page.",
+      "notes": "driveInternal: not found (new). Used/refurb prices: not found on fetchable pages (eBay, ServerSupply, ServerOrbit, HardDrivesDirect blocked fetch). LTO World shows Fujifilm WORM 16310756 at $41.50, which looks like a listing error, so it is omitted from WORM range."
+    },
+    "LTO-7": {
+      "nativeTB": 6,
+      "cartridge": {
+        "lowUSD": 59.99,
+        "highUSD": 79.99,
+        "datapoints": [
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "priceUSD": 61.75,
+            "url": "https://www.tape4backup.com/collections/lto-7-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "38L7302 (IBM)",
+            "priceUSD": 65.95,
+            "url": "https://www.tape4backup.com/collections/lto-7-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "C7977A (HPE)",
+            "priceUSD": 66.55,
+            "url": "https://www.tape4backup.com/collections/lto-7-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "16456574 (Fujifilm)",
+            "priceUSD": 66.6,
+            "url": "https://www.tape4backup.com/collections/lto-7-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "LTX6000G (Sony)",
+            "priceUSD": 71.15,
+            "url": "https://www.tape4backup.com/collections/lto-7-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "38L7302 (IBM)",
+            "priceUSD": 64.0,
+            "url": "https://ltoworld.com/collections/lto-7-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "C7977A (HPE)",
+            "priceUSD": 65.35,
+            "url": "https://ltoworld.com/collections/lto-7-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "priceUSD": 65.0,
+            "url": "https://ltoworld.com/collections/lto-7-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "16456574 (Fujifilm)",
+            "priceUSD": 65.25,
+            "url": "https://ltoworld.com/collections/lto-7-media",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "MagStor",
+            "sku": "38L7302 (IBM)",
+            "priceUSD": 75.39,
+            "url": "https://magstor.com/collections/add-7tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "MagStor",
+            "sku": "C7977A (HPE)",
+            "priceUSD": 79.99,
+            "url": "https://magstor.com/collections/add-7tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "DatacenterDisk",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "priceUSD": 59.99,
+            "url": "https://datacenterdisk.com/lto-tape",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "QTMMR-L7MQN-01-5PK (Quantum 5-pack)",
+            "priceUSD": 325.5,
+            "url": "https://www.tape4backup.com/collections/lto-7-tapes",
+            "note": "seen 2026-09-17; 5-pack = $65.10/unit"
+          }
+        ],
+        "perTBLow": 10.0,
+        "perTBHigh": 13.33
+      },
+      "worm": {
+        "lowUSD": 93.08,
+        "highUSD": 111.72,
+        "datapoints": [
+          {
+            "seller": "Tape4Backup",
+            "sku": "C7977W (HPE)",
+            "priceUSD": 95.75,
+            "url": "https://www.tape4backup.com/collections/lto-7-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "priceUSD": 111.72,
+            "url": "https://www.tape4backup.com/collections/lto-7-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "38L7303 (IBM)",
+            "priceUSD": 108.83,
+            "url": "https://ltoworld.com/collections/lto-7-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "C7977W (HPE)",
+            "priceUSD": 93.08,
+            "url": "https://ltoworld.com/collections/lto-7-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "priceUSD": 96.88,
+            "url": "https://ltoworld.com/collections/lto-7-media",
+            "note": "seen 2026-09-17; sale"
+          }
+        ],
+        "perTBLow": 15.51,
+        "perTBHigh": 18.62
+      },
+      "driveInternal": {
+        "lowUSD": 3419.1,
+        "highUSD": 4253.0,
+        "datapoints": [
+          {
+            "seller": "BackupWorks",
+            "sku": "TD-L72AN-BR (Quantum LTO-7 HH SAS bare)",
+            "priceUSD": 4253.0,
+            "url": "https://www.backupworks.com/LTO-7-Ultrium-tape-drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "TD-L72GN-BR (Quantum LTO-7 add-on drive)",
+            "priceUSD": 4208.0,
+            "url": "https://www.backupworks.com/LTO-7-Ultrium-tape-drive.aspx",
+            "note": "seen 2026-09-17; new; add-on for 1U rack kit"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "SAS-HL7i (MagStor LTO-7 HH SAS internal)",
+            "priceUSD": 3419.1,
+            "url": "https://ltoworld.com/collections/internal-lto7",
+            "note": "seen 2026-09-17; new, sale"
+          }
+        ]
+      },
+      "driveExternal": {
+        "lowUSD": 3699.0,
+        "highUSD": 4999.0,
+        "datapoints": [
+          {
+            "seller": "LTO World",
+            "sku": "BB874A (HPE StoreEver LTO-7 Ultrium 15000 external)",
+            "priceUSD": 3699.0,
+            "url": "https://ltoworld.com/collections/external-lto7-sas",
+            "note": "seen 2026-09-17; new, in stock"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "TD-L72BN-AR (Quantum LTO-7 SAS tabletop kit)",
+            "priceUSD": 4999.0,
+            "url": "https://ltoworld.com/collections/external-lto7-sas",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "TD-L72BN-AR (Quantum LTO-7 SAS tabletop kit)",
+            "priceUSD": 4974.0,
+            "url": "https://www.backupworks.com/LTO-7-Ultrium-tape-drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "TD-L72BN-AR (Quantum LTO-7 SAS tabletop kit)",
+            "priceUSD": 4453.0,
+            "url": "https://tapeandmedia.com/tape_backup_drives.asp",
+            "note": "seen 2026-09-17; new, special order"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "SAS-HL7-8088 (MagStor LTO-7 HH SAS desktop)",
+            "priceUSD": 3779.1,
+            "url": "https://ltoworld.com/collections/external-lto7-sas",
+            "note": "seen 2026-09-17; new, sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "SAS-HL7-8644 (MagStor LTO-7 HH SAS desktop)",
+            "priceUSD": 3779.1,
+            "url": "https://ltoworld.com/collections/external-lto7-sas",
+            "note": "seen 2026-09-17; certified refurbished, 1-yr warranty"
+          }
+        ]
+      },
+      "status": "Mature/legacy. Media plentiful. New drives still sold but thinning: BackupWorks lists HPE BB873A/BB874A, several MagStor and mLogic LTO-7 SKUs as 'call for availability'; Tape4Backup LTO-7 drives mostly out of stock.",
+      "notes": "Refurb data: only one visible (MagStor SAS-HL7-8644 certified refurb $3,779.10). Fujifilm LTO-7 WORM 16495661 shown at $65.68 on LTO World looks like a listing error and is omitted."
+    },
+    "LTO-8": {
+      "nativeTB": 12,
+      "cartridge": {
+        "lowUSD": 69.95,
+        "highUSD": 80.0,
+        "datapoints": [
+          {
+            "seller": "Tape4Backup",
+            "sku": "16551221 (Fujifilm)",
+            "priceUSD": 69.95,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "priceUSD": 72.0,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "Q2078A (HPE)",
+            "priceUSD": 73.0,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "01PL041 (IBM)",
+            "priceUSD": 73.95,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "16551221 (Fujifilm)",
+            "priceUSD": 73.5,
+            "url": "https://www.backupworks.com/LTO-8-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "Q2078A (HPE)",
+            "priceUSD": 80.0,
+            "url": "https://www.backupworks.com/LTO-8-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "01PL041 (IBM)",
+            "priceUSD": 75.5,
+            "url": "https://www.backupworks.com/LTO-8-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "priceUSD": 76.0,
+            "url": "https://www.backupworks.com/LTO-8-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "01PL041 (IBM)",
+            "priceUSD": 72.25,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "Q2078A (HPE)",
+            "priceUSD": 72.75,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "priceUSD": 73.25,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "16551221 (Fujifilm)",
+            "priceUSD": 72.9,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "DatacenterDisk",
+            "sku": "Fujifilm LTO-8 single",
+            "priceUSD": 77.99,
+            "url": "https://datacenterdisk.com/lto-tape",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L8LQN-BC (Quantum 20-pack labeled)",
+            "priceUSD": 1450.0,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17; 20-pack = $72.50/unit"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "Q2078AN (HPE 20-pack)",
+            "priceUSD": 1460.0,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17; 20-pack = $73.00/unit"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "01PL054 (IBM 20-pack)",
+            "priceUSD": 1500.0,
+            "url": "https://www.backupworks.com/LTO-8-Tape-Media.aspx",
+            "note": "seen 2026-09-17; 20-pack = $75.00/unit"
+          },
+          {
+            "seller": "DatacenterDisk",
+            "sku": "01PL054 (IBM 20-pack)",
+            "priceUSD": 1485.99,
+            "url": "https://datacenterdisk.com/lto-tape",
+            "note": "seen 2026-09-17; 20-pack = $74.30/unit"
+          },
+          {
+            "seller": "DatacenterDisk",
+            "sku": "MR-L8MQN-20 (Quantum 20-pack)",
+            "priceUSD": 1539.8,
+            "url": "https://datacenterdisk.com/lto-tape",
+            "note": "seen 2026-09-17; 20-pack = $76.99/unit"
+          }
+        ],
+        "perTBLow": 5.83,
+        "perTBHigh": 6.67
+      },
+      "worm": {
+        "lowUSD": 100.77,
+        "highUSD": 170.0,
+        "datapoints": [
+          {
+            "seller": "Tape4Backup",
+            "sku": "Q2078W (HPE)",
+            "priceUSD": 139.95,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "01PL042 (IBM)",
+            "priceUSD": 140.0,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "priceUSD": 140.0,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "16551233 (Fujifilm)",
+            "priceUSD": 170.0,
+            "url": "https://www.tape4backup.com/collections/lto-8-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "Q2078W (HPE)",
+            "priceUSD": 115.25,
+            "url": "https://www.backupworks.com/LTO-8-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "MR-L8WQN-BC (Quantum)",
+            "priceUSD": 139.0,
+            "url": "https://www.backupworks.com/LTO-8-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "01PL042 (IBM)",
+            "priceUSD": 105.54,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "Q2078W (HPE)",
+            "priceUSD": 103.54,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "priceUSD": 100.77,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "16551233 (Fujifilm)",
+            "priceUSD": 104.0,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17"
+          }
+        ],
+        "perTBLow": 8.4,
+        "perTBHigh": 14.17
+      },
+      "driveInternal": {
+        "lowUSD": 4849.95,
+        "highUSD": 8099.0,
+        "datapoints": [
+          {
+            "seller": "BackupWorks",
+            "sku": "TD-L82AN-BR (Quantum LTO-8 HH SAS bare)",
+            "priceUSD": 5635.0,
+            "url": "https://www.backupworks.com/lto-8-tape-drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "TD-L82AN-EY (Quantum LTO-8 HH SAS kit)",
+            "priceUSD": 5760.0,
+            "url": "https://www.backupworks.com/lto-8-tape-drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "SAS-HL8i (MagStor LTO-8 HH SAS internal)",
+            "priceUSD": 8099.0,
+            "url": "https://www.backupworks.com/lto-8-tape-drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "TD-L82AN-BR (Quantum LTO-8 HH SAS)",
+            "priceUSD": 5099.0,
+            "url": "https://ltoworld.com/collections/internal-lto8",
+            "note": "seen 2026-09-17; new, in stock"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "SAS-HL8i (MagStor LTO-8 HH SAS internal)",
+            "priceUSD": 5039.1,
+            "url": "https://ltoworld.com/collections/internal-lto8",
+            "note": "seen 2026-09-17; new, sale"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal)",
+            "priceUSD": 7695.0,
+            "url": "https://tapeandmedia.com/tape_backup_drives.asp",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "StoragePartsDirect",
+            "sku": "BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal)",
+            "priceUSD": 4849.95,
+            "url": "https://www.storagepartsdirect.com/hpe-bc022a-lto-8-ultrium-30750-sas-6g-internal-tape-drive/",
+            "note": "seen 2026-09-17; new, 90-day warranty, 2 in stock"
+          }
+        ]
+      },
+      "driveExternal": {
+        "lowUSD": 5309.1,
+        "highUSD": 8441.0,
+        "datapoints": [
+          {
+            "seller": "BackupWorks",
+            "sku": "TD-L82BN-AR (Quantum LTO-8 SAS tabletop kit)",
+            "priceUSD": 6507.0,
+            "url": "https://www.backupworks.com/lto-8-tape-drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "SYSAS-DS1L8HH1-BT (Symply LTO-8 HH SAS desktop)",
+            "priceUSD": 6774.0,
+            "url": "https://www.backupworks.com/lto-8-tape-drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "SAS-HL8-8088 (MagStor LTO-8 HH SAS desktop)",
+            "priceUSD": 8441.0,
+            "url": "https://www.backupworks.com/lto-8-tape-drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "SAS-HL8-8644 (MagStor LTO-8 HH SAS desktop)",
+            "priceUSD": 5309.1,
+            "url": "https://ltoworld.com/collections/external-lto8-sas",
+            "note": "seen 2026-09-17; new, sale (regular $8,649)"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "TD-L82BN-AR (Quantum LTO-8 SAS desktop)",
+            "priceUSD": 5499.0,
+            "url": "https://ltoworld.com/collections/external-lto8-sas",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "BC023A (HPE StoreEver LTO-8 Ultrium 30750 SAS external)",
+            "priceUSD": 8330.0,
+            "url": "https://tapeandmedia.com/tape_backup_drives.asp",
+            "note": "seen 2026-09-17; new, ships same day"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "SAS-HL8-8644 (MagStor LTO-8 HH SAS desktop)",
+            "priceUSD": 8425.0,
+            "url": "https://tapeandmedia.com/tape_backup_drives.asp",
+            "note": "seen 2026-09-17; new"
+          }
+        ]
+      },
+      "status": "Current-but-previous generation; media and new drives in stock at multiple sellers.",
+      "notes": "Used/refurb LTO-8 drive prices not found on fetchable pages (BackupWorks reconditioned section only lists LTO-1 to LTO-4; eBay blocked). Drive prices spread widely by seller ($4.8k to $8.4k for similar SAS HH drives)."
+    },
+    "LTO-9": {
+      "nativeTB": 18,
+      "cartridge": {
+        "lowUSD": 92.45,
+        "highUSD": 111.55,
+        "datapoints": [
+          {
+            "seller": "TapeandMedia",
+            "sku": "Q2079A (HPE)",
+            "priceUSD": 94.95,
+            "url": "https://tapeandmedia.com/lto-ultrium-9-tapes/",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "priceUSD": 99.35,
+            "url": "https://tapeandmedia.com/lto-ultrium-9-tapes/",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "16659047 (Fujifilm)",
+            "priceUSD": 99.95,
+            "url": "https://tapeandmedia.com/lto-ultrium-9-tapes/",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "02XW568 (IBM)",
+            "priceUSD": 111.55,
+            "url": "https://tapeandmedia.com/lto-ultrium-9-tapes/",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "Q2079A (HPE)",
+            "priceUSD": 93.5,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "priceUSD": 96.75,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "02XW568 (IBM)",
+            "priceUSD": 97.5,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "16659047 (Fujifilm)",
+            "priceUSD": 99.5,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "Q2079A (HPE)",
+            "priceUSD": 98.5,
+            "url": "https://www.backupworks.com/LTO-9-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "02XW568 (IBM)",
+            "priceUSD": 104.5,
+            "url": "https://www.backupworks.com/LTO-9-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "16659047 (Fujifilm)",
+            "priceUSD": 101.75,
+            "url": "https://www.backupworks.com/FujiFilm-LTO-9-Tape-Media-16659047.aspx",
+            "note": "seen 2026-09-17; qty 20-59: $100.73; 100-500: $98.69"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "priceUSD": 101.75,
+            "url": "https://www.backupworks.com/LTO-9-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "16659047 (Fujifilm)",
+            "priceUSD": 98.5,
+            "url": "https://ltoworld.com/collections/lto-9-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "priceUSD": 95.75,
+            "url": "https://ltoworld.com/collections/lto-9-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "Q2079A (HPE)",
+            "priceUSD": 92.45,
+            "url": "https://ltoworld.com/collections/lto-9-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "02XW568 (IBM)",
+            "priceUSD": 106.25,
+            "url": "https://ltoworld.com/collections/lto-9-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "DatacenterDisk",
+            "sku": "Q2079A (HPE)",
+            "priceUSD": 98.99,
+            "url": "https://datacenterdisk.com/lto-tape",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "Q2079A-5 Pack (HPE 5-pack)",
+            "priceUSD": 474.75,
+            "url": "https://tapeandmedia.com/lto-ultrium-9-tapes/",
+            "note": "seen 2026-09-17; 5-pack = $94.95/unit"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "16659047-5 Pack (Fujifilm 5-pack)",
+            "priceUSD": 499.75,
+            "url": "https://tapeandmedia.com/lto-ultrium-9-tapes/",
+            "note": "seen 2026-09-17; 5-pack = $99.95/unit"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "02XW568-5 Pack (IBM 5-pack)",
+            "priceUSD": 557.75,
+            "url": "https://tapeandmedia.com/lto-ultrium-9-tapes/",
+            "note": "seen 2026-09-17; 5-pack = $111.55/unit"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "priceUSD": 1938.0,
+            "url": "https://tapeandmedia.com/lto-ultrium-9-tapes/",
+            "note": "seen 2026-09-17; 20-pack = $96.90/unit"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "Q2079AC (HPE 20-pack custom labeled)",
+            "priceUSD": 1890.0,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17; 20-pack = $94.50/unit"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L9MQN-20 (Quantum 20-pack)",
+            "priceUSD": 2260.0,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17; 20-pack = $113.00/unit"
+          },
+          {
+            "seller": "DatacenterDisk",
+            "sku": "MR-L9MQN-01 (Quantum 20-pack)",
+            "priceUSD": 1909.89,
+            "url": "https://datacenterdisk.com/lto-tape",
+            "note": "seen 2026-09-17; 20-pack = $95.49/unit"
+          },
+          {
+            "seller": "DatacenterDisk",
+            "sku": "Fujifilm LTO-9 10-pack",
+            "priceUSD": 879.99,
+            "url": "https://datacenterdisk.com/lto-tape",
+            "note": "seen 2026-09-17; 10-pack = $88.00/unit"
+          }
+        ],
+        "perTBLow": 5.14,
+        "perTBHigh": 6.2
+      },
+      "worm": {
+        "lowUSD": 124.94,
+        "highUSD": 195.0,
+        "datapoints": [
+          {
+            "seller": "Tape4Backup",
+            "sku": "02XW569 (IBM)",
+            "priceUSD": 175.0,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "priceUSD": 185.5,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "16659059 (Fujifilm)",
+            "priceUSD": 195.0,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "Q2079W (HPE)",
+            "priceUSD": 195.0,
+            "url": "https://www.tape4backup.com/collections/lto-9-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "Q2079W (HPE)",
+            "priceUSD": 138.7,
+            "url": "https://ltoworld.com/collections/lto-9-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "02XW569 (IBM)",
+            "priceUSD": 150.26,
+            "url": "https://ltoworld.com/collections/lto-9-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "16659059 (Fujifilm)",
+            "priceUSD": 124.94,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "priceUSD": 125.44,
+            "url": "https://ltoworld.com/collections/lto-8-media",
+            "note": "seen 2026-09-17; sale"
+          }
+        ],
+        "perTBLow": 6.94,
+        "perTBHigh": 10.83
+      },
+      "driveInternal": {
+        "lowUSD": 7699.0,
+        "highUSD": 13500.0,
+        "datapoints": [
+          {
+            "seller": "BackupWorks",
+            "sku": "TD-L92AN-BR (Quantum LTO-9 HH SAS bare)",
+            "priceUSD": 8480.0,
+            "url": "https://www.backupworks.com/LTO-9-Tape-Drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "TD-L92AN-FZ (Quantum LTO-9 HH SAS + HBA bundle)",
+            "priceUSD": 9250.0,
+            "url": "https://www.backupworks.com/LTO-9-Tape-Drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "TD-L92AN-BR (Quantum LTO-9 HH SAS)",
+            "priceUSD": 7699.0,
+            "url": "https://ltoworld.com/collections/internal-lto9",
+            "note": "seen 2026-09-17; new, in stock"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "SAS-HL9i (MagStor LTO-9 HH SAS internal)",
+            "priceUSD": 8009.1,
+            "url": "https://ltoworld.com/collections/internal-lto9",
+            "note": "seen 2026-09-17; new, sale (regular $12,599)"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "BC040A (HPE StoreEver LTO-9 Ultrium 45000 SAS internal)",
+            "priceUSD": 13500.0,
+            "url": "https://tapeandmedia.com/Hewlett_Packard_Enterprise_tape_storage_drive",
+            "note": "seen 2026-09-17; new, ships 3-14 days"
+          }
+        ]
+      },
+      "driveExternal": {
+        "lowUSD": 8999.0,
+        "highUSD": 13385.0,
+        "datapoints": [
+          {
+            "seller": "BackupWorks",
+            "sku": "TD-L92BN-AR (Quantum LTO-9 SAS tabletop)",
+            "priceUSD": 9883.0,
+            "url": "https://www.backupworks.com/LTO-9-Tape-Drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "SYSAS-DS2L9H1B-CT (Symply LTO-9 HH SAS desktop)",
+            "priceUSD": 9678.0,
+            "url": "https://www.backupworks.com/LTO-9-Tape-Drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop)",
+            "priceUSD": 12637.0,
+            "url": "https://www.backupworks.com/LTO-9-Tape-Drive.aspx",
+            "note": "seen 2026-09-17; new"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "TD-L92BN-AR (Quantum LTO-9 SAS desktop kit)",
+            "priceUSD": 8999.0,
+            "url": "https://ltoworld.com/collections/external-lto9-sas",
+            "note": "seen 2026-09-17; new, in stock"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop)",
+            "priceUSD": 12349.99,
+            "url": "https://ltoworld.com/collections/external-lto9-sas",
+            "note": "seen 2026-09-17; new, sale"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "BC042A (HPE StoreEver LTO-9 Ultrium 45000 external)",
+            "priceUSD": 13385.0,
+            "url": "https://tapeandmedia.com/Hewlett_Packard_Enterprise_tape_storage_drive",
+            "note": "seen 2026-09-17; new, ships 3-14 days; LTO World shows BC042A out of stock"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop)",
+            "priceUSD": 12611.0,
+            "url": "https://tapeandmedia.com/magstor-lto-10-full-height-sas-desktop-tape-drive-max-taa/",
+            "note": "seen 2026-09-17; new"
+          }
+        ]
+      },
+      "status": "Mainstream volume generation; best $/TB. Media and HH drives broadly in stock.",
+      "notes": "LTO-9 drives ran well above the roughly $5k-$7k levels seen in earlier years; a MakeUseOf piece cites an HPE LTO-9 drive at $7,179. Used/refurb LTO-9 drive prices not collected."
+    },
+    "LTO-10": {
+      "nativeTB": 30,
+      "cartridge": {
+        "lowUSD": 256.0,
+        "highUSD": 299.99,
+        "datapoints": [
+          {
+            "seller": "Tape4Backup",
+            "sku": "Q2080A (HPE, 30TB)",
+            "priceUSD": 256.0,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17; page text mislabels capacity; part number is the 30TB cartridge"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "16944686 (Fujifilm, 30TB)",
+            "priceUSD": 260.0,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "03PL170 (IBM, 30TB)",
+            "priceUSD": 261.0,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L10MQN-01 (Quantum, 30TB)",
+            "priceUSD": 286.75,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "Q2080A (HPE, 30TB)",
+            "priceUSD": 263.25,
+            "url": "https://www.backupworks.com/LTO-10-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "16944686 (Fujifilm, 30TB)",
+            "priceUSD": 295.0,
+            "url": "https://www.backupworks.com/LTO-10-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "03PL170 (IBM, 30TB)",
+            "priceUSD": 270.75,
+            "url": "https://www.backupworks.com/LTO-10-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "MR-L10MQN-01 (Quantum, 30TB)",
+            "priceUSD": 275.0,
+            "url": "https://www.backupworks.com/LTO-10-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "Q2080A (HPE)",
+            "priceUSD": 259.99,
+            "url": "https://ltoworld.com/collections/lto-10-media",
+            "note": "seen 2026-09-17; sale, regular $449.99"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "16944686 (Fujifilm)",
+            "priceUSD": 299.99,
+            "url": "https://ltoworld.com/collections/lto-10-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "03PL170 (IBM)",
+            "priceUSD": 259.99,
+            "url": "https://ltoworld.com/collections/lto-10-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "priceUSD": 259.99,
+            "url": "https://ltoworld.com/collections/lto-10-media",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "MagStor",
+            "sku": "Q2080A (HPE)",
+            "priceUSD": 259.99,
+            "url": "https://magstor.com/collections/lto-10",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "MagStor",
+            "sku": "03PL170 (IBM)",
+            "priceUSD": 260.98,
+            "url": "https://magstor.com/collections/lto-10",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "MagStor",
+            "sku": "16944686 (Fujifilm)",
+            "priceUSD": 299.99,
+            "url": "https://magstor.com/collections/lto-10",
+            "note": "seen 2026-09-17; sale"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "16944686 (Fujifilm)",
+            "priceUSD": 285.35,
+            "url": "https://tapeandmedia.com/fujifilm-lto-10-ultrium-tape-rw-data-cartridge-16944686/",
+            "note": "seen 2026-09-17; usually ships same day"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "Q2080A (HPE)",
+            "priceUSD": 263.0,
+            "url": "https://tapeandmedia.com/ibm-lto-10-ultrium-tape-rw-data-cartridge-30tb-75tb-compressed-capacity-03pl170/",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "priceUSD": 282.7,
+            "url": "https://tapeandmedia.com/ibm-lto-10-ultrium-tape-rw-data-cartridge-30tb-75tb-compressed-capacity-03pl170/",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "03PL170 (IBM)",
+            "priceUSD": 264.25,
+            "url": "https://tapeandmedia.com/ibm-lto-10-ultrium-tape-rw-data-cartridge-30tb-75tb-compressed-capacity-03pl170/",
+            "note": "seen 2026-09-17; page says 'Expect Stock approx. June 30 (price not accurate)', so excluded from range"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "16944703 (Fujifilm 20-pack library)",
+            "priceUSD": 5120.0,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17; 20-pack = $256.00/unit"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "03PL172 (IBM 20-pack library)",
+            "priceUSD": 5838.0,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17; 20-pack = $291.90/unit"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L10MQN-20 (Quantum 20-pack library)",
+            "priceUSD": 5946.0,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17; 20-pack = $297.30/unit"
+          }
+        ],
+        "perTBLow": 8.53,
+        "perTBHigh": 10.0
+      },
+      "cartridge40TB": {
+        "lowUSD": 491.0,
+        "highUSD": 555.0,
+        "datapoints": [
+          {
+            "seller": "TapeandMedia",
+            "sku": "16978170 (Fujifilm LTO-10 40TB)",
+            "priceUSD": 491.0,
+            "url": "https://tapeandmedia.com/lto-10-tape-40tb/",
+            "note": "seen 2026-09-17; in stock on category page; shown out of stock in a related-products list"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "MR-A10MQN-01 (Quantum LTO-10 40TB)",
+            "priceUSD": 555.0,
+            "url": "https://tapeandmedia.com/lto-10-tape-40tb/",
+            "note": "seen 2026-09-17; pre-order"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "16978170 (Fujifilm LTO-10 40TB)",
+            "priceUSD": 525.0,
+            "url": "https://www.backupworks.com/LTO-10-Tape-Media.aspx",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "MagStor",
+            "sku": "16978170 (Fujifilm LTO-10 40TB)",
+            "priceUSD": 499.99,
+            "url": "https://magstor.com/products/fujifilm-lto-10-ultrium-40tb-data-cartridge-lto10-16978170",
+            "note": "seen 2026-09-17; sale, regular $888.89; library pack 16978182 also listed"
+          }
+        ],
+        "perTBLow": 12.28,
+        "perTBHigh": 13.88
+      },
+      "worm": {
+        "lowUSD": 420.0,
+        "highUSD": 460.8,
+        "datapoints": [
+          {
+            "seller": "Tape4Backup",
+            "sku": "03PL171 (IBM LTO-10 WORM 30TB)",
+            "priceUSD": 420.0,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "Q2080W (HPE LTO-10 WORM 30TB)",
+            "priceUSD": 432.0,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "MR-L10MQN-02 (Quantum LTO-10 WORM 30TB)",
+            "priceUSD": 446.5,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17"
+          },
+          {
+            "seller": "Tape4Backup",
+            "sku": "16944698 (Fujifilm LTO-10 WORM 30TB)",
+            "priceUSD": 460.8,
+            "url": "https://www.tape4backup.com/collections/lto-10-tapes",
+            "note": "seen 2026-09-17"
+          }
+        ],
+        "perTBLow": 14.0,
+        "perTBHigh": 15.36
+      },
+      "driveInternal": {
+        "lowUSD": null,
+        "highUSD": null,
+        "datapoints": []
+      },
+      "driveExternal": {
+        "lowUSD": 22165.0,
+        "highUSD": 24950.0,
+        "datapoints": [
+          {
+            "seller": "BackupWorks",
+            "sku": "SYSAS-DS2LAF1B-CT (SymplyPro XTF LTO-10 FH SAS desktop)",
+            "priceUSD": 22165.0,
+            "url": "https://www.backupworks.com/LTO-10-Tape-Drives.aspx",
+            "note": "seen 2026-09-17; new, full-height"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "SAS-L10-MAX (MagStor LTO-10 FH SAS desktop)",
+            "priceUSD": 24642.0,
+            "url": "https://www.backupworks.com/LTO-10-Tape-Drives.aspx",
+            "note": "seen 2026-09-17; new, full-height"
+          },
+          {
+            "seller": "LTO World",
+            "sku": "SAS-L10-MAX (MagStor LTO-10 FH SAS desktop)",
+            "priceUSD": 23999.99,
+            "url": "https://ltoworld.com/collections/external-lto-sas-tape-drives",
+            "note": "seen 2026-09-17; new, sale (regular $25,249), in stock"
+          },
+          {
+            "seller": "TapeandMedia",
+            "sku": "SAS-L10-MAX (MagStor LTO-10 FH SAS desktop)",
+            "priceUSD": 24950.0,
+            "url": "https://tapeandmedia.com/magstor-lto-10-full-height-sas-desktop-tape-drive-max-taa/",
+            "note": "seen 2026-09-17; new, ships 1-2 business days"
+          },
+          {
+            "seller": "MagStor",
+            "sku": "TRB3-L10-MAX (MagStor LTO-10 Thunderbolt 3/USB4 desktop)",
+            "priceUSD": 25099.99,
+            "url": "https://magstor.com/products/magstor-lto-10-30tb-40tb-thunderbolt-3-usb4-slim-desktop-tape-drive-taa",
+            "note": "seen 2026-09-17; not SAS, excluded from range; sale, regular $26,399"
+          },
+          {
+            "seller": "BackupWorks",
+            "sku": "SYSAS-RS2LAF2B-CT (SymplyPro LTO-10 2U rackmount FH SAS)",
+            "priceUSD": 21875.0,
+            "url": "https://www.backupworks.com/LTO-10-Tape-Drives.aspx",
+            "note": "seen 2026-09-17; rackmount, excluded from desktop range"
+          }
+        ]
+      },
+      "status": "Current generation. Only full-height drives on the market; no half-height LTO-10 drive listed at any seller checked (Symply had expected HH in Q2 2026, the LTO Program said late 2026). Tape4Backup LTO-10 drive collection is empty. 30TB media broadly in stock; 40TB media in stock from Fujifilm, Quantum 40TB on pre-order. IBM 40TB cartridges (models 564/664, 20- and 5-packs) became available 2026-03-06 per IBM announcement; no street price seen.",
+      "notes": "LTO-10 drives cannot read or write older LTO generations. driveInternal: no bare internal standalone LTO-10 drive price found at HPE/IBM/Quantum resellers checked; only library add-on drives (e.g. Qualstar Q-Series LTO-10 SAS FH add-on 800-0110-0 at $23,509 on BackupWorks). No HPE StoreEver LTO-10 standalone drive or price found. The 40TB cartridge needs an LTO-10 drive (existing FH drives accept it; IBM says its 40TB cartridges work only in IBM LTO-10 drives). LTO-10 40TB WORM: not found."
+    }
+  },
+  "marketNotes": [
+    {
+      "text": "Tape4Backup shows a site-wide banner: 'From September 1st, 2026, all LTO Tape prices have increased.' Despite that, its LTO-9 singles ($93.50-$99.50) and LTO-10 30TB singles ($256-$286.75) sit in line with other sellers.",
+      "url": "https://www.tape4backup.com/collections/lto-9-tapes"
+    },
+    {
+      "text": "Trend vs early 2026: LTO-9 cartridges flat (Symply quoted about $94 in Feb 2026; now $92-$112). LTO-10 30TB roughly flat to slightly down (Symply ~$280 in Feb 2026; now $256-$300). LTO-10 40TB lower than expected launch price (Symply expected ~$570 or $14.25/TB; now $491-$555 or $12.28-$13.88/TB). Symply blamed the 40TB premium on launch pricing, tight Aramid base film supply and hyperscaler deals.",
+      "url": "https://gosymply.com/lto-10-40tb-update-is-the-extra-10tb-worth-the-cost/"
+    },
+    {
+      "text": "DatacenterDisk (published 2026-08-17, data updated 2026-09-17): LTO tape 'largely stable at $4-6/TB' while HDD prices rose sharply in 2026; tape's $/TB edge over HDD widened from about 2x to 3.5x. The stated reason is an independent supply chain (Fujifilm and Sony in Japan) that avoids the NAND shortage and hyperscale HDD demand.",
+      "url": "https://datacenterdisk.com/news/hard-drive-prices-up-50-percent-2026"
+    },
+    {
+      "text": "LTO Program (Sept 2026): 160.3 EB of LTO capacity shipped in 2025 (down 9% from the 176.5 EB record in 2024); Q1 2026 shipped capacity up 57% YoY, driven by LTO-9 adoption and the LTO-10 ramp; 2026 expected to set a new record.",
+      "url": "https://www.lto.org/2026/09/lto-capacity-shipments-grow-57-yoy-in-q1-2026-as-ai-and-archive-demand-accelerates/"
+    },
+    {
+      "text": "The Register (2026-09-02): only Sony and Fujifilm make LTO cartridges. Analyst Tom Coughlin tied the 2025 dip to 'the evolving international trade environment' making buyers more cautious (tariff-related caution, but no price figure given).",
+      "url": "https://www.theregister.com/storage/2026/09/02/tape-still-isnt-dead-but-shipments-slipped-by-16-exabytes-in-2025/5293813"
+    },
+    {
+      "text": "Blocks & Files (2026-09-04): suggests the 2025 dip may reflect buyers waiting for LTO-10; projects 2026 could reach about 251.67 EB if Q1 pace holds.",
+      "url": "https://www.blocksandfiles.com/tape/2026/09/04/tape-capacity-shipments-fell-in-2025-but-2026-could-be-a-boom-year-for-tape/5294464"
+    },
+    {
+      "text": "Fujifilm LTO Ultrium 10 40TB cartridge (16978170) uses an aramid base film and began shipping January 2026; it works in existing LTO-10 drives. IBM 40TB cartridges (models 564/664) available 2026-03-06.",
+      "url": "https://www.storagenewsletter.com/2026/01/15/ibm-lto-10-40tb-data-cartridges-models-564-and-664/"
+    },
+    {
+      "text": "Half-height LTO-10 drives: Symply support article said HH drives expected Q2 2026 (FH first because of the new head guide assembly). No HH LTO-10 drive was listed at any seller checked on 2026-09-17.",
+      "url": "https://support.gosymply.com/support/solutions/articles/80001179382-about-lto-10"
+    },
+    {
+      "text": "Not found / blocked: Amazon, B&H, CDW, Connection, HPE Store, eBay, ServerSupply and several refurb sites returned 403 or showed no price, so big-box and used-market prices are missing. A Fujifilm camera price increase (Aug-Sep 2026) turned up in searches but is unrelated to LTO media; no Fujifilm LTO price-increase notice for 2026 was found (the last confirmed one was July 2024: +15% LTO-9, +40% LTO-7/8).",
+      "url": "https://www.fujifilm.com/us/en/news/LTO_Price_Increase_May_2024"
+    }
+  ]
+}

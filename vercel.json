@@ -1,89 +1,25 @@
 {
-  "rewrites": [
-    {
-      "source": "/assets/:path*",
-      "destination": "/assets/:path*"
-    },
-    {
-      "source": "/styles.css",
-      "destination": "/styles.css"
-    },
-    {
-      "source": "/tape-q-and-a.css",
-      "destination": "/tape-q-and-a.css"
-    },
-    {
-      "source": "/blog-static.css",
-      "destination": "/blog-static.css"
-    },
-    {
-      "source": "/favicon.png",
-      "destination": "/favicon.png"
-    },
-    {
-      "source": "/og-image.png",
-      "destination": "/og-image.png"
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "/robots.txt"
-    },
-    {
-      "source": "/llms.txt",
-      "destination": "/llms.txt"
-    },
-    {
-      "source": "/llms-full.txt",
-      "destination": "/llms-full.txt"
-    },
-    {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
-    },
-    {
-      "source": "/tape-q-and-a",
-      "destination": "/tape-q-and-a.html"
-    },
-    {
-      "source": "/tape-q-and-a/:slug",
-      "destination": "/tape-q-and-a/:slug/index.html"
-    },
-    {
-      "source": "/blog",
-      "destination": "/blog/index.html"
-    },
-    {
-      "source": "/blog/:slug",
-      "destination": "/blog/:slug/index.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto10-price",
-      "destination": "/lto10-price.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto9-price",
-      "destination": "/lto9-price.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto8-price",
-      "destination": "/lto8-price.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto7-price",
-      "destination": "/lto7-price.html"
-    },
-    {
-      "source": "/lto-tape-price-trend/lto6-price",
-      "destination": "/lto6-price.html"
-    },
-    {
-      "source": "/:path*",
-      "destination": "/index.html"
-    }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tapebackup.org"
+        }
+      ],
+      "destination": "https://tapebackup.org/:path*",
+      "permanent": true
+    },
+    {
       "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
       "destination": "/",
       "permanent": true
     },
@@ -103,14 +39,54 @@
       "permanent": true
     },
     {
+      "source": "/tape-q-and-a.html",
+      "destination": "/tape-q-and-a",
+      "permanent": true
+    },
+    {
       "source": "/lto-tape-price-inquiry",
       "destination": "/lto-tape-price-trend",
+      "permanent": true
+    },
+    {
+      "source": "/lto-tape-price-trend/drive-price",
+      "destination": "/lto-tape-price-trend#summary",
+      "permanent": true
+    },
+    {
+      "source": "/lto-tape-price-trend/lto:gen(\\d+)",
+      "destination": "/lto-tape-price-trend/lto:gen-price",
+      "permanent": true
+    },
+    {
+      "source": "/lto:gen(\\d+)-price",
+      "destination": "/lto-tape-price-trend/lto:gen-price",
+      "permanent": true
+    },
+    {
+      "source": "/lto:gen(\\d+)-price.html",
+      "destination": "/lto-tape-price-trend/lto:gen-price",
+      "permanent": true
+    },
+    {
+      "source": "/tape-backup-calculator",
+      "destination": "/backup-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/about",
       "permanent": true
     }
   ],
   "headers": [
     {
-      "source": "/assets/:path*",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
