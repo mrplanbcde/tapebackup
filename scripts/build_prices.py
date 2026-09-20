@@ -166,6 +166,18 @@ GEN_COPY = {
 }
 
 
+def answer_sentence(gen, g):
+    """One quotable, dated sentence answering 'how much does <gen> cost' (snippets and AI answers)."""
+    c, wi, de = g["cartridge"], g.get("driveInternal", {}), g.get("driveExternal", {})
+    s = f"As of {CURRENT_DATE_TEXT}, a new {gen} tape ({g['nativeTB']:g} TB native) costs {rng(c, True)}, or {per_tb(c)} per TB"
+    drives = []
+    if wi.get("lowUSD") is not None:
+        drives.append(f"internal drives {rng(wi, False)}")
+    if de.get("lowUSD") is not None:
+        drives.append(f"external drives {rng(de, False)}")
+    return s + ("; " + " and ".join(drives) if drives else "") + "."
+
+
 def gen_faqs(gen, g):
     c, wi, de = g["cartridge"], g.get("driveInternal", {}), g.get("driveExternal", {})
     faqs = [
@@ -273,7 +285,7 @@ def build_gen_page(gen, g, history, current):
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
 <p class="eyebrow">{gen} price · updated {CURRENT_LABEL}</p>
 <h1>{gen} Price Guide</h1>
-<p>{esc(copy['lead'])}</p>
+<p><strong>{esc(answer_sentence(gen, g))}</strong> {esc(copy['lead'])}</p>
 <div class="signal-row"><span class="signal-chip">{esc(cap_text)}</span><span class="signal-chip">Tapes {esc(short_rng(c))}</span><span class="signal-chip">Checked {CURRENT_DATE_TEXT}</span></div>
 </div>
 <aside class="hero-panel"><p class="panel-label">Buyer summary</p><p class="panel-copy">{esc(copy['verdict'])}</p>
@@ -346,7 +358,7 @@ def build_hub(current, history):
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
 <p class="eyebrow">LTO price tracker · {CURRENT_LABEL}</p>
 <h1>LTO Tape Prices: LTO-6 to LTO-10</h1>
-<p>Current cartridge and drive prices for every LTO generation still on sale, taken from seller listings on {CURRENT_DATE_TEXT}, with cost per terabyte and links to each earlier snapshot.</p>
+<p><strong>As of {CURRENT_DATE_TEXT}, the cheapest LTO media per terabyte is LTO-9 at {rng(gens['LTO-9']['cartridge'], True)} per 18 TB cartridge ({per_tb(gens['LTO-9']['cartridge'])} per TB); LTO-10 30 TB cartridges cost {rng(gens['LTO-10']['cartridge'], True)}.</strong> Current cartridge and drive prices for every LTO generation still on sale, taken from seller listings on {CURRENT_DATE_TEXT}, with cost per terabyte and links to each earlier snapshot.</p>
 <div class="signal-row"><span class="signal-chip">{sum(len(gens[g][k]['datapoints']) for g in GENS for k in ('cartridge', 'worm', 'driveInternal', 'driveExternal') if k in gens[g])} listings checked</span><span class="signal-chip">LTO-9 cheapest per TB</span><span class="signal-chip">Updated {CURRENT_DATE_TEXT}</span></div>
 </div>
 <aside class="hero-panel"><p class="panel-label">At a glance</p><p class="panel-copy">LTO-9 media has the lowest cost per native terabyte. LTO-10 30 TB tapes have settled around $256 to $300, and the 40 TB cartridge is now in stock. Drives cost far more than earlier estimates suggested.</p>

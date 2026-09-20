@@ -79,6 +79,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://tapebackup.org/resources/lto-tape-migration</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/resources/tape-storage-market</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tapebackup.org/backup-calculator</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -92,61 +104,61 @@
   </url>
   <url>
     <loc>https://tapebackup.org/best-tape-backup-software</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/why-tape</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/why-tape/lto-tape-drive</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/why-tape/lto-vs-hdd</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/comparisons</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-brand</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/resources</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/resources/cheap-lto-tapes</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/resources/tape-backup-software/catalogicdpx</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/about</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -271,73 +283,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tapebackup.org/tape-q-and-a/ai-analytics-storage-at-scale</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/ai-media-workflow-automation</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/collaborative-video-production-archive</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/how-can-creative-teams-quickly-deploy-a-media-asset-management-system-to-organize-and-search-growing-video-libraries</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/how-can-organizations-design-storage-architectures-that-reliably-support-the-performance-demands-of-large-scale-4k-video-production-workflows</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/how-can-organizations-test-and-evaluate-enterprise-backup-storage-solutions-before-deploying-them-in-production-environments</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/how-is-nvme-technology-changing-storage-architectures-for-modern-media-and-entertainment-production-workflows</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/how-should-media-organizations-evaluate-different-storage-options-when-building-a-long-term-archive-strategy-for-large-video-and-media-content-libraries</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/hybrid-cloud-object-storage</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://tapebackup.org/tape-q-and-a/mainframe-open-systems-archive</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/modern-backup-infrastructure</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/modern-data-infrastructure-for-ai</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -349,37 +295,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tapebackup.org/tape-q-and-a/resilient-data-protection-architecture</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://tapebackup.org/tape-q-and-a/what-are-the-recommended-packaging-practices-for-shipping-enterprise-tape-cartridges-safely-for-return-or-transport</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/what-challenges-do-media-organizations-face-when-transitioning-from-traditional-hd-production-to-modern-4k-video-workflows</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/what-factors-should-organizations-consider-when-choosing-between-cloud-storage-and-on-premises-solutions-for-long-term-media-archives</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/what-infrastructure-and-workflow-changes-are-required-when-media-organizations-transition-from-hd-production-to-full-4k-content-creation</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/what-storage-strategies-can-help-modern-content-creators-manage-growing-media-libraries-while-keeping-infrastructure-costs-under-control</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -392,12 +308,6 @@
   </url>
   <url>
     <loc>https://tapebackup.org/tape-q-and-a/what-warranty-protections-are-commonly-provided-for-enterprise-tape-media-cartridges-used-in-backup-and-archival-storage-systems</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tapebackup.org/tape-q-and-a/why-is-it-important-for-organizations-managing-large-media-libraries-to-carefully-plan-their-long-term-archive-storage-strategy</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

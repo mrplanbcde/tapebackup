@@ -18,6 +18,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+import build_articles  # noqa: E402
 import build_pages  # noqa: E402
 import build_prices  # noqa: E402
 from site_shell import GENS, ROOT, SITE, esc, slug_for  # noqa: E402
@@ -71,6 +72,100 @@ def apply_qa_noindex():
     return slugs
 
 
+PANEL_RE = re.compile(r'<p class="panel-label">(?:Reader note|Why this page exists|Short answer|In short)</p>\s*<p class="panel-copy">.*?</p>', re.S)
+
+GUIDE_LINKS = [
+    (("price", "cheap", "cost", "buy", "dollar", "500", "000"), "/lto-tape-price-trend", "LTO tape prices, September 2026"),
+    (("software", "script", "linux", "built"), "/best-tape-backup-software", "Best tape backup software in 2026"),
+    (("drive", "sas", "rogue", "lto-6", "lto-8", "paperweight"), "/why-tape/lto-tape-drive", "How LTO tape drives work"),
+    (("offsite", "archive", "strategy", "disks", "hard"), "/why-tape/lto-vs-hdd", "LTO tape vs HDD for long-term storage"),
+    (("home", "libraries", "used"), "/resources/cheap-lto-tapes", "How to buy used LTO tapes safely"),
+]
+
+
+def first_sentences(text, limit=320):
+    parts = re.split(r"(?<=[.!?])\s+", text.strip())
+    out = ""
+    for part in parts:
+        if len(out) + len(part) > limit and out:
+            break
+        out = (out + " " + part).strip()
+    return out
+
+
+def answer_first_panels():
+    """AEO: swap the boilerplate hero side panel for a quotable short answer (Q&A) or summary (blog)."""
+    changed = 0
+    for f in glob.glob(rel("tape-q-and-a", "*", "index.html")) + glob.glob(rel("blog", "*", "index.html")):
+        s = open(f, encoding="utf-8").read()
+        if "/tape-q-and-a/" in f:
+            block = re.search(r'<div class="answer-copy">(.*?)</div>', s, re.S)
+            paras = [html.unescape(re.sub(r"<[^>]+>", "", p)).strip() for p in re.findall(r"<p>(.*?)</p>", block.group(1), re.S)] if block else []
+            if not paras:
+                continue
+            label, text = "Short answer", first_sentences(" ".join(paras))
+        else:
+            m = re.search(r'<meta name="description" content="([^"]*)"', s)
+            label, text = "In short", html.unescape(m.group(1)) if m else ""
+        new = PANEL_RE.sub(lambda _: f'<p class="panel-label">{label}</p>\n            <p class="panel-copy">{esc(text)}</p>', s, count=1)
+        if new != s:
+            open(f, "w", encoding="utf-8").write(new)
+            changed += 1
+    return changed
+
+
+def blog_related_links():
+    """Internal linking: every post links to 3 related posts and 2 matching guides (posts had only the blog index linking in)."""
+    posts = {}
+    for f in glob.glob(rel("blog", "*", "index.html")):
+        slug = f.split(os.sep)[-2]
+        s = open(f, encoding="utf-8").read()
+        h = re.search(r'"headline":"(.*?)","description"', s, re.S)
+        title = json.loads('"' + h.group(1) + '"') if h else slug
+        d = re.search(r'<meta name="description" content="([^"]*)"', s)
+        text = (title + " " + (html.unescape(d.group(1)) if d else "")).lower()
+        stop = {"about", "their", "there", "these", "those", "which", "while", "where", "until", "being", "every", "still", "really", "without", "because", "people"}
+        posts[slug] = (f, title, set(w for w in re.findall(r"[a-z0-9-]+", text) if len(w) > 4 and w not in stop))
+    for slug, (f, title, words) in posts.items():
+        others = sorted((len(words & w2), s2) for s2, (_, _, w2) in posts.items() if s2 != slug)
+        picks = [s2 for _, s2 in reversed(others)][:3]
+        guides = [(u, t) for keys, u, t in GUIDE_LINKS if any(k in slug for k in keys)][:2] or [("/lto-tape-price-trend", "LTO tape prices, September 2026"), ("/why-tape", "Why use tape storage")]
+        items = "".join(f'<li><a href="/blog/{p}">{esc(posts[p][1])}</a></li>' for p in picks) + "".join(f'<li><a href="{u}">{esc(t)}</a></li>' for u, t in guides)
+        html_block = f'<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul>{items}</ul></section><!-- related:end -->'
+        s = open(f, encoding="utf-8").read()
+        s = re.sub(r"<!-- related:start -->.*?<!-- related:end -->", "", s, flags=re.S)
+        if "</main>" in s:
+            s = s.replace("</main>", html_block + "\n      </main>", 1)
+        else:
+            s = s.replace("<footer", html_block + "\n<footer", 1)
+        open(f, "w", encoding="utf-8").write(s)
+    return len(posts)
+
+
+def qa_page_schema():
+    """Each Q&A page is one question with one answer: mark it up as QAPage so answer engines can use it."""
+    n = 0
+    for f in glob.glob(rel("tape-q-and-a", "*", "index.html")):
+        s = open(f, encoding="utf-8").read()
+        q = re.search(r"<h1>(.*?)</h1>", s, re.S)
+        block = re.search(r'<div class="answer-copy">(.*?)</div>', s, re.S)
+        if not q or not block:
+            continue
+        question = html.unescape(re.sub(r"<[^>]+>", "", q.group(1))).strip()
+        answer = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", block.group(1)))).strip()
+        slug = f.split(os.sep)[-2]
+        ld = {"@context": "https://schema.org", "@type": "QAPage", "mainEntity": {"@type": "Question", "name": question,
+              "text": question, "answerCount": 1, "acceptedAnswer": {"@type": "Answer", "text": answer,
+              "url": f"{SITE}/tape-q-and-a/{slug}"}}}
+        tag = '<script type="application/ld+json" data-qa-schema>' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+        s2 = re.sub(r'<script type="application/ld\+json" data-qa-schema>.*?</script>\n?', "", s, flags=re.S)
+        s2 = s2.replace("</head>", tag + "\n  </head>", 1)
+        if s2 != s:
+            open(f, "w", encoding="utf-8").write(s2)
+            n += 1
+    return n
+
+
 def git_date(file):
     try:
         out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", file], cwd=ROOT, capture_output=True, text=True).stdout.strip()
@@ -100,7 +195,7 @@ def build_sitemap(today):
     hist = json.load(open(rel("data", "price-history.json"), encoding="utf-8"))
     for snap in hist["snapshots"]:
         entries.append((f"/lto-tape-price-trend/{snap['slug']}", snap["published"], "0.5", "yearly"))
-    for path in ["/backup-calculator", "/backup-software-finder", "/best-tape-backup-software", "/why-tape", "/why-tape/lto-tape-drive", "/why-tape/lto-vs-hdd",
+    for path in ["/resources/lto-tape-migration", "/resources/tape-storage-market", "/backup-calculator", "/backup-software-finder", "/best-tape-backup-software", "/why-tape", "/why-tape/lto-tape-drive", "/why-tape/lto-vs-hdd",
                  "/comparisons", "/lto-tape-brand", "/resources", "/resources/cheap-lto-tapes", "/resources/tape-backup-software/catalogicdpx", "/about", "/contact"]:
         add(path, idx(path), "0.7", "monthly")
     add("/blog", rel("blog", "index.html"), "0.8", "weekly")
@@ -192,9 +287,11 @@ def build_llms(current):
 
 def main():
     price_paths, current = build_prices.build_all()
-    page_paths = build_pages.build_all(current)
+    page_paths = build_pages.build_all(current) + build_articles.build_all(current)
     n = apply_meta_overrides()
     apply_qa_noindex()
+    print(f"QAPage schema: {qa_page_schema()}")
+    print(f"answer-first panels: {answer_first_panels()}, blog posts with related links: {blog_related_links()}")
     for f in glob.glob(rel("blog", "*", "index.html")) + glob.glob(rel("tape-q-and-a", "*", "index.html")):
         t = re.search(r"<title>(.*?)</title>", open(f, encoding="utf-8").read(), re.S)
         if t and len(html.unescape(t.group(1))) > 60:

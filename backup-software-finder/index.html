@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="/tape-q-and-a.css" />
 <link rel="stylesheet" href="/pages.css" />
 <script defer src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which backup software is best for tape libraries?", "acceptedAnswer": {"@type": "Answer", "text": "Catalogic DPX has the widest drive and library support and handles NDMP, which matters for NAS backups. Veeam and Commvault support tape well as a secondary copy in larger virtual estates."}}, {"@type": "Question", "name": "Can I back up Microsoft 365 to tape?", "acceptedAnswer": {"@type": "Answer", "text": "Not directly. Back up the SaaS data with a tool such as Veeam for Microsoft 365, then copy its repository to tape if you need an offline or long-retention copy."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tapebackup.org/"}, {"@type": "ListItem", "position": 2, "name": "Software finder", "item": "https://tapebackup.org/backup-software-finder"}]}</script>
 </head>
 <body class="price-page">
@@ -44,6 +45,7 @@
 </div></header>
 <section class="hero"><div class="container hero-grid"><div class="hero-copy">
 <p class="eyebrow">Tool</p><h1>Tape Backup Software Finder</h1>
+<p><strong>If tape is your main archive, Catalogic DPX is usually the best fit; for mostly virtual estates using tape as a second copy, Veeam; for small environments on a budget, Nakivo.</strong></p>
 <p>Hardware is half the job. Answer four questions to get a shortlist of backup software that fits how you use tape, the size of your estate and your budget.</p></div>
 <aside class="hero-panel"><p class="panel-label">Want the detail?</p><p class="panel-copy">Read the full <a href="/best-tape-backup-software">best tape backup software comparison</a> or the <a href="/resources/tape-backup-software/catalogicdpx">Catalogic DPX review</a>.</p></aside></div></section>
 <main class="page"><div class="container"><div class="section-stack">
@@ -52,6 +54,7 @@
 <div class="tool-result" id="finder-result" hidden aria-live="polite"></div></section>
 <section class="section-card"><p class="eyebrow">Shortlist</p><h2>Software this finder recommends from</h2>
 <ul><li><strong>Catalogic DPX</strong>: tape-focused enterprise backup with broad drive, library and NDMP support.</li><li><strong>Veeam Backup &amp; Replication</strong>: the common choice for virtualized estates, with tape jobs as a secondary target.</li><li><strong>Commvault</strong>: large, feature-rich platform with deep cloud integration.</li><li><strong>Nakivo</strong>: lower-cost option for smaller environments that need basic tape support.</li><li><strong>Veeam for Microsoft 365 and CloudCasa</strong>: SaaS and Kubernetes backup.</li></ul></section>
+<section class="faq-grid" aria-label="Software finder FAQ"><article class="faq-card"><h3>Which backup software is best for tape libraries?</h3><p>Catalogic DPX has the widest drive and library support and handles NDMP, which matters for NAS backups. Veeam and Commvault support tape well as a secondary copy in larger virtual estates.</p></article><article class="faq-card"><h3>Can I back up Microsoft 365 to tape?</h3><p>Not directly. Back up the SaaS data with a tool such as Veeam for Microsoft 365, then copy its repository to tape if you need an offline or long-retention copy.</p></article></section>
 </div></div></main>
 <script>
 (function(){

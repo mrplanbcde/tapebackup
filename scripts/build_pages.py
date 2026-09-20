@@ -49,6 +49,154 @@ PRICE_FIXES = [
 
 DROP_SECTIONS = {"Downloadable Resources"}
 
+# AEO: a direct, quotable answer shown first on each guide (checked against the page content and Sep 2026 prices).
+ANSWERS = {
+    "/why-tape": "Tape is used for archives because it has the lowest cost per terabyte for data you rarely read (about $5 to $6 per TB on LTO-9 in September 2026), a cartridge on a shelf is offline and out of reach of ransomware, and it draws no power when idle.",
+    "/why-tape/lto-tape-drive": "An LTO tape drive reads and writes Linear Tape-Open cartridges. Each generation roughly doubles capacity (LTO-9 holds 18 TB native, LTO-10 holds 30 TB or 40 TB), and drives up to LTO-9 read and write the previous generation, while LTO-10 drives only use LTO-10 media.",
+    "/why-tape/lto-vs-hdd": "For long-term archives LTO tape usually beats hard drives: cartridges are rated for decades on a shelf, cost less per terabyte and sit offline. Hard drives win when you need fast random access or only store a few terabytes.",
+    "/comparisons": "Tape is cheapest for large, rarely read archives and gives an offline copy; disk is best for fast restores of recent data; cloud is easiest for offsite copies but costs more over time and charges to get data back. Most teams combine disk for recent backups with tape or cloud for long-term copies.",
+    "/best-tape-backup-software": "The best tape backup software depends on how central tape is: Catalogic DPX is strongest when tape is the main archive target, Veeam and Commvault suit virtualized or large mixed estates that use tape as a secondary copy, and Nakivo is a lower-cost option for small environments.",
+    "/resources": "Start with the LTO price tracker for current tape and drive prices, the buying guide for used tapes, the backup software comparison, and the official LTO Program site for specifications.",
+    "/resources/cheap-lto-tapes": "Used LTO tapes are safe to buy if you verify them before trusting data to them: buy from sellers who state load counts and offer returns, avoid unknown-history bulk lots, and run a full write and read-back test on every cartridge.",
+    "/resources/tape-backup-software/catalogicdpx": "Catalogic DPX is enterprise backup software with strong native tape support: it drives most LTO drives and libraries, handles NDMP, supports disk-to-tape and direct-to-tape jobs, and encrypts tape copies for air-gapped retention.",
+    "/lto-tape-brand": "Only Fujifilm and Sony manufacture LTO tape. HPE, IBM, Quantum and Dell cartridges contain tape from one of those two, so any certified cartridge of the right generation works in any brand of LTO drive.",
+    "/about": "TapeBackup.org is an independent resource on LTO tape backup that tracks tape and drive prices from seller listings and explains how to buy and run tape. It is not affiliated with the LTO Program or any vendor."
+}
+
+
+GUIDE_FAQS = {
+    "/why-tape": [
+        [
+            "Is tape backup still used in 2026?",
+            "Yes. The LTO Program reported 160.3 exabytes of LTO capacity shipped in 2025, and shipped capacity in the first quarter of 2026 was 57% higher than a year earlier. Tape is used for long-term archives, offline copies and compliance retention rather than day-to-day restores."
+        ],
+        [
+            "How much does tape cost per terabyte?",
+            "New LTO-9 cartridges cost about $5.14 to $6.20 per native terabyte in September 2026, and LTO-8 about $5.83 to $6.67. A drive is a separate one-off cost, from roughly $4,850 for LTO-8 to $13,500 for LTO-9."
+        ],
+        [
+            "How does tape protect against ransomware?",
+            "A cartridge that has been removed from the drive is offline, so no network attack can reach it. WORM cartridges add a second layer by physically preventing overwrites, and LTO drives support hardware AES-256 encryption for tapes that leave the building."
+        ],
+        [
+            "How long does LTO tape last?",
+            "LTO cartridges are rated for about 30 years of archival life in controlled storage. The practical limit is usually drive availability rather than the media, because a drive generation only reads one or two generations back."
+        ]
+    ],
+    "/why-tape/lto-tape-drive": [
+        [
+            "Which LTO tapes work in which drive?",
+            "From LTO-8 onwards a drive reads and writes its own generation and the one before it. LTO-9 drives use LTO-9 and LTO-8 media; LTO-10 drives are the exception and use LTO-10 media only, so keep an older drive if you still need to read LTO-9 or earlier tapes."
+        ],
+        [
+            "How fast is an LTO tape drive?",
+            "LTO-9 writes at up to 400 MB/s native, which is about 1.4 TB per hour. Real throughput depends on whether your source can feed the drive steadily; if it cannot, the drive stops and repositions, which is slower and wears the media."
+        ],
+        [
+            "Do I need a special card for a tape drive?",
+            "Yes, almost always. Standalone LTO drives are SAS, so the host needs a SAS HBA and the right cable. Thunderbolt models exist for workstations and cost more."
+        ],
+        [
+            "Should I buy an internal or external drive?",
+            "Internal half-height drives are cheaper and fit a server or library. External desktop units include a power supply and enclosure and cost roughly $1,000 to $2,000 more for the same mechanism."
+        ]
+    ],
+    "/why-tape/lto-vs-hdd": [
+        [
+            "Is tape cheaper than hard drives?",
+            "For capacity you keep and rarely read, yes, once you pass the cost of the drive. LTO-9 media costs about $5 to $6 per TB against roughly $15 to $30 per TB for enterprise hard drives, but a tape drive costs thousands up front, so small archives stay cheaper on disk."
+        ],
+        [
+            "Which lasts longer, tape or a hard drive?",
+            "Tape. Cartridges are rated for about 30 years in storage, while hard drives are typically replaced every three to seven years and degrade when left unpowered for long periods."
+        ],
+        [
+            "Is tape slower than disk?",
+            "For a single file, yes: a tape has to load and wind to the right spot, which takes tens of seconds to minutes. For large sequential reads and writes an LTO-9 drive at 400 MB/s keeps up with most disk arrays."
+        ]
+    ],
+    "/comparisons": [
+        [
+            "Is tape or cloud cheaper for a long-term archive?",
+            "Cloud archive tiers are cheaper to start because there is no hardware to buy; tape wins over several years at scale because the media is a one-off cost and reading it back is free. The break-even depends on how much you store, how long you keep it and how often you restore."
+        ],
+        [
+            "What is the 3-2-1 backup rule?",
+            "Keep three copies of your data on two different kinds of media with one copy offsite. Tape is commonly the offsite or offline copy because a cartridge can be removed and stored elsewhere."
+        ],
+        [
+            "Can I use tape and cloud together?",
+            "Yes, and most teams do. Recent backups sit on disk for fast restores, an offline tape copy covers ransomware and long retention, and a cloud copy covers site loss."
+        ]
+    ],
+    "/resources/cheap-lto-tapes": [
+        [
+            "Is it safe to buy used LTO tapes?",
+            "It can be, if you test them. Buy from sellers who state the load count and accept returns, avoid unknown-history bulk lots, and write and read back a full cartridge before trusting any data to it."
+        ],
+        [
+            "How many times can an LTO tape be used?",
+            "LTO cartridges are specified for hundreds of full file passes, but a used tape's remaining life is unknown unless the seller shares the load count. Drives log this in the cartridge memory, which your backup software can read."
+        ],
+        [
+            "Are cheap LTO tapes fake?",
+            "Counterfeit and relabelled cartridges do appear in marketplace listings, often as an older generation relabelled as a newer one. A drive will reject or misreport these, which is another reason to test before use."
+        ]
+    ],
+    "/lto-tape-brand": [
+        [
+            "Does the brand of LTO tape matter?",
+            "Not much. Only Fujifilm and Sony make LTO tape, so an HPE, IBM, Quantum or Dell cartridge contains tape from one of them. Any certified cartridge of the right generation works in any brand of LTO drive."
+        ],
+        [
+            "Why do some brands cost more?",
+            "Price differences come from packaging, barcode labelling, warranty terms and the reseller channel rather than the tape itself. Pre-labelled library packs and WORM versions carry a premium."
+        ],
+        [
+            "Do tape libraries require matching media?",
+            "No. Libraries need the right generation and, for automation, barcode labels in the format the library expects. The brand on the shell is not a requirement."
+        ]
+    ],
+    "/best-tape-backup-software": [
+        [
+            "What software do I need to write to LTO tape?",
+            "Any backup product with native tape support, or LTFS if you want to use the tape like a filesystem. LTFS is free and good for media archives; backup software adds catalogues, scheduling, verification and retention."
+        ],
+        [
+            "Is LTFS enough on its own?",
+            "For a small media archive, often yes. It breaks down when you need a searchable catalogue across many cartridges, automated rotation, verification records or multi-copy retention policies."
+        ],
+        [
+            "Which backup software is cheapest for tape?",
+            "Catalogic DPX is usually the lowest total cost when tape is the main target, and Nakivo is the cheaper option for small environments. Veeam and Commvault cost more but cover large virtual estates more thoroughly."
+        ]
+    ],
+    "/backup-calculator": [
+        [
+            "How many LTO tapes do I need?",
+            "Divide your data by the native capacity of the generation and multiply by the number of copies, ignoring compression: 100 TB with two copies is about 12 LTO-9 cartridges. Compression only helps with compressible data and should not be counted on for planning."
+        ],
+        [
+            "When is tape cheaper than disk or cloud?",
+            "From roughly 15 TB upwards, once the cost of the drive is spread across enough cartridges. Below that, a NAS plus a cloud cold tier is usually cheaper and simpler."
+        ],
+        [
+            "Does compression change the number of tapes?",
+            "Only for compressible data. Vendors quote 2.5:1, but video, images and encrypted files are already compressed and store close to native capacity."
+        ]
+    ],
+    "/backup-software-finder": [
+        [
+            "Which backup software is best for tape libraries?",
+            "Catalogic DPX has the widest drive and library support and handles NDMP, which matters for NAS backups. Veeam and Commvault support tape well as a secondary copy in larger virtual estates."
+        ],
+        [
+            "Can I back up Microsoft 365 to tape?",
+            "Not directly. Back up the SaaS data with a tool such as Veeam for Microsoft 365, then copy its repository to tape if you need an offline or long-retention copy."
+        ]
+    ]
+}
+
 
 def clean_inline(node):
     """Return sanitized inline HTML for a node."""
@@ -153,6 +301,8 @@ def build_legacy(path, key, title, desc):
         raw = json.load(f)["html"]
     soup = BeautifulSoup(raw, "html.parser")
     flow = render_flow(soup)
+    flow = re.sub(r"<li>(?:\s*[\u2713\u2714\u221a\u2022\u2705]\s*)+", "<li>", flow)
+    flow = re.sub(r"<p>(?:\s*[\u2713\u2714\u221a\u2705]\s*)+</p>", "", flow)
     for old, new in PRICE_FIXES:
         flow = flow.replace(esc(old).replace("&#x27;", "'"), esc(new)).replace(old, new)
     h1 = re.search(r"<h1>(.*?)</h1>", flow)
@@ -171,6 +321,8 @@ def build_legacy(path, key, title, desc):
 <a href="/lto-tape-price-trend/history">LTO price history<span>Snapshots since September 2025</span></a>
 <a href="/backup-calculator">Backup calculator<span>Cartridges and cost for your data</span></a>
 <a href="/backup-software-finder">Software finder<span>Match software to your tape use</span></a>
+<a href="/resources/lto-tape-migration">LTO tape migration<span>Move an archive to newer media</span></a>
+<a href="/resources/tape-storage-market">Tape storage market<span>Shipments, supply and prices</span></a>
 <a href="/lto-tape-brand">LTO tape brands<span>Who really makes the tape</span></a>
 <a href="/tape-q-and-a">Tape Q&amp;A<span>Short answers to tape questions</span></a></div></section>"""
     if "$" in body_sections and path in ("/why-tape/lto-tape-drive", "/about", "/resources/cheap-lto-tapes", "/comparisons", "/why-tape"):
@@ -181,11 +333,17 @@ def build_legacy(path, key, title, desc):
         parent = "/" + segs[0]
         crumbs.append((LEGACY[parent][1].split(":")[0].split("|")[0].strip() if parent in LEGACY else segs[0].title(), parent))
     crumbs.append((re.sub(r"<[^>]+>", "", h1_text), path))
+    answer = f'<p><strong>{esc(ANSWERS[path])}</strong></p>' if path in ANSWERS else ""
     body = f"""<section class="hero"><div class="container"><div class="hero-copy" style="max-width:860px">
-<h1 style="max-width:none">{h1_text}</h1>{f'<p>{lead}</p>' if lead else ''}</div></div></section>
+<h1 style="max-width:none">{h1_text}</h1>{answer}{f'<p>{lead}</p>' if lead else ''}</div></div></section>
 <main class="page"><div class="container"><div class="section-stack">{body_sections}{related}</div></div></main>"""
-    ld = [breadcrumb_ld(crumbs), {"@context": "https://schema.org", "@type": "Article", "headline": re.sub(r"<[^>]+>", "", h1_text), "description": desc, "dateModified": "2026-09-17",
+    faqs = [tuple(x) for x in GUIDE_FAQS.get(path, [])]
+    if faqs:
+        body = body.replace("</div></div></main>", faq_html(faqs, "Frequently asked questions") + "</div></div></main>", 1)
+    ld = [breadcrumb_ld(crumbs), {"@context": "https://schema.org", "@type": "Article", "headline": re.sub(r"<[^>]+>", "", h1_text), "description": desc, "dateModified": "2026-09-20",
           "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": SITE}, "mainEntityOfPage": SITE + path}]
+    if faqs:
+        ld.append(faq_ld(faqs))
     write(path, page(path, title, desc, body, ld, og_type="article"))
     return path
 
@@ -200,6 +358,7 @@ def build_calculator(current):
     model_json = json.dumps(model)
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
 <p class="eyebrow">Tool</p><h1>Tape Backup Capacity and Cost Calculator</h1>
+<p><strong>Tape pays off from roughly 15 TB of data: below that, disk plus cloud is cheaper; above it, LTO-8 or LTO-9 media at about $5 to $7 per TB beats keeping long-term copies on disk.</strong></p>
 <p>Enter how much data you protect, how many copies you keep and how fast you need it back. The calculator recommends tape, disk, cloud or a mix, and estimates cartridges and media cost from September 2026 LTO prices.</p></div>
 <aside class="hero-panel"><p class="panel-label">Prices used</p><p class="panel-copy">Midpoints of seller listings from the <a href="/lto-tape-price-trend">LTO price tracker</a>: LTO-8 tapes ${model['LTO-8']['tape']:.0f}, LTO-9 tapes ${model['LTO-9']['tape']:.0f}, LTO-10 30 TB tapes ${model['LTO-10']['tape']:.0f}.</p></aside></div></section>
 <main class="page"><div class="container"><div class="section-stack">
@@ -216,6 +375,7 @@ def build_calculator(current):
 <section class="section-card"><p class="eyebrow">How it works</p><h2>How the calculator decides</h2>
 <ul><li>Under 15 TB, a tape drive rarely pays for itself, so disk plus cloud is recommended.</li><li>If you need recovery in minutes, the first copy has to live on disk or flash, with tape for long-term and offline copies.</li><li>Otherwise LTO-8 is suggested under 50 TB, LTO-9 up to 500 TB, and LTO-9 or LTO-10 above that.</li><li>Cartridge counts use native capacity with no compression, and costs use the midpoint of current seller listings. Drive cost is one new internal drive where one is listed.</li></ul>
 <p>Estimates exclude software, HBAs, libraries, tax and shipping. See the <a href="/lto-tape-price-trend">LTO price tracker</a> for the listings behind these numbers.</p></section>
+{faq_html([tuple(x) for x in GUIDE_FAQS["/backup-calculator"]], "Backup calculator FAQ")}
 </div></div></main>
 <script>
 (function(){{
@@ -244,7 +404,7 @@ out.innerHTML='<h3>'+h+'</h3>'+t;out.hidden=false;
 }})();
 </script>"""
     desc = "Free tape backup calculator: enter data size, copies and recovery targets to get a tape, disk or cloud recommendation with 2026 LTO cartridge costs."
-    ld = [breadcrumb_ld([("Home", "/"), ("Backup calculator", path)]),
+    ld = [faq_ld([tuple(x) for x in GUIDE_FAQS["/backup-calculator"]]), breadcrumb_ld([("Home", "/"), ("Backup calculator", path)]),
           {"@context": "https://schema.org", "@type": "WebApplication", "name": "Tape Backup Capacity and Cost Calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": SITE + path, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}]
     write(path, page(path, "Tape Backup Calculator: LTO Capacity and Cost", desc, body, ld))
     return path
@@ -265,6 +425,7 @@ def build_finder():
     )
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
 <p class="eyebrow">Tool</p><h1>Tape Backup Software Finder</h1>
+<p><strong>If tape is your main archive, Catalogic DPX is usually the best fit; for mostly virtual estates using tape as a second copy, Veeam; for small environments on a budget, Nakivo.</strong></p>
 <p>Hardware is half the job. Answer four questions to get a shortlist of backup software that fits how you use tape, the size of your estate and your budget.</p></div>
 <aside class="hero-panel"><p class="panel-label">Want the detail?</p><p class="panel-copy">Read the full <a href="/best-tape-backup-software">best tape backup software comparison</a> or the <a href="/resources/tape-backup-software/catalogicdpx">Catalogic DPX review</a>.</p></aside></div></section>
 <main class="page"><div class="container"><div class="section-stack">
@@ -273,6 +434,7 @@ def build_finder():
 <div class="tool-result" id="finder-result" hidden aria-live="polite"></div></section>
 <section class="section-card"><p class="eyebrow">Shortlist</p><h2>Software this finder recommends from</h2>
 <ul><li><strong>Catalogic DPX</strong>: tape-focused enterprise backup with broad drive, library and NDMP support.</li><li><strong>Veeam Backup &amp; Replication</strong>: the common choice for virtualized estates, with tape jobs as a secondary target.</li><li><strong>Commvault</strong>: large, feature-rich platform with deep cloud integration.</li><li><strong>Nakivo</strong>: lower-cost option for smaller environments that need basic tape support.</li><li><strong>Veeam for Microsoft 365 and CloudCasa</strong>: SaaS and Kubernetes backup.</li></ul></section>
+{faq_html([tuple(x) for x in GUIDE_FAQS["/backup-software-finder"]], "Software finder FAQ")}
 </div></div></main>
 <script>
 (function(){{
@@ -291,7 +453,7 @@ out.innerHTML='<h3>Your match: '+v+'</h3><p>'+r+'</p><p><a href="/best-tape-back
 }})();
 </script>"""
     desc = "Answer four questions to find tape backup software that fits your environment, tape usage and budget: Catalogic DPX, Veeam, Commvault or Nakivo."
-    ld = [breadcrumb_ld([("Home", "/"), ("Software finder", path)])]
+    ld = [faq_ld([tuple(x) for x in GUIDE_FAQS["/backup-software-finder"]]), breadcrumb_ld([("Home", "/"), ("Software finder", path)])]
     write(path, page(path, "Tape Backup Software Finder: Match LTO Software", desc, body, ld))
     return path
 
