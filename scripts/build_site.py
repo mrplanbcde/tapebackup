@@ -195,7 +195,7 @@ def build_sitemap(today):
     hist = json.load(open(rel("data", "price-history.json"), encoding="utf-8"))
     for snap in hist["snapshots"]:
         entries.append((f"/lto-tape-price-trend/{snap['slug']}", snap["published"], "0.5", "yearly"))
-    for path in ["/resources/lto-tape-migration", "/resources/tape-storage-market", "/backup-calculator", "/backup-software-finder", "/best-tape-backup-software", "/why-tape", "/why-tape/lto-tape-drive", "/why-tape/lto-vs-hdd",
+    for path in ["/resources/lto-tape-migration", "/resources/tape-storage-market", "/comparisons/tape-vs-cloud-5-year-cost", "/backup-calculator", "/backup-software-finder", "/best-tape-backup-software", "/why-tape", "/why-tape/lto-tape-drive", "/why-tape/lto-vs-hdd",
                  "/comparisons", "/lto-tape-brand", "/resources", "/resources/cheap-lto-tapes", "/resources/tape-backup-software/catalogicdpx", "/about", "/contact"]:
         add(path, idx(path), "0.7", "monthly")
     add("/blog", rel("blog", "index.html"), "0.8", "weekly")

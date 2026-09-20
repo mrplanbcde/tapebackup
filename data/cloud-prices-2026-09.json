@@ -1,0 +1,234 @@
+{
+  "asOf": "2026-09-20",
+  "currency": "USD",
+  "providers": {
+    "aws_glacier_deep_archive": {
+      "region": "us-east-1 (US East, N. Virginia)",
+      "storagePerGBMonth": 0.00099,
+      "putPer1000": 0.05,
+      "retrievalPerGB": {
+        "bulk": 0.0025,
+        "standard": 0.02,
+        "expedited": "not found (Expedited is not offered for Deep Archive; no Expedited rate published under the s3glacierdeeparchive price map)"
+      },
+      "retrievalRequestsPer1000": {
+        "bulk": 0.025,
+        "standard": 0.10
+      },
+      "egressPerGB": 0.09,
+      "egressTiersPerGB": {
+        "first10TB": 0.09,
+        "next40TB": 0.085,
+        "next100TB": 0.07,
+        "greaterThan150TB": 0.05
+      },
+      "freeEgressGBPerMonth": 100,
+      "minStorageDays": 180,
+      "minBillableObjectKB": null,
+      "perObjectOverheadKB": 40,
+      "url": "https://aws.amazon.com/s3/pricing/",
+      "priceDataUrl": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/s3glacierdeeparchive/USD/current/s3glacierdeeparchive.json",
+      "priceDataPublished": "2026-09-11T12:45:07Z",
+      "seen": "2026-09-20",
+      "notes": [
+        "Storage, PUT and retrieval figures read from the JSON price map that aws.amazon.com/s3/pricing itself loads (data-pricing-endpoint on the page); the page renders these values client-side from {priceOf!s3glacierdeeparchive/...} tokens, so the rendered HTML carries the tokens, not the numbers.",
+        "Exact labels seen: 'Glacier Deep Archive GB Mo' = 0.0009900000; 'PUT to Glacier Deep Archive Requests' = 0.0000500000 per request (= $0.05 per 1,000); 'S3 Bulk-Retrieval GB' = 0.0025000000; 'S3 Standard-Retrieval GB' = 0.0200000000; 'Glacier Deep Archive Bulk Restore Requests' = 0.0000250000 per request; 'GDA Standard Restore Requests' = 0.0001000000 per request; 'S3 EarlyDelete GDA GB-Mo' = 0.0009900000; 'Lifecycle to Glacier Deep Archive Requests' = 0.0000500000 per request.",
+        "AWS does NOT publish a 128 KB minimum billable object size for Deep Archive. The 128 KB minimum applies to S3 Standard-IA, S3 One Zone-IA and S3 Glacier Instant Retrieval only. Deep Archive instead carries the 40 KB per-object metadata overhead.",
+        "Per-object overhead confirmed still in force, verbatim from the pricing page: 'For each object that is stored in the S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive storage classes, AWS charges for 40 KB of additional metadata for each archived object, with 8 KB charged at S3 Standard rates and 32 KB charged at S3 Glacier Flexible Retrieval or S3 Deep Archive rates.'",
+        "Early deletion: objects deleted before 180 days incur a pro-rated charge equal to the storage charge for the remaining days.",
+        "Objects transitioned via lifecycle also incur $0.05 per 1,000 transition requests.",
+        "The us-east-1 AWS Price List Bulk API file for AmazonS3 (published 2026-09-18) contains the Deep Archive retrieval meters but no TimedStorage-GDA-ByteHrs storage meter; the storage rate lives under the separate 's3glacierdeeparchive' price map used by the pricing page."
+      ]
+    },
+    "aws_glacier_flexible_retrieval": {
+      "region": "us-east-1 (US East, N. Virginia)",
+      "storagePerGBMonth": 0.0036,
+      "putPer1000": 0.03,
+      "retrievalPerGB": {
+        "bulk": 0.0,
+        "standard": 0.01,
+        "expedited": 0.03
+      },
+      "retrievalRequestsPer1000": {
+        "bulk": 0.0,
+        "standard": 0.05,
+        "expedited": "$0.01 per request"
+      },
+      "egressPerGB": 0.09,
+      "egressTiersPerGB": {
+        "first10TB": 0.09,
+        "next40TB": 0.085,
+        "next100TB": 0.07,
+        "greaterThan150TB": 0.05
+      },
+      "freeEgressGBPerMonth": 100,
+      "minStorageDays": 90,
+      "minBillableObjectKB": null,
+      "perObjectOverheadKB": 40,
+      "url": "https://aws.amazon.com/s3/pricing/",
+      "priceDataUrl": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/s3/USD/current/s3.json",
+      "priceDataPublished": "2026-09-18T17:47:47Z",
+      "seen": "2026-09-20",
+      "notes": [
+        "Exact labels seen in the price map the AWS pricing page loads: 'Glacier Storage per GB Mo' = 0.0036000000; 'PUT requests to Glacier per Requests' = 0.0000300000 (= $0.03 per 1,000); 'Glacier S3 Standard Retrieval RestoreObject' = 0.0100000000; 'Glacier S3 Bulk Retrieval RestoreObject' = 0.0000000000; 'Glacier S3 Expedited Retrieval' = 0.0300000000; 'Glacier S3 API Tier 3 RestoreObject' = 0.0000500000 (standard restore requests); 'Bulk Glacier Restore Requests' = 0.0000000000; 'Glacier Expedited Glacier Restore Requests' = 0.0100000000 per request; 'GET and all other requests to GLACIER per Requests' = 0.0000004000 (= $0.004 per 10,000); 'Lifecycle Transition Requests into Glacier per Requests' = 0.0000300000.",
+        "Cross-checked against the AWS Price List Bulk API for AmazonS3 us-east-1 (published 2026-09-18): TimedStorage-GlacierByteHrs = $0.0036/GB-Mo, Standard-Retrieval-Bytes = $0.01/GB, EarlyDelete-ByteHrs = $0.0036/GB-Mo. Both sources agree.",
+        "Bulk retrieval is free ($0.00/GB) for Flexible Retrieval; this is the tier that matters for a tape-vs-cloud full-restore model.",
+        "Same 40 KB per-object metadata overhead as Deep Archive (8 KB at S3 Standard rates + 32 KB at Glacier rates).",
+        "No published minimum billable object size for this class."
+      ]
+    },
+    "azure_blob_archive": {
+      "region": "East US (eastus), Archive LRS, flat namespace, block blob",
+      "storagePerGBMonth": 0.00099,
+      "writeOperationsPer10000": 0.10,
+      "otherOperationsPer10000": 5.00,
+      "priorityReadOperationsPer10000": 50.00,
+      "dataRetrievalPerGB": {
+        "standard": 0.02,
+        "high": 0.10
+      },
+      "earlyDeletionDays": 180,
+      "earlyDeletionPerGB": 0.00099,
+      "egressPerGB": 0.087,
+      "egressTiersPerGB": {
+        "first100GB": 0.0,
+        "next10TB": 0.087,
+        "next40TB": 0.083,
+        "next100TB": 0.07,
+        "next350TB": 0.05,
+        "over500TB": 0.05
+      },
+      "freeEgressGBPerMonth": 100,
+      "minBillableObjectKB": null,
+      "perObjectOverheadKB": null,
+      "url": "https://azure.microsoft.com/en-us/pricing/details/storage/blobs/",
+      "priceDataUrl": "https://prices.azure.com/api/retail/prices (Microsoft's own Retail Prices API; serviceName eq 'Storage', armRegionName eq 'eastus', skuName eq 'Archive LRS')",
+      "seen": "2026-09-20",
+      "notes": [
+        "The Azure pricing page renders every rate as '$-' in the HTML and fills it in client-side, so the figures were taken from Microsoft's own Retail Prices API instead. Meters seen under productName 'Blob Storage' and 'General Block Blob v2', skuName 'Archive LRS', armRegionName 'eastus': 'Archive LRS Data Stored' = 0.00099 per 1 GB/Month; 'Archive LRS Write Operations' = 0.1 per 10K; 'Archive Read Operations' = 5.0 per 10K; 'Archive Priority Read Operations' = 50.0 per 10K; 'Archive Data Retrieval' = 0.02 per 1 GB; 'Archive Priority Data Retrieval' = 0.1 per 1 GB; 'Archive LRS Early Delete' = 0.00099 per 1 GB; 'Archive Data Write' = 0.0 per 1 GB.",
+        "180-day early deletion period confirmed on the Azure Blob Storage pricing page itself.",
+        "Hierarchical-namespace (ADLS Gen2) accounts cost more per operation: write 0.13 per 10K, read 6.5 per 10K, priority read 65.0 per 10K, same 0.00099/GB-month storage.",
+        "GRS/RA-GRS Archive storage is 0.00299 per GB/month with write operations at 0.21 per 10K.",
+        "Egress figures are from the Bandwidth service in the same API, default Microsoft Global Network routing: first 100 GB/month free, then 0.087 (tierMinimumUnits 100), 0.083 (10335), 0.07 (51295), 0.05 (153695), 0.05 (512095). Internet-routing option is cheaper: 0.08 / 0.065 / 0.06 / 0.04.",
+        "No minimum billable object size published for the Archive tier.",
+        "Azure charges a per-blob index tag fee of 0.03 per 10K/month if blob index tags are used."
+      ]
+    },
+    "gcs_archive": {
+      "region": "us-east1 (South Carolina), single-region bucket",
+      "storagePerGBMonth": 0.0012,
+      "storageUnit": "per 1 gibibyte month",
+      "retrievalPerGB": 0.05,
+      "classAOperationsPer1000": 0.05,
+      "classBOperationsPer1000": 0.05,
+      "egressPerGB": 0.12,
+      "egressTiersPerGB": {
+        "0to10TiB": 0.12,
+        "10to150TiB": 0.11,
+        "over150TiB": 0.08
+      },
+      "freeEgressGBPerMonth": null,
+      "minStorageDays": 365,
+      "minBillableObjectKB": null,
+      "perObjectOverheadKB": null,
+      "url": "https://cloud.google.com/storage/pricing",
+      "seen": "2026-09-20",
+      "notes": [
+        "Storage rate read from the pricing page's own embedded region table: 'South Carolina (us-east1)' row shows Standard $0.02, Nearline $0.01, Coldline $0.004, Archive '$0.0012 / 1 gibibyte month'. The hourly view of the same table shows Archive at $0.000001644 / 1 gibibyte hour.",
+        "Retrieval: page states retrieval rates per class as Nearline $0.01 / 1 gibibyte, Coldline $0.02 / 1 gibibyte, Archive $0.05 / 1 gibibyte.",
+        "Operations, verbatim table header 'For buckets located in a single region': Archive storage Class A flat namespace $0.05 per 1,000 operations, Class A hierarchical $0.065, Class B flat namespace $0.05 per 1,000, Class B hierarchical $0.065, free operations Free.",
+        "Dual-region and multi-region buckets cost more per Class A operation: Archive $0.10 per 1,000 (flat namespace).",
+        "Minimum storage duration table: Standard None, Nearline 30 days, Coldline 90 days, Archive 365 days, Rapid None.",
+        "Egress is 'General network usage', Data transfer to Worldwide Destinations (excluding Asia & Australia): 0 GiB to 10 TiB $0.12 / 1 gibibyte, 10 TiB to 150 TiB $0.11, 150 TiB and above $0.08.",
+        "No free monthly internet egress allowance found on the Cloud Storage pricing page; the page refers to 'Always Free usage limits' without stating a GB figure for egress, so freeEgressGBPerMonth is recorded as not found.",
+        "Prices are per gibibyte, not per gigabyte, unlike AWS and Azure. A 1 PB comparison must account for this (1 GiB = 1.074 GB)."
+      ]
+    },
+    "backblaze_b2": {
+      "region": "not region-specific on the pricing page",
+      "storagePerTBMonth": 6.95,
+      "storagePerGBMonth": null,
+      "egressPerGB": 0.01,
+      "freeEgressPolicy": "Free egress up to 3x the average monthly data stored; overage billed at $0.01/GB",
+      "freeEgressGBPerMonth": null,
+      "minStorageDays": 0,
+      "minBillableObjectKB": null,
+      "perObjectOverheadKB": null,
+      "url": "https://www.backblaze.com/cloud-storage/pricing",
+      "seen": "2026-09-20",
+      "notes": [
+        "Page states pay-as-you-go storage 'Starts at $6.95 / TB / mo'. A per-GB figure is not printed on the page, so storagePerGBMonth is recorded as null rather than derived; $6.95/TB works out to roughly $0.00695/GB-month if you divide by 1,000.",
+        "Egress: '$0.01 per GB' beyond the free allowance, with 'Free egress up to 3x storage'.",
+        "Unlimited free egress is included with the B2 Overdrive tier at $15/TB/mo, and when downloading to or through partner CDNs.",
+        "API calls: Class A, B and C transactions are free. Class D transactions cost $0.004 per 10,000 calls, with the first 2,500 calls per day free.",
+        "Page states 'No minimum storage duration fees' and 'No minimum file size fees' - the two charges that dominate AWS/Azure/GCS archive TCO models.",
+        "Backblaze B2 is a single hot tier, not a cold/archive tier, so retrieval is immediate and there is no restore latency or retrieval-per-GB fee to model."
+      ]
+    },
+    "wasabi": {
+      "region": "North America (also EMEA and APAC at the same rate)",
+      "storagePerTBMonth": 7.99,
+      "storagePerGBMonth": 0.0078,
+      "egressPerGB": 0.0,
+      "apiRequestFees": 0.0,
+      "minStorageDays": 90,
+      "minMonthlyChargeTB": 1,
+      "minBillableObjectKB": 4,
+      "perObjectOverheadKB": null,
+      "url": "https://wasabi.com/pricing",
+      "policyUrl": "https://wasabi.com/pricing/pricing-faqs",
+      "seen": "2026-09-20",
+      "notes": [
+        "Pricing page states pay-as-you-go 'Starting at $7.99 TB/month' and 'No fees for egress or API requests'.",
+        "Pricing FAQ gives $7.99/TB/month for North America, EMEA and APAC, stated as equivalent to $0.0078/GB/month.",
+        "Free egress is conditional, not unconditional. FAQ wording: 'If your monthly egress data transfer is less than or equal to your active storage volume, then your storage use case is a good fit for Wasabi's free egress policy.' Exceeding that ratio violates the policy and risks service suspension. This matters for any restore-heavy model.",
+        "Minimum retention 90 days on pay-as-you-go: deleting earlier incurs a Timed Deleted Storage charge equal to the storage charge for the remaining days.",
+        "Minimum monthly charge is 1 TB of active storage (10 TB for Cloud NAS) - you are billed for 1 TB even if you store less.",
+        "Minimum billable file size is 4 KB; smaller files are charged as 4 KB.",
+        "Reserved Capacity Storage pricing is derived from the $7.99/TB/month rate with term and capacity discounts; exact RCS rates are not published as list prices."
+      ]
+    }
+  },
+  "notes": [
+    {
+      "text": "AWS per-object metadata overhead for Glacier is still charged in September 2026. Verbatim from the S3 pricing page: 'For each object that is stored in the S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive storage classes, AWS charges for 40 KB of additional metadata for each archived object, with 8 KB charged at S3 Standard rates and 32 KB charged at S3 Glacier Flexible Retrieval or S3 Deep Archive rates.' At $0.023/GB-month for the 8 KB and $0.00099/GB-month for the 32 KB, this is roughly $0.00000021 per object per month, which is negligible per object but dominates cost for archives of many millions of small files.",
+      "url": "https://aws.amazon.com/s3/pricing/"
+    },
+    {
+      "text": "AWS free egress is still 100 GB per month. Verbatim: 'AWS customers receive 100GB of data transfer out to the internet free each month, aggregated across all AWS Services and Regions (except China and GovCloud). The 100 GB free tier for data transfer out to the internet is global and does not apply separately or individually to AWS Regions.'",
+      "url": "https://aws.amazon.com/s3/pricing/"
+    },
+    {
+      "text": "AWS minimum storage duration, verbatim: 'Objects that are archived to S3 Glacier Instant Retrieval and S3 Glacier Flexible Retrieval are charged for a minimum storage duration of 90 days, and S3 Glacier Deep Archive has a minimum storage duration of 180 days. Objects deleted prior to the minimum storage duration incur a pro-rated charge equal to the storage charge for the remaining days.'",
+      "url": "https://aws.amazon.com/s3/pricing/"
+    },
+    {
+      "text": "The 128 KB minimum billable object size does NOT apply to Glacier Flexible Retrieval or Deep Archive. The pricing page applies it only to S3 Standard-IA, S3 One Zone-IA and S3 Glacier Instant Retrieval. For the two deep classes the equivalent small-file penalty is the 40 KB metadata overhead instead. Several third-party comparisons get this wrong.",
+      "url": "https://aws.amazon.com/s3/pricing/"
+    },
+    {
+      "text": "Announced 2026 price change, Wasabi: pay-as-you-go Hot Cloud Storage moved to $7.99 USD/TB/month for all regions (North America, EMEA, APAC) effective July 1, 2026, attributed to increased costs for storage hardware, energy and data center operations. Reserved Capacity Storage pricing is based on the $7.99 rate with term and capacity discounts as of the same date. This change is already in effect as of 2026-09-20 and matches the live pricing page.",
+      "url": "https://docs.wasabi.com/docs/may-2026-wasabi-pricing"
+    },
+    {
+      "text": "No 2026 price change was found for AWS S3 Glacier, Azure Blob Archive, Google Cloud Storage Archive or Backblaze B2. Google's Cloud Storage pricing-announce page documents only historical changes effective October 1, 2022 and April 1, 2023 (Archive at-rest decreases in the us/eu/asia multi-regions and nam4/eur4/asia1 dual-regions, and Class A/B operation increases); it lists nothing dated 2026. Recorded as not found rather than as an absence of any change.",
+      "url": "https://cloud.google.com/storage/pricing-announce"
+    },
+    {
+      "text": "Unit mismatch to watch when modeling: Google Cloud prices Archive storage, retrieval and egress per gibibyte, while AWS and Azure price per gigabyte. Over a 1 PB 5-year model this understates Google's cost by about 7.4% if the units are treated as interchangeable.",
+      "url": "https://cloud.google.com/storage/pricing"
+    },
+    {
+      "text": "The two cheapest headline storage rates, AWS Deep Archive and Azure Archive, are identical at $0.00099/GB-month, but their restore economics differ sharply: a full restore of 1 TB costs $2.56 on AWS bulk ($0.0025/GB) versus $20.48 on Azure standard-priority ($0.02/GB), before egress. Azure has no bulk-equivalent cheaper-than-standard retrieval tier.",
+      "url": "https://azure.microsoft.com/en-us/pricing/details/storage/blobs/"
+    },
+    {
+      "text": "Free egress is not free in the sense buyers assume. AWS and Azure both give 100 GB/month and then charge $0.09 and $0.087 per GB respectively. Backblaze gives 3x average monthly stored data then charges $0.01/GB. Wasabi gives unmetered egress only while monthly egress stays at or below your stored volume, and reserves the right to suspend service otherwise. Google publishes no free internet egress allowance on the Cloud Storage pricing page.",
+      "url": "https://www.backblaze.com/cloud-storage/pricing"
+    },
+    {
+      "text": "Method note: the AWS and Azure pricing pages both render rates client-side and serve placeholder tokens in HTML ('{priceOf!...}' and '$-' respectively). Figures here come from the vendors' own price-data endpoints that those pages load: AWS b0.p.awsstatic.com meteredUnitMaps (s3 map published 2026-09-18, s3glacierdeeparchive map published 2026-09-11, datatransfer map published 2026-09-16) and Microsoft's Retail Prices API at prices.azure.com. AWS figures were cross-checked against the AWS Price List Bulk API for AmazonS3 us-east-1 (published 2026-09-18). No third-party source was used for any price.",
+      "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/current/us-east-1/index.json"
+    }
+  ]
+}

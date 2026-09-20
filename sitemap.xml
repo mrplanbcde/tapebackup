@@ -91,14 +91,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tapebackup.org/backup-calculator</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/backup-software-finder</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -284,31 +290,31 @@
   </url>
   <url>
     <loc>https://tapebackup.org/tape-q-and-a/mainframe-open-systems-archive</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/tape-q-and-a/multi-tier-data-protection-strategy</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/tape-q-and-a/what-are-the-recommended-packaging-practices-for-shipping-enterprise-tape-cartridges-safely-for-return-or-transport</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/tape-q-and-a/what-warranty-coverage-is-typically-offered-for-enterprise-tape-media-cartridges-used-in-backup-and-archival-storage</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://tapebackup.org/tape-q-and-a/what-warranty-protections-are-commonly-provided-for-enterprise-tape-media-cartridges-used-in-backup-and-archival-storage-systems</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
