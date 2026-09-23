@@ -349,3 +349,4 @@ section.block{padding:96px 0}
 .lang-switch{display:inline-flex;gap:2px;margin-left:auto}
 .lang-switch a{padding:0 6px;opacity:.75;font-weight:600}
 .lang-switch a.on{opacity:1;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:560px){.header-right .btn{display:none}.rm-track{overflow-x:auto;-webkit-overflow-scrolling:touch}.cart-stage{overflow:hidden}}

@@ -116,7 +116,7 @@ def build_market(current):
     ship = src("160.3 EB", "LTO Program")
     reg = src("only Sony and Fujifilm", "The Register")
     bf = src("2025 dip may reflect", "Blocks & Files")
-    dd = src("largely stable at $4-6/TB", "DatacenterDisk")
+    dd = src("largely stable at $4-$6/TB", "DatacenterDisk")
 
     price_rows = [[gen, f"{g[gen]['nativeTB']:g} TB", esc(rng(g[gen]["cartridge"], True)), esc(per_tb(g[gen]["cartridge"]))] for gen in ["LTO-6", "LTO-7", "LTO-8", "LTO-9", "LTO-10"]]
     cheap = cheapest_per_tb(g)
@@ -330,7 +330,7 @@ def build_tco(current):
 <li>AWS adds {deep['perObjectOverheadKB']} KB of metadata to every archived object, so millions of small files cost far more than their raw size. Pack them into larger archives before upload.</li>
 </ul>"""),
         sec("What the table leaves out", "Costs on both sides", """
-<p><strong>Tape:</strong> a SAS HBA per drive, somewhere climate-controlled to keep cartridges, courier or vault fees for the offsite copy, backup software or LTFS tooling, a drive refresh every several years, and staff time to load, verify and label media. Budget one migration during a long retention period, because current drives only read one generation back (see <a href="/resources/lto-tape-migration">LTO tape migration</a>).</p>
+<p><strong>Tape:</strong> a SAS HBA per drive, somewhere climate-controlled to keep cartridges, courier or vault fees for the offsite copy, backup software or LTFS tooling, a drive refresh every several years, and staff time to load, verify and label media. Budget one migration during a long retention period, because LTO-8 and LTO-9 drives read only one generation back and LTO-10 drives read none (see <a href="/resources/lto-tape-migration">LTO tape migration</a>).</p>
 <p><strong>Cloud:</strong> upload requests, minimum storage duration, early-deletion fees, retrieval tiers, egress, and the chance that list prices change during a ten-year retention. The full restore cost belongs in the budget even if you never plan to use it, because that is what a disaster looks like.</p>
 <p><strong>Both:</strong> the staging disk at each end, and the second copy you should keep either way. Most teams end up with disk for recent restores, tape for offline retention and a cloud copy for site loss, which is the <a href="/comparisons">3-2-1 split</a> rather than a single winner.</p>"""),
     ]

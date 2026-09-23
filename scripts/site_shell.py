@@ -65,7 +65,6 @@ def header():
     return f"""<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Tape Q&amp;A</a><span class="sep"></span><a href="/lto-tape-price-trend">LTO Prices</a><span class="sep"></span><a href="/contact">Contact Us</a></div></div>
 <header class="site-header"><div class="wrap">{brand()}
 <nav class="topnav" aria-label="Primary">
-<a href="/">Home</a>
 <a href="/why-tape">Why Tape</a>
 <div class="price-dropdown"><a href="/lto-tape-price-trend">LTO Prices</a><div class="price-dropdown-menu"><a href="/lto-tape-price-trend">All generations<span>September 2026 prices</span></a>{price_links}<a href="/lto-tape-price-trend/history">Price history<span>Archived snapshots since 2025</span></a></div></div>
 <div class="price-dropdown"><a href="/backup-calculator">Tools</a><div class="price-dropdown-menu"><a href="/backup-calculator">Backup calculator<span>Media and cost estimate</span></a><a href="/backup-software-finder">Software finder<span>Match software to your tape use</span></a><a href="/best-tape-backup-software">Best tape backup software<span>2026 comparison</span></a></div></div>

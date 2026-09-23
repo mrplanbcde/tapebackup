@@ -1,26 +1,26 @@
 {
  "de": {
   "name": "Deutsch",
-  "indexable": false
+  "indexable": true
  },
  "fr": {
   "name": "Français",
-  "indexable": false
+  "indexable": true
  },
  "it": {
   "name": "Italiano",
-  "indexable": false
+  "indexable": true
  },
  "es": {
   "name": "Español",
-  "indexable": false
+  "indexable": true
  },
  "nl": {
   "name": "Nederlands",
-  "indexable": false
+  "indexable": true
  },
  "pl": {
   "name": "Polski",
-  "indexable": false
+  "indexable": true
  }
 }

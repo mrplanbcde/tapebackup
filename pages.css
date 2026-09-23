@@ -468,3 +468,11 @@
 .lang-switch { display: inline-flex; gap: .15rem; margin-left: auto; }
 .lang-switch a { padding: 0 .35rem; opacity: .75; font-weight: 600; }
 .lang-switch a.on { opacity: 1; text-decoration: underline; text-underline-offset: 3px; }
+.topnav { flex-wrap: nowrap; }
+.topnav > a, .topnav .price-dropdown > a { white-space: nowrap; }
+@media (max-width: 1180px) { .topnav { gap: 14px; } .header-right .btn { white-space: nowrap; } }
+@media (max-width: 560px) { .header-right .btn { display: none; } }
+.legacy-content { overflow-x: auto; overflow-wrap: break-word; }
+.legacy-content .table-wrap { max-width: 100%; }
+h1, h2, h3 { overflow-wrap: break-word; }
+@media (max-width: 560px) { h1, h2, h3 { hyphens: auto; -webkit-hyphens: auto; } }

@@ -5,48 +5,784 @@
     <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/"/>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-price-trend</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/lto-tape-price-trend</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/lto-tape-price-trend</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/lto-tape-price-trend</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/lto-tape-price-trend</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/lto-tape-price-trend</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/lto-tape-price-trend</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend"/>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-price-trend/lto6-price</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/lto-tape-price-trend/lto6-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/lto-tape-price-trend/lto6-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/lto-tape-price-trend/lto6-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/lto-tape-price-trend/lto6-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/lto-tape-price-trend/lto6-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/lto-tape-price-trend/lto6-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto6-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto6-price"/>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-price-trend/lto7-price</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/lto-tape-price-trend/lto7-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/lto-tape-price-trend/lto7-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/lto-tape-price-trend/lto7-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/lto-tape-price-trend/lto7-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/lto-tape-price-trend/lto7-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/lto-tape-price-trend/lto7-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto7-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto7-price"/>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-price-trend/lto8-price</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/lto-tape-price-trend/lto8-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/lto-tape-price-trend/lto8-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/lto-tape-price-trend/lto8-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/lto-tape-price-trend/lto8-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/lto-tape-price-trend/lto8-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/lto-tape-price-trend/lto8-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto8-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto8-price"/>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-price-trend/lto9-price</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/lto-tape-price-trend/lto9-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/lto-tape-price-trend/lto9-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/lto-tape-price-trend/lto9-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/lto-tape-price-trend/lto9-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/lto-tape-price-trend/lto9-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/lto-tape-price-trend/lto9-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto9-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto9-price"/>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-price-trend/lto10-price</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/lto-tape-price-trend/lto10-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/lto-tape-price-trend/lto10-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/lto-tape-price-trend/lto10-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/lto-tape-price-trend/lto10-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/lto-tape-price-trend/lto10-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/lto-tape-price-trend/lto10-price</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/lto10-price"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/lto10-price"/>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-price-trend/history</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/lto-tape-price-trend/history</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/lto-tape-price-trend/history</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/lto-tape-price-trend/history</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/lto-tape-price-trend/history</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/lto-tape-price-trend/history</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/lto-tape-price-trend/history</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-price-trend/history"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-price-trend/history"/>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-price-trend/aug-2026</loc>
@@ -83,96 +819,1568 @@
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/lto-tape-migration"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/resources/lto-tape-migration</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/lto-tape-migration"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/resources/lto-tape-migration</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/lto-tape-migration"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/resources/lto-tape-migration</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/lto-tape-migration"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/resources/lto-tape-migration</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/lto-tape-migration"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/resources/lto-tape-migration</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/lto-tape-migration"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/resources/lto-tape-migration</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/lto-tape-migration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/lto-tape-migration"/>
   </url>
   <url>
     <loc>https://tapebackup.org/resources/tape-storage-market</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-storage-market"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/resources/tape-storage-market</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-storage-market"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/resources/tape-storage-market</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-storage-market"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/resources/tape-storage-market</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-storage-market"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/resources/tape-storage-market</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-storage-market"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/resources/tape-storage-market</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-storage-market"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/resources/tape-storage-market</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-storage-market"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-storage-market"/>
   </url>
   <url>
     <loc>https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/comparisons/tape-vs-cloud-5-year-cost</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/comparisons/tape-vs-cloud-5-year-cost</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/comparisons/tape-vs-cloud-5-year-cost</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/comparisons/tape-vs-cloud-5-year-cost</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/comparisons/tape-vs-cloud-5-year-cost</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/comparisons/tape-vs-cloud-5-year-cost</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons/tape-vs-cloud-5-year-cost"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons/tape-vs-cloud-5-year-cost"/>
   </url>
   <url>
     <loc>https://tapebackup.org/backup-calculator</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-calculator"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/backup-calculator</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-calculator"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/backup-calculator</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-calculator"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/backup-calculator</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-calculator"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/backup-calculator</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-calculator"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/backup-calculator</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-calculator"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/backup-calculator</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-calculator"/>
   </url>
   <url>
     <loc>https://tapebackup.org/backup-software-finder</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-software-finder"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/backup-software-finder</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-software-finder"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/backup-software-finder</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-software-finder"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/backup-software-finder</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-software-finder"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/backup-software-finder</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-software-finder"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/backup-software-finder</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-software-finder"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/backup-software-finder</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/backup-software-finder"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/backup-software-finder"/>
   </url>
   <url>
     <loc>https://tapebackup.org/best-tape-backup-software</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/best-tape-backup-software"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/best-tape-backup-software</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/best-tape-backup-software"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/best-tape-backup-software</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/best-tape-backup-software"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/best-tape-backup-software</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/best-tape-backup-software"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/best-tape-backup-software</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/best-tape-backup-software"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/best-tape-backup-software</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/best-tape-backup-software"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/best-tape-backup-software</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/best-tape-backup-software"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/best-tape-backup-software"/>
   </url>
   <url>
     <loc>https://tapebackup.org/why-tape</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/why-tape</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/why-tape</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/why-tape</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/why-tape</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/why-tape</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/why-tape</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape"/>
   </url>
   <url>
     <loc>https://tapebackup.org/why-tape/lto-tape-drive</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/why-tape/lto-tape-drive</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/why-tape/lto-tape-drive</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/why-tape/lto-tape-drive</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/why-tape/lto-tape-drive</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/why-tape/lto-tape-drive</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/why-tape/lto-tape-drive</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-tape-drive"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-tape-drive"/>
   </url>
   <url>
     <loc>https://tapebackup.org/why-tape/lto-vs-hdd</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/why-tape/lto-vs-hdd</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/why-tape/lto-vs-hdd</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/why-tape/lto-vs-hdd</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/why-tape/lto-vs-hdd</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/why-tape/lto-vs-hdd</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/why-tape/lto-vs-hdd</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/why-tape/lto-vs-hdd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/why-tape/lto-vs-hdd"/>
   </url>
   <url>
     <loc>https://tapebackup.org/comparisons</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/comparisons</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/comparisons</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/comparisons</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/comparisons</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/comparisons</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/comparisons</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/comparisons"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/comparisons"/>
   </url>
   <url>
     <loc>https://tapebackup.org/lto-tape-brand</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-brand"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/lto-tape-brand</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-brand"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/lto-tape-brand</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-brand"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/lto-tape-brand</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-brand"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/lto-tape-brand</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-brand"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/lto-tape-brand</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-brand"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/lto-tape-brand</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/lto-tape-brand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/lto-tape-brand"/>
   </url>
   <url>
     <loc>https://tapebackup.org/resources</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/resources</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/resources</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/resources</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/resources</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/resources</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/resources</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources"/>
   </url>
   <url>
     <loc>https://tapebackup.org/resources/cheap-lto-tapes</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/resources/cheap-lto-tapes</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/resources/cheap-lto-tapes</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/resources/cheap-lto-tapes</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/resources/cheap-lto-tapes</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/resources/cheap-lto-tapes</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/resources/cheap-lto-tapes</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/cheap-lto-tapes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/cheap-lto-tapes"/>
   </url>
   <url>
     <loc>https://tapebackup.org/resources/tape-backup-software/catalogicdpx</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/resources/tape-backup-software/catalogicdpx</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/resources/tape-backup-software/catalogicdpx</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/resources/tape-backup-software/catalogicdpx</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/resources/tape-backup-software/catalogicdpx</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/resources/tape-backup-software/catalogicdpx</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/resources/tape-backup-software/catalogicdpx</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/resources/tape-backup-software/catalogicdpx"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/resources/tape-backup-software/catalogicdpx"/>
   </url>
   <url>
     <loc>https://tapebackup.org/about</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/about"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/about</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/about"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/about</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/about"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/about</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/about"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/about</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/about"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/about</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/about"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/about</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/about"/>
   </url>
   <url>
     <loc>https://tapebackup.org/contact</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/contact"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/de/contact</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/contact"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/fr/contact</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/contact"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/it/contact</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/contact"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/es/contact</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/contact"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/nl/contact</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/contact"/>
+  </url>
+  <url>
+    <loc>https://tapebackup.org/pl/contact</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapebackup.org/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tapebackup.org/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tapebackup.org/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tapebackup.org/it/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapebackup.org/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tapebackup.org/nl/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://tapebackup.org/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tapebackup.org/contact"/>
   </url>
   <url>
     <loc>https://tapebackup.org/blog</loc>

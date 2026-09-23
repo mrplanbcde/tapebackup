@@ -163,7 +163,7 @@ def qa_page_schema():
               "text": question, "answerCount": 1, "acceptedAnswer": {"@type": "Answer", "text": answer,
               "url": f"{SITE}/tape-q-and-a/{slug}"}}}
         tag = '<script type="application/ld+json" data-qa-schema>' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>"
-        s2 = re.sub(r'<script type="application/ld\+json" data-qa-schema>.*?</script>\n?', "", s, flags=re.S)
+        s2 = re.sub(r'[ \t]*<script type="application/ld\+json" data-qa-schema>.*?</script>\n?', "", s, flags=re.S)
         s2 = s2.replace("</head>", tag + "\n  </head>", 1)
         if s2 != s:
             open(f, "w", encoding="utf-8").write(s2)

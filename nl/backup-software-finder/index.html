@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>Softwarewijzer voor back-up op tape: LTO-software kiezen</title>
+<meta content="Beantwoord vier vragen en vind back-upsoftware voor tape die past bij uw omgeving, tapegebruik en budget: Catalogic DPX, Veeam, Commvault of Nakivo." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/nl/backup-software-finder" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="Softwarewijzer voor back-up op tape: LTO-software kiezen" property="og:title"/>
+<meta content="Beantwoord vier vragen en vind back-upsoftware voor tape die past bij uw omgeving, tapegebruik en budget: Catalogic DPX, Veeam, Commvault of Nakivo." property="og:description"/>
+<meta content="https://tapebackup.org/nl/backup-software-finder" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Softwarewijzer voor back-up op tape: LTO-software kiezen" name="twitter:title"/>
+<meta content="Beantwoord vier vragen en vind back-upsoftware voor tape die past bij uw omgeving, tapegebruik en budget: Catalogic DPX, Veeam, Commvault of Nakivo." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Welke back-upsoftware is het best voor tapebibliotheken?", "acceptedAnswer": {"@type": "Answer", "text": "Catalogic DPX ondersteunt de meeste drives en tapebibliotheken en kan overweg met NDMP, wat belangrijk is voor back-ups van NAS. Veeam en Commvault ondersteunen tape goed als secundaire kopie in grotere virtuele omgevingen."}}, {"@type": "Question", "name": "Kan ik Microsoft 365 naar tape back-uppen?", "acceptedAnswer": {"@type": "Answer", "text": "Niet rechtstreeks. Maak een back-up van de SaaS-data met een tool zoals Veeam for Microsoft 365 en kopieer de repository daarvan naar tape als u een offline kopie of een kopie voor lange bewaring nodig hebt."}}], "inLanguage": "nl"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tapebackup.org/nl"}, {"@type": "ListItem", "position": 2, "name": "Softwarewijzer", "item": "https://tapebackup.org/nl/backup-software-finder"}], "inLanguage": "nl"}</script>
+<meta content="nl_NL" property="og:locale"/><link href="https://tapebackup.org/backup-software-finder" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-software-finder" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-software-finder" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-software-finder" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-software-finder" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-software-finder" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-software-finder" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-software-finder" hreflang="x-default" rel="alternate"/></head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Tape-vragen</a><span class="sep"></span><a href="/nl/lto-tape-price-trend">LTO-prijzen</a><span class="sep"></span><a href="/nl/contact">Contact</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/backup-software-finder" hreflang="en" lang="en">EN</a><a href="/de/backup-software-finder" hreflang="de" lang="de">DE</a><a href="/fr/backup-software-finder" hreflang="fr" lang="fr">FR</a><a href="/it/backup-software-finder" hreflang="it" lang="it">IT</a><a href="/es/backup-software-finder" hreflang="es" lang="es">ES</a><a aria-current="page" class="on" href="/nl/backup-software-finder" hreflang="nl" lang="nl">NL</a><a href="/pl/backup-software-finder" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Startpagina van TapeBackup.org" class="brand" href="/nl"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Hoofdnavigatie" class="topnav">
+<a href="/nl/why-tape">Waarom tape</a>
+<div class="price-dropdown"><a href="/nl/lto-tape-price-trend">LTO-prijzen</a><div class="price-dropdown-menu"><a href="/nl/lto-tape-price-trend">Alle generaties<span>Prijzen september 2026</span></a><a href="/nl/lto-tape-price-trend/lto6-price">Prijs LTO-6<span>2,5 TB native</span></a><a href="/nl/lto-tape-price-trend/lto7-price">Prijs LTO-7<span>6 TB native</span></a><a href="/nl/lto-tape-price-trend/lto8-price">Prijs LTO-8<span>12 TB native</span></a><a href="/nl/lto-tape-price-trend/lto9-price">Prijs LTO-9<span>18 TB native</span></a><a href="/nl/lto-tape-price-trend/lto10-price">Prijs LTO-10<span>30 / 40 TB native</span></a><a href="/nl/lto-tape-price-trend/history">Prijsgeschiedenis<span>Gearchiveerde momentopnamen sinds 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/nl/backup-calculator">Tools</a><div class="price-dropdown-menu"><a href="/nl/backup-calculator">Back-upcalculator<span>Schatting van media en kosten</span></a><a href="/nl/backup-software-finder">Softwarewijzer<span>Software die past bij uw tapegebruik</span></a><a href="/nl/best-tape-backup-software">Beste back-upsoftware voor tape<span>Vergelijking 2026</span></a></div></div>
+<a href="/blog">Blog</a>
+<a href="/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/nl/contact">Prijslijst opvragen</a></div>
+</div></header>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy">
+<p class="eyebrow">Tool</p><h1>Softwarewijzer voor tapeback-up</h1>
+<p><strong>Is tape uw hoofdarchief, dan past Catalogic DPX meestal het best; voor vooral virtuele omgevingen met tape als tweede kopie Veeam; voor kleine omgevingen met een beperkt budget Nakivo.</strong></p>
+<p>Hardware is maar de helft van het werk. Beantwoord vier vragen en krijg een shortlist van back-upsoftware die past bij hoe u tape gebruikt, de omvang van uw omgeving en uw budget.</p></div>
+<aside class="hero-panel"><p class="panel-label">Wilt u de details?</p><p class="panel-copy">Lees de volledige <a href="/nl/best-tape-backup-software">vergelijking van de beste back-upsoftware voor tape</a> of de <a href="/nl/resources/tape-backup-software/catalogicdpx">review van Catalogic DPX</a>.</p></aside></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><h2>Vind uw back-upsoftware</h2>
+<form class="tool-form" id="finder"><fieldset class="choice-grid"><legend>1. Wat is uw primaire omgeving?</legend><label><input name="env" type="radio" value="virtual"/>Vooral virtuele machines</label><label><input name="env" type="radio" value="physical"/>Veel fysieke servers of Unix</label><label><input checked="" name="env" type="radio" value="mixed"/>Gemengd of hybride</label><label><input name="env" type="radio" value="saas"/>Alleen Microsoft 365 of SaaS</label></fieldset><fieldset class="choice-grid"><legend>2. Hoe gaat u tape gebruiken?</legend><label><input name="tape" type="radio" value="heavy"/>Hoofdarchief of grote tapebibliotheek</label><label><input checked="" name="tape" type="radio" value="secondary"/>Secundaire kopie</label><label><input name="tape" type="radio" value="none"/>Geen tape, alleen disk of cloud</label></fieldset><fieldset class="choice-grid"><legend>3. Hoeveel workloads?</legend><label><input name="scale" type="radio" value="small"/>1 tot 50</label><label><input checked="" name="scale" type="radio" value="mid"/>51 tot 500 of meer</label></fieldset><fieldset class="choice-grid"><legend>4. Wat is het belangrijkst?</legend><label><input checked="" name="prio" type="radio" value="value"/>Kosteneffectiviteit</label><label><input name="prio" type="radio" value="feature"/>Moderne functies en cloudfuncties</label></fieldset><button class="tool-submit" type="submit">Toon mijn match</button></form>
+<div aria-live="polite" class="tool-result" hidden="" id="finder-result"></div></section>
+<section class="section-card"><p class="eyebrow">Shortlist</p><h2>Software waaruit deze wijzer kiest</h2>
+<ul><li><strong>Catalogic DPX</strong>: enterprise-back-up met focus op tape en brede ondersteuning voor drives, tapebibliotheken en NDMP.</li><li><strong>Veeam Backup &amp; Replication</strong>: de gangbare keuze voor gevirtualiseerde omgevingen, met tapejobs als secundair doel.</li><li><strong>Commvault</strong>: groot platform met veel functies en diepe cloudintegratie.</li><li><strong>Nakivo</strong>: goedkopere optie voor kleinere omgevingen die basisondersteuning voor tape nodig hebben.</li><li><strong>Veeam for Microsoft 365 en CloudCasa</strong>: back-up van SaaS en Kubernetes.</li></ul></section>
+<section aria-label="Veelgestelde vragen over de softwarewijzer" class="faq-grid"><article class="faq-card"><h3>Welke back-upsoftware is het best voor tapebibliotheken?</h3><p>Catalogic DPX ondersteunt de meeste drives en tapebibliotheken en kan overweg met NDMP, wat belangrijk is voor back-ups van NAS. Veeam en Commvault ondersteunen tape goed als secundaire kopie in grotere virtuele omgevingen.</p></article><article class="faq-card"><h3>Kan ik Microsoft 365 naar tape back-uppen?</h3><p>Niet rechtstreeks. Maak een back-up van de SaaS-data met een tool zoals Veeam for Microsoft 365 en kopieer de repository daarvan naar tape als u een offline kopie of een kopie voor lange bewaring nodig hebt.</p></article></section>
+</div></div></main>
+<script data-i18n="" id="finder-i18n" type="application/json">{"match": "Uw match: {v}", "compare": "<a href=\"/best-tape-backup-software\">Alle back-upsoftware voor tape vergelijken<\/a>", "r_dpx": "Catalogic DPX is rond tape gebouwd. Het ondersteunt een zeer breed scala aan LTO-drives en tapebibliotheken, ook oudere, gaat goed om met NDMP en kost minder dan de meeste enterprise-suites als tape centraal staat. <a href=\"/resources/tape-backup-software/catalogicdpx\">Lees de review van DPX<\/a>.", "r_saas": "Voor SaaS-data is Veeam for Microsoft 365 marktleider. Draait u ook Kubernetes, kijk dan naar CloudCasa.", "r_virtual": "Voor een virtuele omgeving op basis van disk is Veeam de standaardkeuze; het werkt goed met disk en cloud als doel.", "v_mixed_notape": "Acronis of Commvault", "r_mixed_notape": "Voor gemengde omgevingen zonder tape heeft Acronis sterke beveiligingsfuncties en Commvault een diepe cloudintegratie.", "r_small": "Voor kleinere omgevingen die eenvoudige tapeondersteuning nodig hebben zonder enterprise-prijs, is Nakivo een degelijke optie.", "v_default": "Veeam of Catalogic DPX", "r_default": "Veeam is de populaire keuze voor virtualisatie. Vergelijk het met Catalogic DPX als uw data groeit, want de licenties en tapeafhandeling van DPX leiden vaak tot lagere totale kosten."}</script>
+<script>
+(function(){
+var L=JSON.parse(document.getElementById('finder-i18n').textContent);
+var f=document.getElementById('finder'),out=document.getElementById('finder-result');
+function val(n){return f.querySelector('input[name="'+n+'"]:checked').value;}
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var env=val('env'),tape=val('tape'),scale=val('scale'),prio=val('prio'),v,r;
+if(tape==='heavy'||(tape==='secondary'&&prio==='value')){v='Catalogic DPX';r=L.r_dpx;}
+else if(env==='saas'){v='Veeam for Microsoft 365';r=L.r_saas;}
+else if(tape==='none'){if(env==='virtual'){v='Veeam Backup & Replication';r=L.r_virtual;}else{v=L.v_mixed_notape;r=L.r_mixed_notape;}}
+else if(scale==='small'){v='Nakivo';r=L.r_small;}
+else{v=L.v_default;r=L.r_default;}
+out.innerHTML='<h3>'+L.match.replace('{v}',v)+'</h3><p>'+r+'</p><p>'+L.compare+'</p>';out.hidden=false;
+});
+})();
+</script>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="Startpagina van TapeBackup.org" class="brand" href="/nl"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.org is een onafhankelijke informatiebron over techniek, prijzen en workflows voor back-up op LTO-tape. Niet verbonden aan het LTO Program.</p></div><div class="fcol"><h4>LTO-prijzen</h4><a href="/nl/lto-tape-price-trend">Prijstracker</a><a href="/nl/lto-tape-price-trend/lto6-price">Prijs LTO-6</a><a href="/nl/lto-tape-price-trend/lto7-price">Prijs LTO-7</a><a href="/nl/lto-tape-price-trend/lto8-price">Prijs LTO-8</a><a href="/nl/lto-tape-price-trend/lto9-price">Prijs LTO-9</a><a href="/nl/lto-tape-price-trend/lto10-price">Prijs LTO-10</a><a href="/nl/lto-tape-price-trend/history">Prijsgeschiedenis</a></div><div class="fcol"><h4>Bronnen</h4><a href="/tape-q-and-a">Tape-vragen</a><a href="/blog">Blog</a><a href="/nl/why-tape">Waarom tape</a><a href="/nl/resources">Gidsen</a><a href="/nl/lto-tape-brand">LTO-tapemerken</a><a href="/nl/comparisons">Vergelijkingen</a></div><div class="fcol"><h4>Tools</h4><a href="/nl/backup-calculator">Back-upcalculator</a><a href="/nl/backup-software-finder">Softwarewijzer</a><a href="/nl/best-tape-backup-software">Beste back-upsoftware voor tape</a></div><div class="fcol"><h4>Bedrijf</h4><a href="/nl/about">Over ons</a><a href="/nl/contact">Contact</a><a href="/sitemap.xml">Sitemap</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org. Onafhankelijke informatiebron over back-up op LTO-tape.</span><div class="links"><a href="/nl/about">Over ons</a><a href="/nl/contact">Contact</a><a href="/sitemap.xml">Sitemap</a></div></div></div></footer>
+</div>
+</body>
+</html>

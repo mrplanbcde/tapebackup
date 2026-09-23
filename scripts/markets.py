@@ -30,6 +30,7 @@ MARKETS = {
     "es": {"lang": "es", "country": "Spain", "country_short": "Spain", "currency": "EUR", "sym": "€", "vat": 0.21,
            "file": f"eu/prices-es-{PRICE_MONTH}.json", "fallback": "de"},
     "nl": {"lang": "nl", "country": "the Netherlands", "country_short": "Netherlands", "currency": "EUR", "sym": "€", "vat": 0.21,
+           "seller_region": "the Netherlands and Belgium",
            "file": f"eu/prices-nl-{PRICE_MONTH}.json", "fallback": "de"},
     "pl": {"lang": "pl", "country": "Poland", "country_short": "Poland", "currency": "PLN", "sym": "zł", "vat": 0.23,
            "file": f"eu/prices-pl-{PRICE_MONTH}.json"},
@@ -71,7 +72,7 @@ def _load(rel):
         return json.load(f)
 
 
-def _norm_dp(dp, vat, src_market):
+def _norm_dp(dp, vat, src_market, sym=""):
     price = dp.get("price", dp.get("priceUSD"))
     if price is None:
         return None
@@ -86,9 +87,12 @@ def _norm_dp(dp, vat, src_market):
     m = PACK_NOTE.search(note)
     pack = int(m.group(1)) if m and int(m.group(1)) > 1 else None
     note = re.sub(r"seen \d{4}-\d{2}-\d{2};?\s*", "", note).strip(" ;")
+    if sym:
+        note = re.sub(r"\+\s?(?:EUR|€|zł|PLN)?\s?(\d+(?:[.,]\d{1,2})?)\s*(?:EUR|€|zł|PLN)?\s*(shipping|delivery)", lambda m: f"+{sym}{m.group(1).replace(',', '.')} {m.group(2)}", note)
     if net_note:
         note = f"{note}; {net_note}" if note else net_note
-    return {"seller": dp.get("seller", ""), "sku": dp.get("sku", ""), "price": gross, "url": dp.get("url", ""),
+    sku = re.sub(r"^\d+__", "", (dp.get("sku") or "").strip())
+    return {"seller": dp.get("seller", ""), "sku": sku, "price": gross, "url": dp.get("url", ""),
             "note": note, "pack": pack, "unit": round(gross / pack, 2) if pack else None, "market": src_market}
 
 
@@ -115,7 +119,7 @@ def _summarise(dps, native_tb):
             "perTBHigh": round(hi / native_tb, 2) if native_tb else None, "datapoints": dps}
 
 
-def normalise(raw, vat, src_market):
+def normalise(raw, vat, src_market, sym=""):
     gens = {}
     for gen, g in raw["generations"].items():
         native = g.get("nativeTB")
@@ -123,7 +127,7 @@ def normalise(raw, vat, src_market):
         for item in ITEMS:
             if item not in g:
                 continue
-            dps = [x for x in (_norm_dp(d, vat, src_market) for d in g[item].get("datapoints", [])) if x]
+            dps = [x for x in (_norm_dp(d, vat, src_market, sym) for d in g[item].get("datapoints", [])) if x]
             tb = 40 if item == "cartridge40TB" else native
             out[item] = _summarise(dps, tb if item in ("cartridge", "cartridge40TB", "worm") else None)
         gens[gen] = out
@@ -137,6 +141,7 @@ class Market:
         self.lang = cfg["lang"]
         self.country = cfg["country"]
         self.country_short = cfg["country_short"]
+        self.seller_region = cfg.get("seller_region", cfg["country"])
         self.currency = cfg["currency"]
         self.sym = cfg["sym"]
         self.vat = cfg["vat"]
@@ -147,13 +152,13 @@ class Market:
             raise SystemExit(f"missing price data for market {code}: data/{cfg['file']}")
         self.raw = raw
         self.as_of = raw.get("asOf", "")
-        self.generations = normalise(raw, self.vat, code)
+        self.generations = normalise(raw, self.vat, code, self.sym)
         self.fallback_used = []
         fb = cfg.get("fallback")
         if fb:
             fb_raw = _load(MARKETS[fb]["file"])
             if fb_raw:
-                fb_gens = normalise(fb_raw, MARKETS[fb]["vat"], fb)
+                fb_gens = normalise(fb_raw, MARKETS[fb]["vat"], fb, MARKETS[fb]["sym"])
                 for gen, g in self.generations.items():
                     for item in ITEMS:
                         mine = g.get(item)

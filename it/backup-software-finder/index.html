@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>Ricerca software di backup su nastro LTO</title>
+<meta content="Quattro domande per trovare il software di backup su nastro adatto ad ambiente, uso del nastro e budget: Catalogic DPX, Veeam, Commvault o Nakivo." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/it/backup-software-finder" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="Ricerca software di backup su nastro LTO" property="og:title"/>
+<meta content="Quattro domande per trovare il software di backup su nastro adatto ad ambiente, uso del nastro e budget: Catalogic DPX, Veeam, Commvault o Nakivo." property="og:description"/>
+<meta content="https://tapebackup.org/it/backup-software-finder" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Ricerca software di backup su nastro LTO" name="twitter:title"/>
+<meta content="Quattro domande per trovare il software di backup su nastro adatto ad ambiente, uso del nastro e budget: Catalogic DPX, Veeam, Commvault o Nakivo." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual è il miglior software di backup per le librerie a nastro?", "acceptedAnswer": {"@type": "Answer", "text": "Catalogic DPX ha il supporto più ampio per unità e librerie e gestisce NDMP, importante per il backup dei NAS. Veeam e Commvault supportano bene il nastro come copia secondaria negli ambienti virtuali più grandi."}}, {"@type": "Question", "name": "Posso eseguire il backup di Microsoft 365 su nastro?", "acceptedAnswer": {"@type": "Answer", "text": "Non direttamente. Si esegue il backup dei dati SaaS con uno strumento come Veeam for Microsoft 365, poi, se serve una copia offline o a lunga conservazione, si copia il suo repository su nastro."}}], "inLanguage": "it"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tapebackup.org/it"}, {"@type": "ListItem", "position": 2, "name": "Ricerca software", "item": "https://tapebackup.org/it/backup-software-finder"}], "inLanguage": "it"}</script>
+<meta content="it_IT" property="og:locale"/><link href="https://tapebackup.org/backup-software-finder" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-software-finder" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-software-finder" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-software-finder" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-software-finder" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-software-finder" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-software-finder" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-software-finder" hreflang="x-default" rel="alternate"/></head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Domande e risposte</a><span class="sep"></span><a href="/it/lto-tape-price-trend">Prezzi LTO</a><span class="sep"></span><a href="/it/contact">Contatti</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/backup-software-finder" hreflang="en" lang="en">EN</a><a href="/de/backup-software-finder" hreflang="de" lang="de">DE</a><a href="/fr/backup-software-finder" hreflang="fr" lang="fr">FR</a><a aria-current="page" class="on" href="/it/backup-software-finder" hreflang="it" lang="it">IT</a><a href="/es/backup-software-finder" hreflang="es" lang="es">ES</a><a href="/nl/backup-software-finder" hreflang="nl" lang="nl">NL</a><a href="/pl/backup-software-finder" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Home page di TapeBackup.org" class="brand" href="/it"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Principale" class="topnav">
+<a href="/it/why-tape">Perché il nastro</a>
+<div class="price-dropdown"><a href="/it/lto-tape-price-trend">Prezzi LTO</a><div class="price-dropdown-menu"><a href="/it/lto-tape-price-trend">Tutte le generazioni<span>Prezzi di settembre 2026</span></a><a href="/it/lto-tape-price-trend/lto6-price">Prezzo LTO-6<span>2,5 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto7-price">Prezzo LTO-7<span>6 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto8-price">Prezzo LTO-8<span>12 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto9-price">Prezzo LTO-9<span>18 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto10-price">Prezzo LTO-10<span>30 / 40 TB nativi</span></a><a href="/it/lto-tape-price-trend/history">Storico dei prezzi<span>Rilevazioni archiviate dal 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/it/backup-calculator">Strumenti</a><div class="price-dropdown-menu"><a href="/it/backup-calculator">Calcolatore di backup<span>Stima di supporti e costi</span></a><a href="/it/backup-software-finder">Ricerca software<span>Il software adatto al vostro uso del nastro</span></a><a href="/it/best-tape-backup-software">Migliori software di backup su nastro<span>Confronto 2026</span></a></div></div>
+<a href="/blog">Blog</a>
+<a href="/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/it/contact">Richiedi il listino</a></div>
+</div></header>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy">
+<p class="eyebrow">Strumento</p><h1>Ricerca software per il backup su nastro</h1>
+<p><strong>Se il nastro è l'archivio principale, Catalogic DPX è di solito la scelta migliore; per ambienti prevalentemente virtuali che usano il nastro come seconda copia, Veeam; per piccoli ambienti con budget ridotto, Nakivo.</strong></p>
+<p>L'hardware è metà del lavoro. Rispondete a quattro domande per ottenere una rosa di software di backup adatti al vostro uso del nastro, alle dimensioni della vostra infrastruttura e al vostro budget.</p></div>
+<aside class="hero-panel"><p class="panel-label">Servono più dettagli?</p><p class="panel-copy">Leggete il <a href="/it/best-tape-backup-software">confronto completo dei migliori software di backup su nastro</a> o la <a href="/it/resources/tape-backup-software/catalogicdpx">recensione di Catalogic DPX</a>.</p></aside></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><h2>Scegliere il software di backup</h2>
+<form class="tool-form" id="finder"><fieldset class="choice-grid"><legend>1. Qual è il vostro ambiente principale?</legend><label><input name="env" type="radio" value="virtual"/>Soprattutto macchine virtuali</label><label><input name="env" type="radio" value="physical"/>Prevalentemente fisico o Unix</label><label><input checked="" name="env" type="radio" value="mixed"/>Misto o ibrido</label><label><input name="env" type="radio" value="saas"/>Solo Microsoft 365 o SaaS</label></fieldset><fieldset class="choice-grid"><legend>2. Come verrà usato il nastro?</legend><label><input name="tape" type="radio" value="heavy"/>Archivio primario o grande libreria</label><label><input checked="" name="tape" type="radio" value="secondary"/>Copia secondaria</label><label><input name="tape" type="radio" value="none"/>Niente nastro, solo disco o cloud</label></fieldset><fieldset class="choice-grid"><legend>3. Quanti carichi di lavoro?</legend><label><input name="scale" type="radio" value="small"/>Da 1 a 50</label><label><input checked="" name="scale" type="radio" value="mid"/>Da 51 a 500 o più</label></fieldset><fieldset class="choice-grid"><legend>4. Cosa conta di più?</legend><label><input checked="" name="prio" type="radio" value="value"/>Convenienza economica</label><label><input name="prio" type="radio" value="feature"/>Funzioni moderne e cloud</label></fieldset><button class="tool-submit" type="submit">Mostra il risultato</button></form>
+<div aria-live="polite" class="tool-result" hidden="" id="finder-result"></div></section>
+<section class="section-card"><p class="eyebrow">Selezione</p><h2>I software valutati da questo strumento</h2>
+<ul><li><strong>Catalogic DPX</strong>: backup enterprise orientato al nastro, con ampio supporto di unità, librerie e NDMP.</li><li><strong>Veeam Backup &amp; Replication</strong>: la scelta più diffusa per gli ambienti virtualizzati, con i job su nastro come destinazione secondaria.</li><li><strong>Commvault</strong>: piattaforma ampia e ricca di funzionalità, con una profonda integrazione cloud.</li><li><strong>Nakivo</strong>: opzione più economica per ambienti piccoli che richiedono un supporto base per il nastro.</li><li><strong>Veeam for Microsoft 365 e CloudCasa</strong>: backup di SaaS e Kubernetes.</li></ul></section>
+<section aria-label="Domande frequenti sulla ricerca software" class="faq-grid"><article class="faq-card"><h3>Qual è il miglior software di backup per le librerie a nastro?</h3><p>Catalogic DPX ha il supporto più ampio per unità e librerie e gestisce NDMP, importante per il backup dei NAS. Veeam e Commvault supportano bene il nastro come copia secondaria negli ambienti virtuali più grandi.</p></article><article class="faq-card"><h3>Posso eseguire il backup di Microsoft 365 su nastro?</h3><p>Non direttamente. Si esegue il backup dei dati SaaS con uno strumento come Veeam for Microsoft 365, poi, se serve una copia offline o a lunga conservazione, si copia il suo repository su nastro.</p></article></section>
+</div></div></main>
+<script data-i18n="" id="finder-i18n" type="application/json">{"match": "Soluzione consigliata: {v}", "compare": "<a href=\"/best-tape-backup-software\">Confronta tutti i software di backup su nastro<\/a>", "r_dpx": "Catalogic DPX è progettato attorno al nastro. Supporta una gamma molto ampia di unità e librerie LTO, anche meno recenti, gestisce bene NDMP e costa meno della maggior parte delle suite enterprise quando il nastro è centrale. <a href=\"/resources/tape-backup-software/catalogicdpx\">Leggete la recensione di DPX<\/a>.", "r_saas": "Per i dati SaaS, il leader di mercato è Veeam for Microsoft 365. Se usate anche Kubernetes, valutate CloudCasa.", "r_virtual": "Per un ambiente virtuale basato su disco, Veeam è la scelta standard e funziona bene con destinazioni su disco e cloud.", "v_mixed_notape": "Acronis o Commvault", "r_mixed_notape": "Per ambienti misti senza nastro, Acronis offre solide funzioni di sicurezza e Commvault una profonda integrazione cloud.", "r_small": "Per ambienti più piccoli che hanno bisogno di un supporto di base per il nastro senza prezzi enterprise, Nakivo è un'opzione solida.", "v_default": "Veeam o Catalogic DPX", "r_default": "Veeam è la scelta più diffusa per la virtualizzazione. Se i dati sono in crescita conviene confrontarlo con Catalogic DPX, perché licenze e gestione del nastro di DPX portano spesso a un costo totale inferiore."}</script>
+<script>
+(function(){
+var L=JSON.parse(document.getElementById('finder-i18n').textContent);
+var f=document.getElementById('finder'),out=document.getElementById('finder-result');
+function val(n){return f.querySelector('input[name="'+n+'"]:checked').value;}
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var env=val('env'),tape=val('tape'),scale=val('scale'),prio=val('prio'),v,r;
+if(tape==='heavy'||(tape==='secondary'&&prio==='value')){v='Catalogic DPX';r=L.r_dpx;}
+else if(env==='saas'){v='Veeam for Microsoft 365';r=L.r_saas;}
+else if(tape==='none'){if(env==='virtual'){v='Veeam Backup & Replication';r=L.r_virtual;}else{v=L.v_mixed_notape;r=L.r_mixed_notape;}}
+else if(scale==='small'){v='Nakivo';r=L.r_small;}
+else{v=L.v_default;r=L.r_default;}
+out.innerHTML='<h3>'+L.match.replace('{v}',v)+'</h3><p>'+r+'</p><p>'+L.compare+'</p>';out.hidden=false;
+});
+})();
+</script>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="Home page di TapeBackup.org" class="brand" href="/it"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.org è una risorsa indipendente su tecnologia, prezzi e flussi di lavoro del backup su nastro LTO. Non è affiliata all'LTO Program.</p></div><div class="fcol"><h4>Prezzi LTO</h4><a href="/it/lto-tape-price-trend">Monitoraggio dei prezzi</a><a href="/it/lto-tape-price-trend/lto6-price">Prezzo LTO-6</a><a href="/it/lto-tape-price-trend/lto7-price">Prezzo LTO-7</a><a href="/it/lto-tape-price-trend/lto8-price">Prezzo LTO-8</a><a href="/it/lto-tape-price-trend/lto9-price">Prezzo LTO-9</a><a href="/it/lto-tape-price-trend/lto10-price">Prezzo LTO-10</a><a href="/it/lto-tape-price-trend/history">Storico dei prezzi</a></div><div class="fcol"><h4>Risorse</h4><a href="/tape-q-and-a">Domande e risposte</a><a href="/blog">Blog</a><a href="/it/why-tape">Perché il nastro</a><a href="/it/resources">Guide</a><a href="/it/lto-tape-brand">Marchi di nastri LTO</a><a href="/it/comparisons">Confronti</a></div><div class="fcol"><h4>Strumenti</h4><a href="/it/backup-calculator">Calcolatore di backup</a><a href="/it/backup-software-finder">Ricerca software</a><a href="/it/best-tape-backup-software">Migliori software di backup su nastro</a></div><div class="fcol"><h4>Informazioni</h4><a href="/it/about">Chi siamo</a><a href="/it/contact">Contatti</a><a href="/sitemap.xml">Mappa del sito</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org. Risorsa indipendente sul backup su nastro LTO.</span><div class="links"><a href="/it/about">Chi siamo</a><a href="/it/contact">Contatti</a><a href="/sitemap.xml">Mappa del sito</a></div></div></div></footer>
+</div>
+</body>
+</html>

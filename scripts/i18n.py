@@ -170,8 +170,11 @@ FMT = {
     "pl": {"dec": ",", "grp": " ", "after": True, "min_grp": 5},
 }
 NBSP = " "
+UNIT_AFTER = re.compile(r"\s+(?:[KMGTPE]i?B|[KMGTP]o|[KMG]B/s|[MG]o/s)\b")
+ISO_DATE = re.compile(r"(?<![\w/.:-])((?:19|20)\d\d)-(\d\d)-(\d\d)(?![\w/:-]|\.\d)")
+DATE_FMT = {"de": "{d}.{m}.{y}", "fr": "{d}/{m}/{y}", "it": "{d}/{m}/{y}", "es": "{d}/{m}/{y}", "nl": "{d}-{m}-{y}", "pl": "{d}.{m}.{y}"}
 LOC_RE = re.compile(
-    r"(?P<sym>[$€]|zł)\s?(?P<mnum>\d(?:[\d,]*\d)?(?:\.\d+)?)"
+    r"(?P<sym>[$€]|zł)\s?(?P<mnum>\d(?:[\d,]*\d)?(?:\.\d+)?)(?:[-–](?P<mnum2>\d(?:[\d,]*\d)?(?:\.\d+)?)(?![\w.]))?"
     r"|(?<![\w.,/:\-])(?P<num>\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+\.\d+)(?![\d])(?!\.\d)(?![A-Za-z]*\d)"
 )
 
@@ -205,10 +208,16 @@ def localize_numbers(text, lang):
     f = FMT[lang]
 
     def rep(m):
+        if (m.group("num") and re.fullmatch(r"\d{1,2}\.\d{1,2}", m.group("num")) and not text[:m.start()].strip()
+                and re.match(r"\s+[A-ZÄÖÜÉÈÀÁÍÓÚŁŚŻŹĆŃ]", text[m.end():]) and not UNIT_AFTER.match(text[m.end():])):
+            return m.group(0)  # a section number such as "2.1 Criterion"
         if m.group("sym"):
             sym, n = m.group("sym"), fmt_number(m.group("mnum"), lang)
+            if m.group("mnum2"):  # "$3,000-4,500": one symbol for the whole range
+                n = f"{n}–{fmt_number(m.group('mnum2'), lang)}"
             return f"{n}{NBSP}{sym}" if f["after"] else f"{sym}{NBSP}{n}"
         return fmt_number(m.group("num"), lang)
+    text = ISO_DATE.sub(lambda m: DATE_FMT[lang].format(y=m.group(1), m=m.group(2), d=m.group(3)), text)
     out = LOC_RE.sub(rep, text)
     num = r"\d[\d.,  ]*"
     if f["after"]:
@@ -496,6 +505,10 @@ def render_page(src_html, path, lang, tm, dnt, langs, indexable, stats):
         if isinstance(t, Comment) or skipped(t.parent) or not (re.search(r"\d", t) or (lang == "fr" and re.search(r"[;:!?«»]", t))):
             continue
         t.replace_with(localize_numbers(str(t), lang))
+    for h in soup.find_all(["h1", "h2"]):
+        for t in list(h.find_all(string=True)):
+            if "LTO-" in t:
+                t.replace_with(re.sub(r"LTO-(\d+)", "LTO\u2011\\1", str(t)))  # keep "LTO-10" on one line
     for a in soup.find_all("a", href=True):
         a["href"] = rewrite_href(a["href"], lang)
     set_head(soup, path, lang, langs, indexable)
@@ -526,7 +539,7 @@ def seller_names():
                 if isinstance(item, dict):
                     for d in item.get("datapoints", []):
                         names.add(d.get("seller", ""))
-                        names.add(d.get("sku", ""))
+                        names.add(re.sub(r"^\d+__", "", (d.get("sku") or "").strip()))
     return {n for n in names if n}
 
 

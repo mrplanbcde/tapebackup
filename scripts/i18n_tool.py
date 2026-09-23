@@ -8,6 +8,8 @@
         data/i18n/tm/<lang>.<part>.json; prints every rejected id with the reason
     python3 scripts/i18n_tool.py check <lang>
         validates the whole translation memory for a language
+    python3 scripts/i18n_tool.py set <lang> <fixes.json>
+        replaces existing translations ({English key: new translation}) after review
 
 Segments come from data/i18n/segments/<lang>.json, which scripts/build_site.py
 rewrites on every build with whatever is still untranslated.
@@ -103,6 +105,53 @@ def merge(lang, part, file):
         print(f"  {sid}: {'; '.join(errs)}")
 
 
+def set_fixes(lang, file):
+    """Override existing translations: {English key: new translation}, stored in tm/<lang>.zfix.json (loaded last)."""
+    with open(file, encoding="utf-8") as f:
+        got = json.load(f)
+    tm_all = i18n.load_tm(lang)
+    path = os.path.join(i18n.I18N, "tm", f"{lang}.zfix.json")
+    fixes = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+    ok, bad = 0, []
+    for key, tgt in got.items():
+        if key not in tm_all:
+            bad.append((key, ["key not in translation memory"]))
+            continue
+        errs = problems({"key": key, "ctx": [], "example": ""}, tgt)
+        errs = [e for e in errs if not e.startswith("too long")]
+        if errs:
+            bad.append((key, errs))
+            continue
+        fixes[key] = tgt.strip()
+        ok += 1
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(fixes, f, ensure_ascii=False, indent=1, sort_keys=True)
+    print(f"fixed {ok}, rejected {len(bad)}")
+    for key, errs in bad:
+        print(f"  {key[:80]!r}: {'; '.join(errs)}")
+
+
+def add_keys(lang, file):
+    """Add translations keyed by the English key ({key: translation}) for segments not in any batch."""
+    with open(file, encoding="utf-8") as f:
+        got = json.load(f)
+    path = os.path.join(i18n.I18N, "tm", f"{lang}.add.json")
+    tm = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+    ok, bad = 0, []
+    for key, tgt in got.items():
+        errs = [e for e in problems({"key": key, "ctx": [], "example": ""}, tgt) if not e.startswith("too long")]
+        if errs:
+            bad.append((key, errs))
+            continue
+        tm[key] = tgt.strip()
+        ok += 1
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(tm, f, ensure_ascii=False, indent=1, sort_keys=True)
+    print(f"added {ok}, rejected {len(bad)}")
+    for key, errs in bad:
+        print(f"  {key[:80]!r}: {'; '.join(errs)}")
+
+
 def check(lang):
     tm = i18n.load_tm(lang)
     n = 0
@@ -123,3 +172,7 @@ if __name__ == "__main__":
         merge(sys.argv[2], sys.argv[3], sys.argv[4])
     elif cmd == "check":
         check(sys.argv[2])
+    elif cmd == "add":
+        add_keys(sys.argv[2], sys.argv[3])
+    elif cmd == "set":
+        set_fixes(sys.argv[2], sys.argv[3])

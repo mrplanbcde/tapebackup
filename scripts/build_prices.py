@@ -19,7 +19,7 @@ import math
 import os
 import re
 
-from markets import Market, load_fx
+from markets import MARKETS, Market, load_fx
 from site_shell import GENS, ROOT, breadcrumb_ld, esc, faq_html, faq_ld, hubspot_cta, page, slug_for, write
 
 CURRENT_LABEL = "September 2026"
@@ -291,10 +291,9 @@ def gen_copy(gen, gens):
         "lto9_rank": "the lowest" if cheapest == "LTO-9" else "one of the lowest",
         "lto9_reason": "the cheapest media per terabyte" if cheapest == "LTO-9" else "low media cost per terabyte",
     }
-    if fill["lto8_vs_9"] == "about the same":
-        verdict8 = "LTO-8 media now costs about the same per terabyte as LTO-9. It is still a sensible buy if you already run LTO-8 drives or need to read LTO-7 tapes."
-    else:
-        verdict8 = f"LTO-8 media now costs {fill['lto8_vs_9']} per terabyte than LTO-9. It is still a sensible buy if you already run LTO-8 drives or need to read LTO-7 tapes."
+    rel = {"about the same": "about the same per terabyte as", "slightly more": "slightly more per terabyte than",
+           "slightly less": "slightly less per terabyte than", "noticeably less": "less per terabyte than"}.get(lto8_vs, lto8_vs + " per terabyte as")
+    verdict8 = f"LTO-8 media now costs {rel} LTO-9. It is still a sensible buy if you already run LTO-8 drives or need to read LTO-7 tapes."
     c = dict(GEN_COPY[gen])
     c["lead"] = c["lead"].format(**fill)
     c["verdict"] = verdict8 if gen == "LTO-8" else c["verdict"].format(**fill)
@@ -308,10 +307,26 @@ def answer_sentence(gen, g):
     s = f"As of {date_text()}, a new {gen} tape ({g['nativeTB']:g} TB native) costs {rng(c, True)}{where}, or {per_tb(c)} per TB"
     drives = []
     if wi.get("low") is not None:
-        drives.append(f"internal drives {rng(wi, False)}")
+        drives.append(f"internal drives {rng(wi, False)}{fallback_note(wi)}")
     if de.get("low") is not None:
-        drives.append(f"external drives {rng(de, False)}")
+        drives.append(f"external drives {rng(de, False)}{fallback_note(de)}")
     return s + ("; " + " and ".join(drives) if drives else "") + "."
+
+
+def drive_cell(wi, de, sym=None):
+    """History-table text for internal and external drive prices."""
+    a, b = rng(wi, False, sym), rng(de, False, sym)
+    if a == b == "Not listed":
+        return "Not listed"
+    return f"Internal {a}; external {b}"
+
+
+def fallback_note(item):
+    """' (seller in Germany)' when an item's listings all come from the fallback market."""
+    dps = (item or {}).get("datapoints") or []
+    if MKT.is_us or not dps or any(d.get("market") == MKT.code for d in dps):
+        return ""
+    return f" (seller in {MARKETS[dps[0]['market']]['country']})"
 
 
 def gen_faqs(gen, g):
@@ -346,10 +361,21 @@ def gen_faqs(gen, g):
     return faqs
 
 
+def blocked_not_used():
+    """Blocked shops that were not reached some other way (e.g. through a price comparison site)."""
+    used = " ".join(MKT.sellers_used()).lower()
+    out = []
+    for name in MKT.blocked_sellers():
+        stem = re.sub(r"\.(de|fr|it|es|nl|be|pl|com|co\.uk)$", "", name.lower().split(" (")[0].strip())
+        if stem and stem not in used:
+            out.append(name)
+    return out
+
+
 def method_blocked_sentence():
     if MKT.is_us:
         return "Amazon, B&amp;H, CDW and Connection blocked automated checks or showed no price, so big-box pricing is not included."
-    blocked = MKT.blocked_sellers()
+    blocked = blocked_not_used()
     if not blocked:
         return ""
     return f"{esc(and_list(blocked))} blocked automated checks or showed no price, so {'it is' if len(blocked) == 1 else 'they are'} not included."
@@ -419,12 +445,12 @@ def build_gen_page(gen, g, history, current):
 <p>New standalone SAS drives. You also need a SAS HBA in the host, and backup software that supports the drive.</p>{drive_note}{''.join(drive_parts) or '<p>No new standalone drive listings were found.</p>'}</section>""")
 
     if MKT.is_us:
-        hist_rows = [[f"<strong>{CURRENT_LABEL} (current)</strong>", esc(rng(c, True)), esc(f"Internal {rng(wi, False)}; external {rng(de, False)}")]]
+        hist_rows = [[f"<strong>{CURRENT_LABEL} (current)</strong>", esc(rng(c, True)), esc(drive_cell(wi, de))]]
         hist_intro = "Each row links to the archived snapshot it came from. Earlier snapshots used rounded guide ranges, and the March 2026 drive figures were estimates rather than seller listings, so compare directions rather than exact dollars."
     else:
         ug = US.generations[gen]
-        hist_rows = [[f"<strong>{CURRENT_LABEL}, {MKT.country_short} (current)</strong>", esc(rng(c, True)), esc(f"Internal {rng(wi, False)}; external {rng(de, False)}")],
-                     [f"{CURRENT_LABEL} (US)", esc(rng(ug["cartridge"], True, "$")), esc(f"Internal {rng(ug.get('driveInternal'), False, '$')}; external {rng(ug.get('driveExternal'), False, '$')}")]]
+        hist_rows = [[f"<strong>{CURRENT_LABEL}, {MKT.country_short} (current)</strong>", esc(rng(c, True)), esc(drive_cell(wi, de))],
+                     [f"{CURRENT_LABEL} (US)", esc(rng(ug["cartridge"], True, "$")), esc(drive_cell(ug.get("driveInternal"), ug.get("driveExternal"), "$"))]]
         hist_intro = f"Prices in {MKT.country} are tracked from {CURRENT_LABEL}. Earlier rows are US snapshots in US dollars before sales tax: rounded guide ranges, with March 2026 drive figures that were estimates rather than seller listings, so compare directions rather than exact amounts."
     hist_rows += history_rows_for(gen, history)
     parts.append(f"""<section class="section-card" id="price-history"><p class="eyebrow">Price history</p><h2>{gen} price history</h2>
@@ -543,8 +569,8 @@ def build_hub(current, history):
     else:
         changes_intro = f"<p>Prices in {MKT.country} are tracked from {CURRENT_LABEL}, so the history below comes from US sellers. The January and March 2026 US editions were compiled from different sources and rounded, so small differences are noise. The clear moves: LTO-6 and LTO-7 media got more expensive as supply thinned, LTO-8 and LTO-9 rose a little, and LTO-10 30 TB held steady.</p>"
         drive_para = f"<p>Drive prices look very different. The March 2026 US edition estimated LTO-9 internal drives at $4,500 to $6,500; US seller listings in {CURRENT_LABEL} run from {rng(US.generations['LTO-9']['driveInternal'], False, '$')}. Part of that gap is method (estimates versus listings), so treat it as a warning to get quotes rather than a precise increase.</p>"
-        blocked = MKT.blocked_sellers()
-        method = (f"We load product pages at sellers in {MKT.country} ({esc(and_list(MKT.sellers_used()))} in this edition) and record the listed price, part number and stock note."
+        blocked = blocked_not_used()
+        method = (f"We load product pages at sellers in {MKT.seller_region} ({esc(and_list(MKT.sellers_used()))} in this edition) and record the listed price, part number and stock note."
                   f" Prices include {round(MKT.vat * 100)}% VAT; where a seller showed a net price, VAT was added. We exclude listings the seller marks as inaccurate and prices that look like listing errors."
                   + (f" {esc(and_list(blocked))} blocked automated checks or showed no price, so {'it is' if len(blocked) == 1 else 'they are'} not included." if blocked else "")
                   + (f" Where no seller in {MKT.country} listed an item, the table shows a listing from Germany and says so in the note." if MKT.fallback_used else "")

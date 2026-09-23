@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>Kalkulator kopii zapasowych LTO: pojemność i koszt</title>
+<meta content="Bezpłatny kalkulator kopii na taśmach: na podstawie ilości danych, liczby kopii i celów odtwarzania wskazuje taśmę, dysk lub chmurę. Ceny kaset LTO 2026." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/pl/backup-calculator" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="Kalkulator kopii zapasowych LTO: pojemność i koszt" property="og:title"/>
+<meta content="Bezpłatny kalkulator kopii na taśmach: na podstawie ilości danych, liczby kopii i celów odtwarzania wskazuje taśmę, dysk lub chmurę. Ceny kaset LTO 2026." property="og:description"/>
+<meta content="https://tapebackup.org/pl/backup-calculator" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Kalkulator kopii zapasowych LTO: pojemność i koszt" name="twitter:title"/>
+<meta content="Bezpłatny kalkulator kopii na taśmach: na podstawie ilości danych, liczby kopii i celów odtwarzania wskazuje taśmę, dysk lub chmurę. Ceny kaset LTO 2026." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Ile taśm LTO potrzeba?", "acceptedAnswer": {"@type": "Answer", "text": "Ilość danych należy podzielić przez pojemność natywną danej generacji i pomnożyć przez liczbę kopii, pomijając kompresję: 100 TB w dwóch kopiach to około 12 kaset LTO-9. Kompresja pomaga tylko przy danych, które dają się skompresować, i nie należy na niej polegać przy planowaniu."}}, {"@type": "Question", "name": "Kiedy taśma jest tańsza od dysku lub chmury?", "acceptedAnswer": {"@type": "Answer", "text": "Mniej więcej od 15 TB wzwyż, gdy koszt napędu rozkłada się na wystarczająco dużo kaset. Poniżej tej wartości NAS w połączeniu z zimną klasą w chmurze jest zwykle tańszy i prostszy."}}, {"@type": "Question", "name": "Czy kompresja zmienia liczbę taśm?", "acceptedAnswer": {"@type": "Answer", "text": "Tylko w przypadku danych podatnych na kompresję. Producenci podają 2,5:1, ale wideo i obrazy są już skompresowane, a plików zaszyfrowanych nie da się skompresować, dlatego takie dane mieszczą się na taśmie w ilości zbliżonej do pojemności natywnej."}}], "inLanguage": "pl"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://tapebackup.org/pl"}, {"@type": "ListItem", "position": 2, "name": "Kalkulator kopii zapasowych", "item": "https://tapebackup.org/pl/backup-calculator"}], "inLanguage": "pl"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Kalkulator pojemności i kosztów kopii zapasowych na taśmach", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/pl/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "PLN"}, "inLanguage": "pl"}</script>
+<meta content="pl_PL" property="og:locale"/><link href="https://tapebackup.org/backup-calculator" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-calculator" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-calculator" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-calculator" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-calculator" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-calculator" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-calculator" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-calculator" hreflang="x-default" rel="alternate"/></head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Pytania i odpowiedzi</a><span class="sep"></span><a href="/pl/lto-tape-price-trend">Ceny LTO</a><span class="sep"></span><a href="/pl/contact">Kontakt</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/backup-calculator" hreflang="en" lang="en">EN</a><a href="/de/backup-calculator" hreflang="de" lang="de">DE</a><a href="/fr/backup-calculator" hreflang="fr" lang="fr">FR</a><a href="/it/backup-calculator" hreflang="it" lang="it">IT</a><a href="/es/backup-calculator" hreflang="es" lang="es">ES</a><a href="/nl/backup-calculator" hreflang="nl" lang="nl">NL</a><a aria-current="page" class="on" href="/pl/backup-calculator" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Strona główna TapeBackup.org" class="brand" href="/pl"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Nawigacja główna" class="topnav">
+<a href="/pl/why-tape">Dlaczego taśma</a>
+<div class="price-dropdown"><a href="/pl/lto-tape-price-trend">Ceny LTO</a><div class="price-dropdown-menu"><a href="/pl/lto-tape-price-trend">Wszystkie generacje<span>Ceny z września 2026</span></a><a href="/pl/lto-tape-price-trend/lto6-price">Ceny LTO-6<span>2,5 TB natywnie</span></a><a href="/pl/lto-tape-price-trend/lto7-price">Ceny LTO-7<span>6 TB natywnie</span></a><a href="/pl/lto-tape-price-trend/lto8-price">Ceny LTO-8<span>12 TB natywnie</span></a><a href="/pl/lto-tape-price-trend/lto9-price">Ceny LTO-9<span>18 TB natywnie</span></a><a href="/pl/lto-tape-price-trend/lto10-price">Ceny LTO-10<span>30 / 40 TB natywnie</span></a><a href="/pl/lto-tape-price-trend/history">Historia cen<span>Archiwalne zestawienia od 2025 roku</span></a></div></div>
+<div class="price-dropdown"><a href="/pl/backup-calculator">Narzędzia</a><div class="price-dropdown-menu"><a href="/pl/backup-calculator">Kalkulator kopii zapasowych<span>Szacowanie nośników i kosztów</span></a><a href="/pl/backup-software-finder">Wyszukiwarka oprogramowania<span>Dobór oprogramowania do pracy z taśmami</span></a><a href="/pl/best-tape-backup-software">Najlepsze oprogramowanie do kopii zapasowych na taśmach<span>Porównanie 2026</span></a></div></div>
+<a href="/blog">Blog</a>
+<a href="/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/pl/contact">Pobierz cennik</a></div>
+</div></header>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy">
+<p class="eyebrow">Narzędzie</p><h1>Kalkulator pojemności i kosztów kopii zapasowych na taśmach</h1>
+<p><strong>Taśma opłaca się od około 15 TB danych: poniżej tej wartości tańszy jest dysk z chmurą; powyżej nośniki LTO-8 lub LTO-9 w cenie około 21 zł do 40 zł za TB wygrywają z przechowywaniem długoterminowych kopii na dyskach.</strong></p>
+<p>Wystarczy podać ilość chronionych danych, liczbę przechowywanych kopii i wymagany czas ich odzyskania. Kalkulator zaleca taśmę, dysk, chmurę lub ich połączenie oraz szacuje liczbę kaset i koszt nośników na podstawie cen LTO w Polsce z września 2026.</p></div>
+<aside class="hero-panel"><p class="panel-label">Ceny użyte w obliczeniach</p><p class="panel-copy">Wartości środkowe ofert sprzedawców z <a href="/pl/lto-tape-price-trend">monitora cen LTO</a>: taśmy LTO-8: 392 zł, taśmy LTO-9: 476 zł, taśmy LTO-10 30 TB: 1325 zł.</p></aside></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><h2>Kalkulator konfiguracji kopii zapasowych</h2>
+<form class="tool-form" id="calc" novalidate="">
+<div><label for="capacity">Łączna ilość danych do zabezpieczenia (TB)</label><input id="capacity" inputmode="decimal" min="1" required="" step="1" type="number" value="50"/></div>
+<div><label for="copies">Liczba kopii</label><select id="copies"><option value="1">1 kopia (ryzykowne)</option><option selected="" value="2">2 kopie</option><option value="3">Kopie: 3 (standard 3-2-1)</option></select></div>
+<div><label for="rto">Docelowy czas odtwarzania</label><p class="hint">Jak szybko trzeba odzyskać dane?</p><select id="rto"><option value="instant">Minuty (systemy krytyczne)</option><option selected="" value="hours">W ciągu kilku godzin (standard)</option><option value="days">W ciągu kilku dni (archiwum)</option></select></div>
+<div><label for="rpo">Docelowy punkt odtwarzania</label><p class="hint">Jaką utratę najnowszych danych można zaakceptować?</p><select id="rpo"><option value="continuous">Sekundy (czas rzeczywisty)</option><option selected="" value="daily">24 godz. (kopie codzienne)</option><option value="weekly">Tydzień (kopie cotygodniowe)</option></select></div>
+<button class="tool-submit" type="submit">Pokaż rekomendację</button>
+</form>
+<div aria-live="polite" class="tool-result" hidden="" id="calc-result"></div>
+</section>
+<section class="section-card"><p class="eyebrow">Jak to działa</p><h2>Jak kalkulator wybiera</h2>
+<ul><li>Poniżej 15 TB napęd taśmowy rzadko się zwraca, dlatego zalecany jest dysk i chmura.</li><li>Jeśli odtwarzanie ma trwać minuty, pierwsza kopia musi być na dysku lub w pamięci flash, a taśma służy do kopii długoterminowych i offline.</li><li>W pozostałych przypadkach kalkulator proponuje LTO-8 poniżej 50 TB, LTO-9 do 500 TB, a powyżej LTO-9 lub LTO-10.</li><li>Liczba kaset jest liczona według pojemności natywnej bez kompresji, a koszty według środka przedziału aktualnych ofert sprzedawców. Koszt napędu to jeden nowy napęd wewnętrzny, jeśli taki jest w ofercie.</li></ul>
+<p>Szacunki nie obejmują oprogramowania, kart HBA, bibliotek, dostawy ani wysyłki. Oferty, na których opierają się te liczby, są w <a href="/pl/lto-tape-price-trend">monitorze cen LTO</a>.</p></section>
+<section aria-label="Najczęstsze pytania o kalkulator kopii zapasowych" class="faq-grid"><article class="faq-card"><h3>Ile taśm LTO potrzeba?</h3><p>Ilość danych należy podzielić przez pojemność natywną danej generacji i pomnożyć przez liczbę kopii, pomijając kompresję: 100 TB w dwóch kopiach to około 12 kaset LTO-9. Kompresja pomaga tylko przy danych, które dają się skompresować, i nie należy na niej polegać przy planowaniu.</p></article><article class="faq-card"><h3>Kiedy taśma jest tańsza od dysku lub chmury?</h3><p>Mniej więcej od 15 TB wzwyż, gdy koszt napędu rozkłada się na wystarczająco dużo kaset. Poniżej tej wartości NAS w połączeniu z zimną klasą w chmurze jest zwykle tańszy i prostszy.</p></article><article class="faq-card"><h3>Czy kompresja zmienia liczbę taśm?</h3><p>Tylko w przypadku danych podatnych na kompresję. Producenci podają 2,5:1, ale wideo i obrazy są już skompresowane, a plików zaszyfrowanych nie da się skompresować, dlatego takie dane mieszczą się na taśmie w ilości zbliżonej do pojemności natywnej.</p></article></section>
+</div></div></main>
+<script id="calc-cfg" type="application/json">{"model": {"LTO-8": {"tb": 12, "tape": 391.81, "drive": 29094.44}, "LTO-9": {"tb": 18, "tape": 475.69, "drive": 58838.74}, "LTO-10": {"tb": 30, "tape": 1325.2, "drive": null}}, "locale": "pl-PL", "currency": "PLN"}</script>
+<script data-i18n="" id="calc-i18n" type="application/json">{"est": "<p><strong>Szacunek dla {gen}:<\/strong> kasety: {n} ({tb} TB natywnie każda), nośniki za około {media}.<\/p>", "est_drive": "<p><strong>Szacunek dla {gen}:<\/strong> kasety: {n} (po {tb} TB natywnie), około {media} za nośniki i około {drive} za jeden napęd.<\/p>", "h_invalid": "Należy podać ilość danych", "t_invalid": "<p>Łączna ilość danych do zabezpieczenia, w terabajtach.<\/p>", "h_conflict": "Wymagania do sprawdzenia", "t_conflict": "<p>Wybrano kopie zapasowe w czasie rzeczywistym, ale zaakceptowano odtwarzanie trwające kilka dni. Zespoły, które potrzebują ciągłej ochrony, zwykle potrzebują też szybkiego odtwarzania. Należy wybrać krótszy czas odtwarzania albo dzienny lub tygodniowy punkt odtwarzania.<\/p>", "h_small_instant": "Zalecenie: SSD lub HDD oraz chmura", "h_small": "Rekomendacja: NAS (HDD) plus archiwum w chmurze", "t_small": "<p>Przy {tb} TB koszt napędu taśmowego trudno uzasadnić. Warto trzymać lokalną kopię na dysku do szybkiego przywracania i kopię poza siedzibą w zimnej klasie przechowywania w chmurze.<\/p>", "h_instant": "Rekomendacja: najpierw dysk lub flash, taśma LTO jako druga warstwa", "t_instant": "<p>Natychmiastowe odtwarzanie wymaga, aby pierwsza kopia była na dysku lub w pamięci flash. Przy {total} TB we wszystkich kopiach na dysku warto trzymać tylko najnowsze punkty przywracania, a długoterminowe kopie offline umieszczać na taśmach LTO.<\/p>", "h_tape": "Rekomendacja: taśma {gen}", "h_tape_big": "Zalecenie: taśma LTO-9 lub LTO-10", "t_lto8": "<p>LTO-8 (12 TB natywnie) pozwala ograniczyć koszt napędu przy tej ilości danych i nadal zapewnia kopie offline.<\/p>", "t_lto9": "<p>LTO-9 (18 TB natywnie) ma w 2026 roku najniższy koszt nośnika za terabajt i wymaga obsługi mniejszej liczby kaset niż LTO-8.<\/p>", "t_big": "<p>Przy takiej ilości danych liczy się gęstość. LTO-9 ma najniższy koszt za TB; LTO-10 wymaga mniej kaset i slotów w bibliotece, ale kosztuje więcej za TB i potrzebuje nowych napędów pełnej wysokości.<\/p>", "t_airgap": "<p>Przy {total} TB we wszystkich kopiach taśma zapewnia air gap chroniący przed ransomware i pozwala uniknąć opłat za przywracanie z chmury.<\/p>", "t_continuous": "<p><em>Punkty odtwarzania w czasie rzeczywistym wymagają bufora dyskowego przed taśmą (disk to disk to tape).<\/em><\/p>"}</script>
+<script>
+(function(){
+var C=JSON.parse(document.getElementById('calc-cfg').textContent),L=JSON.parse(document.getElementById('calc-i18n').textContent),M=C.model;
+var f=document.getElementById('calc'),out=document.getElementById('calc-result');
+var nf=new Intl.NumberFormat(C.locale),cf=new Intl.NumberFormat(C.locale,{style:'currency',currency:C.currency,maximumFractionDigits:0});
+function fill(s,v){return s.replace(/\{(\w+)\}/g,function(m,k){return k in v?v[k]:m;});}
+function est(gen,total){var g=M[gen];var n=Math.ceil(total/g.tb);var v={gen:gen,n:nf.format(n),tb:nf.format(g.tb),media:cf.format(n*g.tape)};if(g.drive){v.drive=cf.format(g.drive);return fill(L.est_drive,v);}return fill(L.est,v);}
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var tb=parseFloat(document.getElementById('capacity').value),copies=parseInt(document.getElementById('copies').value,10),rto=document.getElementById('rto').value,rpo=document.getElementById('rpo').value;
+var h,t,tape=false;
+if(!tb||tb<=0){h=L.h_invalid;t=L.t_invalid;}
+else if(rpo==='continuous'&&rto==='days'){h=L.h_conflict;t=L.t_conflict;}
+else{
+var total=tb*copies,v={tb:nf.format(tb),total:nf.format(total)};
+if(tb<15){h=rto==='instant'?L.h_small_instant:L.h_small;t=fill(L.t_small,v)+est('LTO-8',total);}
+else if(rto==='instant'){h=L.h_instant;t=fill(L.t_instant,v)+est(tb<500?'LTO-9':'LTO-10',total);tape=true;}
+else{var gen=tb<50?'LTO-8':(tb<500?'LTO-9':'LTO-10');h=tb<500?fill(L.h_tape,{gen:gen}):L.h_tape_big;tape=true;
+t=tb<50?L.t_lto8:(tb<500?L.t_lto9:L.t_big);
+t+=est(tb<500?gen:'LTO-9',total);if(tb>=500){t+=est('LTO-10',total);}
+t+=fill(L.t_airgap,v);}
+if(rpo==='continuous'&&tape){t+=L.t_continuous;}
+}
+out.innerHTML='<h3>'+h+'</h3>'+t;out.hidden=false;
+});
+})();
+</script>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="Strona główna TapeBackup.org" class="brand" href="/pl"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.org to niezależny serwis o kopiach zapasowych na taśmach LTO: technologii, cenach i praktyce. Serwis nie jest powiązany z LTO Program.</p></div><div class="fcol"><h4>Ceny LTO</h4><a href="/pl/lto-tape-price-trend">Monitor cen</a><a href="/pl/lto-tape-price-trend/lto6-price">Ceny LTO-6</a><a href="/pl/lto-tape-price-trend/lto7-price">Ceny LTO-7</a><a href="/pl/lto-tape-price-trend/lto8-price">Ceny LTO-8</a><a href="/pl/lto-tape-price-trend/lto9-price">Ceny LTO-9</a><a href="/pl/lto-tape-price-trend/lto10-price">Ceny LTO-10</a><a href="/pl/lto-tape-price-trend/history">Historia cen</a></div><div class="fcol"><h4>Zasoby</h4><a href="/tape-q-and-a">Pytania i odpowiedzi</a><a href="/blog">Blog</a><a href="/pl/why-tape">Dlaczego taśma</a><a href="/pl/resources">Poradniki</a><a href="/pl/lto-tape-brand">Marki taśm LTO</a><a href="/pl/comparisons">Porównania</a></div><div class="fcol"><h4>Narzędzia</h4><a href="/pl/backup-calculator">Kalkulator kopii zapasowych</a><a href="/pl/backup-software-finder">Wyszukiwarka oprogramowania</a><a href="/pl/best-tape-backup-software">Najlepsze oprogramowanie do kopii zapasowych na taśmach</a></div><div class="fcol"><h4>Serwis</h4><a href="/pl/about">O nas</a><a href="/pl/contact">Kontakt</a><a href="/sitemap.xml">Mapa strony</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org. Niezależne źródło informacji o kopiach zapasowych na taśmach LTO.</span><div class="links"><a href="/pl/about">O serwisie</a><a href="/pl/contact">Kontakt</a><a href="/sitemap.xml">Mapa strony</a></div></div></div></footer>
+</div>
+</body>
+</html>

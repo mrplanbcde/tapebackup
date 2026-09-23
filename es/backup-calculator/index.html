@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>Calculadora de copias de seguridad: capacidad y coste LTO</title>
+<meta content="Calculadora gratuita de copias en cinta: indique volumen, copias y objetivos de recuperación y vea si le conviene cinta, disco o nube. Costes LTO de 2026." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/es/backup-calculator" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="Calculadora de copias de seguridad: capacidad y coste LTO" property="og:title"/>
+<meta content="Calculadora gratuita de copias en cinta: indique volumen, copias y objetivos de recuperación y vea si le conviene cinta, disco o nube. Costes LTO de 2026." property="og:description"/>
+<meta content="https://tapebackup.org/es/backup-calculator" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Calculadora de copias de seguridad: capacidad y coste LTO" name="twitter:title"/>
+<meta content="Calculadora gratuita de copias en cinta: indique volumen, copias y objetivos de recuperación y vea si le conviene cinta, disco o nube. Costes LTO de 2026." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuántas cintas LTO necesito?", "acceptedAnswer": {"@type": "Answer", "text": "Divida sus datos entre la capacidad nativa de la generación y multiplique por el número de copias, sin contar la compresión: 100 TB con dos copias son unos 12 cartuchos LTO-9. La compresión solo ayuda con datos comprimibles y no conviene contar con ella al planificar."}}, {"@type": "Question", "name": "¿Cuándo es la cinta más barata que el disco o la nube?", "acceptedAnswer": {"@type": "Answer", "text": "A partir de unos 15 TB, cuando el coste de la unidad se reparte entre suficientes cartuchos. Por debajo, un NAS más un nivel frío en la nube suele ser más barato y sencillo."}}, {"@type": "Question", "name": "¿Cambia la compresión el número de cintas?", "acceptedAnswer": {"@type": "Answer", "text": "Solo con datos comprimibles. Los fabricantes indican 2,5:1, pero el vídeo y las imágenes ya están comprimidos, y los archivos cifrados no se pueden comprimir, así que se almacenan casi a capacidad nativa."}}], "inLanguage": "es"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://tapebackup.org/es"}, {"@type": "ListItem", "position": 2, "name": "Calculadora de copias de seguridad", "item": "https://tapebackup.org/es/backup-calculator"}], "inLanguage": "es"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de capacidad y coste de copias de seguridad en cinta", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/es/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "inLanguage": "es"}</script>
+<meta content="es_ES" property="og:locale"/><link href="https://tapebackup.org/backup-calculator" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-calculator" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-calculator" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-calculator" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-calculator" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-calculator" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-calculator" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-calculator" hreflang="x-default" rel="alternate"/></head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Preguntas y respuestas</a><span class="sep"></span><a href="/es/lto-tape-price-trend">Precios LTO</a><span class="sep"></span><a href="/es/contact">Contacto</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/backup-calculator" hreflang="en" lang="en">EN</a><a href="/de/backup-calculator" hreflang="de" lang="de">DE</a><a href="/fr/backup-calculator" hreflang="fr" lang="fr">FR</a><a href="/it/backup-calculator" hreflang="it" lang="it">IT</a><a aria-current="page" class="on" href="/es/backup-calculator" hreflang="es" lang="es">ES</a><a href="/nl/backup-calculator" hreflang="nl" lang="nl">NL</a><a href="/pl/backup-calculator" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Inicio de TapeBackup.org" class="brand" href="/es"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Principal" class="topnav">
+<a href="/es/why-tape">Por qué la cinta</a>
+<div class="price-dropdown"><a href="/es/lto-tape-price-trend">Precios LTO</a><div class="price-dropdown-menu"><a href="/es/lto-tape-price-trend">Todas las generaciones<span>Precios de septiembre de 2026</span></a><a href="/es/lto-tape-price-trend/lto6-price">Precio de LTO-6<span>2,5 TB nativos</span></a><a href="/es/lto-tape-price-trend/lto7-price">Precio de LTO-7<span>6 TB nativos</span></a><a href="/es/lto-tape-price-trend/lto8-price">Precio de LTO-8<span>12 TB nativos</span></a><a href="/es/lto-tape-price-trend/lto9-price">Precio de LTO-9<span>18 TB nativos</span></a><a href="/es/lto-tape-price-trend/lto10-price">Precio de LTO-10<span>30 / 40 TB nativos</span></a><a href="/es/lto-tape-price-trend/history">Historial de precios<span>Ediciones archivadas desde 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/es/backup-calculator">Herramientas</a><div class="price-dropdown-menu"><a href="/es/backup-calculator">Calculadora de copias de seguridad<span>Estimación de soportes y coste</span></a><a href="/es/backup-software-finder">Buscador de software<span>Software adecuado para su uso de la cinta</span></a><a href="/es/best-tape-backup-software">Mejor software de copia de seguridad en cinta<span>Comparativa 2026</span></a></div></div>
+<a href="/blog">Blog</a>
+<a href="/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/es/contact">Solicitar lista de precios</a></div>
+</div></header>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy">
+<p class="eyebrow">Herramienta</p><h1>Calculadora de capacidad y coste de copias de seguridad en cinta</h1>
+<p><strong>La cinta compensa a partir de unos 15 TB de datos: por debajo, disco más nube es más barato; por encima, los soportes LTO-8 o LTO-9, a unos 5–10 € por TB, salen más baratos que guardar copias a largo plazo en disco.</strong></p>
+<p>Indique cuántos datos protege, cuántas copias conserva y con qué rapidez necesita recuperarlos. La calculadora recomienda cinta, disco, nube o una combinación, y estima los cartuchos y el coste de los soportes a partir de los precios LTO de septiembre de 2026 en España.</p></div>
+<aside class="hero-panel"><p class="panel-label">Precios utilizados</p><p class="panel-copy">Puntos medios de las ofertas de vendedores del <a href="/es/lto-tape-price-trend">seguimiento de precios LTO</a>: cintas LTO-8, 90 €; cintas LTO-9, 105 €; cintas LTO-10 de 30 TB, 336 €.</p></aside></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><h2>Calcule su configuración de copia de seguridad</h2>
+<form class="tool-form" id="calc" novalidate="">
+<div><label for="capacity">Total de datos que proteger (TB)</label><input id="capacity" inputmode="decimal" min="1" required="" step="1" type="number" value="50"/></div>
+<div><label for="copies">Número de copias</label><select id="copies"><option value="1">1 copia (arriesgada)</option><option selected="" value="2">2 copias</option><option value="3">3 copias (estándar 3-2-1)</option></select></div>
+<div><label for="rto">Objetivo de tiempo de recuperación</label><p class="hint">¿Con qué rapidez necesita recuperar los datos?</p><select id="rto"><option value="instant">Minutos (misión crítica)</option><option selected="" value="hours">En unas horas (estándar)</option><option value="days">En días (archivo)</option></select></div>
+<div><label for="rpo">Objetivo de punto de recuperación</label><p class="hint">¿Cuántos datos recientes puede permitirse perder?</p><select id="rpo"><option value="continuous">Segundos (tiempo real)</option><option selected="" value="daily">24 horas (copias de seguridad diarias)</option><option value="weekly">Una semana (copias de seguridad semanales)</option></select></div>
+<button class="tool-submit" type="submit">Ver mi recomendación</button>
+</form>
+<div aria-live="polite" class="tool-result" hidden="" id="calc-result"></div>
+</section>
+<section class="section-card"><p class="eyebrow">Cómo funciona</p><h2>Cómo decide la calculadora</h2>
+<ul><li>Por debajo de 15 TB, una unidad de cinta rara vez se amortiza, por lo que se recomienda disco más nube.</li><li>Si necesita recuperar en minutos, la primera copia tiene que estar en disco o flash, con la cinta para las copias a largo plazo y sin conexión.</li><li>En los demás casos, se sugiere LTO-8 por debajo de 50 TB, LTO-9 hasta 500 TB y LTO-9 o LTO-10 por encima.</li><li>El número de cartuchos se calcula con la capacidad nativa sin compresión, y los costes usan el punto medio de las ofertas actuales de los vendedores. El coste de la unidad corresponde a una unidad interna nueva cuando hay alguna a la venta.</li></ul>
+<p>Las estimaciones no incluyen software, HBA, bibliotecas, entrega ni envío. Consulte el <a href="/es/lto-tape-price-trend">seguimiento de precios LTO</a> para ver las ofertas en las que se basan estas cifras.</p></section>
+<section aria-label="Preguntas frecuentes sobre la calculadora de copias de seguridad" class="faq-grid"><article class="faq-card"><h3>¿Cuántas cintas LTO necesito?</h3><p>Divida sus datos entre la capacidad nativa de la generación y multiplique por el número de copias, sin contar la compresión: 100 TB con dos copias son unos 12 cartuchos LTO-9. La compresión solo ayuda con datos comprimibles y no conviene contar con ella al planificar.</p></article><article class="faq-card"><h3>¿Cuándo es la cinta más barata que el disco o la nube?</h3><p>A partir de unos 15 TB, cuando el coste de la unidad se reparte entre suficientes cartuchos. Por debajo, un NAS más un nivel frío en la nube suele ser más barato y sencillo.</p></article><article class="faq-card"><h3>¿Cambia la compresión el número de cintas?</h3><p>Solo con datos comprimibles. Los fabricantes indican 2,5:1, pero el vídeo y las imágenes ya están comprimidos, y los archivos cifrados no se pueden comprimir, así que se almacenan casi a capacidad nativa.</p></article></section>
+</div></div></main>
+<script id="calc-cfg" type="application/json">{"model": {"LTO-8": {"tb": 12, "tape": 90.25, "drive": 9384.25}, "LTO-9": {"tb": 18, "tape": 104.7, "drive": 13152.51}, "LTO-10": {"tb": 30, "tape": 336.21, "drive": 24990.0}}, "locale": "es-ES", "currency": "EUR"}</script>
+<script data-i18n="" id="calc-i18n" type="application/json">{"est": "<p><strong>Estimación {gen}:<\/strong> {n} cartuchos ({tb} TB nativos cada uno), unos {media} en soportes.<\/p>", "est_drive": "<p><strong>Estimación {gen}:<\/strong> {n} cartuchos ({tb} TB nativos cada uno), unos {media} en soportes más unos {drive} por una unidad.<\/p>", "h_invalid": "Introduzca el volumen de datos", "t_invalid": "<p>Escriba la cantidad total de datos que necesita proteger, en terabytes.<\/p>", "h_conflict": "Revise estos requisitos", "t_conflict": "<p>Ha elegido copias de seguridad en tiempo real, pero acepta que la recuperación tarde días. Los equipos que necesitan protección continua suelen necesitar también una recuperación rápida. Elija un tiempo de recuperación más corto o un punto de recuperación diario o semanal.<\/p>", "h_small_instant": "Recomendado: SSD o HDD más nube", "h_small": "Recomendación: NAS (HDD) más archivo en la nube", "t_small": "<p>Con {tb} TB, el coste de una unidad de cinta es difícil de justificar. Mantenga una copia local en disco para restauraciones rápidas y una copia fuera de las instalaciones en un nivel frío de la nube.<\/p>", "h_instant": "Recomendación: primero disco o flash, después cinta LTO", "t_instant": "<p>La recuperación instantánea implica que su primera copia debe estar en disco o flash. Para {total} TB entre todas las copias, mantenga en disco solo los puntos de restauración recientes y guarde en cinta LTO las copias a largo plazo y sin conexión.<\/p>", "h_tape": "Recomendación: cinta {gen}", "h_tape_big": "Recomendado: cinta LTO-9 o LTO-10", "t_lto8": "<p>LTO-8 (12 TB nativos) mantiene bajo el coste de la unidad para este volumen de datos y le sigue ofreciendo copias sin conexión.<\/p>", "t_lto9": "<p>LTO-9 (18 TB nativos) tiene el menor coste de soportes por terabyte en 2026 y requiere manipular menos cartuchos que LTO-8.<\/p>", "t_big": "<p>Con este volumen, la densidad importa. LTO-9 tiene el coste por TB más bajo; LTO-10 necesita menos cartuchos y ranuras de biblioteca, pero cuesta más por TB y requiere unidades nuevas de altura completa.<\/p>", "t_airgap": "<p>Con {total} TB entre todas las copias, la cinta le da un air gap frente al ransomware y evita las tarifas de restauración de la nube.<\/p>", "t_continuous": "<p><em>Los puntos de recuperación en tiempo real necesitan un búfer de disco delante de la cinta (disco a disco a cinta).<\/em><\/p>"}</script>
+<script>
+(function(){
+var C=JSON.parse(document.getElementById('calc-cfg').textContent),L=JSON.parse(document.getElementById('calc-i18n').textContent),M=C.model;
+var f=document.getElementById('calc'),out=document.getElementById('calc-result');
+var nf=new Intl.NumberFormat(C.locale),cf=new Intl.NumberFormat(C.locale,{style:'currency',currency:C.currency,maximumFractionDigits:0});
+function fill(s,v){return s.replace(/\{(\w+)\}/g,function(m,k){return k in v?v[k]:m;});}
+function est(gen,total){var g=M[gen];var n=Math.ceil(total/g.tb);var v={gen:gen,n:nf.format(n),tb:nf.format(g.tb),media:cf.format(n*g.tape)};if(g.drive){v.drive=cf.format(g.drive);return fill(L.est_drive,v);}return fill(L.est,v);}
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var tb=parseFloat(document.getElementById('capacity').value),copies=parseInt(document.getElementById('copies').value,10),rto=document.getElementById('rto').value,rpo=document.getElementById('rpo').value;
+var h,t,tape=false;
+if(!tb||tb<=0){h=L.h_invalid;t=L.t_invalid;}
+else if(rpo==='continuous'&&rto==='days'){h=L.h_conflict;t=L.t_conflict;}
+else{
+var total=tb*copies,v={tb:nf.format(tb),total:nf.format(total)};
+if(tb<15){h=rto==='instant'?L.h_small_instant:L.h_small;t=fill(L.t_small,v)+est('LTO-8',total);}
+else if(rto==='instant'){h=L.h_instant;t=fill(L.t_instant,v)+est(tb<500?'LTO-9':'LTO-10',total);tape=true;}
+else{var gen=tb<50?'LTO-8':(tb<500?'LTO-9':'LTO-10');h=tb<500?fill(L.h_tape,{gen:gen}):L.h_tape_big;tape=true;
+t=tb<50?L.t_lto8:(tb<500?L.t_lto9:L.t_big);
+t+=est(tb<500?gen:'LTO-9',total);if(tb>=500){t+=est('LTO-10',total);}
+t+=fill(L.t_airgap,v);}
+if(rpo==='continuous'&&tape){t+=L.t_continuous;}
+}
+out.innerHTML='<h3>'+h+'</h3>'+t;out.hidden=false;
+});
+})();
+</script>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="Inicio de TapeBackup.org" class="brand" href="/es"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.org es un recurso independiente sobre tecnología, precios y flujos de trabajo de copias de seguridad en cinta LTO. Sin afiliación con el LTO Program.</p></div><div class="fcol"><h4>Precios LTO</h4><a href="/es/lto-tape-price-trend">Seguimiento de precios</a><a href="/es/lto-tape-price-trend/lto6-price">Precio de LTO-6</a><a href="/es/lto-tape-price-trend/lto7-price">Precio de LTO-7</a><a href="/es/lto-tape-price-trend/lto8-price">Precio de LTO-8</a><a href="/es/lto-tape-price-trend/lto9-price">Precio de LTO-9</a><a href="/es/lto-tape-price-trend/lto10-price">Precio de LTO-10</a><a href="/es/lto-tape-price-trend/history">Historial de precios</a></div><div class="fcol"><h4>Recursos</h4><a href="/tape-q-and-a">Preguntas y respuestas</a><a href="/blog">Blog</a><a href="/es/why-tape">Por qué la cinta</a><a href="/es/resources">Guías</a><a href="/es/lto-tape-brand">Marcas de cintas LTO</a><a href="/es/comparisons">Comparativas</a></div><div class="fcol"><h4>Herramientas</h4><a href="/es/backup-calculator">Calculadora de copias de seguridad</a><a href="/es/backup-software-finder">Buscador de software</a><a href="/es/best-tape-backup-software">Mejor software de copia de seguridad en cinta</a></div><div class="fcol"><h4>Empresa</h4><a href="/es/about">Acerca de</a><a href="/es/contact">Contacto</a><a href="/sitemap.xml">Mapa del sitio</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org. Recurso independiente sobre copias de seguridad en cinta LTO.</span><div class="links"><a href="/es/about">Acerca de</a><a href="/es/contact">Contacto</a><a href="/sitemap.xml">Mapa del sitio</a></div></div></div></footer>
+</div>
+</body>
+</html>

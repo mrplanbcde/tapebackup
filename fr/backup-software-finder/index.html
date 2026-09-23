@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>Sélecteur de logiciels de sauvegarde sur bande LTO</title>
+<meta content="Quatre questions pour choisir un logiciel de sauvegarde sur bande selon votre environnement, usage et budget : Catalogic DPX, Veeam, Commvault ou Nakivo." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/fr/backup-software-finder" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="Sélecteur de logiciels de sauvegarde sur bande LTO" property="og:title"/>
+<meta content="Quatre questions pour choisir un logiciel de sauvegarde sur bande selon votre environnement, usage et budget : Catalogic DPX, Veeam, Commvault ou Nakivo." property="og:description"/>
+<meta content="https://tapebackup.org/fr/backup-software-finder" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Sélecteur de logiciels de sauvegarde sur bande LTO" name="twitter:title"/>
+<meta content="Quatre questions pour choisir un logiciel de sauvegarde sur bande selon votre environnement, usage et budget : Catalogic DPX, Veeam, Commvault ou Nakivo." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quel est le meilleur logiciel de sauvegarde pour les bibliothèques de bandes ?", "acceptedAnswer": {"@type": "Answer", "text": "Catalogic DPX offre la plus large prise en charge de lecteurs et de bibliothèques et gère NDMP, ce qui compte pour la sauvegarde des NAS. Veeam et Commvault gèrent bien la bande en copie secondaire dans les grands parcs virtualisés."}}, {"@type": "Question", "name": "Puis-je sauvegarder Microsoft 365 sur bande ?", "acceptedAnswer": {"@type": "Answer", "text": "Pas directement. Sauvegardez les données SaaS avec un outil comme Veeam for Microsoft 365, puis copiez son référentiel sur bande si vous avez besoin d'une copie hors ligne ou de longue conservation."}}], "inLanguage": "fr"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://tapebackup.org/fr"}, {"@type": "ListItem", "position": 2, "name": "Sélecteur de logiciels", "item": "https://tapebackup.org/fr/backup-software-finder"}], "inLanguage": "fr"}</script>
+<meta content="fr_FR" property="og:locale"/><link href="https://tapebackup.org/backup-software-finder" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-software-finder" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-software-finder" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-software-finder" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-software-finder" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-software-finder" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-software-finder" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-software-finder" hreflang="x-default" rel="alternate"/></head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Q&amp;R bandes</a><span class="sep"></span><a href="/fr/lto-tape-price-trend">Prix LTO</a><span class="sep"></span><a href="/fr/contact">Nous contacter</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/backup-software-finder" hreflang="en" lang="en">EN</a><a href="/de/backup-software-finder" hreflang="de" lang="de">DE</a><a aria-current="page" class="on" href="/fr/backup-software-finder" hreflang="fr" lang="fr">FR</a><a href="/it/backup-software-finder" hreflang="it" lang="it">IT</a><a href="/es/backup-software-finder" hreflang="es" lang="es">ES</a><a href="/nl/backup-software-finder" hreflang="nl" lang="nl">NL</a><a href="/pl/backup-software-finder" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Accueil TapeBackup.org" class="brand" href="/fr"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Navigation principale" class="topnav">
+<a href="/fr/why-tape">Pourquoi la bande</a>
+<div class="price-dropdown"><a href="/fr/lto-tape-price-trend">Prix LTO</a><div class="price-dropdown-menu"><a href="/fr/lto-tape-price-trend">Toutes les générations<span>Prix de septembre 2026</span></a><a href="/fr/lto-tape-price-trend/lto6-price">Prix LTO-6<span>2,5 To natifs</span></a><a href="/fr/lto-tape-price-trend/lto7-price">Prix LTO-7<span>6 To natifs</span></a><a href="/fr/lto-tape-price-trend/lto8-price">Prix LTO-8<span>12 To natifs</span></a><a href="/fr/lto-tape-price-trend/lto9-price">Prix LTO-9<span>18 To natifs</span></a><a href="/fr/lto-tape-price-trend/lto10-price">Prix LTO-10<span>30 / 40 To natifs</span></a><a href="/fr/lto-tape-price-trend/history">Historique des prix<span>Relevés archivés depuis 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/fr/backup-calculator">Outils</a><div class="price-dropdown-menu"><a href="/fr/backup-calculator">Calculateur de sauvegarde<span>Estimation des supports et du coût</span></a><a href="/fr/backup-software-finder">Sélecteur de logiciels<span>Le logiciel adapté à votre usage de la bande</span></a><a href="/fr/best-tape-backup-software">Meilleurs logiciels de sauvegarde sur bande<span>Comparatif 2026</span></a></div></div>
+<a href="/blog">Blog</a>
+<a href="/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/fr/contact">Obtenir la grille tarifaire</a></div>
+</div></header>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy">
+<p class="eyebrow">Outil</p><h1>Sélecteur de logiciels de sauvegarde sur bande</h1>
+<p><strong>Si la bande est votre archive principale, Catalogic DPX est en général le meilleur choix ; pour des parcs surtout virtualisés qui utilisent la bande comme seconde copie, Veeam ; pour de petits environnements au budget serré, Nakivo.</strong></p>
+<p>Le matériel ne fait que la moitié du travail. Répondez à quatre questions pour obtenir une présélection de logiciels de sauvegarde adaptés à votre usage de la bande, à la taille de votre parc et à votre budget.</p></div>
+<aside class="hero-panel"><p class="panel-label">Besoin de plus de détails ?</p><p class="panel-copy">Lisez le <a href="/fr/best-tape-backup-software">comparatif complet des meilleurs logiciels de sauvegarde sur bande</a> ou notre <a href="/fr/resources/tape-backup-software/catalogicdpx">test de Catalogic DPX</a>.</p></aside></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><h2>Trouvez votre logiciel de sauvegarde</h2>
+<form class="tool-form" id="finder"><fieldset class="choice-grid"><legend>1. Quel est votre environnement principal ?</legend><label><input name="env" type="radio" value="virtual"/>Surtout des machines virtuelles</label><label><input name="env" type="radio" value="physical"/>Surtout physique ou Unix</label><label><input checked="" name="env" type="radio" value="mixed"/>Mixte ou hybride</label><label><input name="env" type="radio" value="saas"/>Microsoft 365 ou SaaS uniquement</label></fieldset><fieldset class="choice-grid"><legend>2. Comment utiliserez-vous la bande ?</legend><label><input name="tape" type="radio" value="heavy"/>Archive principale ou grande bibliothèque</label><label><input checked="" name="tape" type="radio" value="secondary"/>Copie secondaire</label><label><input name="tape" type="radio" value="none"/>Pas de bande : disque ou cloud uniquement</label></fieldset><fieldset class="choice-grid"><legend>3. Combien de charges de travail ?</legend><label><input name="scale" type="radio" value="small"/>1 à 50</label><label><input checked="" name="scale" type="radio" value="mid"/>51 à 500 ou plus</label></fieldset><fieldset class="choice-grid"><legend>4. Qu'est-ce qui compte le plus ?</legend><label><input checked="" name="prio" type="radio" value="value"/>Maîtrise des coûts</label><label><input name="prio" type="radio" value="feature"/>Fonctions modernes et cloud</label></fieldset><button class="tool-submit" type="submit">Voir ma recommandation</button></form>
+<div aria-live="polite" class="tool-result" hidden="" id="finder-result"></div></section>
+<section class="section-card"><p class="eyebrow">Présélection</p><h2>Logiciels parmi lesquels ce sélecteur choisit</h2>
+<ul><li><strong>Catalogic DPX</strong> : sauvegarde d'entreprise axée sur la bande, avec une large prise en charge des lecteurs, des bibliothèques et de NDMP.</li><li><strong>Veeam Backup &amp; Replication</strong> : le choix courant pour les parcs virtualisés, avec des travaux sur bande comme cible secondaire.</li><li><strong>Commvault</strong> : plateforme étendue et riche en fonctionnalités, avec une intégration cloud poussée.</li><li><strong>Nakivo</strong> : option moins chère pour les petits environnements qui ont besoin d'une prise en charge basique de la bande.</li><li><strong>Veeam for Microsoft 365 et CloudCasa</strong> : sauvegarde SaaS et Kubernetes.</li></ul></section>
+<section aria-label="FAQ du sélecteur de logiciels" class="faq-grid"><article class="faq-card"><h3>Quel est le meilleur logiciel de sauvegarde pour les bibliothèques de bandes ?</h3><p>Catalogic DPX offre la plus large prise en charge de lecteurs et de bibliothèques et gère NDMP, ce qui compte pour la sauvegarde des NAS. Veeam et Commvault gèrent bien la bande en copie secondaire dans les grands parcs virtualisés.</p></article><article class="faq-card"><h3>Puis-je sauvegarder Microsoft 365 sur bande ?</h3><p>Pas directement. Sauvegardez les données SaaS avec un outil comme Veeam for Microsoft 365, puis copiez son référentiel sur bande si vous avez besoin d'une copie hors ligne ou de longue conservation.</p></article></section>
+</div></div></main>
+<script data-i18n="" id="finder-i18n" type="application/json">{"match": "Votre résultat : {v}", "compare": "<a href=\"/best-tape-backup-software\">Comparer tous les logiciels de sauvegarde sur bande<\/a>", "r_dpx": "Catalogic DPX est conçu autour de la bande. Il prend en charge une très large gamme de lecteurs et de bibliothèques LTO, y compris anciens, gère bien NDMP et coûte moins cher que la plupart des suites d'entreprise lorsque la bande est centrale. <a href=\"/resources/tape-backup-software/catalogicdpx\">Lire notre test de DPX<\/a>.", "r_saas": "Pour les données SaaS, Veeam for Microsoft 365 est le leader du marché. Si vous utilisez aussi Kubernetes, regardez du côté de CloudCasa.", "r_virtual": "Pour un parc virtualisé sur disque, Veeam est le choix de référence et fonctionne bien avec des cibles disque et cloud.", "v_mixed_notape": "Acronis ou Commvault", "r_mixed_notape": "Pour les environnements mixtes sans bande, Acronis offre de solides fonctions de sécurité et Commvault une intégration cloud poussée.", "r_small": "Pour les petits environnements qui ont besoin d'une prise en charge simple de la bande sans prix d'entreprise, Nakivo est une option solide.", "v_default": "Veeam ou Catalogic DPX", "r_default": "Veeam est le choix le plus répandu pour la virtualisation. Comparez-le avec Catalogic DPX si vos données augmentent : les licences et la gestion de la bande de DPX aboutissent souvent à un coût total plus bas."}</script>
+<script>
+(function(){
+var L=JSON.parse(document.getElementById('finder-i18n').textContent);
+var f=document.getElementById('finder'),out=document.getElementById('finder-result');
+function val(n){return f.querySelector('input[name="'+n+'"]:checked').value;}
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var env=val('env'),tape=val('tape'),scale=val('scale'),prio=val('prio'),v,r;
+if(tape==='heavy'||(tape==='secondary'&&prio==='value')){v='Catalogic DPX';r=L.r_dpx;}
+else if(env==='saas'){v='Veeam for Microsoft 365';r=L.r_saas;}
+else if(tape==='none'){if(env==='virtual'){v='Veeam Backup & Replication';r=L.r_virtual;}else{v=L.v_mixed_notape;r=L.r_mixed_notape;}}
+else if(scale==='small'){v='Nakivo';r=L.r_small;}
+else{v=L.v_default;r=L.r_default;}
+out.innerHTML='<h3>'+L.match.replace('{v}',v)+'</h3><p>'+r+'</p><p>'+L.compare+'</p>';out.hidden=false;
+});
+})();
+</script>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="Accueil TapeBackup.org" class="brand" href="/fr"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.org est une ressource indépendante sur la technologie, les prix et les pratiques de la sauvegarde sur bande LTO. Sans lien avec le LTO Program.</p></div><div class="fcol"><h4>Prix LTO</h4><a href="/fr/lto-tape-price-trend">Suivi des prix</a><a href="/fr/lto-tape-price-trend/lto6-price">Prix LTO-6</a><a href="/fr/lto-tape-price-trend/lto7-price">Prix LTO-7</a><a href="/fr/lto-tape-price-trend/lto8-price">Prix LTO-8</a><a href="/fr/lto-tape-price-trend/lto9-price">Prix LTO-9</a><a href="/fr/lto-tape-price-trend/lto10-price">Prix LTO-10</a><a href="/fr/lto-tape-price-trend/history">Historique des prix</a></div><div class="fcol"><h4>Ressources</h4><a href="/tape-q-and-a">Q&amp;R bandes</a><a href="/blog">Blog</a><a href="/fr/why-tape">Pourquoi la bande</a><a href="/fr/resources">Guides</a><a href="/fr/lto-tape-brand">Marques de bandes LTO</a><a href="/fr/comparisons">Comparatifs</a></div><div class="fcol"><h4>Outils</h4><a href="/fr/backup-calculator">Calculateur de sauvegarde</a><a href="/fr/backup-software-finder">Sélecteur de logiciels</a><a href="/fr/best-tape-backup-software">Meilleurs logiciels de sauvegarde sur bande</a></div><div class="fcol"><h4>Société</h4><a href="/fr/about">À propos</a><a href="/fr/contact">Contact</a><a href="/sitemap.xml">Plan du site</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org. Ressource indépendante sur la sauvegarde sur bande LTO.</span><div class="links"><a href="/fr/about">À propos</a><a href="/fr/contact">Contact</a><a href="/sitemap.xml">Plan du site</a></div></div></div></footer>
+</div>
+</body>
+</html>
