@@ -1,0 +1,1320 @@
+{
+  "asOf": "2026-09-23",
+  "market": "pl",
+  "country": "Poland",
+  "currency": "PLN",
+  "vatRate": 0.23,
+  "generations": {
+    "LTO-6": {
+      "nativeTB": 2.5,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "C7976A (HPE)",
+            "price": 228.44,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/C7976A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "C7976A (HPE)",
+            "price": 228.39,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hp-lto-6-ultrium-2-5-6-25-tb-c7976a-602110/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Komputronik",
+            "sku": "C7976A (HPE)",
+            "price": 169.9,
+            "vatIncluded": true,
+            "url": "https://www.komputronik.pl/product/733935/hpe-tasma-lto-6-ultrium-6-25tb-rw-data-cartridge.html",
+            "note": "out of stock"
+          },
+          {
+            "seller": "Balta.pl",
+            "sku": "C7976A (HPE)",
+            "price": 238.0,
+            "vatIncluded": true,
+            "url": "https://balta.pl/produkt/tasma-hp-lto-6-ultrium-6-25tb-mp-rw/",
+            "note": "in stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "C7976A (HPE)",
+            "price": 238.36,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/hp-c7976a-tasma-hp-lto-6-ultrium-6-25tb-mp-rw-data-tape-lto6-15197/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Octacom",
+            "sku": "C7976A (HPE)",
+            "price": 228.87,
+            "vatIncluded": true,
+            "url": "https://sklep.octacom.pl/serwery/hpe-lto-6-ultrium-625tb-rw-data-tape.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "16310732 (Fujifilm)",
+            "price": 235.77,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-fujifilm-lto-ultrium-6-2-5-6-5-tb-16310732-829743/",
+            "note": "in stock"
+          },
+          {
+            "seller": "NET-S (via Morele.net)",
+            "sku": "00V7590 (IBM)",
+            "price": 236.16,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-ibm-lto-6-ultrium-2-5-6-25-tb-00v7590-752785/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 197.73,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-quantum-lto-6-ultrium-2-5-6-25-tb-mr-l6mqn-01-741623/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 312.88,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-quantum-lto-6-ultrium-2-5-6-25-tb-mr-l6mqn-03-1107792/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 332.09,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/quantum-tasma-lto-6-ultrium--792377--p",
+            "note": "in stock, discontinued"
+          },
+          {
+            "seller": "Balta.pl",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 187.0,
+            "vatIncluded": true,
+            "url": "https://balta.pl/produkt/tasma-quantum-lto-6-ultrium-2-5-6-25-tb/",
+            "note": "out of stock"
+          },
+          {
+            "seller": "Balta.pl",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 251.0,
+            "vatIncluded": true,
+            "url": "https://balta.pl/produkt/tasma-quantum-lto-6-ultrium-2-5-6-25-tb-2/",
+            "note": "out of stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 309.42,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/tasma-lto-ultrium-6-mr-l6mqn-01-124224/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976AN (HPE 20-pack)",
+            "price": 5420.31,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/C7976AN",
+            "note": "20-pack, 271.02 per unit, limited stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "C7976W (HPE)",
+            "price": 625.02,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/C7976W",
+            "note": "in stock"
+          },
+          {
+            "seller": "NET-S (via Morele.net)",
+            "sku": "C7976W (HPE)",
+            "price": 299.73,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hp-lto-6-ultrium-2-5-6-25-tb-c7976w-769890/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "C7976W (HPE)",
+            "price": 412.04,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/hpe-lto-6-ultrium-tape-worm--833814--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "MR-L6MQN-02 (Quantum)",
+            "price": 342.75,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-quantum-lto-6-ultrium-mr-l6mqn-02-769881/",
+            "note": "in stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "EH969A (HPE)",
+            "price": 13787.27,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO-6",
+            "note": "listing price, stock not shown"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Tandberg LTO-6 HH SAS bare drive (no PN shown)",
+            "price": 8532.62,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO6",
+            "note": "listing price, stock not shown"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Quantum LTO-6 SAS internal (no PN shown)",
+            "price": 8740.26,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO6",
+            "note": "listing price, stock not shown"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "HPE LTO-6 Ultrium 6250 external (no PN shown)",
+            "price": 14593.72,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO-6",
+            "note": "listing price, stock not shown"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Tandberg LTO-6 HH SAS external kit (no PN shown)",
+            "price": 10653.9,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO6",
+            "note": "listing price, stock not shown"
+          }
+        ]
+      }
+    },
+    "LTO-7": {
+      "nativeTB": 6,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "C7977A (HPE)",
+            "price": 353.15,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/C7977A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "C7977A (HPE)",
+            "price": 316.68,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hp-lto-7-ultrium-6-15-tb-c7977a-1000784/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Komputronik",
+            "sku": "C7977A (HPE)",
+            "price": 369.0,
+            "vatIncluded": true,
+            "url": "https://www.komputronik.pl/product/733936/hpe-tasma-lto-7-ultrium-6-15tb-rw-data-cartridge.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "Balta.pl",
+            "sku": "C7977A (HPE)",
+            "price": 353.0,
+            "vatIncluded": true,
+            "url": "https://balta.pl/produkt/tasma-hp-lto-7-ultrium-15-tb-rw/",
+            "note": "in stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "C7977A (HPE)",
+            "price": 348.24,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/hp-c7977a-tasma-hp-lto-7-ultrium-15tb-rw-data-19976/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Octacom",
+            "sku": "C7977A (HPE)",
+            "price": 381.46,
+            "vatIncluded": true,
+            "url": "https://sklep.octacom.pl/serwery/hpe-lto-7-ultrium-15tb-rw-data-tape.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 261.1,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-quantum-lto-7-ultrium-6-15-tb-mr-l7mqn-01-825407/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 324.71,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/quantum-lto-7-ultrium-tape--4038011--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Balta.pl",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 291.0,
+            "vatIncluded": true,
+            "url": "https://balta.pl/produkt/tasma-quantum-lto-7-ultrium-6-15tb/",
+            "note": "in stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 279.92,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/data-cartridge-lto-7-mr-l7mqn-01-121598/",
+            "note": "in stock"
+          },
+          {
+            "seller": "4hfix",
+            "sku": "WOAG4040003 (Quantum, shop code)",
+            "price": 230.0,
+            "vatIncluded": true,
+            "url": "https://4hfix.pl/product/tasma-lto-7-ultrium-quantum-6-15tb/",
+            "note": "ships in 4-7 days"
+          },
+          {
+            "seller": "NET-S (via Morele.net)",
+            "sku": "38L7302 (IBM)",
+            "price": 292.46,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-ibm-lto-7-ultrium-6-15-tb-38l7302-998142/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "38L7302 (IBM)",
+            "price": 397.28,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/ibm-lto-7-ultrium-tape--4038754--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Octacom",
+            "sku": "38L7302 (IBM)",
+            "price": 353.52,
+            "vatIncluded": true,
+            "url": "https://sklep.octacom.pl/serwery/ibm-lto7-6tb-15tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7977AN (HPE 20-pack)",
+            "price": 7588.45,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/C7977AN",
+            "note": "20-pack, 379.42 per unit, limited stock"
+          },
+          {
+            "seller": "ELECTROLOG (via Morele.net)",
+            "sku": "C7977AN (HPE 20-pack)",
+            "price": 10671.22,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hp-lto-7-ultrium-6-15-tb-20-pack-c7977an-1042243/",
+            "note": "20-pack, 533.56 per unit, in stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "C7977W (HPE)",
+            "price": 591.24,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/C7977W",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 398.51,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/quantum-lto-7-ultrium-tape-worm--4038050--p",
+            "note": "in stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "BB873A (HPE)",
+            "price": 23744.93,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/BB873A",
+            "note": "out of stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "BB873A (HPE)",
+            "price": 23865.69,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/hpe-storeever-lto-7-ultrium-15000-sas--4043953--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Tandberg LTO-7 HH SAS bare drive (no PN shown)",
+            "price": 17540.72,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO7",
+            "note": "listing price, stock not shown"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "HPE LTO-7 Ultrium 15000 internal (no PN shown)",
+            "price": 23173.06,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO-7",
+            "note": "listing price, stock not shown"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "BB874A (HPE)",
+            "price": 22814.61,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/BB874A",
+            "note": "out of stock"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Tandberg LTO-7 HH SAS external kit (no PN shown)",
+            "price": 17841.45,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO7",
+            "note": "listing price, stock not shown"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Quantum LTO-7 tabletop SAS (no PN shown)",
+            "price": 17479.39,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO-7",
+            "note": "listing price, stock not shown"
+          }
+        ]
+      }
+    },
+    "LTO-8": {
+      "nativeTB": 12,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "Q2078A (HPE)",
+            "price": 437.25,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/Q2078A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "Q2078A (HPE)",
+            "price": 328.99,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hp-lto-8-ultrium-12-30-tb-q2078a-6432453/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Komputronik",
+            "sku": "Q2078A (HPE)",
+            "price": 349.0,
+            "vatIncluded": true,
+            "url": "https://www.komputronik.pl/product/659669/hp-tasma-lto8-12tb-30tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Balta.pl",
+            "sku": "Q2078A (HPE)",
+            "price": 359.0,
+            "vatIncluded": true,
+            "url": "https://balta.pl/produkt/tasma-hp-lto-8-ultrium-12-30-tb/",
+            "note": "in stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "Q2078A (HPE)",
+            "price": 351.29,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/hpe-lto-8-ultrium-30tb-rw-data-cartridge-26638/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Octacom",
+            "sku": "Q2078A (HPE)",
+            "price": 409.21,
+            "vatIncluded": true,
+            "url": "https://sklep.octacom.pl/serwery/hpe-lto-8-ultrium-30tb-rw-data-tape.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "NET-S (via Morele.net)",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 311.06,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-quantum-lto-8-ultrium-12-30-tb-mr-l8mqn-01-6349903/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 484.61,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/quantum-lto-8-ultrium-tape--4220848--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Balta.pl",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 424.0,
+            "vatIncluded": true,
+            "url": "https://balta.pl/produkt/tasma-quantum-lto-8-ultrium-12-30-tb/",
+            "note": "in stock"
+          },
+          {
+            "seller": "4hfix",
+            "sku": "WOAG4040004 (Quantum, shop code)",
+            "price": 299.0,
+            "vatIncluded": true,
+            "url": "https://4hfix.pl/product/tasma-lto-8-ultrium-quantum-12-30tb/",
+            "note": "ships in 4-7 days"
+          },
+          {
+            "seller": "Octacom",
+            "sku": "ST000083 (Quantum, shop code)",
+            "price": 408.26,
+            "vatIncluded": true,
+            "url": "https://sklep.octacom.pl/serwery/str-tape-lto8-quantum-12tb-30tb-ultrium.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "NET-S (via Morele.net)",
+            "sku": "01PL041 (IBM)",
+            "price": 343.84,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-ibm-lto-8-ultrium-12-30-tb-01pl041-6432450/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "01PL041 (IBM)",
+            "price": 389.9,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/ibm-lto-8-ultrium-tape--4232675--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "01PL041L (IBM, with barcode label)",
+            "price": 382.52,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/ibm-lto-8-ultrium-tape-plus-label--4232636--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Balta.pl",
+            "sku": "01PL041 (IBM)",
+            "price": 417.0,
+            "vatIncluded": true,
+            "url": "https://balta.pl/produkt/tasma-ibm-lto-8-ultrium-12-30-tb/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Octacom",
+            "sku": "01PL041 (IBM)",
+            "price": 400.0,
+            "vatIncluded": true,
+            "url": "https://sklep.octacom.pl/serwery/ibm-media-tape-lto8.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "16551221 (Fujifilm)",
+            "price": 370.22,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/fuji-lto-ultrium-8-12tb-30tb-399832/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Creative Tools",
+            "sku": "SYMED-IBM-01PL041 (Symply)",
+            "price": 425.0,
+            "vatIncluded": true,
+            "url": "https://www.creativetools.pl/symplylto-media-lto-8-ultrium-data-cartridge-tape-12tb-native-30tb-compressed-ibm.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2078AN (HPE 20-pack)",
+            "price": 9136.12,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/Q2078AN",
+            "note": "20-pack, 456.81 per unit, limited stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "Q2078AN (HPE 20-pack)",
+            "price": 8069.14,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hp-lto-8-ultrium-12-30-tb-20-pack-q2078an-6432452/",
+            "note": "20-pack, 403.46 per unit, limited stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "NET-S (via Morele.net)",
+            "sku": "Q2078W (HPE)",
+            "price": 535.67,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/streamer-hp-hpe-lto-8-ultrium-30-tb-worm-data-cartridge-13671366/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2078W (HPE)",
+            "price": 600.23,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/hpe-lto-8-ultrium-tape-worm--4220598--p",
+            "note": "backorder"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Morele.net",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 26912.81,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/streamer-quantum-lto-8-tc-l82an-br-6347021/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Octacom",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 27557.98,
+            "vatIncluded": true,
+            "url": "https://sklep.octacom.pl/serwery/quantum-tc-l82an-br-naped-pamieci-masowej-kaseta-z-tasma-serial-attached-scsi-sas-25-1-lto.html",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BC022A (HPE)",
+            "price": 24919.37,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/BC022A",
+            "note": "out of stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "BC022A (HPE)",
+            "price": 41425.17,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/hpe-tape-drive-storeever-30750-lto-8--4237976--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Tandberg LTO-8 HH SAS bare drive (no PN shown)",
+            "price": 16763.71,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO8",
+            "note": "listing price, stock not shown"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "BC023A (HPE)",
+            "price": 54786.72,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/BC023A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "P84141-B25 (HPE)",
+            "price": 42743.73,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/zewn-naped-tasmowy-hpe-lto-8-ultrium--4947218--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Tandberg LTO-8 HH SAS external kit (no PN shown)",
+            "price": 23302.81,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO8",
+            "note": "listing price, stock not shown"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Quantum LTO-8 tabletop SAS (no PN shown)",
+            "price": 39166.21,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO-8",
+            "note": "listing price, stock not shown"
+          }
+        ]
+      }
+    },
+    "LTO-9": {
+      "nativeTB": 18,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "Q2079A (HPE)",
+            "price": 501.77,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/Q2079A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Komputronik",
+            "sku": "Q2079A (HPE)",
+            "price": 409.0,
+            "vatIncluded": true,
+            "url": "https://www.komputronik.pl/product/751090/hpe-tasma-lto-9-18tb-45tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2079A (HPE)",
+            "price": 503.06,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/hpe-lto-9-ultrium-tape--4587600--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "Q2079A (HPE)",
+            "price": 402.21,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/hpe-lto-9-ultrium-45tb-rw-data-tape-54401/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Octacom",
+            "sku": "Q2079A (HPE)",
+            "price": 478.56,
+            "vatIncluded": true,
+            "url": "https://sklep.octacom.pl/serwery/hpe-lto-9-ultrium-45tb-rw-data-tape.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "net-s.pl",
+            "sku": "Q2079A (HPE)",
+            "price": 407.21,
+            "vatIncluded": true,
+            "url": "https://www.ceneo.pl/121046458",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "allegro.pl",
+            "sku": "Q2079A (HPE)",
+            "price": 409.0,
+            "vatIncluded": true,
+            "url": "https://www.ceneo.pl/121046458",
+            "note": "ships in 1 day"
+          },
+          {
+            "seller": "Bestokazje.pl",
+            "sku": "Q2079A (HPE)",
+            "price": 424.66,
+            "vatIncluded": true,
+            "url": "https://www.ceneo.pl/121046458",
+            "note": "ships in 7 days"
+          },
+          {
+            "seller": "Jedwabiście",
+            "sku": "Q2079A (HPE)",
+            "price": 524.0,
+            "vatIncluded": true,
+            "url": "https://www.ceneo.pl/121046458",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 387.86,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-quantum-data-cartridge-lto-9-mr-l9mqn-01-12727245/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Balta.pl",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 423.0,
+            "vatIncluded": true,
+            "url": "https://balta.pl/produkt/tasma-quantum-lto-9-ultrium-18-45tb/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 531.35,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/quantum-lto-9-ultrium-tape--4606356--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 395.31,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/data-cartridge-lto-9-mr-l9mqn-01-121629/",
+            "note": "in stock"
+          },
+          {
+            "seller": "4hfix",
+            "sku": "WOAG4040006 (Quantum, shop code)",
+            "price": 390.0,
+            "vatIncluded": true,
+            "url": "https://4hfix.pl/product/tasma-lto-9-ultrium-quantum-18-45tb/",
+            "note": "ships in 4-7 days"
+          },
+          {
+            "seller": "net-s.pl",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 386.83,
+            "vatIncluded": true,
+            "url": "https://www.ceneo.pl/148529296",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "Bestokazje.pl",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 387.9,
+            "vatIncluded": true,
+            "url": "https://www.ceneo.pl/148529296",
+            "note": "ships in 7 days"
+          },
+          {
+            "seller": "allegro.pl",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 388.77,
+            "vatIncluded": true,
+            "url": "https://www.ceneo.pl/148529296",
+            "note": "ships in 7 days"
+          },
+          {
+            "seller": "Gigadeal.pl",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 406.53,
+            "vatIncluded": true,
+            "url": "https://www.ceneo.pl/148529296",
+            "note": "ships in 6 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "02XW568 (IBM)",
+            "price": 564.56,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/ibm-lto-9-ultrium-tape--4661956--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "NET-S (via Morele.net)",
+            "sku": "IBTU18000R (IBM, listed code)",
+            "price": 444.12,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-ibm-ibm-lto9-18tb-45tb-13341583/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Octacom",
+            "sku": "1794064 (IBM, shop code)",
+            "price": 550.15,
+            "vatIncluded": true,
+            "url": "https://sklep.octacom.pl/serwery/ibm-lto9-18tb-45tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "440-BBJU (Dell, 1-pack kit)",
+            "price": 1755.39,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/dell-lto-9-dysk-magazynowy-kaseta-z-tasma-14481768/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "440-BBJU (Dell, 1-pack kit)",
+            "price": 1486.58,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/dell-kunden-kit-lto-ultrium-9-x-1-speichermedium-201374/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 10537.58,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/Q2079AN",
+            "note": "20-pack, 526.88 per unit, limited stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 9694.88,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hpe-hpe-lto-9-ultrium-45tb-rw-non-custom-labeled-20-data-cartridges-with-cases-13342328/",
+            "note": "20-pack, 484.74 per unit, limited stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBJV (Dell 5-pack)",
+            "price": 3419.06,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/440-BBJV",
+            "note": "5-pack, 683.81 per unit, in stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Morele.net",
+            "sku": "Q2079W (HPE)",
+            "price": 678.25,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hp-hewlett-packard-enterprise-hpe-lto-9-ultrium-45tb-worm-data-cartridge-14808059/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2079W (HPE)",
+            "price": 676.49,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/hpe-lto-9-ultrium-tape-worm--4587017--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 714.62,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/quantum-lto-9-ultrium-worm-tape--4606405--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 665.54,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hp-quantum-lto-ultrium-9-worm-media-cartridge-only-orderable-in-a-pack-of-20-15059010/",
+            "note": "must order multiples of 20"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "BC040A (HPE)",
+            "price": 76696.34,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/BC040A",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "BC040A (HPE)",
+            "price": 75763.34,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/streamer-hpe-lto-9-45000-int-tape-drv-13342330/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "BC040A (HPE)",
+            "price": 67926.75,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/hpe-tape-drive-storeever-45000-lto-9--4644476--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 40981.14,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/naped-wewnetrzny-quantum-lto-9-hh-sas--4606445--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "Tandberg LTO-9 HH SAS bare drive (no PN shown)",
+            "price": 21540.97,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO9",
+            "note": "listing price, stock not shown"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "BC042A (HPE)",
+            "price": 29555.5,
+            "vatIncluded": true,
+            "url": "https://www.senetic.pl/product/BC042A",
+            "note": "out of stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 41270.95,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/odtwarzacz-dvd-quantum-lto9-tape-drive-hh-tabletop-kit-lto9-tape-drive-hh-tabletop-kit-11286969/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 45077.04,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/quantum-naped-zewn-lto-9-hh-sas--4610492--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "P84142-B25 (HPE)",
+            "price": 58754.64,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/zewn-naped-tasmowy-hpe-lto-9-ultrium--4947224--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "TD-LTO9xSA (Tandberg)",
+            "price": 23513.16,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO9",
+            "note": "listing price, stock not shown"
+          }
+        ]
+      }
+    },
+    "LTO-10": {
+      "nativeTB": 30,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Morele.net",
+            "sku": "03PL170 (IBM)",
+            "price": 1167.45,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-ibm-ibm-lto-tape-03pl170-lto-10-ultrium-black-15763502/",
+            "note": "in stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "03PL170 (IBM)",
+            "price": 1127.66,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/ibm-lto10-ultrium-30tb-75tb-rw-268040/",
+            "note": "in stock"
+          },
+          {
+            "seller": "NET-S (via Morele.net)",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 1274.24,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-quantum-quantum-lto-tape-mr-l10mqn-01-lto-10-ultrium-white-15837231/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 1522.74,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/tasma-quantum-lto-10-ultrium--4918273--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "buy-it.pl",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 1225.29,
+            "vatIncluded": true,
+            "url": "https://buy-it.pl/product/quantum-lto-ultrium-10-30-tb-75-tb-mit-300785/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "Q2080A (HPE)",
+            "price": 1201.37,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hp-hpe-storage-lto-10-ultrium-rw-data-cartridge-lto-ultrium-10-30-tb-75-tb-lila-15488089/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Morele.net",
+            "sku": "Q2080A (HPE)",
+            "price": 1389.88,
+            "vatIncluded": true,
+            "url": "https://www.morele.net/tasma-hpe-storage-lto-10-ultrium-rw-data-cartridge-lto-ultrium-10-30-tb-75-tb-fioletowy-15600030/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2080A (HPE)",
+            "price": 1494.45,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/hpe-lto-10-ultrium-tape--4920908--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "03PL170 (IBM)",
+            "price": 1289.43,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO-10",
+            "note": "listing price, stock not shown"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "HPE LTO-10 Ultrium RW (no PN shown)",
+            "price": 1453.28,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO-10",
+            "note": "listing price, stock not shown"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L10MQN-20 (Quantum 20-pack)",
+            "price": 28139.94,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/tasma-quantum-lto-10-ultrium-20-szt--4918276--p",
+            "note": "20-pack, 1407.00 per unit, backorder"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L10MQN-02 (Quantum)",
+            "price": 2116.83,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/pl/shop/tasma-quantum-lto-10-ultrium-worm--4918279--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Gigaserwer.pl",
+            "sku": "HPE LTO-10 Ultrium WORM (no PN shown)",
+            "price": 1992.22,
+            "vatIncluded": true,
+            "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO-10",
+            "note": "listing price, stock not shown"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": []
+      },
+      "driveExternal": {
+        "datapoints": []
+      },
+      "cartridge40TB": {
+        "datapoints": []
+      }
+    }
+  },
+  "sellersTried": [
+    {
+      "seller": "senetic.pl",
+      "url": "https://www.senetic.pl/category/zapasowe-nosniki-danych-14933/",
+      "result": "prices found"
+    },
+    {
+      "seller": "x-kom.pl",
+      "url": "https://www.x-kom.pl/szukaj?q=lto",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "morele.net",
+      "url": "https://www.morele.net/kategoria/tasmy-do-streamerow-649/",
+      "result": "prices found"
+    },
+    {
+      "seller": "komputronik.pl",
+      "url": "https://www.komputronik.pl/category/2656/tasmy-lto.html",
+      "result": "prices found"
+    },
+    {
+      "seller": "proline.pl",
+      "url": "https://proline.pl/wyszukaj?searchString=lto",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "sferis.pl",
+      "url": "https://www.sferis.pl/wyszukaj?s=lto",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "mediaexpert.pl",
+      "url": "https://www.mediaexpert.pl/search?query%5Bquerystring%5D=lto",
+      "result": "blocked"
+    },
+    {
+      "seller": "ceneo.pl",
+      "url": "https://www.ceneo.pl/121046458",
+      "result": "prices found"
+    },
+    {
+      "seller": "bechtle.com/pl",
+      "url": "https://www.bechtle.com/pl/shop/hpe-lto-9-ultrium-tape--4587600--p",
+      "result": "prices found"
+    },
+    {
+      "seller": "balta.pl",
+      "url": "https://balta.pl/kategoria-produktu/materialy-eksploatacyjne/tasmy-i-kasety-do-streamerow/",
+      "result": "prices found"
+    },
+    {
+      "seller": "buy-it.pl",
+      "url": "https://buy-it.pl/?s=LTO&post_type=product",
+      "result": "prices found"
+    },
+    {
+      "seller": "sklep.octacom.pl",
+      "url": "https://sklep.octacom.pl/szukaj?controller=search&s=LTO",
+      "result": "prices found"
+    },
+    {
+      "seller": "4hfix.pl",
+      "url": "https://4hfix.pl/product-category/czesci/tasmy-lto/",
+      "result": "prices found"
+    },
+    {
+      "seller": "creativetools.pl",
+      "url": "https://www.creativetools.pl/post-it/systemy-archiwizacji/tasmy-lto.html",
+      "result": "prices found"
+    },
+    {
+      "seller": "gigaserwer.pl",
+      "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO9",
+      "result": "prices found"
+    },
+    {
+      "seller": "allegro.pl",
+      "url": "https://allegro.pl/listing?string=ta%C5%9Bma+lto",
+      "result": "blocked"
+    },
+    {
+      "seller": "supertech.pl",
+      "url": "https://supertech.pl/produkt/overland_tandberg_tandberg_lto_9_data_cartridge_18_45tb_unlabeled_with_case_1pcs_pusta_tasma_danych_18_tb_102139209.html",
+      "result": "blocked"
+    },
+    {
+      "seller": "topko.pl",
+      "url": "https://www.topko.pl/naped-tasmowy-zewnetrzny-lto-9-45000-bc042a-p-61232.html",
+      "result": "blocked"
+    },
+    {
+      "seller": "proshop.pl",
+      "url": "https://www.proshop.pl/?s=LTO",
+      "result": "blocked"
+    }
+  ],
+  "marketNotes": [
+    {
+      "text": "All prices are brutto (23% VAT). Senetic and Bechtle lead with netto; brutto recorded.",
+      "url": "https://www.senetic.pl/product/Q2079A"
+    },
+    {
+      "text": "Bechtle sells only to businesses and public buyers.",
+      "url": "https://www.bechtle.com/pl/shop/hpe-lto-9-ultrium-tape--4587600--p"
+    },
+    {
+      "text": "Ceneo showed 12 offers for HPE Q2079A (407.21 to 1,882.20 zł), then served a bot check page; later Ceneo pages were not read.",
+      "url": "https://www.ceneo.pl/121046458"
+    },
+    {
+      "text": "Morele.net is a marketplace; NET-S and ELECTROLOG offers are recorded under their own names.",
+      "url": "https://www.morele.net/kategoria/tasmy-do-streamerow-649/"
+    },
+    {
+      "text": "No Polish seller showed a priced LTO-10 drive or 40 TB LTO-10 cartridge on 2026-09-23.",
+      "url": "https://www.morele.net/kategoria/tasmy-do-streamerow-649/,,,,,,,,0,,,,/2/"
+    },
+    {
+      "text": "MC Storage (Fujifilm distributor) lists LTO-10 media without public prices.",
+      "url": "https://www.mcstorage.pl/category/lto/"
+    },
+    {
+      "text": "Diskus lists LTO Ultrium media without public prices.",
+      "url": "https://diskus.pl/kategoria-produktu/data-storage/nosniki-danych/tasmy-lto-ultrium/"
+    },
+    {
+      "text": "Stovaris B2B (MagStor distributor) shows prices only after login.",
+      "url": "https://b2b.stovaris.pl/en/wewnetrzny-naped-tasmowy-magstor-lto8-hh-sas-12-tb,3,6011,10067"
+    },
+    {
+      "text": "PremiumSerwer lists the Dell PowerVault LTO-9 as a configurator with no price.",
+      "url": "https://premiumserwer.pl/model/Dell-LTO9/4085"
+    },
+    {
+      "text": "Gigaserwer prices come from search listings; product pages did not render and stock is not shown.",
+      "url": "https://www.gigaserwer.pl/index.php?id_kat=0&strona=kategorie&q=LTO9"
+    },
+    {
+      "text": "Bechtle marks Overland-Tandberg LTO-9 HH drives (TD-LTO9ISA, TD-LTO9XSA) as no longer available.",
+      "url": "https://www.bechtle.com/pl/shop/overland-wew-naped-lto-9-hh-sas--4611678--p"
+    },
+    {
+      "text": "HPE internal LTO-9 (BC040A) lists at about 68,000 to 77,000 zł, far above Quantum and Tandberg HH drives.",
+      "url": "https://www.senetic.pl/product/BC040A"
+    },
+    {
+      "text": "Dell 440-BBJU single LTO-9 kits cost 1,486.58 to 1,755.39 zł, about four times a generic LTO-9 cartridge.",
+      "url": "https://buy-it.pl/product/dell-kunden-kit-lto-ultrium-9-x-1-speichermedium-201374/"
+    }
+  ]
+}

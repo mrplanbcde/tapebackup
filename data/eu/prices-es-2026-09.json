@@ -1,0 +1,1883 @@
+{
+  "asOf": "2026-09-23",
+  "market": "es",
+  "country": "Spain",
+  "currency": "EUR",
+  "vatRate": 0.21,
+  "generations": {
+    "LTO-6": {
+      "nativeTB": 2.5,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Alternate.es",
+            "sku": "00V7590 (IBM)",
+            "price": 49.19,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/IBM/LTO-Ultrium-6-Cinta-de-datos-virgen-2500-GB-Medio-streaming/html/product/1062988",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate.es",
+            "sku": "C7976A (HPE)",
+            "price": 41.79,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/HP/Cartucho-de-datos-HPE-LTO-6-Ultrium-de-6-25-TB-RW-Medio-streaming/html/product/1049050",
+            "note": "backorder, ships in 5-10 days"
+          },
+          {
+            "seller": "Alternate.es",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 50.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/Quantum/Ultrium-6-Cinta-de-datos-virgen-2500-GB-LTO-1-27-cm-Medio-streaming/html/product/1334815",
+            "note": "ships in 5-10 days"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7976A (HPE)",
+            "price": 52.51,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7976A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7976B (HPE, BaFe)",
+            "price": 48.16,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7976B",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "440-12078 (Dell)",
+            "price": 57.95,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/440-12078",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "440-BBEI (Dell)",
+            "price": 57.95,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/440-BBEI",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "C7976A (HPE)",
+            "price": 49.6,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-6-ultrium-mp--790081--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Reichelt (reichelt.com/es)",
+            "sku": "16310732 (Fujifilm)",
+            "price": 48.76,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.com/es/es/shop/producto/cinta_lto_ultrium_6_2_5_tb_6_25_tb_fuji-153733",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Reichelt (reichelt.com/es)",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 49.32,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.com/es/es/shop/producto/cinta_lto_ultrium_6_2_5_tb_6_25_tb_quantum-263045",
+            "note": "in stock"
+          },
+          {
+            "seller": "PcComponentes",
+            "sku": "C7976A (HPE)",
+            "price": 46.8,
+            "vatIncluded": true,
+            "url": "https://www.pccomponentes.com/cinta-de-datos-hpe-lto-6-ultrium-6-25tb-rw-alta-capacidad-y-cifrado-aes",
+            "note": ""
+          },
+          {
+            "seller": "PcComponentes marketplace (Digital Prime)",
+            "sku": "IBTU2500R (IBM)",
+            "price": 90.54,
+            "vatIncluded": true,
+            "url": "https://www.pccomponentes.com/cinta-de-datos-ibm-lto-ultrium-6-2-5-tb-6-25-tb-comprimida",
+            "note": ""
+          },
+          {
+            "seller": "123tinta.es",
+            "sku": "16310732 (Fujifilm)",
+            "price": 36.5,
+            "vatIncluded": true,
+            "url": "https://www.123tinta.es/Fujifilm-LTO-Ultrium-6-Cartucho-de-Datos-16310732-4003276C-i112151.html",
+            "note": "supplier stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "C7976A (HPE)",
+            "price": 47.69,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hp-enterprise-lto-ultrium-6-c7976a-6-25-tb-s8410329",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "00V7590 (IBM)",
+            "price": 72.99,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/ibm-cartucho-de-datos-lto-ultrium-6-00v7590-b13tallrvy",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 64.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-lto6-mr-l6mqn-01-ultrium-6-2-5-tb-6-25-tb-bafe-b144hm7mwq",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 75.79,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-ultrium-6-lto6-mr-l6mqn-03-de-2-5-tb-6-25-tb-b12ccsxa54",
+            "note": "in stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "FU-LTO-6-Ultrium (Fujifilm)",
+            "price": 51.57,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/almacenamiento/2733-fujifilm-cinta-lto-6-fuji-ultrium-de-25tb-nativos-fu-lto-6-ultrium.html",
+            "note": ""
+          },
+          {
+            "seller": "Amazon.es (via idealo.es)",
+            "sku": "C7976A (HPE)",
+            "price": 47.16,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/3707364/hp-lto-6-ultrium-single.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Beep (via idealo.es)",
+            "sku": "C7976A (HPE)",
+            "price": 52.7,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/3707364/hp-lto-6-ultrium-single.html",
+            "note": ""
+          },
+          {
+            "seller": "PCBox (via idealo.es)",
+            "sku": "C7976A (HPE)",
+            "price": 52.7,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/3707364/hp-lto-6-ultrium-single.html",
+            "note": ""
+          },
+          {
+            "seller": "App Informática (via idealo.es)",
+            "sku": "C7976A (HPE)",
+            "price": 52.7,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/3707364/hp-lto-6-ultrium-single.html",
+            "note": ""
+          },
+          {
+            "seller": "IT-Planet (via idealo.es)",
+            "sku": "C7976A (HPE)",
+            "price": 69.0,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/3707364/hp-lto-6-ultrium-single.html",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 49.25,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/4384415/quantum-lto-6-ultrium-cartridge-single.html",
+            "note": ""
+          },
+          {
+            "seller": "Amazon.es marketplace (Maker IT Global) (via idealo.es)",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 52.0,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445903/quantum-mr-l6mqn-03.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.es marketplace (MercadoActual) (via idealo.es)",
+            "sku": "00V7590 (IBM)",
+            "price": 55.79,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6033465/ibm-lto-ultrium-6-00v7590.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "440-BBEJ (Dell 5-pack)",
+            "price": 266.19,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/440-BBEJ",
+            "note": "5-pack, 53.24 per unit, availability on request"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "440-12080 (Dell 5-pack)",
+            "price": 273.85,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/440-12080",
+            "note": "5-pack, 54.77 per unit, availability on request"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7976AN (HPE 20-pack)",
+            "price": 1225.92,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7976AN",
+            "note": "20-pack, 61.30 per unit, limited stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7976AH (HPE 20-pack)",
+            "price": 1630.17,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7976AH",
+            "note": "20-pack, 81.51 per unit, in stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7976BN (HPE 20-pack, BaFe)",
+            "price": 963.38,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7976BN",
+            "note": "20-pack, 48.17 per unit, availability on request"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7976BH (HPE 20-pack, BaFe)",
+            "price": 973.28,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7976BH",
+            "note": "20-pack, 48.66 per unit, availability on request"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "C7976AH (HPE 20-pack)",
+            "price": 1017.6,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-6-ultrium-eco-pack--822014--p",
+            "note": "20-pack, 50.88 per unit, backorder"
+          },
+          {
+            "seller": "IT-Planet (via idealo.es)",
+            "sku": "C7976AN (HPE 20-pack)",
+            "price": 815.0,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6041422/hp-lto-6-ultrium-eco-pack.html",
+            "note": "20-pack, 40.75 per unit"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Senetic.es",
+            "sku": "C7976W (HPE)",
+            "price": 141.36,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7976W",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7976BW (HPE, BaFe)",
+            "price": 55.37,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7976BW",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "C7976W (HPE)",
+            "price": 90.74,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-6-ultrium-worm--833814--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "IT-Planet (via idealo.es)",
+            "sku": "00V7591 (IBM)",
+            "price": 99.0,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6033527/ibm-lto-ultrium-6-worm-00v7591.html",
+            "note": ""
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic.es",
+            "sku": "4T27A10726 (Lenovo ThinkSystem HH SAS)",
+            "price": 10225.59,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/4T27A10726",
+            "note": "availability on request"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": []
+      }
+    },
+    "LTO-7": {
+      "nativeTB": 6,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Alternate.es",
+            "sku": "38L7302 (IBM)",
+            "price": 62.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/IBM/LTO-Ultrium-7-Data-Cartridge-Cinta-de-datos-virgen-6000-GB-Medio-streaming/html/product/1292743",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate.es",
+            "sku": "C7977A (HPE)",
+            "price": 75.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/HP/LTO-7-Ultrium-15-TB-RW-Cinta-de-datos-virgen-1-27-cm-Medio-streaming/html/product/1238688",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate.es",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 63.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/Quantum/MR-L7MQN-01-medio-de-almacenamiento-para-copia-de-seguridad-Cinta-de-datos-virgen-6000-GB-LTO-1-27-cm-Medio-streaming/html/product/1238689",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7977A (HPE)",
+            "price": 79.87,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7977A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "440-BBHU (Dell)",
+            "price": 96.86,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/440-BBHU",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "38L7302 (IBM)",
+            "price": 78.64,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-ibm-lto-7-ultrium--4038754--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "C7977A (HPE)",
+            "price": 104.05,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-7-ultrium--4028908--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Reichelt (reichelt.com/es)",
+            "sku": "LTO FB UL-7 6.0T J (Fujifilm)",
+            "price": 71.13,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.com/es/es/shop/producto/cinta_lto_ultrium_7_6_tb_15_tb_fuji-263039",
+            "note": "in stock"
+          },
+          {
+            "seller": "Reichelt (reichelt.com/es)",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 60.91,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.com/es/es/shop/producto/cinta_lto_ultrium_7_6_tb_15_tb_quantum-263041",
+            "note": "in stock"
+          },
+          {
+            "seller": "PcComponentes",
+            "sku": "C7977A (HPE)",
+            "price": 93.76,
+            "vatIncluded": true,
+            "url": "https://www.pccomponentes.com/cinta-de-datos-hpe-lto-7-ultrium-15tb-rw-alta-velocidad-y-seguridad",
+            "note": ""
+          },
+          {
+            "seller": "MasQueVideo",
+            "sku": "C7977A (HPE)",
+            "price": 84.55,
+            "vatIncluded": false,
+            "url": "https://www.masquevideo.com/es/hp-c7977a-cinta-lto-7-de-6tb-nativos-y-15tb-comprimido",
+            "note": "sale, availability on request"
+          },
+          {
+            "seller": "123tinta.es",
+            "sku": "16456574 (Fujifilm)",
+            "price": 68.5,
+            "vatIncluded": true,
+            "url": "https://www.123tinta.es/Fujifilm-LTO-Ultrium-7-Cartucho-de-Datos-16310732C-16456574-i112152.html",
+            "note": "supplier stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "C7977A (HPE)",
+            "price": 86.99,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hp-cartucho-de-datos-lto-ultrium-7-15-tb-rw-c7977a-s8410331",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "38L7302 (IBM)",
+            "price": 76.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/ibm-lto-ultrium-7-data-cartridge-6-tb-15-tb-b1gxlm3twd",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "16456574 (Fujifilm)",
+            "price": 89.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/fujifilm-lto-ultrium-7-cinta-de-datos-virgen-6tb-15tb-b1clvwn379",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 72.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-lto7-mr-l7mqn-01-6tb-15tb-ultrium-7-violet-b13ct3q4kk",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "OT-LTO7 (Tandberg)",
+            "price": 70.89,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/tandberg-cartucho-de-datos-lto-7-6-0-15-0tb-sin-etiqueta-con-estuche-b1ke2nlqwn",
+            "note": "sale, limited stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "FU-LTO-7-Ultrium (Fujifilm)",
+            "price": 65.4,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-7/2730-fujifilm-cinta-lto-7-fuji-ultrium-de-6tb-nativos.html",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "IBM-LTO-7 (IBM)",
+            "price": 66.12,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-7/5430-ibmlto7.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Prindo (via idealo.es)",
+            "sku": "C7977A (HPE)",
+            "price": 71.55,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445882/hp-lto-ultrium-7.html",
+            "note": ""
+          },
+          {
+            "seller": "Toner24 (via idealo.es)",
+            "sku": "C7977A (HPE)",
+            "price": 82.68,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445882/hp-lto-ultrium-7.html",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "C7977A (HPE)",
+            "price": 83.82,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445882/hp-lto-ultrium-7.html",
+            "note": ""
+          },
+          {
+            "seller": "Beep (via idealo.es)",
+            "sku": "C7977A (HPE)",
+            "price": 90.69,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445882/hp-lto-ultrium-7.html",
+            "note": ""
+          },
+          {
+            "seller": "PCBox (via idealo.es)",
+            "sku": "C7977A (HPE)",
+            "price": 90.69,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445882/hp-lto-ultrium-7.html",
+            "note": ""
+          },
+          {
+            "seller": "App Informática (via idealo.es)",
+            "sku": "C7977A (HPE)",
+            "price": 90.69,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445882/hp-lto-ultrium-7.html",
+            "note": ""
+          },
+          {
+            "seller": "Amazon.es (via idealo.es)",
+            "sku": "38L7302 (IBM)",
+            "price": 71.99,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445918/ibm-38l7302.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "IT-Planet (via idealo.es)",
+            "sku": "38L7302 (IBM)",
+            "price": 99.0,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445918/ibm-38l7302.html",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 66.45,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5445863/quantum-mr-l7mqn-01.html",
+            "note": ""
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "440-BBHT (Dell 5-pack)",
+            "price": 510.62,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/440-BBHT",
+            "note": "5-pack, 102.12 per unit, availability on request"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7977AH (HPE 20-pack)",
+            "price": 1716.29,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7977AH",
+            "note": "20-pack, 85.81 per unit, in stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "C7977AN (HPE 20-pack)",
+            "price": 1716.29,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7977AN",
+            "note": "20-pack, 85.81 per unit, limited stock"
+          },
+          {
+            "seller": "Amazon.es marketplace (SKYLINE MEDIA) (via idealo.es)",
+            "sku": "C7977AN (HPE 20-pack)",
+            "price": 1570.19,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/5446037/hp-c7977an.html",
+            "note": "20-pack, 78.51 per unit, in stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Senetic.es",
+            "sku": "C7977W (HPE)",
+            "price": 133.72,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/C7977W",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "C7977W (HPE)",
+            "price": 129.46,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-7-ultrium-worm--4028915--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "16495661 (Fujifilm)",
+            "price": 140.43,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/211404809/fujifilm-lto-ultrium-7-worm-cinta-de-datos-6tb-16495661.html",
+            "note": ""
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic.es",
+            "sku": "BB873A (HPE)",
+            "price": 5370.43,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/BB873A",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "BB873A (HPE)",
+            "price": 5372.4,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/hpe-storeever-lto-7-ultrium-15000-sas--4043953--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "7T27A01503 (Lenovo ThinkSystem HH SAS)",
+            "price": 12020.32,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/7T27A01503",
+            "note": "availability on request"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic.es",
+            "sku": "BB874A (HPE)",
+            "price": 5160.01,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/BB874A",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "P84140-B25 (HPE)",
+            "price": 5315.53,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/unidad-cinta-externa-hpe-lto-7-ultrium--4947049--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "SPS LTO-7 ext (HPE, EAN 5711783202769)",
+            "price": 5594.95,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hp-enterprise-sps-tape-drive-lto-7-ultrium-external-b1bqbz44vw",
+            "note": "sale, in stock, HPE spare part"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "UX-LTO7-SU (Unitex)",
+            "price": 6358.0,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-7/2126-ux-lto7-su.html",
+            "note": "USB and SAS, delivery in 3 weeks"
+          }
+        ]
+      }
+    },
+    "LTO-8": {
+      "nativeTB": 12,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Alternate.es",
+            "sku": "01PL041 (IBM)",
+            "price": 72.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/IBM/LTO-Ultrium-8-Unidad-de-almacenamiento-Cartucho-de-cinta-12000-GB-Medio-streaming/html/product/1482832",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate.es",
+            "sku": "Q2078A (HPE)",
+            "price": 74.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/Hewlett-Packard-Enterprise/Cartucho-de-datos-HPE-LTO-8-Ultrium-de-30-TB-RW-Medio-streaming/html/product/1414678",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate.es",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 74.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/Quantum/MR-L8MQN-01-medio-de-almacenamiento-para-copia-de-seguridad-Cinta-de-datos-virgen-12000-GB-LTO-1-27-cm-Medio-streaming/html/product/1432183",
+            "note": "ships in 5-10 days"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "Q2078A (HPE)",
+            "price": 98.89,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/Q2078A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "Q2078A (HPE)",
+            "price": 102.84,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-8-ultrium--4220530--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "01PL041 (IBM)",
+            "price": 82.27,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-ibm-lto-8-ultrium--4232675--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 84.69,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-quantum-lto-8-ultrium--4220848--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Reichelt (reichelt.com/es)",
+            "sku": "16551221 (Fujifilm)",
+            "price": 80.23,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.com/es/es/shop/producto/cinta_lto_ultrium_8_12_tb_30_tb_fuji-308592",
+            "note": "in stock"
+          },
+          {
+            "seller": "Reichelt (reichelt.com/es)",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 71.13,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.com/es/es/shop/producto/cinta_lto_ultrium_8_12_tb_30_tb_quantum-263050",
+            "note": "in stock"
+          },
+          {
+            "seller": "PcComponentes marketplace (Penguin)",
+            "sku": "Q2078A (HPE)",
+            "price": 104.46,
+            "vatIncluded": true,
+            "url": "https://www.pccomponentes.com/cartucho-de-datos-hpe-lto-8-ultrium-12-tb-30-tb-rw",
+            "note": ""
+          },
+          {
+            "seller": "MasQueVideo",
+            "sku": "Q2078A (HPE)",
+            "price": 79.0,
+            "vatIncluded": false,
+            "url": "https://www.masquevideo.com/es/hp-q2078a-cinta-lto-8-de-12tb-nativos-y-30tb-comprimidos",
+            "note": "availability on request"
+          },
+          {
+            "seller": "123tinta.es",
+            "sku": "16551221 (Fujifilm)",
+            "price": 74.5,
+            "vatIncluded": true,
+            "url": "https://www.123tinta.es/Fujifilm-LTO-Ultrium-8-Cartucho-de-Datos-16456574C-16551221-i112153.html",
+            "note": "supplier stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "Q2078A (HPE)",
+            "price": 95.89,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hp-lto-8-ultrium-rw-q2078a-30-tb-verde-b19gc55q3e",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "01PL041 (IBM)",
+            "price": 78.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/ibm-lto-ultrium-8-cartucho-de-cinta-12-tb-30-tb-s7702007",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "EAN 4547410364828 (Fujifilm)",
+            "price": 99.99,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/fujifilm-fuji-lto8-ultrium-12tb-30tb-b1fxqer99j",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 116.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-lto-ultrium-8-mr-l8mqn-01-12tb-nativa-30tb-comprimida-rojo-b166a28jjq",
+            "note": "in stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "FU-LTO-8-Ultrium (Fujifilm)",
+            "price": 75.2,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-8/2865-fujifilm-ultrium-lto-8-bafe-12tb30tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "IBM-LTO-8 (IBM)",
+            "price": 77.09,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-8/5431-ibmlto8.html",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Prindo (via idealo.es)",
+            "sku": "Q2078A (HPE)",
+            "price": 72.43,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6123554/hp-lto-8-ultrium-30-tb-rw-single.html",
+            "note": ""
+          },
+          {
+            "seller": "Toner24 (via idealo.es)",
+            "sku": "Q2078A (HPE)",
+            "price": 83.7,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6123554/hp-lto-8-ultrium-30-tb-rw-single.html",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "Q2078A (HPE)",
+            "price": 85.26,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6123554/hp-lto-8-ultrium-30-tb-rw-single.html",
+            "note": ""
+          },
+          {
+            "seller": "Beep (via idealo.es)",
+            "sku": "Q2078A (HPE)",
+            "price": 94.62,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6123554/hp-lto-8-ultrium-30-tb-rw-single.html",
+            "note": ""
+          },
+          {
+            "seller": "PCBox (via idealo.es)",
+            "sku": "Q2078A (HPE)",
+            "price": 94.62,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6123554/hp-lto-8-ultrium-30-tb-rw-single.html",
+            "note": ""
+          },
+          {
+            "seller": "App Informática (via idealo.es)",
+            "sku": "Q2078A (HPE)",
+            "price": 94.62,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6123554/hp-lto-8-ultrium-30-tb-rw-single.html",
+            "note": ""
+          },
+          {
+            "seller": "Electrónica Barata (via idealo.es)",
+            "sku": "01PL041 (IBM)",
+            "price": 63.99,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/202474609/ibm-lto-8-ultrium-tape-01pl041.html",
+            "note": "custom labeled"
+          },
+          {
+            "seller": "Amazon.es (via idealo.es)",
+            "sku": "01PL041 (IBM)",
+            "price": 74.86,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/202474609/ibm-lto-8-ultrium-tape-01pl041.html",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "01PL041 (IBM)",
+            "price": 81.08,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/202474609/ibm-lto-8-ultrium-tape-01pl041.html",
+            "note": ""
+          },
+          {
+            "seller": "Beep (via idealo.es)",
+            "sku": "01PL041 (IBM)",
+            "price": 84.54,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/202474609/ibm-lto-8-ultrium-tape-01pl041.html",
+            "note": ""
+          },
+          {
+            "seller": "PCBox (via idealo.es)",
+            "sku": "01PL041 (IBM)",
+            "price": 84.54,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/202474609/ibm-lto-8-ultrium-tape-01pl041.html",
+            "note": ""
+          },
+          {
+            "seller": "App Informática (via idealo.es)",
+            "sku": "01PL041 (IBM)",
+            "price": 84.54,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/202474609/ibm-lto-8-ultrium-tape-01pl041.html",
+            "note": ""
+          },
+          {
+            "seller": "Amazon.es marketplace (Dig 'n Delve) (via idealo.es)",
+            "sku": "Fujifilm LTO-8",
+            "price": 71.43,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/201750311/fujifilm-lto-ultrium-8-12tb-30tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.es marketplace (SKYLINE MEDIA) (via idealo.es)",
+            "sku": "Quantum LTO-8",
+            "price": 72.32,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6041323/quantum-lto-ultrium-8.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 85.37,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6041323/quantum-lto-ultrium-8.html",
+            "note": ""
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "01KP955 (Lenovo 5-pack)",
+            "price": 702.53,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/01KP955",
+            "note": "5-pack, 140.51 per unit, limited stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "440-BBIQ (Dell 5-pack)",
+            "price": 730.26,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/440-BBIQ",
+            "note": "5-pack, 146.05 per unit, availability on request"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "Q2078AH (HPE 20-pack)",
+            "price": 1751.32,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/Q2078AH",
+            "note": "20-pack, 87.57 per unit, limited stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "Q2078AN (HPE 20-pack)",
+            "price": 2066.33,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/Q2078AN",
+            "note": "20-pack, 103.32 per unit, limited stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "Q2078AH (HPE 20-pack)",
+            "price": 1735.14,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-8-ultrium-eco-pack--4220571--p",
+            "note": "20-pack, 86.76 per unit, backorder"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "EAN 0190017219158 (HPE 20-pack)",
+            "price": 1793.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hp-enterprise-hpe-lto-8-ultrium-30tb-rw-pack-de-20-cartuchos-s55078370",
+            "note": "20-pack, 89.67 per unit, sale, in stock"
+          },
+          {
+            "seller": "Amazon.es marketplace (SKYLINE MEDIA) (via idealo.es)",
+            "sku": "Q2078AN (HPE 20-pack)",
+            "price": 1427.8,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6123550/hp-lto-8-ultrium-30-tb-rw-non-custom-labeled-eco-pack.html",
+            "note": "20-pack, 71.39 per unit, in stock"
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "Q2078AN (HPE 20-pack)",
+            "price": 1907.65,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6123550/hp-lto-8-ultrium-30-tb-rw-non-custom-labeled-eco-pack.html",
+            "note": "20-pack, 95.38 per unit"
+          },
+          {
+            "seller": "Amazon.es marketplace (SKYLINE MEDIA) (via idealo.es)",
+            "sku": "Q2078AH (HPE 20-pack)",
+            "price": 1312.5,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/213711642/hpe-ultrium-8-rw-cartuchos-de-datos-library-pack-20x-12gb-30tb-q2078ah.html",
+            "note": "20-pack, 65.62 per unit, in stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle ES",
+            "sku": "Q2078W (HPE)",
+            "price": 129.46,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-8-ultrium-worm--4220598--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 98.0,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-quantum-lto-8-ultrium-worm--4222268--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "01PL042 (IBM)",
+            "price": 137.93,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-ibm-lto-8-ultrium-worm--4232660--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "EAN 4547410364835 (Fujifilm)",
+            "price": 141.59,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/fuji-lto8-12-30tb-worm-b14cpsk4mz",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "01PL042 (IBM)",
+            "price": 143.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/ibm-lto8-12-30tb-worm-b1hhgwhscy",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "EAN 7612205035188 (Quantum)",
+            "price": 150.69,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-cartucho-de-datos-lto8-worm-b1b77b3ccl",
+            "note": "in stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "FU-LTO-8-WORM (Fujifilm)",
+            "price": 117.86,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-8/3708-fujifilm-ultrium-lto-8-bafe-worm-12tb30tb-sin-etiqueta.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Gangaelectronica (via idealo.es)",
+            "sku": "HPE LTO-8 WORM",
+            "price": 142.22,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/6123565/hp-lto-8-ultrium-30-tb-worm.html",
+            "note": ""
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic.es",
+            "sku": "BC022A (HPE)",
+            "price": 5636.05,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/BC022A",
+            "note": "sale, availability on request"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "BC022A (HPE)",
+            "price": 9301.27,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/unidad-cinta-hpe-storeever-30750-lto-8--4237976--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "4T27A10727 (Lenovo ThinkSystem HH SAS)",
+            "price": 13132.46,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/4T27A10727",
+            "note": "availability on request"
+          },
+          {
+            "seller": "PcComponentes marketplace (Tecno Out)",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 7278.93,
+            "vatIncluded": true,
+            "url": "https://www.pccomponentes.com/disco-duro-disco-duro-quantum-12tb-lto-8-300mb-s-sas-tc-l82an-br-alta-fiabilidad-profesional",
+            "note": ""
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 6367.79,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-tc-l82an-br-lto8-sas-hh-intern-b15wajh8mh",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "SPS LTO-8 int (HPE, EAN 5715327003249)",
+            "price": 8600.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hp-enterprise-sps-tape-drive-lto-8-ultrium-30750-int-b1hr4qdln3",
+            "note": "sale, in stock, HPE spare part"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic.es",
+            "sku": "BC023A (HPE)",
+            "price": 12391.2,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/BC023A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "P84141-B25 (HPE)",
+            "price": 10733.91,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/unidad-cinta-externa-hpe-lto-8-ultrium--4947218--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "6160S8E (Lenovo TS2280)",
+            "price": 10243.86,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/unidad-de-cinta-lenovo-ts2280-lto-8--4285685--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "PcComponentes marketplace (NOWBUY)",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 10213.84,
+            "vatIncluded": true,
+            "url": "https://www.pccomponentes.com/unidad-cinta-lto-8-sas-tabletop-quantum-12tb-externo-con-cartucho-incluido-compacta-alto-rendimiento",
+            "note": ""
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 9407.69,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-tabletop-drive-tc-l82bn-ar-lto-8-hh-sas-externo-b14aqxbqxb",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "BC023A (HPE, by EAN)",
+            "price": 11040.99,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hp-enterprise-hpe-storeever-lto-8-ultrium-30750-external-tape-drive-sas-b1h9hezjhc",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "900302-01-9 (Qualstar Qi LTO-8 SAS)",
+            "price": 10111.04,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-8/6580-qualstar-qi-lto-8-sas-desktop-drive.html",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "UX-LTO8-SU (Unitex)",
+            "price": 6699.0,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-8/2127-ux-lto8-su.html",
+            "note": "USB and SAS, delivery in 3 weeks"
+          }
+        ]
+      }
+    },
+    "LTO-9": {
+      "nativeTB": 18,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Alternate.es",
+            "sku": "02XW568 (IBM)",
+            "price": 95.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/IBM/IBM-LTO-Ultrium-9-Medio-streaming/html/product/1794064",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate.es",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 82.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/Quantum/LTO9-Medium-45-TB-Medio-streaming/html/product/1794073",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate.es",
+            "sku": "Q2079A (HPE)",
+            "price": 92.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.es/Hewlett-Packard-Enterprise/Q2079A-medio-de-almacenamiento-para-copia-de-seguridad-Cinta-de-datos-virgen-45000-GB-LTO-1-27-cm-Medio-streaming/html/product/1507720",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "Q2079A (HPE)",
+            "price": 113.49,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/Q2079A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "Q2079A (HPE)",
+            "price": 104.05,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-9-ultrium--4587600--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "02XW568 (IBM)",
+            "price": 106.47,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-ibm-lto-9-ultrium--4661956--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Reichelt (reichelt.com/es)",
+            "sku": "16659047 (Fujifilm)",
+            "price": 101.63,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.com/es/es/shop/producto/cinta_lto_ultrium_9_18_tb_45_tb_fuji-320736",
+            "note": "in stock"
+          },
+          {
+            "seller": "Reichelt (reichelt.com/es)",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 91.41,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.com/es/es/shop/producto/cinta_lto_ultrium_9_18_tb_45_tb_quantum-320734",
+            "note": "ships in 6-8 days"
+          },
+          {
+            "seller": "PcComponentes",
+            "sku": "Q2079A (HPE)",
+            "price": 108.3,
+            "vatIncluded": true,
+            "url": "https://www.pccomponentes.com/cinta-de-datos-hpe-lto-9-ultrium-45tb-rw-cifrado-aes-256-azul",
+            "note": ""
+          },
+          {
+            "seller": "MasQueVideo",
+            "sku": "Q2079A (HPE)",
+            "price": 97.0,
+            "vatIncluded": false,
+            "url": "https://www.masquevideo.com/es/hp-q2079a-cinta-lto-9-de-18tb-nativos-y-45tb-comprimidos",
+            "note": "availability on request"
+          },
+          {
+            "seller": "123tinta.es",
+            "sku": "16659047 (Fujifilm)",
+            "price": 108.5,
+            "vatIncluded": true,
+            "url": "https://www.123tinta.es/Fujifilm-LTO-Ultrium-9-Cartucho-de-Datos-16551221C-16659047-i112154.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "Q2079A (HPE)",
+            "price": 115.69,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hp-enterprise-lto-9-ultrium-q2079a-de-45-tb-s55126434",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "02XW568 (IBM)",
+            "price": 126.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/ibm-lto-ultrium-9-02xw568-18tb-45tb-b1etr86tgc",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "16659047 (Fujifilm)",
+            "price": 123.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/fuji-lto9-18-45tb-bafe-b1c9hsgagz",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 107.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-lto9-mr-l9mqn-01-18tb-45tb-ultrium-9-b1j6yv7bg5",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "440-BBJU (Dell)",
+            "price": 261.95,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/dell-lto-9-tape-media-1-pack-cust-kit-b1g8rdktld",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "FU-LTO-9-Ultrium (Fujifilm)",
+            "price": 100.34,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-9/4891-fujifilm-ultrium-lto-9-bafe-18tb45tb-sin-etiqueta.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "IBM-LTO-9 (IBM)",
+            "price": 86.2,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-9/5917-ibmlto9.html",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Amazon.es (via idealo.es)",
+            "sku": "Q2079A (HPE)",
+            "price": 85.0,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/207081259/hp-lto-ultrium-9.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "Q2079A (HPE)",
+            "price": 101.43,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/207081259/hp-lto-ultrium-9.html",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "02XW568 (IBM)",
+            "price": 103.67,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/211421862/ibm-cartucho-de-datos-ultrium-lto-9-18tb-45tb-02xw568.html",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 95.72,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/202333684/quantum-lto-ultrium-9.html",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "440-BBJU (Dell)",
+            "price": 284.69,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/211401766/dell-lto-ultrium-9-cinta-de-datos-pack-de-1-440-bbju.html",
+            "note": ""
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "440-BBJV (Dell 5-pack)",
+            "price": 812.44,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/440-BBJV",
+            "note": "5-pack, 162.49 per unit, in stock"
+          },
+          {
+            "seller": "Senetic.es",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 2383.3,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/Q2079AN",
+            "note": "20-pack, 119.17 per unit, limited stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "Q2079AH (HPE 20-pack)",
+            "price": 2563.99,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-9-ultrium-eco-pack--4587013--p",
+            "note": "20-pack, 128.20 per unit, backorder"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 2162.59,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hp-enterprise-lto-9-ultrium-45tb-rw-non-custom-labeled-20-data-cartridges-b1absnn2jl",
+            "note": "20-pack, 108.13 per unit, sale, in stock"
+          },
+          {
+            "seller": "Amazon.es (via idealo.es)",
+            "sku": "440-BBJV (Dell 5-pack)",
+            "price": 578.01,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/213487715/dell-soporte-de-cinta-lto-9-pack-de-5-440-bbjv.html",
+            "note": "5-pack, 115.60 per unit, limited stock"
+          },
+          {
+            "seller": "Amazon.es marketplace (Millennium Star) (via idealo.es)",
+            "sku": "Q2079AH (HPE 20-pack)",
+            "price": 2799.99,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/precios/213654549/hp-cartucho-de-datos-lto-9-ultrium-45tb-rw-pack-de-20-q2079ah.html",
+            "note": "20-pack, 140.00 per unit"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle ES",
+            "sku": "Q2079W (HPE)",
+            "price": 202.06,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-9-ultrium-worm--4587017--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 170.59,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-lto9-18-45tb-bafe-worm-mr-l9mqn-02-b1dmpfmx2v",
+            "note": "sale, in stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic.es",
+            "sku": "BC040A (HPE)",
+            "price": 17346.52,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/BC040A",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "BC040A (HPE)",
+            "price": 15594.48,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/unidad-cinta-hpe-storeever-45000-lto-9--4644476--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 11580.69,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-quantum-lto-9-tc-l92an-br-sas-b1jc4rgjfe",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "Tape Kit LTO9HH (Fujitsu, EAN 4065221783596)",
+            "price": 8958.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/fsc-tape-kit-lto9hh-18tb-300mb-s-sas-12gb-b1d424dbt7",
+            "note": "sale, in stock"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic.es",
+            "sku": "BC042A (HPE)",
+            "price": 6684.61,
+            "vatIncluded": true,
+            "url": "https://www.senetic.es/product/BC042A",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "P84142-B25 (HPE)",
+            "price": 15471.06,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/unidad-cinta-externa-hpe-lto-9-ultrium--4947224--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "PcComponentes marketplace (Digital Universe ES)",
+            "sku": "P84142-B25 (HPE)",
+            "price": 16993.82,
+            "vatIncluded": true,
+            "url": "https://www.pccomponentes.com/disco-duro-dispositivo-almacenamiento-hpe-lto-9-ultrium-45tb-sas-300mb-s-aes-256-bit-worm",
+            "note": ""
+          },
+          {
+            "seller": "PcComponentes marketplace (NOWBUY)",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 12870.1,
+            "vatIncluded": true,
+            "url": "https://www.pccomponentes.com/disco-duro-disco-duro-quantum-45tb-lto-9-sas-1200mb-s-tc-l92bn-ar-cartucho-lto-9-incluido",
+            "note": ""
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 11855.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/quantum-storage-quantum-tabletop-kit-tc-l92bn-ar-lto9-hh-sas-b1e9y4r3st",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "900304-01-5 (Qualstar Qi LTO-9 SAS)",
+            "price": 15206.94,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-9/6401-900304015.html",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "UX-LTO9-SU (Unitex)",
+            "price": 7899.0,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/lto-9/6033-uxlto9su.html",
+            "note": "USB and SAS, availability on request"
+          },
+          {
+            "seller": "Amazon.es marketplace (via idealo.es)",
+            "sku": "Qualstar Qi LTO-9 SAS",
+            "price": 9985.0,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/resultados.html?q=Qualstar%20Qi",
+            "note": "ships in 4-5 days"
+          }
+        ]
+      }
+    },
+    "LTO-10": {
+      "nativeTB": 30,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Reichelt (reichelt.com/es)",
+            "sku": "16944686 (Fujifilm)",
+            "price": 314.19,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.com/es/es/shop/producto/lto_ultrium_10_tape_30_tb_75_tb_fuji-434091",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "Q2080A (HPE)",
+            "price": 298.86,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-10-ultrium--4920908--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "Q2080A (HPE)",
+            "price": 297.5,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/hewlett-packard-enterprise-cinta-lto-10-ultrium-75tb-rw-violet-b17qbnyj3d",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "03PL170 (IBM)",
+            "price": 286.79,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/ibm-lto-10-ultrium-03pl170-negro-b1dpfsh6qy",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Bixoto (bixoto.com/es)",
+            "sku": "16944686 (Fujifilm)",
+            "price": 343.69,
+            "vatIncluded": true,
+            "url": "https://bixoto.com/es/p/fuji-fuji-lto10-30-75tb-dc-b1fna54j6m",
+            "note": "sale, in stock"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "FU-LTO-10-Ultrium (Fujifilm)",
+            "price": 318.7,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/externo/6711-fujifilm-ultrium-lto-10-srfebafe-30tb75tb-sin-etiqueta.html",
+            "note": "availability on request"
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "HPE LTO-10 RW",
+            "price": 297.44,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/resultados.html?q=LTO10",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "03PL170 (IBM)",
+            "price": 289.01,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/resultados.html?q=LTO10",
+            "note": ""
+          },
+          {
+            "seller": "Electropolis (via idealo.es)",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 295.26,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/resultados.html?q=LTO10",
+            "note": ""
+          },
+          {
+            "seller": "Amazon.es marketplace (via idealo.es)",
+            "sku": "Q2080A (HPE)",
+            "price": 353.99,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/resultados.html?q=LTO10",
+            "note": "ships in 5-6 days"
+          },
+          {
+            "seller": "Amazon.es marketplace (via idealo.es)",
+            "sku": "03PL170 (IBM)",
+            "price": 319.03,
+            "vatIncluded": true,
+            "url": "https://www.idealo.es/resultados.html?q=LTO10",
+            "note": "ships in 3-4 days"
+          },
+          {
+            "seller": "Bechtle ES",
+            "sku": "Q2080AH (HPE 20-pack)",
+            "price": 7361.64,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-10-ultrium-librarypack--4920913--p",
+            "note": "20-pack, 368.08 per unit, backorder"
+          }
+        ]
+      },
+      "cartridge40TB": {
+        "datapoints": [
+          {
+            "seller": "Neovideo",
+            "sku": "FU-LTO-10-40TB Ultrium (Fujifilm)",
+            "price": 582.04,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/externo/6709-fujifilm-ultrium-lto-10-40tb100tb-srfebafe-special-coating.html",
+            "note": "availability on request"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle ES",
+            "sku": "Q2080W (HPE)",
+            "price": 534.81,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-10-ultrium-worm--4920918--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Neovideo",
+            "sku": "FU-LTO-10-WORM (Fujifilm)",
+            "price": 453.4,
+            "vatIncluded": false,
+            "url": "https://neovideo.es/es/externo/6713-fujifilm-ultrium-lto-10-srfebafe-worm-30tb75tb-sin-etiqueta.html",
+            "note": "availability on request"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": []
+      },
+      "driveExternal": {
+        "datapoints": []
+      }
+    }
+  },
+  "sellersTried": [
+    {
+      "seller": "Senetic.es",
+      "url": "https://www.senetic.es/search/?q=LTO&f_s_category=icecat_293",
+      "result": "prices found"
+    },
+    {
+      "seller": "PcComponentes",
+      "url": "https://www.pccomponentes.com/buscar/?query=lto",
+      "result": "prices found"
+    },
+    {
+      "seller": "LDLC España",
+      "url": "https://www.ldlc.com/es-es/buscar/ultrium/",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "Coolmod",
+      "url": "https://www.coolmod.com/buscar/?q=lto",
+      "result": "blocked"
+    },
+    {
+      "seller": "Alternate.es",
+      "url": "https://www.alternate.es/listing.xhtml?q=ultrium",
+      "result": "prices found"
+    },
+    {
+      "seller": "Bechtle ES",
+      "url": "https://www.bechtle.com/es/shop/hardware/componentes/medios-de-almacenamiento--10002009--c/tipo-de-producto--cinta-lto",
+      "result": "prices found"
+    },
+    {
+      "seller": "PCBox",
+      "url": "https://www.pcbox.com/",
+      "result": "blocked"
+    },
+    {
+      "seller": "idealo.es",
+      "url": "https://www.idealo.es/cat/4492F100696402/soportes-de-almacenamiento.html",
+      "result": "prices found"
+    },
+    {
+      "seller": "Reichelt (reichelt.com/es)",
+      "url": "https://www.reichelt.com/es/es/shop/busqueda/ultrium",
+      "result": "prices found"
+    },
+    {
+      "seller": "Bixoto (bixoto.com/es)",
+      "url": "https://bixoto.com/es?search=lto",
+      "result": "prices found"
+    },
+    {
+      "seller": "Neovideo",
+      "url": "https://neovideo.es/es/211-lto-9",
+      "result": "prices found"
+    },
+    {
+      "seller": "MasQueVideo",
+      "url": "https://www.masquevideo.com/es/venta/equipos-realizacion/almacenamiento-datos/lto",
+      "result": "prices found"
+    },
+    {
+      "seller": "123tinta.es",
+      "url": "https://www.123tinta.es/Almacenamiento/Cintas-LTO-Ultrium-cartuchos-de-datos-p224513.html",
+      "result": "prices found"
+    },
+    {
+      "seller": "Electropolis",
+      "url": "https://www.electropolis.es/buscar?q=lto-10",
+      "result": "blocked"
+    },
+    {
+      "seller": "Amazon.es",
+      "url": "https://www.amazon.es/s?k=cinta+lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "HPE Store Spain",
+      "url": "https://buy.hpe.com/es/es/storage/tape-storage/tape-drives-ultrium/storeever-ultrium-tape-drives/unidad-de-cinta-interna-hpe-storeever-lto-9-ultrium-45000/p/bc040a",
+      "result": "blocked"
+    },
+    {
+      "seller": "eComputer",
+      "url": "https://tienda.ecomputer.es/unidades-cinta-46",
+      "result": "blocked"
+    },
+    {
+      "seller": "Electronicamente",
+      "url": "https://www.electronicamente.com/unidades-de-cinta/",
+      "result": "blocked"
+    },
+    {
+      "seller": "Indactec",
+      "url": "https://www.indactec.com/14858/cinta-lto-ultrium-9.html",
+      "result": "blocked"
+    },
+    {
+      "seller": "Carrefour.es",
+      "url": "https://www.carrefour.es/cinta-hpe-lto-9-ultrium-45-tb/0190017480527/p",
+      "result": "blocked"
+    },
+    {
+      "seller": "Kelkoo.es",
+      "url": "https://www.kelkoo.es/c/informatica/consumibles-y-almacenamiento/unidades-de-cinta-100043113/",
+      "result": "blocked"
+    },
+    {
+      "seller": "RS Components ES",
+      "url": "https://es.rs-online.com/web/c/?searchTerm=lto+ultrium",
+      "result": "blocked"
+    }
+  ],
+  "marketNotes": [
+    {
+      "text": "Spain has enough sellers for its own price layer: over 20 Spain-serving sellers (Spanish shops, EU shops with Spanish storefronts, Amazon.es and PcComponentes marketplaces). Lines that still need the German fallback: LTO-10 40TB (one listing), LTO-9 and LTO-10 WORM (two each), LTO-6 drives, and all LTO-10 drives.",
+      "url": "https://www.idealo.es/cat/4492F100696402/soportes-de-almacenamiento.html"
+    },
+    {
+      "text": "No standalone LTO-10 drive is listed at any Spain-serving seller checked. LTO-10 drives appear only inside Qualstar libraries at Neovideo.",
+      "url": "https://neovideo.es/es/lto-10/6525-qualstar-q80-library-1x-lto-10-fh-sas-drive.html"
+    },
+    {
+      "text": "HPE LTO-9 drives cost far more than Quantum in Spain: BC040A is €15,594 (Bechtle) and €17,347 (Senetic), P84142-B25 is €15,471 (Bechtle), while Quantum TC-L92AN-BR is €11,581 (Bixoto). Senetic's BC042A at €6,685 is an outlier and needs an availability check.",
+      "url": "https://www.senetic.es/product/BC040A"
+    },
+    {
+      "text": "Bechtle ES sells only to businesses and public bodies. Its pages lead with the net price and show the gross price beside it; the gross (IVA incl.) figure is recorded.",
+      "url": "https://www.bechtle.com/es/shop/cinta-hpe-lto-9-ultrium--4587600--p"
+    },
+    {
+      "text": "Neovideo and MasQueVideo (broadcast resellers in Barcelona) show prices without IVA; these are recorded as shown with vatIncluded false.",
+      "url": "https://neovideo.es/es/lto-9/4891-fujifilm-ultrium-lto-9-bafe-18tb45tb-sin-etiqueta.html"
+    },
+    {
+      "text": "idealo.es prices include IVA but not shipping. Offers from ManoMano, eBay, OnBuy and Miravia marketplace sellers were left out because they sit well above retail: HPE Q2078A ran €112.53 to €154.99 there, against €72.43 to €104.46 at shops.",
+      "url": "https://www.idealo.es/precios/6123554/hp-lto-8-ultrium-30-tb-rw-single.html"
+    },
+    {
+      "text": "PCBox, Beep and App Informática list identical prices. PCBox blocks bots on its own site, so its prices come from idealo.es.",
+      "url": "https://www.idealo.es/precios/6123554/hp-lto-8-ultrium-30-tb-rw-single.html"
+    },
+    {
+      "text": "Bixoto shows most LTO items as a special offer against a list price; those datapoints carry the note 'sale'.",
+      "url": "https://bixoto.com/es?search=lto"
+    },
+    {
+      "text": "MagStor and Symply drives are sold in Spain only as Thunderbolt or USB desktop units, so they are left out of the SAS drive lines. Example: Symply SY-SYPRO-DT3L9H1B LTO-9 Thunderbolt at €9,099 excl. IVA (MasQueVideo).",
+      "url": "https://www.masquevideo.com/es/venta/equipos-realizacion/almacenamiento-datos/lto"
+    },
+    {
+      "text": "No Sony LTO media was found at any Spain-serving seller.",
+      "url": "https://www.idealo.es/cat/4492F100696402/soportes-de-almacenamiento.html"
+    }
+  ]
+}

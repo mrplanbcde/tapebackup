@@ -48,9 +48,9 @@ def set_market(code):
 
 def current_data():
     """Generations plus market notes for the current market, in the shape the builders use."""
-    notes = list(US.raw.get("marketNotes", []))
-    if not MKT.is_us:
-        notes = [n for n in notes if not n["text"].startswith("Not found")] + list(MKT.market_notes)
+    # Market context comes from the US research notes (industry news with sources). The European
+    # files' marketNotes are the researchers' method notes and are not shown on the site.
+    notes = [n for n in US.raw.get("marketNotes", []) if not n["text"].startswith("Not found")]
     return {"generations": MKT.generations, "marketNotes": notes, "asOf": MKT.as_of}
 
 
@@ -115,6 +115,8 @@ def per_tb(item, sym=None):
     if (item or {}).get("perTBLow") is None:
         return "n/a"
     sym = sym or MKT.sym
+    if abs(item["perTBHigh"] - item["perTBLow"]) < 0.005:
+        return f"{sym}{item['perTBLow']:.2f}"
     return f"{sym}{item['perTBLow']:.2f} to {sym}{item['perTBHigh']:.2f}"
 
 
@@ -350,7 +352,7 @@ def method_blocked_sentence():
     blocked = MKT.blocked_sellers()
     if not blocked:
         return ""
-    return f"{esc(and_list(blocked))} blocked automated checks or showed no price, so they are not included."
+    return f"{esc(and_list(blocked))} blocked automated checks or showed no price, so {'it is' if len(blocked) == 1 else 'they are'} not included."
 
 
 def build_gen_page(gen, g, history, current):
@@ -544,7 +546,7 @@ def build_hub(current, history):
         blocked = MKT.blocked_sellers()
         method = (f"We load product pages at sellers in {MKT.country} ({esc(and_list(MKT.sellers_used()))} in this edition) and record the listed price, part number and stock note."
                   f" Prices include {round(MKT.vat * 100)}% VAT; where a seller showed a net price, VAT was added. We exclude listings the seller marks as inaccurate and prices that look like listing errors."
-                  + (f" {esc(and_list(blocked))} blocked automated checks or showed no price, so they are not included." if blocked else "")
+                  + (f" {esc(and_list(blocked))} blocked automated checks or showed no price, so {'it is' if len(blocked) == 1 else 'they are'} not included." if blocked else "")
                   + (f" Where no seller in {MKT.country} listed an item, the table shows a listing from Germany and says so in the note." if MKT.fallback_used else "")
                   + " When a new edition is published, the previous one moves to the price history.")
 
@@ -622,7 +624,7 @@ def build_history(current, history):
         r += [esc(m.get("internal", "")), esc(m.get("external", ""))]
         drive_rows.append(r)
     cards = "".join(
-        f'<a href="/lto-tape-price-trend/{s["slug"]}">{esc(s["label"])}<span>{esc(s["summary"][:110].rsplit(" ", 1)[0])}...</span></a>' for s in snaps
+        f'<a href="/lto-tape-price-trend/{s["slug"]}">{esc(s["label"])}<span>{esc(s["summary"].split(". ")[0].rstrip(".") + ".")}</span></a>' for s in snaps
     )
     if MKT.is_us:
         intro = "Every LTO price snapshot TapeBackup.org has published since September 2025, side by side. Current prices live on the <a href=\"/lto-tape-price-trend\">LTO price tracker</a>; when a new edition goes out, the previous one is archived here."

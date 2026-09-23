@@ -82,7 +82,7 @@ def _norm_dp(dp, vat, src_market):
     net_note = ""
     if vat and dp.get("vatIncluded") is False:
         gross = round(gross * (1 + vat), 2)
-        net_note = "net price plus VAT"
+        net_note = "VAT added to the net price"
     m = PACK_NOTE.search(note)
     pack = int(m.group(1)) if m and int(m.group(1)) > 1 else None
     note = re.sub(r"seen \d{4}-\d{2}-\d{2};?\s*", "", note).strip(" ;")
@@ -92,11 +92,25 @@ def _norm_dp(dp, vat, src_market):
             "note": note, "pack": pack, "unit": round(gross / pack, 2) if pack else None, "market": src_market}
 
 
+OUT_OF_STOCK = re.compile(r"(?:^|;\s*)(?:out of stock|sold out)(?:$|[;,])", re.I)
+
+
 def _summarise(dps, native_tb):
-    singles = [d["price"] for d in dps if not d["pack"]]
+    """Range of single-unit prices. Out-of-stock listings and prices under half or over twice the
+    median, or more than 1.75 times it, stay in the listing tables but not in the headline range."""
+    singles = [d for d in dps if not d["pack"]]
     if not singles:
         return {"low": None, "high": None, "perTBLow": None, "perTBHigh": None, "datapoints": dps}
-    lo, hi = min(singles), max(singles)
+    prices = sorted(d["price"] for d in singles)
+    median = prices[len(prices) // 2] if len(prices) % 2 else (prices[len(prices) // 2 - 1] + prices[len(prices) // 2]) / 2
+    for d in singles:
+        odd = len(prices) >= 4 and not (0.5 * median <= d["price"] <= 1.75 * median)
+        oos = bool(OUT_OF_STOCK.search(d["note"]))
+        d["in_range"] = not (odd or oos)
+        if not d["in_range"] and "not counted in the range" not in d["note"]:
+            d["note"] = (d["note"] + "; " if d["note"] else "") + "not counted in the range"
+    counted = [d["price"] for d in singles if d["in_range"]] or prices
+    lo, hi = min(counted), max(counted)
     return {"low": lo, "high": hi, "perTBLow": round(lo / native_tb, 2) if native_tb else None,
             "perTBHigh": round(hi / native_tb, 2) if native_tb else None, "datapoints": dps}
 

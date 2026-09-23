@@ -1,0 +1,2699 @@
+{
+  "asOf": "2026-09-23",
+  "market": "fr",
+  "country": "France",
+  "currency": "EUR",
+  "vatRate": 0.2,
+  "generations": {
+    "LTO-6": {
+      "nativeTB": 2.5,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "PC21",
+            "sku": "16310732 (Fujifilm)",
+            "price": 32.54,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/16310732-fuji-lto-6-ultrium-2-5-6-25-to-bafe-i1357424.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Imprimantes.fr",
+            "sku": "00V7590 (IBM)",
+            "price": 36.28,
+            "vatIncluded": true,
+            "url": "https://www.imprimantes.fr/sauvegarde-informatique-dlt-lto-dds-00v7590-lto6-p-13152.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "457204 (Maxell)",
+            "price": 38.1,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/457204-maxell-lto-ultrium-6-2-5-to-6-25-to-i372447.html",
+            "note": "sale; limited stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "16310732 (Fujifilm)",
+            "price": 40.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/16310732.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "16310732 (Fujifilm)",
+            "price": 41.18,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/fuji-lto-6-capacite-2-5-to",
+            "note": "in stock"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "16310732 (Fujifilm)",
+            "price": 45.64,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-6-fuji-ultrium-25-6-to-pour-lecteur-de-bande-non-etiquetee-l-unite-p4069533",
+            "note": "public sector buyers only; ships in 5 days"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "22955800 (Maxell)",
+            "price": 38.63,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/12611/Maxell-22955800-Cartouche-de-sauvegarde-LTO-6-Ultrium-2-5Tb-6-25To",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "16310732 (Fujifilm)",
+            "price": 39.28,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/12491/Fuji-16310732-Cartouche-de-sauvegarde-LTO-6-Ultrium-2-5-6-25-GB",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 47.4,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/mr-l6mqn-03.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "2KINGS via Rue du Commerce",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 48.92,
+            "vatIncluded": true,
+            "url": "https://www.rueducommerce.fr/p/m26079759627.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 49.3,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0768268043442",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "C7976A (HPE)",
+            "price": 50.4,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/c7976a.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "00V7590 (IBM)",
+            "price": 50.4,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/ibm-lto-00v7590.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976A (HPE)",
+            "price": 52.08,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/C7976A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "00V7590 (IBM)",
+            "price": 44.63,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/12545/IBM-00V7590-Cartouche-de-sauvegarde-LTO-6-Ultrium-2-5-TB-6-25-TO",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 53.61,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l6mqn-03-quantum-lto-6-ultrium-2-5-6-25-to-mp-i1756846.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "C7976A (HPE)",
+            "price": 53.99,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-hpe-lto-6-ultrium-mp--790081--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 45.38,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/10568/Quantum-MR-L6MQN-Cartouche-de-sauvegarde-LTO-6-Ultrium-REW-2-5T-6-25T",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBEI (Dell)",
+            "price": 54.7,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/440-BBEI",
+            "note": "out of stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "16310732 (Fujifilm)",
+            "price": 46.39,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/fujifilm-16310732-lto-6-cartouche-de-donnees-2-5tb-6-25tb_74924_77039",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "C7976A (HPE)",
+            "price": 57.67,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/c7976a-hp-ultrium-rw-data-cartridge-lto-ultrium-6-6-25-to-pour-storeever-lto-6-msl2024-msl4048-msl8096-storeever-1-8-g2-tape-autoloader-i363727.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "C7976A (HPE)",
+            "price": 48.75,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/12523/HP-C7976A-Cartouche-de-sauvegarde-LTO-6-Ultrium-MP-2-5To-6-25To",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "00V7590 (IBM)",
+            "price": 49.66,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/ibm-00v7590-cartouche-neuve-lto-6-ultrium-6-2-5tb-6-25tb_75056_77146",
+            "note": "in stock"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "00V7590 (IBM)",
+            "price": 62.28,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0883436347815",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "C7976A (HPE)",
+            "price": 52.1,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/cartouche-de-donnees-neuve-hp-c7976a-lto-6-2-5tb-6-25tb_74952_77066",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "00V7590 (IBM)",
+            "price": 67.08,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/00v7590-ibm-lto6-2500gb-6250gb-backup-tape-retail-pack--i562926.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "C7976A (HPE)",
+            "price": 68.28,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0887111203861",
+            "note": "in stock"
+          },
+          {
+            "seller": "TRM",
+            "sku": "LTO6FUJI (Fujifilm LTO-6)",
+            "price": 70.8,
+            "vatIncluded": true,
+            "url": "https://www.trm.fr/consommables/cartouche-lto6-fuji/",
+            "note": "sale; backorder"
+          },
+          {
+            "seller": "Netram",
+            "sku": "C7976A (HPE)",
+            "price": 63.4,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Cartridge-HP-LTO-6-2-5TB-6-25TB-C7976A-No-labels-included-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "Imprimantes.fr",
+            "sku": "00V7594 (IBM 20-pack)",
+            "price": 655.08,
+            "vatIncluded": true,
+            "url": "https://www.imprimantes.fr/sauvegarde-informatique-dlt-lto-dds-00v7594-lto6-p-13153.html",
+            "note": "20-pack, 32.75 per unit; ships in 2 days"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "18497 (Fujifilm 20-pack, labeled)",
+            "price": 977.62,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-6-fuji-ultrium-25-6-to-pour-lecteur-de-bande-etiquetee-par-lot-de-20-library-pack-p4084843",
+            "note": "20-pack, 48.88 per unit; public sector buyers only; ships in 5 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "C7976AN (HPE 20-pack)",
+            "price": 1067.59,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/c7976an-hp-20-x-lto-ultrium-6-2-5-to-6-25-to-etiquete-par-code-a-barres-pour-storeever-msl2024-msl4048-msl8096-storeever-1-8-g2-tape-autoloader-i367389.html",
+            "note": "20-pack, 53.38 per unit; sale; in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976AN (HPE 20-pack)",
+            "price": 1215.79,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/C7976AN",
+            "note": "20-pack, 60.79 per unit; limited stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "EuroCAPA",
+            "sku": "16310756 (Fujifilm)",
+            "price": 57.6,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/16310756.html",
+            "note": "ships in 10 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "16310756 (Fujifilm)",
+            "price": 63.48,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/4547410237078",
+            "note": "backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L6WQN-04 (Quantum)",
+            "price": 66.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/mr-l6mqn-04.html",
+            "note": "ships in 10 days"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "00V7591 (IBM)",
+            "price": 61.53,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/12547/IBM-00V7591-Cartouche-de-sauvegarde-LTO-6-Ultrium-2-5-TB-6-25-TO-Worm",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "C7976W (HPE)",
+            "price": 78.84,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/c7976w-hp-lto-ultrium-worm-6-2-5-to-6-25-to-etiquettes-marquables-violet-pour-storageworks-sas-rack-mount-kit-i451482.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "Network Tech via Rue du Commerce",
+            "sku": "C7976W (HPE)",
+            "price": 80.05,
+            "vatIncluded": true,
+            "url": "https://www.rueducommerce.fr/p/m24072748902.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "C7976W (HPE)",
+            "price": 81.6,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/c7976w.html",
+            "note": "ships in 10 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "C7976W (HPE)",
+            "price": 87.48,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0887111203878",
+            "note": "backorder"
+          },
+          {
+            "seller": "PC21",
+            "sku": "00V7591 (IBM)",
+            "price": 88.86,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/00v7591-lto-ultrium-6-worm-2-5-tb-new-retail--i818032.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "16310756 (Fujifilm)",
+            "price": 94.11,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/16310756-fujifilm-lto-ultrium-g6-lto-ultrium-worm-6-2-5-to-6-25-to-i438598.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "00V7591 (IBM)",
+            "price": 96.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/ibm-lto-00v7591.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "C7976W (HPE)",
+            "price": 104.39,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-hpe-lto-6-ultrium-worm--833814--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Netram",
+            "sku": "C7976W (HPE)",
+            "price": 88.8,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/HPE-LTO6-Ultrium-6-25TB-MP-WORM-Data-Car-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L6MQN-02 (Quantum)",
+            "price": 109.31,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l6mqn-02-quantum-lto-ultrium-worm-6-2-5-to-6-25-to-noir-gris-i362099.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976W (HPE)",
+            "price": 140.2,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/C7976W",
+            "note": "in stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "PC21",
+            "sku": "EH969A (HPE StoreEver LTO-6 Ultrium 6250 internal)",
+            "price": 1665.91,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/eh969a-reconditionne-hpe-lto6-ultrium-6250-tape-drive-internal-2500gb-reconditionne--i5272209.html",
+            "note": "refurbished; backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "EH969A (HPE StoreEver LTO-6 Ultrium 6250 internal)",
+            "price": 2820.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/eh969a.html",
+            "note": "ships in 3 days"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "TopTenStorage",
+            "sku": "TC-L62BN (Quantum LTO-6 HH SAS external)",
+            "price": 474.79,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/quantum-tc-l62bn-hp-lto-6-hh-sas-lecteur-standalone-externe-2-5tb-6-25tb_65624_47405",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "EH970A (HPE StoreEver LTO-6 Ultrium 6250 external)",
+            "price": 2412.67,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/eh970a-reconditionne-hpe-lto6-ultrium-6250-sas-external-reconditionne--i5272443.html",
+            "note": "refurbished; backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "TC-L62BN-AR-C (Quantum LTO-6 HH SAS external)",
+            "price": 2880.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/tc-l62bn-ar-c.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "EH970A (HPE StoreEver LTO-6 Ultrium 6250 external)",
+            "price": 2988.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/eh970a.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "3580S6E (IBM TS2260 LTO-6 HH SAS external)",
+            "price": 3120.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/ibm-lecteur-de-bande-externe-lto-6-interface-sas-ts2260.html",
+            "note": "ships in 3 days"
+          }
+        ]
+      }
+    },
+    "LTO-7": {
+      "nativeTB": 6,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "ATREID",
+            "sku": "16456574 (Fujifilm)",
+            "price": 64.8,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/fuji-lto-7-capacite-6-to",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "16456574 (Fujifilm)",
+            "price": 66.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/fujifilm-cartouche-de-donnees-lto-7-ultrium-bafe-rew-6tb-15tb-18389.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "2KINGS via Rue du Commerce",
+            "sku": "Quantum LTO-7 (EAN 0768268042223)",
+            "price": 66.99,
+            "vatIncluded": true,
+            "url": "https://www.rueducommerce.fr/p/m24072747571.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "16456574 (Fujifilm)",
+            "price": 68.95,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/16456574-fuji-lto-7-ultrium-6-tb-15-tb-i1496139.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "16456574 (Fujifilm)",
+            "price": 58.99,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/fujifilm-16456574-lto-7-cartouche-de-donnees-6tb-15tb-neuf_75073_77162",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "38L7302 (IBM)",
+            "price": 70.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/ibm-cartouche-de-donnees-lto-7-ultrium-rew-6tb-15tb.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 70.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/quantum-cartouche-de-donnees-lto-7-ultrium-rew-6tb-15tb.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "38L7302 (IBM)",
+            "price": 59.66,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/ibm-38l7302-lto-7-cartouche-de-donnees-6tb-15tb-neuf_74969_77082",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "C7977A (HPE)",
+            "price": 72.6,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/c7977a-hpe-ultrium-rw-data-cartridge-lto-ultrium-7-6-to-15-to-etiquettes-marquables-bleu-ardoise-i1476264.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 73.19,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-quantum-lto-7-ultrium--4038011--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 61.93,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/quantum-mr-l7mqn-01-lto-7-ultrium-vii-cartouche-de-donnees-6tb-15tb-neuf_75069_77158",
+            "note": "in stock"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "16456574 (Fujifilm)",
+            "price": 74.44,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-7-fuji-ultrium-6-15-to-pour-lecteur-de-bande-non-etiquetee-l-unite-p4069535",
+            "note": "public sector buyers only; ships in 5 days"
+          },
+          {
+            "seller": "Imprimantes.fr",
+            "sku": "38L7302 (IBM)",
+            "price": 74.56,
+            "vatIncluded": true,
+            "url": "https://www.imprimantes.fr/sauvegarde-informatique-dlt-lto-dds-38l7302-p-13144.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "La Boutique Du Net via Rue du Commerce",
+            "sku": "Fujifilm LTO-7 (EAN 4547410316971)",
+            "price": 76.64,
+            "vatIncluded": true,
+            "url": "https://www.rueducommerce.fr/p/r24060024885.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7977A (HPE)",
+            "price": 79.21,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/C7977A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Netram",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 66.3,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Cartridge-Quantum-LTO-7-6-15TB-No-labels-included-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "38L7302 (IBM)",
+            "price": 81.48,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0883436686808",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "C7977A (HPE)",
+            "price": 82.79,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-hpe-lto-7-ultrium--4028908--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "C7977A (HPE)",
+            "price": 82.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hp-cartouche-de-donnees-lto-7-ultrium-rew-6tb-15tb.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "C7977A (HPE)",
+            "price": 72.27,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/hp-c7977a-cartouche-neuve-lto-7-ultrium-vii-6tb-15tb_75008_77115",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 87.62,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l7mqn-01-quantum-lto-7-ultrium-6-tb-15-tb-i1476262.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "38L7302 (IBM)",
+            "price": 76.08,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/33182/IBM-38L7302-Cartouche-de-sauvegarde-LTO-7-Ultrium-6TB-15-TB",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBHU (Dell)",
+            "price": 91.43,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/440-BBHU",
+            "note": "sale; out of stock"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "C7977A (HPE)",
+            "price": 93.48,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/4514953944671",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 78.43,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/33211/Quantum-MR-L7QMN-01-Cartouche-de-sauvegarde-LTO-7-Ultrium-6TB-15TB",
+            "note": "in stock"
+          },
+          {
+            "seller": "Netram",
+            "sku": "C7977A (HPE)",
+            "price": 82.0,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Cartridge-HP-LTO-7-6TB-15TB-C7977A-No-labels-included-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "Netram",
+            "sku": "38L7302 (IBM)",
+            "price": 83.5,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/IBM-LTO-Ultrium-7-Data-Cartridge-6TB-15TB-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "C7977A (HPE)",
+            "price": 85.47,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/33158/HP-C7977A-Cartouche-de-sauvegarde-LTO-7-Ultrium-6TB-15TB",
+            "note": "in stock"
+          },
+          {
+            "seller": "TRM",
+            "sku": "LTO7FUJI (Fujifilm LTO-7)",
+            "price": 105.0,
+            "vatIncluded": true,
+            "url": "https://www.trm.fr/consommables/cartouche-lto7-fuji/",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "38L7302 (IBM)",
+            "price": 106.21,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/38l7302-ibm-lto-7-ultrium-6-tb-15-tb-i1482470.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L7MQN-20 (Quantum 20-pack)",
+            "price": 1190.52,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l7mqn-20-quantum-lto-7-library-pack-20--i1559762.html",
+            "note": "20-pack, 59.53 per unit; in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "C7977AL (HPE 20-pack, labeled)",
+            "price": 1380.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hp-cartouche-de-donnees-lto-7-ultrium-rew-6tb-15tb-library-pack.html",
+            "note": "20-pack, 69.00 per unit; ships in 3 days"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "18549 (Fujifilm 20-pack, labeled)",
+            "price": 1553.8,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-7-fuji-ultrium-6-15-to-pour-lecteur-de-bande-etiquetee-par-lot-de-20-library-pack-p4084844",
+            "note": "20-pack, 77.69 per unit; public sector buyers only; ships in 5 days"
+          },
+          {
+            "seller": "Imprimantes.fr",
+            "sku": "38L7315 (IBM 20-pack)",
+            "price": 1557.66,
+            "vatIncluded": true,
+            "url": "https://www.imprimantes.fr/sauvegarde-informatique-dlt-lto-dds-38l7315-eco-pack-p-13145.html",
+            "note": "20-pack, 77.88 per unit; ships in 2 days"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7977AH (HPE 20-pack)",
+            "price": 1702.1,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/C7977AH",
+            "note": "20-pack, 85.11 per unit; in stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "TopTenStorage",
+            "sku": "C7977W (HPE, pre-labeled)",
+            "price": 25.13,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/hp-c7977w-lto-7-worm-cartouche-de-donnees-neuve-pre-etiquettee-6tb-15tb_74832_76956",
+            "note": "in stock"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "16495661 (Fujifilm)",
+            "price": 85.2,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-7-worm-fujifilm-ultrium-6-to-natif-par-1-p4019868",
+            "note": "public sector buyers only; ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "C7977W (HPE)",
+            "price": 94.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hp-cartouche-de-donnees-lto-7-ultrium-worm-6tb-15tb.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "38L7303 (IBM)",
+            "price": 94.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/ibm-cartouche-de-donnees-lto-7-ultrium-worm-6tb-15tb-17228.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 94.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/quantum-cartouche-de-donnees-lto-7-ultrium-worm-6tb-15tb.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "16495661 (Fujifilm)",
+            "price": 95.88,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/4547410316995",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "38L7303 (IBM)",
+            "price": 104.89,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/38l7303-ibm-lto-7-ultrium-6-tb-15-tb-worm-i1482463.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "C7977W (HPE)",
+            "price": 110.95,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/c7977w-hpe-ultrium-worm-data-cartridge-lto-ultrium-worm-7-6-to-15-to-etiquettes-marquables-i1476265.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "38L7303 (IBM)",
+            "price": 92.98,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/33184/IBM-38L7303-Cartouche-de-sauvegarde-LTO-7-Ultrium-6TB-15TB-Worm",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 96.23,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/33215/Quantum-MR-L7QMN-02-Cartouche-de-sauvegarde-LTO-7-Ultrium-6TB-15TB-Worm",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "16495661 (Fujifilm)",
+            "price": 120.84,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/16495661-cartouche-lto-7-fuji-non-reinscriptible-6-0-tb-15-tb-i1930757.html",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "38L7303 (IBM)",
+            "price": 130.79,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-ibm-lto-7-ultrium-worm--4038841--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 131.17,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l7mqn-02-quantum-lto-7-ultrium-6-tb-15-tb-wor-i1476271.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "C7977W (HPE)",
+            "price": 131.99,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-hpe-lto-7-ultrium-worm--4028915--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7977W (HPE)",
+            "price": 132.61,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/C7977W",
+            "note": "in stock"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "C7977W (HPE)",
+            "price": 145.08,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0889894157805",
+            "note": "backorder"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "TopTenStorage",
+            "sku": "TC-L72AN-BR (Quantum LTO-7 HH SAS internal)",
+            "price": 1914.0,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/quantum-tc-l72an-br-lto-7-hh-sas-lecteur-standalone-interne-6tb-15tb_65803_47584",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "38L7561 / BB873A (HPE LTO-7 HH SAS internal)",
+            "price": 1914.0,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/hp-38l7561-lto-7-hh-sas-lecteur-standalone-interne-6tb-15tb-bb873a_65585_47366",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "BB873A (HPE StoreEver LTO-7 Ultrium 15000 internal)",
+            "price": 4612.27,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/bb873a-hpe-storeever-lto-7-ultrium-15000-lecteur-de-bandes-magnetiques-lto-ultrium-6-to-15-to--i1490573.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "TC-L72AN-BR (Quantum LTO-7 HH SAS internal)",
+            "price": 4659.61,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/tc-l72an-br-quantum-lto-7-hh-lecteur-de-bandes-magnetiques-lto-ultrium-6-to-15-to-ultrium-7-sas-2-interne-5-25-chiffrement-i1540972.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BB873A (HPE StoreEver LTO-7 Ultrium 15000 internal)",
+            "price": 5326.04,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/BB873A",
+            "note": "out of stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "BB873A (HPE StoreEver LTO-7 Ultrium 15000 internal)",
+            "price": 6483.6,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/hpe-storeever-lto-7-ultrium-15000-sas--4043953--p",
+            "note": "backorder"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "PC21",
+            "sku": "TC-L72BN-AR (Quantum LTO-7 HH SAS external)",
+            "price": 4435.47,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/tc-l72bn-ar-quantum-lto-7-hh-lecteur-de-bandes-magnetiques-lto-ultrium-6-to-15-to-ultrium-7-sas-2-externe-chiffrement-i1542295.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BB874A (HPE StoreEver LTO-7 Ultrium 15000 external)",
+            "price": 5117.36,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/BB874A",
+            "note": "out of stock"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "SYSAS-DS1L7HH1-BR (SymplyPRO LTO-7 HH SAS desktop)",
+            "price": 5698.86,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/symplypro-desktop-sas-hh-lto7",
+            "note": "sale; backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "TC-L72BN-EZ (Quantum LTO-7 HH SAS external)",
+            "price": 5820.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/tc-l72bn-ez.html",
+            "note": "ships in 10 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "BB874A (HPE StoreEver LTO-7 Ultrium 15000 external)",
+            "price": 5821.17,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/bb874a-hpe-storeever-lto-7-ultrium-15000-lecteur-de-bandes-magnetiques-lto-ultrium-6-to-15-to-ultrium-7-sas-2-externe-chiffrement-i2465768.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "SYSAS-DS2L7H2B-CR (SymplyLTO XTH LTO-7 HH SAS desktop)",
+            "price": 6154.86,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/symplylto-xth-desktop-sas-hh-lto7",
+            "note": "sale; backorder"
+          },
+          {
+            "seller": "Network Tech via Rue du Commerce",
+            "sku": "BB874A (HPE StoreEver LTO-7 Ultrium 15000 external)",
+            "price": 6610.05,
+            "vatIncluded": true,
+            "url": "https://www.rueducommerce.fr/p/m24087580207.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "6160S7E (Lenovo/IBM TS2270 LTO-7 HH SAS external)",
+            "price": 7326.16,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/6160s7e-lenovo-ts2270-model-h7s-lecteur-de-bandes-magnetiques-externe-i1623703.html",
+            "note": "sale; backorder"
+          }
+        ]
+      }
+    },
+    "LTO-8": {
+      "nativeTB": 12,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "PrintAbout via 123comparer",
+            "sku": "16551221 (Fujifilm)",
+            "price": 64.5,
+            "vatIncluded": true,
+            "url": "https://www.123comparer.fr/cd-vierges/go4uep3wgradgptw8y3do.html",
+            "note": ""
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "01PL041 (IBM)",
+            "price": 68.4,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/ibm-cartouche-de-donnees-lto-8-ultrium-rew-12tb-30tb.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "SYMED-IBM-01PL041 (Symply, IBM media)",
+            "price": 70.5,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/symply-lto-8-ultrium-data-cartridge-ibm",
+            "note": "backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "16551221 (Fujifilm)",
+            "price": 70.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/fuji-cartouche-de-donnees-lto-8-ultrium-rew-12tb-30tb.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 70.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/quantum-cartouche-de-donnees-lto-8-ultrium-rew-12tb-30tb.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "16551221 (Fujifilm)",
+            "price": 71.28,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/fuji-lto-8-capacite-12-to",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "Q2078A (HPE)",
+            "price": 72.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hp-cartouche-de-donnees-lto-8-ultrium-rew-12tb-30tb.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 61.43,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/quantum-mr-l8mqn-01-lto-8-cartouche-de-donnees-12tb-30tb_74604_76734",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 76.79,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-quantum-lto-8-ultrium--4220848--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "16551221 (Fujifilm)",
+            "price": 67.06,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/fuji-16551221-lto-8-cartouche-de-donnees-12-30tb_74600_76730",
+            "note": "in stock"
+          },
+          {
+            "seller": "Netram",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 67.8,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Cartridge-Quantum-LTO-8-12-30TB-No-labels-included-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "01PL041 (IBM)",
+            "price": 68.24,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/ibm-01pl041-lto-8-cartouche-de-donnees-12to-30to-neuf-1pl041_75032_77123",
+            "note": "in stock"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "16551221 (Fujifilm)",
+            "price": 84.82,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-8-fuji-ultrium-12-30-to-pour-lecteur-de-bande-non-etiquetee-l-unite-p4019865",
+            "note": "public sector buyers only; ships in 5 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 85.08,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0768268045118",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "Q2078A (HPE)",
+            "price": 85.08,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/q2078a-hpe-data-cart-lto-8-ultrium-30tb-rw-i2121344.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "La Boutique Du Net via Rue du Commerce",
+            "sku": "01PL041 (IBM)",
+            "price": 85.13,
+            "vatIncluded": true,
+            "url": "https://www.rueducommerce.fr/p/m26079759902.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 85.69,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l8mqn-01-lto-ultrium-8-media-cartridge-min-order-qty-20-i2119259.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Imprimantes.fr",
+            "sku": "16551221 (Fujifilm)",
+            "price": 87.36,
+            "vatIncluded": true,
+            "url": "https://www.imprimantes.fr/sauvegarde-informatique-dlt-lto-dds-16551221-lt0-p-13142.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "01PL041 (IBM)",
+            "price": 87.48,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0883436693417",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "01PL041 (IBM)",
+            "price": 87.59,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-ibm-lto-8-ultrium--4232675--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "Q2078A (HPE)",
+            "price": 73.03,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/hp-q2078a-lto-8-ultrium-viii-cartouche-de-donnees-12tb-30tb_74567_76697",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "16551221 (Fujifilm)",
+            "price": 87.88,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/16551221-fuji-lto-8-tape-media-i2877963.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Fnac marketplace via 123comparer",
+            "sku": "16551221 (Fujifilm)",
+            "price": 87.96,
+            "vatIncluded": true,
+            "url": "https://www.123comparer.fr/cd-vierges/go4uep3wgradgptw8y3do.html",
+            "note": ""
+          },
+          {
+            "seller": "La Boutique Du Net via Rue du Commerce",
+            "sku": "HPE LTO-8 RW (EAN 0190017219097)",
+            "price": 88.33,
+            "vatIncluded": true,
+            "url": "https://www.rueducommerce.fr/p/m24071237447.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus via 123comparer",
+            "sku": "16551221 (Fujifilm)",
+            "price": 94.46,
+            "vatIncluded": true,
+            "url": "https://www.123comparer.fr/cd-vierges/go4uep3wgradgptw8y3do.html",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2078A (HPE)",
+            "price": 97.19,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-hpe-lto-8-ultrium--4220530--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 81.73,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/47365/Quantum-MR-L8MQN-01-Cartouche-de-sauvegarde-LTO-8-Ultrium-12TB-30TB",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2078A (HPE)",
+            "price": 98.08,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/Q2078A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Netram",
+            "sku": "Q2078A (HPE)",
+            "price": 81.8,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Cartridge-HP-LTO-8-12TB-30TB-Q2078A-No-labels-included-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "Q2078A (HPE)",
+            "price": 98.28,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/4549821150618",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infopavon via Rue du Commerce",
+            "sku": "Q2078A (HPE)",
+            "price": 100.07,
+            "vatIncluded": true,
+            "url": "https://www.rueducommerce.fr/p/m24072749068.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "01PL041 (IBM)",
+            "price": 85.0,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/66261/IBM-01PL041-Cartouche-LTO-8-Ultrium-12-30-TB",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "Q2078A (HPE)",
+            "price": 90.6,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/66224/HP-Q2078A-Cartouche-LTO-8-Ultrium-12-30-TB",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "01PL041 (IBM)",
+            "price": 114.4,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/01pl041-ibm-lto-8-ultrium-12tb-30tb-i2128396.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "TRM",
+            "sku": "LTO8FUJI (Fujifilm LTO-8)",
+            "price": 118.8,
+            "vatIncluded": true,
+            "url": "https://www.trm.fr/cartouche-de-stockage/cartouche-lto8-fuji/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBIU (Dell)",
+            "price": 146.99,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/440-BBIU",
+            "note": "out of stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "Q2078AH (HPE 20-pack)",
+            "price": 1621.66,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/q2078ah-hpe-ultrium-rw-data-cartridges-library-pack-20-x-lto-ultrium-8-12-go-30-to-etiquettes-marquables-vert-i2121338.html",
+            "note": "20-pack, 81.08 per unit; sale; in stock"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "18586 (Fujifilm 20-pack)",
+            "price": 1694.84,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-8-fuji-ultrium-12-30-to-pour-lecteur-de-bande-non-etiquetee-par-lot-de-20-p4019866",
+            "note": "20-pack, 84.74 per unit; public sector buyers only; ships in 5 days"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2078AH (HPE 20-pack)",
+            "price": 1736.84,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/Q2078AH",
+            "note": "20-pack, 86.84 per unit; limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2078AH (HPE 20-pack)",
+            "price": 1737.6,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/pack-eco-bande-hpe-lto-8-ultrium--4220571--p",
+            "note": "20-pack, 86.88 per unit; backorder"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "Q2078AH (HPE 20-pack)",
+            "price": 1798.68,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/4549821150656",
+            "note": "20-pack, 89.93 per unit; ships in 15 days"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "UGAP",
+            "sku": "16551233 (Fujifilm)",
+            "price": 94.01,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-8-worm-fujifilm-ultrium-12-to-natif-par-1-p4019869",
+            "note": "public sector buyers only; ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "01PL042 (IBM)",
+            "price": 94.8,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/ibm-cartouche-de-donnees-lto-8-ultrium-worm-12tb-30tb.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 102.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/quantum-cartouche-de-donnees-lto-8-ultrium-worm-12tb-30tb.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 112.68,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0768268045132",
+            "note": "backorder"
+          },
+          {
+            "seller": "PC21",
+            "sku": "16551233 (Fujifilm)",
+            "price": 114.98,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/16551233-fuji-lto8-12-30-tb-worm-i5346790.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "01PL042 (IBM)",
+            "price": 115.35,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/01pl042-ibm-lto-8-ultrium-12tb-30tb-worm-i2244946.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "Q2078W (HPE)",
+            "price": 117.57,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/q2078w-hpe-ultrium-worm-data-cartridge-lto-ultrium-worm-8-12-to-30-to-etiquettes-marquables-vert-i2121327.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 104.78,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/47368/Quantum-MR-L8MQN-02-Cartouche-de-sauvegarde-LTO-8-Ultrium-12TB-30TB-WORM",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2078W (HPE)",
+            "price": 131.99,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-hpe-lto-8-ultrium-worm--4220598--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 136.33,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l8mqn-02-lto-ultrium-8-media-cartridge-worm-min-order-qty-20-i2119229.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "01PL042 (IBM)",
+            "price": 142.79,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-ibm-lto-8-ultrium-worm--4232660--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "Q2078W (HPE)",
+            "price": 154.68,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/4549821150687",
+            "note": "backorder"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "TopTenStorage",
+            "sku": "TC-L82AN-BR (Quantum LTO-8 HH SAS internal)",
+            "price": 2634.0,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/quantum-tc-l82an-br-lto-8-hh-sas-lecteur-standalone-interne-12tb-30tb_75086_77216",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "10800831-001 (Overland LTO-8 HH SAS internal)",
+            "price": 2634.0,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/tape-storage/lecteurs-de-bandes/lecteurs-lto/lto-8/overland-storage-10800831-001-lto-8-hh-sas-lecteur-standalone-interne-12tb-30tb_87550_91600",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "BC022A (HPE LTO-8 HH SAS internal)",
+            "price": 3424.2,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/hp-bc022a-lto-8-hh-sas-lecteur-standalone-interne-12tb-30tb_77971_88057",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "4T27A10727 (Lenovo LTO-8 HH SAS internal)",
+            "price": 4200.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/lecteur-de-bande-interne-lto-8-lenovo-interface-sas.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal)",
+            "price": 5589.47,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/BC022A",
+            "note": "sale; out of stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal)",
+            "price": 6276.91,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/bc022a-reconditionne-hpe-lto8-ult-30750-int-tape-drive-5-25-reconditionne--i5626034.html",
+            "note": "refurbished; limited stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "TC-L82AN-BR (Quantum LTO-8 HH SAS internal)",
+            "price": 7337.71,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/tc-l82an-br-lto-8-td-half-height-internal-6gb-s-sas-5-25in-black-bare-i2120413.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L82AN-BR (Quantum LTO-8 HH SAS internal)",
+            "price": 8049.6,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/lecteur-interne-quantum-lto-8-hh-sas--4213704--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "PC21",
+            "sku": "BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal)",
+            "price": 8171.32,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/bc022a-hpe-storeever-lto-8-ultrium-30750-lecteur-de-bandes-magnetiques-lto-ultrium-12-to-30-to-ultrium-8-sas-2-interne-5-25-chiffrement-i2173947.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "Netram",
+            "sku": "TC-L82AN-BR (Quantum LTO-8 HH SAS internal)",
+            "price": 7027.5,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Quantum-Tape-Drive-LTO-8-HH-SAS-intern-black-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal)",
+            "price": 8460.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hp-lecteur-de-bande-interne-storeever-lto-8-ultrium-30750-internal-tape-drive.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal)",
+            "price": 9276.0,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bandotheque-hpe-storeever-30750-lto-8--4237976--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "4T27A10727 (Lenovo ThinkSystem LTO-8 HH SAS internal)",
+            "price": 13023.92,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/4T27A10727",
+            "note": "out of stock"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "TopTenStorage",
+            "sku": "BC023A (HPE LTO-8 HH SAS external)",
+            "price": 2634.0,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/hp-bc023a-lto-8-hh-sas-lecteur-standalone-externe-12tb-30tb_65646_83980",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "3580-H8S (IBM TS2280 LTO-8 HH SAS external)",
+            "price": 2634.0,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/ibm-3580-h8s-lto-8-hh-sas-lecteur-standalone-externe-12tb-30tb_65885_47666",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "6160-H8S (Lenovo/IBM TS2280 LTO-8 HH SAS external)",
+            "price": 6960.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/lecteur-de-bande-externe-lto-7-ibm-ts2270-interface-sas-1.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MLSAS-D8 (mLogic mTape LTO-8 SAS desktop)",
+            "price": 6960.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/mlogic-mtape-lto-8-interface-sas.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "SYSAS-DS1L8HH1-BR (SymplyPRO LTO-8 HH SAS desktop)",
+            "price": 7294.86,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/symplypro-desktop-sas-hh-lto8",
+            "note": "sale; backorder"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "SYSAS-DS2L8H2B-CR (SymplyLTO XTH LTO-8 HH SAS desktop)",
+            "price": 7636.86,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/symplylto-xth-desktop-sas-hh-lto8",
+            "note": "sale; backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "BC023A (HPE StoreEver LTO-8 Ultrium 30750 external)",
+            "price": 8700.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hp-lecteur-de-bande-interne-storeever-lto-8-ultrium-30750-internal-tape-drive-1.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L82BN-AR (Quantum LTO-8 HH SAS external)",
+            "price": 9000.0,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/lecteur-externe-quantum-lto-8-hh-sas--4214290--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Netram",
+            "sku": "TC-L82BN-AR (Quantum LTO-8 HH SAS tabletop)",
+            "price": 7986.0,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Quantum-Tape-Drive-LTO-8-SAS-Tabletop-KIT-extern-incl-1-LTO-8-Data-Cartridge-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "BC023A (HPE StoreEver LTO-8 Ultrium 30750 external)",
+            "price": 10516.89,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/bc023a-lto-8-ultrium-30750-exttp-stock--i2466311.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "TC-L82BN-AR (Quantum LTO-8 HH SAS external)",
+            "price": 11140.7,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/tc-l82bn-ar-lto-8-td-half-height-tabletop-gb-s-sas-black-i2120424.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BC023A (HPE StoreEver LTO-8 Ultrium 30750 external)",
+            "price": 12288.79,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/BC023A",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "6160S8E (Lenovo/IBM TS2280 LTO-8 HH SAS external)",
+            "price": 14575.96,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/6160s8e-lenovo-ts2280-6160-h8s-lecteur-de-bandes-magnetiques-externe-i2202619.html",
+            "note": "backorder"
+          }
+        ]
+      }
+    },
+    "LTO-9": {
+      "nativeTB": 18,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Amazon.fr",
+            "sku": "Q2079A (HPE)",
+            "price": 85.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.fr/HP-LTO-9-Ultrium-Cartouche-donn%C3%A9es/dp/B09HQXKLPP",
+            "note": "limited stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 90.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/mr-l9mqn-01.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "Q2079A (HPE)",
+            "price": 93.6,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hp-cartouche-de-donnees-lto-9-ultrium-rew-18tb-45tb.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "02XW568 (IBM)",
+            "price": 78.66,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/ibm-02xw568-lto-9-ultrium-ix-cartouche-de-donnees-18tb-45tb_74570_76700",
+            "note": "in stock"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "16659047 (Fujifilm)",
+            "price": 97.2,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/fuji-lto-9-capacite-18-to",
+            "note": "in stock"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "SYMED-IBM-02XW568 (Symply, IBM media)",
+            "price": 97.2,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/symply-lto-9-ultrium-data-cartridge-ibm",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "02XW568 (IBM)",
+            "price": 98.39,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-ibm-lto-9-ultrium--4661956--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "02XW568 (IBM)",
+            "price": 98.4,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/ibm-cartouche-de-donnees-lto-9-ultrium-rew-18tb-45tb.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 99.59,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-quantum-lto-9-ultrium--4606356--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 84.87,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/quantum-mr-l9mqn-01-lto-9-ultrium-ix-cartouche-de-donnees-18tb-45tb_74571_76701",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "16659047 (Fujifilm)",
+            "price": 102.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/fujifilm-cartouche-de-donnees-lto-9-ultrium-rew-18tb-45tb.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "Q2079A (HPE)",
+            "price": 104.07,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/q2079a-hpe-lto-ultrium-9-18-to-45-to-etiquettes-marquables-bleu-clair-i3641464.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2079A (HPE)",
+            "price": 105.59,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-hpe-lto-9-ultrium--4587600--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 105.67,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l9mqn-01-quantum-lto-8-ultrium-18tb-45tb-i3645130.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "4547410 (Fujifilm LTO-9)",
+            "price": 90.76,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/fujifilm-4547410-fuji-lto-9-ultrium-ix-cartouche-de-donnees-18tb-45tb_74569_76699",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "Q2079A (HPE)",
+            "price": 92.69,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/hp-q2079a-lto-9-ultrium-ix-cartouche-de-donnees-18tb-45tb_74568_76698",
+            "note": "in stock"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 111.48,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0768268045927",
+            "note": "in stock"
+          },
+          {
+            "seller": "GPasPlus via Rue du Commerce",
+            "sku": "Q2079A (HPE)",
+            "price": 111.95,
+            "vatIncluded": true,
+            "url": "https://www.rueducommerce.fr/p/m24072749322.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2079A (HPE)",
+            "price": 112.55,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/Q2079A",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "16659047 (Fujifilm)",
+            "price": 114.48,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/16659047-cartouche-lto-9-fuji-i3844216.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Netram",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 96.8,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Cartridge-Quantum-LTO-9-18-45TB-No-labels-included-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "Q2079A (HPE)",
+            "price": 116.28,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0190017480527",
+            "note": "in stock"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "02XW568 (IBM)",
+            "price": 119.88,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0883436699426",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "02XW568 (IBM)",
+            "price": 127.04,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/02xw568-ibm-lto-9-ultrium-18tb-45tb-i3645195.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Netram",
+            "sku": "Q2079A (HPE)",
+            "price": 106.5,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Cartridge-HP-LTO-9-18TB-45TB-Q2079A-No-labels-included-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "Q2079A (HPE)",
+            "price": 123.08,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/66232/HP-Q2079A-Cartouche-LTO-9-Ultrium-18-45-TB",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 130.0,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/66284/Quantum-MR-L9MQN-01-Cartouche-LTO-9-Ultrium-18-45-TB",
+            "note": "in stock"
+          },
+          {
+            "seller": "Infolight",
+            "sku": "02XW568 (IBM)",
+            "price": 131.67,
+            "vatIncluded": false,
+            "url": "https://www.infolight.fr/article/66266/IBM-02XW568-Cartouche-LTO-9-Ultrium-18-45-TB",
+            "note": "in stock"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "16659047 (Fujifilm)",
+            "price": 172.28,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-9-fuji-ultrium-18-45-to-pour-lecteur-de-bande-non-etiquetee-l-unite-p4069537",
+            "note": "public sector buyers only; ships in 5 days"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "02JH834 (Lenovo)",
+            "price": 213.83,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/02JH834",
+            "note": "out of stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBJV (Dell 5-pack)",
+            "price": 766.9,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/440-BBJV",
+            "note": "5-pack, 153.38 per unit; in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "434181 (Overland-Tandberg 5-pack)",
+            "price": 873.18,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/434181-overland-tandberg-lto-9-data-cartridge-18tb-45tb-includes-barcode-labels-5-pack-contains-5-pieces--i3982934.html",
+            "note": "5-pack, 174.64 per unit; backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L9MQN-20 (Quantum 20-pack)",
+            "price": 1917.6,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-quantum-lto-9-ultrium-x20--4606396--p",
+            "note": "20-pack, 95.88 per unit; in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 2026.9,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/q2079an-hpe-20-x-lto-ultrium-9-18-to-45-to-etiquettes-marquables-non-etiquete-sur-mesure-bleu-clair-pour-p-n-i3641465.html",
+            "note": "20-pack, 101.35 per unit; sale; in stock"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 2229.48,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0190017480596",
+            "note": "20-pack, 111.47 per unit; ships in 15 days"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 2363.6,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/Q2079AN",
+            "note": "20-pack, 118.18 per unit; limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2079AH (HPE 20-pack)",
+            "price": 2683.2,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/pack-eco-bande-hpe-lto-9-ultrium--4587013--p",
+            "note": "20-pack, 134.16 per unit; in stock"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "18676 (Fujifilm 20-pack)",
+            "price": 3444.25,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-9-fuji-ultrium-18-45-to-pour-lecteur-de-bande-non-etiquetee-par-lot-de-20-p4069538",
+            "note": "20-pack, 172.21 per unit; public sector buyers only; ships in 5 days"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "EuroCAPA",
+            "sku": "Q2079W (HPE)",
+            "price": 134.4,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hp-cartouche-de-donnees-lto-9-ultrium-worm-18tb-45tb.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 138.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/mr-l9mqn-02.html",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "Q2079W (HPE)",
+            "price": 141.39,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/q2079w-hpe-lto-ultrium-worm-9-18-to-45-to-etiquettes-marquables-bleu-clair-pour-p-n-i3641466.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 142.79,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-quantum-lto-9-ultrium-worm--4606405--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 145.48,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l9mqn-02-quantum-lto-8-ultrium-18tb-45tb-worm-i3645110.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2079W (HPE)",
+            "price": 154.79,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-hpe-lto-9-ultrium-worm--4587017--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "02XW569 (IBM)",
+            "price": 156.85,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/02xw569-ibm-lto-9-ultrium-18tb-45tb-worm-i3645151.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "Q2079W (HPE)",
+            "price": 164.28,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/0190017480701",
+            "note": "ships in 15 days"
+          },
+          {
+            "seller": "Hellorse",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 189.48,
+            "vatIncluded": true,
+            "url": "https://hellorse.fr/produits/7682680459342",
+            "note": "backorder"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "TopTenStorage",
+            "sku": "BC040A (HPE LTO-9 HH SAS internal)",
+            "price": 3594.12,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/tape-storage/lecteurs-de-bandes/lecteurs-lto/lto-9/hp-bc040a-storeever-lto-9-ultrium-45000-hh-sas-lecteur-standalone-interne_87553_91603",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "TC-L92AN-BR (Quantum LTO-9 HH SAS internal)",
+            "price": 3594.12,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/tape-storage/lecteurs-de-bandes/lecteurs-lto/lto-9/quantum-tc-l92an-br-lto-9-hh-sas-lecteur-standalone-interne-18tb-45tb_77952_88608",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "10800847-001 (Overland LTO-9 HH SAS internal)",
+            "price": 3594.12,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/tape-storage/lecteurs-de-bandes/lecteurs-lto/lto-9/overland-storage-10800847-001-lto-9-hh-sas-lecteur-standalone-interne-18tb-45tb_87554_91604",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "PVLTO-9 (Dell PowerVault LTO-9 internal)",
+            "price": 6182.04,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/pvlto-9-dell-powervault-lto9-lecteur-de-bandes-magnetiques-lto-ultrium-18-to-ultrium-9-interne-avec-3-ans-de-base-sur-site-i4116369.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "TC-L92AN-BR (Quantum LTO-9 HH SAS internal)",
+            "price": 10920.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/quantum-lecteur-de-bande-interne-demi-hauteur-lto-8-hh-ultrium-interface-sas-18591.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "BC040A (HPE StoreEver LTO-9 Ultrium 45000 internal)",
+            "price": 11040.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hpe-lecteur-de-bande-interne-storeever-lto-9-ultrium-45000.html",
+            "note": "ships in 10 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L92AN-BR (Quantum LTO-9 HH SAS internal)",
+            "price": 12013.2,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/lecteur-interne-quantum-lto-9-hh-sas--4606445--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Netram",
+            "sku": "TC-L92AN-BR (Quantum LTO-9 HH SAS internal)",
+            "price": 10541.4,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Quantum-Tape-Drive-LTO-9-HH-SAS-intern-black-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "TC-L92AN-BR (Quantum LTO-9 HH SAS internal)",
+            "price": 13052.53,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/tc-l92an-br-lto9-tape-drive-hh-int-bare-i4703281.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "BC040A (HPE StoreEver LTO-9 Ultrium 45000 internal)",
+            "price": 14430.37,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/bc040a-hpe-storeever-45000-lecteur-de-bandes-magnetiques-lto-ultrium-12-to-30-to-ultrium-9-sas-2-interne-5-25-chiffrement-pour-hpe-t950-tfinity-f-i5166214.html",
+            "note": "sale; limited stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "BC040A (HPE StoreEver LTO-9 Ultrium 45000 internal)",
+            "price": 16909.2,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bandotheque-hpe-storeever-45000-lto-9--4644476--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BC040A (HPE StoreEver LTO-9 Ultrium 45000 internal)",
+            "price": 17203.16,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/BC040A",
+            "note": "limited stock"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "TopTenStorage",
+            "sku": "BC042A (HPE LTO-9 HH SAS external)",
+            "price": 3594.12,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/tape-storage/lecteurs-de-bandes/lecteurs-lto/lto-9/hp-bc042a-lto-9-hh-sas-lecteur-standalone-externe-18tb-45tb_86292_88629",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "3580-H9S (IBM TS2290 LTO-9 HH SAS external)",
+            "price": 3594.12,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/tape-storage/lecteurs-de-bandes/lecteurs-lto/lto-9/ibm-3580-h9s-lto-9-hh-sas-12gb-lecteur-standalone-externe-18tb-45tb_87205_88343",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "10800848-001 (Overland LTO-9 HH SAS external)",
+            "price": 3594.12,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/tape-storage/lecteurs-de-bandes/lecteurs-lto/lto-9/overland-storage-10800848-001-lto-9-hh-sas-lecteur-standalone-externe-18tb-45tb_87555_91605",
+            "note": "refurbished; in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BC042A (HPE StoreEver LTO-9 Ultrium 45000 external)",
+            "price": 6629.36,
+            "vatIncluded": true,
+            "url": "https://www.senetic.fr/product/BC042A",
+            "note": "out of stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L92BN-AR (Quantum LTO-9 HH SAS external)",
+            "price": 9774.0,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/lecteur-externe-quantum-lto-9-hh-sas--4610492--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "PC21",
+            "sku": "BC042A (HPE StoreEver LTO-9 Ultrium 45000 external)",
+            "price": 10495.27,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/bc042a-lto-9-45000-ext-tape-drv-i5166397.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "SYSAS-DS2L9H1B-CR (SymplyPRO LTO-9 HH SAS desktop)",
+            "price": 10680.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/symplypro-lto-9-sas-desktop.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "TC-L92BN-AR (Quantum LTO-9 HH SAS external)",
+            "price": 11472.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/quantum-lecteur-de-bande-externe-demi-hauteur-lto-9-hh-ultrium-interface-sas.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "BC042A (HPE StoreEver LTO-9 Ultrium 45000 external)",
+            "price": 13080.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hpe-lecteur-de-bande-externe-storeever-lto-9-ultrium-45000.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "TC-L92BN-AR (Quantum LTO-9 HH SAS external)",
+            "price": 14425.51,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/tc-l92bn-ar-lto9-tape-drive-hh-tabletop-kit-i4946722.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Netram",
+            "sku": "TC-L92BN-AR (Quantum LTO-9 HH SAS tabletop)",
+            "price": 12812.2,
+            "vatIncluded": false,
+            "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/Quantum-Tape-Drive-LTO-9-SAS-Tabletop-KIT-extern-incl-1-LTO-9-Data-Cartridge-disponible-48-72h.html",
+            "note": "ships in 3 days"
+          }
+        ]
+      }
+    },
+    "LTO-10": {
+      "nativeTB": 30,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "Q2080A (HPE, 30TB)",
+            "price": 265.19,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-hpe-lto-10-ultrium--4920908--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "03PL170 (IBM, 30TB)",
+            "price": 275.8,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/03pl170-ibm-lto-10-ultrium-30-75-tb-srfe-i5822277.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L10MQN-01 (Quantum, 30TB)",
+            "price": 280.79,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/bande-quantum-lto-10-ultrium--4918273--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "03PL170 (IBM, 30TB)",
+            "price": 288.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/cartouche-ibm-lto10-reinscriptible-30to-03pl170.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "16944686 (Fujifilm, 30TB)",
+            "price": 306.22,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/16944686-fujifilm-cartouche-lto-10-bafe-30-tb-75-tb-i5821836.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "03PL170 (IBM, 30TB)",
+            "price": 255.21,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/tape-storage/cartouches-de-donnees/ibm-03pl170-lto-10-ultrium-x-cartouche-de-donnees-30tb-75tb_87649_91752",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L10MQN-01 (Quantum, 30TB)",
+            "price": 312.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/cartouche-de-donnees-quantum-lto-10-rew.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-L10MQN-01 (Quantum, 30TB)",
+            "price": 327.88,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l10mqn-01-quantum-lto-ultrium-10-30-to-75-to-etiquete-par-code-a-barres-noir-i5822268.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "Q2080A (HPE, 30TB)",
+            "price": 336.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hpe-lto-10-ultrium-75-tb-rw-q2080a.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "16944686 (Fujifilm, 30TB)",
+            "price": 336.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/fuji-cartouche-de-donnees-lto-10-rew.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "Q2080A (HPE, 30TB)",
+            "price": 337.05,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/q2080a-hp-lto-10-ultrium-30-75-tb-i5822254.html",
+            "note": "sale; in stock"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "16944686 (Fujifilm, 30TB)",
+            "price": 337.36,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/fuji-lto-10-capacite-30-to",
+            "note": "backorder"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "SYMED-IBM-03PL170 (Symply, IBM media, 30TB)",
+            "price": 337.36,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/symply-lto-10-ultrium-data-cartridge-ibm",
+            "note": "backorder"
+          },
+          {
+            "seller": "TopTenStorage",
+            "sku": "MR-L10MQN-01 (Quantum, 30TB)",
+            "price": 282.18,
+            "vatIncluded": false,
+            "url": "https://www.toptenstorage.com/fr/tape-storage/cartouches-de-donnees/quantum-mr-l10mqn-01-lto-10-ultrium-x-cartouche-de-donnees-30tb-75tb_86591_87047",
+            "note": "in stock"
+          },
+          {
+            "seller": "PC21",
+            "sku": "Q2080AN (HPE 20-pack, 30TB)",
+            "price": 5849.67,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/q2080an-hpe-storage-lto-10-ultrium-rw-non-custom-labeled-data-cartridge-with-case-20-x-lto-ultrium-10-30-to-75-to-non-etiquete-sur-mesure-violet-i5827969.html",
+            "note": "20-pack, 292.48 per unit; sale; backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2080AH (HPE 20-pack, 30TB)",
+            "price": 7447.2,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/fr/shop/pack-bibli-bandes-hpe-lto-10-ultrium--4920913--p",
+            "note": "20-pack, 372.36 per unit; backorder"
+          },
+          {
+            "seller": "UGAP",
+            "sku": "18845 (Fujifilm 20-pack, labeled, 30TB)",
+            "price": 9783.22,
+            "vatIncluded": true,
+            "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436/cartouche-lto-10-boitier-individuel-fuji-ultrium-30-75to-pour-lecteur-de-bande-etiquetee-minimum-de-20-cartouches-p4306563",
+            "note": "20-pack, 489.16 per unit; public sector buyers only"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "PC21",
+            "sku": "MR-L10MQN-02 (Quantum, 30TB)",
+            "price": 397.89,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-l10mqn-02-quantum-lto-ultrium-worm-10-30-to-75-to-etiquete-par-code-a-barres-noir-i5822220.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "03PL171 (IBM, 30TB)",
+            "price": 420.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/cartouche-ibm-lto10-worm-30to-03pl171.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "03PL171 (IBM, 30TB)",
+            "price": 428.52,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/03pl171-ibm-lto-10-ultrium-30-75tb-worm-i5822192.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "MR-L10MQN-02 (Quantum, 30TB)",
+            "price": 468.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/cartouche-de-donnees-quantum-lto-10-worm.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "16944698 (Fujifilm, 30TB)",
+            "price": 468.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/fuji-cartouche-de-donnees-lto-10-worm.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "Q2080W (HPE, 30TB)",
+            "price": 528.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/hpe-lto-10-ultrium-75-tb-worm-q2080w.html",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "PC21",
+            "sku": "Q2080W (HPE, 30TB)",
+            "price": 567.69,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/q2080w-hp-lto-10-ultrium-30-75tb-worm-i5822207.html",
+            "note": "sale; backorder"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": []
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "EuroCAPA",
+            "sku": "SYSAS-DS2LAF1B-CT (SymplyPRO XTF LTO-10 FH SAS desktop)",
+            "price": 22680.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/symplypro-lto-10-fh-sas-desktop.html",
+            "note": "backorder; full height"
+          },
+          {
+            "seller": "ATREID",
+            "sku": "SYSAS-DS2LAF1B-CT (SymplyPRO XTF LTO-10 FH SAS desktop)",
+            "price": 23710.86,
+            "vatIncluded": true,
+            "url": "https://www.atreid.com/symplypro-lto-xtf-desktop-sas-fh-lto-10",
+            "note": "sale; backorder; full height"
+          },
+          {
+            "seller": "EuroCAPA",
+            "sku": "SYSAS-RS2LAF2B-CT (SymplyPRO LTO-10 FH SAS rackmount)",
+            "price": 23880.0,
+            "vatIncluded": true,
+            "url": "https://www.eurocapa.com/symplypro-lto-10-fh-sas.html",
+            "note": "backorder; full height"
+          }
+        ]
+      },
+      "cartridge40TB": {
+        "datapoints": [
+          {
+            "seller": "PC21",
+            "sku": "03PL413 (IBM LTO-10 40TB)",
+            "price": 522.95,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/03pl413-ibm-lto-10-ultrium-40-100-tb-srfe-i6206401.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "PC21",
+            "sku": "MR-A10MQN-01 (Quantum LTO-10 40TB)",
+            "price": 624.52,
+            "vatIncluded": true,
+            "url": "https://www.pc21.fr/fiche/mr-a10mqn-01-quantum-lto-10-ultrium-40-100-tb-i6206225.html",
+            "note": "backorder"
+          }
+        ]
+      }
+    }
+  },
+  "sellersTried": [
+    {
+      "seller": "Senetic",
+      "url": "https://www.senetic.fr/search/?q=LTO-9",
+      "result": "prices found"
+    },
+    {
+      "seller": "EuroCAPA",
+      "url": "https://www.eurocapa.com/sauvegarde-archivage/medias-sauvegarde/lto.html",
+      "result": "prices found"
+    },
+    {
+      "seller": "PC21",
+      "url": "https://www.pc21.fr/m/stockage/cartouches-de-donnees/lto-9/f8894/",
+      "result": "prices found"
+    },
+    {
+      "seller": "Hellorse",
+      "url": "https://hellorse.fr/categories/peripherique-stockage-composant/stockage/cartouche-lto",
+      "result": "prices found"
+    },
+    {
+      "seller": "TopTenStorage",
+      "url": "https://www.toptenstorage.com/fr/tape-storage/cartouches-de-donnees",
+      "result": "prices found"
+    },
+    {
+      "seller": "Bechtle",
+      "url": "https://www.bechtle.com/fr/shop/materiel/composants/supports-de-stockage--10002009--c",
+      "result": "prices found"
+    },
+    {
+      "seller": "UGAP",
+      "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436",
+      "result": "prices found"
+    },
+    {
+      "seller": "ATREID",
+      "url": "https://www.atreid.com/store?f=10&sf=18",
+      "result": "prices found"
+    },
+    {
+      "seller": "Netram",
+      "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/",
+      "result": "prices found"
+    },
+    {
+      "seller": "Infolight",
+      "url": "https://www.infolight.fr/rubrique/7/Stockage-de-donnees",
+      "result": "prices found"
+    },
+    {
+      "seller": "Imprimantes.fr",
+      "url": "https://www.imprimantes.fr/DLT%20/%20LTO%20/%20DDS-c-50.html",
+      "result": "prices found"
+    },
+    {
+      "seller": "TRM",
+      "url": "https://www.trm.fr/consommables/cartouche-de-stockage/",
+      "result": "prices found"
+    },
+    {
+      "seller": "Rue du Commerce",
+      "url": "https://www.rueducommerce.fr/recherche/lto",
+      "result": "prices found"
+    },
+    {
+      "seller": "Amazon.fr",
+      "url": "https://www.amazon.fr/HP-LTO-9-Ultrium-Cartouche-donn%C3%A9es/dp/B09HQXKLPP",
+      "result": "prices found"
+    },
+    {
+      "seller": "123comparer",
+      "url": "https://www.123comparer.fr/cd-vierges/go4uep3wgradgptw8y3do.html",
+      "result": "prices found"
+    },
+    {
+      "seller": "LDLC",
+      "url": "https://www.ldlc.com/recherche/lto/",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "LDLC.pro",
+      "url": "https://www.ldlc.pro/recherche/lto/",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "Materiel.net",
+      "url": "https://www.materiel.net/recherche/ultrium/",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "TopAchat",
+      "url": "https://www.topachat.com/",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "Inmac Wstore",
+      "url": "https://www.inmac-wstore.com/cartouche-magnetique-lto-dat-dlt/c887.htm",
+      "result": "blocked"
+    },
+    {
+      "seller": "Cdiscount",
+      "url": "https://www.cdiscount.com/search/10/lto+9.html",
+      "result": "blocked"
+    },
+    {
+      "seller": "idealo.fr",
+      "url": "https://www.idealo.fr/prix/204454794/quantum-lto-9-hh-sas-tc-l92an-br.html",
+      "result": "blocked"
+    },
+    {
+      "seller": "Conrad",
+      "url": "https://www.conrad.fr/fr/search.html?search=lto%209",
+      "result": "blocked"
+    },
+    {
+      "seller": "Fnac",
+      "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=lto+9",
+      "result": "blocked"
+    },
+    {
+      "seller": "LeDenicheur",
+      "url": "https://ledenicheur.fr/search?search=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Prix.net",
+      "url": "https://www.prix.net/prix/lecteur-de-bande-lto-3864515490710375872.html",
+      "result": "blocked"
+    },
+    {
+      "seller": "Compufirst",
+      "url": "https://www.compufirst.com/hpe-lto-ultrium-9-x-1-18-to-support-de-stockage/fiche_prod.do?prodId=2521863",
+      "result": "blocked"
+    },
+    {
+      "seller": "Inkstore",
+      "url": "https://www.inkstore.fr/divers/89262-cartouche-lto-9-hp-q2079an.html",
+      "result": "blocked"
+    },
+    {
+      "seller": "PrintAbout",
+      "url": "https://www.printabout.fr/",
+      "result": "blocked"
+    },
+    {
+      "seller": "PCA France",
+      "url": "https://www.pcafrance.fr/fuj16944686.html",
+      "result": "blocked"
+    },
+    {
+      "seller": "HPE Store France",
+      "url": "https://buy.hpe.com/fr/fr/storage/tape-storage/tape-drives-ultrium/storeever-ultrium-tape-drives/lecteur-de-bande-externe-hpe-storeever-lto-9-ultrium-45000/p/bc042a",
+      "result": "blocked"
+    },
+    {
+      "seller": "Macway",
+      "url": "https://www.macway.com/search/?q=lto-9",
+      "result": "blocked"
+    }
+  ],
+  "marketNotes": [
+    {
+      "text": "LDLC and LDLC.pro carry only one LTO item, an LTO-5 cartridge (HP C7975, 34.95 EUR); their search for lto-9 returns unrelated products.",
+      "url": "https://www.ldlc.com/recherche/lto/"
+    },
+    {
+      "text": "TopTenStorage's French site shows gross prices with German 19% VAT, so its net prices are recorded (vatIncluded false).",
+      "url": "https://www.toptenstorage.com/fr/tape-storage/cartouches-de-donnees"
+    },
+    {
+      "text": "Every TopTenStorage drive recorded is a refurbished unit sold with warranty.",
+      "url": "https://www.toptenstorage.com/fr/tape-storage/lecteurs-de-bandes/lecteurs-lto/lto-9/quantum-tc-l92an-br-lto-9-hh-sas-lecteur-standalone-interne-18tb-45tb_77952_88608"
+    },
+    {
+      "text": "Netram and Infolight show excluding-VAT (HT) prices only; recorded with vatIncluded false.",
+      "url": "https://www.netram.fr/Catalogue-produits/Stockage/Cartouche-LTO-AIT-RDX/"
+    },
+    {
+      "text": "UGAP sells to French public-sector buyers only; the recorded price is its 1 to 9 unit tier, with a lower tier from 10 units.",
+      "url": "https://www.ugap.fr/informatique-et-telephonie-2/informatique-bureautique-6/peripherique-et-composant-pc-309/support-de-sauvegarde-404/cartouches-de-donnees-lto-101436"
+    },
+    {
+      "text": "No internal LTO-10 drive was offered by any French seller checked; the LTO-10 drives found are full-height Symply SAS units.",
+      "url": "https://www.eurocapa.com/symplypro-lto-10-fh-sas-desktop.html"
+    },
+    {
+      "text": "LTO-10 40 TB cartridges appeared only at PC21 (IBM 03PL413, Quantum MR-A10MQN-01), both on backorder.",
+      "url": "https://www.pc21.fr/recherche_base.php?sel=0&mot=LTO-10&formulaire_haut=1&id_cat=0"
+    },
+    {
+      "text": "PC21 shows a percentage discount against a crossed-out list price on many items; those are noted as sale.",
+      "url": "https://www.pc21.fr/fiche/q2079a-hpe-lto-ultrium-9-18-to-45-to-etiquettes-marquables-bleu-clair-i3641464.html"
+    },
+    {
+      "text": "Rue du Commerce is a marketplace; each datapoint is the default offer on the product page, and cheaper offers from other sellers may exist.",
+      "url": "https://www.rueducommerce.fr/p/m24072749322.html"
+    },
+    {
+      "text": "Amazon.fr returned one product page (HPE Q2079A, sold by Amazon); its search and later product pages returned a bot check.",
+      "url": "https://www.amazon.fr/HP-LTO-9-Ultrium-Cartouche-donn%C3%A9es/dp/B09HQXKLPP"
+    },
+    {
+      "text": "123comparer prices come from shop feeds; the page says the PrintAbout price has been unchanged since 24 March 2026.",
+      "url": "https://www.123comparer.fr/cd-vierges/go4uep3wgradgptw8y3do.html"
+    }
+  ]
+}

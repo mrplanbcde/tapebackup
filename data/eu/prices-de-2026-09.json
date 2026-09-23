@@ -1,0 +1,3314 @@
+{
+  "asOf": "2026-09-23",
+  "market": "de",
+  "country": "Germany",
+  "currency": "EUR",
+  "vatRate": 0.19,
+  "generations": {
+    "LTO-6": {
+      "nativeTB": 2.5,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "25n.de",
+            "sku": "C7976A (HPE)",
+            "price": 59.58,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5286183064-hp-hpe-lto-6-ultrium-6-25tb-rw-data-cartridge",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "C7976A (HPE)",
+            "price": 40.99,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/HP/LTO-Ultrium-6-Medium-Streamer-Medium/html/product/1049050",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "00V7590 (IBM)",
+            "price": 48.29,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/IBM/LTO-Ultrium-6-Medium-Streamer-Medium/html/product/1062988",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 49.59,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/Quantum/LTO-6-Medium-6-25-TB-Streamer-Medium/html/product/1334815",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "C7976A (HPE)",
+            "price": 45.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-6-ultrium-mp-tape--790081--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "20__C7976AL (HPE 20-pack, labeled)",
+            "price": 678.49,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-6-ultrium-mp-tape-plus-label-20st--878220--p",
+            "note": "20-pack, 33.92 per unit; in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "MR-L6MQN (Quantum)",
+            "price": 38.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_6.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "16310732 (Fujifilm)",
+            "price": 38.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_6.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "C7976A (HPE)",
+            "price": 40.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_6.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 41.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_6.html",
+            "note": "backorder"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "00V7590 (IBM)",
+            "price": 45.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_6.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "computeruniverse",
+            "sku": "C7976A (HPE)",
+            "price": 49.47,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3639681274-hp-c7976a-lto-6-ultrium-2-5-6-25tb-cartridge",
+            "note": "ships in 5-7 days; via billiger.de"
+          },
+          {
+            "seller": "Conrad",
+            "sku": "C7976A (HPE)",
+            "price": 55.99,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3639681274-hp-c7976a-lto-6-ultrium-2-5-6-25tb-cartridge",
+            "note": "ships in 6-8 days; via billiger.de"
+          },
+          {
+            "seller": "Cyberport",
+            "sku": "C7976A (HPE)",
+            "price": 49.47,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3639681274-hp-c7976a-lto-6-ultrium-2-5-6-25tb-cartridge",
+            "note": "ships in 5-7 days; via billiger.de"
+          },
+          {
+            "seller": "e-tec",
+            "sku": "C7976A (HPE)",
+            "price": 51.25,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2867540944-hp-c7976a-neu",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "e-tec",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 59.4,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3648833109-quantum-mr-l6mqn-01-backup-speichermedium-leeres-datenband-2-5-tb-lto-1-26-cm",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 31.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-6-MR-L6MQN-03-p523946772",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "00V7590 (IBM)",
+            "price": 42.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/IBM-LTO-6-00V7590-p523946771",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "16310732 (Fujifilm)",
+            "price": 43.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Fujifilm-LTO-6-16310732-p523946769",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "C7976A (HPE)",
+            "price": 43.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/HPE-LTO-6-Tape-C7976A-p523946770",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 46.69,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-6-x-1-2.5-TB-Speichermedium/991040773",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "00V7590 (IBM)",
+            "price": 56.89,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/IBM-TotalStorage-LTO-Ultrium-6-x-1-2.5-TB-Speichermedium/991040766",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "C7976A (HPE)",
+            "price": 57.69,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-Ultrium-RW-Data-Cartridge-LTO-Ultrium-6-x-1-Speichermedium/991040756",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 58.29,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-6-x-1-2.5-TB-Speichermedium/991412909",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "C7976AN (HPE 20-pack)",
+            "price": 1089.79,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-RW-Data-Cartridge-LTO-Ultrium-6-x-20-2.5-TB-Speichermedium/998307145",
+            "note": "20-pack, 54.49 per unit; ships in 14 days"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "00V7590 (IBM)",
+            "price": 46.85,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/1787324118-ibm-lto-ultrium-6-leeres-datenband-2-5-tb",
+            "note": "ships in 3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "C7976A (HPE)",
+            "price": 47.13,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2867540944-hp-c7976a-neu",
+            "note": "ships in 3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "16310732 (Fujifilm)",
+            "price": 55.04,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709215420-fujifilm-lto-ultrium-6-lto-ultrium-2-5-tb-1000000-durchgang-durchgaenge-30-jahr-e",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 64.97,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709202612-quantum-lto-ultrium-6-cartridge-quantum-mr-l6mqn-03",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "it-market.com",
+            "sku": "C7976A (HPE)",
+            "price": 53.55,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2867540944-hp-c7976a-neu",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "16310732 (Fujifilm)",
+            "price": 50.12,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/fujifilm-lto-ultrium-6-datenkassette-2-5-tb-6-25-tb-1445316/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 52.42,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-lto-ultrium-6-datenkassette-2-5-tb-6-25-tb-mr-l6mqn-01-schwarz-grau-1445175/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "00V7590 (IBM)",
+            "price": 55.78,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-totalstorage-lto-ultrium-6-2-5-tb-3173017/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "C7976A (HPE)",
+            "price": 56.01,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-ultrium-rw-data-cartridge-lto-ultrium-6-6-25-tb-lila-1454952/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 62.5,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-ultrium-6-lto-ultrium-2-5-tb-6-25-tb-schwarz-3067516/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L6LQN-LP (Quantum 20-pack)",
+            "price": 838.2,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-mr-l6lqn-lp-lto-ultrium-6-20x-2-5-tb-schwarz-3372659/",
+            "note": "20-pack, 41.91 per unit; ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "C7976AN (HPE 20-pack)",
+            "price": 1098.8,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-ultrium-6-rw-data-cartridge-20er-pack-2-5-tb-6-25-tb-lila-1454951/",
+            "note": "20-pack, 54.94 per unit; ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "00V7594 (IBM 20-pack)",
+            "price": 1152.57,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-totalstorage-lto-ultrium-6-library-pack-20-kassetten-2-5-tb-6-25-tb-2606920/",
+            "note": "20-pack, 57.63 per unit; ships in 3-6 days"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "00V7590 (IBM)",
+            "price": 50.94,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/1787324118-ibm-lto-ultrium-6-leeres-datenband-2-5-tb",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "C7976A (HPE)",
+            "price": 53.49,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5286183064-hp-hpe-lto-6-ultrium-6-25tb-rw-data-cartridge",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 65.59,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3648833109-quantum-mr-l6mqn-01-backup-speichermedium-leeres-datenband-2-5-tb-lto-1-26-cm",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "00V7590 (IBM)",
+            "price": 62.5,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/1787324118-ibm-lto-ultrium-6-leeres-datenband-2-5-tb",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "C7976A (HPE)",
+            "price": 62.5,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5286183064-hp-hpe-lto-6-ultrium-6-25tb-rw-data-cartridge",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 92.31,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3648833109-quantum-mr-l6mqn-01-backup-speichermedium-leeres-datenband-2-5-tb-lto-1-26-cm",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Office Partner",
+            "sku": "C7976A (HPE)",
+            "price": 57.68,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3639681274-hp-c7976a-lto-6-ultrium-2-5-6-25tb-cartridge",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "printabout.de",
+            "sku": "C7976A (HPE)",
+            "price": 39.5,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3639681274-hp-c7976a-lto-6-ultrium-2-5-6-25tb-cartridge",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "printabout.de",
+            "sku": "16310732 (Fujifilm)",
+            "price": 49.5,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709215420-fujifilm-lto-ultrium-6-lto-ultrium-2-5-tb-1000000-durchgang-durchgaenge-30-jahr-e",
+            "note": "ships in 2-4 days; via billiger.de"
+          },
+          {
+            "seller": "Reichelt",
+            "sku": "16310732 (Fujifilm)",
+            "price": 47.95,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.de/de/de/shop/produkt/lto_ultrium_6_band_2_5tb_6_25tb_fuji-153733",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Reichelt",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 48.5,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.de/de/de/shop/produkt/lto_ultrium_6_band_2_5tb_6_25tb_quantum-263045",
+            "note": "in stock"
+          },
+          {
+            "seller": "Schäfer Shop",
+            "sku": "C7976A (HPE)",
+            "price": 46.4,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3639681274-hp-c7976a-lto-6-ultrium-2-5-6-25tb-cartridge",
+            "note": "ships in 3 days; via billiger.de"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976B (HPE, BaFe)",
+            "price": 39.8,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7976B",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976A (HPE)",
+            "price": 42.7,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7976A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-12078 (Dell)",
+            "price": 45.58,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/440-12078",
+            "note": "sale; backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBEI (Dell)",
+            "price": 45.58,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/440-BBEI",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBEJ (Dell 5-pack)",
+            "price": 209.39,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/440-BBEJ",
+            "note": "5-pack, 41.88 per unit; sale; backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-12080 (Dell 5-pack)",
+            "price": 215.41,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/440-12080",
+            "note": "5-pack, 43.08 per unit; backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976AN (HPE 20-pack)",
+            "price": 1013.16,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7976AN",
+            "note": "20-pack, 50.66 per unit; in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976AH (HPE 20-pack)",
+            "price": 1347.25,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7976AH",
+            "note": "20-pack, 67.36 per unit; in stock"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "16310732 (Fujifilm)",
+            "price": 46.05,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709215420-fujifilm-lto-ultrium-6-lto-ultrium-2-5-tb-1000000-durchgang-durchgaenge-30-jahr-e",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "00V7590 (IBM)",
+            "price": 49.94,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/1787324118-ibm-lto-ultrium-6-leeres-datenband-2-5-tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 52.5,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3648833109-quantum-mr-l6mqn-01-backup-speichermedium-leeres-datenband-2-5-tb-lto-1-26-cm",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "C7976A (HPE)",
+            "price": 55.0,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3639681274-hp-c7976a-lto-6-ultrium-2-5-6-25tb-cartridge",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "00V7590 (IBM)",
+            "price": 59.1,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/ibm-00v7590-lto-6-ultrium-vi-datenkassette-2-5tb-6-25tb-neuware_75056_77146",
+            "note": "in stock"
+          },
+          {
+            "seller": "voelkner",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 45.3,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3648833109-quantum-mr-l6mqn-01-backup-speichermedium-leeres-datenband-2-5-tb-lto-1-26-cm",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "voelkner",
+            "sku": "C7976A (HPE)",
+            "price": 54.49,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3639681274-hp-c7976a-lto-6-ultrium-2-5-6-25tb-cartridge",
+            "note": "backorder; via billiger.de"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "C7976W (HPE)",
+            "price": 80.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-6-ultrium-tape-worm--833814--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "C7976W (HPE)",
+            "price": 122.18,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5085991932-hp-lto-6-ultrium",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "00V7591 (IBM)",
+            "price": 127.1,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/4886281067-ibm-lto-6-ibm-worm-00v7591",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "00V7591 (IBM)",
+            "price": 110.16,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-lto-ultrium-worm-6-2-5-tb-speichermedium-1975050/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "C7976W (HPE)",
+            "price": 155.75,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-ultrium-worm-6-datenkassette-2-5-tb-6-25-tb-c7976w-violett-1618106/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976BW (HPE, BaFe)",
+            "price": 45.76,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7976BW",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7976W (HPE)",
+            "price": 116.83,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7976W",
+            "note": "in stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": []
+      },
+      "driveExternal": {
+        "datapoints": []
+      }
+    },
+    "LTO-7": {
+      "nativeTB": 6,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "25n.de",
+            "sku": "C7977A (HPE)",
+            "price": 82.73,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2369353126-hp-c7977a-lto-band-15tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "38L7302 (IBM)",
+            "price": 60.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/IBM/LTO-Ultrium-7-Streamer-Medium/html/product/1292743",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 61.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/Quantum/LTO-7-Medium-Streamer-Medium/html/product/1238689",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "C7977A (HPE)",
+            "price": 73.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/HP/LTO-7-Medium-Streamer-Medium/html/product/1238688",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 52.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-7-ultrium-tape--4038011--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "38L7302 (IBM)",
+            "price": 57.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/ibm-lto-7-ultrium-tape--4038754--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "C7977A (HPE)",
+            "price": 65.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-7-ultrium-tape--4028908--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 53.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_7.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "38L7302 (IBM)",
+            "price": 53.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_7.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "C7977A (HPE)",
+            "price": 63.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_7.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "bücher.de",
+            "sku": "C7977A (HPE)",
+            "price": 73.99,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2369353126-hp-c7977a-lto-band-15tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "e-tec",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 60.4,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709214532-quantum-mr-l7mqn-01",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "e-tec",
+            "sku": "C7977A (HPE)",
+            "price": 74.0,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709212843-hp-hpe-lto-7-rw-kassette",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "38L7302 (IBM)",
+            "price": 52.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/IBM-LTO-7-38L7302-p523946775",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 54.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-7-MR-L7MQN-01-p523946776",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "16456574 (Fujifilm)",
+            "price": 55.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Fujifilm-LTO-7-16456574-p523946773",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "C7977A (HPE)",
+            "price": 62.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/HPE-LTO-7-C7977A-p523946774",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "38L7302 (IBM)",
+            "price": 56.99,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/IBM-LTO-Ultrium-7-x-1-6-TB-Speichermedium/991094001",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 62.29,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-7-x-1-6-TB-Speichermedium/991083088",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "C7977A (HPE)",
+            "price": 81.59,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-Ultrium-RW-Data-Cartridge-LTO-Ultrium-7-x-1-6-TB-Speichermedium/991092213",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 62.88,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709214532-quantum-mr-l7mqn-01",
+            "note": "ships in 1 day; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "C7977A (HPE)",
+            "price": 69.52,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709212843-hp-hpe-lto-7-rw-kassette",
+            "note": "ships in 1 day; via billiger.de"
+          },
+          {
+            "seller": "it-market.com",
+            "sku": "38L7302 (IBM)",
+            "price": 166.6,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3098519525-ibm-lto-ultrium-7-data-cartridge-leeres-datenband-6-tb",
+            "note": "ships in 7 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 63.39,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-mr-l7mqn-01-lto-ultrium-7-6-tb-15-tb-lila-2564102/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "38L7302 (IBM)",
+            "price": 67.87,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-lto-ultrium-7-datenkassette-bafe-6-tb-15-tb-schwarz-blau-2789757/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "PR-C7977A (HPE C7977A)",
+            "price": 79.11,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-7-ultrium-6-tb-15-tb-rw-datenkassette-c7977a-slate-blue-2588653/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "38L7315 (IBM 20-pack)",
+            "price": 1438.82,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-lto-7-ultrium-library-pack-bafe-20er-pack-2879938/",
+            "note": "20-pack, 71.94 per unit; ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L7MQN-20 (Quantum 20-pack)",
+            "price": 1441.3,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-mr-l7mqn-20-20x-lto-ultrium-7-6-tb-lila-2962108/",
+            "note": "20-pack, 72.06 per unit; ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "C7977AN (HPE 20-pack)",
+            "price": 1666.57,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-7-ultrium-15-tb-rw-datenkassette-20er-pack-blau-2588665/",
+            "note": "20-pack, 83.33 per unit; in stock"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 56.22,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709214532-quantum-mr-l7mqn-01",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "38L7302 (IBM)",
+            "price": 63.3,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3098519525-ibm-lto-ultrium-7-data-cartridge-leeres-datenband-6-tb",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "C7977A (HPE)",
+            "price": 74.94,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2369353126-hp-c7977a-lto-band-15tb",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 81.49,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709214532-quantum-mr-l7mqn-01",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "C7977A (HPE)",
+            "price": 83.54,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2369353126-hp-c7977a-lto-band-15tb",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "38L7302 (IBM)",
+            "price": 100.84,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3098519525-ibm-lto-ultrium-7-data-cartridge-leeres-datenband-6-tb",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Office Partner",
+            "sku": "C7977A (HPE)",
+            "price": 83.11,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2369353126-hp-c7977a-lto-band-15tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "printabout.de",
+            "sku": "16456574 (Fujifilm)",
+            "price": 68.5,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3691788239-fujifilm-lto-ultrium-7-lto-ultrium-7-6-tb",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Proshop",
+            "sku": "38L7302 (IBM)",
+            "price": 64.48,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3098519525-ibm-lto-ultrium-7-data-cartridge-leeres-datenband-6-tb",
+            "note": "ships in 5-7 days; via billiger.de"
+          },
+          {
+            "seller": "Proshop",
+            "sku": "C7977A (HPE)",
+            "price": 72.95,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2369353126-hp-c7977a-lto-band-15tb",
+            "note": "ships in 3-5 days; via billiger.de"
+          },
+          {
+            "seller": "Reichelt",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 59.9,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.de/de/de/shop/produkt/lto_ultrium_7_band_6tb_15tb_quantum-263041",
+            "note": "in stock"
+          },
+          {
+            "seller": "Reichelt",
+            "sku": "LTO FB UL-7 6.0T J (Fujifilm)",
+            "price": 69.95,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.de/de/de/shop/produkt/lto_ultrium_7_band_6tb_15tb_fuji-263039",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7977A (HPE)",
+            "price": 66.01,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7977A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBHU (Dell)",
+            "price": 76.19,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/440-BBHU",
+            "note": "sale; backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBHT (Dell 5-pack)",
+            "price": 401.66,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/440-BBHT",
+            "note": "5-pack, 80.33 per unit; backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7977AH (HPE 20-pack)",
+            "price": 1418.42,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7977AH",
+            "note": "20-pack, 70.92 per unit; in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7977AN (HPE 20-pack)",
+            "price": 1418.42,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7977AN",
+            "note": "20-pack, 70.92 per unit; in stock"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "16456574 (Fujifilm)",
+            "price": 59.4,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3691788239-fujifilm-lto-ultrium-7-lto-ultrium-7-6-tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 65.0,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709214532-quantum-mr-l7mqn-01",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "38L7302 (IBM)",
+            "price": 65.5,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3098519525-ibm-lto-ultrium-7-data-cartridge-leeres-datenband-6-tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "C7977A (HPE)",
+            "price": 76.01,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2369353126-hp-c7977a-lto-band-15tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Thalia",
+            "sku": "C7977A (HPE)",
+            "price": 73.99,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2369353126-hp-c7977a-lto-band-15tb",
+            "note": "ships in 4 days; via billiger.de"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "38L7302 (IBM)",
+            "price": 71.0,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/ibm-38l7302-lto-7-datenkassette-tape-data-cartridge-6-tb-15-tb-new_74969_77082",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 73.7,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/quantum-mr-l7mqn-01-lto-7-datenkassette-data-cartridge-6tb-15tb-new_75069_77158",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "C7977A (HPE)",
+            "price": 86.0,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/hp-c7977a-lto-7-datenkassette-tape-data-cartridge-6-tb-15-tb-new_75008_77115",
+            "note": "in stock"
+          },
+          {
+            "seller": "voelkner",
+            "sku": "C7977A (HPE)",
+            "price": 70.58,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2369353126-hp-c7977a-lto-band-15tb",
+            "note": "in stock; via billiger.de"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 82.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-7-ultrium-tape-worm--4038050--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "C7977W (HPE)",
+            "price": 100.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-7-ultrium-tape-worm--4028915--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 115.09,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-WORM-7-x-1-6-TB-Speichermedium/992097077",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 119.86,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3708285362-quantum-mr-l7mqn-02-leeres-datenband-15-gb",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "38L7303 (IBM)",
+            "price": 136.53,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/4856352251-ibm-lto-7-ultrium-6-tb-15-tb-worm",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "C7977W (HPE)",
+            "price": 114.66,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-ultrium-worm-data-cartridge-lto-ultrium-worm-7-6-tb-15-tb-blue-2588666/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 117.37,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-mr-l7mqn-02-lto-ultrium-7-worm-6-tb-15-tb-lila-grau-2564219/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "38L7303 (IBM)",
+            "price": 139.24,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-lto-ultrium-7-worm-6-tb-15-tb-2818637/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 125.12,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3708285362-quantum-mr-l7mqn-02-leeres-datenband-15-gb",
+            "note": "ships in 4-5 days; via billiger.de"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "C7977W (HPE)",
+            "price": 110.51,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/C7977W",
+            "note": "in stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Future-X",
+            "sku": "TC-L72AN-BR (Quantum)",
+            "price": 3530.99,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-7-HH-Bandlaufwerk-LTO-Ultrium-SAS-2/991095599",
+            "note": "ships in 28 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L72AN-FZ (Quantum)",
+            "price": 4287.09,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-7-Tape-Drive-Half-Height-Internal-Schwarz/999387057",
+            "note": "ships in 28 days; with SAS HBA"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "BB953A (HPE)",
+            "price": 8186.99,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-StoreEver-LTO-7-Ultrium-15000-TAA-Bandlaufwerk-LTO-Ultrium-SAS-2/992097582",
+            "note": "ships in 28 days; TAA-compliant SKU"
+          },
+          {
+            "seller": "it-market.com",
+            "sku": "BB873A (HPE)",
+            "price": 6545.0,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3467029907-hp-bb873a-neu",
+            "note": "ships in 7 days; via billiger.de"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BB873A (HPE)",
+            "price": 4438.37,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/BB873A",
+            "note": "backorder"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Senetic",
+            "sku": "BB874A (HPE)",
+            "price": 4264.47,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/BB874A",
+            "note": "backorder"
+          }
+        ]
+      }
+    },
+    "LTO-8": {
+      "nativeTB": 12,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "25n.de",
+            "sku": "Q2078A (HPE)",
+            "price": 85.38,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "01PL041 (IBM)",
+            "price": 70.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/IBM/LTO8-Medium-30-TB-Streamer-Medium/html/product/1482832",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "Q2078A (HPE)",
+            "price": 72.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/Hewlett-Packard-Enterprise/LTO8-Medium-12-TB-Streamer-Medium/html/product/1414678",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 72.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/Quantum/LTO-8-Medium-12-TB-Streamer-Medium/html/product/1432183",
+            "note": "backorder; ships in 5-9 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 60.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-8-ultrium-tape--4220848--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2078A (HPE)",
+            "price": 64.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-8-ultrium-tape--4220530--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "01PL041 (IBM)",
+            "price": 65.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/ibm-lto-8-ultrium-tape--4232675--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L8MQN-20 (Quantum 20-pack)",
+            "price": 1316.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-8-ultrium-tape-library-pack--4222266--p",
+            "note": "20-pack, 65.80 per unit; backorder"
+          },
+          {
+            "seller": "bücher.de",
+            "sku": "Q2078A (HPE)",
+            "price": 82.99,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "computeruniverse",
+            "sku": "Q2078A (HPE)",
+            "price": 75.24,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "ships in 5-7 days; via billiger.de"
+          },
+          {
+            "seller": "Cyberport",
+            "sku": "Q2078A (HPE)",
+            "price": 75.24,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "ships in 5-7 days; via billiger.de"
+          },
+          {
+            "seller": "e-tec",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 70.85,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2867541663-quantum-lto8-ultrium-8",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 55.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-8-MR-L8MQN-01-p523946780",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "16551221 (Fujifilm)",
+            "price": 61.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Fujifilm-LTO-8-16551221-p523945765",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "01PL041 (IBM)",
+            "price": 61.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/IBM-LTO-8-01PL041-p523946779",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "Q2078A (HPE)",
+            "price": 66.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/HPE-LTO-8-Q2078A-p523946778",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 70.89,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-8-x-1-12-TB-Speichermedium/991767393",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "01PL041 (IBM)",
+            "price": 75.29,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/IBM-LTO-Ultrium-8-x-1-12-TB-Speichermedium/996998161",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "16551221 (Fujifilm)",
+            "price": 85.69,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/FUJIFILM-LTO-Ultrium-8-LTO-Ultrium-8-x-1-12-TB-Speichermedium/997890882",
+            "note": "ships in 14 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2078A (HPE)",
+            "price": 86.39,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-RW-Data-Cartridge-LTO-Ultrium-8-x-1-12-TB-Speichermedium/991866646",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L8MQN-20 (Quantum 20-pack)",
+            "price": 1590.39,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-8-x-1-12-TB-Speichermedium-Packung-mit-20/996517490",
+            "note": "20-pack, 79.52 per unit; ships in 28 days"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 69.67,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2867541663-quantum-lto8-ultrium-8",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "01PL041 (IBM)",
+            "price": 70.91,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3673825408-ibm-lto-ultrium-8-12-tb",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "16551221 (Fujifilm)",
+            "price": 77.44,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3001880628-fujifilm-lto-ultrium-8-12tb-30tb",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 75.49,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-lto-ultrium-8-datenkassette-12-tb-brick-red-3816605/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "01PL041 (IBM)",
+            "price": 77.96,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-lto-ultrium-8-12-tb-30-tb-rot-3914679/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "16551221 (Fujifilm)",
+            "price": 78.98,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/fujifilm-lto-ultrium-8-datenkassette-12-tb-30-tb-5950298/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2078A (HPE)",
+            "price": 83.51,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-ultrium-8-rw-data-cartridge-12-tb-30-tb-gruen-3880758/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2078A (HPE)",
+            "price": 89.61,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-rw-data-cartridge-lto-ultrium-8-12-tb-30-tb-gruen-100555942/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2078AH (HPE 20-pack)",
+            "price": 1495.34,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-8-ultrium-30-tb-rw-datenkassetten-library-pack-20-stueck-gruen-3898330/",
+            "note": "20-pack, 74.77 per unit; ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2078AN (HPE 20-pack)",
+            "price": 1667.3,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-8-ultrium-30-tb-rw-datenkassetten-20er-pack-non-custom-labeled-3898327/",
+            "note": "20-pack, 83.36 per unit; in stock"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 71.7,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2867541663-quantum-lto8-ultrium-8",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "01PL041 (IBM)",
+            "price": 74.01,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3673825408-ibm-lto-ultrium-8-12-tb",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "Q2078A (HPE)",
+            "price": 75.92,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 79.68,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2867541663-quantum-lto8-ultrium-8",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "Q2078A (HPE)",
+            "price": 87.62,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "01PL041 (IBM)",
+            "price": 109.13,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3673825408-ibm-lto-ultrium-8-12-tb",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Office Partner",
+            "sku": "01PL041 (IBM)",
+            "price": 73.98,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3673825408-ibm-lto-ultrium-8-12-tb",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Office Partner",
+            "sku": "Q2078A (HPE)",
+            "price": 87.78,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Proshop",
+            "sku": "Q2078A (HPE)",
+            "price": 73.65,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Reichelt",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 69.95,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.de/de/de/shop/produkt/lto_ultrium_8_band_12tb_30tb_quantum-263050",
+            "note": "in stock"
+          },
+          {
+            "seller": "Reichelt",
+            "sku": "16551221 (Fujifilm)",
+            "price": 78.9,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.de/de/de/shop/produkt/lto_ultrium_8_band_12_tb_30_tb_fuji-308592",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2078A (HPE)",
+            "price": 81.73,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/Q2078A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBIQ (Dell 5-pack)",
+            "price": 574.43,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/440-BBIQ",
+            "note": "5-pack, 114.89 per unit; backorder"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2078AH (HPE 20-pack)",
+            "price": 1447.37,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/Q2078AH",
+            "note": "20-pack, 72.37 per unit; in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2078AN (HPE 20-pack)",
+            "price": 1707.71,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/Q2078AN",
+            "note": "20-pack, 85.39 per unit; in stock"
+          },
+          {
+            "seller": "Serverschmiede",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 82.0,
+            "vatIncluded": true,
+            "url": "https://www.serverschmiede.com/de/storage/lto-bandlaufwerke/lto-bandlaufwerke/",
+            "note": ""
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "01PL041 (IBM)",
+            "price": 69.9,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3673825408-ibm-lto-ultrium-8-12-tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "Q2078A (HPE)",
+            "price": 75.01,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Surffact.de",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 77.65,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/2867541663-quantum-lto8-ultrium-8",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Thalia",
+            "sku": "Q2078A (HPE)",
+            "price": 82.99,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "ships in 4 days; via billiger.de"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 73.1,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/quantum-mr-l8mqn-01-lto-8-datenkassette-12tb-30tb_74604_76734",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "16551221 (Fujifilm)",
+            "price": 79.8,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/fujifilm-16551221-lto-8-datenkassette-tape-data-cartridge-12tb-30tb_74600_76730",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "01PL041 (IBM)",
+            "price": 81.2,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/ibm-01pl041-lto-8-datenkassette-tape-data-cartridge-12tb-30tb-new-1pl041_75032_77123",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "Q2078A (HPE)",
+            "price": 86.9,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/hp-q2078a-lto-8-ultrium-viii-datenkassette-12tb-30tb_74567_76697",
+            "note": "in stock"
+          },
+          {
+            "seller": "voelkner",
+            "sku": "Q2078A (HPE)",
+            "price": 72.87,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb",
+            "note": "in stock; via billiger.de"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 88.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-8-ultrium-tape-worm--4222268--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "01PL042 (IBM)",
+            "price": 99.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/ibm-lto-8-ultrium-tape-worm--4232660--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2078W (HPE)",
+            "price": 102.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-8-ultrium-tape-worm--4220598--p",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 117.59,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-WORM-8-x-1-12-TB-Speichermedium/992097080",
+            "note": "ships in 14 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2078W (HPE)",
+            "price": 120.79,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-Ultrium-WORM-Data-Cartridge-LTO-Ultrium-WORM-8-x-1-12-TB-Speichermedium/997328770",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "01PL042 (IBM)",
+            "price": 118.57,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/4583402548-ibm-lto-ultrium-worm-8-12-tb-30-tb",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 129.0,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5085991635-quantum-data-cartridge-lto8-worm-lto-8-ultrium-12000-gb-cartridge",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "Q2078W (HPE)",
+            "price": 129.0,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5087244701-hp-hpe-ultrium-worm-data-cartridge-lto-ultrium-worm-8",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 107.98,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-mr-l8mqn-02-lto-ultrium-8-worm-12-tb-brick-red-grau-3816607/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "01PL042 (IBM)",
+            "price": 120.93,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-lto-ultrium-worm-8-12-tb-30-tb-braun-4298869/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2078W (HPE)",
+            "price": 123.19,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-8-ultrium-30-tb-worm-data-cartridge-gruen-3895069/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 130.04,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709218773-quantum-lto-ultrium-8-12-tb-30-tb",
+            "note": "ships in 4-5 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "Q2078W (HPE)",
+            "price": 140.38,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709233304-hp-hpe-lto-8-ultrium-worm-data-cartridge",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Proshop",
+            "sku": "Q2078W (HPE)",
+            "price": 119.79,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709233304-hp-hpe-lto-8-ultrium-worm-data-cartridge",
+            "note": "ships in 6-8 days; via billiger.de"
+          },
+          {
+            "seller": "Proshop",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 130.37,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5085991635-quantum-data-cartridge-lto8-worm-lto-8-ultrium-12000-gb-cartridge",
+            "note": "ships in 4-6 days; via billiger.de"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 6225.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-8-hh-sas-internes-laufwerk--4213704--p",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "BC022A (HPE)",
+            "price": 7728.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-storeever-30750-lto-8-bandlaufwerk--4237976--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L82AN-EY (Quantum)",
+            "price": 7773.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-8-hh-sas-internes-laufwerk--4214235--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L82AN-EY (Quantum)",
+            "price": 5000.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-8-Tape-Drive-Half-Height-Internal-6Gb-s-SAS-5-25-Black-Kit-p640810268",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L82AN-FZ (Quantum)",
+            "price": 5800.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-8-Tape-Drive-Half-Height-Internal-6Gb-s-SAS-5-25-Black-12Gb-s-SAS-HBA-Bundle-p640812265",
+            "note": "in stock; with SAS HBA"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 6085.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-8-Tape-Drive-Half-Height-Internal-6Gb-s-SAS-5-25-Black-Bare-p640810265",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "SAS-HL8i (MagStor)",
+            "price": 6900.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/MagStor-LTO8-Internal-Tape-Drive-SAS-LTO-8-TAA-p791651044",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 5651.79,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO8-Tape-Half-Height-Internal-6Gb-s-SAS-13-34-cm-5.25Zoll-Black-5-25-Serial-Attached-SCSI-VXAtape-VXA-Kassette/991717105",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L82AN-FZ (Quantum)",
+            "price": 9404.49,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-8-Tape-Drive-Half-Height-Internal-Schwarz/999387060",
+            "note": "ships in 28 days; with SAS HBA"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "BC024A (HPE)",
+            "price": 16084.99,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-StoreEver-LTO-8-Ultrium-30750-TAA-Bandlaufwerk-LTO-Ultrium-SAS-2/993689092",
+            "note": "ships in 14 days; TAA-compliant SKU"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 5731.7,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3697556145-quantum-tc-l82an-br-backup-speichergeraet-speicherlaufwerk-bandkartusche-lto",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "BC022A (HPE)",
+            "price": 7345.15,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3653008850-hp-hpe-storeever-lto-8-ultrium-30750-internal-tape-drive",
+            "note": "ships in 7-10 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 5764.81,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-tc-l82an-br-lto-8-internes-bandlaufwerk-sas-5-25-schwarz-3819629/",
+            "note": "in stock"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 5688.99,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3697556145-quantum-tc-l82an-br-backup-speichergeraet-speicherlaufwerk-bandkartusche-lto",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "BC022A (HPE)",
+            "price": 7211.4,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3653008850-hp-hpe-storeever-lto-8-ultrium-30750-internal-tape-drive",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 7968.36,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3697556145-quantum-tc-l82an-br-backup-speichergeraet-speicherlaufwerk-bandkartusche-lto",
+            "note": "ships in 4-5 days; via billiger.de"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BC022A (HPE)",
+            "price": 4657.89,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/BC022A",
+            "note": "sale; backorder"
+          },
+          {
+            "seller": "Techinn",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 4843.0,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3697556145-quantum-tc-l82an-br-backup-speichergeraet-speicherlaufwerk-bandkartusche-lto",
+            "note": "ships in 10 days; via billiger.de"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 7124.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-8-hh-sas-externes-laufwerk--4214290--p",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L83CN-AR (Quantum)",
+            "price": 8016.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-8-hh-sas-rack-laufwerk--4215287--p",
+            "note": "ships in 2 days; 1U rackmount"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L82BN-FZ (Quantum)",
+            "price": 8246.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-8-hh-sas-ext-laufwerk-plus-hba--4951984--p",
+            "note": "ships in 2 days; with SAS HBA"
+          },
+          {
+            "seller": "computeruniverse",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 8020.7,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3701917839-quantum-tc-l82bn-ar-internes-lto",
+            "note": "ships in 5-7 days; via billiger.de"
+          },
+          {
+            "seller": "Cyberport",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 8020.7,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3701917839-quantum-tc-l82bn-ar-internes-lto",
+            "note": "ships in 5-7 days; via billiger.de"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L82BN-FZ (Quantum)",
+            "price": 6200.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-8-Tape-Drive-Half-Height-Tabletop-6Gb-s-SAS-Black-12Gb-s-SAS-HBA-Bundle-p640802289",
+            "note": "in stock; with SAS HBA"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 6950.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-8-Tape-Drive-Half-Height-Tabletop-6Gb-s-SAS-Black-Kit-p640802287",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "SAS-HL8-8088 (MagStor)",
+            "price": 7200.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/MagStor-LTO8-Desktop-Tape-Drive-SAS-8088-LTO-8-TAA-p791649809",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "SAS-HL8-8644 (MagStor)",
+            "price": 7200.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/MagStor-LTO8-Desktop-Tape-Drive-SAS-8644-LTO-8-TAA-p791651040",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "SAS-1U-HL8 (MagStor)",
+            "price": 7600.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/MagStor-1U-LTO8-Rack-Mount-w-1x-LTO-8-SAS-TAA-p791651048",
+            "note": "in stock; 1U rackmount"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L83CN-AR (Quantum)",
+            "price": 7755.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-8-Tape-Drive-Half-Height-Single-1U-Rackmount-6Gb-s-SAS-Black-Kit-p640812269",
+            "note": "in stock; 1U rackmount"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 7690.59,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO8-Tape-Half-Height-Tabletop-6Gb-s-SAS-Black-Serial-Attached-SCSI-VXAtape-Kassette/991717102",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "6160S8E (Lenovo/IBM TS2280)",
+            "price": 8902.49,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Lenovo-TS2280-6160-H8S-Bandlaufwerk-LTO-Ultrium-SAS-2/992552275",
+            "note": "ships in 28 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "BC023A#ABB (HPE)",
+            "price": 9644.49,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-StoreEver-LTO-8-Ultrium-30750-Bandlaufwerk-LTO-Ultrium-SAS-2/998011503",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L82BN-FZ (Quantum)",
+            "price": 9912.49,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-8-HH-Bandlaufwerk-LTO-Ultrium-SAS-2/999387058",
+            "note": "in stock; with SAS HBA"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 8428.82,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-tc-l82bn-ar-lto-8-bandlaufwerk-12-tb-30-tb-sas-schwarz-3819667/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 9123.27,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3701917839-quantum-tc-l82bn-ar-internes-lto",
+            "note": "ships in 4-5 days; via billiger.de"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BC023A (HPE)",
+            "price": 10240.66,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/BC023A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Techinn",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 10934.99,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3701917839-quantum-tc-l82bn-ar-internes-lto",
+            "note": "ships in 14 days; via billiger.de"
+          }
+        ]
+      }
+    },
+    "LTO-9": {
+      "nativeTB": 18,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Alternate",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 80.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/Quantum/LTO9-Medium-45-TB-Streamer-Medium/html/product/1794073",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "Q2079A (HPE)",
+            "price": 90.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/Hewlett-Packard-Enterprise/LTO9-Medium-45-TB-Streamer-Medium/html/product/1507720",
+            "note": "in stock"
+          },
+          {
+            "seller": "Alternate",
+            "sku": "02XW568 (IBM)",
+            "price": 93.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.de/IBM/LTO9-Medium-45-TB-Streamer-Medium/html/product/1794064",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.de",
+            "sku": "Q2079A (HPE)",
+            "price": 88.05,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5370734723-hp-hpe-lto-ultrium-9-kassette-rw-18tb-45tb",
+            "note": "limited stock; via billiger.de"
+          },
+          {
+            "seller": "Amazon.de",
+            "sku": "02XW568 (IBM)",
+            "price": 92.81,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709235316-ibm-02xw568-leeres-datenband-18-tb-lto",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 72.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-9-ultrium-tape--4606356--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2079A (HPE)",
+            "price": 82.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-9-ultrium-tape--4587600--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "02XW568 (IBM)",
+            "price": 90.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/ibm-lto-9-ultrium-tape--4661956--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "20__Q2079A (HPE 20-pack)",
+            "price": 1586.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-9-ultrium-tape-20-st--4587587--p",
+            "note": "20-pack, 79.30 per unit; in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "Q2079A (HPE)",
+            "price": 73.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_9.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 74.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_9.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "02XW568 (IBM)",
+            "price": 77.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_9.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Böttcher AG (bueromarkt-ag.de)",
+            "sku": "16659047 (Fujifilm)",
+            "price": 79.99,
+            "vatIncluded": false,
+            "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_9.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "e-tec",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 83.0,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3670991347-quantum-mr-l9mqn-01-leeres-datenband-lto-9",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "e-tec",
+            "sku": "Q2079A (HPE)",
+            "price": 89.7,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5370734723-hp-hpe-lto-ultrium-9-kassette-rw-18tb-45tb",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 72.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-9-MR-L9MQN-01-p523946783",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "02XW568 (IBM)",
+            "price": 74.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/IBM-LTO-9-02XW568-p523946782",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "Q2079A (HPE)",
+            "price": 76.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/HPE-LTO-9-Q2079A-p523946781",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "18675 (Fujifilm)",
+            "price": 81.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Fujifilm-LTO-9-18675-p523946777",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 86.59,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-9-18-TB-45-Barium-Ferrite-Tape/999363982",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "02XW568 (IBM)",
+            "price": 94.39,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/IBM-LTO-Ultrium-9-x-1-18-TB-Speichermedium/999387061",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2079A (HPE)",
+            "price": 106.49,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-LTO-Ultrium-9-x-1-18-TB-Speichermedium/999360133",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "440-BBJU (Dell)",
+            "price": 268.99,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Dell-Kunden-Kit-LTO-Ultrium-9-x-1-Speichermedium/999542092",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 2031.59,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-LTO-Ultrium-9-x-20-18-TB-Speichermedium/999360140",
+            "note": "20-pack, 101.58 per unit; in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2079AH (HPE 20-pack)",
+            "price": 2156.99,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-LTO-Ultrium-9-x-20-18-TB-Speichermedium/999360141",
+            "note": "20-pack, 107.85 per unit; ships in 14 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2079AL (HPE 20-pack, labeled)",
+            "price": 2171.79,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-LTO-Ultrium-9-x-20-18-TB-Speichermedium/999360135",
+            "note": "20-pack, 108.59 per unit; ships in 28 days"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 87.27,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3670991347-quantum-mr-l9mqn-01-leeres-datenband-lto-9",
+            "note": "ships in 1 day; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "02XW568 (IBM)",
+            "price": 94.67,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709235316-ibm-02xw568-leeres-datenband-18-tb-lto",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "16659047 (Fujifilm)",
+            "price": 106.46,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709218628-fujifilm-lto9-18tb-45tb-ultrium-bafe",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 87.33,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-lto-9-ultrium-datenband-mr-l9mqn-01-18-tb-gruen-7380893/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "02XW568 (IBM)",
+            "price": 96.72,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-lto-ultrium-9-18-tb-45-tb-gruen-7382158/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2079A (HPE)",
+            "price": 102.98,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-ultrium-9-18-tb-45-tb-hellblau-7373946/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 2066.85,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-9-ultrium-45-tb-rw-library-pack-20-datenkassetten-nicht-beschriftet-hellblau-7373951/",
+            "note": "20-pack, 103.34 per unit; in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L9MQN-20 (Quantum 20-pack)",
+            "price": 2115.88,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-mr-l9mqn-20-lto-ultrium-9-18-tb-20er-pack-gruen-7381987/",
+            "note": "20-pack, 105.79 per unit; ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2079AH (HPE 20-pack)",
+            "price": 2403.73,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-9-ultrium-45-tb-rw-20-data-cartridges-library-pack-hellblau-7373947/",
+            "note": "20-pack, 120.19 per unit; ships in 3-6 days"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 82.94,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3670991347-quantum-mr-l9mqn-01-leeres-datenband-lto-9",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "Q2079A (HPE)",
+            "price": 94.49,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3710770384-hp-hpe-lto-9-ultrium-45tb-rw-data-cartridge",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "02XW568 (IBM)",
+            "price": 95.71,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709235316-ibm-02xw568-leeres-datenband-18-tb-lto",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "Q2079A (HPE)",
+            "price": 109.37,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3710770384-hp-hpe-lto-9-ultrium-45tb-rw-data-cartridge",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "02XW568 (IBM)",
+            "price": 122.36,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3709235316-ibm-02xw568-leeres-datenband-18-tb-lto",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Office Partner",
+            "sku": "Q2079A (HPE)",
+            "price": 109.68,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/3710770384-hp-hpe-lto-9-ultrium-45tb-rw-data-cartridge",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Reichelt",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 89.9,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.de/de/de/shop/produkt/lto_ultrium_9_band_18tb_45tb_quantum-320734",
+            "note": "ships in 3-5 days"
+          },
+          {
+            "seller": "Reichelt",
+            "sku": "16659047 (Fujifilm)",
+            "price": 99.95,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.de/de/de/shop/produkt/lto_ultrium_9_band_18_tb_45_tb_fuji-320736",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2079A (HPE)",
+            "price": 93.79,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/Q2079A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "440-BBJV (Dell 5-pack)",
+            "price": 639.08,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/440-BBJV",
+            "note": "5-pack, 127.82 per unit; in stock"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "Q2079AN (HPE 20-pack)",
+            "price": 1969.67,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/Q2079AN",
+            "note": "20-pack, 98.48 per unit; in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "02XW568 (IBM)",
+            "price": 93.6,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/ibm-02xw568-lto-9-ultrium-ix-datenkassette-18tb-45tb_74570_76700",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 101.0,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/quantum-mr-l9mqn-01-lto-9-ultrium-ix-datenkassette-18tb-45tb_74571_76701",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "4547410 (Fujifilm, as listed)",
+            "price": 108.0,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/fujifilm-4547410-fuji-lto-9-ultrium-ix-datenkassette-18tb-45tb_74569_76699",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "Q2079A (HPE)",
+            "price": 110.3,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/hp-q2079a-lto-9-ultrium-ix-datenkassette-18tb-45tb_74568_76698",
+            "note": "in stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "Q2079W (HPE)",
+            "price": 116.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-9-ultrium-tape-worm--4587017--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 139.29,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-8-Ultrium-18-TB-45-TB-Worm/999363983",
+            "note": "in stock; listed as LTO-8 in title"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2079W (HPE)",
+            "price": 153.49,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-LTO-Ultrium-WORM-9-x-1-18-TB-Speichermedium/999360138",
+            "note": "ships in 28 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2079W (HPE)",
+            "price": 141.78,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-lto-ultrium-lto-9-45-tb-worm-data-cartridge-hellblau-7592217/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 142.06,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-mr-l9mqn-02-lto-ultrium-9-worm-18-tb-hellblau-7381986/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Proshop",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 133.45,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5377234116-quantum-mr-l9mqn-02-leeres-datenband-lto-9-18-tb-45-tb-1-26-cm-1035-m",
+            "note": "ships in 6-8 days; via billiger.de"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 6905.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-9-hh-sas-internes-laufwerk--4606445--p",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "BC040A (HPE)",
+            "price": 12049.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-storeever-45000-lto-9-bandlaufwerk--4644476--p",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L92AN-EY (Quantum)",
+            "price": 7400.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-9-Tape-Drive-Half-Height-Internal-12Gb-s-SAS-5-25-Black-Kit-p640422727",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L92AN-FZ (Quantum)",
+            "price": 8400.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-9-Tape-Drive-Half-Height-Internal-12Gb-s-SAS-5-25-Black-12Gb-s-SAS-HBA-Bundle-p640421722",
+            "note": "in stock; with SAS HBA"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 8605.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-9-Tape-Drive-Half-Height-Internal-12Gb-s-SAS-5-25-Black-Bare-p640421689",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "SAS-HL9i (MagStor)",
+            "price": 10500.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/MagStor-LTO9-Internal-Tape-Drive-SAS-LTO-9-TAA-p791648571",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 7958.99,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-9-Tape-Drive-Half-Height-Internal/999415353",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L92AN-EY (Quantum)",
+            "price": 11272.09,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-9-Tape-Drive-Half-Height-Internal/999415349",
+            "note": "ships in 28 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L92AN-FZ (Quantum)",
+            "price": 12691.29,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-9-Tape-Drive-Half-Height-Internal/999415348",
+            "note": "ships in 28 days; with SAS HBA"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "BC040A (HPE)",
+            "price": 13885.19,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-StoreEver-45000-Bandlaufwerk-LTO-Ultrium-SAS-2/999443424",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 10378.63,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-lto-9-bandlaufwerk-hh-internal-bare-sas-18-tb-schwarz-7490388/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "BC040A (HPE)",
+            "price": 10817.1,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/4885537893-hp-hpe-storeever-lto-9-ultrium-45000-mit-internem-sas-bandlaufwerk-bc040a",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Office Partner",
+            "sku": "BC040A (HPE)",
+            "price": 13465.32,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/4885537893-hp-hpe-storeever-lto-9-ultrium-45000-mit-internem-sas-bandlaufwerk-bc040a",
+            "note": "in stock; via billiger.de"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BC040A (HPE)",
+            "price": 14335.97,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/BC040A",
+            "note": "in stock"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 7491.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-9-hh-sas-externes-laufwerk--4610492--p",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L93CN-AR (Quantum)",
+            "price": 8208.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-9-hh-sas-rack-laufwerk--4638353--p",
+            "note": "ships in 2 days; 1U rackmount"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "TC-L92BN-FZ (Quantum)",
+            "price": 10891.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-9-hh-sas-externes-laufwerk--4903637--p",
+            "note": "backorder; with SAS HBA"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "P84142-B25 (HPE)",
+            "price": 12248.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-9-ultrium-externes-bandlaufwerk--4947224--p",
+            "note": "ships in 2 days; bundle incl. 5 cartridges"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "P77034-B25 (HPE)",
+            "price": 12500.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-9-ultrium-rack-mount-laufwerk--4873967--p",
+            "note": "ships in 2 days; 1U rackmount, incl. 5 cartridges"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L92BN-FZ (Quantum)",
+            "price": 8900.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-9-Tape-Drive-Half-Height-Tabletop-12Gb-s-SAS-Black-12Gb-s-SAS-HBA-p640454018",
+            "note": "in stock; with SAS HBA"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 9550.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-9-Tape-Drive-Half-Height-Tabletop-12Gb-s-SAS-Black-Kit-p640421729",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "TC-L93CN-AR (Quantum)",
+            "price": 10490.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-9-Tape-Drive-Half-Height-Single-1U-Rackmount-12Gb-s-SAS-Black-Kit-p640421466",
+            "note": "in stock; 1U rackmount"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "SAS-HL9-8644 (MagStor)",
+            "price": 10800.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/MagStor-LTO9-Desktop-Tape-Drive-SAS-8644-LTO-9-TAA-p791648570",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "SAS-1U-HL9 (MagStor)",
+            "price": 11200.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/MagStor-1U-LTO9-Rack-Mount-w-1x-LTO-9-SAS-TAA-p791648577",
+            "note": "in stock; 1U rackmount"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 8634.09,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-9-Tape-Drive-Half-Height-Tabletop/999415354",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L93CN-AR (Quantum)",
+            "price": 9528.49,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-9-Tape-Drive-Half-Height-Single-1U/999415355",
+            "note": "in stock; 1U rackmount"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "TC-L92BN-FZ (Quantum)",
+            "price": 13463.69,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-9-Tape-Drive-Half-Height-Tabletop/999415351",
+            "note": "ships in 28 days; with SAS HBA"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "BC042A#ABB (HPE)",
+            "price": 14429.39,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-StoreEver-45000-Bandlaufwerk-LTO-Ultrium-SAS-2/999453548",
+            "note": "ships in 14 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "P84142-B25 (HPE)",
+            "price": 16001.89,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-Storage-LTO-9-Ultrium-Bandlaufwerk-LTO-Ultrium-SAS-3/900081493",
+            "note": "in stock; bundle incl. 5 cartridges"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 8441.59,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/4421141144-quantum-lto-ultrium-9-hh-tabletop-backup-loesungen",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "TC-L93CN-AR (Quantum)",
+            "price": 9608.46,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/4499840270-quantum-tc-l93cn-ar-speicherlaufwerk-bandkartusche-serial-attached-scsi-sas-2-5-1-lto",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "TC-L93CN-AR (Quantum)",
+            "price": 9719.03,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-tc-l93cn-ar-lto-9-bandlaufwerk-1u-rackmount-sas-45-tb-schwarz-7490394/",
+            "note": "in stock; 1U rackmount"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 10739.12,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-lto-9-tape-drive-hh-tabletop-12-gb-s-sas-18-tb-45-tb-schwarz-7490391/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "P77034-B25 (HPE)",
+            "price": 14348.1,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-storeever-lto-9-ultrium-bandlaufwerk-1u-sas-3-18-tb-45-tb-100551626/",
+            "note": "in stock; 1U rackmount, incl. 5 cartridges"
+          },
+          {
+            "seller": "Macle-Shop",
+            "sku": "TC-L93CN-AR (Quantum)",
+            "price": 10428.53,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/4499840270-quantum-tc-l93cn-ar-speicherlaufwerk-bandkartusche-serial-attached-scsi-sas-2-5-1-lto",
+            "note": "ships in 2-3 days; via billiger.de"
+          },
+          {
+            "seller": "Senetic",
+            "sku": "BC042A (HPE)",
+            "price": 5524.47,
+            "vatIncluded": false,
+            "url": "https://www.senetic.de/product/BC042A",
+            "note": "backorder"
+          },
+          {
+            "seller": "Techinn",
+            "sku": "TC-L93CN-AR (Quantum)",
+            "price": 16378.99,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/4499840270-quantum-tc-l93cn-ar-speicherlaufwerk-bandkartusche-serial-attached-scsi-sas-2-5-1-lto",
+            "note": "ships in 14 days; via billiger.de"
+          }
+        ]
+      }
+    },
+    "LTO-10": {
+      "nativeTB": 30,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "Q2080A (HPE)",
+            "price": 234.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-10-ultrium-tape--4920908--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 238.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-10-ultrium-tape--4918273--p",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "20__Q2080A (HPE 20-pack)",
+            "price": 4469.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-10-ultrium-tape-20-st--4990386--p",
+            "note": "20-pack, 223.45 per unit; ships in 2 days"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "Q2080AH (HPE 20-pack)",
+            "price": 5175.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/hpe-lto-10-ultrium-tape-librarypack--4920913--p",
+            "note": "20-pack, 258.75 per unit; backorder"
+          },
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L10MQN-20 (Quantum 20-pack)",
+            "price": 5719.0,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-10-ultrium-tape-20-stck--4918276--p",
+            "note": "20-pack, 285.95 per unit; backorder"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "03PL170 (IBM)",
+            "price": 225.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/IBM-LTO-10-03PL170-p763867938",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "Q2080A (HPE)",
+            "price": 235.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/HPE-LTO-10-Q2080A-p763869215",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 243.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Quantum-LTO-10-MR-L10MQN-01-p763864480",
+            "note": "in stock"
+          },
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "18842 (Fujifilm)",
+            "price": 245.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/Fujifilm-LTO-10-18842-p763867937",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 256.69,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-10-x-1-30-TB-Speichermedium/900031207",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2080A (HPE)",
+            "price": 298.89,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-Storage-LTO-10-Ultrium-RW-Data-Cartridge-LTO-Ultrium-10-x-1-30-TB-Speichermedium/900024072",
+            "note": "in stock"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2080AH (HPE 20-pack)",
+            "price": 5919.99,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-Storage-LTO-10-Ultrium-RW-Data-Cartridge-without-Case-LTO-Ultrium-10-x-20-30-TB-Speichermedium/900024071",
+            "note": "20-pack, 296.00 per unit; ships in 28 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2080AN (HPE 20-pack)",
+            "price": 5919.99,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-Storage-LTO-10-Ultrium-RW-Non-Custom-Labeled-Data-Cartridge-with-Case-LTO-Ultrium-10-x-20-30-TB-Speichermedium/900024070",
+            "note": "20-pack, 296.00 per unit; ships in 28 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L10MQN-20 (Quantum 20-pack)",
+            "price": 6950.69,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-10-x-20-30-TB-Speichermedium/900031209",
+            "note": "20-pack, 347.53 per unit; ships in 14 days"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 280.34,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5563252381-quantum-lto10-30-75tb-cartridge",
+            "note": "ships in 2-4 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "03PL170 (IBM)",
+            "price": 286.53,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5423642131-ibm-lto-10-ultrium-30tb-75tb",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "Q2080A (HPE)",
+            "price": 301.3,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5321191459-hp-hpe-storage-lto-10-ultrium-rw-data-cartridge",
+            "note": "ships in 2-4 days; via billiger.de"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "16944686 (Fujifilm)",
+            "price": 340.12,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5590287689-fujifilm-fuji-lto10-30-75tb-dc-cartridge",
+            "note": "ships in 1-3 days; via billiger.de"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 264.76,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/quantum-lto-ultrium-mr-l10mqn-01-30-tb-75-tb-lto-ultrium-kassette-schwarz-100694596/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "03PL170 (IBM)",
+            "price": 270.62,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/ibm-ultrium-lto-10-30-tb-lto-ultrium-schwarz-100673565/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "Q2080A (HPE)",
+            "price": 284.56,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/hpe-storage-lto-10-ultrium-rw-datenkassette-30-tb-75-tb-lila-100605537/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Jacob",
+            "sku": "16944686 (Fujifilm)",
+            "price": 321.23,
+            "vatIncluded": true,
+            "url": "https://www.jacob.de/produkt/fujifilm-lto-ultrium-10-datentraeger-30-tb-75-tb-komprimiert-rw-100704247/",
+            "note": "in stock"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "03PL170 (IBM)",
+            "price": 265.32,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5423642131-ibm-lto-10-ultrium-30tb-75tb",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "JB-Computer",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 273.87,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5563252381-quantum-lto10-30-75tb-cartridge",
+            "note": "ships in 1-2 days; via billiger.de"
+          },
+          {
+            "seller": "Reichelt",
+            "sku": "16944686 (Fujifilm)",
+            "price": 309.0,
+            "vatIncluded": true,
+            "url": "https://www.reichelt.de/de/de/shop/produkt/lto_ultrium_10_band_30_tb_75_tb_fuji-434091",
+            "note": "in stock"
+          },
+          {
+            "seller": "TopTen Storage",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 335.8,
+            "vatIncluded": true,
+            "url": "https://www.toptenstorage.com/tape-storage/medien/quantum-mr-l10mqn-01-lto-10-ultrium-x-datenkassette-30tb-75tb_86591",
+            "note": "in stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle",
+            "sku": "MR-L10MQN-02 (Quantum)",
+            "price": 386.99,
+            "vatIncluded": false,
+            "url": "https://www.bechtle.com/shop/quantum-lto-10-ultrium-worm-tape--4918279--p",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "Q2080W (HPE)",
+            "price": 439.89,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/HPE-Storage-LTO-10-Ultrium-WORM-Data-Cartridge-LTO-Ultrium-WORM-10-x-1-30-TB-Speichermedium/900024069",
+            "note": "ships in 28 days"
+          },
+          {
+            "seller": "Future-X",
+            "sku": "MR-L10MQN-02 (Quantum)",
+            "price": 532.09,
+            "vatIncluded": true,
+            "url": "https://www.future-x.de/Quantum-LTO-Ultrium-WORM-10-x-1-30-TB-Speichermedium/900031208",
+            "note": "ships in 14 days"
+          },
+          {
+            "seller": "Galaxus",
+            "sku": "MR-L10MQN-02 (Quantum)",
+            "price": 454.29,
+            "vatIncluded": true,
+            "url": "https://www.billiger.de/pricelist/5606578558-quantum-data-cartridge-lto-10-worm",
+            "note": "ships in 8-13 days; via billiger.de"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": []
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "EDP (edp-shop.de)",
+            "sku": "SAS-L10-MAX (MagStor)",
+            "price": 21000.0,
+            "vatIncluded": false,
+            "url": "https://www.edp-shop.de/shop/MagStor-LTO-10-30TB-SAS-FH-Desktop-Tape-Drive-MAX-TAA-p791649808",
+            "note": "in stock; full-height drive"
+          }
+        ]
+      },
+      "cartridge40TB": {
+        "datapoints": []
+      }
+    }
+  },
+  "sellersTried": [
+    {
+      "seller": "Alternate",
+      "url": "https://www.alternate.de/listing.xhtml?q=lto-9",
+      "result": "prices found"
+    },
+    {
+      "seller": "backup-store.de",
+      "url": "https://www.backup-store.de/",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "Senetic",
+      "url": "https://www.senetic.de/search/?q=lto&f_s_category=icecat_293",
+      "result": "prices found"
+    },
+    {
+      "seller": "Cyberport",
+      "url": "https://www.cyberport.de/tools/search-results.html?q=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Jacob",
+      "url": "https://www.jacob.de/search?search=lto-9",
+      "result": "prices found"
+    },
+    {
+      "seller": "Reichelt",
+      "url": "https://www.reichelt.de/de/de/shop/suche/lto-9",
+      "result": "prices found"
+    },
+    {
+      "seller": "Conrad",
+      "url": "https://www.conrad.de/de/search.html?search=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "notebooksbilliger",
+      "url": "https://www.notebooksbilliger.de/produkte/lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Bechtle",
+      "url": "https://www.bechtle.com/shop/hpe-lto-9-ultrium-tape--4587600--p",
+      "result": "prices found"
+    },
+    {
+      "seller": "idealo",
+      "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Geizhals",
+      "url": "https://geizhals.de/?fs=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "billiger.de",
+      "url": "https://www.billiger.de/search?searchstring=lto-9",
+      "result": "prices found"
+    },
+    {
+      "seller": "Future-X",
+      "url": "https://www.future-x.de/search?search=lto-9",
+      "result": "prices found"
+    },
+    {
+      "seller": "Böttcher AG (bueromarkt-ag.de)",
+      "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_9.html",
+      "result": "prices found"
+    },
+    {
+      "seller": "EDP (edp-shop.de)",
+      "url": "https://www.edp-shop.de/shop/LTO-Tapes-c138893562",
+      "result": "prices found"
+    },
+    {
+      "seller": "TopTen Storage",
+      "url": "https://www.toptenstorage.com/tape-storage/medien",
+      "result": "prices found"
+    },
+    {
+      "seller": "Serverschmiede",
+      "url": "https://www.serverschmiede.com/de/storage/lto-bandlaufwerke/lto-bandlaufwerke/",
+      "result": "prices found"
+    },
+    {
+      "seller": "Stor IT Back",
+      "url": "https://www.storitback.de/angebot/angebot_lto.html",
+      "result": "no prices (quote only)"
+    },
+    {
+      "seller": "csv.de",
+      "url": "https://www.csv.de/artsearchresult.php?KATEGORIE=26004",
+      "result": "no prices (not in stock)"
+    },
+    {
+      "seller": "Proshop",
+      "url": "https://www.proshop.de/?s=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "computeruniverse",
+      "url": "https://www.computeruniverse.net/de/search?query=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Galaxus",
+      "url": "https://www.galaxus.de/de/search?q=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Mindfactory",
+      "url": "https://www.mindfactory.de/search_result.php?search_query=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "HPE Store Deutschland",
+      "url": "https://buy.hpe.com/de/de/storage/storage-media/tape-media/hpe-storage-lto%e2%80%9110-ultrium-75tb-rw-data-cartridge/p/q2080a",
+      "result": "blocked"
+    },
+    {
+      "seller": "Thomas-Krenn",
+      "url": "https://www.thomas-krenn.com/de/produkte/infrastruktur/backup-loesungen/backup-laufwerke",
+      "result": "no prices (configurator only)"
+    },
+    {
+      "seller": "EDP Germany (edp-germany.de)",
+      "url": "https://www.edp-germany.de/lto-tapes/lto-10-tapes",
+      "result": "no prices (quote only)"
+    },
+    {
+      "seller": "octo24",
+      "url": "https://www.octo24.com/en/Overland-Tandberg-TD-LTO9ISA-Overland-Tandberg-LTO9HH-SAS-Internal::595270.html",
+      "result": "no prices (shows 0,00 €)"
+    },
+    {
+      "seller": "SoftExpress",
+      "url": "https://www.softexpress.de/Details/CD52982/Tandberg_Data_LTO-9_HH_Bandlaufwerk_EXTERN_SAS-3,_3_Jahre_Herst.-Garantie",
+      "result": "no prices (not orderable)"
+    },
+    {
+      "seller": "lto10.de",
+      "url": "https://lto10.de/",
+      "result": "no prices (info page)"
+    },
+    {
+      "seller": "Gekko Computer",
+      "url": "https://www.gekko-computer.de/en/c/Storage/Tape-Drive/Internal/LTO",
+      "result": "no prices (refurb library drives, JS prices)"
+    }
+  ],
+  "marketNotes": [
+    {
+      "text": "Consumer shops (Alternate, Reichelt, Jacob, Future-X, TopTen, billiger.de offers) show prices incl. 19% VAT. B2B shops (Bechtle, Senetic, EDP, Böttcher AG) show net prices first; those are recorded with vatIncluded false.",
+      "url": "https://www.bechtle.com/shop/hpe-lto-9-ultrium-tape--4587600--p"
+    },
+    {
+      "text": "No LTO-10 40 TB cartridge (Fujifilm 16978170, Quantum MR-A10MQN-01, IBM 40 TB) had a price at any German seller checked on 2026-09-23. Stor IT Back mentions 40/100 TB 'Premium' LTO-10 tapes, quote only.",
+      "url": "https://www.storitback.de/angebot/angebot_lto.html"
+    },
+    {
+      "text": "No half-height LTO-10 drive is listed in Germany. The only LTO-10 drives with a price are full-height MagStor desktops at EDP: SAS EUR 21,000 net (recorded) and Thunderbolt 3/USB4 EUR 21,900 net (not SAS, omitted).",
+      "url": "https://www.edp-shop.de/shop/LTO-10-Bandlaufwerke-c203405251"
+    },
+    {
+      "text": "No new standalone LTO-6 drive with a price was found; sellers list only LTO-6 library drive kits or refurbished loader drives.",
+      "url": "https://www.senetic.de/search/?q=lto&f_s_category=icecat_215"
+    },
+    {
+      "text": "HPE P84142-B25 (external) and P77034-B25 (1U rackmount) are LTO-9 drive bundles that include 5 cartridges, per Bechtle's product text, so they sit above bare-drive prices.",
+      "url": "https://www.bechtle.com/shop/hpe-lto-9-ultrium-externes-bandlaufwerk--4947224--p"
+    },
+    {
+      "text": "Quantum sells each drive as bare (-BR), kit (-EY), SAS HBA bundle (-FZ) and 1U rackmount (TC-L83CN/TC-L93CN) SKUs; price gaps within a generation often come from the bundle, not the seller.",
+      "url": "https://www.edp-shop.de/shop/LTO-Laufwerke-von-Quantum-c203405506"
+    },
+    {
+      "text": "Galaxus, Cyberport, Conrad, Proshop, computeruniverse and Amazon.de block direct fetches. Their offers come from billiger.de price lists (seller as named in the offer, billiger.de URL); marketplace offers were skipped.",
+      "url": "https://www.billiger.de/pricelist/3709203236-hp-hpe-lto-8-ultrium-30-tb"
+    },
+    {
+      "text": "billiger.de shows Jacob and bueromarkt-ag.de at prices that differ from their own shops (Fujifilm LTO-9 at bueromarkt-ag.de: EUR 115.98 on billiger.de vs EUR 79.99 net on the shop), so only the shops' own pages were used for them.",
+      "url": "https://www.billiger.de/pricelist/3709218628-fujifilm-lto9-18tb-45tb-ultrium-bafe"
+    },
+    {
+      "text": "evolt24 and etoh24 list single-cartridge titles at multi-pack prices (Quantum LTO-8 EUR 440.60, HPE LTO-8 EUR 533.29); omitted.",
+      "url": "https://www.billiger.de/pricelist/2867541663-quantum-lto8-ultrium-8"
+    },
+    {
+      "text": "Jacob's search listing showed HPE BC023A at EUR 11,883.48 'Sofort lieferbar', but the product page said 'nicht verfügbar' with no price; omitted.",
+      "url": "https://www.jacob.de/produkt/hpe-storeever-lto-8-ultrium-30750-externes-bandlaufwerk-12-tb-30-tb-sas-2-schwarz-4080690/"
+    },
+    {
+      "text": "TopTen Storage lists a labeled HP LTO-7 WORM cartridge (C7977WL) at EUR 29.90; looks like a listing error, omitted.",
+      "url": "https://www.toptenstorage.com/hp-c7977w-lto-7-worm-etikettierte-datenkassette-6tb-15tb-neu-c7977wl_74832_76956"
+    },
+    {
+      "text": "Böttcher AG shows net quantity tiers (1, 5, 10 units); the 1-unit price is recorded. Its bot wall blocked the LTO-8, LTO-10 and WORM pages after a few requests.",
+      "url": "https://www.bueromarkt-ag.de/lto-ultrium-band,m-ausfuehrung:lto_9.html"
+    },
+    {
+      "text": "Senetic marks reduced items with the EU 30-day lowest price (HPE BC022A LTO-8 internal drive: was EUR 9,100.22 gross, now EUR 5,542.89 gross), but most of its drives are out of stock and quote only.",
+      "url": "https://www.senetic.de/product/BC022A"
+    },
+    {
+      "text": "backup-store.de is a parked domain for sale, not a shop.",
+      "url": "https://www.backup-store.de/"
+    }
+  ]
+}

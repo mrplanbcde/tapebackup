@@ -36,13 +36,14 @@ def maxlen(row):
     return min(lims) if lims else None
 
 
-def export(lang, parts, part):
+def export(lang, parts, part, label=None):
+    label = label or str(part)
     rows = seg_rows(lang)
     rows.sort(key=lambda r: (min(i18n.SCOPE.index(p) for p in r["pages"]) if r["pages"] else 99, r["key"]))
     chunk = [r for i, r in enumerate(rows) if i % parts == part - 1]
-    out = [{"id": f"{lang}{part}-{i}", "key": r["key"], "ctx": r["ctx"], "example": r["example"], "maxlen": maxlen(r)} for i, r in enumerate(chunk)]
+    out = [{"id": f"{lang}{label}-{i}", "key": r["key"], "ctx": r["ctx"], "example": r["example"], "maxlen": maxlen(r)} for i, r in enumerate(chunk)]
     os.makedirs(BATCH_DIR, exist_ok=True)
-    path = os.path.join(BATCH_DIR, f"{lang}-{part}.json")
+    path = os.path.join(BATCH_DIR, f"{lang}-{label}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     words = sum(len(re.sub(r"</?[a-z]+\d+/?>|\{\w+\}", " ", r["key"]).split()) for r in out)
@@ -117,7 +118,7 @@ def check(lang):
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "export":
-        export(sys.argv[2], int(sys.argv[3]), int(sys.argv[4]))
+        export(sys.argv[2], int(sys.argv[3]), int(sys.argv[4]), sys.argv[5] if len(sys.argv) > 5 else None)
     elif cmd == "merge":
         merge(sys.argv[2], sys.argv[3], sys.argv[4])
     elif cmd == "check":

@@ -1,0 +1,3081 @@
+{
+  "asOf": "2026-09-23",
+  "market": "nl",
+  "country": "Netherlands",
+  "currency": "EUR",
+  "vatRate": 0.21,
+  "generations": {
+    "LTO-6": {
+      "nativeTB": 2.5,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "123inkt.nl",
+            "sku": "C7976A (HPE)",
+            "price": 39.5,
+            "vatIncluded": true,
+            "url": "https://www.123inkt.nl/HP-LTO6-C7976A-Ultrium-RW-data-cartridge-6-25TB-C7976A-i40537.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7976B (HPE)",
+            "price": 48.16,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7976B",
+            "note": "backorder"
+          },
+          {
+            "seller": "Amazon.nl marketplace: Dig 'n Delve",
+            "sku": "16310732 (Fujifilm)",
+            "price": 49.42,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00ABV3Y7O",
+            "note": "in stock"
+          },
+          {
+            "seller": "123inkt.nl",
+            "sku": "16310732 (Fujifilm)",
+            "price": 49.5,
+            "vatIncluded": true,
+            "url": "https://www.123inkt.nl/Fujifilm-LTO6-Ultrium-data-cartridge-16310732-4003276C-i112151.html",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7976A (HPE)",
+            "price": 52.51,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7976A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "16310732 (Fujifilm)",
+            "price": 53.75,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/fuji-lto-ultrium-6-2-5tb-6-25tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 53.88,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/quantum-lto-6-ultrium-data-tape-cartridge-047331",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 54.44,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-6-ultrium-tape--792377--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "16310732 (Fujifilm)",
+            "price": 54.46,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/fuifilm-lto-ultrium-6-data-cartridge-178458",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "00V7590 (IBM)",
+            "price": 54.5,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/ibm-lto-ultrium-6-2-5tb-6-25tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 54.5,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/quantum-lto-ultrium-6-2-5tb-6-25tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "00V7590 (IBM)",
+            "price": 54.61,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/ibm-lto-6-ultrium-2-5-tb-data-cartridge-bafe-178456",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "440-12078 (Dell)",
+            "price": 55.15,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/440-12078",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "440-BBEI (Dell)",
+            "price": 55.15,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/440-BBEI",
+            "note": "backorder"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 55.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/Quantum/LTO6-Medium-tape/html/product/1334815",
+            "note": "backorder"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "C7976A (HPE)",
+            "price": 57.48,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/hpe-lto-6-ultrium-rw-data-cartridge-purple-047529",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "00V7590 (IBM)",
+            "price": 57.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/IBM/LTO-Ultrium-6-tape/html/product/1062988",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "00V7590 (IBM)",
+            "price": 58.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-ultrium-6-2500gb-6250gb-cartridge.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "C7976A (HPE)",
+            "price": 60.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-hp-c7976a-lto6-625tb-ultrium-6.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 60.49,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-6-ultrium-mp-tape--4134442--p",
+            "note": ""
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "C7976A (HPE)",
+            "price": 62.25,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/hpe-lto-ultrium-6-tape-25tb-625tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "C7976A (HPE)",
+            "price": 62.91,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-6-ultrium-mp-tape--790081--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 64.12,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-6-ultrium-mp-tape--4134442--p",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "C7976A (HPE)",
+            "price": 68.96,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-6-ultrium-mp-tape--790081--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "MR-L6MQN-01 (Quantum)",
+            "price": 70.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-ultrium-6-25-tb-625-tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: BrandOn Store",
+            "sku": "MR-L6MQN-03 (Quantum)",
+            "price": 72.34,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B01N5CRBNA",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: Macro hard",
+            "sku": "00V7590 (IBM)",
+            "price": 72.72,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00AR3DQRY",
+            "note": "ships in 3-4 days"
+          },
+          {
+            "seller": "Amazon.nl marketplace: EFI Global Store NL",
+            "sku": "C7976A (HPE)",
+            "price": 86.55,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B06XTRVDTB",
+            "note": "ships in 2-3 days"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "16310732 (Fujifilm)",
+            "price": 95.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/9432117/fujifilm_lto6_ultrium_25tb65tb/16310732/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "C7976A (HPE)",
+            "price": 95.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/7043751/hewlett_packard_enterprise_lto-6_ultrium_6/C7976A/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "00V7590 (IBM)",
+            "price": 105.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/7110625/ibm_00v7590_ibm_dc_ultrium6/00V7590/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "440-BBEJ (Dell)",
+            "price": 253.36,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/440-BBEJ",
+            "note": "5-pack, 50.67 per unit, backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "440-12080 (Dell)",
+            "price": 260.65,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/440-12080",
+            "note": "5-pack, 52.13 per unit, backorder"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE LTO-6 20-pack (no PN shown)",
+            "price": 839.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-ultrium-10/",
+            "note": "20-pack, 41.95 per unit"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "20__C7976A (HPE)",
+            "price": 925.64,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-6-ultrium-mp-tape-20x--878202--p",
+            "note": "20-pack, 46.28 per unit, in stock"
+          },
+          {
+            "seller": "bol.com (via Beslist)",
+            "sku": "HPE LTO-6 20-pack (no PN shown)",
+            "price": 1137.92,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-6/",
+            "note": "20-pack, 56.90 per unit"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "C7976AH (HPE)",
+            "price": 1219.68,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-6-ultrium-tape-ecopack--822014--p",
+            "note": "20-pack, 60.98 per unit, backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7976AN (HPE)",
+            "price": 1225.95,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7976AN",
+            "note": "20-pack, 61.30 per unit, limited stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "C7976AH (HPE)",
+            "price": 1432.64,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-6-ultrium-tape-ecopack--822014--p",
+            "note": "20-pack, 71.63 per unit, limited stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7976AH (HPE)",
+            "price": 1630.18,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7976AH",
+            "note": "20-pack, 81.51 per unit, limited stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "C7976AN (HPE)",
+            "price": 1999.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/7043755/hewlett_packard_enterprise_c7976an_lege_da/C7976AN/",
+            "note": "20-pack, 99.95 per unit, limited stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7976BW (HPE)",
+            "price": 55.37,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7976BW",
+            "note": "backorder"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Quantum LTO-6 WORM (no PN shown)",
+            "price": 109.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-9/",
+            "note": ""
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE LTO-6 MP WORM (no PN shown)",
+            "price": 109.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-worm/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "C7976W (HPE)",
+            "price": 117.36,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-6-ultrium-tape-worm--833814--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "C7976W (HPE)",
+            "price": 122.2,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-6-ultrium-tape-worm--833814--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "IBM LTO-6 WORM (no PN shown)",
+            "price": 139.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-worm/",
+            "note": ""
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7976W (HPE)",
+            "price": 141.36,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7976W",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: A&O-Projekt-GmbH",
+            "sku": "MR-L6MQN-02 (Quantum)",
+            "price": 149.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00AAHS9YW",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: itstoreit",
+            "sku": "C7976W (HPE)",
+            "price": 169.99,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00CNN2BV8",
+            "note": "ships in 7-8 days"
+          },
+          {
+            "seller": "Amazon.nl marketplace: itstoreit",
+            "sku": "00V7591 (IBM)",
+            "price": 174.99,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00TXTPTCI",
+            "note": "ships in 7-8 days"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L6MQN-02 (Quantum)",
+            "price": 319.43,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-ultrium-6-worm-tape--808010--p",
+            "note": "limited stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Amazon.nl marketplace: Doll-Computer",
+            "sku": "EH969A (HPE)",
+            "price": 2798.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00C8F0QOK",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: Doll-Computer",
+            "sku": "TC-L62AN-EZ (Quantum)",
+            "price": 2798.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00C8FC56M",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE StoreEver LTO-6 6250 internal (no PN shown)",
+            "price": 3449.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-tape-drive/",
+            "note": ""
+          },
+          {
+            "seller": "Amazon.nl marketplace: IT-Planet GmbH",
+            "sku": "EH969A (HPE)",
+            "price": 3634.8,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00AKWUWKQ",
+            "note": "limited stock"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Amazon.nl marketplace: Doll-Computer",
+            "sku": "EH970A (HPE)",
+            "price": 2798.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00GPJJ62S",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: Doll-Computer",
+            "sku": "TC-L62BN-EZ (Quantum)",
+            "price": 2998.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00AM0P0S0",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: Doll-Computer",
+            "sku": "TC-L62BN-AR-C (Quantum)",
+            "price": 2998.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00NKXDNL2",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: IT-Planet GmbH",
+            "sku": "EH964A (HPE)",
+            "price": 3413.28,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B00AKWUTTK",
+            "note": "in stock, full-height"
+          }
+        ]
+      }
+    },
+    "LTO-7": {
+      "nativeTB": 6,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Amazon.nl",
+            "sku": "38L7302 (IBM)",
+            "price": 61.92,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B01DP1ZOMO",
+            "note": "in stock"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "38L7302 (IBM)",
+            "price": 67.39,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/ibm-lto-7-data-cartridge-ultrium-6tb-178462",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "123inkt.nl",
+            "sku": "16456574 (Fujifilm)",
+            "price": 67.5,
+            "vatIncluded": true,
+            "url": "https://www.123inkt.nl/Fujifilm-LTO7-Ultrium-data-cartridge-16310732C-16456574-i112152.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "123inkt.nl",
+            "sku": "C7977A (HPE)",
+            "price": 67.5,
+            "vatIncluded": true,
+            "url": "https://www.123inkt.nl/HP-LTO7-C7977A-Ultrium-RW-data-cartridge-15TB-C7977A-i40538.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PrintAbout.nl (via Kieskeurig)",
+            "sku": "16456574 (Fujifilm)",
+            "price": 68.5,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/server/product/11376552-fujifilm-lto-ultrium-7-615tb-lto-data-cartridge",
+            "note": "ships in 1 day, +4.95 shipping"
+          },
+          {
+            "seller": "PrintAbout.be (via Kieskeurig.be)",
+            "sku": "16456574 (Fujifilm)",
+            "price": 68.5,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.be/server/product/11376552-fujifilm-lto-ultrium-7-615tb-lto-data-cartridge",
+            "note": "ships in 1 day, +4.95 shipping"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 68.54,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/quantum-lto-7-ultrium-data-tape-cartridge-178484",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "16456574 (Fujifilm)",
+            "price": 68.97,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/fuifilm-lto-ultrium-7-data-cartridge-178459",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "16456574 (Fujifilm)",
+            "price": 68.99,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/fuji-lto-ultrium-7-6tb-15tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "38L7302 (IBM)",
+            "price": 69.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/IBM/LTO-Ultrium-7-tape/html/product/1292743",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Amazon.be (via Kieskeurig.be)",
+            "sku": "38L7302 (IBM)",
+            "price": 69.9,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.be/server/product/10972008-ibm-lto-ultrium-7-data-cartridge",
+            "note": "ships in 3-4 days"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 70.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto7-ultrium-7-6-tb-15-tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "38L7302 (IBM)",
+            "price": 70.49,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/ibm-lto-ultrium-7-6tb-15tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 70.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/Quantum/Ultrium-LTO-7-tape/html/product/1238689",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 71.24,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/quantum-lto-ultrium-7-6tb-15tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "38L7302 (IBM)",
+            "price": 73.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-ultrium-7-6tb-15tb-datacartridge.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "38L7302 (IBM)",
+            "price": 75.01,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/ibm-lto-7-ultrium-tape--4038754--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Conrad.nl (via Kieskeurig)",
+            "sku": "C7977A (HPE)",
+            "price": 77.99,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/server/product/4523159-hp-ultrium-lto-7-c-7977-a",
+            "note": "ships in 6+ days, +5.95 shipping"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 78.64,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-7-ultrium-tape--4038011--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7977A (HPE)",
+            "price": 79.87,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7977A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Conrad.be (via Kieskeurig.be)",
+            "sku": "C7977A (HPE)",
+            "price": 79.99,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.be/server/product/4523159-hp-ultrium-lto-7-c-7977-a",
+            "note": "ships in 6+ days"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 81.06,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-7-ultrium-tape--4038011--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "C7977A (HPE)",
+            "price": 81.77,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/hpe-lto-7-ultrium-rw-data-cartridge-049111",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "C7977A (HPE)",
+            "price": 82.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/HP/Ultrium-LTO-7-C7977A-tape/html/product/1238688",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "C7977A (HPE)",
+            "price": 83.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-7-ultrium-15-tb-rw-data-cartridge.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "C7977A (HPE)",
+            "price": 85.5,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/hpe-lto-ultrium-7-tape-6tb-15tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "C7977A (HPE)",
+            "price": 91.95,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-7-ultrium-tape--4028908--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "440-BBHU (Dell)",
+            "price": 92.19,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/440-BBHU",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "C7977A (HPE)",
+            "price": 99.21,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-7-ultrium-tape--4028908--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Dustin.be",
+            "sku": "440-BBHU (Dell)",
+            "price": 110.35,
+            "vatIncluded": true,
+            "url": "https://www.dustin.be/nl/tape-drives/dell/lto7-tape-media-1-pack-cust-kit-art-440-bbhu-num-175203321/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "16456574 (Fujifilm)",
+            "price": 119.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/9081494/hpe_media_tape_lto_7/16456574/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "38L7302 (IBM)",
+            "price": 125.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/9033774/ibm_media_tape_lto7/38L7302/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "MR-L7MQN-01 (Quantum)",
+            "price": 145.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/9479675/quantum_quan_lto7_medium_15_tb/MR-L7MQN-01/",
+            "note": "backorder"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "C7977A (HPE)",
+            "price": 149.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/8943960/hewlett_packard_enterprise_lto-7_ultrium_1/C7977A/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "440-BBHT (Dell)",
+            "price": 486.01,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/440-BBHT",
+            "note": "5-pack, 97.20 per unit, backorder"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "16456574-1 (Fujifilm)",
+            "price": 690.0,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/fuji-lto-ultrium-7-10-pack-6tb-15tb/",
+            "note": "10-pack, 69.00 per unit, ships in 1-3 days"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L7MQN-20 (Quantum)",
+            "price": 1351.57,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-7-ultrium-tape-library-20x--4038030--p",
+            "note": "20-pack, 67.58 per unit, limited stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L7MQN-20 (Quantum)",
+            "price": 1351.57,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-7-ultrium-tape-library-20x--4038030--p",
+            "note": "20-pack, 67.58 per unit, limited stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7977AH (HPE)",
+            "price": 1716.3,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7977AH",
+            "note": "20-pack, 85.81 per unit, in stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7977AN (HPE)",
+            "price": 1716.32,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7977AN",
+            "note": "20-pack, 85.82 per unit, limited stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "C7977AN (HPE)",
+            "price": 1825.77,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-ultrium-10/",
+            "note": "20-pack, 91.29 per unit"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "C7977AN (HPE)",
+            "price": 2669.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/8943970/hp_lto-7_ultrium_non_custom_labeled_data_c/C7977AN/",
+            "note": "20-pack, 133.45 per unit, limited stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 95.58,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-7-ultrium-tape-worm--4038050--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "C7977W (HPE)",
+            "price": 125.83,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-7-ultrium-tape-worm--4028915--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "C7977W (HPE)",
+            "price": 133.72,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/C7977W",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "C7977W (HPE)",
+            "price": 137.93,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-7-ultrium-tape-worm--4028915--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Fujifilm LTO-7 WORM (no PN shown)",
+            "price": 140.35,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-ultrium-10/",
+            "note": ""
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "IBM LTO-7 WORM (no PN shown)",
+            "price": 148.26,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-worm/",
+            "note": ""
+          },
+          {
+            "seller": "Amazon.nl marketplace: officeservicesrl",
+            "sku": "16495661 (Fujifilm)",
+            "price": 169.66,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B01C3G2XGM",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: A&O-Projekt-GmbH",
+            "sku": "MR-L7MQN-02 (Quantum)",
+            "price": 190.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B019JJOPZI",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: A&O-Projekt-GmbH",
+            "sku": "38L7303 (IBM)",
+            "price": 201.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B01I8O5UBI",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "38L7303 (IBM)",
+            "price": 278.29,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/ibm-lto-7-ultrium-tape-worm--4038841--p",
+            "note": "in stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Kaufland.nl marketplace (via Beslist)",
+            "sku": "HPE LTO-7 15000 internal (no PN shown)",
+            "price": 4986.84,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-9/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "BB873A (HPE)",
+            "price": 5126.77,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-storeever-lto-7-ultrium-15000-sas--4043953--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "BB873A (HPE)",
+            "price": 5370.43,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/BB873A",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "BB873A (HPE)",
+            "price": 5608.35,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-storeever-lto-7-ultrium-15000-sas--4043953--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "PVLTO-7 (Dell)",
+            "price": 5644.08,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/PVLTO-7",
+            "note": "backorder"
+          },
+          {
+            "seller": "Amazon.nl marketplace: IT-Planet GmbH",
+            "sku": "BB873A (HPE)",
+            "price": 5777.2,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B0195S90S0",
+            "note": "in stock"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "P84140-B25 (HPE)",
+            "price": 5078.37,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-7-ultrium-external-tape-drive--4947049--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "BB874A (HPE)",
+            "price": 5160.01,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/BB874A",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "P84140-B25 (HPE)",
+            "price": 5253.82,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-7-ultrium-external-tape-drive--4947049--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYSAS-DS1L7HH1-BR (Symply)",
+            "price": 6048.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplylto-desktop-sas-hh-lto-7/",
+            "note": "ships in 3-5 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYSAS-DS2L7H2B-CR (Symply)",
+            "price": 6532.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplylto-xth-desktop-sas-hh-lto-7/",
+            "note": "ships in 3-5 days"
+          },
+          {
+            "seller": "Kaufland.nl marketplace (via Beslist)",
+            "sku": "HPE StoreEver LTO-7 15000 external (no PN shown)",
+            "price": 6607.45,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-9/",
+            "note": ""
+          }
+        ]
+      }
+    },
+    "LTO-8": {
+      "nativeTB": 12,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Amazon.nl",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 62.65,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B077LK25K9",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.be (via Kieskeurig.be)",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 65.9,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.be/server/product/4521136-quantum-ultrium-8-12000gb-lto",
+            "note": "ships in 3-4 days"
+          },
+          {
+            "seller": "Amazon.nl marketplace: Dig 'n Delve",
+            "sku": "LTO FB UL-8 12.0T J (Fujifilm)",
+            "price": 71.83,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B07X93Z23X",
+            "note": "in stock"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "01PL041 (IBM)",
+            "price": 73.28,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/ibm-lto-8-ultrium-data-cartridge-12tb-178457",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 73.28,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/quantum-lto-8-ultrium-data-tape-cartridge-178485",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "16551221 (Fujifilm)",
+            "price": 74.01,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/fuifilm-lto-ultrium-8-data-cartridge-241291",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Proshop.nl (via Beslist)",
+            "sku": "Q2078A (HPE)",
+            "price": 74.81,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/hpe-lto-ultrium-8-data-cartridge-12tb-30tb-capaciteit-betrouwbaar-hoge-prestaties/6/0190017219097/",
+            "note": "ships in 3 days, +4.99 shipping"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "16551221 (Fujifilm)",
+            "price": 77.0,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/fuji-lto-ultrium-8-12tb-30tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "01PL041 (IBM)",
+            "price": 78.0,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/ibm-lto-ultrium-8-12tb-30tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 78.0,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/quantum-lto-ultrium-8-12tb-30tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "PrintAbout.nl (via Kieskeurig)",
+            "sku": "16551221 (Fujifilm)",
+            "price": 79.5,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/tapestations/product/52199561-fujifilm-data-cartridge-lto-ultrium-8",
+            "note": "ships in 3-4 days, +4.95 shipping"
+          },
+          {
+            "seller": "PrintAbout.be (via Kieskeurig.be)",
+            "sku": "16551221 (Fujifilm)",
+            "price": 79.5,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.be/tapestations/product/52199561-fujifilm-data-cartridge-lto-ultrium-8",
+            "note": "ships in 3-4 days, +4.95 shipping"
+          },
+          {
+            "seller": "123inkt.nl",
+            "sku": "16551221 (Fujifilm)",
+            "price": 79.5,
+            "vatIncluded": true,
+            "url": "https://www.123inkt.nl/Fujifilm-LTO8-Ultrium-data-cartridge-16456574C-16551221-i112153.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "bol.com marketplace (via Kieskeurig)",
+            "sku": "16551221 (Fujifilm)",
+            "price": 79.75,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/tapestations/product/52199561-fujifilm-data-cartridge-lto-ultrium-8",
+            "note": "ships in 1-2 days"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 80.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-quantum-lto8-ultrium-8-12-tb-30-tb.html",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Dustin.be",
+            "sku": "01PL041 (IBM)",
+            "price": 80.32,
+            "vatIncluded": true,
+            "url": "https://www.dustin.be/nl/tape-drives/ibm/lto-8-art-01pl041-num-180140042/",
+            "note": "in stock"
+          },
+          {
+            "seller": "bol.com marketplace (via Kieskeurig)",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 81.25,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/server/product/4521136-quantum-ultrium-8-12000gb-lto",
+            "note": "ships in 1-2 days"
+          },
+          {
+            "seller": "bol.com marketplace (via Kieskeurig)",
+            "sku": "01PL041 (IBM)",
+            "price": 81.5,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/server/product/12579852-ibm-lto-ultrium-8",
+            "note": "ships in 1-2 days"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 81.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/Quantum/LTO-8-Medium-12-TB-tape/html/product/1432183",
+            "note": "backorder"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "01PL041 (IBM)",
+            "price": 81.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/IBM/LTO-Ultrium-8-tape/html/product/1482832",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Amazon.be (via Kieskeurig.be)",
+            "sku": "01PL041 (IBM)",
+            "price": 81.9,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.be/server/product/12579852-ibm-lto-ultrium-8",
+            "note": "ships in 3-4 days"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "01PL041 (IBM)",
+            "price": 82.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-ultrium-8-12-tb-30-tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl",
+            "sku": "01PL041 (IBM)",
+            "price": 82.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B079YLWNZ6",
+            "note": "limited stock"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "Q2078A (HPE)",
+            "price": 82.62,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/hpe-lto-8-ultrium-rw-data-cartridge-135230",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "Q2078A (HPE)",
+            "price": 82.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/Hewlett-Packard-Enterprise/LTO-8-Ultrium-tape/html/product/1414678",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Conrad.be (via Kieskeurig.be)",
+            "sku": "Q2078A (HPE)",
+            "price": 83.99,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.be/toner-en-inkjetcartridges/product/50220877-hp-lto-ultrium-8-tape-12tb-30tb-q2078a",
+            "note": "ships in 6+ days"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 84.69,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-8-ultrium-tape--4220848--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "Q2078A (HPE)",
+            "price": 85.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-hp-q2078a-lto8-30-tb-ultrium-8-tape-cartridge.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 85.9,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-8-ultrium-tape--4220848--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "Q2078A (HPE)",
+            "price": 86.25,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/hpe-lto-ultrium-8-tape-12tb-30tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Conrad.nl (via Kieskeurig)",
+            "sku": "Q2078A (HPE)",
+            "price": 87.99,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/toner-en-inkjetcartridges/product/50220877-hp-lto-ultrium-8-tape-12tb-30tb-q2078a",
+            "note": "ships in 6+ days, +5.95 shipping"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "Q2078A (HPE)",
+            "price": 88.32,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-8-ultrium-tape--4220530--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "Q2078A (HPE)",
+            "price": 94.37,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-8-ultrium-tape--4220530--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "bol.com marketplace (via Kieskeurig)",
+            "sku": "Q2078A (HPE)",
+            "price": 98.0,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/toner-en-inkjetcartridges/product/50220877-hp-lto-ultrium-8-tape-12tb-30tb-q2078a",
+            "note": "ships in 1 day"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "Q2078A (HPE)",
+            "price": 98.89,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/Q2078A",
+            "note": "in stock"
+          },
+          {
+            "seller": "bol.com (via Beslist)",
+            "sku": "Q2078A (HPE)",
+            "price": 99.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/hpe-lto-ultrium-8-data-cartridge-12tb-30tb-capaciteit-betrouwbaar-hoge-prestaties/6/0190017219097/",
+            "note": "sale, ships in 1 day"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "16551221 (Fujifilm)",
+            "price": 135.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/13445886/fujifilm_lto8_without_label_12-30tb_960m/16551221/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "440-BBIU (Dell)",
+            "price": 148.21,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/440-BBIU",
+            "note": "backorder"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "Q2078A (HPE)",
+            "price": 149.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/13725728/hp_lto-8_ultrium_30tb_rw_data_cartridge_lt/Q2078A/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "MR-L8MQN-01 (Quantum)",
+            "price": 155.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/12062451/quantum_lto_ultrium_8_media_cartridge/MR-L8MQN-01/",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "440-BBIQ (Dell)",
+            "price": 695.06,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/440-BBIQ",
+            "note": "5-pack, 139.01 per unit, backorder"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "16551221-1 (Fujifilm)",
+            "price": 770.0,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/fuji-lto-ultrium-8-10-pack-12tb-30tb/",
+            "note": "10-pack, 77.00 per unit, ships in 1-3 days"
+          },
+          {
+            "seller": "Yorcom.nl",
+            "sku": "Q2078AN (HPE)",
+            "price": 1249.0,
+            "vatIncluded": true,
+            "url": "https://www.yorcom.nl/artikel/hp-lto-8-ultrium-30tb-rw-20-pack/STORHPQ2078/",
+            "note": "20-pack, 62.45 per unit, in stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L8MQN-20 (Quantum)",
+            "price": 1464.1,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-8-ultrium-tape-library-pack--4222266--p",
+            "note": "20-pack, 73.20 per unit, backorder"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "Q2078AN (HPE)",
+            "price": 1709.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/data-cart-lto-8-ultrium-30tb-rw.html",
+            "note": "20-pack, 85.45 per unit, limited stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "Q2078AH (HPE)",
+            "price": 1730.3,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-8-ultrium-tape-ecopack--4220571--p",
+            "note": "20-pack, 86.52 per unit, limited stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "Q2078AH (HPE)",
+            "price": 1751.33,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/Q2078AH",
+            "note": "20-pack, 87.57 per unit, limited stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "Q2078AH (HPE)",
+            "price": 1754.5,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-8-ultrium-tape-ecopack--4220571--p",
+            "note": "20-pack, 87.72 per unit, backorder"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Q2078AN (HPE)",
+            "price": 1799.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-ultrium-10/",
+            "note": "20-pack, 89.95 per unit"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L8MQN-20 (Quantum)",
+            "price": 2019.49,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-8-ultrium-tape-library-pack--4222266--p",
+            "note": "20-pack, 100.97 per unit, backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "Q2078AN (HPE)",
+            "price": 2066.33,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/Q2078AN",
+            "note": "20-pack, 103.32 per unit, limited stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "Q2078AN (HPE)",
+            "price": 2859.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/18118734/hpe_non_custom_labeled_library_pack_-_tijd/Q2078AN/",
+            "note": "20-pack, 142.95 per unit, limited stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "Q2078AH (HPE)",
+            "price": 2959.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/18703976/hp_q2078ah_dc_ultrium_8/Q2078AH/",
+            "note": "20-pack, 147.95 per unit, limited stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 95.58,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-8-ultrium-tape-worm--4222268--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "01PL042 (IBM)",
+            "price": 111.31,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/ibm-lto-8-ultrium-tape-worm--4232660--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Quantum LTO-8 WORM (no PN shown)",
+            "price": 111.71,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-worm/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "Q2078W (HPE)",
+            "price": 114.94,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-8-ultrium-tape-worm--4220598--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 114.94,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-8-ultrium-tape-worm--4222268--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Fujifilm LTO-8 WORM (no PN shown)",
+            "price": 119.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-worm/",
+            "note": ""
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "IBM LTO-8 WORM (no PN shown)",
+            "price": 125.11,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-worm/",
+            "note": ""
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Quantum LTO-8 WORM (no PN shown)",
+            "price": 129.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-ultrium-10/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "Q2078W (HPE)",
+            "price": 135.51,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-8-ultrium-tape-worm--4220598--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "Q2078W (HPE)",
+            "price": 154.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/data-cart-lto-8-ultrium-30tb-worm.html",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: itstoreit",
+            "sku": "MR-L8MQN-02 (Quantum)",
+            "price": 171.99,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B077LS2Z2C",
+            "note": "ships in 7-8 days"
+          },
+          {
+            "seller": "Amazon.nl marketplace: EFI Global Store NL",
+            "sku": "Q2078W (HPE)",
+            "price": 183.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B078KGVM84",
+            "note": "ships in 2-3 days"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "Q2078W (HPE)",
+            "price": 219.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/12081923/hpe_data_cartlto-8_ultrium_30tb_worm/Q2078W/",
+            "note": "limited stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L82AN-EY (Quantum)",
+            "price": 4550.81,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-8-hh-sas-internal-drive--4214235--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 5629.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/quantum-lto-8-tape-drive-30000-gb-betrouwbare-gegevensbescherming/6/0768268044647/",
+            "note": "ships in 5-6 days"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "BC022A (HPE)",
+            "price": 5636.05,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/BC022A",
+            "note": "backorder"
+          },
+          {
+            "seller": "Amazon.nl marketplace: AIMTECH",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 7431.6,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B078BDBYKS",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "TC-L82AN-EY (Quantum)",
+            "price": 8000.52,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-8-hh-sas-internal-drive--4214235--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 8046.5,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-8-hh-sas-internal-drive--4213704--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Kaufland.nl marketplace (via Beslist)",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 8316.37,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/quantum-lto-8-tape-drive-30000-gb-betrouwbare-gegevensbescherming/6/0768268044647/",
+            "note": "ships in 8+ days, +11.50 shipping"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L82AN-BR (Quantum)",
+            "price": 8555.91,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-8-hh-sas-internal-drive--4213704--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "BC022A (HPE)",
+            "price": 8559.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/hpe-storeever-lto-8-ultrium-30750-interne-tape-drive-back-up-oplossingen/6/0190017217734/",
+            "note": "ships in 8+ days"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "BC024A (HPE)",
+            "price": 8710.02,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/BC024A",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L82AN-FZ (Quantum)",
+            "price": 9105.25,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-8-hh-sas-int-drive-plus-hba--4951982--p",
+            "note": "backorder, includes SAS HBA"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "BC022A (HPE)",
+            "price": 9354.51,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-storeever-30750-lto-8-tape-drive--4237976--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "BC022A (HPE)",
+            "price": 9498.5,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-storeever-30750-lto-8-tape-drive--4237976--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "TC-L82AN-FZ (Quantum)",
+            "price": 10033.32,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-8-hh-sas-int-drive-plus-hba--4951982--p",
+            "note": "backorder, includes SAS HBA"
+          },
+          {
+            "seller": "Kaufland.nl marketplace (via Beslist)",
+            "sku": "BC022A (HPE)",
+            "price": 11555.84,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/hpe-storeever-lto-8-ultrium-30750-interne-tape-drive-back-up-oplossingen/6/0190017217734/",
+            "note": "ships in 8+ days"
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L82BN-FZ (Quantum)",
+            "price": 5526.07,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-8-hh-sas-ext-drive-plus-hba--4951984--p",
+            "note": "backorder, includes SAS HBA"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 7719.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/quantum-lto-8-td-halve-hoogte-tafelblad-back-up-oplossingen/6/0768268044593/",
+            "note": "ships in 8+ days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYSAS-DS1L8HH1-BR (Symply)",
+            "price": 7742.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplylto-desktop-sas-hh-lto-8/",
+            "note": "ships in 3-5 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYSAS-DS2L8H2B-CR (Symply)",
+            "price": 8105.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplylto-xth-desktop-sas-hh-lto-8/",
+            "note": "ships in 3-5 days"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 8620.04,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-8-hh-sas-external-drive--4214290--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 8620.04,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-8-hh-sas-external-drive--4214290--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE StoreEver LTO-8 30750 external (no PN shown)",
+            "price": 9149.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-9/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "6160S8E (IBM TS2280, listed as Lenovo)",
+            "price": 9372.66,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/lenovo-ts2280-tape-drive-lto-8--4285685--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "6160S8E (IBM TS2280, listed as Lenovo)",
+            "price": 9393.23,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/lenovo-ts2280-tape-drive-lto-8--4285685--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Quantum LTO-8 HH tabletop + HBA (no PN shown)",
+            "price": 10119.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-tape-drive/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "P84141-B25 (HPE)",
+            "price": 10337.03,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-8-ultrium-external-tape-drive--4947218--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Kaufland.nl marketplace (via Beslist)",
+            "sku": "TC-L82BN-AR (Quantum)",
+            "price": 10434.65,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/quantum-lto-8-td-halve-hoogte-tafelblad-back-up-oplossingen/6/0768268044593/",
+            "note": "ships in 6-8 days"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE LTO-8 30750 external (no PN shown)",
+            "price": 10549.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-ultrium-10/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "P84141-B25 (HPE)",
+            "price": 10845.23,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-8-ultrium-external-tape-drive--4947218--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "BC023A (HPE)",
+            "price": 12391.2,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/BC023A",
+            "note": "limited stock"
+          }
+        ]
+      }
+    },
+    "LTO-9": {
+      "nativeTB": 18,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Amazon.nl",
+            "sku": "Q2079A (HPE)",
+            "price": 85.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B09HQXKLPP",
+            "note": "in stock"
+          },
+          {
+            "seller": "bol.com marketplace (via Kieskeurig)",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 85.0,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/lege-media/product/52135386-quantum-mr-l9mqn-01-back-up-opslagmedium-lege-gegevenscartridge-18-tb-lto-126-cm",
+            "note": "ships in 5-6 days"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 90.1,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/quantum-lto-ultrium-9-data-cartridge-18tb-45tb/6/0768268045927/",
+            "note": "ships in 2 days"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 90.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/Quantum/LTO9-Medium-45-TB-tape/html/product/1794073",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Alternate.nl",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 90.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.nl/Quantum/LTO9-Medium-45-TB-tape/html/product/1794073",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 91.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto9-mr-l9mqn-01-18tb-45tb-ultrium-lto-tape.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE LTO-9 cartridge (no PN shown)",
+            "price": 92.61,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-ultrium-10/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 96.79,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-9-ultrium-tape--4606356--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl",
+            "sku": "02XW568 (IBM)",
+            "price": 98.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B09HTNSCVK",
+            "note": ""
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "02XW568 (IBM)",
+            "price": 98.43,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/ibm-lto-9-ultrium-data-cartridge-with-barium-ferri-221383",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 98.43,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/quantum-lto-9-ultrium-data-tape-cartridge-with-bar-221385",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "16659047 (Fujifilm)",
+            "price": 98.86,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/fuifilm-lto-ultrium-9-data-cartridge-221384",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "Q2079A (HPE)",
+            "price": 99.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-hp-q2079a-lto9-18tb-45tb-ultrium-9-tape-cartri.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "PrintAbout.nl (via Kieskeurig)",
+            "sku": "16659047 (Fujifilm)",
+            "price": 99.5,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/tapestations/product/52200201-fujifilm-data-cartridge-fujifilm-lto9-ultrium",
+            "note": "ships in 1 day, +4.95 shipping"
+          },
+          {
+            "seller": "PrintAbout.be (via Kieskeurig.be)",
+            "sku": "16659047 (Fujifilm)",
+            "price": 99.5,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.be/tapestations/product/52200201-fujifilm-data-cartridge-fujifilm-lto9-ultrium",
+            "note": "ships in 1 day, +4.95 shipping"
+          },
+          {
+            "seller": "123inkt.nl",
+            "sku": "16659047 (Fujifilm)",
+            "price": 99.5,
+            "vatIncluded": true,
+            "url": "https://www.123inkt.nl/FujiFilm-LTO9-Ultrium-Data-Cartridge-16551221C-16659047-i112154.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 101.63,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-9-ultrium-tape--4606356--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "Q2079A (HPE)",
+            "price": 102.02,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/hpe-lto-9-ultrium-45tb-rw-data-cartridge-221386",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "16659047 (Fujifilm)",
+            "price": 102.25,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/fuji-lto-ultrium-9-18tb-45tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "02XW568 (IBM)",
+            "price": 103.75,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/ibm-lto-ultrium-9-18tb-45tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 103.75,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/quantum-lto-ultrium-9-18tb-45tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "bol.com marketplace (via Kieskeurig)",
+            "sku": "02XW568 (IBM)",
+            "price": 103.75,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/server/product/52767429-ibm-lto-ultrium-9-18-tb-45-tb-ongelabeld-groen",
+            "note": "ships in 1-2 days"
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "Q2079A (HPE)",
+            "price": 103.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/Hewlett-Packard-Enterprise/LTO9-Medium-45-TB-tape/html/product/1507720",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "Q2079A (HPE)",
+            "price": 105.25,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/hpe-lto-ultrium-9-tape-18tb-45tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Amazon.be (via Kieskeurig.be)",
+            "sku": "02XW568 (IBM)",
+            "price": 105.67,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.be/server/product/52767429-ibm-lto-ultrium-9-18-tb-45-tb-ongelabeld-groen",
+            "note": ""
+          },
+          {
+            "seller": "Alternate.be",
+            "sku": "02XW568 (IBM)",
+            "price": 107.9,
+            "vatIncluded": true,
+            "url": "https://www.alternate.be/IBM/LTO9-Medium-45-TB-tape/html/product/1794064",
+            "note": "ships in 5 days"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "02XW568 (IBM)",
+            "price": 109.98,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/ibm-lto-ultrium-9-data-cartridge-18tb-45tb-02xw568/6/0883436699426/",
+            "note": "ships in 1-2 days"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "02XW568 (IBM)",
+            "price": 110.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-ultrium-9-18tb-45tb.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "02XW568 (IBM)",
+            "price": 110.1,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/ibm-lto-9-ultrium-tape--4661956--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "16659047 (Fujifilm)",
+            "price": 110.72,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/fujifilm-lto9-ultrium-data-cartridge/6/4547410441239/",
+            "note": "ships in 8+ days"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "Q2079A (HPE)",
+            "price": 111.31,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-9-ultrium-tape--4587600--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "Q2079A (HPE)",
+            "price": 112.52,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-9-ultrium-tape--4587600--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "Q2079A (HPE)",
+            "price": 113.49,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/Q2079A",
+            "note": "in stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "Q2079A (HPE)",
+            "price": 179.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/17540554/hpe_lto-9_ultrium_45tb_rw_data_cartridge/Q2079A/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "MR-L9MQN-01 (Quantum)",
+            "price": 205.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/18799899/quantum_mr-l9mqn-01_dc_ultrium_9/MR-L9MQN-01/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "02XW568 (IBM)",
+            "price": 245.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/17609624/ibm_media_tape_lto-9/02XW568/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Dustin.be",
+            "sku": "440-BBJU (Dell)",
+            "price": 273.25,
+            "vatIncluded": true,
+            "url": "https://www.dustin.be/nl/tape-drives/dell/lto-9-art-440-bbju-num-182643178/",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "440-BBJV (Dell)",
+            "price": 773.29,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/440-BBJV",
+            "note": "5-pack, 154.66 per unit, in stock"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "16659047-1 (Fujifilm)",
+            "price": 1022.5,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/fuji-lto-ultrium-9-10-pack-18tb-45tb/",
+            "note": "10-pack, 102.25 per unit, ships in 1-3 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "02XW568-1 (IBM)",
+            "price": 1037.5,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/ibm-lto-ultrium-9-10pack-18tb-45tb/",
+            "note": "10-pack, 103.75 per unit, ships in 1-3 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "MR-L9MQN-01-1 (Quantum)",
+            "price": 1037.5,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/quantum-lto-ultrium-9-10pack-18tb-45tb/",
+            "note": "10-pack, 103.75 per unit, ships in 1-3 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "Q2079A-1 (HPE)",
+            "price": 1052.49,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/hpe-lto-ultrium-9-tape-10pack-18tb-45tb/",
+            "note": "10-pack, 105.25 per unit, ships in 1-3 days"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L9MQN-20 (Quantum)",
+            "price": 1883.97,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-9-ultrium-tape-20-pack--4606396--p",
+            "note": "20-pack, 94.20 per unit, limited stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "Q2079AH (HPE)",
+            "price": 1893.65,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-9-ultrium-tape-ecopack--4587013--p",
+            "note": "20-pack, 94.68 per unit, in stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "Q2079AH (HPE)",
+            "price": 2129.6,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-9-ultrium-tape-ecopack--4587013--p",
+            "note": "20-pack, 106.48 per unit, backorder"
+          },
+          {
+            "seller": "Amazon.nl marketplace: itstoreit",
+            "sku": "MR-L9MQN-20 (Quantum)",
+            "price": 2380.99,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B0C47NQ8S8",
+            "note": "20-pack, 119.05 per unit, ships in 7-8 days"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "Q2079AN (HPE)",
+            "price": 2383.3,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/Q2079AN",
+            "note": "20-pack, 119.17 per unit, limited stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE LTO-9 20-pack (no PN shown)",
+            "price": 2494.54,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-ultrium-10/",
+            "note": "20-pack, 124.73 per unit"
+          },
+          {
+            "seller": "Amazon.nl marketplace: itstoreit",
+            "sku": "HPE LTO-9 20-pack (no PN shown)",
+            "price": 2577.99,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B09H5B9XKQ",
+            "note": "20-pack, 128.90 per unit, ships in 7-8 days"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "Q2079AN (HPE)",
+            "price": 3485.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/17540562/hpe_lto-9_ultrium_45tb_rw_non_custom_pac/Q2079AN/",
+            "note": "20-pack, 174.25 per unit, limited stock"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE LTO-9 WORM (no PN shown)",
+            "price": 139.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-worm/",
+            "note": ""
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE LTO-9 WORM (no PN shown)",
+            "price": 159.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-worm/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "Q2079W (HPE)",
+            "price": 166.97,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-9-ultrium-tape-worm--4587017--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "Q2079W (HPE)",
+            "price": 174.23,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-9-ultrium-tape-worm--4587017--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Amazon.nl marketplace: officeservicesrl",
+            "sku": "Q2079W (HPE)",
+            "price": 206.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B09H58JXN5",
+            "note": "ships in 3-4 days"
+          },
+          {
+            "seller": "Amazon.nl marketplace: A&O-Projekt-GmbH",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 212.0,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B09HTLGP1V",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "Q2079W (HPE)",
+            "price": 255.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/18703981/hp_q2079w_dc_ultrium_9/Q2079W/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 315.8,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-9-ultrium-worm-tape--4606405--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L9MQN-02 (Quantum)",
+            "price": 317.01,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-9-ultrium-worm-tape--4606405--p",
+            "note": "in stock"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L92AN-EY (Quantum)",
+            "price": 4912.6,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-9-hh-sas-internal-drive--4606500--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L92AN-FZ (Quantum)",
+            "price": 5567.21,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-9-hh-sas-internal-drive--4606509--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 8941.9,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-9-hh-sas-internal-drive--4606445--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 9077.05,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/quantum-lto9-bandstation-hh-int-bare-lto-18000-gb-patroon/6/0768268045712/",
+            "note": "ships in 8+ days"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 9208.1,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-9-hh-sas-internal-drive--4606445--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE StoreEver LTO-9 45000 internal (no PN shown)",
+            "price": 11929.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-9/",
+            "note": ""
+          },
+          {
+            "seller": "Kaufland.nl marketplace (via Beslist)",
+            "sku": "TC-L92AN-BR (Quantum)",
+            "price": 13600.73,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/quantum-lto9-bandstation-hh-int-bare-lto-18000-gb-patroon/6/0768268045712/",
+            "note": "ships in 6-8 days"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "BC040A (HPE)",
+            "price": 17002.92,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-storeever-45000-lto-9-tape-drive--4644476--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "BC040A (HPE)",
+            "price": 17260.65,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-storeever-45000-lto-9-tape-drive--4644476--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "BC040A (HPE)",
+            "price": 17346.52,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/BC040A",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Kaufland.nl marketplace (via Beslist)",
+            "sku": "BC040A (HPE)",
+            "price": 18791.81,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-9/",
+            "note": ""
+          }
+        ]
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L92BN-FZ (Quantum)",
+            "price": 6322.25,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-9-hh-sas-external-drive--4903637--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Senetic.nl",
+            "sku": "BC042A (HPE)",
+            "price": 6684.61,
+            "vatIncluded": true,
+            "url": "https://www.senetic.nl/product/BC042A",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 9143.97,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-9-hh-sas-external-drive--4610492--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYSAS-DS2L9H1B-CR (Symply)",
+            "price": 11009.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplylto-desktop-sas-hh-lto-9/",
+            "note": "ships in 3-5 days"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYSAS-DS2L9H2B-CR (Symply)",
+            "price": 11493.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplylto-xth-desktop-sas-hh-lto-9/",
+            "note": "ships in 3-5 days"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 12407.34,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-9-hh-sas-external-drive--4610492--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Kaufland.nl marketplace (via Beslist)",
+            "sku": "HPE LTO-9 45000 Ext Tape Drv (no PN shown)",
+            "price": 12839.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-9/",
+            "note": ""
+          },
+          {
+            "seller": "Dustin.be",
+            "sku": "P84142-B25 (HPE)",
+            "price": 14140.97,
+            "vatIncluded": true,
+            "url": "https://www.dustin.be/nl/tape-drives/hpe/storage-lto-9-ultrium-external-tape-drive-5x-lto-9-45tb-data-cartridges-art-p84142-b25-num-181338198/",
+            "note": "backorder, includes 5 LTO-9 cartridges"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "P84142-B25 (HPE)",
+            "price": 14411.1,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-9-ultrium-external-tape-drive--4947224--p",
+            "note": "backorder, includes 5 LTO-9 cartridges"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE LTO-9 external + 5 cartridges (no PN shown)",
+            "price": 14549.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-tape-drive/",
+            "note": ""
+          },
+          {
+            "seller": "Amazon.nl marketplace: Solution 4YOU",
+            "sku": "TC-L92BN-AR (Quantum)",
+            "price": 15192.62,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B0BNH8FRR8",
+            "note": "limited stock, includes 1 LTO-9 cartridge"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "P84142-B25 (HPE)",
+            "price": 15642.88,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-9-ultrium-external-tape-drive--4947224--p",
+            "note": "backorder, includes 5 LTO-9 cartridges"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYSAS-DS2L9F1B-CR (Symply)",
+            "price": 17059.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplylto-xtf-desktop-sas-fh-lto-9/",
+            "note": "ships in 3-5 days, full-height"
+          }
+        ]
+      }
+    },
+    "LTO-10": {
+      "nativeTB": 30,
+      "cartridge": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "Q2080A (HPE)",
+            "price": 264.98,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-10-ultrium-tape--4920908--p",
+            "note": "in stock"
+          },
+          {
+            "seller": "DectDirect.nl",
+            "sku": "Q2080A (HPE)",
+            "price": 272.0,
+            "vatIncluded": true,
+            "url": "https://www.dectdirect.nl/nl/lto-10-ultrium-75tb-rw-data-cartridge.html",
+            "note": "in stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Quantum LTO-10 30TB (no PN shown)",
+            "price": 279.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-10/",
+            "note": ""
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "HPE LTO-10 30TB (no PN shown)",
+            "price": 289.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-10/",
+            "note": ""
+          },
+          {
+            "seller": "bol.com marketplace (via Kieskeurig)",
+            "sku": "Q2080A (HPE)",
+            "price": 291.0,
+            "vatIncluded": true,
+            "url": "https://www.kieskeurig.nl/server/product/53348347-hpe-storage-lto-10-ultrium-75tb-rw-data-cartridge-30-tb-126-cm",
+            "note": "ships in 6+ days"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "03PL170 (IBM)",
+            "price": 293.12,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/ibm-lto-10-ultrium-data-cartridge-30tb-srfe-375571",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 300.3,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/quantum-lto-10-ultrium-data-tape-cartridge-30tb-na-375602",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "DigiNet (shop.diginet.pro)",
+            "sku": "Q2080A (HPE)",
+            "price": 300.3,
+            "vatIncluded": true,
+            "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/hpe-lto-10-ultrium-75tb-rw-data-cartridge-375605",
+            "note": "sale, backorder"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "03PL170 (IBM)",
+            "price": 305.75,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/ibm-lto-ultrium-10-30tb-75tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Q2080A (HPE)",
+            "price": 308.46,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/hpe-lto-ultrium-10-back-up-data-tape-30tb-75tb-q2080a/6/0190017789354/",
+            "note": "ships in 8+ days"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "16944686 (Fujifilm)",
+            "price": 309.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/fuji-lto-ultrium-10-back-up-data-tape-30tb-75tb-16944686/6/4547410556902/",
+            "note": ""
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "Q2080A (HPE)",
+            "price": 310.24,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/hpe-lto-ultrium-10-tape-30tb-75tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "Q2080A (HPE)",
+            "price": 310.96,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-10-ultrium-tape--4920908--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 316.25,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/quantum-lto-ultrium-10-30tb-75tb/",
+            "note": "ships in 1-3 days"
+          },
+          {
+            "seller": "bol.com (via Beslist)",
+            "sku": "16944686 (Fujifilm)",
+            "price": 325.25,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/p/fuji-lto-ultrium-10-back-up-data-tape-30tb-75tb-16944686/6/4547410556902/",
+            "note": "ships in 3-6 days"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "IBM LTO-10 30TB (no PN shown)",
+            "price": 331.53,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-10/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 336.37,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-10-ultrium-tape--4918273--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Amazon.nl marketplace: Gezella",
+            "sku": "03PL170 (IBM)",
+            "price": 339.03,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B0GMR44KRT",
+            "note": "in stock"
+          },
+          {
+            "seller": "Amazon.nl marketplace: Gezella",
+            "sku": "Q2080A (HPE)",
+            "price": 349.5,
+            "vatIncluded": true,
+            "url": "https://www.amazon.nl/dp/B0GMR4XGVS",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L10MQN-01 (Quantum)",
+            "price": 408.97,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-10-ultrium-tape--4918273--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "03PL170 (IBM)",
+            "price": 515.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/20219813/ibm_03pl170_dc_ultrium_10/03PL170/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "Q2080A (HPE)",
+            "price": 549.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/20215049/hpe_lto-10_ultrium_75tb_rw_data_cartridge/Q2080A/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Aces Direct (acesdirect.nl)",
+            "sku": "16944686 (Fujifilm)",
+            "price": 565.0,
+            "vatIncluded": false,
+            "url": "https://www.acesdirect.nl/product/20221965/fujifilm_16944686_ultrium_10/16944686/",
+            "note": "in stock"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "16944686-1 (Fujifilm)",
+            "price": 3252.5,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/fuji-lto-ultrium-10-10-pack-30tb-75tb/",
+            "note": "10-pack, 325.25 per unit, ships in 1-3 days"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L10MQN-20 (Quantum)",
+            "price": 5691.84,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-10-ultrium-tape-20-pack--4918276--p",
+            "note": "20-pack, 284.59 per unit, backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L10MQN-20 (Quantum)",
+            "price": 5716.04,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-10-ultrium-tape-20-pack--4918276--p",
+            "note": "20-pack, 285.80 per unit, backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "Q2080AH (HPE)",
+            "price": 6115.34,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-10-ultrium-tape-library-pack--4920913--p",
+            "note": "20-pack, 305.77 per unit, backorder"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "Q2080AH (HPE)",
+            "price": 7285.41,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-10-ultrium-tape-library-pack--4920913--p",
+            "note": "20-pack, 364.27 per unit, backorder"
+          }
+        ]
+      },
+      "worm": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-L10MQN-02 (Quantum)",
+            "price": 429.54,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-10-ultrium-worm-tape--4918279--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-L10MQN-02 (Quantum)",
+            "price": 486.41,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-10-ultrium-worm-tape--4918279--p",
+            "note": "limited stock"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Quantum LTO-10 WORM (no PN shown)",
+            "price": 519.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-10/",
+            "note": ""
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "Q2080W (HPE)",
+            "price": 529.97,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/hpe-lto-10-ultrium-tape-worm--4920918--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle NL",
+            "sku": "Q2080W (HPE)",
+            "price": 531.18,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/hpe-lto-10-ultrium-tape-worm--4920918--p",
+            "note": "backorder"
+          }
+        ]
+      },
+      "driveInternal": {
+        "datapoints": []
+      },
+      "driveExternal": {
+        "datapoints": [
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYSAS-DS2LAF1B-CT (Symply)",
+            "price": 25166.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplypro-xtf-sas-desktop-lto-10/",
+            "note": "ships in 3-5 days, full-height"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYPRO-DT3LAF1B-AT (Symply)",
+            "price": 26376.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplypro-xtf-thunderbolt-desktop-lto-10/",
+            "note": "ships in 3-8 days, full-height, Thunderbolt 3 and SAS"
+          },
+          {
+            "seller": "Tapes.nl",
+            "sku": "SYDIT-DT3LAF1B-AT (Symply)",
+            "price": 26739.79,
+            "vatIncluded": true,
+            "url": "https://tapes.nl/product/symplydit-xtf-thunderbolt-sasfh-desktop-lto-10/",
+            "note": "ships in 3-8 days, full-height, Thunderbolt 3 and SAS"
+          }
+        ]
+      },
+      "cartridge40TB": {
+        "datapoints": [
+          {
+            "seller": "Bechtle NL",
+            "sku": "MR-A10MQN-01 (Quantum)",
+            "price": 597.73,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/nl/shop/quantum-lto-10-ultrium-tape-40tb--6013477--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Bechtle BE",
+            "sku": "MR-A10MQN-01 (Quantum)",
+            "price": 649.76,
+            "vatIncluded": true,
+            "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-10-ultrium-tape-40tb--6013477--p",
+            "note": "backorder"
+          },
+          {
+            "seller": "Galaxus.nl (via Beslist)",
+            "sku": "Fujifilm LTO-10 40TB (no PN shown)",
+            "price": 729.0,
+            "vatIncluded": true,
+            "url": "https://www.beslist.nl/products/r/lto-10/",
+            "note": ""
+          }
+        ]
+      }
+    }
+  },
+  "sellersTried": [
+    {
+      "seller": "Alternate.nl",
+      "url": "https://www.alternate.nl/listing.xhtml?q=lto",
+      "result": "prices found"
+    },
+    {
+      "seller": "Alternate.be",
+      "url": "https://www.alternate.be/listing.xhtml?q=lto",
+      "result": "prices found"
+    },
+    {
+      "seller": "Azerty.nl",
+      "url": "https://azerty.nl/zoeken?q=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Informatique.nl",
+      "url": "https://www.informatique.nl/zoeken/?q=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Megekko.nl",
+      "url": "https://www.megekko.nl/zoeken?q=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Senetic.nl",
+      "url": "https://www.senetic.nl/category/back-up-opslagmedia-14933/",
+      "result": "prices found"
+    },
+    {
+      "seller": "Paradigit.nl",
+      "url": "https://www.paradigit.nl/hpe-lto-6-ultrium-6-25tb-mp-worm-data-cartridge/20211330/product",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "Centralpoint.nl (now Dustin.nl)",
+      "url": "https://www.centralpoint.nl/zoeken/?q=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Dustin.be",
+      "url": "https://www.dustin.be/nl/kopen/tape-drives/",
+      "result": "prices found"
+    },
+    {
+      "seller": "Bechtle NL",
+      "url": "https://www.bechtle.com/nl/shop/hardware/components/opslagmedia--10002009--c",
+      "result": "prices found"
+    },
+    {
+      "seller": "Bechtle BE",
+      "url": "https://www.bechtle.com/be-nl/shop/hardware/components/opslagmedia--10002009--c",
+      "result": "prices found"
+    },
+    {
+      "seller": "ARP.nl",
+      "url": "https://www.arp.nl/shop/hpe-lto-9-ultrium-tape--4587600--p",
+      "result": "prices found"
+    },
+    {
+      "seller": "Tweakers Pricewatch",
+      "url": "https://tweakers.net/pricewatch/zoeken/?keyword=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Kieskeurig.nl",
+      "url": "https://www.kieskeurig.nl/search?q=lto-9",
+      "result": "prices found"
+    },
+    {
+      "seller": "Kieskeurig.be",
+      "url": "https://www.kieskeurig.be/search?q=lto-9",
+      "result": "prices found"
+    },
+    {
+      "seller": "Beslist.nl",
+      "url": "https://www.beslist.nl/products/r/lto-9/",
+      "result": "prices found"
+    },
+    {
+      "seller": "Tapes.nl",
+      "url": "https://tapes.nl/categorie/lto/lto-tape/",
+      "result": "prices found"
+    },
+    {
+      "seller": "DigiNet (shop.diginet.pro)",
+      "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/",
+      "result": "prices found"
+    },
+    {
+      "seller": "DectDirect.nl",
+      "url": "https://www.dectdirect.nl/nl/search/ultrium/",
+      "result": "prices found"
+    },
+    {
+      "seller": "Yorcom.nl",
+      "url": "https://www.yorcom.nl/zoeken/?q=lto",
+      "result": "prices found"
+    },
+    {
+      "seller": "123inkt.nl",
+      "url": "https://www.123inkt.nl/Opslagmedia/LTO-Ultrium-tapes-data-cartridges-p224513.html",
+      "result": "prices found"
+    },
+    {
+      "seller": "Amazon.nl",
+      "url": "https://www.amazon.nl/s?k=lto+ultrium+9",
+      "result": "prices found"
+    },
+    {
+      "seller": "Aces Direct",
+      "url": "https://www.acesdirect.nl/categorie/server_-_storage/data_tapes/",
+      "result": "prices found"
+    },
+    {
+      "seller": "bol.com",
+      "url": "https://www.bol.com/nl/nl/s/?searchtext=lto-9",
+      "result": "blocked"
+    },
+    {
+      "seller": "Galaxus.nl",
+      "url": "https://www.galaxus.nl/nl/search?q=lto%209",
+      "result": "blocked"
+    },
+    {
+      "seller": "Kaufland.nl",
+      "url": "https://www.kaufland.nl/s/?search_value=lto%209",
+      "result": "blocked"
+    },
+    {
+      "seller": "Conrad.nl",
+      "url": "https://www.conrad.nl/nl/search.html?search=lto",
+      "result": "blocked"
+    },
+    {
+      "seller": "PrintAbout.nl",
+      "url": "https://www.printabout.nl/accessoires/data-cartridges/1147475-fujifilm-lto-ultrium-8-data-cartridge/",
+      "result": "blocked"
+    },
+    {
+      "seller": "DiscountOffice.nl",
+      "url": "https://discountoffice.nl/g/ultrium-lto-tapes/",
+      "result": "blocked"
+    },
+    {
+      "seller": "Vocas.nl",
+      "url": "https://vocas.nl/symplylto-media-lto-9-pre-optimized-ultrium-data-cartridge-tape-18tb-native-45tb-compressed-ibm.html",
+      "result": "blocked"
+    },
+    {
+      "seller": "HPE Store NL",
+      "url": "https://buy.hpe.com/nl/en/storage/tape-storage/tape-drives-ultrium/hpe-storeever-lto%e2%80%919-ultrium-45000-external-tape-drive/p/bc042a",
+      "result": "blocked"
+    },
+    {
+      "seller": "Lenovo BE",
+      "url": "https://www.lenovo.com/be/nl/p/servers-storage/storage/storage-tape/ibm-ts2290-tape-drive/len22nl0012",
+      "result": "blocked"
+    },
+    {
+      "seller": "Coolblue.nl",
+      "url": "https://www.coolblue.nl/zoeken?query=lto-9",
+      "result": "no LTO products"
+    },
+    {
+      "seller": "Proshop.nl",
+      "url": "https://www.proshop.nl/?s=lto",
+      "result": "blocked"
+    }
+  ],
+  "marketNotes": [
+    {
+      "text": "Tweakers Pricewatch, Azerty, Informatique, Megekko, Dustin.nl (ex-Centralpoint), bol.com, Galaxus, Kaufland, Conrad, PrintAbout and Proshop block scripted access; their offers appear only where Kieskeurig or Beslist listed them, with the comparison URL.",
+      "url": "https://tweakers.net/pricewatch/zoeken/?keyword=lto-9"
+    },
+    {
+      "text": "Centralpoint.nl now redirects to Dustin.nl; Dustin.be (Belgium) still serves pages with embedded prices.",
+      "url": "https://www.dustin.be/nl/kopen/tape-drives/"
+    },
+    {
+      "text": "ARP.nl (Bechtle group) showed the same prices as Bechtle NL for the SKUs checked, so ARP is not listed as separate datapoints.",
+      "url": "https://www.arp.nl/shop/hpe-lto-9-ultrium-tape--4587600--p"
+    },
+    {
+      "text": "Bechtle BE and Bechtle NL price the same SKUs differently (e.g. Quantum MR-L10MQN-01: 408.97 BE vs 336.37 NL incl. VAT).",
+      "url": "https://www.bechtle.com/be-nl/shop/quantum-lto-10-ultrium-tape--4918273--p"
+    },
+    {
+      "text": "Aces Direct shows prices excl. VAT only and lists media at roughly double other Dutch sellers.",
+      "url": "https://www.acesdirect.nl/categorie/server_-_storage/data_tapes/"
+    },
+    {
+      "text": "Tapes.nl shows prices for Symply drives only; HPE and Quantum drives there are quote-only.",
+      "url": "https://tapes.nl/categorie/lto/lto-tapedrives/"
+    },
+    {
+      "text": "No LTO-10 half-height or internal drive with a public price was found in NL/BE; LTO-10 desktop units seen are full-height Symply models.",
+      "url": "https://tapes.nl/product/symplypro-xtf-sas-desktop-lto-10/"
+    },
+    {
+      "text": "HPE's newer external drive SKU P84142-B25 is sold as a bundle with 5 LTO-9 cartridges.",
+      "url": "https://www.dustin.be/nl/tape-drives/hpe/storage-lto-9-ultrium-external-tape-drive-5x-lto-9-45tb-data-cartridges-art-p84142-b25-num-181338198/"
+    },
+    {
+      "text": "LTO-10 40 TB cartridges seen only as Quantum MR-A10MQN-01 at Bechtle NL/BE (not in stock) and a Fujifilm 40TB listing at Galaxus.nl.",
+      "url": "https://www.bechtle.com/nl/shop/quantum-lto-10-ultrium-tape-40tb--6013477--p"
+    },
+    {
+      "text": "Many Bechtle drive prices are for items marked 'Levering zodra beschikbaar' (backorder); some Quantum kit SKUs (-EY) are priced far below the bare drive.",
+      "url": "https://www.bechtle.com/nl/shop/quantum-lto-9-hh-sas-internal-drive--4606500--p"
+    },
+    {
+      "text": "Senetic.nl carries HPE and Dell LTO media and HPE drives; it lists no Fujifilm, IBM or Quantum LTO-6 to LTO-10 cartridges.",
+      "url": "https://www.senetic.nl/category/back-up-opslagmedia-14933/"
+    },
+    {
+      "text": "Alternate.nl lists a single LTO cartridge (Quantum LTO-9); Alternate.be carries IBM, HPE and Quantum LTO-6 to LTO-9 media but no LTO drives.",
+      "url": "https://www.alternate.be/listing.xhtml?q=lto"
+    },
+    {
+      "text": "DigiNet shows a 5% web discount off suggested retail price, but its structured data marks all LTO media out of stock.",
+      "url": "https://shop.diginet.pro/en-us/editing/storage/tape-storage/"
+    },
+    {
+      "text": "TopTen Storage (Germany) ships LTO drives to NL/BE but quotes German 19% VAT, so it is excluded from this Dutch layer.",
+      "url": "https://www.toptenstorage.com/en/tape-storage/tape-drives/lto-drives/lto-9/overland-tandberg-02xw809-lto-9-hh-sas-standalone-internal-tape-drive-18tb-45tb_86076"
+    },
+    {
+      "text": "New LTO-6 drives appear only as Amazon.nl marketplace offers and one Galaxus.nl listing (via Beslist).",
+      "url": "https://www.amazon.nl/dp/B00C8F0QOK"
+    },
+    {
+      "text": "PrintAbout, Proshop, Conrad and 123inkt charge about 4.95 to 5.95 shipping on single cartridges; most other sellers ship free.",
+      "url": "https://www.kieskeurig.nl/tapestations/product/52199561-fujifilm-data-cartridge-lto-ultrium-8"
+    }
+  ]
+}

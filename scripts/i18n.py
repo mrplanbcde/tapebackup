@@ -73,10 +73,11 @@ DNT = {"TapeBackup", "TapeBackup.org", "LTO Tape Info", "Catalogic DPX", "Veeam"
 
 NUM = r"\d(?:[\d,]*\d)?(?:\.\d+)?"
 PH_RE = re.compile(
-    r"(?:[$€]|zł)\s?" + NUM                                        # money: $92.45, €81.90, zł368.00
-    + r"|(?<![\w])\d+(?:[-/:.]\d+)+(?![\w])"                      # 3-2-1, 2026-09-17, 2.5:1, 1.44
-    + r"|(?<![\w-])(?=[A-Za-z0-9-]*\d)[A-Za-z][A-Za-z0-9]*(?:-[A-Za-z0-9]+)*"   # LTO-9, TD-L92AN-BR, Q1, AES-256
-    + r"|" + NUM + r"(?:[A-Za-z]{1,2}\b)?"                         # 18, 1,000, 18TB, 12Gb
+    r"(?:[$€]|zł)\s?" + NUM                                                     # money: $92.45, €81.90, zł368.00
+    + r"|(?<![\w])\d+(?:[-/:.]\d+)+(?![\w])"                                   # 3-2-1, 2026-09-17, 2.5:1, 1.44
+    + r"|(?<![\w-])(?=[A-Za-z0-9-]*\d)[A-Z][A-Za-z0-9]*(?:-[A-Za-z0-9]+)+"   # LTO-9, AES-256, TD-L92AN-BR
+    + r"|(?<![\w-])[A-Z][A-Za-z]+\d[A-Za-z0-9]*"                              # BC040A, TS2260, LTX6000G
+    + r"|" + NUM                                                               # 18, 1,000 (units like TB stay text)
 )
 ENTITY = re.compile(r"&(?:#\d+|#x[0-9a-fA-F]+|\w+);")
 TAG_TOKEN = re.compile(r"</?([a-z]+)(\d+)(/?)>")
@@ -188,7 +189,17 @@ def fmt_number(raw, lang):
     return intpart + (f["dec"] + dec if dec else "")
 
 
+def french_spacing(text):
+    """Non-breaking spaces French typography expects: before ; : ! ? and inside « »."""
+    text = re.sub(r"[ \u00a0\u202f]*([;!?])", "\u202f\\1", text)
+    text = re.sub(r"(?<=\w)[ \u00a0]*:(?=\s)", "\u00a0:", text)
+    text = re.sub(r"«[ \u00a0]*", "«\u00a0", text)
+    return re.sub(r"[ \u00a0]*»", "\u00a0»", text)
+
+
 def localize_numbers(text, lang):
+    if lang == "fr":
+        text = french_spacing(text)
     if lang not in FMT or not re.search(r"\d", text):
         return text
     f = FMT[lang]
@@ -429,7 +440,8 @@ def render_page(src_html, path, lang, tm, dnt, langs, indexable, stats):
     ld_data = {}
     js_data = {}
     for kind, target, key, tags, values, ctx in segs:
-        if not translatable(key, dnt):
+        raw = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", unmask(key, tags, values)))).strip()
+        if not translatable(key, dnt) or raw in dnt:
             tgt = key
         else:
             stats["total"] += 1
@@ -481,7 +493,7 @@ def render_page(src_html, path, lang, tm, dnt, langs, indexable, stats):
         sc.string = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     body = soup.body or soup
     for t in list(body.find_all(string=True)):
-        if isinstance(t, Comment) or skipped(t.parent) or not re.search(r"\d", t):
+        if isinstance(t, Comment) or skipped(t.parent) or not (re.search(r"\d", t) or (lang == "fr" and re.search(r"[;:!?«»]", t))):
             continue
         t.replace_with(localize_numbers(str(t), lang))
     for a in soup.find_all("a", href=True):

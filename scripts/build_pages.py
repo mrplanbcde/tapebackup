@@ -5,6 +5,7 @@ the site until June 2026. When that app was replaced by a homepage-only file,
 these URLs silently started rendering the homepage. They are now plain HTML.
 """
 
+import html
 import json
 import os
 import re
@@ -69,6 +70,8 @@ def price_facts():
         "tco_tape": fxm(75000, 5000), "tco_disk": fxm(300000, 10000), "tco_cloud": fxm(2000000, 100000),
         "tco10y_tape": f"{fxm(5, 1)} to {fxm(10, 1)}", "tco10y_cloud": f"{fxm(200, 10)} to {fxm(500, 10)}+",
         "month": BP.CURRENT_LABEL, "cur_plural": cur_plural,
+        "temp_install": "50-110°F (10-43°C)" if BP.MKT.is_us else "10-43°C",
+        "temp_store": "60-90°F (16-32°C)" if BP.MKT.is_us else "16-32°C",
         "usd_word": "$" if BP.MKT.is_us else "USD ",
     }
 
@@ -104,7 +107,22 @@ def price_rewrites():
         ("~$75K", "~{tco_tape}"), ("~$300K", "~{tco_disk}"), ("~$2M+", "~{tco_cloud}+"),
         ("LTO-8 Drives $3,000-4,500", "LTO-8 Drives {drive8_rng0}"),
         ("LTO-9 Drives $4,500-6,500", "LTO-9 Drives {drive9_rng0}"),
-        ("$1.12 billion in 2024 to $1.85 billion by 2033", "{usd_word}1.12 billion in 2024 to {usd_word}1.85 billion by 2033"),
+        ("$1.12 billion in 2024", "{usd_word}1.12 billion in 2024"),
+        ("$1.85 billion by 2033", "{usd_word}1.85 billion by 2033"),
+        ("(50-110°F, 20-80% humidity)", "({temp_install}, 20-80% humidity)"),
+        ("at 60-90°F with 20-80% humidity", "at {temp_store} with 20-80% humidity"),
+        ("<h3>Modern Standard (Readily Available)Recommended</h3>", "<h3>Modern Standard (Readily Available), Recommended</h3>"),
+        ("<h3>Bleeding Edge (New Release)New</h3>", "<h3>Bleeding Edge (New Release)</h3>"),
+        ("Data centers spend approximately 75% of their energy consumption on cooling systems.", "Cooling can account for 30 to 40% of a data center's energy use."),
+        ("<p>Tier 1:Disk", "<p>Tier 1: Disk"),
+        ("supporting the latest LTO-9 drives", "supporting current LTO-9 and LTO-10 drives"),
+        ("<p>80 MB/s • Added WORM and encryption</p>", "<p>80 MB/s • Added WORM</p>"),
+        ("<p>400 MB/s • 45 TB compressed • Current gen</p>", "<p>400 MB/s • 45 TB compressed • Mainstream generation</p>"),
+        ("<h4>LTO-10 (2026)</h4>", "<h4>LTO-10 (2025)</h4>"),
+        ("which will double capacities again.", "which raises capacity to 30 TB per cartridge, and 40 TB with the newer cartridge."),
+        ("(often exceeding 400 MB/s native)", "(up to 400 MB/s native)"),
+        ("with the two vendors explicitly requested for deep-dive analysis:", "with two vendors that deserve a closer look:"),
+        (" Criteria 1:", " Criterion 1:"), (" Criteria 2:", " Criterion 2:"), (" Criteria 3:", " Criterion 3:"), (" Criteria 4:", " Criterion 4:"), (" Criteria 5:", " Criterion 5:"), ("<p>Tier 2:Cl", "<p>Tier 2: Cl"), ("<p>Tier 3:", "<p>Tier 3: "),
         ("<td>~$250 - $350+</td>", "<td>~{lto10_rng0} (30 TB)</td>"),
     ]
     # Brand guide: LTO-3 to LTO-5 are estimates (converted); LTO-6 to LTO-9 come from the listings, split by brand.
@@ -265,7 +283,7 @@ GUIDE_FAQS = {
         ],
         [
             "Does compression change the number of tapes?",
-            "Only for compressible data. Vendors quote 2.5:1, but video, images and encrypted files are already compressed and store close to native capacity."
+            "Only for compressible data. Vendors quote 2.5:1, but video and images are already compressed and encrypted files cannot be compressed, so they store close to native capacity."
         ]
     ],
     "/backup-software-finder": [
@@ -415,7 +433,7 @@ def build_legacy(path, key, title, desc):
     if len(segs) > 1:
         parent = "/" + segs[0]
         crumbs.append((LEGACY[parent][1].split(":")[0].split("|")[0].strip() if parent in LEGACY else segs[0].title(), parent))
-    crumbs.append((re.sub(r"<[^>]+>", "", h1_text), path))
+    crumbs.append((html.unescape(re.sub(r"<[^>]+>", "", h1_text)), path))
     facts = price_facts()
     answer = f'<p><strong>{esc(ANSWERS[path].format(**facts))}</strong></p>' if path in ANSWERS else ""
     body = f"""<section class="hero"><div class="container"><div class="hero-copy" style="max-width:860px">
@@ -424,7 +442,7 @@ def build_legacy(path, key, title, desc):
     faqs = [(q, a.format(**facts)) for q, a in GUIDE_FAQS.get(path, [])]
     if faqs:
         body = body.replace("</div></div></main>", faq_html(faqs, "Frequently asked questions") + "</div></div></main>", 1)
-    ld = [breadcrumb_ld(crumbs), {"@context": "https://schema.org", "@type": "Article", "headline": re.sub(r"<[^>]+>", "", h1_text), "description": desc, "dateModified": "2026-09-20",
+    ld = [breadcrumb_ld(crumbs), {"@context": "https://schema.org", "@type": "Article", "headline": html.unescape(re.sub(r"<[^>]+>", "", h1_text)), "description": desc, "dateModified": "2026-09-20",
           "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": SITE}, "mainEntityOfPage": SITE + path}]
     if faqs:
         ld.append(faq_ld(faqs))

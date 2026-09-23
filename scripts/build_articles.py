@@ -65,7 +65,7 @@ def build_migration(current):
         sec("When to migrate", "Signs it is time to move an archive to newer media", """
 <ul>
 <li><strong>Your drive generation is going out of the market.</strong> New LTO-6 drives are effectively gone and several LTO-7 models now show call for availability. When a drive dies and cannot be replaced, the tapes it wrote become a recovery project.</li>
-<li><strong>The compatibility window has closed.</strong> Each LTO drive reads one generation back (LTO-9 reads LTO-8), and LTO-10 drives read only LTO-10. An LTO-5 tape needs an LTO-5, LTO-6 or LTO-7 drive; nothing newer will mount it.</li>
+<li><strong>The compatibility window has closed.</strong> LTO-8 and LTO-9 drives read only one generation back (LTO-9 reads LTO-8), drives up to LTO-7 read two back, and LTO-10 drives read only LTO-10. An LTO-5 tape needs an LTO-5, LTO-6 or LTO-7 drive; nothing newer will mount it.</li>
 <li><strong>Cartridge count is the real cost.</strong> 500 TB on LTO-5 is 334 cartridges to store, label, handle and eventually read back. The same archive is 28 LTO-9 cartridges.</li>
 <li><strong>You cannot prove the archive is readable.</strong> If nothing has been restored from those tapes in years, a migration is also the verification pass you have been postponing.</li>
 </ul>"""),
@@ -92,7 +92,7 @@ def build_migration(current):
 <p>See the current <a href="/lto-tape-price-trend">LTO price tracker</a> for media and drive prices, and the <a href="/backup-calculator">backup calculator</a> to size the target generation.</p>"""),
     ]
     faqs = [
-        ("Can an LTO-9 drive read LTO-6 tapes?", "No. LTO-9 drives read and write LTO-9 and LTO-8 media only. LTO-6 cartridges need an LTO-6, LTO-7 or LTO-8 drive, and LTO-8 drives read LTO-7 but not LTO-6, so keep a drive of the right generation until the migration is finished."),
+        ("Can an LTO-9 drive read LTO-6 tapes?", "No. LTO-9 drives read and write LTO-9 and LTO-8 media only. LTO-6 cartridges need an LTO-6 or LTO-7 drive, because LTO-8 drives read LTO-7 but not LTO-6, so keep a drive of the right generation until the migration is finished."),
         ("How long does it take to migrate 100 TB of tape?", "About six days of continuous copying on a single LTO-9 drive at 400 MB/s, counting the read and the write. Older source drives are slower: reading 100 TB from LTO-5 media takes roughly eight days on its own."),
         ("How much does it cost to migrate 500 TB to LTO-9?", f"Media alone is 28 cartridges, or {rng(l9['cartridge'], True)} each, which is about {money0(round(28 * l9['cartridge']['low'], -2))} to {money0(round(28 * l9['cartridge']['high'], -2))} in {CURRENT_LABEL}{'' if BP.MKT.is_us else ' in ' + BP.MKT.country}. Add a drive from {rng(l9['driveInternal'], False)} if you do not already have one, plus an HBA, software and staff time."),
         ("Should I migrate to LTO-9 or LTO-10?", f"LTO-9 for most migrations: it costs {per_tb(l9['cartridge'])} per TB against {per_tb(l10['cartridge'])} for LTO-10, and its drives still read your LTO-8 tapes. Choose LTO-10 when cartridge count or library slots matter more than media cost."),
@@ -126,7 +126,7 @@ def build_market(current):
     sections = [
         sec("Shipments", "How much tape capacity ships each year", f"""
 <p>The LTO Program reports compressed capacity shipped each year. 2024 set a record at 176.5 EB. 2025 came in at 160.3 EB, about 9% lower, and the first quarter of 2026 shipped 57% more capacity than the same quarter a year earlier ({ship}).</p>
-{table(["Year", "LTO capacity shipped", "Change"], [["2024", "176.5 EB", "Record"], ["2025", "160.3 EB", "Down about 9%"], ["Q1 2026", "Up 57% year over year", "LTO-9 volume plus the LTO-10 ramp"]], "LTO capacity shipped")}
+{table(["Year", "LTO capacity shipped", "Change"], [["2024", "176.5 EB", "Record"], ["2025", "160.3 EB", "Down about 9%"], ["Q1 2026", "No total published", "Up 57% year over year, from LTO-9 volume and the LTO-10 ramp"]], "LTO capacity shipped")}
 <p>Two readings of the 2025 dip circulate. One ties it to trade uncertainty making buyers cautious ({reg}); the other suggests buyers were waiting for LTO-10 before committing to a new generation ({bf}). The Q1 2026 rebound supports the second.</p>"""),
         sec("Supply", "Only two companies make the tape", f"""
 <p>Every LTO cartridge on the market contains tape made by Fujifilm or Sony ({reg}); HPE, IBM, Quantum and Dell put their names on media made by those two. That concentration is a risk when a plant or a material is disrupted, and it is also why tape pricing has not followed the hard drive market: {dd} reports tape holding at roughly $4 to $6 per TB{'' if us else ' at US prices'} through 2026 while hard drive prices rose sharply, because the tape supply chain sits outside the NAND shortage and hyperscale drive demand.</p>
@@ -135,7 +135,7 @@ def build_market(current):
 {table(["Generation", "Native capacity", "Cartridge price", "Per native TB"], price_rows, "LTO media prices")}
 <p>{cheap} is the cheapest media per terabyte on sale{where}. Legacy generations cost more per terabyte, not less: LTO-6 now runs {per_tb(g['LTO-6']['cartridge'])} per TB against {per_tb(g['LTO-9']['cartridge'])} for LTO-9. Full listings, drive prices and every earlier snapshot are on the <a href="/lto-tape-price-trend">price tracker</a> and in the <a href="/lto-tape-price-trend/history">price history</a>.</p>"""),
         sec("Generations", "Where the format is going", """
-<p>LTO-10 shipped in 2025 at 30 TB native, and a 40 TB cartridge for the same drives arrived in 2026. Two things make LTO-10 a bigger step than usual for buyers: the drives are full height only so far, and they do not read earlier generations at all, which breaks the one-generation-back rule every LTO buyer has relied on. The published roadmap continues past LTO-10, but roadmap capacities have historically been targets rather than dates.</p>
+<p>LTO-10 shipped in 2025 at 30 TB native, and a 40 TB cartridge for the same drives arrived in 2026. Two things make LTO-10 a bigger step than usual for buyers: the drives are full height only so far, and they do not read earlier generations at all, which breaks the backward-read rule every earlier generation followed. The published roadmap continues past LTO-10, but roadmap capacities have historically been targets rather than dates.</p>
 <p>For anyone planning an archive today, that makes LTO-9 the conservative choice and LTO-10 the density choice. See <a href="/resources/lto-tape-migration">LTO tape migration</a> for what the compatibility change means for old tapes.</p>"""),
         sec("Demand", "Who is actually buying tape", """
 <p>The demand that shows up in shipment figures comes from a few places: hyperscale and cloud providers keeping cold data off spinning disk, AI teams retaining training corpora and checkpoints they cannot afford to keep on flash, media and entertainment archives, and regulated industries with retention mandates. What these have in common is data that must exist for years and is read rarely, which is the one workload where tape's economics and its offline nature both count.</p>"""),
@@ -326,11 +326,11 @@ def build_tco(current):
 <ul>
 <li>AWS, Azure and Google all bill storage in binary gigabytes (2<sup>30</sup> bytes, also called GiB). A decimal terabyte of tape data is about 931 billed gigabytes, and every cloud figure on this page accounts for that.</li>
 <li>Wasabi and Backblaze include egress only within a policy: Wasabi while monthly egress stays at or below what you store, Backblaze up to three times your average stored data.</li>
-<li>Minimum storage duration bites on deletion. Delete from Deep Archive after a month and you still pay the remaining {deep['minStorageDays']} days; Google Archive charges a full year.</li>
+<li>Minimum storage duration bites on deletion. Delete from Deep Archive after a month and you still pay for the rest of its {deep['minStorageDays']}-day minimum; Google Archive has a full-year minimum.</li>
 <li>AWS adds {deep['perObjectOverheadKB']} KB of metadata to every archived object, so millions of small files cost far more than their raw size. Pack them into larger archives before upload.</li>
 </ul>"""),
         sec("What the table leaves out", "Costs on both sides", """
-<p><strong>Tape:</strong> a SAS HBA per drive, somewhere climate-controlled to keep cartridges, courier or vault fees for the offsite copy, backup software or LTFS tooling, a drive refresh every several years, and staff time to load, verify and label media. Budget one migration during a long retention period, because drives only read one generation back (see <a href="/resources/lto-tape-migration">LTO tape migration</a>).</p>
+<p><strong>Tape:</strong> a SAS HBA per drive, somewhere climate-controlled to keep cartridges, courier or vault fees for the offsite copy, backup software or LTFS tooling, a drive refresh every several years, and staff time to load, verify and label media. Budget one migration during a long retention period, because current drives only read one generation back (see <a href="/resources/lto-tape-migration">LTO tape migration</a>).</p>
 <p><strong>Cloud:</strong> upload requests, minimum storage duration, early-deletion fees, retrieval tiers, egress, and the chance that list prices change during a ten-year retention. The full restore cost belongs in the budget even if you never plan to use it, because that is what a disaster looks like.</p>
 <p><strong>Both:</strong> the staging disk at each end, and the second copy you should keep either way. Most teams end up with disk for recent restores, tape for offline retention and a cloud copy for site loss, which is the <a href="/comparisons">3-2-1 split</a> rather than a single winner.</p>"""),
     ]
