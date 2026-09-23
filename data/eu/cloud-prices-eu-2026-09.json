@@ -1,0 +1,354 @@
+{
+  "asOf": "2026-09-23",
+  "providers": {
+    "aws_glacier_deep_archive": {
+      "region": "eu-central-1",
+      "regionName": "EU (Frankfurt)",
+      "currency": "USD",
+      "storagePerGBMonth": 0.0018,
+      "putPer1000": 0.06,
+      "retrievalPerGB": {
+        "bulk": 0.005,
+        "standard": 0.024
+      },
+      "retrievalRequestsPer1000": {
+        "bulk": 0.03,
+        "standard": 0.12
+      },
+      "egressPerGB": 0.09,
+      "egressTiersPerGB": {
+        "first10TB": 0.09,
+        "next40TB": 0.085,
+        "next100TB": 0.07,
+        "greaterThan150TB": 0.05
+      },
+      "freeEgressGBPerMonth": 100,
+      "minStorageDays": 180,
+      "earlyDeletePerGBMonth": 0.0018,
+      "lifecycleTransitionPer1000": 0.06,
+      "minBillableObjectKB": null,
+      "perObjectOverheadKB": 40,
+      "url": "https://aws.amazon.com/s3/pricing/",
+      "priceDataUrl": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/s3glacierdeeparchive/USD/current/s3glacierdeeparchive.json",
+      "priceDataPublished": "2026-09-11T12:45:07Z",
+      "egressPriceDataUrl": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/datatransfer/USD/current/datatransfer.json",
+      "egressPriceDataPublished": "2026-09-16T13:22:08Z",
+      "crossCheckUrl": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3GlacierDeepArchive/current/eu-central-1/index.json",
+      "crossCheckPublished": "2026-09-11T12:45:07Z",
+      "seen": "2026-09-23",
+      "notes": [
+        "Price map region key 'EU (Frankfurt)', exact labels: 'Glacier Deep Archive GB Mo' 0.0018000000; 'PUT to Glacier Deep Archive Requests' 0.0000600000 per request (= $0.06 per 1,000); 'S3 Bulk-Retrieval GB' 0.0050000000; 'S3 Standard-Retrieval GB' 0.0240000000; 'Glacier Deep Archive Bulk Restore Requests' 0.0000300000; 'GDA Standard Restore Requests' 0.0001200000; 'S3 EarlyDelete GDA GB-Mo' 0.0018000000; 'Lifecycle to Glacier Deep Archive Requests' 0.0000600000.",
+        "Bulk API cross-check (AmazonS3GlacierDeepArchive, eu-central-1, published 2026-09-11) agrees on every figure: EUC1-TimedStorage-GDA-ByteHrs '$0.0018 per GB-Month for storage used in Glacier Deep Archive in EU (Frankfurt)'; PutObject $0.06 per 1,000; bulk retrieval $0.005/GB; standard retrieval $0.024/GB; EarlyDelete-GDA $0.0018 per GB-Month 'for objects deleted before 180 days'.",
+        "No Expedited tier exists for Deep Archive, so retrievalPerGB has bulk and standard only.",
+        "Egress from the datatransfer price map, 'EU (Frankfurt)': 'DataTransfer External Outbound Next 10 TB' 0.09, 'Next 40 TB' 0.085, 'Next 100 TB' 0.07, 'Greater than 150 TB' 0.05. The AWSDataTransfer Bulk API file for eu-central-1 (published 2026-09-16) matches: '$0.090 per GB - first 10 TB / month data transfer out beyond the global free tier'.",
+        "The 100 GB free egress is global, not per region: 'AWS customers receive 100GB of data transfer out to the internet free each month, aggregated across all AWS Services and Regions (except China and GovCloud).'",
+        "40 KB per-object overhead, from the S3 pricing page (applies in every region): 8 KB billed at S3 Standard rates and 32 KB at the Deep Archive rate. S3 Standard in Frankfurt is $0.0245 per GB-month for the first 50 TB ('Standard Storage First 50 TB per GB Mo'). No minimum billable object size applies to this class; the 128 KB minimum on the page covers Standard-IA, One Zone-IA and Glacier Instant Retrieval only."
+      ]
+    },
+    "aws_glacier_flexible_retrieval": {
+      "region": "eu-central-1",
+      "regionName": "EU (Frankfurt)",
+      "currency": "USD",
+      "storagePerGBMonth": 0.00405,
+      "putPer1000": 0.036,
+      "retrievalPerGB": {
+        "bulk": 0.0,
+        "standard": 0.012,
+        "expedited": 0.036
+      },
+      "retrievalRequestsPer1000": {
+        "bulk": 0.0,
+        "standard": 0.06,
+        "expedited": 12.0
+      },
+      "egressPerGB": 0.09,
+      "egressTiersPerGB": {
+        "first10TB": 0.09,
+        "next40TB": 0.085,
+        "next100TB": 0.07,
+        "greaterThan150TB": 0.05
+      },
+      "freeEgressGBPerMonth": 100,
+      "minStorageDays": 90,
+      "earlyDeletePerGBMonth": 0.00405,
+      "lifecycleTransitionPer1000": 0.036,
+      "minBillableObjectKB": null,
+      "perObjectOverheadKB": 40,
+      "url": "https://aws.amazon.com/s3/pricing/",
+      "priceDataUrl": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/s3/USD/current/s3-glacier-flexibleretrieval.json",
+      "priceDataPublished": "2026-09-18T17:47:47Z",
+      "egressPriceDataUrl": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/datatransfer/USD/current/datatransfer.json",
+      "egressPriceDataPublished": "2026-09-16T13:22:08Z",
+      "crossCheckUrl": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/current/eu-central-1/index.json",
+      "crossCheckPublished": "2026-09-18T17:47:47Z",
+      "seen": "2026-09-23",
+      "notes": [
+        "The pricing page tokens point at the 's3-glacier-flexibleretrieval' sub-map; the same figures also sit in s3.json. Exact labels for 'EU (Frankfurt)': 'Glacier Storage per GB Mo' 0.0040500000; 'PUT requests to Glacier per Requests' 0.0000360000 (= $0.036 per 1,000); 'Glacier S3 Standard Retrieval RestoreObject' 0.0120000000; 'Glacier S3 Bulk Retrieval RestoreObject' 0.0000000000; 'Glacier S3 Expedited Retrieval' 0.0360000000; 'Glacier S3 API Tier 3' 0.0000600000 (standard restore requests); 'Glacier S3 API Tier 5' 0.0000000000 (bulk restore requests); 'Glacier Expedited Glacier Restore Requests' 0.0120000000 per request (= $12.00 per 1,000); 'Lifecycle Transition Requests into Glacier per Requests' 0.0000360000; 'GET and all other requests to GLACIER per Requests' 0.0000004300.",
+        "Bulk API cross-check (AmazonS3, eu-central-1, published 2026-09-18) agrees: EUC1-TimedStorage-GlacierByteHrs '$0.00405 per GB / month'; PutObject '$0.036 per 1,000'; '$0.012 per GB - Standard retrieval fee'; '$0.00 per GB - Bulk retrieval'; '$0.036 per GB - Expedited retrieval fee'; EUC1-EarlyDelete-ByteHrs '$0.00405 per GB/month prorated for Glacier Early Delete'.",
+        "Bulk retrieval and bulk restore requests are free, confirmed on the page: 'S3Glacier Flexible Retrieval Bulk data retrievals and requests are free of charge.'",
+        "The price map also carries 'Glacier Glacier PeakRestore' 0.008/GB (Bulk API: EUC1-Peak-Restore-Bytes-Delta, '$0.008 per GB - Glacier Restore Fee'). The S3 pricing page does not reference it, so it is left out of the model.",
+        "Same 40 KB per-object overhead as Deep Archive (8 KB at S3 Standard, 32 KB at this class's rate). No minimum billable object size for this class."
+      ]
+    },
+    "azure_blob_archive": {
+      "region": "germanywestcentral",
+      "regionName": "Germany West Central",
+      "currency": "USD",
+      "redundancy": "LRS",
+      "accountType": "General Purpose v2 / Blob Storage, flat namespace, block blob",
+      "storagePerGBMonth": 0.0018,
+      "storagePerGBMonthEUR": 0.0015,
+      "putPer1000": 0.012,
+      "putPer1000EUR": 0.0103,
+      "writeOperationsPer10000": 0.12,
+      "writeOperationsPer10000EUR": 0.103,
+      "readOperationsPer10000": 5.375,
+      "readOperationsPer10000EUR": 4.6153,
+      "priorityReadOperationsPer10000": 65.0,
+      "priorityReadOperationsPer10000EUR": 55.8132,
+      "dataRetrievalPerGB": {
+        "standard": 0.024,
+        "high": 0.13
+      },
+      "dataRetrievalPerGBEUR": {
+        "standard": 0.0206,
+        "high": 0.1116
+      },
+      "egressPerGB": 0.087,
+      "egressPerGBEUR": 0.0747,
+      "egressTiersPerGB": {
+        "first100GB": 0.0,
+        "next10TB": 0.087,
+        "next40TB": 0.083,
+        "next100TB": 0.07,
+        "next350TB": 0.05,
+        "over500TB": 0.05
+      },
+      "egressTiersPerGBEUR": {
+        "first100GB": 0.0,
+        "next10TB": 0.0747,
+        "next40TB": 0.0713,
+        "next100TB": 0.0601,
+        "next350TB": 0.0429,
+        "over500TB": 0.0429
+      },
+      "internetRoutingEgressTiersPerGB": {
+        "first100GB": 0.0,
+        "next10TB": 0.08,
+        "next40TB": 0.065,
+        "next100TB": 0.06,
+        "over150TB": 0.04
+      },
+      "internetRoutingEgressTiersPerGBEUR": {
+        "first100GB": 0.0,
+        "next10TB": 0.0687,
+        "next40TB": 0.0558,
+        "next100TB": 0.0515,
+        "over150TB": 0.0343
+      },
+      "freeEgressGBPerMonth": 100,
+      "minStorageDays": 180,
+      "earlyDeletePerGB": 0.0018,
+      "earlyDeletePerGBEUR": 0.0015,
+      "minBillableObjectKB": null,
+      "perObjectOverheadKB": null,
+      "url": "https://azure.microsoft.com/en-us/pricing/details/storage/blobs/",
+      "egressUrl": "https://azure.microsoft.com/en-us/pricing/details/bandwidth/",
+      "priceDataUrl": "https://prices.azure.com/api/retail/prices?%24filter=serviceName%20eq%20%27Storage%27%20and%20armRegionName%20eq%20%27germanywestcentral%27%20and%20skuName%20eq%20%27Archive%20LRS%27&currencyCode=USD",
+      "priceDataUrlEUR": "https://prices.azure.com/api/retail/prices?%24filter=serviceName%20eq%20%27Storage%27%20and%20armRegionName%20eq%20%27germanywestcentral%27%20and%20skuName%20eq%20%27Archive%20LRS%27&currencyCode=EUR",
+      "egressPriceDataUrl": "https://prices.azure.com/api/retail/prices?%24filter=serviceName%20eq%20%27Bandwidth%27%20and%20armRegionName%20eq%20%27germanywestcentral%27&currencyCode=USD",
+      "egressPriceDataUrlEUR": "https://prices.azure.com/api/retail/prices?%24filter=serviceName%20eq%20%27Bandwidth%27%20and%20armRegionName%20eq%20%27germanywestcentral%27&currencyCode=EUR",
+      "seen": "2026-09-23",
+      "comparisonRegions": {
+        "westeurope": {
+          "regionName": "West Europe",
+          "storagePerGBMonth": 0.0018,
+          "storagePerGBMonthEUR": 0.0015,
+          "putPer1000": 0.012,
+          "putPer1000EUR": 0.0103,
+          "writeOperationsPer10000": 0.12,
+          "writeOperationsPer10000EUR": 0.103,
+          "readOperationsPer10000": 6.0,
+          "readOperationsPer10000EUR": 5.152,
+          "priorityReadOperationsPer10000": 65.0,
+          "priorityReadOperationsPer10000EUR": 55.8132,
+          "dataRetrievalPerGB": {
+            "standard": 0.024,
+            "high": 0.13
+          },
+          "dataRetrievalPerGBEUR": {
+            "standard": 0.0206,
+            "high": 0.1116
+          },
+          "egressPerGB": 0.087,
+          "egressPerGBEUR": 0.0747,
+          "freeEgressGBPerMonth": 100,
+          "minStorageDays": 180,
+          "earlyDeletePerGB": 0.0018,
+          "earlyDeletePerGBEUR": 0.0015,
+          "priceDataUrl": "https://prices.azure.com/api/retail/prices?%24filter=serviceName%20eq%20%27Storage%27%20and%20armRegionName%20eq%20%27westeurope%27%20and%20skuName%20eq%20%27Archive%20LRS%27&currencyCode=USD",
+          "priceDataUrlEUR": "https://prices.azure.com/api/retail/prices?%24filter=serviceName%20eq%20%27Storage%27%20and%20armRegionName%20eq%20%27westeurope%27%20and%20skuName%20eq%20%27Archive%20LRS%27&currencyCode=EUR",
+          "egressPriceDataUrl": "https://prices.azure.com/api/retail/prices?%24filter=serviceName%20eq%20%27Bandwidth%27%20and%20armRegionName%20eq%20%27westeurope%27&currencyCode=USD",
+          "seen": "2026-09-23",
+          "notes": [
+            "Identical to Germany West Central except Archive read operations: 6.0 USD / 5.152 EUR per 10K in West Europe against 5.375 USD / 4.6153 EUR in Germany West Central. Egress tiers are the same (both regions are in Zone 1, 'North America and Europe')."
+          ]
+        }
+      },
+      "notes": [
+        "The Azure pricing page renders every rate as '$-' and fills it in client-side, so figures come from Microsoft's Retail Prices API. Meters under productName 'General Block Blob v2' and 'Blob Storage', skuName 'Archive LRS', armRegionName 'germanywestcentral', USD / EUR: 'Archive LRS Data Stored' 0.0018 / 0.0015 per 1 GB/Month; 'Archive LRS Write Operations' 0.12 / 0.103 per 10K; 'Archive Read Operations' 5.375 / 4.6153 per 10K; 'Archive Priority Read Operations' 65.0 / 55.8132 per 10K; 'Archive Data Retrieval' 0.024 / 0.0206 per 1 GB; 'Archive Priority Data Retrieval' 0.13 / 0.1116 per 1 GB; 'Archive LRS Early Delete' 0.0018 / 0.0015 per 1 GB; 'Archive Data Write' 0.0 per 1 GB.",
+        "putPer1000 is the listed per-10K write-operation price divided by 10; Azure publishes only the per-10K figure.",
+        "EUR figures are the euro prices Microsoft itself publishes in the Retail Prices API (currencyCode=EUR), not a conversion done here. The storage figure is rounded by Microsoft to 4 decimals (0.0015).",
+        "Standard vs high priority: 'Archive Data Retrieval' is standard-priority rehydration and 'Archive Priority Data Retrieval' is high priority. A rehydration also incurs the read-operation meter per 10K blobs. There is no bulk tier cheaper than standard.",
+        "180-day early deletion, verbatim from the pricing page: 'Any blob that is moved to the Archive tier is subject to an Archive early deletion period of 180 days.' Charged pro rata via the 'Archive LRS Early Delete' meter.",
+        "Egress is the Bandwidth service, default Microsoft Global Network routing ('Rtn Preference: MGN'), tier starts (GB): 0 free, 100 at 0.087, 10335 at 0.083, 51295 at 0.07, 153695 at 0.05, 512095 at 0.05. The bandwidth pricing page shows the same numbers for 'From North America, Europe to any destination' and states: 'Azure already offers the first 100 GB/month of egressed data for free to all customers in all Azure regions around the world'. Tier boundaries on that page use 'Note: 1 TB = 1,000 GB'.",
+        "No per-blob overhead or minimum billable object size for the Archive tier is stated on the Blob pricing page (no metadata or object-size charge appears there), so both are null.",
+        "Hierarchical-namespace (ADLS Gen2) accounts cost more per operation in this region: write 0.156 per 10K, read 6.9875 per 10K, priority read 84.5 per 10K; storage and retrieval rates are the same.",
+        "Blob index tags, if used: 'Index Tags' 0.039 USD / 0.0335 EUR per 10K per month."
+      ]
+    },
+    "gcs_archive": {
+      "region": "europe-west3",
+      "regionName": "Frankfurt",
+      "locationType": "single region",
+      "currency": "USD",
+      "storageUnit": "per GiB-month",
+      "storagePerGBMonth": 0.0025,
+      "storagePerGBMonthEUR": 0.0021455,
+      "putPer1000": 0.05,
+      "putPer1000EUR": 0.04291,
+      "classBOperationsPer1000": 0.05,
+      "retrievalPerGB": 0.05,
+      "retrievalPerGBEUR": 0.04291,
+      "egressPerGB": 0.12,
+      "egressTiersPerGiB": {
+        "0to10TiB": 0.12,
+        "10to150TiB": 0.11,
+        "over150TiB": 0.08
+      },
+      "skuCatalogEgressTiersPerGiB": {
+        "0to100GiB": 0.0,
+        "100GiBto1TiB": 0.12,
+        "1to10TiB": 0.11,
+        "over10TiB": 0.08
+      },
+      "skuCatalogEgressTiersPerGiBEUR": {
+        "0to100GiB": 0.0,
+        "100GiBto1TiB": 0.102984,
+        "1to10TiB": 0.094402,
+        "over10TiB": 0.068656
+      },
+      "freeEgressGBPerMonth": null,
+      "minStorageDays": 365,
+      "earlyDeletePerGiBDay": 8.333e-05,
+      "earlyDeletePerGiBDayEUR": 7.1514e-05,
+      "minBillableObjectKB": null,
+      "perObjectOverheadKB": null,
+      "url": "https://cloud.google.com/storage/pricing",
+      "skuCatalogUrl": "https://cloud.google.com/skus?currency=USD&filter=Archive%20Storage%20Frankfurt",
+      "skuCatalogUrlEUR": "https://cloud.google.com/skus?currency=EUR&filter=Archive%20Storage%20Frankfurt",
+      "seen": "2026-09-23",
+      "notes": [
+        "All Google figures are per gibibyte (GiB). Storage is read from the pricing page's own 'Data storage' region table (single region): 'Frankfurt (europe-west3)' row shows Standard $0.023, Nearline $0.013, Coldline $0.006, Archive '$0.0025 / 1 gibibyte month'; hourly view Archive $0.000003425 / 1 gibibyte hour.",
+        "Cross-checked in Google's SKU catalog (cloud.google.com/skus, service 95FF-2EF5-5EA1 Cloud Storage): 'Archive Storage Frankfurt' D9F7-D25F-B0EF, europe-west3, 0.0025 USD / 0.0021455 EUR per 1 gibibyte month; 'Archive Storage Frankfurt (Early Delete)' 0F22-5F50-0592, 0.00008333 USD / 0.000071514 EUR per gibibyte day. Google: 'If you pay in a currency other than USD, the prices listed in your currency on Cloud Platform SKUs apply.'",
+        "Operations (pricing page, 'For buckets located in a single region', Archive storage): Class A flat namespace $0.05 per 1,000, hierarchical $0.065; Class B flat $0.05, hierarchical $0.065. SKU catalog agrees: 'Regional Archive Class A Operations' F3A8-B939-4A19 0.05 USD / 0.04291 EUR per 1,000; 'Regional Archive Class B Operations' 1DBA-E3C9-B2A8 0.05 USD per 1,000. Uploads are Class A.",
+        "Retrieval (pricing page): Archive storage '$0.05 / 1 gibibyte'. SKU 'Archive Data Retrieval' 27A1-EBA4-49E8, global, 0.05 USD / 0.04291 EUR per gibibyte. Google has one Archive retrieval rate with millisecond access; there is no bulk or priority tier, so retrievalPerGB is a single number.",
+        "Egress conflict between two Google sources. The Cloud Storage pricing page, 'General network usage', 'Data transfer to Worldwide Destinations (excluding Asia & Australia)': 0 GiB to 10 TiB $0.12, 10 TiB to 150 TiB $0.11, 150 TiB and above $0.08 per GiB (this table is not region-specific). The SKU catalog's Cloud Storage SKU 22EB-AAE8-FBCD 'Download Worldwide Destinations (excluding Asia & Australia)', global, is tiered differently: 0 to 100 GiB free, 100 GiB to 1 TiB $0.12, 1 TiB to 10 TiB $0.11, 10 TiB and above $0.08 per month per account. The first paid rate ($0.12) agrees; tier boundaries do not. egressTiersPerGiB follows the pricing page.",
+        "freeEgressGBPerMonth is null because the sources disagree for a Frankfurt bucket: the pricing page says 'Cloud Storage Always Free quotas apply to usage in US-WEST1, US-CENTRAL1, and US-EAST1 regions' and lists the data-transfer allowance as '100 GB from North America to each Google Cloud Data transfer destination (Australia and China excluded)', while the global download SKU shows its first 100 GiB per month per account at $0.00. A conservative model uses 0; at most it is 100 GiB a month.",
+        "Minimum storage duration table: Standard None, Nearline 30 days, Coldline 90 days, Archive 365 days. Deleting early is charged as if stored for the minimum duration.",
+        "No per-object overhead or minimum billable object size is published for Archive on the pricing page, so both are null."
+      ]
+    },
+    "backblaze_b2": {
+      "region": "EU Central (Amsterdam)",
+      "currency": "USD",
+      "storagePerTBMonth": 6.95,
+      "storagePerGBMonth": 0.00695,
+      "putPer1000": 0,
+      "retrievalPerGB": 0,
+      "egressPerGB": 0.01,
+      "freeEgressPolicy": "Free egress up to 3x the average monthly data stored (calculated from byte hours over the billing cycle); overage billed at $0.01/GB. Unlimited free egress with B2 Overdrive ($15/TB/mo) and to many CDN and compute partners.",
+      "freeEgressMultipleOfStored": 3,
+      "freeEgressGBPerMonth": null,
+      "freeStorageGB": 10,
+      "classDTransactionsPer10000": 0.004,
+      "freeClassDTransactionsPerDay": 2500,
+      "minStorageDays": 0,
+      "minBillableObjectKB": 0,
+      "perObjectOverheadKB": null,
+      "url": "https://www.backblaze.com/cloud-storage/pricing",
+      "regionPolicyUrl": "https://www.backblaze.com/docs/cloud-storage-data-regions",
+      "seen": "2026-09-23",
+      "notes": [
+        "EU pricing equals US pricing, per Backblaze's data-regions documentation: 'Whether you choose US East, US West, EU Central, or CA East, your data storage costs do not change.' 'Accounts that use the EU Central region store data in the Amsterdam data center.' The region is fixed at account creation.",
+        "Pricing page: pay-as-you-go 'Starts at $ 6.95 / TB / mo'. storagePerGBMonth 0.00695 is the page's own price constant ('b2-monthly-gb': 0.00695, next to 'b2-monthly-tb': 6.95 and 'b2-monthly-egress': 0.01), not a division done here.",
+        "Fees the page lists: 'No minimum file size fees', 'No minimum storage duration fees', 'Class A, B, and C API calls are free for pay-as-you-go customers. Class D transactions cost $0.004 per 10,000 calls plus the first 2,500 calls per day are free.' 'First 10GB storage is always free.' Uploads are Class A, so putPer1000 is 0.",
+        "B2 is a single always-hot tier. The page lists no retrieval or restore fee, so retrievalPerGB is 0 and there is no restore delay to model.",
+        "The page's comparison chart 'features published rates for the U.S. West region'. An HTML comment in the page source still carries an old FAQ answer quoting '$5/TB/month'; it is not rendered and is not the current price."
+      ]
+    },
+    "wasabi": {
+      "region": "eu-central-1 (Amsterdam); eu-central-2 is Frankfurt, same EMEA price",
+      "currency": "USD",
+      "storagePerTBMonth": 7.99,
+      "storagePerGBMonth": 0.0078,
+      "putPer1000": 0,
+      "retrievalPerGB": 0,
+      "egressPerGB": 0,
+      "freeEgressPolicy": "Egress is free while monthly egress is less than or equal to active storage volume; Wasabi reserves the right to limit or suspend service if this is exceeded on a regular basis.",
+      "freeEgressGBPerMonth": null,
+      "minStorageDays": 90,
+      "minMonthlyChargeTB": 1,
+      "minBillableObjectKB": 4,
+      "perObjectOverheadKB": null,
+      "url": "https://wasabi.com/pricing",
+      "policyUrl": "https://wasabi.com/pricing/faq",
+      "priceChangeUrl": "https://docs.wasabi.com/docs/may-2026-wasabi-pricing",
+      "regionsUrl": "https://wasabi.com/company/storage-regions",
+      "seen": "2026-09-23",
+      "notes": [
+        "Pricing FAQ table, EMEA column: 'Wasabi Object Storage $7.99 TB/mo ($0.0078 GB/mo) Ingress Data Transfer = Free* Egress Data Transfer = Free* API Requests = Free*', same as North America and APAC. Listed in US dollars; the German pricing page (wasabi.com/de/preise) also shows '$7,99 TB/month' and 'US-Dollar'. No euro price list was found.",
+        "Price change notice: 'Pay-Go pricing for all regions (North America, EMEA, APAC) will be $7.99/USD/TB/Mo', effective July 1, 2026; already in force on the pricing page.",
+        "Wasabi's TB is binary: '($7.99) / (1024 GB per TB) = $.0078 GB/mo'.",
+        "Invoice items per the FAQ: Timed Active Storage, Timed Deleted Storage, Minimum Active Storage; Data Transfer In, Data Transfer Out and API Requests are shown but 'Wasabi does not charge this usage'. No retrieval fee exists, so retrievalPerGB and putPer1000 are 0.",
+        "Minimum storage duration: '90 days when using the Wasabi Pay as You Go pricing model', enforced as a Timed Deleted Storage charge. Minimum monthly charge of 1 TB of active storage. Minimum billable object size 4 KB.",
+        "The FAQ states 'This price does not include applicable taxes'.",
+        "Region names from Wasabi's storage-regions page: 'Amsterdam, Netherlands eu-central-1', 'Frankfurt, Germany eu-central-2'."
+      ]
+    }
+  },
+  "notes": [
+    {
+      "text": "Method: vendor sources only. AWS figures come from the price maps that aws.amazon.com/s3/pricing loads (data-pricing-endpoint b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps) and were cross-checked against the AWS Price List Bulk API files for eu-central-1; every figure matched. Azure figures come from Microsoft's Retail Prices API (USD and EUR), with policy text from the Azure pricing pages. Google figures come from the tables embedded in cloud.google.com/storage/pricing, cross-checked in Google's SKU catalog. Backblaze and Wasabi figures come from their own pricing pages, FAQs and docs. No third-party source was used.",
+      "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json"
+    },
+    {
+      "text": "Frankfurt costs more than other EU regions at all three hyperscalers. AWS Deep Archive is $0.0018/GB-month in EU (Frankfurt), EU (London), EU (Paris), EU (Milan) and EU (Spain) but $0.00099 in EU (Ireland) and EU (Stockholm), the same as us-east-1 (Zurich $0.00198). Flexible Retrieval is $0.00405 in Frankfurt against $0.0036 in Ireland and Stockholm. Deep Archive bulk retrieval is $0.005/GB in Frankfurt against $0.003 in Ireland and Stockholm.",
+      "url": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/s3glacierdeeparchive/USD/current/s3glacierdeeparchive.json"
+    },
+    {
+      "text": "Azure Archive LRS storage by European region (USD/GB-month, General Block Blob v2): North Europe, Sweden Central, Sweden South 0.00099; Norway East 0.001416; Germany West Central, Germany North, West Europe, France Central, Italy North, Spain Central, UK South 0.0018; Norway West 0.00184; Switzerland North 0.00198; UK West 0.0025; France South 0.00304; Switzerland West 0.00351.",
+      "url": "https://prices.azure.com/api/retail/prices?%24filter=serviceName%20eq%20%27Storage%27%20and%20skuName%20eq%20%27Archive%20LRS%27%20and%20meterName%20eq%20%27Archive%20LRS%20Data%20Stored%27%20and%20productName%20eq%20%27General%20Block%20Blob%20v2%27&currencyCode=USD"
+    },
+    {
+      "text": "Google Archive single-region storage in Europe (USD per GiB-month, pricing page): Belgium (europe-west1), Netherlands (europe-west4) and Finland (europe-north1) $0.0012; Madrid $0.0021; Frankfurt, Berlin, London, Paris, Milan, Turin, Warsaw, Zurich, Stockholm $0.0025.",
+      "url": "https://cloud.google.com/storage/pricing"
+    },
+    {
+      "text": "Units: AWS and Azure both bill storage in binary gigabytes, the same unit Google calls a gibibyte. AWS: 'Amazon S3 storage usage is calculated in binary gigabytes (GB), where 1 GB is 2^30 bytes. This unit of measurement is also known as a gibibyte (GiB)'. Azure: 'Azure Blob Storage usage is calculated in binary Gigabytes (GB), where 1 GB = 2^30 bytes.' Wasabi also uses 1 TB = 1024 GB. So the '7% GiB penalty' applied to Google alone (US data file note; build_articles.py line 283) is not a Google-only effect. Tape capacities are decimal, so pricing a decimal TB as 1000 x the per-GB rate overstates AWS, Azure, Google and Wasabi storage by about 7.4% (1 TB = 931.3 GiB). Azure's bandwidth page uses 'Note: 1 TB = 1,000 GB' for egress tier boundaries.",
+      "url": "https://aws.amazon.com/s3/pricing/"
+    },
+    {
+      "text": "Taxes: the AWS pricing page says 'our prices are exclusive of applicable taxes and duties, including VAT', and Wasabi's FAQ says its price 'does not include applicable taxes'. No VAT statement was found on the Azure, Google or Backblaze pages fetched.",
+      "url": "https://aws.amazon.com/s3/pricing/"
+    },
+    {
+      "text": "Currencies: AWS, Backblaze and Wasabi publish these prices in USD only. Microsoft publishes its own EUR prices in the Retail Prices API, and Google publishes EUR prices in its SKU catalog; both are recorded in the *EUR fields. Everything else is USD as listed.",
+      "url": "https://cloud.google.com/skus?currency=EUR&filter=Archive%20Storage%20Frankfurt"
+    },
+    {
+      "text": "Price changes: no 2025 or 2026 change for Google Cloud Storage appears on its pricing-announce page (it lists only the October 1, 2022 and April 1, 2023 updates). Wasabi's $7.99/TB move on July 1, 2026 covers EMEA and is already in force. The AWS maps were published 2026-09-11 (Deep Archive), 2026-09-16 (data transfer) and 2026-09-18 (S3).",
+      "url": "https://cloud.google.com/storage/pricing-announce"
+    }
+  ]
+}

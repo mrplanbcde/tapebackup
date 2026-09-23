@@ -56,19 +56,21 @@
 <ul><li><strong>Catalogic DPX</strong>: tape-focused enterprise backup with broad drive, library and NDMP support.</li><li><strong>Veeam Backup &amp; Replication</strong>: the common choice for virtualized estates, with tape jobs as a secondary target.</li><li><strong>Commvault</strong>: large, feature-rich platform with deep cloud integration.</li><li><strong>Nakivo</strong>: lower-cost option for smaller environments that need basic tape support.</li><li><strong>Veeam for Microsoft 365 and CloudCasa</strong>: SaaS and Kubernetes backup.</li></ul></section>
 <section class="faq-grid" aria-label="Software finder FAQ"><article class="faq-card"><h3>Which backup software is best for tape libraries?</h3><p>Catalogic DPX has the widest drive and library support and handles NDMP, which matters for NAS backups. Veeam and Commvault support tape well as a secondary copy in larger virtual estates.</p></article><article class="faq-card"><h3>Can I back up Microsoft 365 to tape?</h3><p>Not directly. Back up the SaaS data with a tool such as Veeam for Microsoft 365, then copy its repository to tape if you need an offline or long-retention copy.</p></article></section>
 </div></div></main>
+<script type="application/json" id="finder-i18n" data-i18n>{"match": "Your match: {v}", "compare": "<a href=\"/best-tape-backup-software\">Compare all tape backup software<\/a>", "r_dpx": "Catalogic DPX is built around tape. It supports a very wide range of LTO drives and libraries, including older ones, handles NDMP well and costs less than most enterprise suites when tape is central. <a href=\"/resources/tape-backup-software/catalogicdpx\">Read the DPX review<\/a>.", "r_saas": "For SaaS data, Veeam for Microsoft 365 is the market leader. If you also run Kubernetes, look at CloudCasa.", "r_virtual": "For a virtual, disk-based estate Veeam is the standard choice and works well with disk and cloud targets.", "v_mixed_notape": "Acronis or Commvault", "r_mixed_notape": "For mixed environments without tape, Acronis has strong security features and Commvault has deep cloud integration.", "r_small": "For smaller environments that need basic tape support without an enterprise price, Nakivo is a solid option.", "v_default": "Veeam or Catalogic DPX", "r_default": "Veeam is the popular choice for virtualization. Compare it with Catalogic DPX if your data is growing, because DPX licensing and tape handling often give a lower total cost."}</script>
 <script>
 (function(){
+var L=JSON.parse(document.getElementById('finder-i18n').textContent);
 var f=document.getElementById('finder'),out=document.getElementById('finder-result');
 function val(n){return f.querySelector('input[name="'+n+'"]:checked').value;}
 f.addEventListener('submit',function(e){
 e.preventDefault();
 var env=val('env'),tape=val('tape'),scale=val('scale'),prio=val('prio'),v,r;
-if(tape==='heavy'||(tape==='secondary'&&prio==='value')){v='Catalogic DPX';r='Catalogic DPX is built around tape. It supports a very wide range of LTO drives and libraries, including older ones, handles NDMP well and costs less than most enterprise suites when tape is central. <a href="/resources/tape-backup-software/catalogicdpx">Read the DPX review</a>.';}
-else if(env==='saas'){v='Veeam for Microsoft 365';r='For SaaS data, Veeam for Microsoft 365 is the market leader. If you also run Kubernetes, look at CloudCasa.';}
-else if(tape==='none'){if(env==='virtual'){v='Veeam Backup & Replication';r='For a virtual, disk-based estate Veeam is the standard choice and works well with disk and cloud targets.';}else{v='Acronis or Commvault';r='For mixed environments without tape, Acronis has strong security features and Commvault has deep cloud integration.';}}
-else if(scale==='small'){v='Nakivo';r='For smaller environments that need basic tape support without an enterprise price, Nakivo is a solid option.';}
-else{v='Veeam or Catalogic DPX';r='Veeam is the popular choice for virtualization. Compare it with Catalogic DPX if your data is growing, because DPX licensing and tape handling often give a lower total cost.';}
-out.innerHTML='<h3>Your match: '+v+'</h3><p>'+r+'</p><p><a href="/best-tape-backup-software">Compare all tape backup software</a></p>';out.hidden=false;
+if(tape==='heavy'||(tape==='secondary'&&prio==='value')){v='Catalogic DPX';r=L.r_dpx;}
+else if(env==='saas'){v='Veeam for Microsoft 365';r=L.r_saas;}
+else if(tape==='none'){if(env==='virtual'){v='Veeam Backup & Replication';r=L.r_virtual;}else{v=L.v_mixed_notape;r=L.r_mixed_notape;}}
+else if(scale==='small'){v='Nakivo';r=L.r_small;}
+else{v=L.v_default;r=L.r_default;}
+out.innerHTML='<h3>'+L.match.replace('{v}',v)+'</h3><p>'+r+'</p><p>'+L.compare+'</p>';out.hidden=false;
 });
 })();
 </script>

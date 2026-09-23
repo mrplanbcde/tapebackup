@@ -212,7 +212,6 @@ Checked 17 September 2026. New items, USD, listed price before tax and shipping.
 | 03PL170 (IBM, 30TB) | Tape4Backup | $261.00 |  |
 | Q2080A (HPE) | TapeandMedia | $263.00 |  |
 | Q2080A (HPE, 30TB) | BackupWorks | $263.25 |  |
-| 03PL170 (IBM) | TapeandMedia | $264.25 | Page says 'Expect Stock approx. June 30 (price not accurate)', so excluded from range |
 | 03PL170 (IBM, 30TB) | BackupWorks | $270.75 |  |
 | MR-L10MQN-01 (Quantum, 30TB) | BackupWorks | $275.00 |  |
 | MR-L10MQN-01 (Quantum) | TapeandMedia | $282.70 |  |
@@ -244,12 +243,10 @@ Checked 17 September 2026. New items, USD, listed price before tax and shipping.
 ### External drive: $22,165 to $24,950
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| SYSAS-RS2LAF2B-CT (SymplyPro LTO-10 2U rackmount FH SAS) | BackupWorks | $21,875.00 | Rackmount, excluded from desktop range |
 | SYSAS-DS2LAF1B-CT (SymplyPro XTF LTO-10 FH SAS desktop) | BackupWorks | $22,165.00 | New, full-height |
 | SAS-L10-MAX (MagStor LTO-10 FH SAS desktop) | LTO World | $23,999.99 | New, sale (regular $25,249), in stock |
 | SAS-L10-MAX (MagStor LTO-10 FH SAS desktop) | BackupWorks | $24,642.00 | New, full-height |
 | SAS-L10-MAX (MagStor LTO-10 FH SAS desktop) | TapeandMedia | $24,950.00 | New, ships 1-2 business days |
-| TRB3-L10-MAX (MagStor LTO-10 Thunderbolt 3/USB4 desktop) | MagStor | $25,099.99 | Not SAS, excluded from range; sale, regular $26,399 |
 
 ## Cartridge price history
 | Generation | September 2026 | August 2026 | March 2026 | January 2026 | November to December 2025 | September to October 2025 |

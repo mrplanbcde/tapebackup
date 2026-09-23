@@ -346,3 +346,6 @@ section.block{padding:96px 0}
   .sec-head h2{font-size:32px}
   section.block{padding:64px 0}
 }
+.lang-switch{display:inline-flex;gap:2px;margin-left:auto}
+.lang-switch a{padding:0 6px;opacity:.75;font-weight:600}
+.lang-switch a.on{opacity:1;text-decoration:underline;text-underline-offset:3px}

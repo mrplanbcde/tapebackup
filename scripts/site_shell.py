@@ -11,6 +11,12 @@ import os
 
 SITE = "https://tapebackup.org"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT_ROOT = ROOT  # where write() puts pages; market builds point this at a staging folder
+
+
+def set_out_root(path):
+    global OUT_ROOT
+    OUT_ROOT = path
 HUBSPOT_PORTAL = "147689578"
 HUBSPOT_FORM = "3f49124b-a1cb-4f2b-a54f-8f0c266fa59d"
 
@@ -37,7 +43,7 @@ def write(path, content):
         rel = path.lstrip("/")
     else:
         rel = path.lstrip("/") + "/index.html"
-    full = os.path.join(ROOT, rel)
+    full = os.path.join(OUT_ROOT, rel)
     os.makedirs(os.path.dirname(full), exist_ok=True)
     with open(full, "w", encoding="utf-8") as f:
         f.write(content)

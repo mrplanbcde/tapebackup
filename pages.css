@@ -465,3 +465,6 @@
 .tool-result h3 { margin-top: 0; }
 @media (max-width: 640px) { .wrap { padding: 0 16px; } }
 .section-stack, .section-stack > *, .section-card, .vendor-grid > * { min-width: 0; }
+.lang-switch { display: inline-flex; gap: .15rem; margin-left: auto; }
+.lang-switch a { padding: 0 .35rem; opacity: .75; font-weight: 600; }
+.lang-switch a.on { opacity: 1; text-decoration: underline; text-underline-offset: 3px; }

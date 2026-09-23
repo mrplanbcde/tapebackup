@@ -21,6 +21,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_articles  # noqa: E402
 import build_pages  # noqa: E402
 import build_prices  # noqa: E402
+import i18n  # noqa: E402
+import markets  # noqa: E402
+import shutil  # noqa: E402
+import site_shell  # noqa: E402
 from site_shell import GENS, ROOT, SITE, esc, slug_for  # noqa: E402
 
 
@@ -133,7 +137,8 @@ def blog_related_links():
         items = "".join(f'<li><a href="/blog/{p}">{esc(posts[p][1])}</a></li>' for p in picks) + "".join(f'<li><a href="{u}">{esc(t)}</a></li>' for u, t in guides)
         html_block = f'<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul>{items}</ul></section><!-- related:end -->'
         s = open(f, encoding="utf-8").read()
-        s = re.sub(r"<!-- related:start -->.*?<!-- related:end -->", "", s, flags=re.S)
+        s = re.sub(r"\s*<!-- related:start -->.*?<!-- related:end -->", "", s, flags=re.S)
+        s = re.sub(r"\n(?:[ \t]*\n)+([ \t]*</main>)", r"\n\1", s)
         if "</main>" in s:
             s = s.replace("</main>", html_block + "\n      </main>", 1)
         else:
@@ -211,13 +216,24 @@ def build_sitemap(today):
     for path, _, _, _ in entries:
         file = idx(path)
         assert os.path.exists(file), f"sitemap entry without a file: {path}"
-    body = "".join(
-        f"  <url>\n    <loc>{SITE}{'' if p == '/' else p}{'/' if p == '/' else ''}</loc>\n    <lastmod>{d}</lastmod>\n    <changefreq>{fq}</changefreq>\n    <priority>{pr}</priority>\n  </url>\n"
-        for p, d, pr, fq in entries
-    )
+    langs = published_langs()
+
+    def alternates(p):
+        if p not in i18n.SCOPE_SET or not langs:
+            return ""
+        links = [f'    <xhtml:link rel="alternate" hreflang="{c}" href="{i18n.lang_url(p, c)}"/>' for c in ["en"] + langs]
+        links.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{i18n.lang_url(p, "en")}"/>')
+        return "\n".join(links) + "\n"
+
+    urls = []
+    for p, d, pr, fq in entries:
+        urls.append(f"  <url>\n    <loc>{i18n.lang_url(p, 'en')}</loc>\n    <lastmod>{d}</lastmod>\n    <changefreq>{fq}</changefreq>\n    <priority>{pr}</priority>\n{alternates(p)}  </url>\n")
+        if p in i18n.SCOPE_SET:
+            for lang in langs:
+                urls.append(f"  <url>\n    <loc>{i18n.lang_url(p, lang)}</loc>\n    <lastmod>{d}</lastmod>\n    <changefreq>{fq}</changefreq>\n    <priority>{pr}</priority>\n{alternates(p)}  </url>\n")
     with open(rel("sitemap.xml"), "w", encoding="utf-8") as f:
-        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n")
-    return len(entries)
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + "".join(urls) + "</urlset>\n")
+    return len(urls)
 
 
 def build_llms(current):
@@ -233,9 +249,9 @@ def build_llms(current):
     for gen in GENS:
         x = g[gen]
         drive = []
-        if x.get("driveInternal", {}).get("lowUSD") is not None:
+        if (x.get("driveInternal") or {}).get("low") is not None:
             drive.append(f"internal drive {P.rng(x['driveInternal'], False)}")
-        if x.get("driveExternal", {}).get("lowUSD") is not None:
+        if (x.get("driveExternal") or {}).get("low") is not None:
             drive.append(f"external drive {P.rng(x['driveExternal'], False)}")
         lines.append(f"- [{gen} price guide]({SITE}/lto-tape-price-trend/{slug_for(gen)}): {x['nativeTB']:g} TB native; cartridge {P.rng(x['cartridge'], True)} ({P.per_tb(x['cartridge'])} per TB); WORM {P.rng(x.get('worm', {}), True)}; " + ("; ".join(drive) or "no new standalone drive listed") + ".")
     lines.append(f"- LTO-10 40 TB cartridge: {P.rng(g['LTO-10']['cartridge40TB'], True)} ({P.per_tb(g['LTO-10']['cartridge40TB'])} per TB). LTO-10 drives are full height only and do not read older generations.")
@@ -266,8 +282,8 @@ def build_llms(current):
             full.append(f"### {label}: {P.rng(item, key.startswith('cart') or key == 'worm')}")
             full.append("| Part | Seller | Price | Note |")
             full.append("| --- | --- | --- | --- |")
-            for d in sorted(item["datapoints"], key=lambda d: d["priceUSD"]):
-                full.append(f"| {d.get('sku', '')} | {d['seller']} | ${d['priceUSD']:,.2f} | {P.clean_note(d.get('note'))} |")
+            for d in sorted(item["datapoints"], key=lambda d: d["price"]):
+                full.append(f"| {d.get('sku', '')} | {d['seller']} | ${d['price']:,.2f} | {P.clean_note(d.get('note'))} |")
             full.append("")
     hist = json.load(open(rel("data", "price-history.json"), encoding="utf-8"))
     full.append("## Cartridge price history")
@@ -285,6 +301,39 @@ def build_llms(current):
     open(rel("llms-full.txt"), "w", encoding="utf-8").write("\n".join(full) + "\n")
 
 
+def published_langs():
+    cfg = i18n.load_langs()
+    return [l for l in i18n.LANGS if cfg.get(l, {}).get("indexable")]
+
+
+def build_languages():
+    """Build each European market into .build/<lang>, then translate into /<lang>/."""
+    report = []
+    langs = published_langs()
+    built = []
+    for lang in i18n.LANGS:
+        code = markets.LANG_TO_MARKET[lang]
+        if not os.environ.get("TB_FAKE_EU") and not os.path.exists(os.path.join(markets.DATA, markets.MARKETS[code]["file"])):
+            report.append(f"{lang}: skipped, no price data yet")
+            continue
+        stage = os.path.join(i18n.STAGE, lang)
+        shutil.rmtree(stage, ignore_errors=True)
+        site_shell.set_out_root(stage)
+        try:
+            _, cur = build_prices.build_all(code)
+            build_pages.build_all(cur)
+            build_articles.build_all(cur)
+        finally:
+            site_shell.set_out_root(ROOT)
+        shutil.rmtree(os.path.join(ROOT, lang), ignore_errors=True)
+        written, total, missing = i18n.render_language(lang, langs)
+        built.append(lang)
+        report.append(f"{lang}: {len(written)} pages, {total - missing}/{total} segments translated" + ("" if lang in langs else " (noindex)"))
+    build_prices.set_market("us")
+    i18n.add_alternates_to_english(langs)
+    return report
+
+
 def main():
     price_paths, current = build_prices.build_all()
     page_paths = build_pages.build_all(current) + build_articles.build_all(current)
@@ -296,6 +345,8 @@ def main():
         t = re.search(r"<title>(.*?)</title>", open(f, encoding="utf-8").read(), re.S)
         if t and len(html.unescape(t.group(1))) > 60:
             print(f"warning: title over 60 chars, add it to data/meta-overrides.json: {os.path.relpath(f, ROOT)}")
+    for line in build_languages():
+        print(line)
     count = build_sitemap(build_prices.CURRENT_ISO)
     build_llms(current)
     print(f"price pages: {len(price_paths)}, other pages: {len(page_paths)}, meta overrides changed: {n}, sitemap urls: {count}")

@@ -11,6 +11,8 @@ import re
 
 from bs4 import BeautifulSoup, NavigableString, Tag
 
+import build_prices as BP
+from markets import brand_of
 from site_shell import GENS, ROOT, SITE, breadcrumb_ld, esc, faq_html, faq_ld, hubspot_cta, page, slug_for, write
 
 KEEP_BLOCK = {"h1", "h2", "h3", "h4", "p", "ul", "ol", "table", "blockquote", "pre", "hr"}
@@ -31,27 +33,108 @@ LEGACY = {
     "/best-tape-backup-software": ("best-tape-backup-software", "Best Tape Backup Software in 2026 | TapeBackup", "The best tape backup software for LTO in 2026 compared: Catalogic DPX, Veeam, Commvault and others on tape support, licensing and migration paths."),
 }
 
-# Price claims in the restored guides that the September 2026 research contradicts.
-PRICE_FIXES = [
-    ("Drives range from $3,000 (LTO-8) to $6,500 (LTO-9).", "New standalone drives list from about $4,850 (LTO-8) to $13,500 (LTO-9) as of September 2026."),
-    ("LTO-9 tapes cost ~$70-90 (18 TB = $4-5/TB). LTO-10 approaches $3-4/TB.", "LTO-9 tapes cost about $92 to $112 in September 2026 ($5.14 to $6.20 per TB). LTO-10 30 TB tapes run about $8.50 to $10 per TB."),
-    ("tape media costing approximately $3-6 per TB", "tape media costing roughly $5 to $7 per TB on LTO-8 and LTO-9"),
-    ("LTO-8 tapes (12 TB native) typically cost $70-90, translating to approximately $6-7.50 per TB", "LTO-8 tapes (12 TB native) cost about $70 to $80 in September 2026, roughly $5.80 to $6.70 per TB"),
-    ("LTO-9 tapes (18 TB native) provide similar per-TB pricing, while LTO-10 (30 TB native) is expected to approach $3-4 per TB at volume.", "LTO-9 tapes (18 TB native) are slightly cheaper per TB at about $5.10 to $6.20, while LTO-10 30 TB tapes still cost about $8.50 to $10 per TB."),
-    ("The primary investment is the tape drive itself ($3,000-$6,500)", "The primary investment is the tape drive itself (about $4,850 to $13,500 for new LTO-8 and LTO-9 drives in September 2026)"),
-    ("cost-efficiency ($3-6/TB)", "cost-efficiency (about $5 to $6 per TB on LTO-9)"),
-    ("~$90 - $110", "~$70 - $80"),
-    ("~$140 - $170", "~$92 - $112"),
-    ("~$250 - $350+", "~$256 - $300 (30 TB)"),
-    ("~$70 - $85", "Rarely worth it, new is ~$70 - $80"),
-    ("~$110 - $130", "Rarely worth it, new is ~$92 - $112"),
-]
+def fx_round(usd, step):
+    """A rough USD estimate in the current market's currency, rounded to a sensible step."""
+    v = BP.MKT.from_usd(usd)
+    if not BP.MKT.is_us:
+        step = step * (5 if BP.MKT.currency == "PLN" and step < 50 else 1)
+    return int(round(v / step) * step) if step else v
+
+
+def fxm(usd, step):
+    return f"{BP.MKT.sym}{fx_round(usd, step):,}"
+
+
+def price_facts():
+    """Figures the guides quote, computed from the current market's listings."""
+    g = BP.MKT.generations
+    c = lambda gen: g[gen]["cartridge"]
+    drive = lambda gen: g[gen].get("driveInternal") or {}
+    l8, l9 = c("LTO-8"), c("LTO-9")
+    sym = BP.MKT.sym
+    lo89 = min(x for x in (l8.get("perTBLow"), l9.get("perTBLow")) if x is not None)
+    hi89 = max(x for x in (l8.get("perTBHigh"), l9.get("perTBHigh")) if x is not None)
+    cur_plural = {"USD": "dollars", "EUR": "euros", "PLN": "złoty"}[BP.MKT.currency]
+    return {
+        "lto9_pertb0": BP.per_tb0(l9), "lto9_pertb": BP.per_tb(l9), "lto8_pertb": BP.per_tb(l8),
+        "lto10_pertb": BP.per_tb(c("LTO-10")), "lto10_pertb0": BP.per_tb0(c("LTO-10")),
+        "lto6_rng0": BP.rng0(c("LTO-6")), "lto7_rng0": BP.rng0(c("LTO-7")), "lto8_rng0": BP.rng0(l8),
+        "lto9_rng0": BP.rng0(l9), "lto10_rng0": BP.rng0(c("LTO-10")),
+        "media_pertb_89": f"{sym}{round(lo89)} to {sym}{round(hi89)}",
+        "drive_lo8": BP.money0(drive("LTO-8").get("low")) if drive("LTO-8").get("low") else "n/a",
+        "drive_hi9": BP.money0(drive("LTO-9").get("high")) if drive("LTO-9").get("high") else "n/a",
+        "drive8_rng0": BP.rng0(drive("LTO-8")), "drive9_rng0": BP.rng0(drive("LTO-9")),
+        "hdd_pertb": f"{fxm(15, 5)} to {fxm(30, 5)}", "cloud_pertb_year": f"{fxm(20, 5)} to {fxm(50, 5)}+",
+        "ext_premium": f"{fxm(1000, 500)} to {fxm(2000, 500)}", "lib_from": fxm(5000, 500),
+        "tco_tape": fxm(75000, 5000), "tco_disk": fxm(300000, 10000), "tco_cloud": fxm(2000000, 100000),
+        "tco10y_tape": f"{fxm(5, 1)} to {fxm(10, 1)}", "tco10y_cloud": f"{fxm(200, 10)} to {fxm(500, 10)}+",
+        "month": BP.CURRENT_LABEL, "cur_plural": cur_plural,
+        "usd_word": "$" if BP.MKT.is_us else "USD ",
+    }
+
+
+def brand_split(gen):
+    """Price range of major-brand (HPE/IBM/Quantum/Dell) and OEM (Fujifilm/Sony) single cartridges."""
+    dps = [d for d in (BP.MKT.generations[gen]["cartridge"].get("datapoints") or []) if not d.get("pack")]
+    major = [d["price"] for d in dps if brand_of(d) in ("HPE", "IBM", "Quantum", "Dell")]
+    oem = [d["price"] for d in dps if brand_of(d) in ("Fujifilm", "Sony")]
+    f = lambda xs: BP.rng0({"low": min(xs), "high": max(xs)}) if xs else "Not listed"
+    return f(major), f(oem)
+
+
+def price_rewrites():
+    """(old, new) replacements for prices quoted in the restored guides, filled from current listings."""
+    F = price_facts()
+    rw = [
+        ("Drives range from $3,000 (LTO-8) to $6,500 (LTO-9).", "New standalone drives list from about {drive_lo8} (LTO-8) to {drive_hi9} (LTO-9) as of {month}."),
+        ("LTO-9 tapes cost ~$70-90 (18 TB = $4-5/TB). LTO-10 approaches $3-4/TB.", "LTO-9 tapes cost about {lto9_rng0} in {month} ({lto9_pertb} per TB). LTO-10 30 TB tapes run about {lto10_pertb} per TB."),
+        ("tape media costing approximately $3-6 per TB", "tape media costing roughly {media_pertb_89} per TB on LTO-8 and LTO-9"),
+        ("LTO-8 tapes (12 TB native) typically cost $70-90, translating to approximately $6-7.50 per TB", "LTO-8 tapes (12 TB native) cost about {lto8_rng0} in {month}, roughly {lto8_pertb} per TB"),
+        ("LTO-9 tapes (18 TB native) provide similar per-TB pricing, while LTO-10 (30 TB native) is expected to approach $3-4 per TB at volume.", "LTO-9 tapes (18 TB native) cost {lto9_pertb} per TB, while LTO-10 30 TB tapes still cost {lto10_pertb} per TB."),
+        ("The primary investment is the tape drive itself ($3,000-$6,500)", "The primary investment is the tape drive itself (about {drive_lo8} to {drive_hi9} for new LTO-8 and LTO-9 drives in {month})"),
+        ("with tape libraries ranging from $5,000 to hundreds of thousands of dollars", "with tape libraries ranging from {lib_from} to hundreds of thousands of {cur_plural}"),
+        ("cost-efficiency ($3-6/TB)", "cost-efficiency (about {lto9_pertb0} per TB on LTO-9)"),
+        ("$3-6/TB for LTO-10 media (vs $15-30/TB for disk)", "{lto9_pertb0} per TB for LTO-9 media and {lto10_pertb0} for LTO-10 (vs {hdd_pertb} per TB for disk)"),
+        ("<td>$3-6</td><td>$15-30</td><td>$20-50+/year</td>", "<td>{media_pertb_89}</td><td>{hdd_pertb}</td><td>{cloud_pertb_year}/year</td>"),
+        ("<td>$5-10</td><td>$15-30</td><td>$200-500+</td>", "<td>{tco10y_tape}</td><td>{hdd_pertb}</td><td>{tco10y_cloud}</td>"),
+        ("<p>$5-10</p><p>per TB</p>", "<p>{media_pertb_89}</p><p>per TB</p>"),
+        ("<p>$15-30</p><p>per TB</p>", "<p>{hdd_pertb}</p><p>per TB</p>"),
+        ("<p>$20-50+</p><p>per TB/year</p>", "<p>{cloud_pertb_year}</p><p>per TB/year</p>"),
+        ("Tape = ~$75K | Disk = ~$300K | Cloud = ~$2M+", "Tape = ~{tco_tape} | Disk = ~{tco_disk} | Cloud = ~{tco_cloud}+"),
+        ("~$75K", "~{tco_tape}"), ("~$300K", "~{tco_disk}"), ("~$2M+", "~{tco_cloud}+"),
+        ("LTO-8 Drives $3,000-4,500", "LTO-8 Drives {drive8_rng0}"),
+        ("LTO-9 Drives $4,500-6,500", "LTO-9 Drives {drive9_rng0}"),
+        ("$1.12 billion in 2024 to $1.85 billion by 2033", "{usd_word}1.12 billion in 2024 to {usd_word}1.85 billion by 2033"),
+        ("<td>~$250 - $350+</td>", "<td>~{lto10_rng0} (30 TB)</td>"),
+    ]
+    # Brand guide: LTO-3 to LTO-5 are estimates (converted); LTO-6 to LTO-9 come from the listings, split by brand.
+    for old, lo, hi in (("~$30 - $50", 30, 50), ("~$15 - $20", 15, 20), ("~$35 - $60", 35, 60), ("~$20 - $25", 20, 25), ("~$30 - $45", 30, 45)):
+        rw.append((f"<td>{old}</td>", f"<td>~{fxm(lo, 5)} to {fxm(hi, 5)}</td>"))
+    rows = []
+    for gen, old_major, old_oem in (("LTO-6", "~$40 - $55", "~$30 - $35"), ("LTO-7", "~$60 - $80", "~$50 - $60"),
+                                    ("LTO-8", "~$70 - $80", "Rarely worth it, new is ~$70 - $80"),
+                                    ("LTO-9", "~$92 - $112", "Rarely worth it, new is ~$92 - $112")):
+        major, oem = brand_split(gen)
+        rows.append((gen, old_major, old_oem, major, oem))
+    return [(o, n.format(**F)) for o, n in rw], rows
+
+
+def apply_price_rewrites(flow):
+    rw, brand_rows = price_rewrites()
+    for old, new in rw:
+        flow = flow.replace(esc(old).replace("&#x27;", "'"), new).replace(old, new)
+    for gen, old_major, old_oem, major, oem in brand_rows:
+        # the brand table rows, whose price cells follow the generation and capacity cells
+        pat = re.compile(r"(<tr><td>" + re.escape(gen) + r"(?: ⭐)?</td><td>[^<]*</td><td>)[^<]*(</td><td>)[^<]*(</td>)")
+        flow = pat.sub(lambda m: f"{m.group(1)}{esc(major)}{m.group(2)}{esc(oem)}{m.group(3)}", flow)
+    return flow
+
 
 DROP_SECTIONS = {"Downloadable Resources"}
 
 # AEO: a direct, quotable answer shown first on each guide (checked against the page content and Sep 2026 prices).
 ANSWERS = {
-    "/why-tape": "Tape is used for archives because it has the lowest cost per terabyte for data you rarely read (about $5 to $6 per TB on LTO-9 in September 2026), a cartridge on a shelf is offline and out of reach of ransomware, and it draws no power when idle.",
+    "/why-tape": "Tape is used for archives because it has the lowest cost per terabyte for data you rarely read (about {lto9_pertb0} per TB on LTO-9 in {month}), a cartridge on a shelf is offline and out of reach of ransomware, and it draws no power when idle.",
     "/why-tape/lto-tape-drive": "An LTO tape drive reads and writes Linear Tape-Open cartridges. Each generation roughly doubles capacity (LTO-9 holds 18 TB native, LTO-10 holds 30 TB or 40 TB), and drives up to LTO-9 read and write the previous generation, while LTO-10 drives only use LTO-10 media.",
     "/why-tape/lto-vs-hdd": "For long-term archives LTO tape usually beats hard drives: cartridges are rated for decades on a shelf, cost less per terabyte and sit offline. Hard drives win when you need fast random access or only store a few terabytes.",
     "/comparisons": "Tape is cheapest for large, rarely read archives and gives an offline copy; disk is best for fast restores of recent data; cloud is easiest for offsite copies but costs more over time and charges to get data back. Most teams combine disk for recent backups with tape or cloud for long-term copies.",
@@ -72,7 +155,7 @@ GUIDE_FAQS = {
         ],
         [
             "How much does tape cost per terabyte?",
-            "New LTO-9 cartridges cost about $5.14 to $6.20 per native terabyte in September 2026, and LTO-8 about $5.83 to $6.67. A drive is a separate one-off cost, from roughly $4,850 for LTO-8 to $13,500 for LTO-9."
+            "New LTO-9 cartridges cost about {lto9_pertb} per native terabyte in {month}, and LTO-8 about {lto8_pertb}. A drive is a separate one-off cost, from roughly {drive_lo8} for LTO-8 to {drive_hi9} for LTO-9."
         ],
         [
             "How does tape protect against ransomware?",
@@ -98,13 +181,13 @@ GUIDE_FAQS = {
         ],
         [
             "Should I buy an internal or external drive?",
-            "Internal half-height drives are cheaper and fit a server or library. External desktop units include a power supply and enclosure and cost roughly $1,000 to $2,000 more for the same mechanism."
+            "Internal half-height drives are cheaper and fit a server or library. External desktop units include a power supply and enclosure and cost roughly {ext_premium} more for the same mechanism."
         ]
     ],
     "/why-tape/lto-vs-hdd": [
         [
             "Is tape cheaper than hard drives?",
-            "For capacity you keep and rarely read, yes, once you pass the cost of the drive. LTO-9 media costs about $5 to $6 per TB against roughly $15 to $30 per TB for enterprise hard drives, but a tape drive costs thousands up front, so small archives stay cheaper on disk."
+            "For capacity you keep and rarely read, yes, once you pass the cost of the drive. LTO-9 media costs about {lto9_pertb0} per TB against roughly {hdd_pertb} per TB for enterprise hard drives, but a tape drive costs thousands up front, so small archives stay cheaper on disk."
         ],
         [
             "Which lasts longer, tape or a hard drive?",
@@ -303,8 +386,7 @@ def build_legacy(path, key, title, desc):
     flow = render_flow(soup)
     flow = re.sub(r"<li>(?:\s*[\u2713\u2714\u221a\u2022\u2705]\s*)+", "<li>", flow)
     flow = re.sub(r"<p>(?:\s*[\u2713\u2714\u221a\u2705]\s*)+</p>", "", flow)
-    for old, new in PRICE_FIXES:
-        flow = flow.replace(esc(old).replace("&#x27;", "'"), esc(new)).replace(old, new)
+    flow = apply_price_rewrites(flow)
     h1 = re.search(r"<h1>(.*?)</h1>", flow)
     h1_text = h1.group(1) if h1 else title
     flow = flow.replace(h1.group(0), "", 1) if h1 else flow
@@ -326,7 +408,7 @@ def build_legacy(path, key, title, desc):
 <a href="/resources/tape-storage-market">Tape storage market<span>Shipments, supply and prices</span></a>
 <a href="/lto-tape-brand">LTO tape brands<span>Who really makes the tape</span></a>
 <a href="/tape-q-and-a">Tape Q&amp;A<span>Short answers to tape questions</span></a></div></section>"""
-    if "$" in body_sections and path in ("/why-tape/lto-tape-drive", "/about", "/resources/cheap-lto-tapes", "/comparisons", "/why-tape"):
+    if re.search(r"[$€]|zł", body_sections) and path in ("/why-tape/lto-tape-drive", "/about", "/resources/cheap-lto-tapes", "/comparisons", "/why-tape"):
         related += '<section class="section-card"><p class="eyebrow">Current prices</p><h2>Check current LTO prices</h2><p>Prices on this page are rounded guidance. For seller listings checked in September 2026, see the <a href="/lto-tape-price-trend">LTO price tracker</a> and the <a href="/lto-tape-price-trend/history">price history</a>.</p></section>'
     crumbs = [("Home", "/")]
     segs = path.strip("/").split("/")
@@ -334,11 +416,12 @@ def build_legacy(path, key, title, desc):
         parent = "/" + segs[0]
         crumbs.append((LEGACY[parent][1].split(":")[0].split("|")[0].strip() if parent in LEGACY else segs[0].title(), parent))
     crumbs.append((re.sub(r"<[^>]+>", "", h1_text), path))
-    answer = f'<p><strong>{esc(ANSWERS[path])}</strong></p>' if path in ANSWERS else ""
+    facts = price_facts()
+    answer = f'<p><strong>{esc(ANSWERS[path].format(**facts))}</strong></p>' if path in ANSWERS else ""
     body = f"""<section class="hero"><div class="container"><div class="hero-copy" style="max-width:860px">
 <h1 style="max-width:none">{h1_text}</h1>{answer}{f'<p>{lead}</p>' if lead else ''}</div></div></section>
 <main class="page"><div class="container"><div class="section-stack">{body_sections}{related}</div></div></main>"""
-    faqs = [tuple(x) for x in GUIDE_FAQS.get(path, [])]
+    faqs = [(q, a.format(**facts)) for q, a in GUIDE_FAQS.get(path, [])]
     if faqs:
         body = body.replace("</div></div></main>", faq_html(faqs, "Frequently asked questions") + "</div></div></main>", 1)
     ld = [breadcrumb_ld(crumbs), {"@context": "https://schema.org", "@type": "Article", "headline": re.sub(r"<[^>]+>", "", h1_text), "description": desc, "dateModified": "2026-09-20",
@@ -351,17 +434,47 @@ def build_legacy(path, key, title, desc):
 
 # ---------------------------------------------------------------- tools
 
+JS_LOCALE = {"en": "en-US", "de": "de-DE", "fr": "fr-FR", "it": "it-IT", "es": "es-ES", "nl": "nl-NL", "pl": "pl-PL"}
+
+
+def i18n_json(el_id, strings):
+    """Strings a page script needs, in a JSON block that scripts/i18n.py translates like page text."""
+    blob = json.dumps(strings, ensure_ascii=False).replace("</", "<\\/")
+    return f'<script type="application/json" id="{el_id}" data-i18n>{blob}</script>'
+
+
 def build_calculator(current):
     path = "/backup-calculator"
     gens = current["generations"]
-    mid = lambda item: round((item["lowUSD"] + item["highUSD"]) / 2, 2) if item.get("lowUSD") is not None else None
-    model = {g: {"tb": gens[g]["nativeTB"], "tape": mid(gens[g]["cartridge"]), "drive": mid(gens[g].get("driveInternal", {})) or mid(gens[g].get("driveExternal", {}))} for g in ["LTO-8", "LTO-9", "LTO-10"]}
-    model_json = json.dumps(model)
+    mid = lambda item: round((item["low"] + item["high"]) / 2, 2) if (item or {}).get("low") is not None else None
+    model = {g: {"tb": gens[g]["nativeTB"], "tape": mid(gens[g]["cartridge"]), "drive": mid(gens[g].get("driveInternal")) or mid(gens[g].get("driveExternal"))} for g in ["LTO-8", "LTO-9", "LTO-10"]}
+    cfg = {"model": model, "locale": JS_LOCALE[BP.MKT.lang], "currency": BP.MKT.currency}
+    facts = price_facts()
+    L = {
+        "est": "<p><strong>{gen} estimate:</strong> {n} cartridges ({tb} TB native each), about {media} in media.</p>",
+        "est_drive": "<p><strong>{gen} estimate:</strong> {n} cartridges ({tb} TB native each), about {media} in media plus about {drive} for one drive.</p>",
+        "h_invalid": "Enter your data size",
+        "t_invalid": "<p>Type the total amount of data you need to protect, in terabytes.</p>",
+        "h_conflict": "Check these requirements",
+        "t_conflict": "<p>You chose real-time backups but accept recovery taking days. Teams that need continuous protection usually need fast recovery too. Choose a faster recovery time, or a daily or weekly recovery point.</p>",
+        "h_small_instant": "Recommended: SSD or HDD plus cloud",
+        "h_small": "Recommended: NAS (HDD) plus cloud archive",
+        "t_small": "<p>With {tb} TB, the cost of a tape drive is hard to justify. Keep a local disk copy for fast restores and a cloud cold-tier copy offsite.</p>",
+        "h_instant": "Recommended: disk or flash first, LTO tape second",
+        "t_instant": "<p>Instant recovery means your first copy must be on disk or flash. For {total} TB across all copies, keep only recent restore points on disk and put long-term, offline copies on LTO tape.</p>",
+        "h_tape": "Recommended: {gen} tape",
+        "h_tape_big": "Recommended: LTO-9 or LTO-10 tape",
+        "t_lto8": "<p>LTO-8 (12 TB native) keeps drive cost down for this data size and still gives you offline copies.</p>",
+        "t_lto9": "<p>LTO-9 (18 TB native) has the lowest media cost per terabyte in 2026 and fewer cartridges to handle than LTO-8.</p>",
+        "t_big": "<p>At this size density matters. LTO-9 has the lowest cost per TB; LTO-10 needs fewer cartridges and library slots but costs more per TB and needs new full-height drives.</p>",
+        "t_airgap": "<p>With {total} TB across all copies, tape gives you an air gap against ransomware and avoids cloud restore fees.</p>",
+        "t_continuous": "<p><em>Real-time recovery points need a disk buffer in front of tape (disk to disk to tape).</em></p>",
+    }
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
 <p class="eyebrow">Tool</p><h1>Tape Backup Capacity and Cost Calculator</h1>
-<p><strong>Tape pays off from roughly 15 TB of data: below that, disk plus cloud is cheaper; above it, LTO-8 or LTO-9 media at about $5 to $7 per TB beats keeping long-term copies on disk.</strong></p>
-<p>Enter how much data you protect, how many copies you keep and how fast you need it back. The calculator recommends tape, disk, cloud or a mix, and estimates cartridges and media cost from September 2026 LTO prices.</p></div>
-<aside class="hero-panel"><p class="panel-label">Prices used</p><p class="panel-copy">Midpoints of seller listings from the <a href="/lto-tape-price-trend">LTO price tracker</a>: LTO-8 tapes ${model['LTO-8']['tape']:.0f}, LTO-9 tapes ${model['LTO-9']['tape']:.0f}, LTO-10 30 TB tapes ${model['LTO-10']['tape']:.0f}.</p></aside></div></section>
+<p><strong>Tape pays off from roughly 15 TB of data: below that, disk plus cloud is cheaper; above it, LTO-8 or LTO-9 media at about {facts['media_pertb_89']} per TB beats keeping long-term copies on disk.</strong></p>
+<p>Enter how much data you protect, how many copies you keep and how fast you need it back. The calculator recommends tape, disk, cloud or a mix, and estimates cartridges and media cost from {BP.CURRENT_LABEL} LTO prices{'' if BP.MKT.is_us else ' in ' + BP.MKT.country}.</p></div>
+<aside class="hero-panel"><p class="panel-label">Prices used</p><p class="panel-copy">Midpoints of seller listings from the <a href="/lto-tape-price-trend">LTO price tracker</a>: LTO-8 tapes {BP.money0(model['LTO-8']['tape'])}, LTO-9 tapes {BP.money0(model['LTO-9']['tape'])}, LTO-10 30 TB tapes {BP.money0(model['LTO-10']['tape'])}.</p></aside></div></section>
 <main class="page"><div class="container"><div class="section-stack">
 <section class="section-card"><h2>Calculate your backup setup</h2>
 <form class="tool-form" id="calc" novalidate>
@@ -375,38 +488,41 @@ def build_calculator(current):
 </section>
 <section class="section-card"><p class="eyebrow">How it works</p><h2>How the calculator decides</h2>
 <ul><li>Under 15 TB, a tape drive rarely pays for itself, so disk plus cloud is recommended.</li><li>If you need recovery in minutes, the first copy has to live on disk or flash, with tape for long-term and offline copies.</li><li>Otherwise LTO-8 is suggested under 50 TB, LTO-9 up to 500 TB, and LTO-9 or LTO-10 above that.</li><li>Cartridge counts use native capacity with no compression, and costs use the midpoint of current seller listings. Drive cost is one new internal drive where one is listed.</li></ul>
-<p>Estimates exclude software, HBAs, libraries, tax and shipping. See the <a href="/lto-tape-price-trend">LTO price tracker</a> for the listings behind these numbers.</p></section>
-{faq_html([tuple(x) for x in GUIDE_FAQS["/backup-calculator"]], "Backup calculator FAQ")}
+<p>Estimates exclude software, HBAs, libraries, {'tax' if BP.MKT.is_us else 'delivery'} and shipping. See the <a href="/lto-tape-price-trend">LTO price tracker</a> for the listings behind these numbers.</p></section>
+{faq_html([(q, a.format(**facts)) for q, a in GUIDE_FAQS["/backup-calculator"]], "Backup calculator FAQ")}
 </div></div></main>
+<script type="application/json" id="calc-cfg">{json.dumps(cfg)}</script>
+{i18n_json("calc-i18n", L)}
 <script>
 (function(){{
-var M={model_json};
+var C=JSON.parse(document.getElementById('calc-cfg').textContent),L=JSON.parse(document.getElementById('calc-i18n').textContent),M=C.model;
 var f=document.getElementById('calc'),out=document.getElementById('calc-result');
-function usd(n){{return '$'+Math.round(n).toLocaleString('en-US');}}
-function est(gen,total){{var g=M[gen];var n=Math.ceil(total/g.tb);var s='<p><strong>'+gen+' estimate:</strong> '+n+' cartridges ('+g.tb+' TB native each), about '+usd(n*g.tape)+' in media';if(g.drive){{s+=' plus about '+usd(g.drive)+' for one drive';}}return s+'.</p>';}}
+var nf=new Intl.NumberFormat(C.locale),cf=new Intl.NumberFormat(C.locale,{{style:'currency',currency:C.currency,maximumFractionDigits:0}});
+function fill(s,v){{return s.replace(/\{{(\w+)\}}/g,function(m,k){{return k in v?v[k]:m;}});}}
+function est(gen,total){{var g=M[gen];var n=Math.ceil(total/g.tb);var v={{gen:gen,n:nf.format(n),tb:nf.format(g.tb),media:cf.format(n*g.tape)}};if(g.drive){{v.drive=cf.format(g.drive);return fill(L.est_drive,v);}}return fill(L.est,v);}}
 f.addEventListener('submit',function(e){{
 e.preventDefault();
 var tb=parseFloat(document.getElementById('capacity').value),copies=parseInt(document.getElementById('copies').value,10),rto=document.getElementById('rto').value,rpo=document.getElementById('rpo').value;
-var h,t;
-if(!tb||tb<=0){{h='Enter your data size';t='<p>Type the total amount of data you need to protect, in terabytes.</p>';}}
-else if(rpo==='continuous'&&rto==='days'){{h='Check these requirements';t='<p>You chose real-time backups but accept recovery taking days. Teams that need continuous protection usually need fast recovery too. Choose a faster recovery time, or a daily or weekly recovery point.</p>';}}
+var h,t,tape=false;
+if(!tb||tb<=0){{h=L.h_invalid;t=L.t_invalid;}}
+else if(rpo==='continuous'&&rto==='days'){{h=L.h_conflict;t=L.t_conflict;}}
 else{{
-var total=tb*copies;
-if(tb<15){{h=rto==='instant'?'Recommended: SSD or HDD plus cloud':'Recommended: NAS (HDD) plus cloud archive';t='<p>With '+tb+' TB, the cost of a tape drive is hard to justify. Keep a local disk copy for fast restores and a cloud cold-tier copy offsite.</p>'+est('LTO-8',total);}}
-else if(rto==='instant'){{h='Recommended: disk or flash first, LTO tape second';t='<p>Instant recovery means your first copy must be on disk or flash. For '+total+' TB across all copies, keep only recent restore points on disk and put long-term, offline copies on LTO tape.</p>'+est(tb<500?'LTO-9':'LTO-10',total);}}
-else{{var gen=tb<50?'LTO-8':(tb<500?'LTO-9':'LTO-10');h='Recommended: '+(tb<500?gen:'LTO-9 or LTO-10')+' tape';
-t=tb<50?'<p>LTO-8 (12 TB native) keeps drive cost down for this data size and still gives you offline copies.</p>':(tb<500?'<p>LTO-9 (18 TB native) has the lowest media cost per terabyte in 2026 and fewer cartridges to handle than LTO-8.</p>':'<p>At this size density matters. LTO-9 has the lowest cost per TB; LTO-10 needs fewer cartridges and library slots but costs more per TB and needs new full-height drives.</p>');
+var total=tb*copies,v={{tb:nf.format(tb),total:nf.format(total)}};
+if(tb<15){{h=rto==='instant'?L.h_small_instant:L.h_small;t=fill(L.t_small,v)+est('LTO-8',total);}}
+else if(rto==='instant'){{h=L.h_instant;t=fill(L.t_instant,v)+est(tb<500?'LTO-9':'LTO-10',total);tape=true;}}
+else{{var gen=tb<50?'LTO-8':(tb<500?'LTO-9':'LTO-10');h=tb<500?fill(L.h_tape,{{gen:gen}}):L.h_tape_big;tape=true;
+t=tb<50?L.t_lto8:(tb<500?L.t_lto9:L.t_big);
 t+=est(tb<500?gen:'LTO-9',total);if(tb>=500){{t+=est('LTO-10',total);}}
-t+='<p>With '+total+' TB across all copies, tape gives you an air gap against ransomware and avoids cloud restore fees.</p>';}}
-if(rpo==='continuous'&&h.indexOf('tape')>-1){{t+='<p><em>Real-time recovery points need a disk buffer in front of tape (disk to disk to tape).</em></p>';}}
+t+=fill(L.t_airgap,v);}}
+if(rpo==='continuous'&&tape){{t+=L.t_continuous;}}
 }}
 out.innerHTML='<h3>'+h+'</h3>'+t;out.hidden=false;
 }});
 }})();
 </script>"""
     desc = "Free tape backup calculator: enter data size, copies and recovery targets to get a tape, disk or cloud recommendation with 2026 LTO cartridge costs."
-    ld = [faq_ld([tuple(x) for x in GUIDE_FAQS["/backup-calculator"]]), breadcrumb_ld([("Home", "/"), ("Backup calculator", path)]),
-          {"@context": "https://schema.org", "@type": "WebApplication", "name": "Tape Backup Capacity and Cost Calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": SITE + path, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}]
+    ld = [faq_ld([(q, a.format(**facts)) for q, a in GUIDE_FAQS["/backup-calculator"]]), breadcrumb_ld([("Home", "/"), ("Backup calculator", path)]),
+          {"@context": "https://schema.org", "@type": "WebApplication", "name": "Tape Backup Capacity and Cost Calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": SITE + path, "offers": {"@type": "Offer", "price": "0", "priceCurrency": BP.MKT.currency}}]
     write(path, page(path, "Tape Backup Calculator: LTO Capacity and Cost", desc, body, ld))
     return path
 
@@ -424,6 +540,18 @@ def build_finder():
             f'<label><input type="radio" name="{name}" value="{v}"{" checked" if v == default else ""}>{esc(t)}</label>' for v, t in opts) + "</fieldset>"
         for name, label, opts, default in q
     )
+    L = {
+        "match": "Your match: {v}",
+        "compare": '<a href="/best-tape-backup-software">Compare all tape backup software</a>',
+        "r_dpx": 'Catalogic DPX is built around tape. It supports a very wide range of LTO drives and libraries, including older ones, handles NDMP well and costs less than most enterprise suites when tape is central. <a href="/resources/tape-backup-software/catalogicdpx">Read the DPX review</a>.',
+        "r_saas": "For SaaS data, Veeam for Microsoft 365 is the market leader. If you also run Kubernetes, look at CloudCasa.",
+        "r_virtual": "For a virtual, disk-based estate Veeam is the standard choice and works well with disk and cloud targets.",
+        "v_mixed_notape": "Acronis or Commvault",
+        "r_mixed_notape": "For mixed environments without tape, Acronis has strong security features and Commvault has deep cloud integration.",
+        "r_small": "For smaller environments that need basic tape support without an enterprise price, Nakivo is a solid option.",
+        "v_default": "Veeam or Catalogic DPX",
+        "r_default": "Veeam is the popular choice for virtualization. Compare it with Catalogic DPX if your data is growing, because DPX licensing and tape handling often give a lower total cost.",
+    }
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
 <p class="eyebrow">Tool</p><h1>Tape Backup Software Finder</h1>
 <p><strong>If tape is your main archive, Catalogic DPX is usually the best fit; for mostly virtual estates using tape as a second copy, Veeam; for small environments on a budget, Nakivo.</strong></p>
@@ -437,19 +565,21 @@ def build_finder():
 <ul><li><strong>Catalogic DPX</strong>: tape-focused enterprise backup with broad drive, library and NDMP support.</li><li><strong>Veeam Backup &amp; Replication</strong>: the common choice for virtualized estates, with tape jobs as a secondary target.</li><li><strong>Commvault</strong>: large, feature-rich platform with deep cloud integration.</li><li><strong>Nakivo</strong>: lower-cost option for smaller environments that need basic tape support.</li><li><strong>Veeam for Microsoft 365 and CloudCasa</strong>: SaaS and Kubernetes backup.</li></ul></section>
 {faq_html([tuple(x) for x in GUIDE_FAQS["/backup-software-finder"]], "Software finder FAQ")}
 </div></div></main>
+{i18n_json("finder-i18n", L)}
 <script>
 (function(){{
+var L=JSON.parse(document.getElementById('finder-i18n').textContent);
 var f=document.getElementById('finder'),out=document.getElementById('finder-result');
 function val(n){{return f.querySelector('input[name="'+n+'"]:checked').value;}}
 f.addEventListener('submit',function(e){{
 e.preventDefault();
 var env=val('env'),tape=val('tape'),scale=val('scale'),prio=val('prio'),v,r;
-if(tape==='heavy'||(tape==='secondary'&&prio==='value')){{v='Catalogic DPX';r='Catalogic DPX is built around tape. It supports a very wide range of LTO drives and libraries, including older ones, handles NDMP well and costs less than most enterprise suites when tape is central. <a href="/resources/tape-backup-software/catalogicdpx">Read the DPX review</a>.';}}
-else if(env==='saas'){{v='Veeam for Microsoft 365';r='For SaaS data, Veeam for Microsoft 365 is the market leader. If you also run Kubernetes, look at CloudCasa.';}}
-else if(tape==='none'){{if(env==='virtual'){{v='Veeam Backup & Replication';r='For a virtual, disk-based estate Veeam is the standard choice and works well with disk and cloud targets.';}}else{{v='Acronis or Commvault';r='For mixed environments without tape, Acronis has strong security features and Commvault has deep cloud integration.';}}}}
-else if(scale==='small'){{v='Nakivo';r='For smaller environments that need basic tape support without an enterprise price, Nakivo is a solid option.';}}
-else{{v='Veeam or Catalogic DPX';r='Veeam is the popular choice for virtualization. Compare it with Catalogic DPX if your data is growing, because DPX licensing and tape handling often give a lower total cost.';}}
-out.innerHTML='<h3>Your match: '+v+'</h3><p>'+r+'</p><p><a href="/best-tape-backup-software">Compare all tape backup software</a></p>';out.hidden=false;
+if(tape==='heavy'||(tape==='secondary'&&prio==='value')){{v='Catalogic DPX';r=L.r_dpx;}}
+else if(env==='saas'){{v='Veeam for Microsoft 365';r=L.r_saas;}}
+else if(tape==='none'){{if(env==='virtual'){{v='Veeam Backup & Replication';r=L.r_virtual;}}else{{v=L.v_mixed_notape;r=L.r_mixed_notape;}}}}
+else if(scale==='small'){{v='Nakivo';r=L.r_small;}}
+else{{v=L.v_default;r=L.r_default;}}
+out.innerHTML='<h3>'+L.match.replace('{{v}}',v)+'</h3><p>'+r+'</p><p>'+L.compare+'</p>';out.hidden=false;
 }});
 }})();
 </script>"""
@@ -491,7 +621,8 @@ def build_404():
 def build_home(current):
     gens = current["generations"]
     l9 = gens["LTO-9"]["cartridge"]
-    per_tb_9 = f"${l9['perTBLow']:.0f}-{l9['perTBHigh']:.0f}"
+    sym = BP.MKT.sym
+    per_tb_9 = f"{sym}{l9['perTBLow']:.0f}-{sym}{l9['perTBHigh']:.0f}"
     with open(os.path.join(ROOT, "data", "home-template.html"), encoding="utf-8") as f:
         tpl = f.read()
     blog = json.load(open(os.path.join(ROOT, "data", "home-blog.json"), encoding="utf-8"))
@@ -499,7 +630,9 @@ def build_home(current):
         f'<article class="news-card"><a href="{esc(b["href"])}" style="display:contents"><div class="news-thumb"><span class="gloss"></span><span class="tcart"></span><span class="cat">{esc(b["cat"])}</span></div><div class="news-body"><span class="date">{esc(b["date"])}</span><h3>{esc(b["h"])}</h3><div class="more"><span class="textlink">Read more<span class="arr">{ARROW}</span></span></div></div></a></article>'
         for b in blog
     )
-    out = tpl.replace("{{PER_TB_9}}", per_tb_9).replace("{{LTO9_RANGE}}", f"${l9['lowUSD']:.0f} to ${l9['highUSD']:.0f}").replace("{{BLOG_CARDS}}", cards)
+    where = "" if BP.MKT.is_us else f" in {BP.MKT.country}"
+    out = (tpl.replace("{{PER_TB_9}}", per_tb_9).replace("{{LTO9_RANGE}}", f"{sym}{l9['low']:.0f} to {sym}{l9['high']:.0f}")
+           .replace("for an 18 TB LTO-9 cartridge in September 2026)", f"for an 18 TB LTO-9 cartridge{where} in September 2026)").replace("{{BLOG_CARDS}}", cards))
     write("/", out)
     return "/"
 
@@ -512,5 +645,6 @@ def build_all(current):
     for path, (key, title, desc) in LEGACY.items():
         paths.append(build_legacy(path, key, title, desc))
     paths += [build_calculator(current), build_finder(), build_contact(), build_home(current)]
-    build_404()
+    if BP.MKT.is_us:
+        build_404()
     return paths

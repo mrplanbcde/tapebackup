@@ -65,27 +65,30 @@
 <p>Estimates exclude software, HBAs, libraries, tax and shipping. See the <a href="/lto-tape-price-trend">LTO price tracker</a> for the listings behind these numbers.</p></section>
 <section class="faq-grid" aria-label="Backup calculator FAQ"><article class="faq-card"><h3>How many LTO tapes do I need?</h3><p>Divide your data by the native capacity of the generation and multiply by the number of copies, ignoring compression: 100 TB with two copies is about 12 LTO-9 cartridges. Compression only helps with compressible data and should not be counted on for planning.</p></article><article class="faq-card"><h3>When is tape cheaper than disk or cloud?</h3><p>From roughly 15 TB upwards, once the cost of the drive is spread across enough cartridges. Below that, a NAS plus a cloud cold tier is usually cheaper and simpler.</p></article><article class="faq-card"><h3>Does compression change the number of tapes?</h3><p>Only for compressible data. Vendors quote 2.5:1, but video, images and encrypted files are already compressed and store close to native capacity.</p></article></section>
 </div></div></main>
+<script type="application/json" id="calc-cfg">{"model": {"LTO-8": {"tb": 12, "tape": 74.97, "drive": 6474.48}, "LTO-9": {"tb": 18, "tape": 102.0, "drive": 10599.5}, "LTO-10": {"tb": 30, "tape": 278.0, "drive": 23557.5}}, "locale": "en-US", "currency": "USD"}</script>
+<script type="application/json" id="calc-i18n" data-i18n>{"est": "<p><strong>{gen} estimate:<\/strong> {n} cartridges ({tb} TB native each), about {media} in media.<\/p>", "est_drive": "<p><strong>{gen} estimate:<\/strong> {n} cartridges ({tb} TB native each), about {media} in media plus about {drive} for one drive.<\/p>", "h_invalid": "Enter your data size", "t_invalid": "<p>Type the total amount of data you need to protect, in terabytes.<\/p>", "h_conflict": "Check these requirements", "t_conflict": "<p>You chose real-time backups but accept recovery taking days. Teams that need continuous protection usually need fast recovery too. Choose a faster recovery time, or a daily or weekly recovery point.<\/p>", "h_small_instant": "Recommended: SSD or HDD plus cloud", "h_small": "Recommended: NAS (HDD) plus cloud archive", "t_small": "<p>With {tb} TB, the cost of a tape drive is hard to justify. Keep a local disk copy for fast restores and a cloud cold-tier copy offsite.<\/p>", "h_instant": "Recommended: disk or flash first, LTO tape second", "t_instant": "<p>Instant recovery means your first copy must be on disk or flash. For {total} TB across all copies, keep only recent restore points on disk and put long-term, offline copies on LTO tape.<\/p>", "h_tape": "Recommended: {gen} tape", "h_tape_big": "Recommended: LTO-9 or LTO-10 tape", "t_lto8": "<p>LTO-8 (12 TB native) keeps drive cost down for this data size and still gives you offline copies.<\/p>", "t_lto9": "<p>LTO-9 (18 TB native) has the lowest media cost per terabyte in 2026 and fewer cartridges to handle than LTO-8.<\/p>", "t_big": "<p>At this size density matters. LTO-9 has the lowest cost per TB; LTO-10 needs fewer cartridges and library slots but costs more per TB and needs new full-height drives.<\/p>", "t_airgap": "<p>With {total} TB across all copies, tape gives you an air gap against ransomware and avoids cloud restore fees.<\/p>", "t_continuous": "<p><em>Real-time recovery points need a disk buffer in front of tape (disk to disk to tape).<\/em><\/p>"}</script>
 <script>
 (function(){
-var M={"LTO-8": {"tb": 12, "tape": 74.97, "drive": 6474.48}, "LTO-9": {"tb": 18, "tape": 102.0, "drive": 10599.5}, "LTO-10": {"tb": 30, "tape": 278.0, "drive": 23557.5}};
+var C=JSON.parse(document.getElementById('calc-cfg').textContent),L=JSON.parse(document.getElementById('calc-i18n').textContent),M=C.model;
 var f=document.getElementById('calc'),out=document.getElementById('calc-result');
-function usd(n){return '$'+Math.round(n).toLocaleString('en-US');}
-function est(gen,total){var g=M[gen];var n=Math.ceil(total/g.tb);var s='<p><strong>'+gen+' estimate:</strong> '+n+' cartridges ('+g.tb+' TB native each), about '+usd(n*g.tape)+' in media';if(g.drive){s+=' plus about '+usd(g.drive)+' for one drive';}return s+'.</p>';}
+var nf=new Intl.NumberFormat(C.locale),cf=new Intl.NumberFormat(C.locale,{style:'currency',currency:C.currency,maximumFractionDigits:0});
+function fill(s,v){return s.replace(/\{(\w+)\}/g,function(m,k){return k in v?v[k]:m;});}
+function est(gen,total){var g=M[gen];var n=Math.ceil(total/g.tb);var v={gen:gen,n:nf.format(n),tb:nf.format(g.tb),media:cf.format(n*g.tape)};if(g.drive){v.drive=cf.format(g.drive);return fill(L.est_drive,v);}return fill(L.est,v);}
 f.addEventListener('submit',function(e){
 e.preventDefault();
 var tb=parseFloat(document.getElementById('capacity').value),copies=parseInt(document.getElementById('copies').value,10),rto=document.getElementById('rto').value,rpo=document.getElementById('rpo').value;
-var h,t;
-if(!tb||tb<=0){h='Enter your data size';t='<p>Type the total amount of data you need to protect, in terabytes.</p>';}
-else if(rpo==='continuous'&&rto==='days'){h='Check these requirements';t='<p>You chose real-time backups but accept recovery taking days. Teams that need continuous protection usually need fast recovery too. Choose a faster recovery time, or a daily or weekly recovery point.</p>';}
+var h,t,tape=false;
+if(!tb||tb<=0){h=L.h_invalid;t=L.t_invalid;}
+else if(rpo==='continuous'&&rto==='days'){h=L.h_conflict;t=L.t_conflict;}
 else{
-var total=tb*copies;
-if(tb<15){h=rto==='instant'?'Recommended: SSD or HDD plus cloud':'Recommended: NAS (HDD) plus cloud archive';t='<p>With '+tb+' TB, the cost of a tape drive is hard to justify. Keep a local disk copy for fast restores and a cloud cold-tier copy offsite.</p>'+est('LTO-8',total);}
-else if(rto==='instant'){h='Recommended: disk or flash first, LTO tape second';t='<p>Instant recovery means your first copy must be on disk or flash. For '+total+' TB across all copies, keep only recent restore points on disk and put long-term, offline copies on LTO tape.</p>'+est(tb<500?'LTO-9':'LTO-10',total);}
-else{var gen=tb<50?'LTO-8':(tb<500?'LTO-9':'LTO-10');h='Recommended: '+(tb<500?gen:'LTO-9 or LTO-10')+' tape';
-t=tb<50?'<p>LTO-8 (12 TB native) keeps drive cost down for this data size and still gives you offline copies.</p>':(tb<500?'<p>LTO-9 (18 TB native) has the lowest media cost per terabyte in 2026 and fewer cartridges to handle than LTO-8.</p>':'<p>At this size density matters. LTO-9 has the lowest cost per TB; LTO-10 needs fewer cartridges and library slots but costs more per TB and needs new full-height drives.</p>');
+var total=tb*copies,v={tb:nf.format(tb),total:nf.format(total)};
+if(tb<15){h=rto==='instant'?L.h_small_instant:L.h_small;t=fill(L.t_small,v)+est('LTO-8',total);}
+else if(rto==='instant'){h=L.h_instant;t=fill(L.t_instant,v)+est(tb<500?'LTO-9':'LTO-10',total);tape=true;}
+else{var gen=tb<50?'LTO-8':(tb<500?'LTO-9':'LTO-10');h=tb<500?fill(L.h_tape,{gen:gen}):L.h_tape_big;tape=true;
+t=tb<50?L.t_lto8:(tb<500?L.t_lto9:L.t_big);
 t+=est(tb<500?gen:'LTO-9',total);if(tb>=500){t+=est('LTO-10',total);}
-t+='<p>With '+total+' TB across all copies, tape gives you an air gap against ransomware and avoids cloud restore fees.</p>';}
-if(rpo==='continuous'&&h.indexOf('tape')>-1){t+='<p><em>Real-time recovery points need a disk buffer in front of tape (disk to disk to tape).</em></p>';}
+t+=fill(L.t_airgap,v);}
+if(rpo==='continuous'&&tape){t+=L.t_continuous;}
 }
 out.innerHTML='<h3>'+h+'</h3>'+t;out.hidden=false;
 });

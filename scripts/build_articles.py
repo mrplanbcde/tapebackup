@@ -8,7 +8,8 @@ build_prices) or from a cited source, so a price refresh updates them too.
 import json
 import os
 
-from build_prices import CURRENT_DATE_TEXT, CURRENT_LABEL, load, per_tb, rng, short_rng
+import build_prices as BP
+from build_prices import CURRENT_LABEL, cheapest_per_tb, date_text, load, money, money0, per_tb, per_tb0, rng, short_rng
 from site_shell import ROOT, SITE, breadcrumb_ld, esc, faq_html, faq_ld, hubspot_cta, page, write
 
 TODAY_ISO = "2026-09-20"
@@ -56,7 +57,7 @@ def build_migration(current):
     ex = []
     for src, tapes_src, tb, read_mbs in (("LTO-5 (1.5 TB)", 334, 500, 140), ("LTO-6 (2.5 TB)", 200, 500, 160), ("LTO-7 (6 TB)", 84, 500, 300)):
         n9 = -(-tb // 18)
-        cost = f"${n9 * l9['cartridge']['lowUSD']:,.0f} to ${n9 * l9['cartridge']['highUSD']:,.0f}"
+        cost = f"{money0(n9 * l9['cartridge']['low'])} to {money0(n9 * l9['cartridge']['high'])}"
         hours = tb * 1e6 / (read_mbs * 3600) + tb * 1e6 / (400 * 3600)  # read at source speed, write at LTO-9 speed
         ex.append([src, f"{tapes_src} cartridges", f"{n9} LTO-9 cartridges", cost, f"{hours / 24:.0f} days on one drive pair"])
 
@@ -69,7 +70,7 @@ def build_migration(current):
 <li><strong>You cannot prove the archive is readable.</strong> If nothing has been restored from those tapes in years, a migration is also the verification pass you have been postponing.</li>
 </ul>"""),
         sec("Cost and time", "What migrating 500 TB actually costs", f"""
-<p>Media cost is the easy part to budget: divide the archive by the native capacity of the target generation and multiply by the cartridge price. At {CURRENT_DATE_TEXT}, LTO-9 media costs {rng(l9['cartridge'], True)} per 18 TB cartridge ({per_tb(l9['cartridge'])} per TB), and a new internal LTO-9 drive runs {rng(l9['driveInternal'], False)}.</p>
+<p>Media cost is the easy part to budget: divide the archive by the native capacity of the target generation and multiply by the cartridge price. As of {date_text()}, LTO-9 media costs {rng(l9['cartridge'], True)} per 18 TB cartridge ({per_tb(l9['cartridge'])} per TB), and a new internal LTO-9 drive runs {rng(l9['driveInternal'], False)}.</p>
 {table(["Source archive", "Cartridges today", "On LTO-9", "New media cost", "Read plus write time"], ex, "LTO migration cost examples")}
 <p>The time column adds reading at the source generation's rated speed (LTO-5 up to 140 MB/s, LTO-6 160 MB/s, LTO-7 300 MB/s) to writing at LTO-9's 400 MB/s, running flat out with no stoppages. The old drive is usually the bottleneck, which is why the LTO-5 row takes about two thirds longer than the LTO-7 row for the same 500 TB. Run the read and the write on separate drives in parallel and you approach the slower of the two figures rather than their sum.</p>
 <p>Budget for the things that are not media: a SAS HBA per drive, a server with enough disk to stage data if you are not copying tape to tape, backup software or LTFS tooling, and staff time to load cartridges unless you have a library.</p>"""),
@@ -93,7 +94,7 @@ def build_migration(current):
     faqs = [
         ("Can an LTO-9 drive read LTO-6 tapes?", "No. LTO-9 drives read and write LTO-9 and LTO-8 media only. LTO-6 cartridges need an LTO-6, LTO-7 or LTO-8 drive, and LTO-8 drives read LTO-7 but not LTO-6, so keep a drive of the right generation until the migration is finished."),
         ("How long does it take to migrate 100 TB of tape?", "About six days of continuous copying on a single LTO-9 drive at 400 MB/s, counting the read and the write. Older source drives are slower: reading 100 TB from LTO-5 media takes roughly eight days on its own."),
-        ("How much does it cost to migrate 500 TB to LTO-9?", f"Media alone is 28 cartridges, or {rng(l9['cartridge'], True)} each, which is about $2,600 to $3,200 in {CURRENT_LABEL}. Add a drive from {rng(l9['driveInternal'], False)} if you do not already have one, plus an HBA, software and staff time."),
+        ("How much does it cost to migrate 500 TB to LTO-9?", f"Media alone is 28 cartridges, or {rng(l9['cartridge'], True)} each, which is about {money0(round(28 * l9['cartridge']['low'], -2))} to {money0(round(28 * l9['cartridge']['high'], -2))} in {CURRENT_LABEL}{'' if BP.MKT.is_us else ' in ' + BP.MKT.country}. Add a drive from {rng(l9['driveInternal'], False)} if you do not already have one, plus an HBA, software and staff time."),
         ("Should I migrate to LTO-9 or LTO-10?", f"LTO-9 for most migrations: it costs {per_tb(l9['cartridge'])} per TB against {per_tb(l10['cartridge'])} for LTO-10, and its drives still read your LTO-8 tapes. Choose LTO-10 when cartridge count or library slots matter more than media cost."),
         ("How do I verify a tape migration?", "Read every new cartridge back and compare checksums with the source, not just the checksums recorded at write time. Restore a sample of real files, confirm the new tapes are in the catalogue your restores use, and keep the source media until all of that passes."),
     ]
@@ -118,6 +119,9 @@ def build_market(current):
     dd = src("largely stable at $4-6/TB", "DatacenterDisk")
 
     price_rows = [[gen, f"{g[gen]['nativeTB']:g} TB", esc(rng(g[gen]["cartridge"], True)), esc(per_tb(g[gen]["cartridge"]))] for gen in ["LTO-6", "LTO-7", "LTO-8", "LTO-9", "LTO-10"]]
+    cheap = cheapest_per_tb(g)
+    us = BP.MKT.is_us
+    where = "" if us else f" in {BP.MKT.country}"
 
     sections = [
         sec("Shipments", "How much tape capacity ships each year", f"""
@@ -125,11 +129,11 @@ def build_market(current):
 {table(["Year", "LTO capacity shipped", "Change"], [["2024", "176.5 EB", "Record"], ["2025", "160.3 EB", "Down about 9%"], ["Q1 2026", "Up 57% year over year", "LTO-9 volume plus the LTO-10 ramp"]], "LTO capacity shipped")}
 <p>Two readings of the 2025 dip circulate. One ties it to trade uncertainty making buyers cautious ({reg}); the other suggests buyers were waiting for LTO-10 before committing to a new generation ({bf}). The Q1 2026 rebound supports the second.</p>"""),
         sec("Supply", "Only two companies make the tape", f"""
-<p>Every LTO cartridge on the market contains tape made by Fujifilm or Sony ({reg}); HPE, IBM, Quantum and Dell put their names on media made by those two. That concentration is a risk when a plant or a material is disrupted, and it is also why tape pricing has not followed the hard drive market: {dd} reports tape holding at roughly $4 to $6 per TB through 2026 while hard drive prices rose sharply, because the tape supply chain sits outside the NAND shortage and hyperscale drive demand.</p>
+<p>Every LTO cartridge on the market contains tape made by Fujifilm or Sony ({reg}); HPE, IBM, Quantum and Dell put their names on media made by those two. That concentration is a risk when a plant or a material is disrupted, and it is also why tape pricing has not followed the hard drive market: {dd} reports tape holding at roughly $4 to $6 per TB{'' if us else ' at US prices'} through 2026 while hard drive prices rose sharply, because the tape supply chain sits outside the NAND shortage and hyperscale drive demand.</p>
 <p>The 40 TB LTO-10 cartridge depends on an aramid base film, and its early price premium was blamed partly on tight supply of that film.</p>"""),
         sec("Prices", f"What LTO media costs now ({CURRENT_LABEL})", f"""
 {table(["Generation", "Native capacity", "Cartridge price", "Per native TB"], price_rows, "LTO media prices")}
-<p>LTO-9 is the cheapest media per terabyte on sale. Legacy generations cost more per terabyte, not less: LTO-6 now runs {per_tb(g['LTO-6']['cartridge'])} per TB against {per_tb(g['LTO-9']['cartridge'])} for LTO-9. Full listings, drive prices and every earlier snapshot are on the <a href="/lto-tape-price-trend">price tracker</a> and in the <a href="/lto-tape-price-trend/history">price history</a>.</p>"""),
+<p>{cheap} is the cheapest media per terabyte on sale{where}. Legacy generations cost more per terabyte, not less: LTO-6 now runs {per_tb(g['LTO-6']['cartridge'])} per TB against {per_tb(g['LTO-9']['cartridge'])} for LTO-9. Full listings, drive prices and every earlier snapshot are on the <a href="/lto-tape-price-trend">price tracker</a> and in the <a href="/lto-tape-price-trend/history">price history</a>.</p>"""),
         sec("Generations", "Where the format is going", """
 <p>LTO-10 shipped in 2025 at 30 TB native, and a 40 TB cartridge for the same drives arrived in 2026. Two things make LTO-10 a bigger step than usual for buyers: the drives are full height only so far, and they do not read earlier generations at all, which breaks the one-generation-back rule every LTO buyer has relied on. The published roadmap continues past LTO-10, but roadmap capacities have historically been targets rather than dates.</p>
 <p>For anyone planning an archive today, that makes LTO-9 the conservative choice and LTO-10 the density choice. See <a href="/resources/lto-tape-migration">LTO tape migration</a> for what the compatibility change means for old tapes.</p>"""),
@@ -139,13 +143,14 @@ def build_market(current):
     faqs = [
         ("Is the tape storage market growing or shrinking?", "Capacity shipped fell about 9% in 2025 to 160.3 EB after a record 176.5 EB in 2024, then rebounded with first-quarter 2026 shipments up 57% year over year. Measured in exabytes the market is growing over time, even though unit sales are concentrated in fewer, larger cartridges."),
         ("Who manufactures LTO tape?", "Only Fujifilm and Sony make the tape itself. HPE, IBM, Quantum and Dell sell cartridges containing media from those two manufacturers."),
-        ("Why is tape cheaper than hard drives in 2026?", "Tape media held at roughly $4 to $6 per TB while hard drive prices rose sharply, because tape production is not competing for the same supply chain as drives and flash. The trade-off is that tape needs a drive up front and gives sequential rather than random access."),
+        ("Why is tape cheaper than hard drives in 2026?", ("Tape media held at roughly $4 to $6 per TB while hard drive prices rose sharply" if us else f"In the US, tape media held at roughly $4 to $6 per TB while hard drive prices rose sharply, and LTO-9 media costs {per_tb0(g['LTO-9']['cartridge'])} per TB{where}") + ", because tape production is not competing for the same supply chain as drives and flash. The trade-off is that tape needs a drive up front and gives sequential rather than random access."),
         ("How big is an LTO-10 tape?", "30 TB native for the standard cartridge and 40 TB for the higher-capacity version introduced in 2026. Both work in the same LTO-10 drives, which do not read earlier generations."),
     ]
     return article(path, "Tape Storage Market 2026: Shipments, Supply, Prices",
                    "LTO tape market data for 2026: capacity shipped in 2025 and Q1 2026, why only two companies make tape, current media prices per TB and where LTO-10 fits.",
                    "Tape Storage Market in 2026",
-                   "LTO shipments fell about 9% in 2025 to 160.3 exabytes, then rebounded with first-quarter 2026 capacity up 57% year over year, while media stayed at roughly $5 to $6 per terabyte as hard drive prices climbed.",
+                   "LTO shipments fell about 9% in 2025 to 160.3 exabytes, then rebounded with first-quarter 2026 capacity up 57% year over year, while media stayed at roughly $5 to $6 per terabyte as hard drive prices climbed." if us else
+                   f"LTO shipments fell about 9% in 2025 to 160.3 exabytes, then rebounded with first-quarter 2026 capacity up 57% year over year, while LTO-9 media costs {per_tb0(g['LTO-9']['cartridge'])} per terabyte{where} as hard drive prices climb.",
                    "Market data", sections, faqs, "2026-09-20",
                    [("Home", "/"), ("Resources", "/resources"), ("Tape storage market", path)])
 
@@ -156,6 +161,16 @@ def build_market(current):
 
 SIZES = [50, 100, 500, 1000]
 LTO9_TB = 18
+GIB_PER_TB = 1e12 / 2 ** 30   # AWS, Azure and Google bill "GB" as 2^30 bytes; a decimal TB of tape is 931.3 of them
+BINARY_TB = {"wasabi": 1e12 / 2 ** 40}  # Wasabi counts 1,024 GB per TB
+PROVIDERS = (
+    ("aws_glacier_deep_archive", "AWS S3 Glacier Deep Archive", "https://aws.amazon.com/s3/pricing/"),
+    ("aws_glacier_flexible_retrieval", "AWS S3 Glacier Flexible Retrieval", "https://aws.amazon.com/s3/pricing/"),
+    ("azure_blob_archive", "Azure Blob Storage Archive", "https://azure.microsoft.com/en-us/pricing/details/storage/blobs/"),
+    ("gcs_archive", "Google Cloud Storage Archive", "https://cloud.google.com/storage/pricing"),
+    ("backblaze_b2", "Backblaze B2", "https://www.backblaze.com/cloud-storage/pricing"),
+    ("wasabi", "Wasabi", "https://wasabi.com/pricing"),
+)
 
 
 def tape_cost(tb, g, copies):
@@ -164,94 +179,152 @@ def tape_cost(tb, g, copies):
     n = -(-tb // LTO9_TB) * copies
     drives = 2 if tb >= 500 else 1
     return {"cartridges": n,
-            "lo": n * cart["lowUSD"] + drives * drive["lowUSD"],
-            "hi": n * cart["highUSD"] + drives * drive["highUSD"],
-            "media_lo": n * cart["lowUSD"], "media_hi": n * cart["highUSD"],
+            "lo": n * cart["low"] + drives * drive["low"],
+            "hi": n * cart["high"] + drives * drive["high"],
+            "media_lo": n * cart["low"], "media_hi": n * cart["high"],
             "drives": drives}
 
 
-def cloud_year(tb, per_gb_month):
-    return tb * 1000 * per_gb_month * 12
-
-
-def breakeven_years(tape, per_year):
-    return tape["lo"] / per_year, tape["hi"] / per_year
+def cloud_data():
+    """Cloud list prices for this market's region (US or Frankfurt), in USD as published."""
+    if not BP.MKT.is_us and os.path.exists(os.path.join(ROOT, "data", "eu", "cloud-prices-eu-2026-09.json")):
+        return load("eu/cloud-prices-eu-2026-09.json"), "EU (Frankfurt)"
+    return load("cloud-prices-2026-09.json"), "US East"
 
 
 def build_tco(current):
     g = current["generations"]
-    cloud = load("cloud-prices-2026-09.json")
+    cloud, region = cloud_data()
     p = cloud["providers"]
     deep = p["aws_glacier_deep_archive"]
     path = "/comparisons/tape-vs-cloud-5-year-cost"
+    M = BP.MKT
+    conv = M.from_usd                                      # USD list price -> this market's currency
     per_gb = deep["storagePerGBMonth"]
     restore_per_gb = deep["retrievalPerGB"]["bulk"] + deep["egressPerGB"]
+    year = lambda tb, rate: conv(tb * GIB_PER_TB * rate * 12)   # one year of storage, in market currency
+
+    def usd(v, d=5):
+        if not d:
+            return f"${v:,.0f}"
+        txt = f"{v:.{max(d, 4)}f}".rstrip("0")
+        whole, _, frac = txt.partition(".")
+        return f"${whole}.{frac.ljust(2, '0')}"
 
     rows = []
     for tb in SIZES:
         one, two = tape_cost(tb, g, 1), tape_cost(tb, g, 2)
-        five = cloud_year(tb, per_gb) * 5
-        lo, hi = breakeven_years(one, cloud_year(tb, per_gb))
+        five = year(tb, per_gb) * 5
+        lo, hi = one["lo"] / year(tb, per_gb), one["hi"] / year(tb, per_gb)
         rows.append([f"<strong>{tb:,} TB</strong>",
-                     f"${one['lo']:,.0f} to ${one['hi']:,.0f}<br><span class='updated-note'>{one['cartridges']} cartridges, {one['drives']} drive{'s' if one['drives'] > 1 else ''}</span>",
-                     f"${two['lo']:,.0f} to ${two['hi']:,.0f}",
-                     f"${five:,.0f}",
-                     f"${tb * 1000 * restore_per_gb:,.0f}",
+                     f"{money0(one['lo'])} to {money0(one['hi'])}<br><span class='updated-note'>{one['cartridges']} cartridges, {one['drives']} drive{'s' if one['drives'] > 1 else ''}</span>",
+                     f"{money0(two['lo'])} to {money0(two['hi'])}",
+                     money0(five),
+                     money0(conv(tb * GIB_PER_TB * restore_per_gb)),
                      f"{lo:.1f} to {hi:.1f} years"])
 
     prov = []
-    for key, label, url in (
-        ("aws_glacier_deep_archive", "AWS S3 Glacier Deep Archive", "https://aws.amazon.com/s3/pricing/"),
-        ("aws_glacier_flexible_retrieval", "AWS S3 Glacier Flexible Retrieval", "https://aws.amazon.com/s3/pricing/"),
-        ("azure_blob_archive", "Azure Blob Storage Archive", "https://azure.microsoft.com/en-us/pricing/details/storage/blobs/"),
-        ("gcs_archive", "Google Cloud Storage Archive", "https://cloud.google.com/storage/pricing"),
-        ("backblaze_b2", "Backblaze B2", "https://www.backblaze.com/cloud-storage/pricing"),
-        ("wasabi", "Wasabi", "https://wasabi.com/pricing"),
-    ):
-        x = p[key]
-        gb = x.get("storagePerGBMonth") or (x.get("storagePerTBMonth", 0) / 1000)
-        five = gb * 100 * 1000 * 12 * 5
+    for key, label, url in PROVIDERS:
+        x = p.get(key)
+        if not x:
+            continue
+        gb = x.get("storagePerGBMonth") or ((x.get("storagePerTBMonth") or 0) / 1000)
+        if not gb:
+            continue
+        if key in BINARY_TB or x.get("storagePerTBMonth"):
+            five = conv((x.get("storagePerTBMonth") or gb * 1000) * BINARY_TB.get(key, 1) * 100 * 12 * 5)
+        else:
+            five = conv(gb * GIB_PER_TB * 100 * 12 * 5)
         ret = x.get("retrievalPerGB") or x.get("dataRetrievalPerGB")
         if isinstance(ret, dict):
-            ret_txt = f"${ret['bulk']:.4f} bulk, ${ret['standard']:.2f} standard" if "bulk" in ret else f"${ret['standard']:.2f} standard, ${ret['high']:.2f} high priority"
-        elif isinstance(ret, (int, float)):
-            ret_txt = f"${ret:.2f}" if ret else "none"
+            if ret.get("bulk") is not None:
+                ret_txt = f"{usd(ret['bulk'], 4)} bulk, {usd(ret['standard'], 4)} standard"
+            else:
+                ret_txt = f"{usd(ret['standard'], 4)} standard, {usd(ret['high'], 4)} high priority"
+        elif isinstance(ret, (int, float)) and ret:
+            ret_txt = usd(ret, 4)
         else:
             ret_txt = "none"
         eg = x.get("egressPerGB")
-        eg_txt = "free within policy" if eg == 0 else f"${eg:.3f}".rstrip("0")
+        eg_txt = "free within policy" if eg == 0 else (usd(eg, 3) if eg is not None else "not found")
         mind = x.get("minStorageDays")
         prov.append([f'<a href="{url}" rel="nofollow noopener" target="_blank">{esc(label)}</a>',
-                     f"${gb:.5f}".rstrip("0"), f"${five:,.0f}", ret_txt, eg_txt,
-                     f"{mind} days" if mind else "none"])
+                     usd(gb, 5), money0(five), ret_txt, eg_txt, f"{mind} days" if mind else "none"])
 
     t100, t500, t1000 = tape_cost(100, g, 1), tape_cost(500, g, 1), tape_cost(1000, g, 1)
-    c100, c500 = cloud_year(100, per_gb) * 5, cloud_year(500, per_gb) * 5
-    be100 = breakeven_years(t100, cloud_year(100, per_gb))
-    be500 = breakeven_years(t500, cloud_year(500, per_gb))
+    c100, c500 = year(100, per_gb) * 5, year(500, per_gb) * 5
+    be100 = (t100["lo"] / year(100, per_gb), t100["hi"] / year(100, per_gb))
+    be500 = (t500["lo"] / year(500, per_gb), t500["hi"] / year(500, per_gb))
+
+    def verdict(t, c):
+        if c < t["lo"]:
+            return "cloud"
+        if c > t["hi"]:
+            return "tape"
+        return "level"
+    v100, v500 = verdict(t100, c100), verdict(t500, c500)
+    fx = BP._FX or {}
+    region_label = "US East (N. Virginia)" if M.is_us else "EU (Frankfurt)"
+    if M.is_us:
+        basis = f"Cloud is AWS S3 Glacier Deep Archive at {usd(per_gb)} per GB-month in {region_label}, one copy, kept for the full five years."
+        conv_note = ""
+        region_note = ""
+    else:
+        basis = (f"Cloud is AWS S3 Glacier Deep Archive at {usd(per_gb)} per GB-month in {region_label}, one copy, kept for the full five years."
+                 f" Cloud list prices are published in US dollars and converted at the ECB reference rate of {fx.get('date', '')}, when one euro bought {fx.get('eur_per', {}).get('USD', 0):.4f} US dollars" + (f" and {fx.get('eur_per', {}).get('PLN', 0):.4f} złoty." if M.currency == "PLN" else "."))
+        conv_note = f" Tape prices are from sellers in {M.country} and include VAT; cloud list prices exclude VAT."
+        cheap_rate = 0.00099
+        region_note = (f"<p>Frankfurt is one of the dearer AWS regions. Deep Archive in Ireland or Stockholm costs {usd(cheap_rate)} per GB-month, the same as in the US, which would make five years of 100 TB about {money0(year(100, cheap_rate) * 5)} instead of {money0(c100)}."
+                       " Whether you can use those regions depends on where your data is allowed to live.</p>")
+    azure = p.get("azure_blob_archive", {})
+    az_std = (azure.get("dataRetrievalPerGB") or {}).get("standard")
+    az_line = ""
+    if az_std and azure.get("storagePerGBMonth"):
+        same = abs(azure["storagePerGBMonth"] - per_gb) < 1e-9
+        az_line = (f"<p>Azure Archive {'charges the same' if same else 'carries a'} {usd(azure['storagePerGBMonth'])} per GB-month {'as Deep Archive' if same else 'headline'} but has no bulk tier: retrieving 1 TB is "
+                   f"{money(conv(GIB_PER_TB * az_std))} at standard priority against {money(conv(GIB_PER_TB * deep['retrievalPerGB']['bulk']))} on AWS, before egress.</p>")
+
+    small = {
+        "cloud": f"<p><strong>At 100 TB, cloud archive is cheaper over five years.</strong> A 100 TB archive costs about {money0(c100)} in Glacier Deep Archive for five years, while one tape copy costs {money0(t100['lo'])} to {money0(t100['hi'])}, most of it the drive. The tape only pays for itself after {be100[0]:.1f} to {be100[1]:.1f} years at that size.</p>",
+        "level": f"<p><strong>At 100 TB the two are close.</strong> A 100 TB archive costs about {money0(c100)} in Glacier Deep Archive for five years, while one tape copy costs {money0(t100['lo'])} to {money0(t100['hi'])}, most of it the drive, so the cheaper option depends on which drive you buy. The tape pays for itself after {be100[0]:.1f} to {be100[1]:.1f} years.</p>",
+        "tape": f"<p><strong>Even at 100 TB, tape is cheaper over five years.</strong> A 100 TB archive costs about {money0(c100)} in Glacier Deep Archive for five years, against {money0(t100['lo'])} to {money0(t100['hi'])} for one tape copy including the drive. The tape pays for itself after {be100[0]:.1f} to {be100[1]:.1f} years.</p>",
+    }[v100]
+    big = {
+        "cloud": f"<p><strong>At 500 TB cloud is still cheaper,</strong> at {money0(c500)} for five years against {money0(t500['lo'])} to {money0(t500['hi'])} for one tape copy, which breaks even in {be500[0]:.1f} to {be500[1]:.1f} years.",
+        "level": f"<p><strong>Around 500 TB the two meet.</strong> One tape copy of 500 TB costs {money0(t500['lo'])} to {money0(t500['hi'])} against {money0(c500)} for five years of Glacier, so tape is clearly cheaper at the low end of drive pricing and about level if you pay top of market. It breaks even in {be500[0]:.1f} to {be500[1]:.1f} years.",
+        "tape": f"<p><strong>At 500 TB tape is clearly cheaper.</strong> One tape copy costs {money0(t500['lo'])} to {money0(t500['hi'])} against {money0(c500)} for five years of Glacier, and breaks even in {be500[0]:.1f} to {be500[1]:.1f} years.",
+    }[v500] + f" At 1 PB the drive is a rounding error: media alone is {money0(t1000['media_lo'])} to {money0(t1000['media_hi'])}, a one-off cost against {money0(year(1000, per_gb) * 5)} of storage fees.</p>"
+    faq_tape_cloud = (f"It depends on size and retention. At 100 TB over five years, AWS S3 Glacier Deep Archive costs about {money0(c100)} against {money0(t100['lo'])} to {money0(t100['hi'])} for one LTO-9 tape copy including a drive, "
+                      + {"cloud": "so cloud is cheaper.", "level": "so the two are close.", "tape": "so tape is already cheaper."}[v100]
+                      + f" At 500 TB tape costs {money0(t500['lo'])} to {money0(t500['hi'])} against {money0(c500)} for cloud, "
+                      + {"cloud": "so cloud still wins, but by 1 PB tape is well ahead.", "level": "so tape is level or cheaper, and by 1 PB it is less than half the cost.", "tape": "and by 1 PB tape is a fraction of the cost."}[v500])
+    headline = {"cloud": "Cloud wins small, tape wins big", "level": "Close at 100 TB, tape wins big", "tape": "Tape wins from 100 TB up"}[v100]
+    answer = (f"Over five years, 100 TB costs about {money0(c100)} in AWS S3 Glacier Deep Archive against {money0(t100['lo'])} to {money0(t100['hi'])} for one LTO-9 tape copy including the drive, "
+              f"and at 500 TB tape costs {money0(t500['lo'])} to {money0(t500['hi'])} against {money0(c500)} for cloud.")
 
     sections = [
         sec("The numbers", f"Five-year cost of keeping an archive, {CURRENT_LABEL} list prices", f"""
-<p>Tape here is LTO-9 at {rng(g['LTO-9']['cartridge'], True)} per 18 TB cartridge plus a new internal drive at {rng(g['LTO-9']['driveInternal'], False)} (two drives from 500 TB up, so a copy can be read back while another is written). Cloud is AWS S3 Glacier Deep Archive at ${per_gb:.5f} per GB-month, one copy, kept for the full five years. The restore column is what it costs to pull the whole archive out of Glacier once, at bulk retrieval plus internet egress.</p>
+<p>Tape here is LTO-9 at {rng(g['LTO-9']['cartridge'], True)} per 18 TB cartridge plus a new internal drive at {rng(g['LTO-9']['driveInternal'], False)} (two drives from 500 TB up, so a copy can be read back while another is written). {basis} The restore column is what it costs to pull the whole archive out of Glacier once, at bulk retrieval plus internet egress.{conv_note}</p>
 {table(["Archive", "Tape, one copy", "Tape, two copies", "Glacier Deep Archive, 5 years", "One full restore from Glacier", "Break-even, one tape copy"], rows, "Five-year tape versus cloud archive cost")}
 <p>These are list prices for media, drives and storage. They exclude racks, staff, software, cloud request charges and the disk you stage data on at either end.</p>"""),
-        sec("Reading the table", "Cloud wins small, tape wins big", f"""
-<p><strong>Below roughly 100 TB, cloud archive is cheaper over five years.</strong> A 100 TB archive costs about ${c100:,.0f} in Glacier Deep Archive for five years, while one tape copy costs ${t100['lo']:,.0f} to ${t100['hi']:,.0f}, most of it the drive. The tape only pays for itself after {be100[0]:.1f} to {be100[1]:.1f} years at that size.</p>
-<p><strong>Around 500 TB the two meet.</strong> One tape copy of 500 TB costs ${t500['lo']:,.0f} to ${t500['hi']:,.0f} against ${c500:,.0f} for five years of Glacier, so tape is clearly cheaper at the low end of drive pricing and about level if you pay top of market. It breaks even in {be500[0]:.1f} to {be500[1]:.1f} years. At 1 PB the drive is a rounding error: media alone is ${t1000['media_lo']:,.0f} to ${t1000['media_hi']:,.0f}, a one-off cost against ${cloud_year(1000, per_gb) * 5:,.0f} of storage fees.</p>
+        sec("Reading the table", headline, f"""
+{small}
+{big}
+{region_note}
 <p>The reason is simple. A tape drive is a fixed cost that does not care how much data you have; cartridges then cost about {per_tb(g['LTO-9']['cartridge'])} per TB once. Cloud archive has no entry cost and bills every month forever.</p>"""),
         sec("Restores", "The number that changes the answer", f"""
-<p>Reading an archive back from tape costs drive time. Reading it back from cloud archive costs money: pulling 100 TB out of Glacier Deep Archive is about ${100 * 1000 * restore_per_gb:,.0f} at bulk retrieval (${deep['retrievalPerGB']['bulk']:.4f} per GB) plus internet egress (${deep['egressPerGB']:.2f} per GB), and standard retrieval is ${deep['retrievalPerGB']['standard']:.2f} per GB instead of ${deep['retrievalPerGB']['bulk']:.4f}.</p>
+<p>Reading an archive back from tape costs drive time. Reading it back from cloud archive costs money: pulling 100 TB out of Glacier Deep Archive is about {money0(conv(100 * GIB_PER_TB * restore_per_gb))} at bulk retrieval ({usd(deep['retrievalPerGB']['bulk'], 4)} per GB) plus internet egress ({usd(deep['egressPerGB'], 2)} per GB), and standard retrieval is {usd(deep['retrievalPerGB']['standard'], 4)} per GB instead of {usd(deep['retrievalPerGB']['bulk'], 4)}.</p>
 <p>Two details decide whether that number ever lands on your invoice:</p>
 <ul>
 <li><strong>Retrieval tier.</strong> Bulk retrieval from Deep Archive takes up to 48 hours. If you need it faster you pay the standard rate, which is {deep['retrievalPerGB']['standard'] / deep['retrievalPerGB']['bulk']:.0f} times more per GB.</li>
 <li><strong>Where the data goes.</strong> Egress is free to other services inside the same provider and charged when it leaves for the internet, so a restore into your own data centre costs full egress.</li>
 </ul>
-<p>Azure Archive carries the same ${p['azure_blob_archive']['storagePerGBMonth']:.5f} per GB-month headline as Deep Archive but has no bulk tier: retrieving 1 TB is ${1000 * p['azure_blob_archive']['dataRetrievalPerGB']['standard']:,.2f} at standard priority against ${1000 * deep['retrievalPerGB']['bulk']:,.2f} on AWS, before egress.</p>"""),
+{az_line}"""),
         sec("Provider prices", f"Cloud archive list prices, {cloud['asOf']}", f"""
 {table(["Service", "$/GB-month", "100 TB for 5 years", "Retrieval per GB", "Egress per GB", "Minimum storage"], prov, "Cloud archive list prices")}
-<p>US region list prices before committed-use discounts, taken from each provider's own pricing data on {cloud['asOf']}. Notes that matter when you model this yourself:</p>
+<p>{region_label} list prices before committed-use discounts, taken from each provider's own pricing data on {cloud['asOf']}{'' if M.is_us else ', in US dollars as published; the five-year column is converted'}. Notes that matter when you model this yourself:</p>
 <ul>
-<li>Google prices per <strong>gibibyte</strong>, not gigabyte, which makes it about 7% more expensive than the raw number suggests.</li>
+<li>AWS, Azure and Google all bill storage in binary gigabytes (2<sup>30</sup> bytes, also called GiB). A decimal terabyte of tape data is about 931 billed gigabytes, and every cloud figure on this page accounts for that.</li>
 <li>Wasabi and Backblaze include egress only within a policy: Wasabi while monthly egress stays at or below what you store, Backblaze up to three times your average stored data.</li>
 <li>Minimum storage duration bites on deletion. Delete from Deep Archive after a month and you still pay the remaining {deep['minStorageDays']} days; Google Archive charges a full year.</li>
 <li>AWS adds {deep['perObjectOverheadKB']} KB of metadata to every archived object, so millions of small files cost far more than their raw size. Pack them into larger archives before upload.</li>
@@ -262,16 +335,16 @@ def build_tco(current):
 <p><strong>Both:</strong> the staging disk at each end, and the second copy you should keep either way. Most teams end up with disk for recent restores, tape for offline retention and a cloud copy for site loss, which is the <a href="/comparisons">3-2-1 split</a> rather than a single winner.</p>"""),
     ]
     faqs = [
-        ("Is tape cheaper than cloud storage?", f"It depends on size and retention. At 100 TB over five years, AWS S3 Glacier Deep Archive costs about ${c100:,.0f} against ${t100['lo']:,.0f} to ${t100['hi']:,.0f} for one LTO-9 tape copy including a drive, so cloud is cheaper. At 500 TB tape costs ${t500['lo']:,.0f} to ${t500['hi']:,.0f} against ${c500:,.0f} for cloud, so tape is level or cheaper, and by 1 PB it is less than half the cost."),
-        ("What does it cost to restore 100 TB from Glacier Deep Archive?", f"About ${100 * 1000 * restore_per_gb:,.0f} at {CURRENT_LABEL} list prices: ${deep['retrievalPerGB']['bulk']:.4f} per GB for bulk retrieval plus ${deep['egressPerGB']:.2f} per GB of internet egress. Standard retrieval costs ${deep['retrievalPerGB']['standard']:.2f} per GB instead."),
+        ("Is tape cheaper than cloud storage?", faq_tape_cloud),
+        ("What does it cost to restore 100 TB from Glacier Deep Archive?", f"About {money0(conv(100 * GIB_PER_TB * restore_per_gb))} at {CURRENT_LABEL} list prices: {usd(deep['retrievalPerGB']['bulk'], 4)} per GB for bulk retrieval plus {usd(deep['egressPerGB'], 2)} per GB of internet egress. Standard retrieval costs {usd(deep['retrievalPerGB']['standard'], 4)} per GB instead."),
         ("How long before a tape drive pays for itself?", f"At 100 TB, {be100[0]:.1f} to {be100[1]:.1f} years against Glacier Deep Archive. At 500 TB, {be500[0]:.1f} to {be500[1]:.1f} years. The drive is a fixed cost, so the more you store the faster it is repaid."),
-        ("How many LTO-9 tapes is 1 PB?", f"{-(-1000 // LTO9_TB)} cartridges for one copy at 18 TB native each, about ${t1000['media_lo']:,.0f} to ${t1000['media_hi']:,.0f} of media. Compression does not help for already-compressed archive data."),
-        ("Which cloud archive tier is cheapest?", f"AWS S3 Glacier Deep Archive and Azure Blob Archive share the lowest headline rate at ${per_gb:.5f} per GB-month, but AWS is far cheaper to read back because it offers a bulk retrieval tier. Wasabi and Backblaze cost more per month and include egress within policy limits."),
+        ("How many LTO-9 tapes is 1 PB?", f"{-(-1000 // LTO9_TB)} cartridges for one copy at 18 TB native each, about {money0(t1000['media_lo'])} to {money0(t1000['media_hi'])} of media. Compression does not help for already-compressed archive data."),
+        ("Which cloud archive tier is cheapest?", f"AWS S3 Glacier Deep Archive has the lowest headline rate here at {usd(per_gb)} per GB-month, and AWS is also far cheaper to read back because it offers a bulk retrieval tier. Wasabi and Backblaze cost more per month and include egress within policy limits."),
     ]
     return article(path, "Tape vs Cloud: 5-Year Archive Cost Compared",
                    f"What a 50 TB to 1 PB archive costs over five years on LTO-9 tape versus AWS Glacier Deep Archive, Azure, Google and others, with {cloud['asOf']} list prices.",
                    "Tape vs Cloud: The Five-Year Cost of an Archive",
-                   f"Over five years, 100 TB costs about ${c100:,.0f} in AWS S3 Glacier Deep Archive against ${t100['lo']:,.0f} to ${t100['hi']:,.0f} for one LTO-9 tape copy including the drive, but at 500 TB tape costs ${t500['lo']:,.0f} to ${t500['hi']:,.0f} against ${c500:,.0f} for cloud.",
+                   answer,
                    "Cost comparison", sections, faqs, "2026-09-20",
                    [("Home", "/"), ("Comparisons", "/comparisons"), ("Tape vs cloud 5-year cost", path)])
 
