@@ -50,6 +50,8 @@ Most of these terms have difficulty 0 to 12, so a page that answers them well ca
 
 ## 4. Work plan
 
+Status 3 October 2026: phases 1 and 2 are live in English and all six languages (drive buying guide, generation pages with specs, /lto-tape, /lto-tape-capacity, data recovery, news, libraries, LTFS, lifespan, cleaning and labels). Phase 3 is open.
+
 ### Phase 1, October: the big low-difficulty clusters (about 7,200 searches a month)
 1. **Drive buyer's guide** at /why-tape/lto-tape-drive: drive per generation with current price range, internal vs external vs Thunderbolt/USB, read/write compatibility table, brand notes (HPE StoreEver, IBM, Quantum, Dell PowerVault, MagStor, OWC, mLogic), FAQ. Title aimed at "LTO tape drive".
 2. **Generation pages**: turn the five price pages into the page for each generation (title pattern "LTO-9 tape: capacity, speed, compatibility and price 2026"). Add specs, compatibility, release year, drives that read it and the current price block. Keep the URLs and the price content so current price rankings carry over.

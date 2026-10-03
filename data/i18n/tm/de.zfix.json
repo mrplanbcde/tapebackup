@@ -1,5 +1,7 @@
 {
  "It can be, if you test them. Buy from sellers who state the load count and accept returns, avoid unknown-history bulk lots, and write and read back a full cartridge before trusting any data to it.": "Ja, sofern Sie die Bänder testen. Kaufen Sie bei Händlern, die die Ladezyklen angeben und Rückgaben akzeptieren, meiden Sie Sammelposten unbekannter Herkunft, und beschreiben Sie eine Kassette vollständig und lesen Sie sie zurück, bevor Sie ihr Daten anvertrauen.",
+ "LTO tape lifespan explained: the {0}-year archival rating, storage temperature and humidity, load cycles, and why drive compatibility is the real limit.": "Lebensdauer von LTO-Bändern: die {0}-Jahres-Angabe, Lagerklima, Ladezyklen und warum die Laufwerkskompatibilität die eigentliche Grenze ist.",
+ "Native and compressed capacity of every LTO generation from {0} to {1}, the {2} to {3} roadmap, speeds, release years and cartridges per TB.": "Native und komprimierte Kapazität aller LTO-Generationen von {0} bis {1}, Roadmap {2} bis {3}, Tempo, Jahrgänge und Kassetten pro TB.",
  "Random (fast)": "Wahlfreier Zugriff (schnell)",
  "Recovery point objective": "Wiederherstellungspunkt (RPO)",
  "Why choose and ecosystems": "Kaufgründe und Hersteller-Ökosysteme",

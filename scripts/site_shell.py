@@ -65,7 +65,7 @@ def header():
     return f"""<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Tape Q&amp;A</a><span class="sep"></span><a href="/lto-tape-price-trend">LTO Prices</a><span class="sep"></span><a href="/contact">Contact Us</a></div></div>
 <header class="site-header"><div class="wrap">{brand()}
 <nav class="topnav" aria-label="Primary">
-<a href="/why-tape">Why Tape</a>
+<div class="price-dropdown"><a href="/lto-tape">LTO Tape</a><div class="price-dropdown-menu"><a href="/lto-tape">What is LTO tape<span>The format in one page</span></a><a href="/lto-tape-capacity">Capacity chart<span>LTO-1 to LTO-14</span></a><a href="/why-tape/lto-tape-drive">Drive buying guide<span>Which drive to buy</span></a><a href="/lto-tape-library">Libraries<span>Autoloaders and libraries</span></a><a href="/why-tape/lto-tape-lifespan">Lifespan<span>How long tapes last</span></a><a href="/resources/ltfs">LTFS<span>Tape as a file system</span></a><a href="/resources/lto-tape-data-recovery">Data recovery<span>Reading old tapes</span></a><a href="/lto-tape-news">News<span>What changed this month</span></a><a href="/why-tape">Why tape<span>Cost, air gap and lifespan</span></a></div></div>
 <div class="price-dropdown"><a href="/lto-tape-price-trend">LTO Prices</a><div class="price-dropdown-menu"><a href="/lto-tape-price-trend">All generations<span>September 2026 prices</span></a>{price_links}<a href="/lto-tape-price-trend/history">Price history<span>Archived snapshots since 2025</span></a></div></div>
 <div class="price-dropdown"><a href="/backup-calculator">Tools</a><div class="price-dropdown-menu"><a href="/backup-calculator">Backup calculator<span>Media and cost estimate</span></a><a href="/backup-software-finder">Software finder<span>Match software to your tape use</span></a><a href="/best-tape-backup-software">Best tape backup software<span>2026 comparison</span></a></div></div>
 <a href="/blog">Blog</a>
@@ -78,7 +78,7 @@ def header():
 def footer():
     cols = [
         ("LTO Prices", [("Price tracker", "/lto-tape-price-trend")] + [(f"{g} Price", f"/lto-tape-price-trend/{slug_for(g)}") for g in GENS] + [("Price history", "/lto-tape-price-trend/history")]),
-        ("Resources", [("Tape Q&A", "/tape-q-and-a"), ("Blog", "/blog"), ("Why Tape", "/why-tape"), ("Guides", "/resources"), ("LTO tape brands", "/lto-tape-brand"), ("Comparisons", "/comparisons")]),
+        ("Resources", [("What is LTO tape", "/lto-tape"), ("LTO capacity chart", "/lto-tape-capacity"), ("LTO tape drives", "/why-tape/lto-tape-drive"), ("LTO tape news", "/lto-tape-news"), ("Tape Q&A", "/tape-q-and-a"), ("Blog", "/blog"), ("Why Tape", "/why-tape"), ("Guides", "/resources"), ("LTO tape brands", "/lto-tape-brand"), ("Comparisons", "/comparisons")]),
         ("Tools", [("Backup calculator", "/backup-calculator"), ("Software finder", "/backup-software-finder"), ("Best tape backup software", "/best-tape-backup-software")]),
         ("Company", [("About", "/about"), ("Contact", "/contact"), ("Sitemap", "/sitemap.xml")]),
     ]

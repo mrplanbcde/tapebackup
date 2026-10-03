@@ -2,7 +2,9 @@
  "Bridge the Tape: Use the challenger's tape compatibility features to begin writing new archives to the existing library partitions.": "Enlazar con la cinta actual: use las funciones de compatibilidad con cinta de la solución aspirante para empezar a escribir los nuevos archivos en las particiones existentes de la biblioteca.",
  "Certified refurbished, {0}-yr warranty; net price plus VAT": "Reacondicionado certificado, garantía de {0} año; IVA añadido al precio sin IVA",
  "Deploy the Challenger: Implement Catalogic DPX or {0} for these new workloads.": "Desplegar la solución aspirante: implemente Catalogic DPX o {0} para estas nuevas cargas de trabajo.",
+ "How to recover data from old LTO tapes: which drive reads which generation, backup software formats, encrypted tapes, and when to use a recovery lab.": "Recuperar datos de cintas LTO antiguas: qué unidad lee cada generación, formatos de copia, cintas cifradas y cuándo ir a un laboratorio.",
  "In stock on category page; shown out of stock in a related-products list; net price plus VAT": "En stock en la página de categoría; aparece agotado en una lista de productos relacionados; IVA añadido al precio sin IVA",
+ "LTO tape lifespan explained: the {0}-year archival rating, storage temperature and humidity, load cycles, and why drive compatibility is the real limit.": "Vida útil de las cintas LTO: los {0} años de archivo, temperatura y humedad de almacenamiento, ciclos de carga y el límite real de las unidades.",
  "Legacy (Common)": "Antigua (aún común)",
  "Library Vendors": "Fabricantes de bibliotecas de cintas",
  "Media Producers": "Fabricantes de cintas",
@@ -31,5 +33,8 @@
  "Sale, regular {0}; net price plus VAT": "Rebajado, precio habitual {0}; IVA añadido al precio sin IVA",
  "Sale; net price plus VAT": "Rebajado; IVA añadido al precio sin IVA",
  "The Re-branders (The Vendors)": "Los que revenden con su marca (los proveedores)",
- "Usually ships same day; net price plus VAT": "Suele enviarse el mismo día; IVA añadido al precio sin IVA"
+ "Usually ships same day; net price plus VAT": "Suele enviarse el mismo día; IVA añadido al precio sin IVA",
+ "When you need an LTO autoloader or tape library, common models from HPE, IBM, Dell and Quantum, slot counts, and what to check before buying.": "Cuándo pasar a un autocargador o una biblioteca LTO, modelos de HPE, IBM, Dell y Quantum, ranuras y qué comprobar antes de comprar.",
+ "{0} Tape {1}: Price, Specs and Drives | TapeBackup": "Cinta {0} {1}: precio y especificaciones | TapeBackup",
+ "{0} Tape {1}: {2}TB/{3}TB Price and Specs | TapeBackup": "Cinta {0} {1}: {2}/{3} TB, precio y datos | TapeBackup"
 }

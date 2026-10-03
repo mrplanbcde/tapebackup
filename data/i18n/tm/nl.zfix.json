@@ -7,8 +7,10 @@
  "In stock on category page; shown out of stock in a related-products list; net price plus VAT": "Op voorraad op de categoriepagina; als niet op voorraad getoond in een lijst met gerelateerde producten; btw opgeteld bij de prijs excl. btw",
  "In stock; VAT added to the net price": "Op voorraad; btw opgeteld bij de prijs excl. btw",
  "In stock; VAT added to the net price; not counted in the range": "Op voorraad; btw opgeteld bij de prijs excl. btw; niet meegeteld in het prijsbereik",
+ "LTO tape lifespan explained: the {0}-year archival rating, storage temperature and humidity, load cycles, and why drive compatibility is the real limit.": "Levensduur van LTO-tapes: de {0} jaar archiefopslag, temperatuur en luchtvochtigheid, laadcycli en waarom drives de echte grens zijn.",
  "Limited stock; VAT added to the net price": "Beperkte voorraad; btw opgeteld bij de prijs excl. btw",
  "Limited stock; VAT added to the net price; not counted in the range": "Beperkte voorraad; btw opgeteld bij de prijs excl. btw; niet meegeteld in het prijsbereik",
+ "Native and compressed capacity of every LTO generation from {0} to {1}, the {2} to {3} roadmap, speeds, release years and cartridges per TB.": "Native en gecomprimeerde capaciteit van elke LTO-generatie van {0} tot {1}, roadmap {2} tot {3}, snelheden, jaren en cartridges per TB.",
  "Net price plus VAT": "Btw opgeteld bij de prijs excl. btw",
  "New, full-height; net price plus VAT": "Nieuw, full-height; btw opgeteld bij de prijs excl. btw",
  "New, in stock; net price plus VAT": "Nieuw, op voorraad; btw opgeteld bij de prijs excl. btw",
@@ -36,5 +38,6 @@
  "Show my match": "Toon mijn match",
  "Traditional Ent.": "Traditionele grote bedrijven",
  "Usually ships same day; net price plus VAT": "Meestal dezelfde dag verzonden; btw opgeteld bij de prijs excl. btw",
- "{0} (Quantum {1}-pack library)": "{0} (Quantum {1}-pack voor tapebibliotheken)"
+ "{0} (Quantum {1}-pack library)": "{0} (Quantum {1}-pack voor tapebibliotheken)",
+ "{0} Tape {1}: {2}TB/{3}TB Price and Specs | TapeBackup": "{0}-tape {1}: {2}/{3} TB, prijs en specs | TapeBackup"
 }

@@ -15,7 +15,7 @@
 - [LTO price history](https://tapebackup.org/lto-tape-price-trend/history): archived snapshots from September 2025 onward.
 - [Backup calculator](https://tapebackup.org/backup-calculator): tape, disk or cloud recommendation with cartridge count and media cost.
 - [Tape backup software finder](https://tapebackup.org/backup-software-finder) and [best tape backup software 2026](https://tapebackup.org/best-tape-backup-software).
-- [Why tape](https://tapebackup.org/why-tape), [LTO tape drives explained](https://tapebackup.org/why-tape/lto-tape-drive), [LTO vs HDD](https://tapebackup.org/why-tape/lto-vs-hdd), [LTO tape brands](https://tapebackup.org/lto-tape-brand).
+- [Why tape](https://tapebackup.org/why-tape), [LTO tape explained](https://tapebackup.org/lto-tape), [LTO capacity chart](https://tapebackup.org/lto-tape-capacity), [LTO tape drive buying guide](https://tapebackup.org/why-tape/lto-tape-drive), [LTO tape libraries](https://tapebackup.org/lto-tape-library), [LTFS](https://tapebackup.org/resources/ltfs), [LTO tape data recovery](https://tapebackup.org/resources/lto-tape-data-recovery), [LTO tape lifespan](https://tapebackup.org/why-tape/lto-tape-lifespan), [LTO tape news](https://tapebackup.org/lto-tape-news), [LTO vs HDD](https://tapebackup.org/why-tape/lto-vs-hdd), [LTO tape brands](https://tapebackup.org/lto-tape-brand).
 - [Tape Q&A](https://tapebackup.org/tape-q-and-a) and [blog](https://tapebackup.org/blog).
 
 ## Full data

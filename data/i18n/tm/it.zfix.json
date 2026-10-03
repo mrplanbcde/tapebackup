@@ -1,4 +1,9 @@
 {
+ "How to recover data from old LTO tapes: which drive reads which generation, backup software formats, encrypted tapes, and when to use a recovery lab.": "Recuperare dati da vecchi nastri LTO: quale unità legge quale generazione, formati di backup, nastri cifrati e quando serve un laboratorio.",
+ "LTO cleaning cartridges (how many uses, when to clean), barcode label codes like L{0} and LZ, cases for offsite tapes, and how to destroy old tapes.": "Cartucce di pulizia LTO (utilizzi, quando pulire), codici etichetta come L{0} e LZ, custodie per nastri fuori sede e distruzione.",
+ "LTO tape lifespan explained: the {0}-year archival rating, storage temperature and humidity, load cycles, and why drive compatibility is the real limit.": "Durata dei nastri LTO: i {0} anni dichiarati, temperatura e umidità di conservazione, cicli di caricamento e il vero limite delle unità.",
  "Power when stored": "Consumo a riposo",
- "{0} (Quantum {1}-pack library)": "{0} (Quantum, confezione da {1} per librerie)"
+ "When you need an LTO autoloader or tape library, common models from HPE, IBM, Dell and Quantum, slot counts, and what to check before buying.": "Quando serve un autoloader o una libreria LTO, modelli HPE, IBM, Dell e Quantum, numero di slot e cosa controllare prima dell'acquisto.",
+ "{0} (Quantum {1}-pack library)": "{0} (Quantum, confezione da {1} per librerie)",
+ "{0} Tape {1}: {2}TB/{3}TB Price and Specs | TapeBackup": "Nastro {0} {1}: {2}/{3} TB, prezzi e dati | TapeBackup"
 }

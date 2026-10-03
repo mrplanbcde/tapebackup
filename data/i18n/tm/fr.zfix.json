@@ -3,5 +3,13 @@
  "Dell Hardware Shops": "Entreprises équipées en matériel Dell",
  "Drive prices look very different. The March {0} US edition estimated {1} internal drives at {2} to {3}; US seller listings in September {4} run from {5} to {6}. Part of that gap is method (estimates versus listings), so treat it as a warning to get quotes rather than a precise increase.": "Pour les lecteurs, la situation est très différente. Le relevé américain de mars {0} estimait les lecteurs {1} internes entre {2} et {3} ; en septembre {4}, les offres des vendeurs américains vont de {5} à {6}. Une partie de cet écart tient à la méthode (estimations contre offres réelles) : voyez-y surtout une incitation à demander des devis plutôt qu'une hausse précise.",
  "Global Fortune {0}": "Entreprises du Global Fortune {0}",
- "WORM tamper-proof media": "Supports WORM inaltérables"
+ "How to recover data from old LTO tapes: which drive reads which generation, backup software formats, encrypted tapes, and when to use a recovery lab.": "Récupérer d'anciennes bandes LTO : quel lecteur lit quelle génération, formats de sauvegarde, bandes chiffrées et recours à un laboratoire.",
+ "LTO cleaning cartridges (how many uses, when to clean), barcode label codes like L{0} and LZ, cases for offsite tapes, and how to destroy old tapes.": "Cartouches de nettoyage LTO (utilisations, quand nettoyer), codes d'étiquette L{0} et LZ, boîtes de transport et destruction des bandes.",
+ "LTO tape lifespan explained: the {0}-year archival rating, storage temperature and humidity, load cycles, and why drive compatibility is the real limit.": "Durée de vie des bandes LTO : {0} ans d'archivage annoncés, température et humidité de stockage, cycles de chargement et vraie limite.",
+ "Native and compressed capacity of every LTO generation from {0} to {1}, the {2} to {3} roadmap, speeds, release years and cartridges per TB.": "Capacité native et compressée des générations LTO du {0} au {1}, feuille de route {2} à {3}, vitesses, années et cartouches par To.",
+ "WORM tamper-proof media": "Supports WORM inaltérables",
+ "What LTO tape is, how much each generation holds, which drives read which tapes, how long cartridges last and what {0} and {1} cost today.": "La bande LTO : capacité par génération, compatibilité des lecteurs, durée de vie des cartouches et prix actuels du {0} et du {1}.",
+ "When you need an LTO autoloader or tape library, common models from HPE, IBM, Dell and Quantum, slot counts, and what to check before buying.": "Quand passer à un chargeur ou une bibliothèque LTO, modèles HPE, IBM, Dell et Quantum, emplacements et points à vérifier avant l'achat.",
+ "{0} Tape {1}: Price, Specs and Drives | TapeBackup": "Bande {0} {1} : prix et fiche technique | TapeBackup",
+ "{0} Tape {1}: {2}TB/{3}TB Price and Specs | TapeBackup": "Bande {0} {1} : {2}/{3} To et prix | TapeBackup"
 }

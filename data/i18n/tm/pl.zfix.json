@@ -1,6 +1,10 @@
 {
+ "How to recover data from old LTO tapes: which drive reads which generation, backup software formats, encrypted tapes, and when to use a recovery lab.": "Odzyskiwanie danych ze starych taśm LTO: który napęd odczyta daną generację, formaty kopii, taśmy szyfrowane i kiedy iść do laboratorium.",
+ "LTO tape lifespan explained: the {0}-year archival rating, storage temperature and humidity, load cycles, and why drive compatibility is the real limit.": "Trwałość taśm LTO: deklarowane {0} lat, temperatura i wilgotność przechowywania, cykle załadowania i prawdziwe ograniczenie napędów.",
+ "What LTFS (Linear Tape File System) is, free LTFS software for Windows, macOS and Linux, how to format and mount a tape, and its limits.": "Czym jest LTFS, bezpłatne oprogramowanie LTFS dla Windows, macOS i Linux, formatowanie i montowanie taśmy oraz ograniczenia.",
  "{0} (MagStor {1} FH SAS desktop)": "{0} (MagStor {1} FH SAS, zewnętrzny)",
  "{0} (MagStor {1} HH SAS desktop)": "{0} (MagStor {1} HH SAS, zewnętrzny)",
+ "{0} Tape {1}: {2}TB/{3}TB Price and Specs | TapeBackup": "Taśma {0} {1}: {2}/{3} TB, cena i dane | TapeBackup",
  "{0}. Ask About Write Cycles": "{0}. Zapytać o liczbę cykli zapisu",
  "• You are expanding a home lab": "• Rozbudowuje się domowy lab"
 }

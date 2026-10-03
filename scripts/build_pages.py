@@ -23,7 +23,6 @@ ALLOWED_ATTRS = {"a": {"href"}, "td": {"colspan", "rowspan"}, "th": {"colspan", 
 
 LEGACY = {
     "/why-tape": ("why-tape", "Why Use Tape Storage? Benefits of LTO Backup", "Why LTO tape still wins for long-term archives: lowest cost per TB, offline air-gap protection against ransomware, WORM media and decades of shelf life."),
-    "/why-tape/lto-tape-drive": ("why-tape__lto-tape-drive", "What Is an LTO Tape Drive? Generations and Specs", "How LTO tape drives work, what Linear Tape-Open means, generation capacities from LTO-1 to LTO-10, compatibility rules and when a tape drive makes sense."),
     "/why-tape/lto-vs-hdd": ("why-tape__lto-vs-hdd", "LTO Tape vs HDD for Long-Term Storage | TapeBackup", "LTO tape vs hard drives for backup and archive: lifespan, cost per TB, ransomware protection, access speed and which one fits your data."),
     "/resources": ("resources", "Tape Backup Resources and LTO Guides | TapeBackup", "LTO tape backup resources: price guides, buying advice for used tapes, backup software reviews, vendor links and official LTO references in one place."),
     "/resources/cheap-lto-tapes": ("resources__cheap-lto-tapes", "Cheap LTO Tapes: How to Buy Used Tape Safely", "How to buy cheap or used LTO tapes without losing data: what to check, which sellers and generations to avoid, and when new media is worth paying for."),
@@ -425,6 +424,15 @@ def build_legacy(path, key, title, desc):
 <a href="/comparisons/tape-vs-cloud-5-year-cost">Tape vs cloud, 5-year cost<span>What an archive really costs</span></a>
 <a href="/resources/lto-tape-migration">LTO tape migration<span>Move an archive to newer media</span></a>
 <a href="/resources/tape-storage-market">Tape storage market<span>Shipments, supply and prices</span></a>
+<a href="/lto-tape">What is LTO tape<span>The format in one page</span></a>
+<a href="/lto-tape-capacity">LTO capacity chart<span>LTO-1 to LTO-14</span></a>
+<a href="/why-tape/lto-tape-drive">LTO tape drive buying guide<span>Which drive to buy</span></a>
+<a href="/lto-tape-library">LTO tape libraries<span>Autoloaders and libraries</span></a>
+<a href="/resources/ltfs">LTFS explained<span>Tape as a file system</span></a>
+<a href="/resources/lto-tape-data-recovery">LTO tape data recovery<span>Reading old tapes</span></a>
+<a href="/why-tape/lto-tape-lifespan">LTO tape lifespan<span>How long tapes last</span></a>
+<a href="/resources/lto-cleaning-tapes-and-labels">Cleaning tapes and labels<span>Supplies and handling</span></a>
+<a href="/lto-tape-news">LTO tape news<span>What changed this month</span></a>
 <a href="/lto-tape-brand">LTO tape brands<span>Who really makes the tape</span></a>
 <a href="/tape-q-and-a">Tape Q&amp;A<span>Short answers to tape questions</span></a></div></section>"""
     if re.search(r"[$€]|zł", body_sections) and path in ("/why-tape/lto-tape-drive", "/about", "/resources/cheap-lto-tapes", "/comparisons", "/why-tape"):

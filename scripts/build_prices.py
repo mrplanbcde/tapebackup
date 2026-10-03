@@ -28,6 +28,29 @@ CURRENT_ISO = "2026-09-17"
 NATIVE = {"LTO-5": 1.5, "LTO-6": 2.5, "LTO-7": 6, "LTO-8": 12, "LTO-9": 18, "LTO-10": 30}
 COMPRESSED = {"LTO-6": "6.25 TB", "LTO-7": "15 TB", "LTO-8": "30 TB", "LTO-9": "45 TB", "LTO-10": "75 TB"}
 
+# LTO Program specifications. reads/writes = generations a drive of this generation can read and write.
+SPECS = {
+    "LTO-1": {"year": 2000, "native": "100 GB", "compressed": "200 GB", "ratio": "2:1", "speed": 20, "reads": "LTO-1", "writes": "LTO-1"},
+    "LTO-2": {"year": 2003, "native": "200 GB", "compressed": "400 GB", "ratio": "2:1", "speed": 40, "reads": "LTO-1, LTO-2", "writes": "LTO-1, LTO-2"},
+    "LTO-3": {"year": 2005, "native": "400 GB", "compressed": "800 GB", "ratio": "2:1", "speed": 80, "reads": "LTO-1 to LTO-3", "writes": "LTO-2, LTO-3", "added": "WORM cartridges"},
+    "LTO-4": {"year": 2007, "native": "800 GB", "compressed": "1.6 TB", "ratio": "2:1", "speed": 120, "reads": "LTO-2 to LTO-4", "writes": "LTO-3, LTO-4", "added": "AES-256 drive encryption"},
+    "LTO-5": {"year": 2010, "native": "1.5 TB", "compressed": "3 TB", "ratio": "2:1", "speed": 140, "reads": "LTO-3 to LTO-5", "writes": "LTO-4, LTO-5", "added": "partitions and LTFS"},
+    "LTO-6": {"year": 2012, "native": "2.5 TB", "compressed": "6.25 TB", "ratio": "2.5:1", "speed": 160, "reads": "LTO-4 to LTO-6", "writes": "LTO-5, LTO-6"},
+    "LTO-7": {"year": 2015, "native": "6 TB", "compressed": "15 TB", "ratio": "2.5:1", "speed": 300, "reads": "LTO-5 to LTO-7", "writes": "LTO-6, LTO-7"},
+    "LTO-8": {"year": 2017, "native": "12 TB", "compressed": "30 TB", "ratio": "2.5:1", "speed": 360, "reads": "LTO-7, LTO-8", "writes": "LTO-7, LTO-8", "added": "the end of two-generation read-back"},
+    "LTO-9": {"year": 2021, "native": "18 TB", "compressed": "45 TB", "ratio": "2.5:1", "speed": 400, "reads": "LTO-8, LTO-9", "writes": "LTO-8, LTO-9", "added": "one-time media optimization on first load"},
+    "LTO-10": {"year": 2025, "native": "30 TB or 40 TB", "compressed": "75 TB or 100 TB", "ratio": "2.5:1", "speed": 400, "reads": "LTO-10 only", "writes": "LTO-10 only", "added": "a 40 TB cartridge in 2026"},
+}
+READ_BY = {
+    "LTO-6": "LTO-6 cartridges can be read in LTO-6 and LTO-7 drives, but not in LTO-8 or newer.",
+    "LTO-7": "LTO-7 cartridges can be read and written in LTO-7 and LTO-8 drives, but not in LTO-9 or newer.",
+    "LTO-8": "LTO-8 cartridges can be read and written in LTO-8 and LTO-9 drives, but not in LTO-10.",
+    "LTO-9": "LTO-9 cartridges need an LTO-9 drive: LTO-10 drives do not read them.",
+    "LTO-10": "LTO-10 cartridges need an LTO-10 drive, and LTO-10 drives read no older generation.",
+}
+# November 2025 LTO Program roadmap (native and 2.5:1 compressed), not yet products.
+ROADMAP = [("LTO-11", "70 TB", "175 TB"), ("LTO-12", "120 TB", "300 TB"), ("LTO-13", "210 TB", "525 TB"), ("LTO-14", "365 TB", "913 TB")]
+
 MKT = None      # the market being rendered
 US = None       # the US market, for comparison lines on European pages
 _FX = None
@@ -254,27 +277,27 @@ GEN_COPY = {
     "LTO-6": {
         "lead": "LTO-6 is a legacy generation. Cartridges are still easy to buy, but new standalone drives have almost disappeared, so most buyers here are feeding an existing drive or library.",
         "verdict": "Buy LTO-6 media to keep an installed drive or library running. For a new deployment, LTO-8 or LTO-9 costs far less per terabyte.",
-        "title": "LTO-6 Price 2026: 2.5TB Tape and Drive Costs | TapeBackup",
+        "title": "LTO-6 Tape 2026: Price, Specs and Drives | TapeBackup",
     },
     "LTO-7": {
         "lead": "LTO-7 media is plentiful and new drives are still sold, but several drive SKUs now show call for availability. LTO-8 drives read and write LTO-7 cartridges, which keeps demand for the media alive.",
         "verdict": "LTO-7 makes sense for estates already standardized on it. Per terabyte, LTO-7 media now costs {lto7_vs_new} LTO-8 or LTO-9.",
-        "title": "LTO-7 Price 2026: 6TB Tape and Drive Costs | TapeBackup",
+        "title": "LTO-7 Tape 2026: Price, Specs and Drives | TapeBackup",
     },
     "LTO-8": {
         "lead": "LTO-8 is the previous mainstream generation. Media and new half-height drives are in stock at several sellers, and drive prices vary widely between them for similar SAS models.",
         "verdict": "LTO-8 media now costs {lto8_vs_9} per terabyte as LTO-9. It is still a sensible buy if you already run LTO-8 drives or need to read LTO-7 tapes.",
-        "title": "LTO-8 Price 2026: 12TB Tape and Drive Costs | TapeBackup",
+        "title": "LTO-8 Tape 2026: Price, Specs and Drives | TapeBackup",
     },
     "LTO-9": {
         "lead": "LTO-9 is the volume generation in 2026 and has {lto9_rank} cost per native terabyte of any LTO cartridge on sale. Media and half-height SAS drives are broadly in stock.",
         "verdict": "For most new tape deployments LTO-9 is the default: {lto9_reason}, mature drives, and wide library support.",
-        "title": "LTO-9 Price 2026: 18TB Tape and Drive Costs | TapeBackup",
+        "title": "LTO-9 Tape 2026: Price, Specs and Drives | TapeBackup",
     },
     "LTO-10": {
         "lead": "LTO-10 is the current generation. Standard cartridges hold 30 TB and a newer 40 TB cartridge now ships in the same drives. Only full-height drives are on sale so far, and they cannot read older LTO generations.",
         "verdict": "LTO-10 pays off when density matters more than cost per terabyte: large archives, full libraries, or long retention where fewer cartridges save handling.",
-        "title": "LTO-10 Price 2026: 30TB and 40TB Tape Costs | TapeBackup",
+        "title": "LTO-10 Tape 2026: 30TB/40TB Price and Specs | TapeBackup",
     },
 }
 
@@ -381,6 +404,22 @@ def method_blocked_sentence():
     return f"{esc(and_list(blocked))} blocked automated checks or showed no price, so {'it is' if len(blocked) == 1 else 'they are'} not included."
 
 
+def specs_section(gen):
+    sp = SPECS[gen]
+    i = list(SPECS).index(gen)
+    prev_next = [x for x in (list(SPECS)[i - 1] if i else None, list(SPECS)[i + 1] if i + 1 < len(SPECS) else None) if x]
+    rows = [["Native capacity", sp["native"]], ["Compressed capacity", f"{sp['compressed']} ({sp['ratio']})"],
+            ["Native speed", f"up to {sp['speed']} MB/s"], ["Released", str(sp["year"])],
+            ["A {gen} drive reads".format(gen=gen), sp["reads"]], ["A {gen} drive writes".format(gen=gen), sp["writes"]],
+            ["WORM cartridges", "Yes"], ["Hardware encryption", "AES-256"], ["LTFS", "Yes"]]
+    read_by = READ_BY[gen]
+    tb = "".join(f"<tr><th scope=\"row\">{esc(a)}</th><td>{esc(b)}</td></tr>" for a, b in rows)
+    links = " ".join(f'<a href="/lto-tape-price-trend/{slug_for(x)}">{x}</a>' for x in prev_next if x in GENS)
+    return f"""<section class="section-card" id="specs"><p class="eyebrow">Specifications</p><h2>{gen} specifications and compatibility</h2>
+<div class="table-wrap"><table class="price-table" aria-label="{gen} specifications"><tbody>{tb}</tbody></table></div>
+<p>{read_by} Half-height drives are often rated below the full-height speed, so check the data sheet of the exact model. See every generation side by side in the <a href="/lto-tape-capacity">LTO capacity chart</a>, how to choose a drive in the <a href="/why-tape/lto-tape-drive">LTO tape drive buying guide</a>, and how long cartridges last in <a href="/why-tape/lto-tape-lifespan">LTO tape lifespan</a>.{(" Nearby generations: " + links + ".") if links else ""}</p></section>"""
+
+
 def build_gen_page(gen, g, history, current):
     copy = gen_copy(gen, current["generations"])
     path = f"/lto-tape-price-trend/{slug_for(gen)}"
@@ -466,6 +505,7 @@ def build_gen_page(gen, g, history, current):
 {table(["Generation", "Native capacity", "Cartridge price", "Per native TB"], comp_rows, f"{gen} comparison")}
 <p>{esc(copy['verdict'])}</p></section>""")
 
+    parts.append(specs_section(gen))
     with open(os.path.join(ROOT, "data", "price-guide-prose", slug_for(gen).replace("-price", "") + ".html"), encoding="utf-8") as f:
         parts.append(f.read())
 
@@ -480,7 +520,7 @@ def build_gen_page(gen, g, history, current):
 
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
 <p class="eyebrow">{gen} price · updated {CURRENT_LABEL}</p>
-<h1>{gen} Price Guide</h1>
+<h1>{gen} Tape: Price, Specs and Compatibility</h1>
 <p><strong>{esc(answer_sentence(gen, g))}</strong> {esc(copy['lead'])}</p>
 <div class="signal-row"><span class="signal-chip">{esc(cap_text)}</span><span class="signal-chip">Tapes {esc(short_rng(c))}</span><span class="signal-chip">Checked {date_text()}</span></div>
 </div>

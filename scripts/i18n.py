@@ -56,6 +56,7 @@ SCOPE = [
     "/backup-software-finder", "/about", "/contact", "/why-tape", "/why-tape/lto-tape-drive", "/why-tape/lto-vs-hdd",
     "/comparisons", "/lto-tape-brand", "/resources", "/resources/cheap-lto-tapes", "/resources/lto-tape-migration",
     "/resources/tape-storage-market", "/best-tape-backup-software", "/resources/tape-backup-software/catalogicdpx",
+    "/lto-tape", "/lto-tape-capacity", "/lto-tape-library", "/lto-tape-news", "/resources/ltfs", "/resources/lto-tape-data-recovery", "/why-tape/lto-tape-lifespan", "/resources/lto-cleaning-tapes-and-labels",
 ]
 SCOPE_SET = set(SCOPE)
 
