@@ -1,326 +1,326 @@
 {
-  "/blog/500-dreams-and-magnetic-tape-fantasies-the-addictive-illusion-of-cheap-lto-storage": {
-    "title": "$500 Dreams: The Illusion of Cheap LTO Storage | TapeBackup",
-    "description": "Why a used LTO-6 drive listed for $500 feels like a steal, and why the cheap entry price of LTO tape storage is so often an illusion."
-  },
-  "/blog/6-000-for-a-paperweight-when-enterprise-grade-storage-quietly-fails-you": {
-    "title": "$6,000 Paperweight: When an LTO-7 Drive Fails | TapeBackup",
-    "description": "Someone spent $6,000 on an LTO-7 drive expecting enterprise durability. What its failure says about trusting enterprise-grade storage hardware."
-  },
-  "/blog/backup-strategy-gets-serious-when-your-archive-outgrows-disks": {
-    "title": "Backup Strategy When an Archive Outgrows Disks | TapeBackup",
-    "description": "Adding another hard drive stops being a backup strategy once an archive grows. Why that is the point where tape enters the picture for many operators."
-  },
-  "/blog/buying-a-few-cheap-lto-tapes-is-how-the-rabbit-hole-starts": {
-    "title": "Cheap LTO Tapes: How the Rabbit Hole Starts | TapeBackup",
-    "description": "How a pile of cheap LTO cartridges turns into a full tape setup, and why archive math looks different once removable media enters the picture."
-  },
-  "/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software": {
-    "title": "Tape Backup Software: Why I Built My Own | TapeBackup",
-    "description": "The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build."
-  },
-  "/blog/i-replaced-hard-drives-with-tape-and-accidentally-signed-up-for-a-lifetime-of-noise-bugs-and-obs": {
-    "title": "Hard Drives to LTO Tape: Noise, Bugs, Obsession | TapeBackup",
-    "description": "Rising HDD prices pushed one builder to switch to LTO tape instead. What followed: drive noise, software bugs, and a hobby that became an obsession."
-  },
-  "/blog/lto-tape-backup-costs-workflow-reality": {
-    "title": "LTO Backup Costs Once the Workflow Fights Back | TapeBackup",
-    "description": "Cheap tapes make LTO look irresistible. This breaks down the real costs: drives, HBAs, libraries, catalogs, cleaning, restores, and daily operation."
-  },
-  "/blog/offsite-tape-backups-still-beat-most-good-enough-plans": {
-    "title": "Offsite Tape Backups Beat Good-Enough Plans | TapeBackup",
-    "description": "Why moving a physical tape copy out of the blast radius still covers backup risks that replication, snapshots, and cloud sync often leave open."
-  },
-  "/blog/one-bad-archive-and-it-s-gone-forever-the-brutal-trade-off-nobody-warns-you-about-in-tape-storag": {
-    "title": "One Bad Tape Archive and It's Gone Forever | TapeBackup",
-    "description": "Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file."
-  },
-  "/blog/scriptable-linux-tape-backups-still-have-a-process-problem": {
-    "title": "Linux Tape Backups Still Have a Process Problem | TapeBackup",
-    "description": "Linux makes tape backup flexible and scriptable. It also makes it easy to build a workflow that only its author understands. Why process matters."
-  },
-  "/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again": {
-    "title": "Tape Is Dead? Why Backup Systems Use It Again | TapeBackup",
-    "description": "Tape costs a few euros per terabyte on paper, but real LTO backup still demands patience, planning, and a clear idea of where offline storage belongs."
-  },
-  "/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test": {
-    "title": "Best LTO Backup Software Is the One You Test | TapeBackup",
-    "description": "LTFS, tar, Bacula, Bareos, or an enterprise suite? Why the best LTO backup workflow is the one you have actually restored from without guessing."
-  },
-  "/blog/the-day-my-tape-drive-went-rogue-inside-the-frustrating-reality-of-lto-6-failures": {
-    "title": "LTO-6 Failure: The Day My Tape Drive Went Rogue | TapeBackup",
-    "description": "A firsthand look at an LTO-6 tape drive failure, and why a breakdown feels so frustrating in storage that is supposed to be dependable."
-  },
-  "/blog/the-home-lto-setup-gets-real-when-you-stop-treating-it-like-a-toy": {
-    "title": "Home LTO Setup: Stop Treating It Like a Toy | TapeBackup",
-    "description": "A home or lab LTO setup can be real backup infrastructure. What separates a weekend experiment from a reliable archive is how you operate it."
-  },
-  "/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them": {
-    "title": "Used LTO Libraries: Loud, Fussy, and Addictive | TapeBackup",
-    "description": "Decommissioned tape libraries are loud and fussy, yet backup teams and homelabbers keep reviving them for archive capacity without a cloud-sized bill."
-  },
-  "/blog/which-lto-drive-should-you-buy-without-regretting-it-later": {
-    "title": "Which LTO Drive Should You Buy Without Regret? | TapeBackup",
-    "description": "Every LTO generation looks tempting on the used market. How media costs, compatibility rules, and restore plans should decide which drive you buy."
-  },
-  "/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying": {
-    "title": "Used LTO-8 Drive Dead? Check the SAS Path First | TapeBackup",
-    "description": "Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead."
-  },
-  "/blog": {
-    "title": "LTO Tape Backup Blog: Real-World Tape Workflows | TapeBackup",
-    "description": "Opinion and analysis on LTO tape backup: used drives and libraries, backup software, archive workflows, offsite copies, and home tape setups."
-  },
-  "/tape-q-and-a": {
-    "title": "LTO Tape FAQ: Backup, Archive and Returns | Tape Q&A",
-    "description": "62 standalone answers on LTO tape backup, archive planning, media workflows, security vulnerabilities, cartridge warranties, and hardware returns."
-  },
-  "/tape-q-and-a/ai-analytics-storage-at-scale": {
-    "title": "Storage for AI and HPC Analytics at Scale | Tape Q&A",
-    "description": "How a parallel file system paired with an object storage data lake keeps GPU-heavy AI and analytics workloads fast while protecting massive datasets."
-  },
-  "/tape-q-and-a/ai-media-workflow-automation": {
-    "title": "AI Metadata and Search for Media Workflows | Tape Q&A",
-    "description": "How on-site, GPU-accelerated machine learning inside a media asset management system automates content search, metadata tagging, and enhancement."
-  },
-  "/tape-q-and-a/collaborative-video-production-archive": {
-    "title": "Collaborative Video Production and Archiving | Tape Q&A",
-    "description": "How shared high-performance storage, searchable assets, and remote editing let creative teams collaborate on video and keep a long-term archive."
-  },
-  "/tape-q-and-a/how-can-creative-teams-quickly-deploy-a-media-asset-management-system-to-organize-and-search-growing-video-libraries": {
-    "title": "Quick Media Asset Management Setup for Video | Tape Q&A",
-    "description": "How creative teams can install a lightweight media asset management system on modest hardware to index, catalog, and search growing video libraries."
-  },
-  "/tape-q-and-a/how-can-educational-webinars-help-it-professionals-better-understand-modern-enterprise-backup-and-data-protection-strategies": {
-    "title": "Enterprise Backup Webinars for IT Professionals | Tape Q&A",
-    "description": "How educational webinars use demos, case examples, and architecture talks to explain backup design, storage efficiency, and recovery workflows."
-  },
-  "/tape-q-and-a/how-can-on-demand-webinars-help-it-teams-understand-modern-storage-infrastructure-for-high-performance-data-workloads": {
-    "title": "On-Demand Storage Infrastructure Webinars | Tape Q&A",
-    "description": "Why recorded webinars help IT admins, architects, and engineers learn storage infrastructure for high-performance workloads on their own schedule."
-  },
-  "/tape-q-and-a/how-can-organizations-design-storage-architectures-that-reliably-support-the-performance-demands-of-large-scale-4k-video-production-workflows": {
-    "title": "Storage Architecture for 4K Video Production | Tape Q&A",
-    "description": "What storage design supports 4K production: consistent high throughput for many editors at once, shared storage, and validated reference designs."
-  },
-  "/tape-q-and-a/how-can-organizations-test-and-evaluate-enterprise-backup-storage-solutions-before-deploying-them-in-production-environments": {
-    "title": "How to Test Enterprise Backup Before Deploying | Tape Q&A",
-    "description": "How to evaluate backup software with community or evaluation editions on VMware, KVM, or Hyper-V, and the modest hardware a test setup needs."
-  },
-  "/tape-q-and-a/how-can-personalized-outreach-programs-help-technology-vendors-build-stronger-relationships-with-targeted-enterprise-customers": {
-    "title": "Personalized Outreach Programs for Tech Vendors | Tape Q&A",
-    "description": "How technology vendors use tailored communication, one-on-one meetings, and technical briefings to build ties with high-value enterprise accounts."
-  },
-  "/tape-q-and-a/how-is-nvme-technology-changing-storage-architectures-for-modern-media-and-entertainment-production-workflows": {
-    "title": "NVMe Storage in Media Production Workflows | Tape Q&A",
-    "description": "How NVMe flash storage cuts latency and raises throughput over protocols built for spinning disks, and what that means for high-resolution media work."
-  },
-  "/tape-q-and-a/how-should-media-organizations-evaluate-different-storage-options-when-building-a-long-term-archive-strategy-for-large-video-and-media-content-libraries": {
-    "title": "Choosing Storage for a Long-Term Media Archive | Tape Q&A",
-    "description": "How media organizations should weigh cloud, on-premises, and other archive storage options on cost, security, performance, and long-term scale."
-  },
-  "/tape-q-and-a/how-should-organizations-return-removable-storage-dock-systems-and-cartridges-for-repair-in-enterprise-environments-in-the-asia-pacific-region": {
-    "title": "Removable Dock Repair Returns in Asia Pacific | Tape Q&A",
-    "description": "How to return removable storage dock systems and cartridges for repair in Asia Pacific: the RA number, which enclosures to include, and what to ship."
-  },
-  "/tape-q-and-a/hybrid-cloud-object-storage": {
-    "title": "Hybrid Cloud On-Premises S3 Object Storage | Tape Q&A",
-    "description": "How to run cloud services and APIs in your own data center with scalable S3-compatible object storage while keeping local data control and low latency."
-  },
-  "/tape-q-and-a/mainframe-open-systems-archive": {
-    "title": "Mainframe and Open Systems Backup Consolidation | Tape Q&A",
-    "description": "How large enterprises combine mainframe and open systems backup and archiving on deduplicated disk and long-term storage to cut costs and stay compliant."
-  },
-  "/tape-q-and-a/modern-backup-infrastructure": {
-    "title": "Backup Modernization for Faster Recovery | Tape Q&A",
-    "description": "How purpose-built backup appliances with deduplication and fast ingest help organizations recover faster, resist ransomware, and use storage efficiently."
-  },
-  "/tape-q-and-a/modern-data-infrastructure-for-ai": {
-    "title": "Tiered Data Infrastructure for AI and Archive | Tape Q&A",
-    "description": "A lifecycle approach that places active AI data, backup copies, and long-term archives on different storage tiers based on access and recovery needs."
-  },
-  "/tape-q-and-a/multi-tier-data-protection-strategy": {
-    "title": "Multi-Tier Data Protection for Ransomware | Tape Q&A",
-    "description": "How backup appliances, object storage, and long-term retention tiers combine across hybrid cloud for fast recovery, ransomware resilience, and lower cost."
-  },
-  "/tape-q-and-a/resilient-data-protection-architecture": {
-    "title": "Air-Gapped, Immutable Backup Architecture | Tape Q&A",
-    "description": "A blueprint for protecting physical, virtual, and cloud workloads from ransomware and disasters using multiple backup targets and immutable copies."
-  },
-  "/tape-q-and-a/what-are-the-recommended-packaging-practices-for-shipping-enterprise-tape-cartridges-safely-for-return-or-transport": {
-    "title": "Tape Cartridge Packaging for Safe Shipping | Tape Q&A",
-    "description": "How to pack enterprise tape cartridges for return or transport: reuse original packaging, wrap each cartridge, cushion all sides, and fill empty space."
-  },
-  "/tape-q-and-a/what-are-the-spectre-and-meltdown-vulnerabilities-and-how-do-they-allow-attackers-to-access-protected-system-memory": {
-    "title": "Spectre and Meltdown: How CPU Memory Leaks Work | Tape Q&A",
-    "description": "How Spectre and Meltdown abuse speculative execution to bypass memory isolation and read protected data through CPU cache side channels."
-  },
-  "/tape-q-and-a/what-challenges-do-media-organizations-face-when-transitioning-from-traditional-hd-production-to-modern-4k-video-workflows": {
-    "title": "HD to 4K Video Production Workflow Challenges | Tape Q&A",
-    "description": "The problems studios and broadcasters hit moving from HD to 4K: multiplied storage volumes, slower shared editing, and heavier archive demands."
-  },
-  "/tape-q-and-a/what-factors-should-organizations-consider-when-choosing-between-cloud-storage-and-on-premises-solutions-for-long-term-media-archives": {
-    "title": "Cloud vs On-Premises Storage for Media Archives | Tape Q&A",
-    "description": "The cost, accessibility, and flexibility factors to weigh when choosing between cloud storage and on-premises systems for a long-term media archive."
-  },
-  "/tape-q-and-a/what-happens-after-submitting-a-request-to-schedule-a-meeting-with-a-technical-solutions-team": {
-    "title": "After Requesting a Technical Solutions Meeting | Tape Q&A",
-    "description": "What typically happens after you ask to meet a technical solutions team: request review, picking the right specialists, and confirming date and time."
-  },
-  "/tape-q-and-a/what-happens-after-you-submit-a-request-for-information-about-large-scale-archival-storage-solutions": {
-    "title": "After an Archival Storage Information Request | Tape Q&A",
-    "description": "What follows a request for information on large-scale archival storage: a review of your inquiry, routing to specialists, and a representative's reply."
-  },
-  "/tape-q-and-a/what-infrastructure-and-workflow-changes-are-required-when-media-organizations-transition-from-hd-production-to-full-4k-content-creation": {
-    "title": "HD to 4K Infrastructure and Workflow Changes | Tape Q&A",
-    "description": "The infrastructure, storage strategy, and collaboration changes media organizations need when moving from HD production to full 4K content creation."
-  },
-  "/tape-q-and-a/what-is-a-sql-injection-vulnerability-in-backup-appliance-management-interfaces-and-how-should-organizations-address-it": {
-    "title": "SQL Injection in Backup Appliance Interfaces | Tape Q&A",
-    "description": "How SQL injection in a backup appliance management interface can be exploited, sometimes before login, and what organizations should do to address it."
-  },
-  "/tape-q-and-a/what-is-an-api-authentication-vulnerability-in-a-storage-appliance-controller-and-how-should-organizations-mitigate-the-risk": {
-    "title": "API Authentication Flaws in Storage Controllers | Tape Q&A",
-    "description": "How an API authentication flaw in a storage appliance controller lets attackers read configuration or change settings, and how to mitigate the risk."
-  },
-  "/tape-q-and-a/what-is-an-rmi-session-hijacking-vulnerability-in-media-asset-management-servers-and-how-should-organizations-respond": {
-    "title": "RMI Session Hijacking in Media Asset Servers | Tape Q&A",
-    "description": "How RMI session hijacking in media asset management servers can give attackers admin access during an active session, and how to respond."
-  },
-  "/tape-q-and-a/what-is-the-apache-struts-rest-plug-in-vulnerability-and-how-can-organizations-mitigate-the-associated-security-risk": {
-    "title": "Apache Struts REST Plug-in Vulnerability | Tape Q&A",
-    "description": "How the Apache Struts REST plug-in flaw enables remote code execution on Java web apps, why a major breach made it famous, and how to mitigate it."
-  },
-  "/tape-q-and-a/what-is-the-correct-procedure-for-returning-standalone-enterprise-tape-drives-for-repair-in-europe-the-middle-east-and-africa": {
-    "title": "Tape Drive Repair Return Procedure in EMEA | Tape Q&A",
-    "description": "How to return a standalone tape drive for repair in EMEA: get an RA number, mark the package, and ship with or without its vendor or rackmount enclosure."
-  },
-  "/tape-q-and-a/what-is-the-correct-procedure-for-returning-standalone-enterprise-tape-drives-for-repair-in-north-america": {
-    "title": "Tape Drive Repair Return Procedure, North America | Tape Q&A",
-    "description": "How to return a standalone tape drive for repair in North America: RA number on the box, which accessories to keep, and when to ship the enclosure."
-  },
-  "/tape-q-and-a/what-is-the-correct-process-for-returning-enterprise-tape-autoloaders-or-tape-drive-units-for-repair-in-the-asia-pacific-region": {
-    "title": "Tape Autoloader Repair Returns in Asia Pacific | Tape Q&A",
-    "description": "How to return a tape autoloader or drive unit for repair in Asia Pacific: the RA number, vendor versus third-party enclosures, and accessories."
-  },
-  "/tape-q-and-a/what-is-the-correct-process-for-returning-enterprise-tape-media-under-warranty-in-north-america": {
-    "title": "Tape Media Warranty Return in North America | Tape Q&A",
-    "description": "How to return tape media under warranty in North America: submit an online request, get an RA number and address, and how returned media is sanitized."
-  },
-  "/tape-q-and-a/what-is-the-ghost-glibc-vulnerability-and-why-is-it-considered-a-serious-risk-for-linux-based-systems": {
-    "title": "GHOST glibc Vulnerability CVE-2015-0235 on Linux | Tape Q&A",
-    "description": "How the GHOST buffer overflow in glibc hostname resolution functions allows remote code execution without credentials on Linux-based systems."
-  },
-  "/tape-q-and-a/what-is-the-heartbleed-vulnerability-in-openssl-and-how-can-it-impact-systems-that-use-encrypted-communications": {
-    "title": "Heartbleed OpenSSL Vulnerability Explained | Tape Q&A",
-    "description": "How a missing bounds check in the OpenSSL TLS heartbeat extension leaks up to 64 KB of memory per request, exposing keys and login credentials."
-  },
-  "/tape-q-and-a/what-is-the-log4j-remote-code-execution-vulnerability-and-why-did-it-become-a-major-concern-for-enterprise-software-environments": {
-    "title": "Log4j CVE-2021-44228 Remote Code Execution | Tape Q&A",
-    "description": "How CVE-2021-44228 in Apache Log4j lets crafted input strings load and run remote code, and why it hit so many enterprise applications at once."
-  },
-  "/tape-q-and-a/what-is-the-petya-ransomware-attack-and-how-does-it-spread-within-enterprise-networks": {
-    "title": "Petya Ransomware: How It Spreads in Networks | Tape Q&A",
-    "description": "How Petya ransomware modifies the master boot record, spreads laterally by harvesting credentials, and in later variants arrived via a supply-chain attack."
-  },
-  "/tape-q-and-a/what-is-the-proper-procedure-for-returning-a-dead-on-arrival-enterprise-tape-drive-for-warranty-processing-in-europe-the-middle-east-and-africa": {
-    "title": "DOA Tape Drive Warranty Return in EMEA | Tape Q&A",
-    "description": "What to do when a new tape drive is dead on arrival in EMEA: get an RA number, check the enclosure label, and ship it for repair or replacement."
-  },
-  "/tape-q-and-a/what-is-the-proper-procedure-for-returning-a-dead-on-arrival-enterprise-tape-drive-in-north-america": {
-    "title": "DOA Tape Drive Return in North America | Tape Q&A",
-    "description": "What to do when a tape drive arrives defective or fails right after install in North America: RA number, enclosure rules, and accessories to remove."
-  },
-  "/tape-q-and-a/what-is-the-proper-procedure-for-returning-enterprise-tape-media-cartridges-for-warranty-processing-in-europe-the-middle-east-and-africa": {
-    "title": "Tape Media Cartridge Warranty Return in EMEA | Tape Q&A",
-    "description": "How to return tape cartridges under warranty in EMEA: RA number, why only cartridges with the vendor logo qualify, and how returned media is sanitized."
-  },
-  "/tape-q-and-a/what-is-the-proper-procedure-for-returning-removable-storage-dock-systems-and-cartridges-for-warranty-service-in-europe-the-middle-east-and-africa": {
-    "title": "Removable Dock and Cartridge Warranty RMA, EMEA | Tape Q&A",
-    "description": "How to return removable storage docks and cartridges for warranty service in EMEA: RA number, vendor enclosure rules, and third-party housings."
-  },
-  "/tape-q-and-a/what-is-the-proper-procedure-for-returning-standalone-enterprise-tape-drives-for-repair-in-the-asia-pacific-region": {
-    "title": "Tape Drive Repair Return Procedure, Asia Pacific | Tape Q&A",
-    "description": "How to return a standalone tape drive for repair in Asia Pacific: RA number on the package, when to include the enclosure, and removing accessories."
-  },
-  "/tape-q-and-a/what-is-the-recommended-procedure-for-returning-defective-standalone-tape-drives-in-enterprise-environments-within-the-asia-pacific-region": {
-    "title": "Defective Tape Drive Returns in Asia Pacific | Tape Q&A",
-    "description": "How to return a defective standalone tape drive in Asia Pacific: RA number tied to a support case, rack-mounted drives, and packaging the unit."
-  },
-  "/tape-q-and-a/what-is-the-recommended-procedure-for-returning-enterprise-tape-autoloaders-or-drive-modules-for-repair-in-europe-the-middle-east-and-africa": {
-    "title": "Tape Autoloader and Drive Module RMA in EMEA | Tape Q&A",
-    "description": "How to return a tape autoloader or drive module for repair in EMEA: RA number on the package, vendor enclosure rules, and secure packaging."
-  },
-  "/tape-q-and-a/what-is-the-recommended-process-for-returning-enterprise-tape-media-cartridges-for-warranty-service-in-the-asia-pacific-region": {
-    "title": "Tape Media Cartridge Warranty RMA, Asia Pacific | Tape Q&A",
-    "description": "How to return tape cartridges for warranty service in Asia Pacific: RA number, the vendor logo requirement, and how customer data is protected."
-  },
-  "/tape-q-and-a/what-is-the-recommended-process-for-returning-standalone-enterprise-tape-drives-for-repair-in-europe-the-middle-east-and-africa": {
-    "title": "EMEA Tape Drive RMA: Recommended Repair Process | Tape Q&A",
-    "description": "The recommended EMEA repair return process for standalone tape drives: RA number, enclosures with or without a vendor label, and accessories."
-  },
-  "/tape-q-and-a/what-is-the-recommended-process-for-returning-standalone-enterprise-tape-drives-for-repair-or-replacement-in-europe-the-middle-east-and-africa": {
-    "title": "Tape Drive Repair or Replacement Returns, EMEA | Tape Q&A",
-    "description": "How to send a standalone tape drive back for repair or replacement in EMEA: RA number, removing drives from rack systems, and tracking the shipment."
-  },
-  "/tape-q-and-a/what-is-the-recommended-process-for-returning-standalone-enterprise-tape-drives-for-warranty-service-in-the-asia-pacific-region": {
-    "title": "Tape Drive Warranty Service Return, Asia Pacific | Tape Q&A",
-    "description": "How to return a standalone tape drive for warranty service in Asia Pacific: RA number, rack-mounted or third-party enclosures, and accessories."
-  },
-  "/tape-q-and-a/what-is-the-samba-heimdal-kerberos-vulnerability-and-why-can-it-allow-server-impersonation-attacks": {
-    "title": "Samba Heimdal Kerberos Server Impersonation Flaw | Tape Q&A",
-    "description": "How a Samba Heimdal Kerberos flaw reads the service name from an unencrypted part of the ticket, letting attackers forge responses and impersonate servers."
-  },
-  "/tape-q-and-a/what-is-the-sambacry-vulnerability-and-how-can-it-lead-to-remote-code-execution-on-file-servers": {
-    "title": "SambaCry Remote Code Execution on File Servers | Tape Q&A",
-    "description": "How SambaCry lets an attacker upload a malicious shared library to a writable Samba share and make the server run it, and why storage systems are exposed."
-  },
-  "/tape-q-and-a/what-is-the-shellshock-vulnerability-in-the-gnu-bash-shell-and-why-does-it-pose-a-major-security-risk-for-linux-based-systems": {
-    "title": "Shellshock Bash Vulnerability on Linux Systems | Tape Q&A",
-    "description": "How Shellshock lets attackers run commands through crafted environment variables passed to GNU Bash, and why web servers and SSH services were exposed."
-  },
-  "/tape-q-and-a/what-is-wannacry-ransomware-and-how-does-it-spread-across-enterprise-systems": {
-    "title": "WannaCry Ransomware: How It Spreads via SMB | Tape Q&A",
-    "description": "How WannaCry encrypts files and spreads on its own through an SMB vulnerability and phishing emails, and why backups matter for getting data back."
-  },
-  "/tape-q-and-a/what-occurs-after-submitting-a-request-for-information-about-enterprise-data-infrastructure-or-storage-technologies": {
-    "title": "After an Enterprise Storage Information Request | Tape Q&A",
-    "description": "What happens after you request information on enterprise data infrastructure: an internal review, a reply from a representative, and next steps."
-  },
-  "/tape-q-and-a/what-risks-can-arise-from-exposed-development-ports-in-a-system-s-monitoring-or-statistics-interface": {
-    "title": "Exposed Dev Ports in Monitoring Interfaces | Tape Q&A",
-    "description": "Why development or testing ports left open in a monitoring or statistics interface can leak operational data through default credentials."
-  },
-  "/tape-q-and-a/what-security-risks-can-arise-from-vulnerabilities-in-a-storage-management-web-interface-api": {
-    "title": "Storage Management Web API Security Risks | Tape Q&A",
-    "description": "How flaws in a storage management web interface API can allow file uploads that lead to remote code execution and expose internal configuration data."
-  },
-  "/tape-q-and-a/what-storage-strategies-can-help-modern-content-creators-manage-growing-media-libraries-while-keeping-infrastructure-costs-under-control": {
-    "title": "Tiered Storage for Content Creator Libraries | Tape Q&A",
-    "description": "How content creators can keep active projects on fast storage and move older media to lower-cost tiers to control costs as 4K libraries grow."
-  },
-  "/tape-q-and-a/what-warranty-coverage-is-typically-offered-for-enterprise-tape-media-cartridges-used-in-backup-and-archival-storage": {
-    "title": "Enterprise Tape Cartridge Warranty Coverage | Tape Q&A",
-    "description": "What the typical limited lifetime warranty on enterprise tape cartridges covers, the repair, replace, or refund remedies, and the proof of purchase needed."
-  },
-  "/tape-q-and-a/what-warranty-protections-are-commonly-provided-for-enterprise-tape-media-cartridges-used-in-backup-and-archival-storage-systems": {
-    "title": "Tape Media Warranty Limits and Claim Requirements | Tape Q&A",
-    "description": "Which defects a limited lifetime warranty on archive tape cartridges covers, where coverage stops, and how to file a claim with proof of purchase."
-  },
-  "/tape-q-and-a/why-do-enterprise-storage-and-data-infrastructure-vendors-publish-open-source-license-information-for-their-software-and-hardware-platforms": {
-    "title": "Why Storage Vendors Publish Open Source Licenses | Tape Q&A",
-    "description": "Why enterprise storage vendors disclose the open source packages and license types in their products, often organized by product family or version."
-  },
-  "/tape-q-and-a/why-is-it-important-for-organizations-managing-large-media-libraries-to-carefully-plan-their-long-term-archive-storage-strategy": {
-    "title": "Why Media Libraries Need an Archive Storage Plan | Tape Q&A",
-    "description": "Why organizations with large media libraries should plan archive storage carefully to balance cost, durability, and fast retrieval for reuse."
-  },
-  "/tape-q-and-a/why-should-organizations-update-their-apache-web-server-when-it-is-used-as-a-reverse-proxy-for-media-asset-management-systems-in-a-dmz": {
-    "title": "Update Apache Reverse Proxy for MAM in a DMZ | Tape Q&A",
-    "description": "Why an Apache HTTP Server acting as a reverse proxy for media asset management in a DMZ must be patched quickly, since it guards internal services."
-  },
-  "/tape-q-and-a/why-should-organizations-upgrade-management-applications-that-use-older-versions-of-the-log4j-library-in-hyperconverged-infrastructure-environments": {
-    "title": "Log4j 1.x Upgrades for HCI Management Apps | Tape Q&A",
-    "description": "Why hyperconverged infrastructure management apps still running Log4j 1.x should be upgraded, given its deserialization and other known flaws."
-  }
+ "/blog/500-dreams-and-magnetic-tape-fantasies-the-addictive-illusion-of-cheap-lto-storage": {
+  "title": "$500 Dreams: The Illusion of Cheap LTO Storage | TapeBackup",
+  "description": "Why a used LTO-6 drive listed for $500 feels like a steal, and why the cheap entry price of LTO tape storage is so often an illusion."
+ },
+ "/blog/6-000-for-a-paperweight-when-enterprise-grade-storage-quietly-fails-you": {
+  "title": "$6,000 Paperweight: When an LTO-7 Drive Fails | TapeBackup",
+  "description": "Someone spent $6,000 on an LTO-7 drive expecting enterprise durability. What its failure says about trusting enterprise-grade storage hardware."
+ },
+ "/blog/backup-strategy-gets-serious-when-your-archive-outgrows-disks": {
+  "title": "Backup Strategy When an Archive Outgrows Disks | TapeBackup",
+  "description": "Adding another hard drive stops being a backup strategy once an archive grows. Why that is the point where tape enters the picture for many operators."
+ },
+ "/blog/buying-a-few-cheap-lto-tapes-is-how-the-rabbit-hole-starts": {
+  "title": "Cheap LTO Tapes: How the Rabbit Hole Starts | TapeBackup",
+  "description": "How a pile of cheap LTO cartridges turns into a full tape setup, and why archive math looks different once removable media enters the picture."
+ },
+ "/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software": {
+  "title": "Tape Backup Software: Why I Built My Own | TapeBackup",
+  "description": "The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build."
+ },
+ "/blog/i-replaced-hard-drives-with-tape-and-accidentally-signed-up-for-a-lifetime-of-noise-bugs-and-obs": {
+  "title": "Hard Drives to LTO Tape: Noise, Bugs, Obsession | TapeBackup",
+  "description": "Rising HDD prices pushed one builder to switch to LTO tape instead. What followed: drive noise, software bugs, and a hobby that became an obsession."
+ },
+ "/blog/lto-tape-backup-costs-workflow-reality": {
+  "title": "LTO Backup Costs Once the Workflow Fights Back | TapeBackup",
+  "description": "Cheap tapes make LTO look irresistible. This breaks down the real costs: drives, HBAs, libraries, catalogs, cleaning, restores, and daily operation."
+ },
+ "/blog/offsite-tape-backups-still-beat-most-good-enough-plans": {
+  "title": "Offsite Tape Storage Beats Good-Enough Backup Plans",
+  "description": "Offsite tape storage for backups: why a tape copy moved out of the building still covers risks that replication, snapshots and cloud sync leave open."
+ },
+ "/blog/one-bad-archive-and-it-s-gone-forever-the-brutal-trade-off-nobody-warns-you-about-in-tape-storag": {
+  "title": "One Bad Tape Archive and It's Gone Forever | TapeBackup",
+  "description": "Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file."
+ },
+ "/blog/scriptable-linux-tape-backups-still-have-a-process-problem": {
+  "title": "Linux Tape Backups Still Have a Process Problem | TapeBackup",
+  "description": "Linux makes tape backup flexible and scriptable. It also makes it easy to build a workflow that only its author understands. Why process matters."
+ },
+ "/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again": {
+  "title": "Tape Is Dead? Why Backup Systems Use It Again | TapeBackup",
+  "description": "Tape costs a few euros per terabyte on paper, but real LTO backup still demands patience, planning, and a clear idea of where offline storage belongs."
+ },
+ "/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test": {
+  "title": "Best LTO Backup Software Is the One You Test | TapeBackup",
+  "description": "LTFS, tar, Bacula, Bareos, or an enterprise suite? Why the best LTO backup workflow is the one you have actually restored from without guessing."
+ },
+ "/blog/the-day-my-tape-drive-went-rogue-inside-the-frustrating-reality-of-lto-6-failures": {
+  "title": "LTO-6 Failure: The Day My Tape Drive Went Rogue | TapeBackup",
+  "description": "A firsthand look at an LTO-6 tape drive failure, and why a breakdown feels so frustrating in storage that is supposed to be dependable."
+ },
+ "/blog/the-home-lto-setup-gets-real-when-you-stop-treating-it-like-a-toy": {
+  "title": "Home LTO Setup: Stop Treating It Like a Toy | TapeBackup",
+  "description": "A home or lab LTO setup can be real backup infrastructure. What separates a weekend experiment from a reliable archive is how you operate it."
+ },
+ "/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them": {
+  "title": "Used LTO Libraries: Loud, Fussy, and Addictive | TapeBackup",
+  "description": "Decommissioned tape libraries are loud and fussy, yet backup teams and homelabbers keep reviving them for archive capacity without a cloud-sized bill."
+ },
+ "/blog/which-lto-drive-should-you-buy-without-regretting-it-later": {
+  "title": "Which LTO Drive Should You Buy Without Regret? | TapeBackup",
+  "description": "Every LTO generation looks tempting on the used market. How media costs, compatibility rules, and restore plans should decide which drive you buy."
+ },
+ "/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying": {
+  "title": "Used LTO-8 Drive Dead? Check the SAS Path First | TapeBackup",
+  "description": "Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead."
+ },
+ "/blog": {
+  "title": "LTO Tape Backup Blog: Real-World Tape Workflows | TapeBackup",
+  "description": "Opinion and analysis on LTO tape backup: used drives and libraries, backup software, archive workflows, offsite copies, and home tape setups."
+ },
+ "/tape-q-and-a": {
+  "title": "LTO Tape FAQ: Backup, Archive and Returns | Tape Q&A",
+  "description": "62 standalone answers on LTO tape backup, archive planning, media workflows, security vulnerabilities, cartridge warranties, and hardware returns."
+ },
+ "/tape-q-and-a/ai-analytics-storage-at-scale": {
+  "title": "Storage for AI and HPC Analytics at Scale | Tape Q&A",
+  "description": "How a parallel file system paired with an object storage data lake keeps GPU-heavy AI and analytics workloads fast while protecting massive datasets."
+ },
+ "/tape-q-and-a/ai-media-workflow-automation": {
+  "title": "AI Metadata and Search for Media Workflows | Tape Q&A",
+  "description": "How on-site, GPU-accelerated machine learning inside a media asset management system automates content search, metadata tagging, and enhancement."
+ },
+ "/tape-q-and-a/collaborative-video-production-archive": {
+  "title": "Collaborative Video Production and Archiving | Tape Q&A",
+  "description": "How shared high-performance storage, searchable assets, and remote editing let creative teams collaborate on video and keep a long-term archive."
+ },
+ "/tape-q-and-a/how-can-creative-teams-quickly-deploy-a-media-asset-management-system-to-organize-and-search-growing-video-libraries": {
+  "title": "Quick Media Asset Management Setup for Video | Tape Q&A",
+  "description": "How creative teams can install a lightweight media asset management system on modest hardware to index, catalog, and search growing video libraries."
+ },
+ "/tape-q-and-a/how-can-educational-webinars-help-it-professionals-better-understand-modern-enterprise-backup-and-data-protection-strategies": {
+  "title": "Enterprise Backup Webinars for IT Professionals | Tape Q&A",
+  "description": "How educational webinars use demos, case examples, and architecture talks to explain backup design, storage efficiency, and recovery workflows."
+ },
+ "/tape-q-and-a/how-can-on-demand-webinars-help-it-teams-understand-modern-storage-infrastructure-for-high-performance-data-workloads": {
+  "title": "On-Demand Storage Infrastructure Webinars | Tape Q&A",
+  "description": "Why recorded webinars help IT admins, architects, and engineers learn storage infrastructure for high-performance workloads on their own schedule."
+ },
+ "/tape-q-and-a/how-can-organizations-design-storage-architectures-that-reliably-support-the-performance-demands-of-large-scale-4k-video-production-workflows": {
+  "title": "Storage Architecture for 4K Video Production | Tape Q&A",
+  "description": "What storage design supports 4K production: consistent high throughput for many editors at once, shared storage, and validated reference designs."
+ },
+ "/tape-q-and-a/how-can-organizations-test-and-evaluate-enterprise-backup-storage-solutions-before-deploying-them-in-production-environments": {
+  "title": "How to Test Enterprise Backup Before Deploying | Tape Q&A",
+  "description": "How to evaluate backup software with community or evaluation editions on VMware, KVM, or Hyper-V, and the modest hardware a test setup needs."
+ },
+ "/tape-q-and-a/how-can-personalized-outreach-programs-help-technology-vendors-build-stronger-relationships-with-targeted-enterprise-customers": {
+  "title": "Personalized Outreach Programs for Tech Vendors | Tape Q&A",
+  "description": "How technology vendors use tailored communication, one-on-one meetings, and technical briefings to build ties with high-value enterprise accounts."
+ },
+ "/tape-q-and-a/how-is-nvme-technology-changing-storage-architectures-for-modern-media-and-entertainment-production-workflows": {
+  "title": "NVMe Storage in Media Production Workflows | Tape Q&A",
+  "description": "How NVMe flash storage cuts latency and raises throughput over protocols built for spinning disks, and what that means for high-resolution media work."
+ },
+ "/tape-q-and-a/how-should-media-organizations-evaluate-different-storage-options-when-building-a-long-term-archive-strategy-for-large-video-and-media-content-libraries": {
+  "title": "Choosing Storage for a Long-Term Media Archive | Tape Q&A",
+  "description": "How media organizations should weigh cloud, on-premises, and other archive storage options on cost, security, performance, and long-term scale."
+ },
+ "/tape-q-and-a/how-should-organizations-return-removable-storage-dock-systems-and-cartridges-for-repair-in-enterprise-environments-in-the-asia-pacific-region": {
+  "title": "Removable Dock Repair Returns in Asia Pacific | Tape Q&A",
+  "description": "How to return removable storage dock systems and cartridges for repair in Asia Pacific: the RA number, which enclosures to include, and what to ship."
+ },
+ "/tape-q-and-a/hybrid-cloud-object-storage": {
+  "title": "Hybrid Cloud On-Premises S3 Object Storage | Tape Q&A",
+  "description": "How to run cloud services and APIs in your own data center with scalable S3-compatible object storage while keeping local data control and low latency."
+ },
+ "/tape-q-and-a/mainframe-open-systems-archive": {
+  "title": "Mainframe and Open Systems Backup Consolidation | Tape Q&A",
+  "description": "How large enterprises combine mainframe and open systems backup and archiving on deduplicated disk and long-term storage to cut costs and stay compliant."
+ },
+ "/tape-q-and-a/modern-backup-infrastructure": {
+  "title": "Backup Modernization for Faster Recovery | Tape Q&A",
+  "description": "How purpose-built backup appliances with deduplication and fast ingest help organizations recover faster, resist ransomware, and use storage efficiently."
+ },
+ "/tape-q-and-a/modern-data-infrastructure-for-ai": {
+  "title": "Tiered Data Infrastructure for AI and Archive | Tape Q&A",
+  "description": "A lifecycle approach that places active AI data, backup copies, and long-term archives on different storage tiers based on access and recovery needs."
+ },
+ "/tape-q-and-a/multi-tier-data-protection-strategy": {
+  "title": "Multi-Tier Data Protection for Ransomware | Tape Q&A",
+  "description": "How backup appliances, object storage, and long-term retention tiers combine across hybrid cloud for fast recovery, ransomware resilience, and lower cost."
+ },
+ "/tape-q-and-a/resilient-data-protection-architecture": {
+  "title": "Air-Gapped, Immutable Backup Architecture | Tape Q&A",
+  "description": "A blueprint for protecting physical, virtual, and cloud workloads from ransomware and disasters using multiple backup targets and immutable copies."
+ },
+ "/tape-q-and-a/what-are-the-recommended-packaging-practices-for-shipping-enterprise-tape-cartridges-safely-for-return-or-transport": {
+  "title": "Tape Cartridge Packaging for Safe Shipping | Tape Q&A",
+  "description": "How to pack enterprise tape cartridges for return or transport: reuse original packaging, wrap each cartridge, cushion all sides, and fill empty space."
+ },
+ "/tape-q-and-a/what-are-the-spectre-and-meltdown-vulnerabilities-and-how-do-they-allow-attackers-to-access-protected-system-memory": {
+  "title": "Spectre and Meltdown: How CPU Memory Leaks Work | Tape Q&A",
+  "description": "How Spectre and Meltdown abuse speculative execution to bypass memory isolation and read protected data through CPU cache side channels."
+ },
+ "/tape-q-and-a/what-challenges-do-media-organizations-face-when-transitioning-from-traditional-hd-production-to-modern-4k-video-workflows": {
+  "title": "HD to 4K Video Production Workflow Challenges | Tape Q&A",
+  "description": "The problems studios and broadcasters hit moving from HD to 4K: multiplied storage volumes, slower shared editing, and heavier archive demands."
+ },
+ "/tape-q-and-a/what-factors-should-organizations-consider-when-choosing-between-cloud-storage-and-on-premises-solutions-for-long-term-media-archives": {
+  "title": "Cloud vs On-Premises Storage for Media Archives | Tape Q&A",
+  "description": "The cost, accessibility, and flexibility factors to weigh when choosing between cloud storage and on-premises systems for a long-term media archive."
+ },
+ "/tape-q-and-a/what-happens-after-submitting-a-request-to-schedule-a-meeting-with-a-technical-solutions-team": {
+  "title": "After Requesting a Technical Solutions Meeting | Tape Q&A",
+  "description": "What typically happens after you ask to meet a technical solutions team: request review, picking the right specialists, and confirming date and time."
+ },
+ "/tape-q-and-a/what-happens-after-you-submit-a-request-for-information-about-large-scale-archival-storage-solutions": {
+  "title": "After an Archival Storage Information Request | Tape Q&A",
+  "description": "What follows a request for information on large-scale archival storage: a review of your inquiry, routing to specialists, and a representative's reply."
+ },
+ "/tape-q-and-a/what-infrastructure-and-workflow-changes-are-required-when-media-organizations-transition-from-hd-production-to-full-4k-content-creation": {
+  "title": "HD to 4K Infrastructure and Workflow Changes | Tape Q&A",
+  "description": "The infrastructure, storage strategy, and collaboration changes media organizations need when moving from HD production to full 4K content creation."
+ },
+ "/tape-q-and-a/what-is-a-sql-injection-vulnerability-in-backup-appliance-management-interfaces-and-how-should-organizations-address-it": {
+  "title": "SQL Injection in Backup Appliance Interfaces | Tape Q&A",
+  "description": "How SQL injection in a backup appliance management interface can be exploited, sometimes before login, and what organizations should do to address it."
+ },
+ "/tape-q-and-a/what-is-an-api-authentication-vulnerability-in-a-storage-appliance-controller-and-how-should-organizations-mitigate-the-risk": {
+  "title": "API Authentication Flaws in Storage Controllers | Tape Q&A",
+  "description": "How an API authentication flaw in a storage appliance controller lets attackers read configuration or change settings, and how to mitigate the risk."
+ },
+ "/tape-q-and-a/what-is-an-rmi-session-hijacking-vulnerability-in-media-asset-management-servers-and-how-should-organizations-respond": {
+  "title": "RMI Session Hijacking in Media Asset Servers | Tape Q&A",
+  "description": "How RMI session hijacking in media asset management servers can give attackers admin access during an active session, and how to respond."
+ },
+ "/tape-q-and-a/what-is-the-apache-struts-rest-plug-in-vulnerability-and-how-can-organizations-mitigate-the-associated-security-risk": {
+  "title": "Apache Struts REST Plug-in Vulnerability | Tape Q&A",
+  "description": "How the Apache Struts REST plug-in flaw enables remote code execution on Java web apps, why a major breach made it famous, and how to mitigate it."
+ },
+ "/tape-q-and-a/what-is-the-correct-procedure-for-returning-standalone-enterprise-tape-drives-for-repair-in-europe-the-middle-east-and-africa": {
+  "title": "Tape Drive Repair Return Procedure in EMEA | Tape Q&A",
+  "description": "How to return a standalone tape drive for repair in EMEA: get an RA number, mark the package, and ship with or without its vendor or rackmount enclosure."
+ },
+ "/tape-q-and-a/what-is-the-correct-procedure-for-returning-standalone-enterprise-tape-drives-for-repair-in-north-america": {
+  "title": "Tape Drive Repair Return Procedure, North America | Tape Q&A",
+  "description": "How to return a standalone tape drive for repair in North America: RA number on the box, which accessories to keep, and when to ship the enclosure."
+ },
+ "/tape-q-and-a/what-is-the-correct-process-for-returning-enterprise-tape-autoloaders-or-tape-drive-units-for-repair-in-the-asia-pacific-region": {
+  "title": "Tape Autoloader Repair Returns in Asia Pacific | Tape Q&A",
+  "description": "How to return a tape autoloader or drive unit for repair in Asia Pacific: the RA number, vendor versus third-party enclosures, and accessories."
+ },
+ "/tape-q-and-a/what-is-the-correct-process-for-returning-enterprise-tape-media-under-warranty-in-north-america": {
+  "title": "Tape Media Warranty Return in North America | Tape Q&A",
+  "description": "How to return tape media under warranty in North America: submit an online request, get an RA number and address, and how returned media is sanitized."
+ },
+ "/tape-q-and-a/what-is-the-ghost-glibc-vulnerability-and-why-is-it-considered-a-serious-risk-for-linux-based-systems": {
+  "title": "GHOST glibc Vulnerability CVE-2015-0235 on Linux | Tape Q&A",
+  "description": "How the GHOST buffer overflow in glibc hostname resolution functions allows remote code execution without credentials on Linux-based systems."
+ },
+ "/tape-q-and-a/what-is-the-heartbleed-vulnerability-in-openssl-and-how-can-it-impact-systems-that-use-encrypted-communications": {
+  "title": "Heartbleed OpenSSL Vulnerability Explained | Tape Q&A",
+  "description": "How a missing bounds check in the OpenSSL TLS heartbeat extension leaks up to 64 KB of memory per request, exposing keys and login credentials."
+ },
+ "/tape-q-and-a/what-is-the-log4j-remote-code-execution-vulnerability-and-why-did-it-become-a-major-concern-for-enterprise-software-environments": {
+  "title": "Log4j CVE-2021-44228 Remote Code Execution | Tape Q&A",
+  "description": "How CVE-2021-44228 in Apache Log4j lets crafted input strings load and run remote code, and why it hit so many enterprise applications at once."
+ },
+ "/tape-q-and-a/what-is-the-petya-ransomware-attack-and-how-does-it-spread-within-enterprise-networks": {
+  "title": "Petya Ransomware: How It Spreads in Networks | Tape Q&A",
+  "description": "How Petya ransomware modifies the master boot record, spreads laterally by harvesting credentials, and in later variants arrived via a supply-chain attack."
+ },
+ "/tape-q-and-a/what-is-the-proper-procedure-for-returning-a-dead-on-arrival-enterprise-tape-drive-for-warranty-processing-in-europe-the-middle-east-and-africa": {
+  "title": "DOA Tape Drive Warranty Return in EMEA | Tape Q&A",
+  "description": "What to do when a new tape drive is dead on arrival in EMEA: get an RA number, check the enclosure label, and ship it for repair or replacement."
+ },
+ "/tape-q-and-a/what-is-the-proper-procedure-for-returning-a-dead-on-arrival-enterprise-tape-drive-in-north-america": {
+  "title": "DOA Tape Drive Return in North America | Tape Q&A",
+  "description": "What to do when a tape drive arrives defective or fails right after install in North America: RA number, enclosure rules, and accessories to remove."
+ },
+ "/tape-q-and-a/what-is-the-proper-procedure-for-returning-enterprise-tape-media-cartridges-for-warranty-processing-in-europe-the-middle-east-and-africa": {
+  "title": "Tape Media Cartridge Warranty Return in EMEA | Tape Q&A",
+  "description": "How to return tape cartridges under warranty in EMEA: RA number, why only cartridges with the vendor logo qualify, and how returned media is sanitized."
+ },
+ "/tape-q-and-a/what-is-the-proper-procedure-for-returning-removable-storage-dock-systems-and-cartridges-for-warranty-service-in-europe-the-middle-east-and-africa": {
+  "title": "Removable Dock and Cartridge Warranty RMA, EMEA | Tape Q&A",
+  "description": "How to return removable storage docks and cartridges for warranty service in EMEA: RA number, vendor enclosure rules, and third-party housings."
+ },
+ "/tape-q-and-a/what-is-the-proper-procedure-for-returning-standalone-enterprise-tape-drives-for-repair-in-the-asia-pacific-region": {
+  "title": "Tape Drive Repair Return Procedure, Asia Pacific | Tape Q&A",
+  "description": "How to return a standalone tape drive for repair in Asia Pacific: RA number on the package, when to include the enclosure, and removing accessories."
+ },
+ "/tape-q-and-a/what-is-the-recommended-procedure-for-returning-defective-standalone-tape-drives-in-enterprise-environments-within-the-asia-pacific-region": {
+  "title": "Defective Tape Drive Returns in Asia Pacific | Tape Q&A",
+  "description": "How to return a defective standalone tape drive in Asia Pacific: RA number tied to a support case, rack-mounted drives, and packaging the unit."
+ },
+ "/tape-q-and-a/what-is-the-recommended-procedure-for-returning-enterprise-tape-autoloaders-or-drive-modules-for-repair-in-europe-the-middle-east-and-africa": {
+  "title": "Tape Autoloader and Drive Module RMA in EMEA | Tape Q&A",
+  "description": "How to return a tape autoloader or drive module for repair in EMEA: RA number on the package, vendor enclosure rules, and secure packaging."
+ },
+ "/tape-q-and-a/what-is-the-recommended-process-for-returning-enterprise-tape-media-cartridges-for-warranty-service-in-the-asia-pacific-region": {
+  "title": "Tape Media Cartridge Warranty RMA, Asia Pacific | Tape Q&A",
+  "description": "How to return tape cartridges for warranty service in Asia Pacific: RA number, the vendor logo requirement, and how customer data is protected."
+ },
+ "/tape-q-and-a/what-is-the-recommended-process-for-returning-standalone-enterprise-tape-drives-for-repair-in-europe-the-middle-east-and-africa": {
+  "title": "EMEA Tape Drive RMA: Recommended Repair Process | Tape Q&A",
+  "description": "The recommended EMEA repair return process for standalone tape drives: RA number, enclosures with or without a vendor label, and accessories."
+ },
+ "/tape-q-and-a/what-is-the-recommended-process-for-returning-standalone-enterprise-tape-drives-for-repair-or-replacement-in-europe-the-middle-east-and-africa": {
+  "title": "Tape Drive Repair or Replacement Returns, EMEA | Tape Q&A",
+  "description": "How to send a standalone tape drive back for repair or replacement in EMEA: RA number, removing drives from rack systems, and tracking the shipment."
+ },
+ "/tape-q-and-a/what-is-the-recommended-process-for-returning-standalone-enterprise-tape-drives-for-warranty-service-in-the-asia-pacific-region": {
+  "title": "Tape Drive Warranty Service Return, Asia Pacific | Tape Q&A",
+  "description": "How to return a standalone tape drive for warranty service in Asia Pacific: RA number, rack-mounted or third-party enclosures, and accessories."
+ },
+ "/tape-q-and-a/what-is-the-samba-heimdal-kerberos-vulnerability-and-why-can-it-allow-server-impersonation-attacks": {
+  "title": "Samba Heimdal Kerberos Server Impersonation Flaw | Tape Q&A",
+  "description": "How a Samba Heimdal Kerberos flaw reads the service name from an unencrypted part of the ticket, letting attackers forge responses and impersonate servers."
+ },
+ "/tape-q-and-a/what-is-the-sambacry-vulnerability-and-how-can-it-lead-to-remote-code-execution-on-file-servers": {
+  "title": "SambaCry Remote Code Execution on File Servers | Tape Q&A",
+  "description": "How SambaCry lets an attacker upload a malicious shared library to a writable Samba share and make the server run it, and why storage systems are exposed."
+ },
+ "/tape-q-and-a/what-is-the-shellshock-vulnerability-in-the-gnu-bash-shell-and-why-does-it-pose-a-major-security-risk-for-linux-based-systems": {
+  "title": "Shellshock Bash Vulnerability on Linux Systems | Tape Q&A",
+  "description": "How Shellshock lets attackers run commands through crafted environment variables passed to GNU Bash, and why web servers and SSH services were exposed."
+ },
+ "/tape-q-and-a/what-is-wannacry-ransomware-and-how-does-it-spread-across-enterprise-systems": {
+  "title": "WannaCry Ransomware: How It Spreads via SMB | Tape Q&A",
+  "description": "How WannaCry encrypts files and spreads on its own through an SMB vulnerability and phishing emails, and why backups matter for getting data back."
+ },
+ "/tape-q-and-a/what-occurs-after-submitting-a-request-for-information-about-enterprise-data-infrastructure-or-storage-technologies": {
+  "title": "After an Enterprise Storage Information Request | Tape Q&A",
+  "description": "What happens after you request information on enterprise data infrastructure: an internal review, a reply from a representative, and next steps."
+ },
+ "/tape-q-and-a/what-risks-can-arise-from-exposed-development-ports-in-a-system-s-monitoring-or-statistics-interface": {
+  "title": "Exposed Dev Ports in Monitoring Interfaces | Tape Q&A",
+  "description": "Why development or testing ports left open in a monitoring or statistics interface can leak operational data through default credentials."
+ },
+ "/tape-q-and-a/what-security-risks-can-arise-from-vulnerabilities-in-a-storage-management-web-interface-api": {
+  "title": "Storage Management Web API Security Risks | Tape Q&A",
+  "description": "How flaws in a storage management web interface API can allow file uploads that lead to remote code execution and expose internal configuration data."
+ },
+ "/tape-q-and-a/what-storage-strategies-can-help-modern-content-creators-manage-growing-media-libraries-while-keeping-infrastructure-costs-under-control": {
+  "title": "Tiered Storage for Content Creator Libraries | Tape Q&A",
+  "description": "How content creators can keep active projects on fast storage and move older media to lower-cost tiers to control costs as 4K libraries grow."
+ },
+ "/tape-q-and-a/what-warranty-coverage-is-typically-offered-for-enterprise-tape-media-cartridges-used-in-backup-and-archival-storage": {
+  "title": "Enterprise Tape Cartridge Warranty Coverage | Tape Q&A",
+  "description": "What the typical limited lifetime warranty on enterprise tape cartridges covers, the repair, replace, or refund remedies, and the proof of purchase needed."
+ },
+ "/tape-q-and-a/what-warranty-protections-are-commonly-provided-for-enterprise-tape-media-cartridges-used-in-backup-and-archival-storage-systems": {
+  "title": "Tape Media Warranty Limits and Claim Requirements | Tape Q&A",
+  "description": "Which defects a limited lifetime warranty on archive tape cartridges covers, where coverage stops, and how to file a claim with proof of purchase."
+ },
+ "/tape-q-and-a/why-do-enterprise-storage-and-data-infrastructure-vendors-publish-open-source-license-information-for-their-software-and-hardware-platforms": {
+  "title": "Why Storage Vendors Publish Open Source Licenses | Tape Q&A",
+  "description": "Why enterprise storage vendors disclose the open source packages and license types in their products, often organized by product family or version."
+ },
+ "/tape-q-and-a/why-is-it-important-for-organizations-managing-large-media-libraries-to-carefully-plan-their-long-term-archive-storage-strategy": {
+  "title": "Why Media Libraries Need an Archive Storage Plan | Tape Q&A",
+  "description": "Why organizations with large media libraries should plan archive storage carefully to balance cost, durability, and fast retrieval for reuse."
+ },
+ "/tape-q-and-a/why-should-organizations-update-their-apache-web-server-when-it-is-used-as-a-reverse-proxy-for-media-asset-management-systems-in-a-dmz": {
+  "title": "Update Apache Reverse Proxy for MAM in a DMZ | Tape Q&A",
+  "description": "Why an Apache HTTP Server acting as a reverse proxy for media asset management in a DMZ must be patched quickly, since it guards internal services."
+ },
+ "/tape-q-and-a/why-should-organizations-upgrade-management-applications-that-use-older-versions-of-the-log4j-library-in-hyperconverged-infrastructure-environments": {
+  "title": "Log4j 1.x Upgrades for HCI Management Apps | Tape Q&A",
+  "description": "Why hyperconverged infrastructure management apps still running Log4j 1.x should be upgraded, given its deserialization and other known flaws."
+ }
 }

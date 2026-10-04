@@ -6,18 +6,18 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
-<title>Wyszukiwarka oprogramowania do kopii zapasowych LTO</title>
+<title>Wyszukiwarka oprogramowania do kopii na taśmach LTO</title>
 <meta content="Cztery pytania wskażą oprogramowanie do kopii na taśmach dopasowane do środowiska, użycia taśm i budżetu: Catalogic DPX, Veeam, Commvault lub Nakivo." name="description"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://tapebackup.org/pl/backup-software-finder" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="TapeBackup.org" property="og:site_name"/>
-<meta content="Wyszukiwarka oprogramowania do kopii zapasowych LTO" property="og:title"/>
+<meta content="Wyszukiwarka oprogramowania do kopii na taśmach LTO" property="og:title"/>
 <meta content="Cztery pytania wskażą oprogramowanie do kopii na taśmach dopasowane do środowiska, użycia taśm i budżetu: Catalogic DPX, Veeam, Commvault lub Nakivo." property="og:description"/>
 <meta content="https://tapebackup.org/pl/backup-software-finder" property="og:url"/>
 <meta content="https://tapebackup.org/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Wyszukiwarka oprogramowania do kopii zapasowych LTO" name="twitter:title"/>
+<meta content="Wyszukiwarka oprogramowania do kopii na taśmach LTO" name="twitter:title"/>
 <meta content="Cztery pytania wskażą oprogramowanie do kopii na taśmach dopasowane do środowiska, użycia taśm i budżetu: Catalogic DPX, Veeam, Commvault lub Nakivo." name="twitter:description"/>
 <meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
 <meta content="#5b27d6" name="theme-color"/>
@@ -44,14 +44,15 @@
 <div class="header-right"><a class="btn btn-primary btn-sm" href="/pl/contact">Pobierz cennik</a></div>
 </div></header>
 <section class="hero"><div class="container hero-grid"><div class="hero-copy">
-<p class="eyebrow">Narzędzie</p><h1>Wyszukiwarka oprogramowania do kopii zapasowych na taśmach</h1>
+<p class="eyebrow">Narzędzie</p><h1>Znajdź właściwe oprogramowanie do kopii na taśmach</h1>
 <p><strong>Jeśli taśma jest głównym archiwum, zwykle najlepiej sprawdza się Catalogic DPX; w środowiskach głównie wirtualnych, gdzie taśma służy do drugiej kopii, Veeam; w małych środowiskach z ograniczonym budżetem Nakivo.</strong></p>
 <p>Sprzęt to połowa sukcesu. Wystarczy odpowiedzieć na cztery pytania, aby otrzymać krótką listę oprogramowania do kopii zapasowych dopasowanego do sposobu używania taśm, wielkości środowiska i budżetu.</p></div>
 <aside class="hero-panel"><p class="panel-label">Więcej szczegółów?</p><p class="panel-copy">Więcej w pełnym <a href="/pl/best-tape-backup-software">porównaniu najlepszego oprogramowania do kopii zapasowych na taśmach</a> lub w <a href="/pl/resources/tape-backup-software/catalogicdpx">recenzji Catalogic DPX</a>.</p></aside></div></section>
 <main class="page"><div class="container"><div class="section-stack">
 <section class="section-card"><h2>Dobór oprogramowania do kopii zapasowych</h2>
 <form class="tool-form" id="finder"><fieldset class="choice-grid"><legend>1. Jakie jest główne środowisko?</legend><label><input name="env" type="radio" value="virtual"/>Głównie maszyny wirtualne</label><label><input name="env" type="radio" value="physical"/>Głównie serwery fizyczne lub Unix</label><label><input checked="" name="env" type="radio" value="mixed"/>Mieszane lub hybrydowe</label><label><input name="env" type="radio" value="saas"/>Tylko Microsoft 365 lub SaaS</label></fieldset><fieldset class="choice-grid"><legend>2. Do czego posłuży taśma?</legend><label><input name="tape" type="radio" value="heavy"/>Główne archiwum lub duża biblioteka</label><label><input checked="" name="tape" type="radio" value="secondary"/>Kopia dodatkowa</label><label><input name="tape" type="radio" value="none"/>Bez taśm, tylko dysk lub chmura</label></fieldset><fieldset class="choice-grid"><legend>3. Ile systemów trzeba chronić?</legend><label><input name="scale" type="radio" value="small"/>Od 1 do 50</label><label><input checked="" name="scale" type="radio" value="mid"/>Od 51 do 500 lub więcej</label></fieldset><fieldset class="choice-grid"><legend>4. Co jest najważniejsze?</legend><label><input checked="" name="prio" type="radio" value="value"/>Opłacalność</label><label><input name="prio" type="radio" value="feature"/>Nowoczesne funkcje i chmura</label></fieldset><button class="tool-submit" type="submit">Pokaż dopasowanie</button></form>
-<div aria-live="polite" class="tool-result" hidden="" id="finder-result"></div></section>
+<div aria-live="polite" class="tool-result" hidden="" id="finder-result"></div>
+<figure class="page-figure"><img alt="Cztery pytania prowadzą do Catalogic DPX, Veeam, Commvault lub Nakivo" decoding="async" height="440" loading="lazy" src="/assets/figures/tape-backup-software-finder.svg" width="960"/><figcaption>Taśma jako główne archiwum prowadzi do Catalogic DPX, środowisko głównie wirtualne z taśmą jako drugą kopią do Veeam, duże środowisko mieszane do Commvault, a mały budżet do Nakivo.</figcaption></figure></section>
 <section class="section-card"><p class="eyebrow">Krótka lista</p><h2>Oprogramowanie, spośród którego wybiera wyszukiwarka</h2>
 <ul><li><strong>Catalogic DPX</strong>: korporacyjny system kopii zapasowych nastawiony na taśmy, z szeroką obsługą napędów, bibliotek i NDMP.</li><li><strong>Veeam Backup &amp; Replication</strong>: popularny wybór w środowiskach zwirtualizowanych, z zadaniami taśmowymi jako dodatkowym miejscem docelowym.</li><li><strong>Commvault</strong>: duża platforma z bogatym zestawem funkcji i głęboką integracją z chmurą.</li><li><strong>Nakivo</strong>: tańsza opcja dla mniejszych środowisk, które potrzebują podstawowej obsługi taśm.</li><li><strong>Veeam for Microsoft 365 i CloudCasa</strong>: kopie zapasowe SaaS i Kubernetes.</li></ul></section>
 <section aria-label="FAQ wyszukiwarki oprogramowania" class="faq-grid"><article class="faq-card"><h3>Które oprogramowanie do kopii zapasowych najlepiej sprawdza się z bibliotekami taśmowymi?</h3><p>Catalogic DPX ma najszerszą obsługę napędów i bibliotek oraz obsługuje NDMP, co ma znaczenie przy kopiach zapasowych NAS. Veeam i Commvault dobrze obsługują taśmę jako kopię dodatkową w większych środowiskach wirtualnych.</p></article><article class="faq-card"><h3>Czy można tworzyć kopie zapasowe Microsoft 365 na taśmach?</h3><p>Nie bezpośrednio. Kopię danych SaaS należy wykonać narzędziem takim jak Veeam for Microsoft 365, a następnie skopiować jego repozytorium na taśmę, jeśli potrzebna jest kopia offline lub długoterminowa.</p></article></section>

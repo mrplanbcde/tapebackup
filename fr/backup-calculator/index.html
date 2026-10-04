@@ -6,18 +6,18 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
-<title>Calculateur de sauvegarde sur bande : capacité et coût LTO</title>
+<title>Calculateur LTO : nombre de bandes et coût de sauvegarde</title>
 <meta content="Calculateur gratuit de sauvegarde sur bande : volume, copies et objectifs de reprise pour choisir entre bande, disque et cloud, avec les prix LTO 2026." name="description"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://tapebackup.org/fr/backup-calculator" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="TapeBackup.org" property="og:site_name"/>
-<meta content="Calculateur de sauvegarde sur bande : capacité et coût LTO" property="og:title"/>
+<meta content="Calculateur LTO : nombre de bandes et coût de sauvegarde" property="og:title"/>
 <meta content="Calculateur gratuit de sauvegarde sur bande : volume, copies et objectifs de reprise pour choisir entre bande, disque et cloud, avec les prix LTO 2026." property="og:description"/>
 <meta content="https://tapebackup.org/fr/backup-calculator" property="og:url"/>
 <meta content="https://tapebackup.org/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Calculateur de sauvegarde sur bande : capacité et coût LTO" name="twitter:title"/>
+<meta content="Calculateur LTO : nombre de bandes et coût de sauvegarde" name="twitter:title"/>
 <meta content="Calculateur gratuit de sauvegarde sur bande : volume, copies et objectifs de reprise pour choisir entre bande, disque et cloud, avec les prix LTO 2026." name="twitter:description"/>
 <meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
 <meta content="#5b27d6" name="theme-color"/>
@@ -29,7 +29,7 @@
 <script defer="" src="/assets/outbound-links.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "De combien de bandes LTO ai-je besoin ?", "acceptedAnswer": {"@type": "Answer", "text": "Divisez votre volume de données par la capacité native de la génération et multipliez par le nombre de copies, sans tenir compte de la compression : 100 To en deux copies représentent environ 12 cartouches LTO-9. La compression n'aide que pour les données compressibles et ne doit pas entrer dans la planification."}}, {"@type": "Question", "name": "Quand la bande est-elle moins chère que le disque ou le cloud ?", "acceptedAnswer": {"@type": "Answer", "text": "À partir d'environ 15 To, une fois le coût du lecteur réparti sur suffisamment de cartouches. En dessous, un NAS associé à un niveau froid du cloud est généralement moins cher et plus simple."}}, {"@type": "Question", "name": "La compression change-t-elle le nombre de bandes ?", "acceptedAnswer": {"@type": "Answer", "text": "Uniquement pour les données compressibles. Les constructeurs annoncent 2,5:1, mais la vidéo et les images sont déjà compressées et les fichiers chiffrés ne se compressent pas : ils se stockent donc à peu près à la capacité native."}}], "inLanguage": "fr"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://tapebackup.org/fr"}, {"@type": "ListItem", "position": 2, "name": "Calculateur de sauvegarde", "item": "https://tapebackup.org/fr/backup-calculator"}], "inLanguage": "fr"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculateur de capacité et de coût de sauvegarde sur bande", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/fr/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "inLanguage": "fr"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculateur de sauvegarde sur bande LTO", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/fr/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "inLanguage": "fr"}</script>
 <meta content="fr_FR" property="og:locale"/><link href="https://tapebackup.org/backup-calculator" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-calculator" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-calculator" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-calculator" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-calculator" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-calculator" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-calculator" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-calculator" hreflang="x-default" rel="alternate"/></head>
 <body class="price-page">
 <div class="site-shell">
@@ -45,7 +45,7 @@
 <div class="header-right"><a class="btn btn-primary btn-sm" href="/fr/contact">Obtenir la grille tarifaire</a></div>
 </div></header>
 <section class="hero"><div class="container hero-grid"><div class="hero-copy">
-<p class="eyebrow">Outil</p><h1>Calculateur de capacité et de coût de sauvegarde sur bande</h1>
+<p class="eyebrow">Outil</p><h1>Calculateur de sauvegarde sur bande LTO</h1>
 <p><strong>La bande devient rentable à partir d'environ 15 To de données : en dessous, disque et cloud reviennent moins cher ; au-delà, des supports LTO-8 ou LTO-9 à environ 5 € à 10 € par To sont plus avantageux que des copies à long terme sur disque.</strong></p>
 <p>Indiquez le volume de données à protéger, le nombre de copies conservées et le délai de restauration souhaité. Le calculateur recommande la bande, le disque, le cloud ou une combinaison, et estime le nombre de cartouches et le coût des supports d'après les prix LTO de septembre 2026 en France.</p></div>
 <aside class="hero-panel"><p class="panel-label">Prix utilisés</p><p class="panel-copy">Milieu de fourchette des offres relevées par le <a href="/fr/lto-tape-price-trend">suivi des prix LTO</a> : bandes LTO-8 à 92 €, bandes LTO-9 à 129 €, bandes LTO-10 de 30 To à 302 €.</p></aside></div></section>
@@ -59,6 +59,7 @@
 <button class="tool-submit" type="submit">Afficher ma recommandation</button>
 </form>
 <div aria-live="polite" class="tool-result" hidden="" id="calc-result"></div>
+<figure class="page-figure"><img alt="Cartouches nécessaires pour 100 To : 9 LTO-8, 6 LTO-9 ou 4 LTO-10" decoding="async" height="440" loading="lazy" src="/assets/figures/lto-cartridges-per-100tb.svg" width="960"/><figcaption>Une copie de 100 To nécessite 9 cartouches LTO-8, 6 cartouches LTO-9 ou 4 cartouches LTO-10 en capacité native, avant compression.</figcaption></figure>
 </section>
 <section class="section-card"><p class="eyebrow">Fonctionnement</p><h2>Comment le calculateur décide</h2>
 <ul><li>En dessous de 15 To, un lecteur de bandes est rarement amorti : nous recommandons donc disque plus cloud.</li><li>Si vous devez restaurer en quelques minutes, la première copie doit résider sur disque ou flash, la bande servant aux copies hors ligne à long terme.</li><li>Sinon, le calculateur propose le LTO-8 en dessous de 50 To, le LTO-9 jusqu'à 500 To, et le LTO-9 ou le LTO-10 au-delà.</li><li>Le nombre de cartouches repose sur la capacité native sans compression, et les coûts sur le point médian des offres actuelles des vendeurs. Le coût du lecteur correspond à un lecteur interne neuf lorsqu'une offre existe.</li></ul>

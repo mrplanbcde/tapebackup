@@ -33,6 +33,56 @@ def rel(*p):
     return os.path.join(ROOT, *p)
 
 
+BLOG_TEXT_FIXES = {
+    "blog/index.html": [
+        ("<h1>Recent articles about real-world LTO backup workflows</h1>", "<h1>LTO Tape Backup Blog: Real-World Tape Workflows</h1>"),
+        ("<p>Clearer titles, direct links, and standalone article pages for the latest TapeBackup.org posts on LTO media, restore workflows, offsite rotation, and the messy practical side of tape.</p>",
+         "<p>Field notes on running LTO tape: used drives and libraries, backup software, offsite rotation, home archives, and the restores that go wrong.</p>"),
+        ('<span class="signal-chip">Static archive</span>', '<span class="signal-chip">Offsite rotation</span>'),
+        ('<span class="signal-chip">Direct article routing</span>', '<span class="signal-chip">Used drives and libraries</span>'),
+        ('<p class="panel-label">Reader note</p>', '<p class="panel-label">Looking for prices?</p>'),
+        ('<p class="panel-copy">This blog index is now published as a static page so the listing always shows the intended human-readable titles instead of falling back to slug strings.</p>',
+         '<p class="panel-copy">Current LTO-6 to LTO-10 tape and drive prices are in the <a href="/lto-tape-price-trend">LTO price tracker</a>; buying advice is in the <a href="/lto-tape">LTO tape guide</a>.</p>'),
+    ],
+}
+# One drawing per post, inserted after the first paragraph of the article body (see scripts/draw_figures.py).
+BLOG_FIGURES = {
+    "offsite-tape-backups-still-beat-most-good-enough-plans": ("offsite-tape-rotation.svg", 960, 440,
+        "Tapes leave the building, travel to a vault and rotate back, outside the blast radius",
+        "Offsite rotation: cartridges leave the site, sit in a vault outside the blast radius of a fire, flood or attack, and rotate back on a schedule."),
+    "backup-strategy-gets-serious-when-your-archive-outgrows-disks": ("loose-disks-vs-tape.svg", 960, 420,
+        "A pile of loose disks next to a neat case of LTO cartridges",
+        "Loose disks pile up with no catalogue and no rotation; the same archive on LTO fits in one case of labelled cartridges."),
+}
+BLOG_INDEX_FIGURE = ("lto-cartridge-shelf.svg", 960, 300, "LTO cartridges on a shelf")
+
+
+def blog_fixes():
+    n = 0
+    for rel_path, pairs in BLOG_TEXT_FIXES.items():
+        f = rel(*rel_path.split("/"))
+        s = open(f, encoding="utf-8").read()
+        new = s
+        for a, b in pairs:
+            new = new.replace(a, b)
+        name, w, h, alt = BLOG_INDEX_FIGURE
+        if name not in new:
+            new = new.replace('<section class="listing-grid"', f'<figure class="page-figure"><img src="/assets/figures/{name}" alt="{alt}" width="{w}" height="{h}" loading="lazy" decoding="async"></figure>\n<section class="listing-grid"', 1)
+        if new != s:
+            open(f, "w", encoding="utf-8").write(new)
+            n += 1
+    for slug, (name, w, h, alt, cap) in BLOG_FIGURES.items():
+        f = rel("blog", slug, "index.html")
+        s = open(f, encoding="utf-8").read()
+        if name in s:
+            continue
+        fig = f'<figure class="page-figure"><img src="/assets/figures/{name}" alt="{esc(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async"><figcaption>{esc(cap)}</figcaption></figure>'
+        s = re.sub(r'(<section class="article-body"><p>.*?</p>)', lambda m: m.group(1) + fig, s, count=1, flags=re.S)
+        open(f, "w", encoding="utf-8").write(s)
+        n += 1
+    return n
+
+
 def apply_meta_overrides():
     with open(rel("data", "meta-overrides.json"), encoding="utf-8") as f:
         overrides = json.load(f)
@@ -341,6 +391,7 @@ def main():
     price_paths, current = build_prices.build_all()
     page_paths = build_pages.build_all(current) + build_articles.build_all(current) + build_guides.build_all(current)
     n = apply_meta_overrides()
+    print(f"blog fixes: {blog_fixes()}")
     apply_qa_noindex()
     print(f"QAPage schema: {qa_page_schema()}")
     print(f"answer-first panels: {answer_first_panels()}, blog posts with related links: {blog_related_links()}")

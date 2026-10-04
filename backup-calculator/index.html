@@ -6,18 +6,18 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
-<title>Tape Backup Calculator: LTO Capacity and Cost</title>
+<title>LTO Calculator: Tapes Needed and Tape Backup Cost</title>
 <meta content="Free tape backup calculator: enter data size, copies and recovery targets to get a tape, disk or cloud recommendation with 2026 LTO cartridge costs." name="description"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://tapebackup.org/backup-calculator" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="TapeBackup.org" property="og:site_name"/>
-<meta content="Tape Backup Calculator: LTO Capacity and Cost" property="og:title"/>
+<meta content="LTO Calculator: Tapes Needed and Tape Backup Cost" property="og:title"/>
 <meta content="Free tape backup calculator: enter data size, copies and recovery targets to get a tape, disk or cloud recommendation with 2026 LTO cartridge costs." property="og:description"/>
 <meta content="https://tapebackup.org/backup-calculator" property="og:url"/>
 <meta content="https://tapebackup.org/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Tape Backup Calculator: LTO Capacity and Cost" name="twitter:title"/>
+<meta content="LTO Calculator: Tapes Needed and Tape Backup Cost" name="twitter:title"/>
 <meta content="Free tape backup calculator: enter data size, copies and recovery targets to get a tape, disk or cloud recommendation with 2026 LTO cartridge costs." name="twitter:description"/>
 <meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
 <meta content="#5b27d6" name="theme-color"/>
@@ -29,7 +29,7 @@
 <script defer="" src="/assets/outbound-links.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many LTO tapes do I need?", "acceptedAnswer": {"@type": "Answer", "text": "Divide your data by the native capacity of the generation and multiply by the number of copies, ignoring compression: 100 TB with two copies is about 12 LTO-9 cartridges. Compression only helps with compressible data and should not be counted on for planning."}}, {"@type": "Question", "name": "When is tape cheaper than disk or cloud?", "acceptedAnswer": {"@type": "Answer", "text": "From roughly 15 TB upwards, once the cost of the drive is spread across enough cartridges. Below that, a NAS plus a cloud cold tier is usually cheaper and simpler."}}, {"@type": "Question", "name": "Does compression change the number of tapes?", "acceptedAnswer": {"@type": "Answer", "text": "Only for compressible data. Vendors quote 2.5:1, but video and images are already compressed and encrypted files cannot be compressed, so they store close to native capacity."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tapebackup.org/"}, {"@type": "ListItem", "position": 2, "name": "Backup calculator", "item": "https://tapebackup.org/backup-calculator"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Tape Backup Capacity and Cost Calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "LTO Tape Backup Calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
 <meta content="en_US" property="og:locale"/><link href="https://tapebackup.org/backup-calculator" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-calculator" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-calculator" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-calculator" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-calculator" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-calculator" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-calculator" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-calculator" hreflang="x-default" rel="alternate"/></head>
 <body class="price-page">
 <div class="site-shell">
@@ -45,7 +45,7 @@
 <div class="header-right"><a class="btn btn-primary btn-sm" href="/contact">Get Pricebook</a></div>
 </div></header>
 <section class="hero"><div class="container hero-grid"><div class="hero-copy">
-<p class="eyebrow">Tool</p><h1>Tape Backup Capacity and Cost Calculator</h1>
+<p class="eyebrow">Tool</p><h1>LTO Tape Backup Calculator</h1>
 <p><strong>Tape pays off from roughly 15 TB of data: below that, disk plus cloud is cheaper; above it, LTO-8 or LTO-9 media at about $5 to $7 per TB beats keeping long-term copies on disk.</strong></p>
 <p>Enter how much data you protect, how many copies you keep and how fast you need it back. The calculator recommends tape, disk, cloud or a mix, and estimates cartridges and media cost from September 2026 LTO prices.</p></div>
 <aside class="hero-panel"><p class="panel-label">Prices used</p><p class="panel-copy">Midpoints of seller listings from the <a href="/lto-tape-price-trend">LTO price tracker</a>: LTO-8 tapes $75, LTO-9 tapes $102, LTO-10 30 TB tapes $278.</p></aside></div></section>
@@ -59,6 +59,7 @@
 <button class="tool-submit" type="submit">Show my recommendation</button>
 </form>
 <div aria-live="polite" class="tool-result" hidden="" id="calc-result"></div>
+<figure class="page-figure"><img alt="Cartridges needed for 100 TB: 9 LTO-8, 6 LTO-9 or 4 LTO-10" decoding="async" height="440" loading="lazy" src="/assets/figures/lto-cartridges-per-100tb.svg" width="960"/><figcaption>One copy of 100 TB needs 9 LTO-8, 6 LTO-9 or 4 LTO-10 cartridges at native capacity, before compression.</figcaption></figure>
 </section>
 <section class="section-card"><p class="eyebrow">How it works</p><h2>How the calculator decides</h2>
 <ul><li>Under 15 TB, a tape drive rarely pays for itself, so disk plus cloud is recommended.</li><li>If you need recovery in minutes, the first copy has to live on disk or flash, with tape for long-term and offline copies.</li><li>Otherwise LTO-8 is suggested under 50 TB, LTO-9 up to 500 TB, and LTO-9 or LTO-10 above that.</li><li>Cartridge counts use native capacity with no compression, and costs use the midpoint of current seller listings. Drive cost is one new internal drive where one is listed.</li></ul>

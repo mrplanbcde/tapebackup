@@ -6,18 +6,18 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
-<title>Tape-Backup-Rechner: LTO-Kapazität und Kosten</title>
+<title>LTO-Rechner: benötigte Bänder und Kosten fürs Backup</title>
 <meta content="Kostenloser Tape-Backup-Rechner: Datenmenge, Kopien und Recovery-Ziele eingeben und eine Empfehlung für Band, Disk oder Cloud mit LTO-Kosten 2026 erhalten." name="description"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://tapebackup.org/de/backup-calculator" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="TapeBackup.org" property="og:site_name"/>
-<meta content="Tape-Backup-Rechner: LTO-Kapazität und Kosten" property="og:title"/>
+<meta content="LTO-Rechner: benötigte Bänder und Kosten fürs Backup" property="og:title"/>
 <meta content="Kostenloser Tape-Backup-Rechner: Datenmenge, Kopien und Recovery-Ziele eingeben und eine Empfehlung für Band, Disk oder Cloud mit LTO-Kosten 2026 erhalten." property="og:description"/>
 <meta content="https://tapebackup.org/de/backup-calculator" property="og:url"/>
 <meta content="https://tapebackup.org/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Tape-Backup-Rechner: LTO-Kapazität und Kosten" name="twitter:title"/>
+<meta content="LTO-Rechner: benötigte Bänder und Kosten fürs Backup" name="twitter:title"/>
 <meta content="Kostenloser Tape-Backup-Rechner: Datenmenge, Kopien und Recovery-Ziele eingeben und eine Empfehlung für Band, Disk oder Cloud mit LTO-Kosten 2026 erhalten." name="twitter:description"/>
 <meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
 <meta content="#5b27d6" name="theme-color"/>
@@ -29,7 +29,7 @@
 <script defer="" src="/assets/outbound-links.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wie viele LTO-Bänder brauche ich?", "acceptedAnswer": {"@type": "Answer", "text": "Teilen Sie Ihre Datenmenge durch die native Kapazität der Generation und multiplizieren Sie mit der Anzahl der Kopien, ohne Komprimierung: 100 TB mit zwei Kopien ergeben etwa 12 LTO-9-Kassetten. Komprimierung hilft nur bei komprimierbaren Daten und sollte in der Planung nicht eingerechnet werden."}}, {"@type": "Question", "name": "Wann ist Band günstiger als Festplatte oder Cloud?", "acceptedAnswer": {"@type": "Answer", "text": "Ab etwa 15 TB, wenn sich die Laufwerkskosten auf genug Kassetten verteilen. Darunter ist ein NAS plus eine kalte Cloud-Speicherklasse meist günstiger und einfacher."}}, {"@type": "Question", "name": "Ändert Komprimierung die Anzahl der Bänder?", "acceptedAnswer": {"@type": "Answer", "text": "Nur bei komprimierbaren Daten. Hersteller geben 2,5:1 an, doch Videos und Bilder sind bereits komprimiert, und verschlüsselte Dateien lassen sich nicht komprimieren. Auf ein Band passt dann nur etwa die native Kapazität."}}], "inLanguage": "de"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://tapebackup.org/de"}, {"@type": "ListItem", "position": 2, "name": "Backup-Rechner", "item": "https://tapebackup.org/de/backup-calculator"}], "inLanguage": "de"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Tape-Backup-Rechner für Kapazität und Kosten", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/de/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "inLanguage": "de"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "LTO-Tape-Backup-Rechner", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/de/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "inLanguage": "de"}</script>
 <meta content="de_DE" property="og:locale"/><link href="https://tapebackup.org/backup-calculator" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-calculator" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-calculator" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-calculator" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-calculator" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-calculator" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-calculator" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-calculator" hreflang="x-default" rel="alternate"/></head>
 <body class="price-page">
 <div class="site-shell">
@@ -45,7 +45,7 @@
 <div class="header-right"><a class="btn btn-primary btn-sm" href="/de/contact">Preisliste anfordern</a></div>
 </div></header>
 <section class="hero"><div class="container hero-grid"><div class="hero-copy">
-<p class="eyebrow">Tool</p><h1>Tape-Backup-Rechner für Kapazität und Kosten</h1>
+<p class="eyebrow">Tool</p><h1>LTO-Tape-Backup-Rechner</h1>
 <p><strong>Band lohnt sich ab etwa 15 TB Daten: Darunter sind Festplatte und Cloud günstiger; darüber schlagen LTO-8- oder LTO-9-Medien mit etwa 4 € bis 9 € pro TB die Langzeitkopien auf Festplatte.</strong></p>
 <p>Geben Sie ein, wie viele Daten Sie schützen, wie viele Kopien Sie aufbewahren und wie schnell Sie sie zurückbrauchen. Der Rechner empfiehlt Tape, Disk, Cloud oder eine Kombination und schätzt Kassettenzahl und Medienkosten auf Basis der LTO-Preise in Deutschland vom September 2026.</p></div>
 <aside class="hero-panel"><p class="panel-label">Verwendete Preise</p><p class="panel-copy">Mittelwerte der Händlerangebote aus dem <a href="/de/lto-tape-price-trend">LTO-Preis-Tracker</a>: LTO-8-Bänder 87 €, LTO-9-Bänder 102 €, LTO-10-Bänder mit 30 TB 298 €.</p></aside></div></section>
@@ -59,6 +59,7 @@
 <button class="tool-submit" type="submit">Meine Empfehlung anzeigen</button>
 </form>
 <div aria-live="polite" class="tool-result" hidden="" id="calc-result"></div>
+<figure class="page-figure"><img alt="Kassetten für 100 TB: 9 × LTO-8, 6 × LTO-9 oder 4 × LTO-10" decoding="async" height="440" loading="lazy" src="/assets/figures/lto-cartridges-per-100tb.svg" width="960"/><figcaption>Eine Kopie von 100 TB braucht 9 LTO-8-, 6 LTO-9- oder 4 LTO-10-Kassetten bei nativer Kapazität, vor Komprimierung.</figcaption></figure>
 </section>
 <section class="section-card"><p class="eyebrow">So funktioniert es</p><h2>So entscheidet der Rechner</h2>
 <ul><li>Unter 15 TB amortisiert sich ein Bandlaufwerk selten, daher wird Disk plus Cloud empfohlen.</li><li>Wenn Sie eine Wiederherstellung in Minuten brauchen, muss die erste Kopie auf Disk oder Flash liegen, Tape dient dann für langfristige und Offline-Kopien.</li><li>Andernfalls wird unter 50 TB LTO-8 empfohlen, bis 500 TB LTO-9 und darüber LTO-9 oder LTO-10.</li><li>Die Kassettenzahl beruht auf der nativen Kapazität ohne Komprimierung, die Kosten auf dem Mittelwert aktueller Händlerangebote. Die Laufwerkskosten gelten für ein neues internes Laufwerk, sofern eines angeboten wird.</li></ul>

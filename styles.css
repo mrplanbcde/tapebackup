@@ -350,3 +350,7 @@ section.block{padding:96px 0}
 .lang-switch a{padding:0 6px;opacity:.75;font-weight:600}
 .lang-switch a.on{opacity:1;text-decoration:underline;text-underline-offset:3px}
 @media (max-width:560px){.header-right .btn{display:none}.rm-track{overflow-x:auto;-webkit-overflow-scrolling:touch}.cart-stage{overflow:hidden}}
+
+.home-figure{max-width:860px;margin:36px auto 0}
+.home-figure img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line)}
+.home-figure figcaption{color:var(--muted);font-size:.95rem;line-height:1.5;margin-top:10px;text-align:center}

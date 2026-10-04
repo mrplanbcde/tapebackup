@@ -90,6 +90,12 @@ def footer():
 <div class="footer-bot"><span>&copy; 2026 TapeBackup.org. Independent LTO tape backup resource.</span><div class="links"><a href="/about">About</a><a href="/contact">Contact</a><a href="/sitemap.xml">Sitemap</a></div></div></div></footer>"""
 
 
+def figure(name, alt, caption, w=960, h=420):
+    """An explanatory drawing from assets/figures (see scripts/draw_figures.py)."""
+    return (f'<figure class="page-figure"><img src="/assets/figures/{name}" alt="{esc(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async">'
+            f'<figcaption>{caption}</figcaption></figure>')
+
+
 def breadcrumb_ld(crumbs):
     return {
         "@context": "https://schema.org",

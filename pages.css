@@ -476,3 +476,7 @@
 .legacy-content .table-wrap { max-width: 100%; }
 h1, h2, h3 { overflow-wrap: break-word; }
 @media (max-width: 560px) { h1, h2, h3 { hyphens: auto; -webkit-hyphens: auto; } }
+
+.page-figure { margin: 1.4rem 0 .4rem; }
+.page-figure img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); }
+.page-figure figcaption { color: var(--muted); font-size: .92rem; line-height: 1.5; margin-top: .6rem; }

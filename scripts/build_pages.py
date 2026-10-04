@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 import build_prices as BP
 from markets import brand_of
-from site_shell import GENS, ROOT, SITE, breadcrumb_ld, esc, faq_html, faq_ld, hubspot_cta, page, slug_for, write
+from site_shell import GENS, ROOT, SITE, breadcrumb_ld, esc, faq_html, faq_ld, hubspot_cta, page, slug_for, write, figure
 
 KEEP_BLOCK = {"h1", "h2", "h3", "h4", "p", "ul", "ol", "table", "blockquote", "pre", "hr"}
 INLINE = {"strong", "b", "em", "i", "a", "code", "br", "span", "sup", "sub", "small"}
@@ -22,7 +22,7 @@ DROP = {"svg", "script", "style", "input", "select", "textarea", "form", "canvas
 ALLOWED_ATTRS = {"a": {"href"}, "td": {"colspan", "rowspan"}, "th": {"colspan", "rowspan"}}
 
 LEGACY = {
-    "/why-tape": ("why-tape", "Why Use Tape Storage? Benefits of LTO Backup", "Why LTO tape still wins for long-term archives: lowest cost per TB, offline air-gap protection against ransomware, WORM media and decades of shelf life."),
+    "/why-tape": ("why-tape", "Tape Storage and Tape Backup: Why LTO Still Wins", "Why LTO tape still wins for long-term archives: lowest cost per TB, offline air-gap protection against ransomware, WORM media and decades of shelf life."),
     "/why-tape/lto-vs-hdd": ("why-tape__lto-vs-hdd", "LTO Tape vs HDD for Long-Term Storage | TapeBackup", "LTO tape vs hard drives for backup and archive: lifespan, cost per TB, ransomware protection, access speed and which one fits your data."),
     "/resources": ("resources", "Tape Backup Resources and LTO Guides | TapeBackup", "LTO tape backup resources: price guides, buying advice for used tapes, backup software reviews, vendor links and official LTO references in one place."),
     "/resources/cheap-lto-tapes": ("resources__cheap-lto-tapes", "Cheap LTO Tapes: How to Buy Used Tape Safely", "How to buy cheap or used LTO tapes without losing data: what to check, which sellers and generations to avoid, and when new media is worth paying for."),
@@ -149,6 +149,34 @@ def apply_price_rewrites(flow):
 
 
 DROP_SECTIONS = {"Downloadable Resources"}
+
+# SEO fixes from the October 2026 Search Console review (pages ranking 9 to 100).
+H1_FIX = {
+    "/why-tape": "Why Use Tape Storage for Backup and Archive?",
+    "/comparisons": "Tape vs Disk vs Cloud Backup Compared",
+}
+LEAD_FIX = {
+    "/why-tape": "Tape storage keeps a copy of your data offline, on media that costs little per terabyte and lasts decades on a shelf. Here is where it beats disk and cloud, and where it does not.",
+    "/comparisons": "Each option below is compared on cost per terabyte, restore speed, ransomware protection, lifespan and energy use, so you can pick the right mix for recent backups and long-term copies.",
+    "/resources": "Guides, charts and references for buying and running LTO tape: prices, capacity, drives, software, migration and data recovery.",
+}
+# (insert after section card n, figure file, alt text, caption)
+LEGACY_FIGURES = {
+    "/why-tape": [
+        (0, ("tape-disk-cloud-cost.svg", "Relative 10-year cost per terabyte: tape 1x, disk about 3x, cloud 40x or more",
+             "Over ten years, keeping a terabyte on disk costs about three times as much as on tape, and in a standard cloud tier forty times or more, using the ranges in our <a href=\"/comparisons\">tape, disk and cloud comparison</a>.")),
+        (2, ("tape-air-gap.svg", "Ransomware reaches networked disks; a cartridge on a shelf is out of reach",
+             "Ransomware can encrypt anything it can reach over the network. A cartridge ejected to a shelf, especially a WORM cartridge, is out of its reach.")),
+    ],
+    "/comparisons": [
+        (0, ("tape-disk-cloud-scorecard.svg", "Tape, disk and cloud rated on cost, restore speed, offline safety, lifespan and energy",
+             "More dots is better. Tape leads on cost per terabyte, offline safety, lifespan and energy; disk leads on restore speed; cloud sits in between and charges to read data back.")),
+    ],
+    "/resources": [
+        (0, ("lto-guide-map.svg", "Prices, capacity, drives and software: the path through the LTO guides",
+             "A practical order: check <a href=\"/lto-tape-price-trend\">prices</a>, size the archive with the <a href=\"/backup-calculator\">calculator</a>, choose a <a href=\"/why-tape/lto-tape-drive\">drive</a>, then pick <a href=\"/best-tape-backup-software\">software</a> or <a href=\"/resources/ltfs\">LTFS</a>.")),
+    ],
+}
 
 # AEO: a direct, quotable answer shown first on each guide (checked against the page content and Sep 2026 prices).
 ANSWERS = {
@@ -406,14 +434,18 @@ def build_legacy(path, key, title, desc):
     flow = re.sub(r"<p>(?:\s*[\u2713\u2714\u221a\u2705]\s*)+</p>", "", flow)
     flow = apply_price_rewrites(flow)
     h1 = re.search(r"<h1>(.*?)</h1>", flow)
-    h1_text = h1.group(1) if h1 else title
+    h1_text = H1_FIX.get(path, h1.group(1) if h1 else title)
     flow = flow.replace(h1.group(0), "", 1) if h1 else flow
     lead = ""
     m = re.match(r"\s*<p>(.*?)</p>", flow)
     if m:
-        lead = m.group(1)
+        lead = LEAD_FIX.get(path, m.group(1))
         flow = flow[m.end():]
     body_sections = split_sections(flow)
+    for after, (name, alt, cap) in sorted(LEGACY_FIGURES.get(path, []), reverse=True):
+        cards = list(re.finditer(r"</section>", body_sections))
+        at = cards[min(after, len(cards) - 1)].end()
+        body_sections = body_sections[:at] + f'<section class="section-card">{figure(name, alt, cap)}</section>' + body_sections[at:]
     related = ""
     if path == "/resources":
         related = """<section class="section-card"><p class="eyebrow">Price guides and tools</p><h2>LTO price guides and buying tools</h2><div class="link-grid">
@@ -441,7 +473,7 @@ def build_legacy(path, key, title, desc):
     segs = path.strip("/").split("/")
     if len(segs) > 1:
         parent = "/" + segs[0]
-        crumbs.append((LEGACY[parent][1].split(":")[0].split("|")[0].strip() if parent in LEGACY else segs[0].title(), parent))
+        crumbs.append(("Why tape" if parent == "/why-tape" else LEGACY[parent][1].split(":")[0].split("|")[0].strip() if parent in LEGACY else segs[0].title(), parent))
     crumbs.append((html.unescape(re.sub(r"<[^>]+>", "", h1_text)), path))
     facts = price_facts()
     answer = f'<p><strong>{esc(ANSWERS[path].format(**facts))}</strong></p>' if path in ANSWERS else ""
@@ -498,7 +530,7 @@ def build_calculator(current):
         "t_continuous": "<p><em>Real-time recovery points need a disk buffer in front of tape (disk to disk to tape).</em></p>",
     }
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
-<p class="eyebrow">Tool</p><h1>Tape Backup Capacity and Cost Calculator</h1>
+<p class="eyebrow">Tool</p><h1>LTO Tape Backup Calculator</h1>
 <p><strong>Tape pays off from roughly 15 TB of data: below that, disk plus cloud is cheaper; above it, LTO-8 or LTO-9 media at about {facts['media_pertb_89']} per TB beats keeping long-term copies on disk.</strong></p>
 <p>Enter how much data you protect, how many copies you keep and how fast you need it back. The calculator recommends tape, disk, cloud or a mix, and estimates cartridges and media cost from {BP.CURRENT_LABEL} LTO prices{'' if BP.MKT.is_us else ' in ' + BP.MKT.country}.</p></div>
 <aside class="hero-panel"><p class="panel-label">Prices used</p><p class="panel-copy">Midpoints of seller listings from the <a href="/lto-tape-price-trend">LTO price tracker</a>: LTO-8 tapes {BP.money0(model['LTO-8']['tape'])}, LTO-9 tapes {BP.money0(model['LTO-9']['tape'])}, LTO-10 30 TB tapes {BP.money0(model['LTO-10']['tape'])}.</p></aside></div></section>
@@ -512,6 +544,7 @@ def build_calculator(current):
 <button class="tool-submit" type="submit">Show my recommendation</button>
 </form>
 <div class="tool-result" id="calc-result" hidden aria-live="polite"></div>
+{figure("lto-cartridges-per-100tb.svg", "Cartridges needed for 100 TB: 9 LTO-8, 6 LTO-9 or 4 LTO-10", "One copy of 100 TB needs 9 LTO-8, 6 LTO-9 or 4 LTO-10 cartridges at native capacity, before compression.", 960, 440)}
 </section>
 <section class="section-card"><p class="eyebrow">How it works</p><h2>How the calculator decides</h2>
 <ul><li>Under 15 TB, a tape drive rarely pays for itself, so disk plus cloud is recommended.</li><li>If you need recovery in minutes, the first copy has to live on disk or flash, with tape for long-term and offline copies.</li><li>Otherwise LTO-8 is suggested under 50 TB, LTO-9 up to 500 TB, and LTO-9 or LTO-10 above that.</li><li>Cartridge counts use native capacity with no compression, and costs use the midpoint of current seller listings. Drive cost is one new internal drive where one is listed.</li></ul>
@@ -549,8 +582,8 @@ out.innerHTML='<h3>'+h+'</h3>'+t;out.hidden=false;
 </script>"""
     desc = "Free tape backup calculator: enter data size, copies and recovery targets to get a tape, disk or cloud recommendation with 2026 LTO cartridge costs."
     ld = [faq_ld([(q, a.format(**facts)) for q, a in GUIDE_FAQS["/backup-calculator"]]), breadcrumb_ld([("Home", "/"), ("Backup calculator", path)]),
-          {"@context": "https://schema.org", "@type": "WebApplication", "name": "Tape Backup Capacity and Cost Calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": SITE + path, "offers": {"@type": "Offer", "price": "0", "priceCurrency": BP.MKT.currency}}]
-    write(path, page(path, "Tape Backup Calculator: LTO Capacity and Cost", desc, body, ld))
+          {"@context": "https://schema.org", "@type": "WebApplication", "name": "LTO Tape Backup Calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": SITE + path, "offers": {"@type": "Offer", "price": "0", "priceCurrency": BP.MKT.currency}}]
+    write(path, page(path, "LTO Calculator: Tapes Needed and Tape Backup Cost", desc, body, ld))
     return path
 
 
@@ -580,14 +613,15 @@ def build_finder():
         "r_default": "Veeam is the popular choice for virtualization. Compare it with Catalogic DPX if your data is growing, because DPX licensing and tape handling often give a lower total cost.",
     }
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
-<p class="eyebrow">Tool</p><h1>Tape Backup Software Finder</h1>
+<p class="eyebrow">Tool</p><h1>Find the Right Tape Backup Software</h1>
 <p><strong>If tape is your main archive, Catalogic DPX is usually the best fit; for mostly virtual estates using tape as a second copy, Veeam; for small environments on a budget, Nakivo.</strong></p>
 <p>Hardware is half the job. Answer four questions to get a shortlist of backup software that fits how you use tape, the size of your estate and your budget.</p></div>
 <aside class="hero-panel"><p class="panel-label">Want the detail?</p><p class="panel-copy">Read the full <a href="/best-tape-backup-software">best tape backup software comparison</a> or the <a href="/resources/tape-backup-software/catalogicdpx">Catalogic DPX review</a>.</p></aside></div></section>
 <main class="page"><div class="container"><div class="section-stack">
 <section class="section-card"><h2>Find your backup software</h2>
 <form class="tool-form" id="finder">{fields}<button class="tool-submit" type="submit">Show my match</button></form>
-<div class="tool-result" id="finder-result" hidden aria-live="polite"></div></section>
+<div class="tool-result" id="finder-result" hidden aria-live="polite"></div>
+{figure("tape-backup-software-finder.svg", "Four questions point to Catalogic DPX, Veeam, Commvault or Nakivo", "Tape as the main archive points to Catalogic DPX, a mostly virtual estate with tape as a second copy to Veeam, a large mixed estate to Commvault, and a small budget to Nakivo.", 960, 440)}</section>
 <section class="section-card"><p class="eyebrow">Shortlist</p><h2>Software this finder recommends from</h2>
 <ul><li><strong>Catalogic DPX</strong>: tape-focused enterprise backup with broad drive, library and NDMP support.</li><li><strong>Veeam Backup &amp; Replication</strong>: the common choice for virtualized estates, with tape jobs as a secondary target.</li><li><strong>Commvault</strong>: large, feature-rich platform with deep cloud integration.</li><li><strong>Nakivo</strong>: lower-cost option for smaller environments that need basic tape support.</li><li><strong>Veeam for Microsoft 365 and CloudCasa</strong>: SaaS and Kubernetes backup.</li></ul></section>
 {faq_html([tuple(x) for x in GUIDE_FAQS["/backup-software-finder"]], "Software finder FAQ")}
@@ -612,7 +646,7 @@ out.innerHTML='<h3>'+L.match.replace('{{v}}',v)+'</h3><p>'+r+'</p><p>'+L.compare
 </script>"""
     desc = "Answer four questions to find tape backup software that fits your environment, tape usage and budget: Catalogic DPX, Veeam, Commvault or Nakivo."
     ld = [faq_ld([tuple(x) for x in GUIDE_FAQS["/backup-software-finder"]]), breadcrumb_ld([("Home", "/"), ("Software finder", path)])]
-    write(path, page(path, "Tape Backup Software Finder: Match LTO Software", desc, body, ld))
+    write(path, page(path, "Tape Backup Software Finder: Which LTO Software Fits", desc, body, ld))
     return path
 
 

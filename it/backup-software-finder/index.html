@@ -6,18 +6,18 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
-<title>Ricerca software di backup su nastro LTO</title>
+<title>Trovare il software di backup su nastro LTO adatto</title>
 <meta content="Quattro domande per trovare il software di backup su nastro adatto ad ambiente, uso del nastro e budget: Catalogic DPX, Veeam, Commvault o Nakivo." name="description"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://tapebackup.org/it/backup-software-finder" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="TapeBackup.org" property="og:site_name"/>
-<meta content="Ricerca software di backup su nastro LTO" property="og:title"/>
+<meta content="Trovare il software di backup su nastro LTO adatto" property="og:title"/>
 <meta content="Quattro domande per trovare il software di backup su nastro adatto ad ambiente, uso del nastro e budget: Catalogic DPX, Veeam, Commvault o Nakivo." property="og:description"/>
 <meta content="https://tapebackup.org/it/backup-software-finder" property="og:url"/>
 <meta content="https://tapebackup.org/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Ricerca software di backup su nastro LTO" name="twitter:title"/>
+<meta content="Trovare il software di backup su nastro LTO adatto" name="twitter:title"/>
 <meta content="Quattro domande per trovare il software di backup su nastro adatto ad ambiente, uso del nastro e budget: Catalogic DPX, Veeam, Commvault o Nakivo." name="twitter:description"/>
 <meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
 <meta content="#5b27d6" name="theme-color"/>
@@ -44,14 +44,15 @@
 <div class="header-right"><a class="btn btn-primary btn-sm" href="/it/contact">Richiedi il listino</a></div>
 </div></header>
 <section class="hero"><div class="container hero-grid"><div class="hero-copy">
-<p class="eyebrow">Strumento</p><h1>Ricerca software per il backup su nastro</h1>
+<p class="eyebrow">Strumento</p><h1>Trovare il software di backup su nastro giusto</h1>
 <p><strong>Se il nastro è l'archivio principale, Catalogic DPX è di solito la scelta migliore; per ambienti prevalentemente virtuali che usano il nastro come seconda copia, Veeam; per piccoli ambienti con budget ridotto, Nakivo.</strong></p>
 <p>L'hardware è metà del lavoro. Rispondete a quattro domande per ottenere una rosa di software di backup adatti al vostro uso del nastro, alle dimensioni della vostra infrastruttura e al vostro budget.</p></div>
 <aside class="hero-panel"><p class="panel-label">Servono più dettagli?</p><p class="panel-copy">Leggete il <a href="/it/best-tape-backup-software">confronto completo dei migliori software di backup su nastro</a> o la <a href="/it/resources/tape-backup-software/catalogicdpx">recensione di Catalogic DPX</a>.</p></aside></div></section>
 <main class="page"><div class="container"><div class="section-stack">
 <section class="section-card"><h2>Scegliere il software di backup</h2>
 <form class="tool-form" id="finder"><fieldset class="choice-grid"><legend>1. Qual è il vostro ambiente principale?</legend><label><input name="env" type="radio" value="virtual"/>Soprattutto macchine virtuali</label><label><input name="env" type="radio" value="physical"/>Prevalentemente fisico o Unix</label><label><input checked="" name="env" type="radio" value="mixed"/>Misto o ibrido</label><label><input name="env" type="radio" value="saas"/>Solo Microsoft 365 o SaaS</label></fieldset><fieldset class="choice-grid"><legend>2. Come verrà usato il nastro?</legend><label><input name="tape" type="radio" value="heavy"/>Archivio primario o grande libreria</label><label><input checked="" name="tape" type="radio" value="secondary"/>Copia secondaria</label><label><input name="tape" type="radio" value="none"/>Niente nastro, solo disco o cloud</label></fieldset><fieldset class="choice-grid"><legend>3. Quanti carichi di lavoro?</legend><label><input name="scale" type="radio" value="small"/>Da 1 a 50</label><label><input checked="" name="scale" type="radio" value="mid"/>Da 51 a 500 o più</label></fieldset><fieldset class="choice-grid"><legend>4. Cosa conta di più?</legend><label><input checked="" name="prio" type="radio" value="value"/>Convenienza economica</label><label><input name="prio" type="radio" value="feature"/>Funzioni moderne e cloud</label></fieldset><button class="tool-submit" type="submit">Mostra il risultato</button></form>
-<div aria-live="polite" class="tool-result" hidden="" id="finder-result"></div></section>
+<div aria-live="polite" class="tool-result" hidden="" id="finder-result"></div>
+<figure class="page-figure"><img alt="Quattro domande portano a Catalogic DPX, Veeam, Commvault o Nakivo" decoding="async" height="440" loading="lazy" src="/assets/figures/tape-backup-software-finder.svg" width="960"/><figcaption>Il nastro come archivio principale porta a Catalogic DPX, un ambiente soprattutto virtuale con il nastro come seconda copia a Veeam, un grande ambiente misto a Commvault e un budget ridotto a Nakivo.</figcaption></figure></section>
 <section class="section-card"><p class="eyebrow">Selezione</p><h2>I software valutati da questo strumento</h2>
 <ul><li><strong>Catalogic DPX</strong>: backup enterprise orientato al nastro, con ampio supporto di unità, librerie e NDMP.</li><li><strong>Veeam Backup &amp; Replication</strong>: la scelta più diffusa per gli ambienti virtualizzati, con i job su nastro come destinazione secondaria.</li><li><strong>Commvault</strong>: piattaforma ampia e ricca di funzionalità, con una profonda integrazione cloud.</li><li><strong>Nakivo</strong>: opzione più economica per ambienti piccoli che richiedono un supporto base per il nastro.</li><li><strong>Veeam for Microsoft 365 e CloudCasa</strong>: backup di SaaS e Kubernetes.</li></ul></section>
 <section aria-label="Domande frequenti sulla ricerca software" class="faq-grid"><article class="faq-card"><h3>Qual è il miglior software di backup per le librerie a nastro?</h3><p>Catalogic DPX ha il supporto più ampio per unità e librerie e gestisce NDMP, importante per il backup dei NAS. Veeam e Commvault supportano bene il nastro come copia secondaria negli ambienti virtuali più grandi.</p></article><article class="faq-card"><h3>Posso eseguire il backup di Microsoft 365 su nastro?</h3><p>Non direttamente. Si esegue il backup dei dati SaaS con uno strumento come Veeam for Microsoft 365, poi, se serve una copia offline o a lunga conservazione, si copia il suo repository su nastro.</p></article></section>

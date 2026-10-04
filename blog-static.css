@@ -97,3 +97,7 @@
 @media (max-width: 760px) {
   .listing-grid { grid-template-columns: 1fr; }
 }
+
+.page-figure { margin: 1.4rem 0 1rem; }
+.page-figure img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid #e8e7ed; }
+.page-figure figcaption { color: #6e6a7c; font-size: .92rem; line-height: 1.5; margin-top: .6rem; }

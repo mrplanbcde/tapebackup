@@ -6,18 +6,18 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
-<title>Back-upcalculator voor tape: LTO-capaciteit en kosten</title>
+<title>LTO-calculator: benodigde tapes en back-upkosten</title>
 <meta content="Gratis back-upcalculator voor tape: voer datavolume, aantal kopieën en hersteldoelen in en krijg advies voor tape, disk of cloud, met LTO-kosten van 2026." name="description"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://tapebackup.org/nl/backup-calculator" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="TapeBackup.org" property="og:site_name"/>
-<meta content="Back-upcalculator voor tape: LTO-capaciteit en kosten" property="og:title"/>
+<meta content="LTO-calculator: benodigde tapes en back-upkosten" property="og:title"/>
 <meta content="Gratis back-upcalculator voor tape: voer datavolume, aantal kopieën en hersteldoelen in en krijg advies voor tape, disk of cloud, met LTO-kosten van 2026." property="og:description"/>
 <meta content="https://tapebackup.org/nl/backup-calculator" property="og:url"/>
 <meta content="https://tapebackup.org/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Back-upcalculator voor tape: LTO-capaciteit en kosten" name="twitter:title"/>
+<meta content="LTO-calculator: benodigde tapes en back-upkosten" name="twitter:title"/>
 <meta content="Gratis back-upcalculator voor tape: voer datavolume, aantal kopieën en hersteldoelen in en krijg advies voor tape, disk of cloud, met LTO-kosten van 2026." name="twitter:description"/>
 <meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
 <meta content="#5b27d6" name="theme-color"/>
@@ -29,7 +29,7 @@
 <script defer="" src="/assets/outbound-links.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hoeveel LTO-tapes heb ik nodig?", "acceptedAnswer": {"@type": "Answer", "text": "Deel uw datavolume door de native capaciteit van de generatie en vermenigvuldig met het aantal kopieën, zonder compressie mee te rekenen: 100 TB met twee kopieën is ongeveer 12 LTO-9-cartridges. Compressie helpt alleen bij comprimeerbare data en moet u niet meetellen in de planning."}}, {"@type": "Question", "name": "Wanneer is tape goedkoper dan disk of cloud?", "acceptedAnswer": {"@type": "Answer", "text": "Vanaf ongeveer 15 TB, zodra de kosten van de drive over genoeg cartridges zijn verdeeld. Daaronder is een NAS plus een koude opslagklasse in de cloud meestal goedkoper en eenvoudiger."}}, {"@type": "Question", "name": "Verandert compressie het aantal tapes?", "acceptedAnswer": {"@type": "Answer", "text": "Alleen voor comprimeerbare data. Leveranciers noemen 2,5:1, maar video en afbeeldingen zijn al gecomprimeerd en versleutelde bestanden zijn niet te comprimeren, dus die komen dicht bij de native capaciteit uit."}}], "inLanguage": "nl"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tapebackup.org/nl"}, {"@type": "ListItem", "position": 2, "name": "Back-upcalculator", "item": "https://tapebackup.org/nl/backup-calculator"}], "inLanguage": "nl"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Capaciteits- en kostencalculator voor tapeback-up", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/nl/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "inLanguage": "nl"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "LTO-tape-back-upcalculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/nl/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "inLanguage": "nl"}</script>
 <meta content="nl_NL" property="og:locale"/><link href="https://tapebackup.org/backup-calculator" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-calculator" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-calculator" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-calculator" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-calculator" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-calculator" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-calculator" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-calculator" hreflang="x-default" rel="alternate"/></head>
 <body class="price-page">
 <div class="site-shell">
@@ -45,7 +45,7 @@
 <div class="header-right"><a class="btn btn-primary btn-sm" href="/nl/contact">Prijslijst opvragen</a></div>
 </div></header>
 <section class="hero"><div class="container hero-grid"><div class="hero-copy">
-<p class="eyebrow">Tool</p><h1>Capaciteits- en kostencalculator voor tapeback-up</h1>
+<p class="eyebrow">Tool</p><h1>LTO-tape-back-upcalculator</h1>
 <p><strong>Tape loont vanaf ongeveer 15 TB aan data: daaronder is disk plus cloud goedkoper; daarboven zijn LTO-8- of LTO-9-media van ongeveer € 5 tot € 8 per TB voordeliger dan langetermijnkopieën op disk.</strong></p>
 <p>Vul in hoeveel data u beschermt, hoeveel kopieën u bewaart en hoe snel u de data terug nodig hebt. De calculator adviseert tape, disk, cloud of een combinatie, en schat het aantal cartridges en de mediakosten op basis van LTO-prijzen in Nederland van september 2026.</p></div>
 <aside class="hero-panel"><p class="panel-label">Gebruikte prijzen</p><p class="panel-copy">Middenwaarden van aanbiedingen uit de <a href="/nl/lto-tape-price-trend">LTO-prijstracker</a>: LTO-8-tapes € 81, LTO-9-tapes € 99, LTO-10-tapes van 30 TB € 337.</p></aside></div></section>
@@ -59,6 +59,7 @@
 <button class="tool-submit" type="submit">Toon mijn advies</button>
 </form>
 <div aria-live="polite" class="tool-result" hidden="" id="calc-result"></div>
+<figure class="page-figure"><img alt="Benodigde cartridges voor 100 TB: 9 LTO-8, 6 LTO-9 of 4 LTO-10" decoding="async" height="440" loading="lazy" src="/assets/figures/lto-cartridges-per-100tb.svg" width="960"/><figcaption>Eén kopie van 100 TB vraagt 9 LTO-8-, 6 LTO-9- of 4 LTO-10-cartridges bij native capaciteit, vóór compressie.</figcaption></figure>
 </section>
 <section class="section-card"><p class="eyebrow">Zo werkt het</p><h2>Hoe de calculator beslist</h2>
 <ul><li>Onder 15 TB verdient een tapedrive zichzelf zelden terug; daarom raden we disk plus cloud aan.</li><li>Als u binnen minuten moet kunnen herstellen, moet de eerste kopie op disk of flash staan, met tape voor langetermijn- en offline kopieën.</li><li>Anders wordt LTO-8 aangeraden onder 50 TB, LTO-9 tot 500 TB, en daarboven LTO-9 of LTO-10.</li><li>Het aantal cartridges is gebaseerd op native capaciteit zonder compressie, en de kosten op het midden van de huidige aanbiedingen van verkopers. De drivekosten zijn die van één nieuwe interne drive, als die wordt aangeboden.</li></ul>

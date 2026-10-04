@@ -11,7 +11,7 @@ import os
 import build_prices as BP
 from build_articles import article, sec, table
 from build_prices import CURRENT_LABEL, GENS, READ_BY, ROADMAP, SPECS, date_text, fallback_note, per_tb, rng
-from site_shell import ROOT, esc
+from site_shell import ROOT, esc, figure
 
 PUBLISHED = "2026-10-03"
 
@@ -148,7 +148,8 @@ def build_drive_guide(current):
     sections = [
         sec("Prices", "LTO tape drive prices by generation", f"""
 {table(["Generation", "Native capacity", "Internal drive", "External drive", "Reads"], rows, "LTO drive prices")}
-<p>New standalone drives listed at the sellers we checked on {date_text()}. Internal drives fit a 5.25-inch bay; external drives come in a desktop enclosure with their own power supply. LTO-10 drives so far ship only as full-height units.</p>"""),
+<p>New standalone drives listed at the sellers we checked on {date_text()}. Internal drives fit a 5.25-inch bay; external drives come in a desktop enclosure with their own power supply. LTO-10 drives so far ship only as full-height units.</p>
+{figure("lto-drive-compatibility.svg", "Which LTO drive reads and writes which cartridge generation", "Filled squares: the drive reads and writes that generation. Half squares: read only. From LTO-8 on, drives reach back one generation, and LTO-10 drives read only LTO-10.", 960, 450)}"""),
         sec("Which generation", "Which LTO generation to buy", f"""
 <ul>
 <li><strong>LTO-9 for most buyers.</strong> The cheapest media per terabyte ({per_tb(l9['cartridge'])} per TB), mature half-height drives, and it reads your LTO-8 tapes.</li>
@@ -156,8 +157,9 @@ def build_drive_guide(current):
 <li><strong>LTO-8 to match an existing estate</strong> or to read LTO-7 tapes. New drives are still on sale.</li>
 <li><strong>LTO-7 or LTO-6 only to read old tapes.</strong> Buy one to recover or migrate an archive, not to start one.</li>
 </ul>"""),
-        sec("Form factor", "Internal, external or in a library", """
-<p><strong>Internal half-height</strong> drives are the cheapest way in if your server has a free 5.25-inch bay and airflow. <strong>External desktop</strong> drives cost more but sit next to any server or workstation. <strong>Full-height</strong> drives are faster on some generations and are mostly used in libraries. <strong>Library drives</strong> are sold as modules for a specific library and do not work standalone. If you will need more than one cartridge per backup run, look at an <a href="/lto-tape-library">autoloader or library</a> instead of a single drive.</p>"""),
+        sec("Form factor", "Internal, external or in a library", f"""
+<p><strong>Internal half-height</strong> drives are the cheapest way in if your server has a free 5.25-inch bay and airflow. <strong>External desktop</strong> drives cost more but sit next to any server or workstation. <strong>Full-height</strong> drives are faster on some generations and are mostly used in libraries. <strong>Library drives</strong> are sold as modules for a specific library and do not work standalone. If you will need more than one cartridge per backup run, look at an <a href="/lto-tape-library">autoloader or library</a> instead of a single drive.</p>
+{figure("lto-drive-form-factors.svg", "Internal half-height, external desktop and library LTO tape drives", "Left to right: an internal half-height SAS drive in a 5.25-inch bay, an external desktop drive (SAS, Thunderbolt or USB), and full-height drives inside a library.")}"""),
         sec("Interface", "SAS, Fibre Channel, Thunderbolt or USB", """
 <ul>
 <li><strong>SAS</strong> is the standard for standalone drives. The host needs a SAS HBA, not a RAID controller; external drives use SFF-8088 or, on newer models, SFF-8644 cables, so match the HBA port to the drive.</li>
