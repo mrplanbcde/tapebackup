@@ -1,10 +1,14 @@
 {
+ "Dependent on provider": "Abhängig vom Anbieter",
  "It can be, if you test them. Buy from sellers who state the load count and accept returns, avoid unknown-history bulk lots, and write and read back a full cartridge before trusting any data to it.": "Ja, sofern Sie die Bänder testen. Kaufen Sie bei Händlern, die die Ladezyklen angeben und Rückgaben akzeptieren, meiden Sie Sammelposten unbekannter Herkunft, und beschreiben Sie eine Kassette vollständig und lesen Sie sie zurück, bevor Sie ihr Daten anvertrauen.",
  "LTO tape lifespan explained: the {0}-year archival rating, storage temperature and humidity, load cycles, and why drive compatibility is the real limit.": "Lebensdauer von LTO-Bändern: die {0}-Jahres-Angabe, Lagerklima, Ladezyklen und warum die Laufwerkskompatibilität die eigentliche Grenze ist.",
  "Native and compressed capacity of every LTO generation from {0} to {1}, the {2} to {3} roadmap, speeds, release years and cartridges per TB.": "Native und komprimierte Kapazität aller LTO-Generationen von {0} bis {1}, Roadmap {2} bis {3}, Tempo, Jahrgänge und Kassetten pro TB.",
  "Random (fast)": "Wahlfreier Zugriff (schnell)",
  "Recovery point objective": "Wiederherstellungspunkt (RPO)",
+ "The capability to install agents on legacy operating systems (Solaris, AIX, older Windows Server versions) that are no longer supported by the OS vendor but are critical to business operations.": "Die Möglichkeit, Agenten auf Legacy-Betriebssystemen (Solaris, AIX, ältere Windows-Server-Versionen) zu installieren, die der Hersteller nicht mehr unterstützt, die aber geschäftskritisch sind.",
  "Why choose and ecosystems": "Kaufgründe und Hersteller-Ökosysteme",
+ "different media types": "Verschiedene Medientypen",
+ "vStor is Catalogic's software-defined backup appliance. It receives the incremental blocks and essentially \"maps\" them into a full backup image. This means every backup looks like a full backup to the restore operator, but only consumes the bandwidth of an incremental.": "VStor ist die softwaredefinierte Backup-Appliance von Catalogic. Sie nimmt die inkrementellen Blöcke entgegen und „bildet“ sie im Grunde auf ein vollständiges Backup-Image ab. Für den Administrator bei der Wiederherstellung sieht so jedes Backup wie ein Vollbackup aus, verbraucht aber nur die Bandbreite eines inkrementellen Backups.",
  "{0} (Quantum {1} HH SAS + HBA bundle)": "{0} (Quantum {1} HH SAS, Bundle mit HBA)",
  "{0} (Quantum {1} HH SAS bare)": "{0} (Quantum {1} HH SAS, ohne Zubehör)"
 }

@@ -150,6 +150,77 @@ def apply_price_rewrites(flow):
 
 DROP_SECTIONS = {"Downloadable Resources"}
 
+
+# ---------------------------------------------------------------- lists to tables
+# Pages with more than five bullet groups read better with the parallel ones as tables.
+
+def _table(headers, rows):
+    th = "".join(f"<th>{h}</th>" for h in headers)
+    return '<div class="table-wrap"><table><tr>' + th + "</tr>" + "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows) + "</table></div>"
+
+
+def _items(ul_html):
+    return [re.sub(r"^\s*(?:<p>)?\s*[•✓]?\s*", "", re.sub(r"</p>\s*$", "", li.strip())).strip() for li in re.findall(r"<li>(.*?)</li>", ul_html, re.S)]
+
+
+def _split(item):
+    label, _, text = item.partition(": ")
+    return [f"<strong>{label.strip()}</strong>", text.strip()]
+
+
+def _ul_after(flow, marker):
+    i = flow.index(marker)
+    m = re.compile(r"<ul>.*?</ul>", re.S).search(flow, i)
+    return m
+
+
+def _replace_ul(flow, marker, build):
+    m = _ul_after(flow, marker)
+    return flow[:m.start()] + build(_items(m.group(0))) + flow[m.end():]
+
+
+def lists_to_tables(path, flow):
+    if path == "/best-tape-backup-software":
+        flow = _replace_ul(flow, "2.3 Criterion 3", lambda it: _table(["Requirement", "Why it matters"], [_split(x) for x in it]))
+        # DPX: the block-level mechanism and the tape features become one feature table
+        m1 = _ul_after(flow, "Technical Deep Dive: The Block-Level Advantage")
+        m2 = _ul_after(flow, "Enterprise Tape Features:")
+        feats = [_split(x) for x in _items(m1.group(0)) + _items(m2.group(0))]
+        flow = flow[:m2.start()] + flow[m2.end():]
+        flow = flow.replace("<h4>Enterprise Tape Features:</h4>", "", 1)
+        flow = flow[:m1.start()] + _table(["Catalogic DPX feature", "How it works"], feats) + flow[m1.end():]
+        flow = _replace_ul(flow, "Technical Deep Dive: Byte-Level Replication", lambda it: _table(["i2Backup feature", "How it works"], [_split(x) for x in it]))
+        # ICBC: challenges and outcomes pair up row by row
+        before = _ul_after(flow, "4.1 The Challenge")
+        after = _ul_after(flow, "4.3 The Outcome")
+        b_items, a_items = [_split(x) for x in _items(before.group(0))], [_split(x) for x in _items(after.group(0))]
+        pair = {"Cost": "Cost Reduction", "Complexity": "Simplified Operations", "Agility": "Efficiency Gains"}
+        a_by = {re.sub("<[^>]+>", "", a[0]): a for a in a_items}
+        rows = [[b[0], b[1], a_by[pair[re.sub("<[^>]+>", "", b[0])]][0] + "<br>" + a_by[pair[re.sub("<[^>]+>", "", b[0])]][1]] for b in b_items]
+        flow = flow[:after.start()] + flow[after.end():]
+        flow = flow[:before.start()] + _table(["Problem with NBU", "Detail", "Result after i2Backup"], rows) + flow[before.end():]
+    if path == "/why-tape":
+        # cost, energy and tier cards
+        m = re.search(r"<h3>LTO Tape</h3><p>(.*?)</p><p>(.*?)</p><p>(.*?)</p><h3>Disk Storage</h3><p>(.*?)</p><p>(.*?)</p><p>(.*?)</p><h3>Cloud Storage</h3><p>(.*?)</p><p>(.*?)</p><p>(.*?)</p>", flow)
+        g = m.groups()
+        flow = flow[:m.start()] + _table(["Storage", "Cost", "Unit", "What drives the cost"], [["LTO Tape", g[0], g[1], g[2]], ["Disk Storage", g[3], g[4], g[5]], ["Cloud Storage", g[6], g[7], g[8]]]) + flow[m.end():]
+        flow = _replace_ul(flow, "<h3>Comparison</h3>", lambda it: _table(["Storage", "Typical lifespan"], [_split(x) for x in it]))
+        flow = _replace_ul(flow, "The 3-2-1-1-0 Backup Rule", lambda it: _table(["Number", "Rule"], [[re.match(r"<strong>(.*?)</strong>", x).group(1), re.sub(r"^<strong>.*?</strong>\s*", "", x)] for x in it]))
+        p = _ul_after(flow, "<h3>Protection Against</h3>")
+        s = _ul_after(flow, "<h3>Additional Security</h3>")
+        pi, si = _items(p.group(0)), _items(s.group(0))
+        flow = flow[:s.start()] + flow[s.end():]
+        flow = flow.replace("<h3>Additional Security</h3>", "", 1)
+        flow = flow[:p.start()] + _table(["Protection against", "Additional security"], list(map(list, zip(pi, si)))) + flow[p.end():]
+        flow = flow.replace("<h3>Protection Against</h3>", "<h3>Protection and security</h3>", 1)
+        m = re.search(r"<h3>Tape Storage</h3><p>(.*?)</p><p>(.*?)</p><h3>Disk Arrays</h3><p>(.*?)</p><p>(.*?)</p><h3>Cloud Storage</h3><p>(.*?)</p><p>(.*?)</p>", flow)
+        g = m.groups()
+        flow = flow[:m.start()] + _table(["Storage", "Power", "Note"], [["Tape Storage", g[0], g[1]], ["Disk Arrays", g[2], g[3]], ["Cloud Storage", g[4], g[5]]]) + flow[m.end():]
+        m = re.search(r"<p>1</p><h3>(.*?)</h3><p>(.*?)</p><p>2</p><h3>(.*?)</h3><p>(.*?)</p><p>3</p><h3>(.*?)</h3><p>(.*?)</p>", flow)
+        g = m.groups()
+        flow = flow[:m.start()] + _table(["Tier", "Storage", "Role"], [["1", g[0], g[1]], ["2", g[2], g[3]], ["3", g[4], g[5]]]) + flow[m.end():]
+    return flow
+
 # SEO fixes from the October 2026 Search Console review (pages ranking 9 to 100).
 H1_FIX = {
     "/why-tape": "Why Use Tape Storage for Backup and Archive?",
@@ -433,6 +504,7 @@ def build_legacy(path, key, title, desc):
     flow = re.sub(r"<li>(?:\s*[\u2713\u2714\u221a\u2022\u2705]\s*)+", "<li>", flow)
     flow = re.sub(r"<p>(?:\s*[\u2713\u2714\u221a\u2705]\s*)+</p>", "", flow)
     flow = apply_price_rewrites(flow)
+    flow = lists_to_tables(path, flow)
     h1 = re.search(r"<h1>(.*?)</h1>", flow)
     h1_text = H1_FIX.get(path, h1.group(1) if h1 else title)
     flow = flow.replace(h1.group(0), "", 1) if h1 else flow
