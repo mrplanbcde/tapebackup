@@ -26,6 +26,7 @@ import i18n  # noqa: E402
 import markets  # noqa: E402
 import shutil  # noqa: E402
 import site_shell  # noqa: E402
+import videos  # noqa: E402
 from site_shell import GENS, ROOT, SITE, esc, slug_for  # noqa: E402
 
 
@@ -401,6 +402,7 @@ def main():
             print(f"warning: title over 60 chars, add it to data/meta-overrides.json: {os.path.relpath(f, ROOT)}")
     for line in build_languages():
         print(line)
+    print(f"video embeds: {videos.embed_all(i18n.LANGS)}")
     count = build_sitemap(build_prices.CURRENT_ISO)
     build_llms(current)
     print(f"price pages: {len(price_paths)}, other pages: {len(page_paths)}, meta overrides changed: {n}, sitemap urls: {count}")
