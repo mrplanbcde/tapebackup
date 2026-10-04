@@ -219,6 +219,17 @@ def lists_to_tables(path, flow):
         m = re.search(r"<p>1</p><h3>(.*?)</h3><p>(.*?)</p><p>2</p><h3>(.*?)</h3><p>(.*?)</p><p>3</p><h3>(.*?)</h3><p>(.*?)</p>", flow)
         g = m.groups()
         flow = flow[:m.start()] + _table(["Tier", "Storage", "Role"], [["1", g[0], g[1]], ["2", g[2], g[3]], ["3", g[4], g[5]]]) + flow[m.end():]
+    if path in ("/comparisons", "/why-tape/lto-vs-hdd"):
+        heads = (["When to Choose LTO Tape", "When to Choose Disk Storage", "When to Choose Cloud Storage"] if path == "/comparisons"
+                 else ["When LTO Is the Better Choice", "When HDD Is the Better Choice"])
+        cols = []
+        for h in heads:
+            m = re.search(r"<h3>" + re.escape(h) + r"</h3>\s*(<ul>.*?</ul>)", flow, re.S)
+            cols.append(_items(m.group(1)))
+            flow = flow[:m.start()] + ("\x00" if not cols[1:] else "") + flow[m.end():]
+        n = max(len(c) for c in cols)
+        rows = [[c[i] if i < len(c) else "" for c in cols] for i in range(n)]
+        flow = flow.replace("\x00", _table(heads, rows), 1)
     return flow
 
 # SEO fixes from the October 2026 Search Console review (pages ranking 9 to 100).
