@@ -119,6 +119,7 @@ export default async function handler(req, res) {
   } catch (e) {
     console.error("chat error", e?.status, e?.message);
     await unhit(ipKey);  // a failed call does not use up a question
-    return res.status(502).json({ error: "The assistant is unavailable right now. Please try again later.", links: [SITE] });
+    const diag = process.env.ANTHROPIC_API_KEY ? `${e?.status || "net"} ${e?.error?.error?.type || e?.name || ""}`.trim() : "no-key";
+    return res.status(502).json({ error: "The assistant is unavailable right now. Please try again later.", links: [SITE], code: diag });
   }
 }
