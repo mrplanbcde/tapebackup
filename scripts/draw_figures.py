@@ -320,7 +320,20 @@ FIGURES = {
     "loose-disks-vs-tape.svg": fig_disks_vs_tape,
 }
 
+def all_figures():
+    """The figures above plus every scripts/figs_*.py module's FIGURES (and its PLACEMENT list)."""
+    import glob, importlib, sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    figs, place = dict(FIGURES), []
+    for f in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "figs_*.py"))):
+        m = importlib.import_module(os.path.basename(f)[:-3])
+        figs.update(m.FIGURES)
+        place += getattr(m, "PLACEMENT", [])
+    return figs, place
+
+
 if __name__ == "__main__":
+    FIGURES, _ = all_figures()
     for name, fn in FIGURES.items():
         write(name, fn())
     print(f"{len(FIGURES)} figures in {os.path.relpath(OUT, ROOT)}")
