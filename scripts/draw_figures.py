@@ -160,25 +160,6 @@ def fig_compat():
     return svg(960, 450, b, "Which LTO drive reads and writes which cartridge generation")
 
 
-def fig_finder():
-    b = card(40, 40, 880, 360)
-    b += cartridge(80, 70, .7, "", ACC) + text(240, 120, "Catalogic DPX", 22, INK, 700, "start")
-    b += f'<g transform="translate(88,180)"><rect width="56" height="40" rx="6" fill="{TEAL}"/><rect x="10" y="10" width="36" height="20" rx="3" fill="#fff" opacity=".8"/><rect x="18" y="44" width="20" height="8" fill="{TEAL}"/></g>'
-    b += text(240, 210, "Veeam", 22, INK, 700, "start")
-    b += f'<g transform="translate(86,255)">' + "".join(f'<rect x="{k*20}" y="{30-k*12}" width="16" height="{20+k*12}" rx="3" fill="{INK2}"/>' for k in range(3)) + "</g>"
-    b += text(240, 290, "Commvault", 22, INK, 700, "start")
-    b += f'<g transform="translate(88,330)"><circle cx="18" cy="18" r="17" fill="{AMBER}"/><text x="18" y="25" font-family="{FONT}" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">¢</text></g>'
-    b += text(240, 360, "Nakivo", 22, INK, 700, "start")
-    for y in (112, 202, 282, 352):
-        b += arrow(170, y - 6, 220, y - 6, ACC, 4)
-    b += f'<rect x="560" y="90" width="320" height="270" rx="16" fill="{ACC_50}"/>'
-    for i, w in enumerate((240, 200, 260, 180)):
-        b += f'<rect x="590" y="{120 + i * 58}" width="28" height="28" rx="6" fill="#fff" stroke="{ACC}" stroke-width="3"/>'
-        b += f'<path d="M596 {134 + i*58} l6 7 l11 -13" stroke="{ACC}" stroke-width="4" fill="none" stroke-linecap="round"/>' if i < 3 else ""
-        b += f'<rect x="632" y="{128 + i * 58}" width="{w}" height="12" rx="6" fill="{ACC_100}"/>'
-    return svg(960, 440, b, "Four questions point to Catalogic DPX, Veeam, Commvault or Nakivo")
-
-
 def fig_shelf():
     b = f'<rect x="60" y="200" width="840" height="18" rx="6" fill="{INK2}"/><rect x="80" y="218" width="20" height="50" fill="{INK2}"/><rect x="860" y="218" width="20" height="50" fill="{INK2}"/>'
     cols = (ACC_D, ACC, TEAL, ACC, INK2, ACC_D, ACC, TEAL, ACC)
@@ -310,7 +291,6 @@ FIGURES = {
     "lto-cartridges-per-100tb.svg": fig_cartridges_100tb,
     "lto-drive-form-factors.svg": fig_drive_forms,
     "lto-drive-compatibility.svg": fig_compat,
-    "tape-backup-software-finder.svg": fig_finder,
     "lto-cartridge-shelf.svg": fig_shelf,
     "lto-guide-map.svg": fig_guide_map,
     "offsite-tape-rotation.svg": fig_offsite,

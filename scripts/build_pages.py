@@ -398,12 +398,28 @@ GUIDE_FAQS = {
     ],
     "/backup-software-finder": [
         [
-            "Which backup software is best for tape libraries?",
-            "Catalogic DPX has the widest drive and library support and handles NDMP, which matters for NAS backups. Veeam and Commvault support tape well as a secondary copy in larger virtual estates."
+            "What is the best software for backing up to LTO tape?",
+            "It depends on your estate. Veeam is the usual choice for mostly virtual environments that keep tape as a second copy, Commvault suits large mixed physical, virtual and cloud estates, and Nakivo is a lower-cost option for smaller environments. The finder above narrows it down in four questions."
+        ],
+        [
+            "Do I need backup software to write to LTO tape?",
+            "Not for a simple archive. LTFS lets you copy files to an LTO-5 or newer cartridge like a drive, using free tools from the drive vendors. Backup software adds what LTFS lacks: scheduling, a searchable catalogue across many cartridges, verification, retention rules and library control."
+        ],
+        [
+            "Does Veeam back up to tape?",
+            "Yes. Veeam Backup & Replication can write backups to tape libraries and standalone tape drives, usually as a second or long-term copy of backups that live on disk. Check that your drive or library and its generation are on the vendor's supported list before you buy."
         ],
         [
             "Can I back up Microsoft 365 to tape?",
             "Not directly. Back up the SaaS data with a tool such as Veeam for Microsoft 365, then copy its repository to tape if you need an offline or long-retention copy."
+        ],
+        [
+            "What should I check before choosing tape backup software?",
+            "Check that it supports your LTO generation and your drive or library interface (SAS or Fibre Channel), whether it can write LTFS, how it handles encryption, WORM and offsite media tracking, and how fast and how reliably it can restore from a catalogue. Test a full restore before you commit."
+        ],
+        [
+            "Is there free tape backup software?",
+            "Yes. Bacula Community, Bareos and Amanda are open-source backup systems that support tape drives and libraries, and tar with LTFS works for simple jobs. They cost no licence fee, but you build and maintain the catalogue, scheduling and monitoring yourself."
         ]
     ]
 }
@@ -685,29 +701,56 @@ def build_finder():
     )
     L = {
         "match": "Your match: {v}",
-        "compare": '<a href="/best-tape-backup-software">Compare all tape backup software</a>',
-        "r_dpx": 'Catalogic DPX is built around tape. It supports a very wide range of LTO drives and libraries, including older ones, handles NDMP well and costs less than most enterprise suites when tape is central. <a href="/resources/tape-backup-software/catalogicdpx">Read the DPX review</a>.',
+        "compare": '<a href="/best-tape-backup-software">Compare all tape backup software</a> or <a href="/contact">contact us to know more vendors</a>.',
         "r_saas": "For SaaS data, Veeam for Microsoft 365 is the market leader. If you also run Kubernetes, look at CloudCasa.",
-        "r_virtual": "For a virtual, disk-based estate Veeam is the standard choice and works well with disk and cloud targets.",
+        "r_virtual": "For a virtual, disk-based estate Veeam is the standard choice. It works well with disk and cloud targets, and it can copy backups to tape when you want an offline copy.",
         "v_mixed_notape": "Acronis or Commvault",
         "r_mixed_notape": "For mixed environments without tape, Acronis has strong security features and Commvault has deep cloud integration.",
-        "r_small": "For smaller environments that need basic tape support without an enterprise price, Nakivo is a solid option.",
-        "v_default": "Veeam or Catalogic DPX",
-        "r_default": "Veeam is the popular choice for virtualization. Compare it with Catalogic DPX if your data is growing, because DPX licensing and tape handling often give a lower total cost.",
+        "r_small": "For smaller environments that need tape support without an enterprise price, Nakivo is a solid option.",
+        "r_veeam_tape": "Veeam Backup & Replication writes backups to tape libraries and standalone drives, so it suits a mostly virtual estate that uses tape as a second or long-term copy.",
+        "r_commvault": "Commvault is built for large mixed estates with physical servers, virtual machines and cloud workloads, and it supports tape libraries for long-term retention.",
+        "v_default": "Veeam or Commvault",
+        "r_default": "Both write to tape libraries. Veeam is the common choice for virtual estates and Commvault for large mixed ones, so ask each for a quote and compare licence cost against the tape features you need.",
     }
+    cmp_rows = [
+        ("Veeam Backup &amp; Replication", "Mostly virtual estates (VMware, Hyper-V)", "Writes to tape libraries and standalone drives, usually as a second or long-term copy of disk backups."),
+        ("Commvault", "Large mixed physical, virtual and cloud estates", "Supports tape libraries and a very wide range of workloads; more to license and manage."),
+        ("Nakivo", "Small and mid-size environments on a budget", "Supports tape libraries and autoloaders at a lower price than the large suites."),
+        ("Veeam for Microsoft 365", "Microsoft 365 data", "Not written to tape directly: back up first, then copy the repository to tape."),
+        ("CloudCasa", "Kubernetes workloads", "Cloud-native backup for Kubernetes clusters."),
+        ("More vendors", "Not sure which one fits?", 'Contact us to know more vendors: <a href="/contact">ask about your estate</a>.'),
+    ]
+    cmp_table = ('<div class="table-wrap"><table class="price-table" aria-label="Tape backup software compared"><thead><tr><th>Software</th><th>Best for</th><th>Tape support</th></tr></thead><tbody>'
+                 + "".join(f"<tr><td><strong>{n}</strong></td><td>{f}</td><td>{t}</td></tr>" for n, f, t in cmp_rows) + "</tbody></table></div>")
+    check_rows = [
+        ("LTO generation and interface", "Confirm the software supports your LTO generation and your drive or library connection (SAS or Fibre Channel). An unsupported drive can block the purchase."),
+        ("LTFS", "Software that can write LTFS leaves tapes readable without it later, which helps when you change vendors or restore years on."),
+        ("Streaming speed", "An LTO drive needs a steady flow of data. Check how the software stages or multiplexes jobs so the drive does not keep stopping and restarting."),
+        ("Encryption and WORM", "LTO-4 and newer drives encrypt with AES-256, and WORM cartridges protect against overwrites. Check how the software manages the keys and WORM media."),
+        ("Catalogue and restore", "Searching across many cartridges and restoring a single file quickly depends on the catalogue. Test a full restore before you commit."),
+        ("Offsite and retention", "Look for media tracking for tapes that leave the building, expiry and recycling rules, and a record of where every cartridge is."),
+    ]
+    check_table = ('<div class="table-wrap"><table class="price-table" aria-label="What to check in tape backup software"><thead><tr><th>Check</th><th>Why it matters</th></tr></thead><tbody>'
+                   + "".join(f"<tr><td><strong>{n}</strong></td><td>{t}</td></tr>" for n, t in check_rows) + "</tbody></table></div>")
+    fig1 = figure("finder-decision-map.svg", "Four questions about environment, tape use, size and budget lead to Veeam, Commvault, Nakivo or Veeam for Microsoft 365", "A mostly virtual estate points to Veeam, a large mixed estate to Commvault, a small budget to Nakivo and Microsoft 365 data to Veeam for Microsoft 365. Answer the four questions above for your own match.", 960, 420)
+    fig2 = figure("tape-software-job.svg", "Backup software sits between your servers and the LTO library and should be checked against six tape features", "Backup software connects servers and virtual machines to the LTO library with a catalogue, a schedule and encryption. Check LTO and LTFS support, drive interface, WORM, AES-256 encryption and NDMP before you choose.", 960, 420)
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
-<p class="eyebrow">Tool</p><h1>Find the Right Tape Backup Software</h1>
-<p><strong>If tape is your main archive, Catalogic DPX is usually the best fit; for mostly virtual estates using tape as a second copy, Veeam; for small environments on a budget, Nakivo.</strong></p>
-<p>Hardware is half the job. Answer four questions to get a shortlist of backup software that fits how you use tape, the size of your estate and your budget.</p></div>
-<aside class="hero-panel"><p class="panel-label">Want the detail?</p><p class="panel-copy">Read the full <a href="/best-tape-backup-software">best tape backup software comparison</a> or the <a href="/resources/tape-backup-software/catalogicdpx">Catalogic DPX review</a>.</p></aside></div></section>
+<p class="eyebrow">Tool</p><h1>Tape Backup Software: Find the Right One for LTO</h1>
+<p><strong>The best tape backup software depends on how you use tape: Veeam suits mostly virtual estates that keep tape as a second copy, Commvault suits large mixed estates, Nakivo suits smaller budgets, and LTFS is free for simple archives.</strong></p>
+<p>Hardware is half the job. Answer four questions to get a shortlist of backup software for your LTO drives or library, based on your environment, how you use tape, the size of your estate and your budget.</p></div>
+<aside class="hero-panel"><p class="panel-label">Want the detail?</p><p class="panel-copy">Read the <a href="/best-tape-backup-software">best tape backup software comparison</a>, the <a href="/resources/ltfs">LTFS guide</a> for the free route, or the <a href="/why-tape/lto-tape-drive">LTO drive buyer's guide</a>.</p></aside></div></section>
 <main class="page"><div class="container"><div class="section-stack">
-<section class="section-card"><h2>Find your backup software</h2>
+<section class="section-card"><h2>Find your tape backup software</h2>
 <form class="tool-form" id="finder">{fields}<button class="tool-submit" type="submit">Show my match</button></form>
 <div class="tool-result" id="finder-result" hidden aria-live="polite"></div>
-{figure("tape-backup-software-finder.svg", "Four questions point to Catalogic DPX, Veeam, Commvault or Nakivo", "Tape as the main archive points to Catalogic DPX, a mostly virtual estate with tape as a second copy to Veeam, a large mixed estate to Commvault, and a small budget to Nakivo.", 960, 440)}</section>
-<section class="section-card"><p class="eyebrow">Shortlist</p><h2>Software this finder recommends from</h2>
-<ul><li><strong>Catalogic DPX</strong>: tape-focused enterprise backup with broad drive, library and NDMP support.</li><li><strong>Veeam Backup &amp; Replication</strong>: the common choice for virtualized estates, with tape jobs as a secondary target.</li><li><strong>Commvault</strong>: large, feature-rich platform with deep cloud integration.</li><li><strong>Nakivo</strong>: lower-cost option for smaller environments that need basic tape support.</li><li><strong>Veeam for Microsoft 365 and CloudCasa</strong>: SaaS and Kubernetes backup.</li></ul></section>
-{faq_html([tuple(x) for x in GUIDE_FAQS["/backup-software-finder"]], "Software finder FAQ")}
+{fig1}</section>
+<section class="section-card"><p class="eyebrow">Shortlist</p><h2>Tape backup software compared</h2>
+<p>These are the products this finder recommends from. All of them write to the same LTO cartridges, so the choice is about your estate and your budget rather than the tape.</p>
+{cmp_table}</section>
+<section class="section-card"><p class="eyebrow">Checklist</p><h2>What to check before you choose tape backup software</h2>
+<p>Whichever product you shortlist, check these six points against your own drives or library. The <a href="/lto-tape-library">library guide</a> and the <a href="/backup-calculator">backup calculator</a> help with the hardware side.</p>
+{fig2}{check_table}</section>
+{faq_html([tuple(x) for x in GUIDE_FAQS["/backup-software-finder"]], "Tape backup software FAQ")}
 </div></div></main>
 {i18n_json("finder-i18n", L)}
 <script>
@@ -718,18 +761,25 @@ function val(n){{return f.querySelector('input[name="'+n+'"]:checked').value;}}
 f.addEventListener('submit',function(e){{
 e.preventDefault();
 var env=val('env'),tape=val('tape'),scale=val('scale'),prio=val('prio'),v,r;
-if(tape==='heavy'||(tape==='secondary'&&prio==='value')){{v='Catalogic DPX';r=L.r_dpx;}}
-else if(env==='saas'){{v='Veeam for Microsoft 365';r=L.r_saas;}}
+if(env==='saas'){{v='Veeam for Microsoft 365';r=L.r_saas;}}
 else if(tape==='none'){{if(env==='virtual'){{v='Veeam Backup & Replication';r=L.r_virtual;}}else{{v=L.v_mixed_notape;r=L.r_mixed_notape;}}}}
 else if(scale==='small'){{v='Nakivo';r=L.r_small;}}
+else if(env==='virtual'){{v='Veeam Backup & Replication';r=L.r_veeam_tape;}}
+else if(prio==='feature'||tape==='heavy'){{v='Commvault';r=L.r_commvault;}}
 else{{v=L.v_default;r=L.r_default;}}
 out.innerHTML='<h3>'+L.match.replace('{{v}}',v)+'</h3><p>'+r+'</p><p>'+L.compare+'</p>';out.hidden=false;
 }});
 }})();
 </script>"""
-    desc = "Answer four questions to find tape backup software that fits your environment, tape usage and budget: Catalogic DPX, Veeam, Commvault or Nakivo."
-    ld = [faq_ld([tuple(x) for x in GUIDE_FAQS["/backup-software-finder"]]), breadcrumb_ld([("Home", "/"), ("Software finder", path)])]
-    write(path, page(path, "Tape Backup Software Finder: Which LTO Software Fits", desc, body, ld))
+    desc = "Find tape backup software for LTO: answer four questions and compare Veeam, Commvault and Nakivo, with a checklist and FAQ for tape libraries and drives."
+    names = ["Veeam Backup & Replication", "Commvault", "Nakivo", "Veeam for Microsoft 365", "CloudCasa"]
+    ld = [faq_ld([tuple(x) for x in GUIDE_FAQS["/backup-software-finder"]]), breadcrumb_ld([("Home", "/"), ("Software finder", path)]),
+          {"@context": "https://schema.org", "@type": "WebApplication", "name": "Tape backup software finder", "url": SITE + path,
+           "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "description": desc,
+           "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": SITE}},
+          {"@context": "https://schema.org", "@type": "ItemList", "name": "Tape backup software compared",
+           "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n} for i, n in enumerate(names)]}]
+    write(path, page(path, "Tape Backup Software Finder: Best LTO Software", desc, body, ld))
     return path
 
 
