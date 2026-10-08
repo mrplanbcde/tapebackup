@@ -27,6 +27,7 @@ import markets  # noqa: E402
 import shutil  # noqa: E402
 import site_shell  # noqa: E402
 import videos  # noqa: E402
+import chatbot  # noqa: E402
 from site_shell import GENS, ROOT, SITE, esc, slug_for  # noqa: E402
 
 
@@ -405,6 +406,8 @@ def main():
     print(f"video embeds: {videos.embed_all(i18n.LANGS)}")
     count = build_sitemap(build_prices.CURRENT_ISO)
     build_llms(current)
+    kb, widgets = chatbot.build()
+    print(f"assistant: {kb} chars of reference, widget added to {widgets} pages")
     print(f"price pages: {len(price_paths)}, other pages: {len(page_paths)}, meta overrides changed: {n}, sitemap urls: {count}")
 
 
