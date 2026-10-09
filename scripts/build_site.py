@@ -29,6 +29,7 @@ import site_shell  # noqa: E402
 import videos  # noqa: E402
 import chatbot  # noqa: E402
 import page_figures  # noqa: E402
+import jsvideo  # noqa: E402
 from site_shell import GENS, ROOT, SITE, esc, slug_for  # noqa: E402
 
 
@@ -380,6 +381,7 @@ def build_languages():
             build_articles.build_all(cur)
             build_guides.build_all(cur)
             page_figures.add_figures(stage)
+            jsvideo.add_clips(stage)
         finally:
             site_shell.set_out_root(ROOT)
         shutil.rmtree(os.path.join(ROOT, lang), ignore_errors=True)
@@ -395,7 +397,7 @@ def main():
     price_paths, current = build_prices.build_all()
     page_paths = build_pages.build_all(current) + build_articles.build_all(current) + build_guides.build_all(current)
     n = apply_meta_overrides()
-    print(f"figure files: {page_figures.write_files()}, figures placed on pages: {page_figures.add_figures(ROOT)}")
+    print(f"figure files: {page_figures.write_files()}, figures placed on pages: {page_figures.add_figures(ROOT)}, JS clips: {jsvideo.add_clips(ROOT)}")
     print(f"blog fixes: {blog_fixes()}")
     apply_qa_noindex()
     print(f"QAPage schema: {qa_page_schema()}")

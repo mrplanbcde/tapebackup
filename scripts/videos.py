@@ -14,15 +14,15 @@ from site_shell import ROOT, SITE, esc
 
 UPLOADED = "2026-10-04"
 
-# page path -> video. "after": insert before the Nth section-card in <main> (1 = top of main, right under the page intro).
+# page path -> video. "after": insert before the Nth section-card in <main> (1 = top of main).
 VIDEOS = {
-    "lto-tape-price-trend": dict(id="73UkF_u3a7Q", dur="PT1M7S", after=1,
+    "lto-tape-price-trend": dict(id="73UkF_u3a7Q", dur="PT1M7S", after=2,
         title="LTO Tape Prices September 2026: LTO-9 Still Cheapest per TB",
         desc="Monthly LTO price update for September 2026: price per terabyte, cartridge and drive prices for LTO-6 to LTO-10."),
     "lto-tape": dict(id="2Fal_k0P6Yc", dur="PT1M38S", after=2,
         title="What Is LTO Tape? Linear Tape-Open Explained in Under 2 Minutes",
         desc="What LTO tape is, how a drive writes it, capacity by generation, the compatibility rule, what it costs in 2026 and why people keep it offline."),
-    "why-tape/lto-tape-drive": dict(id="OUqB74x6AgQ", dur="PT1M44S", after=1,
+    "why-tape/lto-tape-drive": dict(id="OUqB74x6AgQ", dur="PT1M44S", after=2,
         title="Which LTO Tape Drive to Buy in 2026 (LTO-9 vs LTO-10, SAS vs Thunderbolt)",
         desc="A buyer's guide to LTO drives: generation, form factor, interface, read/write compatibility, part numbers and used drives."),
     "comparisons/tape-vs-cloud-5-year-cost": dict(id="ZPs0eTwLnmQ", dur="PT2M11S", after=2,
@@ -31,15 +31,9 @@ VIDEOS = {
     "resources/ltfs": dict(id="e1ANLap0inI", dur="PT1M34S", after=2,
         title="How to Use LTFS on Linux, Mac and Windows (LTO Tape Like a USB Drive)",
         desc="How LTFS works, the free tools for each OS, the Linux commands step by step, the Mac and Windows apps, and why you must always unmount."),
-    "backup-calculator": dict(id="spbiOvrW-zQ", dur="PT49S", after=1,
+    "backup-calculator": dict(id="spbiOvrW-zQ", dur="PT49S", after=2,
         title="How Many LTO Tapes Do You Need? Free Backup Calculator Walkthrough",
         desc="A walkthrough of the free tapebackup.org backup calculator: data size, copies, recovery targets and the recommended LTO setup."),
-    "lto-tape-price-trend/lto10-price": dict(id="73UkF_u3a7Q", dur="PT1M7S", after=1,
-        title="LTO Tape Prices September 2026: LTO-9 Still Cheapest per TB",
-        desc="Monthly LTO price update for September 2026, including LTO-10 cartridge and drive prices and the 40 TB cartridge."),
-    "backup-software-finder": dict(id="e1ANLap0inI", dur="PT1M34S", after=1,
-        title="How to Use LTFS on Linux, Mac and Windows (LTO Tape Like a USB Drive)",
-        desc="The free route to tape: how LTFS works, the free tools for each OS and the Linux commands step by step."),
     "blog/offsite-tape-backups-still-beat-most-good-enough-plans": dict(id="z4awYQws8Lw", dur="PT39S", after="figure",
         title="Why Your Backup Tapes Need to Leave the Building (Offsite Tape Rotation)",
         desc="Why one tape set should always be outside the building, and how a weekly offsite rotation keeps it there."),
