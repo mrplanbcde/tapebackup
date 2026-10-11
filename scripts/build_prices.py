@@ -215,6 +215,12 @@ def listing_rows(dps, packs=False):
     return rows
 
 
+def contact_row(what):
+    """Last row of every cartridge table: a quantity quote request, styled like a seller row."""
+    return [esc(what), '<a href="/contact">Contact us</a>', "Volume discount",
+            "Tell us how many cartridges you need and we will send you a special discount."]
+
+
 def sources_list(gdata):
     seen = {}
     for key in ("cartridge", "cartridge40TB", "worm", "driveInternal", "driveExternal"):
@@ -448,25 +454,25 @@ def build_gen_page(gen, g, history, current):
     parts = []
     parts.append(f"""<section class="section-card" id="cartridge-prices"><p class="eyebrow">Cartridge listings</p><h2>{gen} cartridge prices by seller</h2>
 <p>New single {gen} data cartridges ({native:g} TB native), sorted by price. Range: <strong>{rng(c, True)}</strong>, or {per_tb(c)} per native TB.{us_line}</p>
-{table(["Part number", "Seller", "Price", "Note"], listing_rows(c["datapoints"]), f"{gen} cartridge prices", num_cols=(2,)) if c["datapoints"] else "<p>No new single cartridges were listed at the sellers checked.</p>"}
+{table(["Part number", "Seller", "Price", "Note"], listing_rows(c["datapoints"]) + [contact_row(f"Any {gen} cartridge")], f"{gen} cartridge prices", num_cols=(2,)) if c["datapoints"] else "<p>No new single cartridges were listed at the sellers checked.</p>"}
 <p class="updated-note">Prices checked on {date_text()}. Sale prices change often; confirm at the seller before ordering.</p></section>""")
 
     pack_rows = listing_rows(c["datapoints"], packs=True)
     if pack_rows:
         parts.append(f"""<section class="section-card" id="multipacks"><p class="eyebrow">Bulk buying</p><h2>{gen} 5, 10 and 20 packs</h2>
 <p>Packs are not always cheaper per cartridge than a single tape on sale, so compare the per-unit price.</p>
-{table(["Part number", "Seller", "Pack price (per cartridge)", ""], pack_rows, f"{gen} multipack prices", num_cols=(2,))}</section>""")
+{table(["Part number", "Seller", "Pack price (per cartridge)", ""], pack_rows + [contact_row(f"{gen} packs of any size")], f"{gen} multipack prices", num_cols=(2,))}</section>""")
 
     if gen == "LTO-10" and (g.get("cartridge40TB") or {}).get("datapoints"):
         c40 = g["cartridge40TB"]
         parts.append(f"""<section class="section-card" id="lto10-40tb"><p class="eyebrow">Higher capacity</p><h2>LTO-10 40 TB cartridge prices</h2>
 <p>The 40 TB LTO-10 cartridge uses an aramid base film and works in existing LTO-10 drives. Range: <strong>{rng(c40, True)}</strong>, or {per_tb(c40)} per TB, against {per_tb(c)} for the 30 TB cartridge.</p>
-{table(["Part number", "Seller", "Price", "Note"], listing_rows(c40["datapoints"]), "LTO-10 40TB cartridge prices", num_cols=(2,))}</section>""")
+{table(["Part number", "Seller", "Price", "Note"], listing_rows(c40["datapoints"]) + [contact_row("Any LTO-10 40 TB cartridge")], "LTO-10 40TB cartridge prices", num_cols=(2,))}</section>""")
 
     if (worm or {}).get("datapoints"):
         parts.append(f"""<section class="section-card" id="worm"><p class="eyebrow">Write once media</p><h2>{gen} WORM cartridge prices</h2>
 <p>WORM (write once, read many) cartridges cannot be overwritten, which is why they are used for compliance and ransomware-resistant copies. Range: <strong>{rng(worm, True)}</strong>.</p>
-{table(["Part number", "Seller", "Price", "Note"], listing_rows(worm["datapoints"]), f"{gen} WORM prices", num_cols=(2,))}</section>""")
+{table(["Part number", "Seller", "Price", "Note"], listing_rows(worm["datapoints"]) + [contact_row(f"Any {gen} WORM cartridge")], f"{gen} WORM prices", num_cols=(2,))}</section>""")
 
     drive_parts = []
     for label, item in (("Internal drives", wi), ("External desktop drives", de)):
