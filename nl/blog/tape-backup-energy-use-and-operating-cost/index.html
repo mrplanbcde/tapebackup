@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stroomverbruik en kosten van tape-back-up | TapeBackup.org</title>
+<meta content="Welke opties voor tape-back-up zijn het zuinigst en hoe verhouden ze zich tot disk en cloud qua operationele kosten? Een model van 500 TB met aannames." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/nl/blog/tape-backup-energy-use-and-operating-cost" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Stroomverbruik en bedrijfskosten van tape-back-up" property="og:title"/>
+<meta content="Welke opties voor tape-back-up zijn het zuinigst en hoe verhouden ze zich tot disk en cloud qua operationele kosten? Een model van 500 TB met aannames." property="og:description"/>
+<meta content="https://tapebackup.org/nl/blog/tape-backup-energy-use-and-operating-cost" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Stroomverbruik en bedrijfskosten van tape-back-up" name="twitter:title"/>
+<meta content="Welke opties voor tape-back-up zijn het zuinigst en hoe verhouden ze zich tot disk en cloud qua operationele kosten? Een model van 500 TB met aannames." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Stroomverbruik en bedrijfskosten van tape-back-up", "description": "Welke opties voor tape-back-up zijn het zuinigst en hoe verhouden ze zich tot disk en cloud qua operationele kosten? Een model van 500 TB met aannames.", "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "https://tapebackup.org/nl/blog/tape-backup-energy-use-and-operating-cost", "url": "https://tapebackup.org/nl/blog/tape-backup-energy-use-and-operating-cost", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "logo": {"@type": "ImageObject", "url": "https://tapebackup.org/favicon.png"}}, "articleSection": "Analysis"}</script>
+<meta content="nl_NL" property="og:locale"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/nl/tape-q-and-a">Tape-vragen</a><span class="sep"></span><a href="/nl/lto-tape-price-trend">LTO-prijzen</a><span class="sep"></span><a href="/nl/contact">Contact</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" lang="en">EN</a><a href="/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" lang="de">DE</a><a href="/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" lang="fr">FR</a><a href="/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" lang="it">IT</a><a href="/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" lang="es">ES</a><a aria-current="page" class="on" href="/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Startpagina van TapeBackup.org" class="brand" href="/nl"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Hoofdnavigatie" class="topnav">
+<div class="price-dropdown"><a href="/nl/lto-tape">LTO-tape</a><div class="price-dropdown-menu"><a href="/nl/lto-tape">Wat is LTO-tape<span>Het formaat op één pagina</span></a><a href="/nl/lto-tape-capacity">Capaciteitstabel<span>LTO-1 tot LTO-14</span></a><a href="/nl/why-tape/lto-tape-drive">Koopgids tapedrives<span>Welke drive u koopt</span></a><a href="/nl/lto-tape-library">Bibliotheken<span>Autoloaders en bibliotheken</span></a><a href="/nl/why-tape/lto-tape-lifespan">Levensduur<span>Hoe lang tapes meegaan</span></a><a href="/nl/resources/ltfs">LTFS<span>Tape als bestandssysteem</span></a><a href="/nl/resources/lto-tape-data-recovery">Dataherstel<span>Oude tapes lezen</span></a><a href="/nl/lto-tape-news">Nieuws<span>Wat er deze maand veranderde</span></a><a href="/nl/why-tape">Waarom tape<span>Kosten, air gap en levensduur</span></a></div></div>
+<div class="price-dropdown"><a href="/nl/lto-tape-price-trend">LTO-prijzen</a><div class="price-dropdown-menu"><a href="/nl/lto-tape-price-trend">Alle generaties<span>Prijzen september 2026</span></a><a href="/nl/lto-tape-price-trend/lto6-price">Prijs LTO-6<span>2,5 TB native</span></a><a href="/nl/lto-tape-price-trend/lto7-price">Prijs LTO-7<span>6 TB native</span></a><a href="/nl/lto-tape-price-trend/lto8-price">Prijs LTO-8<span>12 TB native</span></a><a href="/nl/lto-tape-price-trend/lto9-price">Prijs LTO-9<span>18 TB native</span></a><a href="/nl/lto-tape-price-trend/lto10-price">Prijs LTO-10<span>30 / 40 TB native</span></a><a href="/nl/lto-tape-price-trend/history">Prijsgeschiedenis<span>Gearchiveerde momentopnamen sinds 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/nl/backup-calculator">Tools</a><div class="price-dropdown-menu"><a href="/nl/backup-calculator">Back-upcalculator<span>Schatting van media en kosten</span></a><a href="/nl/backup-software-finder">Softwarewijzer<span>Software die past bij uw tapegebruik</span></a><a href="/nl/best-tape-backup-software">Beste back-upsoftware voor tape<span>Vergelijking 2026</span></a></div></div>
+<a href="/nl/blog">Blog</a>
+<a href="/nl/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/nl/contact">Prijslijst opvragen</a></div>
+</div></header>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Analyse-artikel</p>
+<h1>Stroomverbruik en bedrijfskosten van tape-back-up</h1>
+<p>Welke opties voor tape-back-up zijn het zuinigst en hoe verhouden ze zich tot disk en cloud qua operationele kosten? Een model van 500 TB met aannames.</p>
+<div class="signal-row"><span class="signal-chip">Analyse</span> <span class="signal-chip">4 min leestijd</span> <span class="signal-chip">12 oktober 2026</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">Kortom</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/nl/blog">Blog</a><span>/</span><span>Analyse</span></div>
+<header class="article-header">
+<div class="detail-meta"><span class="pill">Analyse</span> <span class="pill alt">4 min leestijd</span> <span class="pill alt">12 oktober 2026</span></div>
+<h2 class="detail-title">Stroomverbruik en bedrijfskosten van tape-back-up</h2>
+<p class="lead">Welke opties voor tape-back-up zijn het zuinigst en hoe verhouden ze zich tot disk en cloud qua operationele kosten? Een model van 500 TB met aannames.</p>
+</header>
+<section class="article-body"><p><strong>Een standalone LTO-drive die alleen wordt ingeschakeld tijdens het schrijven is de meest energiezuinige manier om een archief te bewaren: een cartridge op een plank verbruikt helemaal geen stroom. In ons model van 500 TB verbruikt een online gehouden disk-array ongeveer 4.400 kWh per jaar, een kleine tapebibliotheek die het hele jaar aan staat ongeveer 800 kWh en een standalone drive die alleen voor schrijven wordt gebruikt ongeveer 16 kWh.</strong></p>
+<p>Energiecijfers hangen af van uw hardware. Hieronder staan de aannames achter elk getal. Vul de waarden uit uw eigen datasheets in om de berekening te herhalen.</p>
+<h2>Hoe de opties scoren op energieverbruik</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Optie</th><th>Aanname</th><th>kWh per jaar</th></tr></thead><tbody><tr><td>Disk-array, altijd ingeschakeld</td><td>32 harde schijven van 20 TB (500 TB plus pariteit en reserves) bij circa 7 W per stuk, plus 50% voor behuizing en controllers, plus 50% voor koeling</td><td>Ongeveer 4.415</td></tr><tr><td>Tapebibliotheek, altijd aan</td><td>Ongeveer 60 W in rust voor een kleine bibliotheek met drive, plus 50% voor koeling, plus het schrijven hieronder</td><td>Ongeveer 804</td></tr><tr><td>Standalone tapedrive, alleen ingeschakeld tijdens het schrijven</td><td>Eén volledige schrijfactie van 500 TB per jaar bij 400 MB/s (ongeveer 347 uur) bij circa 30 W, plus 50% voor koeling</td><td>Ongeveer 16</td></tr><tr><td>Cloud-archief</td><td>Energie is inbegrepen in de prijs van de provider</td><td>Niet afzonderlijk gefactureerd</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Gemodelleerd energieverbruik per jaar voor een archief van 500 TB op disk, een tapebibliotheek, een standalone tapedrive en een cloudarchief" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-kwh.svg" width="960"/><figcaption>Een disk-array verbruikt continu stroom; tape verbruikt alleen stroom wanneer een drive of bibliotheek is ingeschakeld.</figcaption></figure>
+<h2>Operationele kosten per jaar</h2>
+<p>Bij $ 0,13 per kWh, dicht bij het commerciële gemiddelde in de VS, is de stroomrekening laag voor tape en merkbaar voor disk. Voor cloud-archiefopslag vormt de maandelijkse factuur de operationele kosten.</p>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Optie, 500 TB</th><th>Operationele kosten per jaar</th><th>Wat het drijft</th></tr></thead><tbody><tr><td>Cloud-archief (Glacier Deep Archive)</td><td>Ongeveer $ 5.532</td><td>Opslag maandelijks gefactureerd; herstel daarbovenop gefactureerd</td></tr><tr><td>Stroomverbruik disk-array</td><td>Ongeveer $ 574</td><td>Drives, behuizingen en koeling die het hele jaar draaien; drives die elke paar jaar worden vervangen</td></tr><tr><td>Stroomverbruik tapebibliotheek</td><td>Ongeveer $ 105</td><td>Rustverbruik van de bibliotheek plus schrijven</td></tr><tr><td>Stroomverbruik standalone tapedrive</td><td>Ongeveer $ 2</td><td>Alleen de uren waarin wordt geschreven</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Operationele kosten per jaar voor 500 TB: opslagfactuur cloud-archief, stroomverbruik disk-array, tapebibliotheek en standalone drive" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-opcost.svg" width="960"/><figcaption>Voor een archief van 500 TB valt de stroomrekening in het niet bij de cloudfactuur, en het stroomverbruik van tape is nagenoeg nul zodra cartridges uit de drive zijn.</figcaption></figure>
+<h2>Andere operationele kosten om rekening mee te houden</h2>
+<p>Stroom is slechts een deel van het plaatje. Bij disk-arrays moeten schijven elke drie tot zeven jaar worden vervangen. Tape vereist reinigingscartridges, externe opslag voor de tweede kopie, een periodieke leescontrole en migratie naar nieuwere media elke twee of drie drivegeneraties. Cloud brengt ophaal- en uitgaande verkeerskosten (egress) met zich mee wanneer u data terugleest.</p>
+<p>De volledige vijfjarige vergelijking, inclusief hardware, staat in <a href="/nl/blog/tape-backup-5-year-total-cost-of-ownership">tape-back-up 5-jaar TCO</a>, en drivekeuzes in de <a href="/nl/why-tape/lto-tape-drive">koopgids voor LTO-drives</a>.</p>
+<h2>Veelgestelde vragen</h2><h3>Verbruikt tape stroom tijdens opslag?</h3><p>Nee. Een cartridge op een plank verbruikt geen elektriciteit. Alleen de drive of bibliotheek gebruikt stroom, en alleen zolang deze is ingeschakeld.</p><h3>Is een tapebibliotheek het extra stroomverbruik waard?</h3><p>Meestal wel als taken over meerdere cartridges lopen of onbeheerd draaien. Een kleine bibliotheek voegt tientallen watts aan rustverbruik toe, wat in ons model ruwweg $ 100 per jaar kost.</p><h3>Hoe kan ik het energieverbruik van tape verder verlagen?</h3><p>Schakel standalone drives uit tussen taken, werp cartridges uit naar de plank en plan grote schrijftaken samen zodat de drive continu streamt.</p><h3>Is cloudopslag energiezuiniger dan tape?</h3><p>U kunt het niet rechtstreeks meten: de energie zit verwerkt in de prijs en het datacenter van de provider. Voor koude data verbruikt tape op een plank minder energie dan elk continu actief systeem.</p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Verbruikt tape stroom tijdens opslag?", "acceptedAnswer": {"@type": "Answer", "text": "Nee. Een cartridge op een plank verbruikt geen elektriciteit. Alleen de drive of bibliotheek gebruikt stroom, en alleen zolang deze is ingeschakeld."}}, {"@type": "Question", "name": "Is een tapebibliotheek het extra stroomverbruik waard?", "acceptedAnswer": {"@type": "Answer", "text": "Meestal wel als taken over meerdere cartridges lopen of onbeheerd draaien. Een kleine bibliotheek voegt tientallen watts aan rustverbruik toe, wat in ons model ruwweg $ 100 per jaar kost."}}, {"@type": "Question", "name": "Hoe kan ik het energieverbruik van tape verder verlagen?", "acceptedAnswer": {"@type": "Answer", "text": "Schakel standalone drives uit tussen taken, werp cartridges uit naar de plank en plan grote schrijftaken samen zodat de drive continu streamt."}}, {"@type": "Question", "name": "Is cloudopslag energiezuiniger dan tape?", "acceptedAnswer": {"@type": "Answer", "text": "U kunt het niet rechtstreeks meten: de energie zit verwerkt in de prijs en het datacenter van de provider. Voor koude data verbruikt tape op een plank minder energie dan elk continu actief systeem."}}], "inLanguage": "nl"}</script></section>
+<a class="back-link" href="/nl/blog">Terug naar blog</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>Artikelsignaal</h2>
+<p>Recente discussie over tapeopslag samengevat in een zelfstandig TapeBackup.org-artikel met directe indexeringsmetadata en een stabiele canonieke URL.</p>
+</section>
+<section class="sidebar-card">
+<h2>Behoefte aan een grondiger LTO-plan?</h2>
+<p>Blader door de bronnen op de site, vergelijk opslagbenaderingen of neem contact op met het team voor advies over de rol van tape in uw back-upworkflow.</p>
+<a class="cta" href="/nl/contact">Neem contact op met TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Gerelateerd op TapeBackup</h2><ul><li><a href="/nl/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">De beste LTO-back-upsoftware is meestal de software die u daadwerkelijk test</a></li><li><a href="/nl/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again">Tape is dood, toch? Waarom bouwen mensen er dan stilletjes weer back-upsystemen omheen</a></li><li><a href="/nl/blog/tape-backup-software-integration-tradeoffs">Integratie-afwegingen voor tape-back-upsoftware</a></li><li><a href="/nl/lto-tape-price-trend">LTO-tapeprijzen, september 2026</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

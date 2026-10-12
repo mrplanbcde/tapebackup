@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Consumi e costi operativi del nastro | TapeBackup.org</title>
+<meta content="Quali opzioni su nastro consumano meno energia rispetto a disco e cloud nei costi operativi? Un modello da 500 TB con relative ipotesi." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/it/blog/tape-backup-energy-use-and-operating-cost" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Consumi energetici e costi operativi del nastro" property="og:title"/>
+<meta content="Quali opzioni su nastro consumano meno energia rispetto a disco e cloud nei costi operativi? Un modello da 500 TB con relative ipotesi." property="og:description"/>
+<meta content="https://tapebackup.org/it/blog/tape-backup-energy-use-and-operating-cost" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Consumi energetici e costi operativi del nastro" name="twitter:title"/>
+<meta content="Quali opzioni su nastro consumano meno energia rispetto a disco e cloud nei costi operativi? Un modello da 500 TB con relative ipotesi." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Consumi energetici e costi operativi del nastro", "description": "Quali opzioni su nastro consumano meno energia rispetto a disco e cloud nei costi operativi? Un modello da 500 TB con relative ipotesi.", "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "https://tapebackup.org/it/blog/tape-backup-energy-use-and-operating-cost", "url": "https://tapebackup.org/it/blog/tape-backup-energy-use-and-operating-cost", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "logo": {"@type": "ImageObject", "url": "https://tapebackup.org/favicon.png"}}, "articleSection": "Analysis"}</script>
+<meta content="it_IT" property="og:locale"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/it/tape-q-and-a">Domande e risposte</a><span class="sep"></span><a href="/it/lto-tape-price-trend">Prezzi LTO</a><span class="sep"></span><a href="/it/contact">Contatti</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" lang="en">EN</a><a href="/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" lang="de">DE</a><a href="/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" lang="fr">FR</a><a aria-current="page" class="on" href="/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" lang="it">IT</a><a href="/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" lang="es">ES</a><a href="/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Home page di TapeBackup.org" class="brand" href="/it"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Principale" class="topnav">
+<div class="price-dropdown"><a href="/it/lto-tape">Nastro LTO</a><div class="price-dropdown-menu"><a href="/it/lto-tape">Che cos'è il nastro LTO<span>Il formato in una pagina</span></a><a href="/it/lto-tape-capacity">Tabella delle capacità<span>Da LTO-1 a LTO-14</span></a><a href="/it/why-tape/lto-tape-drive">Guida all'acquisto delle unità<span>Quale unità comprare</span></a><a href="/it/lto-tape-library">Librerie<span>Autoloader e librerie</span></a><a href="/it/why-tape/lto-tape-lifespan">Durata<span>Quanto durano i nastri</span></a><a href="/it/resources/ltfs">LTFS<span>Il nastro come file system</span></a><a href="/it/resources/lto-tape-data-recovery">Recupero dati<span>Leggere vecchi nastri</span></a><a href="/it/lto-tape-news">Notizie<span>Cosa è cambiato questo mese</span></a><a href="/it/why-tape">Perché il nastro<span>Costi, air gap e durata</span></a></div></div>
+<div class="price-dropdown"><a href="/it/lto-tape-price-trend">Prezzi LTO</a><div class="price-dropdown-menu"><a href="/it/lto-tape-price-trend">Tutte le generazioni<span>Prezzi di settembre 2026</span></a><a href="/it/lto-tape-price-trend/lto6-price">Prezzo LTO-6<span>2,5 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto7-price">Prezzo LTO-7<span>6 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto8-price">Prezzo LTO-8<span>12 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto9-price">Prezzo LTO-9<span>18 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto10-price">Prezzo LTO-10<span>30 / 40 TB nativi</span></a><a href="/it/lto-tape-price-trend/history">Storico dei prezzi<span>Rilevazioni archiviate dal 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/it/backup-calculator">Strumenti</a><div class="price-dropdown-menu"><a href="/it/backup-calculator">Calcolatore di backup<span>Stima di supporti e costi</span></a><a href="/it/backup-software-finder">Ricerca software<span>Il software adatto al vostro uso del nastro</span></a><a href="/it/best-tape-backup-software">Migliori software di backup su nastro<span>Confronto 2026</span></a></div></div>
+<a href="/it/blog">Blog</a>
+<a href="/it/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/it/contact">Richiedi il listino</a></div>
+</div></header>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Articolo di analisi</p>
+<h1>Consumi energetici e costi operativi del nastro</h1>
+<p>Quali opzioni su nastro consumano meno energia rispetto a disco e cloud nei costi operativi? Un modello da 500 TB con relative ipotesi.</p>
+<div class="signal-row"><span class="signal-chip">Analisi</span> <span class="signal-chip">Lettura di 4 min</span> <span class="signal-chip">12 ottobre 2026</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">In breve</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/it/blog">Blog</a><span>/</span><span>Analisi</span></div>
+<header class="article-header">
+<div class="detail-meta"><span class="pill">Analisi</span> <span class="pill alt">Lettura di 4 min</span> <span class="pill alt">12 ottobre 2026</span></div>
+<h2 class="detail-title">Consumi energetici e costi operativi del nastro</h2>
+<p class="lead">Quali opzioni su nastro consumano meno energia rispetto a disco e cloud nei costi operativi? Un modello da 500 TB con relative ipotesi.</p>
+</header>
+<section class="article-body"><p><strong>Un'unità LTO standalone accesa solo durante la scrittura è il modo più efficiente per conservare un archivio: una cartuccia sullo scaffale non consuma nulla. Nel nostro modello da 500 TB, un array di dischi online consuma circa 4.400 kWh l'anno, una piccola libreria lasciata accesa circa 800 kWh, e un'unità standalone usata solo per scrivere circa 16 kWh.</strong></p>
+<p>I dati sui consumi energetici dipendono dall'hardware, pertanto di seguito sono riportate le ipotesi alla base di ciascun valore. Sostituite i valori con quelli delle vostre schede tecniche per ricalcolare i totali.</p>
+<h2>Confronto tra le opzioni sui consumi energetici</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Opzione</th><th>Ipotesi</th><th>kWh all'anno</th></tr></thead><tbody><tr><td>Array di dischi, sempre acceso</td><td>32 dischi rigidi da 20 TB (500 TB più parità e riserve) a circa 7 W ciascuno, più il 50% per enclosure e controller, più il 50% per il raffreddamento</td><td>Circa 4.415</td></tr><tr><td>Libreria a nastro, sempre accesa</td><td>Circa 60 W a riposo per una piccola libreria con la sua unità, più il 50% per il raffreddamento, oltre alla scrittura indicata di seguito</td><td>Circa 804</td></tr><tr><td>Unità a nastro standalone, accesa solo durante la scrittura</td><td>Una scrittura completa di 500 TB all'anno a 400 MB/s (circa 347 ore) a circa 30 W, più il 50% per il raffreddamento</td><td>Circa 16</td></tr><tr><td>Archivio cloud</td><td>L'energia è inclusa nel prezzo del fornitore</td><td>Non fatturato separatamente</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Consumo energetico annuo stimato per un archivio di 500 TB su disco, libreria a nastro, unità standalone e archivio cloud" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-kwh.svg" width="960"/><figcaption>Un array di dischi consuma energia ventiquattr'ore su ventiquattro; il nastro consuma energia solo quando un'unità o una libreria è accesa.</figcaption></figure>
+<h2>Costo operativo annuale</h2>
+<p>A 0,13 $ per kWh, vicino alla media commerciale USA, la bolletta energetica è minima per il nastro e rilevante per il disco. Per lo storage di archivio su cloud, il canone mensile rappresenta il costo operativo.</p>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Opzione, 500 TB</th><th>Costo operativo annuale</th><th>I fattori determinanti</th></tr></thead><tbody><tr><td>Archivio cloud (Glacier Deep Archive)</td><td>Circa 5.532 $</td><td>Storage fatturato ogni mese; ripristini fatturati a parte</td></tr><tr><td>Consumo energetico array di dischi</td><td>Circa 574 $</td><td>Unità, chassis e raffreddamento operativi tutto l'anno; dischi sostituiti a intervalli di pochi anni</td></tr><tr><td>Consumo energetico libreria a nastro</td><td>Circa 105 $</td><td>Consumo della libreria a riposo più scrittura</td></tr><tr><td>Consumo unità a nastro standalone</td><td>Circa 2 $</td><td>Solo le ore trascorse a scrivere</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Costo operativo annuale per 500 TB: storage di archivio cloud, alimentazione array dischi, libreria a nastro e unità standalone" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-opcost.svg" width="960"/><figcaption>Per un archivio da 500 TB la fattura del cloud supera di gran lunga qualsiasi costo elettrico, e il consumo del nastro è pressoché nullo una volta estratte le cartucce dall'unità.</figcaption></figure>
+<h2>Altri costi operativi da pianificare</h2>
+<p>L'alimentazione è solo una parte del quadro: gli array di dischi richiedono la sostituzione delle unità ogni tre o sette anni. Il nastro richiede cartucce di pulizia, custodia offsite per la seconda copia, controlli periodici di lettura e migrazioni a supporti più recenti ogni due o tre generazioni di unità. Il cloud aggiunge costi di recupero ed egress a ogni rilettura dei dati.</p>
+<p>Il confronto quinquennale completo con l'hardware è in <a href="/it/blog/tape-backup-5-year-total-cost-of-ownership">TCO del backup su nastro a 5 anni</a>; la guida alle unità è nella <a href="/it/why-tape/lto-tape-drive">guida all'acquisto di unità LTO</a>.</p>
+<h2>Domande frequenti</h2><h3>Il nastro consuma energia quando è archiviato?</h3><p>No. Una cartuccia su uno scaffale non consuma elettricità. Solo l'unità o la libreria impiega energia, e soltanto quando è accesa.</p><h3>Una libreria a nastro giustifica i consumi energetici aggiuntivi?</h3><p>Solitamente sì se i job occupano più cartucce o girano senza presidio. Una piccola libreria consuma decine di watt a riposo, pari a circa 100 $ l'anno nel nostro modello.</p><h3>Come ridurre ulteriormente i consumi energetici del nastro?</h3><p>Spegnete le unità standalone tra un job e l'altro, riponete le cartucce sullo scaffale e pianificate grandi sessioni di scrittura per consentire uno streaming continuo.</p><h3>Lo storage cloud è più efficiente dal punto di vista energetico rispetto al nastro?</h3><p>Non è possibile misurarla direttamente: l'energia è compresa nella tariffa del provider e nel data center. Per i dati cold, il nastro su uno scaffale consuma meno energia di qualunque sistema sempre attivo.</p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Il nastro consuma energia quando è archiviato?", "acceptedAnswer": {"@type": "Answer", "text": "No. Una cartuccia su uno scaffale non consuma elettricità. Solo l'unità o la libreria impiega energia, e soltanto quando è accesa."}}, {"@type": "Question", "name": "Una libreria a nastro giustifica i consumi energetici aggiuntivi?", "acceptedAnswer": {"@type": "Answer", "text": "Solitamente sì se i job occupano più cartucce o girano senza presidio. Una piccola libreria consuma decine di watt a riposo, pari a circa 100 $ l'anno nel nostro modello."}}, {"@type": "Question", "name": "Come ridurre ulteriormente i consumi energetici del nastro?", "acceptedAnswer": {"@type": "Answer", "text": "Spegnete le unità standalone tra un job e l'altro, riponete le cartucce sullo scaffale e pianificate grandi sessioni di scrittura per consentire uno streaming continuo."}}, {"@type": "Question", "name": "Lo storage cloud è più efficiente dal punto di vista energetico rispetto al nastro?", "acceptedAnswer": {"@type": "Answer", "text": "Non è possibile misurarla direttamente: l'energia è compresa nella tariffa del provider e nel data center. Per i dati cold, il nastro su uno scaffale consuma meno energia di qualunque sistema sempre attivo."}}], "inLanguage": "it"}</script></section>
+<a class="back-link" href="/it/blog">Torna al Blog</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>Segnale dell'articolo</h2>
+<p>Recente discussione sullo storage su nastro riassunta in un articolo autonomo di TapeBackup.org con metadati di indicizzazione e URL canonico.</p>
+</section>
+<section class="sidebar-card">
+<h2>Serve un piano LTO più approfondito?</h2>
+<p>Esplorate le risorse del sito, confrontate gli approcci di archiviazione o contattate il team per valutare l'uso del nastro nel vostro backup.</p>
+<a class="cta" href="/it/contact">Contatta TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Contenuti correlati su TapeBackup</h2><ul><li><a href="/it/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">Il miglior software di backup LTO è quello che viene effettivamente testato</a></li><li><a href="/it/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again">Il nastro è morto, giusto? Allora perché si continuano a creare sistemi di backup basati su di esso?</a></li><li><a href="/it/blog/tape-backup-software-integration-tradeoffs">Compromessi di integrazione del software di backup su nastro</a></li><li><a href="/it/lto-tape-price-trend">Prezzi nastri LTO, settembre 2026</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

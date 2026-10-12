@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Consommation et coût de la bande | TapeBackup.org</title>
+<meta content="Quelles options sur bande sont les plus sobres en énergie face au disque et au cloud ? Modèle à 500 To chiffré et hypothèses d'exploitation." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/fr/blog/tape-backup-energy-use-and-operating-cost" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Consommation et coût de la sauvegarde sur bande" property="og:title"/>
+<meta content="Quelles options sur bande sont les plus sobres en énergie face au disque et au cloud ? Modèle à 500 To chiffré et hypothèses d'exploitation." property="og:description"/>
+<meta content="https://tapebackup.org/fr/blog/tape-backup-energy-use-and-operating-cost" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Consommation et coût de la sauvegarde sur bande" name="twitter:title"/>
+<meta content="Quelles options sur bande sont les plus sobres en énergie face au disque et au cloud ? Modèle à 500 To chiffré et hypothèses d'exploitation." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Consommation et coût de la sauvegarde sur bande", "description": "Quelles options sur bande sont les plus sobres en énergie face au disque et au cloud ? Modèle à 500 To chiffré et hypothèses d'exploitation.", "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "https://tapebackup.org/fr/blog/tape-backup-energy-use-and-operating-cost", "url": "https://tapebackup.org/fr/blog/tape-backup-energy-use-and-operating-cost", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "logo": {"@type": "ImageObject", "url": "https://tapebackup.org/favicon.png"}}, "articleSection": "Analysis"}</script>
+<meta content="fr_FR" property="og:locale"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/fr/tape-q-and-a">Q&amp;R bandes</a><span class="sep"></span><a href="/fr/lto-tape-price-trend">Prix LTO</a><span class="sep"></span><a href="/fr/contact">Nous contacter</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" lang="en">EN</a><a href="/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" lang="de">DE</a><a aria-current="page" class="on" href="/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" lang="fr">FR</a><a href="/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" lang="it">IT</a><a href="/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" lang="es">ES</a><a href="/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Accueil TapeBackup.org" class="brand" href="/fr"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Navigation principale" class="topnav">
+<div class="price-dropdown"><a href="/fr/lto-tape">Bande LTO</a><div class="price-dropdown-menu"><a href="/fr/lto-tape">Qu'est-ce que la bande LTO<span>Le format en une page</span></a><a href="/fr/lto-tape-capacity">Tableau des capacités<span>LTO-1 à LTO-14</span></a><a href="/fr/why-tape/lto-tape-drive">Guide d'achat des lecteurs<span>Quel lecteur acheter</span></a><a href="/fr/lto-tape-library">Bibliothèques<span>Chargeurs et bibliothèques</span></a><a href="/fr/why-tape/lto-tape-lifespan">Durée de vie<span>Combien de temps durent les bandes</span></a><a href="/fr/resources/ltfs">LTFS<span>La bande comme système de fichiers</span></a><a href="/fr/resources/lto-tape-data-recovery">Récupération de données<span>Lire d'anciennes bandes</span></a><a href="/fr/lto-tape-news">Actualités<span>Ce qui a changé ce mois-ci</span></a><a href="/fr/why-tape">Pourquoi la bande<span>Coût, air gap et durée de vie</span></a></div></div>
+<div class="price-dropdown"><a href="/fr/lto-tape-price-trend">Prix LTO</a><div class="price-dropdown-menu"><a href="/fr/lto-tape-price-trend">Toutes les générations<span>Prix de septembre 2026</span></a><a href="/fr/lto-tape-price-trend/lto6-price">Prix LTO-6<span>2,5 To natifs</span></a><a href="/fr/lto-tape-price-trend/lto7-price">Prix LTO-7<span>6 To natifs</span></a><a href="/fr/lto-tape-price-trend/lto8-price">Prix LTO-8<span>12 To natifs</span></a><a href="/fr/lto-tape-price-trend/lto9-price">Prix LTO-9<span>18 To natifs</span></a><a href="/fr/lto-tape-price-trend/lto10-price">Prix LTO-10<span>30 / 40 To natifs</span></a><a href="/fr/lto-tape-price-trend/history">Historique des prix<span>Relevés archivés depuis 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/fr/backup-calculator">Outils</a><div class="price-dropdown-menu"><a href="/fr/backup-calculator">Calculateur de sauvegarde<span>Estimation des supports et du coût</span></a><a href="/fr/backup-software-finder">Sélecteur de logiciels<span>Le logiciel adapté à votre usage de la bande</span></a><a href="/fr/best-tape-backup-software">Meilleurs logiciels de sauvegarde sur bande<span>Comparatif 2026</span></a></div></div>
+<a href="/fr/blog">Blog</a>
+<a href="/fr/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/fr/contact">Obtenir la grille tarifaire</a></div>
+</div></header>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Article d'analyse</p>
+<h1>Consommation et coût de la sauvegarde sur bande</h1>
+<p>Quelles options sur bande sont les plus sobres en énergie face au disque et au cloud ? Modèle à 500 To chiffré et hypothèses d'exploitation.</p>
+<div class="signal-row"><span class="signal-chip">Analyse</span> <span class="signal-chip">4 min de lecture</span> <span class="signal-chip">12 octobre 2026</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">En résumé</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">Accueil</a><span>/</span><a href="/fr/blog">Blog</a><span>/</span><span>Analyse</span></div>
+<header class="article-header">
+<div class="detail-meta"><span class="pill">Analyse</span> <span class="pill alt">4 min de lecture</span> <span class="pill alt">12 octobre 2026</span></div>
+<h2 class="detail-title">Consommation et coût de la sauvegarde sur bande</h2>
+<p class="lead">Quelles options sur bande sont les plus sobres en énergie face au disque et au cloud ? Modèle à 500 To chiffré et hypothèses d'exploitation.</p>
+</header>
+<section class="article-body"><p><strong>Un lecteur LTO autonome mis sous tension uniquement pendant l'écriture est la solution la plus économe en énergie pour conserver une archive : une cartouche sur étagère ne consomme rien. Dans notre modèle à 500 To, une baie de disques en ligne consomme environ 4 400 kWh par an, une petite bibliothèque sous tension permanente environ 800 kWh, et un lecteur autonome utilisé seulement pour écrire environ 16 kWh.</strong></p>
+<p>Les consommations d'énergie dépendent de votre matériel ; voici donc les hypothèses retenues. Remplacez-les par les valeurs de vos propres fiches techniques pour recalculer.</p>
+<h2>Comparatif énergétique des différentes options</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Option</th><th>Hypothèse</th><th>kWh par an</th></tr></thead><tbody><tr><td>Baie de disques, toujours sous tension</td><td>32 disques durs de 20 To (500 To avec parité et disques de secours) à environ 7 W chacun, plus 50 % pour la baie et les contrôleurs, plus 50 % pour le refroidissement</td><td>Environ 4 415</td></tr><tr><td>Bibliothèque de bandes, toujours sous tension</td><td>Environ 60 W au repos pour une petite bibliothèque avec son lecteur, plus 50 % pour le refroidissement, plus l'écriture ci-dessous</td><td>Environ 804</td></tr><tr><td>Lecteur de bandes autonome, sous tension uniquement pendant l'écriture</td><td>Une écriture intégrale de 500 To par an à 400 Mo/s (environ 347 heures) à environ 30 W, plus 50 % pour le refroidissement</td><td>Environ 16</td></tr><tr><td>Archivage cloud</td><td>L'énergie est comprise dans le tarif du fournisseur</td><td>Non facturé séparément</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Consommation annuelle modélisée pour une archive de 500 To sur disque, bibliothèque de bandes, lecteur autonome et archive cloud" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-kwh.svg" width="960"/><figcaption>Une baie de disques consomme en permanence ; la bande ne consomme que lorsqu'un lecteur ou une bibliothèque est sous tension.</figcaption></figure>
+<h2>Coût d'exploitation annuel</h2>
+<p>À 0,13 $ par kWh, proche de la moyenne commerciale américaine, la facture électrique est faible pour la bande et notable pour le disque. Pour l'archive cloud, la mensualité constitue le coût d'exploitation.</p>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Option, 500 To</th><th>Coût d'exploitation annuel</th><th>Ce qui l'explique</th></tr></thead><tbody><tr><td>Archivage cloud (Glacier Deep Archive)</td><td>Environ 5 532 $</td><td>Stockage facturé mensuellement ; restaurations facturées en supplément</td></tr><tr><td>Consommation d'une baie de disques</td><td>Environ 574 $</td><td>Disques, baies et climatisation alimentés toute l'année ; disques remplacés tous les quelques ans</td></tr><tr><td>Consommation d'une bibliothèque de bandes</td><td>Environ 105 $</td><td>Consommation au repos de la bibliothèque plus écriture</td></tr><tr><td>Consommation d'un lecteur de bandes autonome</td><td>Environ 2 $</td><td>Uniquement les heures consacrées à l'écriture</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Coût d'exploitation annuel pour 500 To : facture de stockage cloud, consommation de la baie de disques, consommation de la bibliothèque de bandes et du lecteur autonome" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-opcost.svg" width="960"/><figcaption>Pour une archive de 500 To, la facture cloud éclipse toute consommation électrique, et celle de la bande est proche de zéro dès que les cartouches quittent le lecteur.</figcaption></figure>
+<h2>Autres coûts d'exploitation à prévoir</h2>
+<p>L'électricité n'est qu'un aspect : les baies de disques imposent des remplacements tous les trois à sept ans. La bande réclame des cartouches de nettoyage, du stockage hors site, des lectures de vérification périodiques et une migration toutes les deux ou trois générations. Le cloud facture la récupération et l'egress à chaque lecture.</p>
+<p>Le comparatif complet sur cinq ans avec matériel figure dans le <a href="/fr/blog/tape-backup-5-year-total-cost-of-ownership">TCO sauvegarde sur bande sur 5 ans</a>, et le choix des lecteurs dans le <a href="/fr/why-tape/lto-tape-drive">guide d'achat lecteur LTO</a>.</p>
+<h2>Questions fréquentes</h2><h3>La bande consomme-t-elle de l'énergie lorsqu'elle est stockée ?</h3><p>Non. Une cartouche sur étagère ne consomme aucune électricité : seul le lecteur ou la bibliothèque en consomme, et uniquement lorsqu'il est allumé.</p><h3>Une bibliothèque de bandes vaut-elle sa consommation électrique supplémentaire ?</h3><p>En général oui si les tâches s'étendent sur plusieurs cartouches ou tournent sans surveillance. Une petite bibliothèque ajoute quelques dizaines de watts au repos, soit environ 100 $ par an dans notre modèle.</p><h3>Comment réduire encore la consommation de la bande ?</h3><p>Éteignez les lecteurs autonomes entre deux tâches, éjectez les cartouches sur étagère et regroupez les écritures volumineuses pour assurer un flux continu sans arrêts.</p><h3>Le stockage cloud est-il plus économe en énergie que la bande ?</h3><p>On ne peut pas la mesurer directement : l'énergie est comprise dans le prix du fournisseur et de son centre de données. Pour les données froides, une bande sur étagère consomme moins que tout système toujours actif.</p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "La bande consomme-t-elle de l'énergie lorsqu'elle est stockée ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Une cartouche sur étagère ne consomme aucune électricité : seul le lecteur ou la bibliothèque en consomme, et uniquement lorsqu'il est allumé."}}, {"@type": "Question", "name": "Une bibliothèque de bandes vaut-elle sa consommation électrique supplémentaire ?", "acceptedAnswer": {"@type": "Answer", "text": "En général oui si les tâches s'étendent sur plusieurs cartouches ou tournent sans surveillance. Une petite bibliothèque ajoute quelques dizaines de watts au repos, soit environ 100 $ par an dans notre modèle."}}, {"@type": "Question", "name": "Comment réduire encore la consommation de la bande ?", "acceptedAnswer": {"@type": "Answer", "text": "Éteignez les lecteurs autonomes entre deux tâches, éjectez les cartouches sur étagère et regroupez les écritures volumineuses pour assurer un flux continu sans arrêts."}}, {"@type": "Question", "name": "Le stockage cloud est-il plus économe en énergie que la bande ?", "acceptedAnswer": {"@type": "Answer", "text": "On ne peut pas la mesurer directement : l'énergie est comprise dans le prix du fournisseur et de son centre de données. Pour les données froides, une bande sur étagère consomme moins que tout système toujours actif."}}], "inLanguage": "fr"}</script></section>
+<a class="back-link" href="/fr/blog">Retour au blog</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>Signal de l'article</h2>
+<p>Discussion récente sur le stockage sur bande synthétisée en un article dédié sur TapeBackup.org avec métadonnées d'indexation et URL stable.</p>
+</section>
+<section class="sidebar-card">
+<h2>Besoin d'un plan LTO plus approfondi ?</h2>
+<p>Parcourez les ressources du site, comparez les approches de stockage ou contactez notre équipe pour évaluer l'intérêt de la bande dans vos sauvegardes.</p>
+<a class="cta" href="/fr/contact">Contacter TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Sur le même thème sur TapeBackup</h2><ul><li><a href="/fr/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">Le meilleur logiciel de sauvegarde LTO est d'ordinaire celui que vous testerez vraiment</a></li><li><a href="/fr/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again">La bande est morte, vraiment ? Alors pourquoi reconstruit-on discrètement des sauvegardes autour d'elle ?</a></li><li><a href="/fr/blog/tape-backup-software-integration-tradeoffs">Compromis d'intégration des logiciels de sauvegarde sur bande</a></li><li><a href="/fr/lto-tape-price-trend">Prix des bandes LTO, septembre 2026</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

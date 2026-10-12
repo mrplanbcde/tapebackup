@@ -41,7 +41,7 @@ def maxlen(row):
 def export(lang, parts, part, label=None):
     label = label or str(part)
     rows = seg_rows(lang)
-    rows.sort(key=lambda r: (min(i18n.SCOPE.index(p) for p in r["pages"]) if r["pages"] else 99, r["key"]))
+    rows.sort(key=lambda r: (min((i18n.SCOPE.index(p) for p in r["pages"] if p in i18n.SCOPE), default=99) if r["pages"] else 99, r["key"]))
     chunk = [r for i, r in enumerate(rows) if i % parts == part - 1]
     out = [{"id": f"{lang}{label}-{i}", "key": r["key"], "ctx": r["ctx"], "example": r["example"], "maxlen": maxlen(r)} for i, r in enumerate(chunk)]
     os.makedirs(BATCH_DIR, exist_ok=True)

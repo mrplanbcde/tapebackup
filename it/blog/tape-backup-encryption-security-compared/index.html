@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Crittografia e sicurezza del nastro | TapeBackup.org</title>
+<meta content="Quali sistemi nastro offrono la migliore sicurezza? AES-256 nelle unità LTO, gestione chiavi, WORM e air gap messi a confronto diretto." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/it/blog/tape-backup-encryption-security-compared" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Crittografia e sicurezza del nastro a confronto" property="og:title"/>
+<meta content="Quali sistemi nastro offrono la migliore sicurezza? AES-256 nelle unità LTO, gestione chiavi, WORM e air gap messi a confronto diretto." property="og:description"/>
+<meta content="https://tapebackup.org/it/blog/tape-backup-encryption-security-compared" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Crittografia e sicurezza del nastro a confronto" name="twitter:title"/>
+<meta content="Quali sistemi nastro offrono la migliore sicurezza? AES-256 nelle unità LTO, gestione chiavi, WORM e air gap messi a confronto diretto." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Crittografia e sicurezza del nastro a confronto", "description": "Quali sistemi nastro offrono la migliore sicurezza? AES-256 nelle unità LTO, gestione chiavi, WORM e air gap messi a confronto diretto.", "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "https://tapebackup.org/it/blog/tape-backup-encryption-security-compared", "url": "https://tapebackup.org/it/blog/tape-backup-encryption-security-compared", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "logo": {"@type": "ImageObject", "url": "https://tapebackup.org/favicon.png"}}, "articleSection": "Security"}</script>
+<meta content="it_IT" property="og:locale"/><link href="https://tapebackup.org/blog/tape-backup-encryption-security-compared" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/tape-backup-encryption-security-compared" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/tape-backup-encryption-security-compared" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/tape-backup-encryption-security-compared" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/tape-backup-encryption-security-compared" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/tape-backup-encryption-security-compared" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/tape-backup-encryption-security-compared" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/tape-backup-encryption-security-compared" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/it/tape-q-and-a">Domande e risposte</a><span class="sep"></span><a href="/it/lto-tape-price-trend">Prezzi LTO</a><span class="sep"></span><a href="/it/contact">Contatti</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog/tape-backup-encryption-security-compared" hreflang="en" lang="en">EN</a><a href="/de/blog/tape-backup-encryption-security-compared" hreflang="de" lang="de">DE</a><a href="/fr/blog/tape-backup-encryption-security-compared" hreflang="fr" lang="fr">FR</a><a aria-current="page" class="on" href="/it/blog/tape-backup-encryption-security-compared" hreflang="it" lang="it">IT</a><a href="/es/blog/tape-backup-encryption-security-compared" hreflang="es" lang="es">ES</a><a href="/nl/blog/tape-backup-encryption-security-compared" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/tape-backup-encryption-security-compared" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Home page di TapeBackup.org" class="brand" href="/it"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Principale" class="topnav">
+<div class="price-dropdown"><a href="/it/lto-tape">Nastro LTO</a><div class="price-dropdown-menu"><a href="/it/lto-tape">Che cos'è il nastro LTO<span>Il formato in una pagina</span></a><a href="/it/lto-tape-capacity">Tabella delle capacità<span>Da LTO-1 a LTO-14</span></a><a href="/it/why-tape/lto-tape-drive">Guida all'acquisto delle unità<span>Quale unità comprare</span></a><a href="/it/lto-tape-library">Librerie<span>Autoloader e librerie</span></a><a href="/it/why-tape/lto-tape-lifespan">Durata<span>Quanto durano i nastri</span></a><a href="/it/resources/ltfs">LTFS<span>Il nastro come file system</span></a><a href="/it/resources/lto-tape-data-recovery">Recupero dati<span>Leggere vecchi nastri</span></a><a href="/it/lto-tape-news">Notizie<span>Cosa è cambiato questo mese</span></a><a href="/it/why-tape">Perché il nastro<span>Costi, air gap e durata</span></a></div></div>
+<div class="price-dropdown"><a href="/it/lto-tape-price-trend">Prezzi LTO</a><div class="price-dropdown-menu"><a href="/it/lto-tape-price-trend">Tutte le generazioni<span>Prezzi di settembre 2026</span></a><a href="/it/lto-tape-price-trend/lto6-price">Prezzo LTO-6<span>2,5 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto7-price">Prezzo LTO-7<span>6 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto8-price">Prezzo LTO-8<span>12 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto9-price">Prezzo LTO-9<span>18 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto10-price">Prezzo LTO-10<span>30 / 40 TB nativi</span></a><a href="/it/lto-tape-price-trend/history">Storico dei prezzi<span>Rilevazioni archiviate dal 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/it/backup-calculator">Strumenti</a><div class="price-dropdown-menu"><a href="/it/backup-calculator">Calcolatore di backup<span>Stima di supporti e costi</span></a><a href="/it/backup-software-finder">Ricerca software<span>Il software adatto al vostro uso del nastro</span></a><a href="/it/best-tape-backup-software">Migliori software di backup su nastro<span>Confronto 2026</span></a></div></div>
+<a href="/it/blog">Blog</a>
+<a href="/it/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/it/contact">Richiedi il listino</a></div>
+</div></header>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Articolo sulla sicurezza</p>
+<h1>Crittografia e sicurezza del nastro a confronto</h1>
+<p>Quali sistemi nastro offrono la migliore sicurezza? AES-256 nelle unità LTO, gestione chiavi, WORM e air gap messi a confronto diretto.</p>
+<div class="signal-row"><span class="signal-chip">Sicurezza</span> <span class="signal-chip">Lettura di 4 min</span> <span class="signal-chip">12 ottobre 2026</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">In breve</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/it/blog">Blog</a><span>/</span><span>Sicurezza</span></div>
+<header class="article-header">
+<div class="detail-meta"><span class="pill">Sicurezza</span> <span class="pill alt">Lettura di 4 min</span> <span class="pill alt">12 ottobre 2026</span></div>
+<h2 class="detail-title">Crittografia e sicurezza del nastro a confronto</h2>
+<p class="lead">Quali sistemi nastro offrono la migliore sicurezza? AES-256 nelle unità LTO, gestione chiavi, WORM e air gap messi a confronto diretto.</p>
+</header>
+<section class="article-body"><p><strong>Ogni unità LTO da LTO-4 in poi esegue la crittografia hardware con AES-256, indipendentemente dal marchio frontale: l'unità non è ciò che distingue un sistema dall'altro. La differenza sta nella gestione delle chiavi: dal software di backup, dalla libreria tramite un gestore esterno o dal driver dell'host. Con cartucce WORM e una copia offline dopo l'espulsione, il nastro affronta minacce che mettono in difficoltà disco e cloud.</strong></p>
+<h2>Cosa include ogni unità LTO attuale</h2>
+<p>Crittografia, supporti non riscrivibili e filesystem LTFS sono arrivati in generazioni diverse e fanno parte dello standard LTO: funzionano identicamente su unità HPE, IBM, Quantum e Dell della stessa generazione.</p>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Caratteristica</th><th>A partire da</th><th>Da cosa protegge</th></tr></thead><tbody><tr><td>Cartucce WORM</td><td>LTO-3</td><td>Sovrascrittura o cancellazione dei dati, anche da parte di ransomware o minacce interne</td></tr><tr><td>Crittografia hardware AES-256</td><td>LTO-4</td><td>Lettura di una cartuccia smarrita o rubata</td></tr><tr><td>Partizioni LTFS</td><td>LTO-5</td><td>Vincolo: il nastro resta leggibile senza il software di backup originale</td></tr><tr><td>Offline dopo l'espulsione</td><td>Tutte le generazioni</td><td>Tutto ciò che transita sulla rete</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Funzionalità di sicurezza per generazione LTO: WORM da LTO-3, crittografia AES-256 da LTO-4, partizioni LTFS da LTO-5" decoding="async" height="450" loading="lazy" src="/assets/figures/blog-sec-features-by-gen.svg" width="960"/><figcaption>Qualsiasi unità LTO-5 o più recente supporta tutti e tre i metodi. L'unità comprime i dati prima di cifrarli, quindi la crittografia non riduce la capacità.</figcaption></figure>
+<h2>I tre metodi di gestione delle chiavi a confronto</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Metodo</th><th>Dove risiede la chiave</th><th>Ideale per</th><th>Attenzione a</th></tr></thead><tbody><tr><td>Gestito dall'applicazione</td><td>Il database del software di backup</td><td>Un unico software di backup, configurazioni semplici</td><td>Le chiavi sono vincolate a tale software. Eseguite il backup del relativo archivio chiavi: un database perso rende i nastri illeggibili</td></tr><tr><td>Gestito dalla libreria</td><td>Un gestore esterno di chiavi raggiunto dalla libreria tramite KMIP</td><td>Più applicazioni che condividono una libreria, audit e conformità</td><td>Richiede un gestore di chiavi sempre raggiungibile; su alcuni modelli di libreria è una funzione con licenza</td></tr><tr><td>Gestito dal sistema</td><td>Un gestore di chiavi raggiunto dal driver dell'unità a nastro dell'host</td><td>Ambienti IBM</td><td>Limitato per lo più a driver e piattaforme IBM</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Chiavi di crittografia gestite dall'applicazione, dalla libreria e dal sistema, che terminano ciascuna su un'unità LTO con AES-256" decoding="async" height="460" loading="lazy" src="/assets/figures/blog-sec-key-models.svg" width="960"/><figcaption>L'unità cifra allo stesso modo in tutti e tre i casi. La scelta risiede in chi detiene la chiave: il software di backup, un gestore di chiavi tramite la libreria o il driver dell'host.</figcaption></figure>
+<p>Qualunque metodo si scelga, la regola è la stessa: una cartuccia cifrata senza la sua chiave non può essere letta da nessuno. Conservate le chiavi in almeno due luoghi distinti, separati dai nastri.</p>
+<h2>Sicurezza di nastro, disco e cloud a confronto</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th></th><th>Nastro LTO</th><th>Backup su disco</th><th>Object storage su cloud</th></tr></thead><tbody><tr><td>Copia offline</td><td>Sì, una volta espulso</td><td>No, sempre online</td><td>No, accessibile con credenziali</td></tr><tr><td>Immutabilità</td><td>Cartucce WORM</td><td>Snapshot immutabili o repository protetti, a seconda del prodotto</td><td>Object Lock in modalità compliance</td></tr><tr><td>Crittografia a riposo</td><td>AES-256 nell'unità</td><td>Dipende dall'array o dal software</td><td>Attiva per impostazione predefinita presso i principali provider</td></tr><tr><td>Raggiungibile da ransomware</td><td>Solo quando montato</td><td>Sì, attraverso la rete</td><td>Tramite credenziali o chiavi API sottratte</td></tr></tbody></table></div>
+<p>Le soluzioni più robuste le combinano: backup recenti su disco per la velocità e una copia cifrata su nastro che lascia l'edificio. Consultate <a href="/it/blog/offsite-tape-backups-still-beat-most-good-enough-plans">perché il nastro offsite è ancora vincente</a> e il nostro <a href="/it/comparisons">confronto tra nastro, disco e cloud</a>.</p>
+<h2>Domande frequenti</h2><h3>La crittografia su nastro riduce capacità o velocità?</h3><p>Non in modo percettibile. L'unità comprime prima i dati e poi li cifra a livello hardware, quindi la capacità nativa e quella compressa rimangono invariate.</p><h3>Quali generazioni LTO supportano la crittografia hardware?</h3><p>LTO-4 e ogni generazione successiva, comprese LTO-9 e LTO-10, con AES-256.</p><h3>WORM equivale alla crittografia?</h3><p>No. WORM impedisce la modifica o la cancellazione dei dati; la crittografia ne impedisce la lettura senza la chiave. Per la protezione da ransomware si consigliano solitamente entrambe le soluzioni.</p><h3>Cosa succede se perdo la chiave di crittografia?</h3><p>I dati su quella cartuccia non possono essere recuperati. Conservate le chiavi in un gestore di chiavi o nell'archivio chiavi protetto del vostro software di backup, con una copia tenuta separata dai nastri.</p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "La crittografia su nastro riduce capacità o velocità?", "acceptedAnswer": {"@type": "Answer", "text": "Non in modo percettibile. L'unità comprime prima i dati e poi li cifra a livello hardware, quindi la capacità nativa e quella compressa rimangono invariate."}}, {"@type": "Question", "name": "Quali generazioni LTO supportano la crittografia hardware?", "acceptedAnswer": {"@type": "Answer", "text": "LTO-4 e ogni generazione successiva, comprese LTO-9 e LTO-10, con AES-256."}}, {"@type": "Question", "name": "WORM equivale alla crittografia?", "acceptedAnswer": {"@type": "Answer", "text": "No. WORM impedisce la modifica o la cancellazione dei dati; la crittografia ne impedisce la lettura senza la chiave. Per la protezione da ransomware si consigliano solitamente entrambe le soluzioni."}}, {"@type": "Question", "name": "Cosa succede se perdo la chiave di crittografia?", "acceptedAnswer": {"@type": "Answer", "text": "I dati su quella cartuccia non possono essere recuperati. Conservate le chiavi in un gestore di chiavi o nell'archivio chiavi protetto del vostro software di backup, con una copia tenuta separata dai nastri."}}], "inLanguage": "it"}</script></section>
+<a class="back-link" href="/it/blog">Torna al Blog</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>Segnale dell'articolo</h2>
+<p>Recente discussione sullo storage su nastro riassunta in un articolo autonomo di TapeBackup.org con metadati di indicizzazione e URL canonico.</p>
+</section>
+<section class="sidebar-card">
+<h2>Serve un piano LTO più approfondito?</h2>
+<p>Esplorate le risorse del sito, confrontate gli approcci di archiviazione o contattate il team per valutare l'uso del nastro nel vostro backup.</p>
+<a class="cta" href="/it/contact">Contatta TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Contenuti correlati su TapeBackup</h2><ul><li><a href="/it/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying">L'unità LTO-8 usata non è guasta finché il percorso SAS non smette di mentire</a></li><li><a href="/it/blog/which-lto-drive-should-you-buy-without-regretting-it-later">Quale unità LTO acquistare senza rimpianti?</a></li><li><a href="/it/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them">Le librerie LTO usate sono il caos: esattamente il motivo per cui si continuano a comprare</a></li><li><a href="/it/lto-tape-price-trend">Prezzi nastri LTO, settembre 2026</a></li><li><a href="/it/why-tape">Perché usare lo storage su nastro</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

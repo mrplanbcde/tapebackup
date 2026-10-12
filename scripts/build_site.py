@@ -438,6 +438,12 @@ def build_languages():
             jsvideo.add_clips(stage)
         finally:
             site_shell.set_out_root(ROOT)
+        for path in i18n.SCOPE_STATIC:
+            src = rel("index.html" if path == "/" else path.lstrip("/") + "/index.html")
+            dst = os.path.join(stage, "index.html" if path == "/" else path.lstrip("/") + "/index.html")
+            if os.path.exists(src):
+                os.makedirs(os.path.dirname(dst), exist_ok=True)
+                shutil.copy2(src, dst)
         shutil.rmtree(os.path.join(ROOT, lang), ignore_errors=True)
         written, total, missing = i18n.render_language(lang, langs)
         built.append(lang)

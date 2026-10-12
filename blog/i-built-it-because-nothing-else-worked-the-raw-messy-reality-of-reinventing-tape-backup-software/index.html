@@ -1,33 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tape Backup Software: Why I Built My Own | TapeBackup</title>
-    <meta name="description" content="The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build." />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Tape Backup Software: Why I Built My Own | TapeBackup" />
-    <meta property="og:description" content="The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build." />
-    <meta property="og:url" content="https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" />
-    <meta property="og:image" content="https://tapebackup.org/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tape Backup Software: Why I Built My Own | TapeBackup" />
-    <meta name="twitter:description" content="The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build." />
-    <meta name="twitter:image" content="https://tapebackup.org/og-image.png" />
-    <meta name="theme-color" content="#183976" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/blog-header.css" />
-    <link rel="stylesheet" href="/blog-static.css" />
-    <script defer src="/assets/outbound-links.js"></script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"\u201cI Built It Because Nothing Else Worked\u201d: The Raw, Messy Reality of Reinventing Tape Backup Software","description":"There\u2019s a specific kind of frustration that doesn\u2019t fade\u2014it compounds. That\u2019s where this story begins. Not with ambition, not with a grand open-source vision, but...","datePublished":"2026-03-30","dateModified":"2026-03-30","mainEntityOfPage":"https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software","url":"https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software","author":{"@type":"Organization","name":"TapeBackup.org"},"publisher":{"@type":"Organization","name":"TapeBackup.org","logo":{"@type":"ImageObject","url":"https://tapebackup.org/favicon.png"}},"articleSection":"Technology"}</script>
-  </head>
-  <body>
-    <div class="site-shell">
-      <div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Tape Q&amp;A</a><span class="sep"></span><a href="/lto-tape-price-trend">LTO Prices</a><span class="sep"></span><a href="/contact">Contact Us</a></div></div>
-<header class="site-header"><div class="wrap"><a class="brand" href="/" aria-label="TapeBackup.org home"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3" stroke="#fff" stroke-width="1.8"/><circle cx="8" cy="12" r="2.2" fill="#fff"/><circle cx="16" cy="12" r="2.2" fill="#fff"/><line x1="10.2" y1="12" x2="13.8" y2="12" stroke="#fff" stroke-width="1.4"/></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
-<nav class="topnav" aria-label="Primary">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tape Backup Software: Why I Built My Own | TapeBackup</title>
+<meta content="The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Tape Backup Software: Why I Built My Own | TapeBackup" property="og:title"/>
+<meta content="The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build." property="og:description"/>
+<meta content="https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Tape Backup Software: Why I Built My Own | TapeBackup" name="twitter:title"/>
+<meta content="The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"\u201cI Built It Because Nothing Else Worked\u201d: The Raw, Messy Reality of Reinventing Tape Backup Software","description":"There\u2019s a specific kind of frustration that doesn\u2019t fade\u2014it compounds. That\u2019s where this story begins. Not with ambition, not with a grand open-source vision, but...","datePublished":"2026-03-30","dateModified":"2026-03-30","mainEntityOfPage":"https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software","url":"https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software","author":{"@type":"Organization","name":"TapeBackup.org"},"publisher":{"@type":"Organization","name":"TapeBackup.org","logo":{"@type":"ImageObject","url":"https://tapebackup.org/favicon.png"}},"articleSection":"Technology"}</script>
+<meta content="en_US" property="og:locale"/><link href="https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Tape Q&amp;A</a><span class="sep"></span><a href="/lto-tape-price-trend">LTO Prices</a><span class="sep"></span><a href="/contact">Contact Us</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a aria-current="page" class="on" href="/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="en" lang="en">EN</a><a href="/de/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="de" lang="de">DE</a><a href="/fr/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="fr" lang="fr">FR</a><a href="/it/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="it" lang="it">IT</a><a href="/es/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="es" lang="es">ES</a><a href="/nl/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org home" class="brand" href="/"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Primary" class="topnav">
 <div class="price-dropdown"><a href="/lto-tape">LTO Tape</a><div class="price-dropdown-menu"><a href="/lto-tape">What is LTO tape<span>The format in one page</span></a><a href="/lto-tape-capacity">Capacity chart<span>LTO-1 to LTO-14</span></a><a href="/why-tape/lto-tape-drive">Drive buying guide<span>Which drive to buy</span></a><a href="/lto-tape-library">Libraries<span>Autoloaders and libraries</span></a><a href="/why-tape/lto-tape-lifespan">Lifespan<span>How long tapes last</span></a><a href="/resources/ltfs">LTFS<span>Tape as a file system</span></a><a href="/resources/lto-tape-data-recovery">Data recovery<span>Reading old tapes</span></a><a href="/lto-tape-news">News<span>What changed this month</span></a><a href="/why-tape">Why tape<span>Cost, air gap and lifespan</span></a></div></div>
 <div class="price-dropdown"><a href="/lto-tape-price-trend">LTO Prices</a><div class="price-dropdown-menu"><a href="/lto-tape-price-trend">All generations<span>September 2026 prices</span></a><a href="/lto-tape-price-trend/lto6-price">LTO-6 Price<span>2.5 TB native</span></a><a href="/lto-tape-price-trend/lto7-price">LTO-7 Price<span>6 TB native</span></a><a href="/lto-tape-price-trend/lto8-price">LTO-8 Price<span>12 TB native</span></a><a href="/lto-tape-price-trend/lto9-price">LTO-9 Price<span>18 TB native</span></a><a href="/lto-tape-price-trend/lto10-price">LTO-10 Price<span>30 / 40 TB native</span></a><a href="/lto-tape-price-trend/history">Price history<span>Archived snapshots since 2025</span></a></div></div>
 <div class="price-dropdown"><a href="/backup-calculator">Tools</a><div class="price-dropdown-menu"><a href="/backup-calculator">Backup calculator<span>Media and cost estimate</span></a><a href="/backup-software-finder">Software finder<span>Match software to your tape use</span></a><a href="/best-tape-backup-software">Best tape backup software<span>2026 comparison</span></a></div></div>
@@ -36,58 +37,58 @@
 </nav>
 <div class="header-right"><a class="btn btn-primary btn-sm" href="/contact">Get Pricebook</a></div>
 </div></header>
-
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Technology article</p>
-            <h1>“I Built It Because Nothing Else Worked”: The Raw, Messy Reality of Reinventing Tape Backup Software</h1>
-            <p>There’s a specific kind of frustration that doesn’t fade—it compounds. That’s where this story begins. Not with ambition, not with a grand open-source vision, but...</p>
-            <div class="signal-row">
-              <span class="signal-chip">Technology</span>
-              <span class="signal-chip">4 min read</span>
-              <span class="signal-chip">March 30, 2026</span>
-            </div>
-          </div>
-          <aside class="hero-panel">
-            <p class="panel-label">In short</p>
-            <p class="panel-copy">The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build.</p>
-          </aside>
-        </div>
-      </section>
-
-      <main class="page">
-        <div class="container article-layout">
-          <article class="article-card">
-            <div class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/blog">Blog</a><span>/</span><span>Technology</span></div>
-            <header class="article-header">
-              <div class="detail-meta">
-                <span class="pill">Technology</span>
-                <span class="pill alt">4 min read</span>
-                <span class="pill alt">March 30, 2026</span>
-              </div>
-              <h2 class="detail-title">“I Built It Because Nothing Else Worked”: The Raw, Messy Reality of Reinventing Tape Backup Software</h2>
-              <p class="lead">There’s a specific kind of frustration that doesn’t fade—it compounds. That’s where this story begins. Not with ambition, not with a grand open-source vision, but...</p>
-            </header>
-            <section class="article-body"><h2>The Breaking Point That Sparks a Build</h2><p>There’s a specific kind of frustration that doesn’t fade—it compounds. That’s where this story begins. Not with ambition, not with a grand open-source vision, but with someone simply trying to archive data to tape and realizing the tools just weren’t cutting it. Enterprise software felt bloated and overpriced. Simpler tools felt half-baked or confusing. After days of trial and error, the conclusion was blunt: if nothing works the way it should, build your own .</p><figure class="page-figure"><img src="/assets/figures/blog-built-it.svg" alt="A crossed-out heavy software stack on one side and a terminal feeding a self-describing cartridge on the other." width="960" height="400" loading="lazy" decoding="async"><figcaption>When the available tools felt bloated or half-baked, the answer was to write a small one whose tapes describe themselves.</figcaption></figure><p>That’s how FossilSafe came to life. Not as a polished product, but as a reaction. A tool built out of necessity, shaped by frustration, and aimed squarely at people who don’t have enterprise budgets but still care about long-term storage.</p><h2>The Promise: Simplicity in a Complicated Space</h2><p>On paper, the idea feels almost obvious. Tape storage is still one of the cheapest and most durable ways to archive large datasets. But the software ecosystem around it? That’s where things get messy.</p><p>FossilSafe tries to cut through that. It focuses on making tapes self-describing, meaning you don’t need some fragile central database to recover your files. It supports common sources like SMB, NFS, and S3, and it gives you both a web UI and CLI. The pitch is simple: your data should remain readable even if your entire system disappears.</p><p>You can check out the project here: [https://github.com/NotARaptor/FOSSILSAFE](https://github.com/NotARaptor/FOSSILSAFE)</p><p>That idea resonates with a lot of people. One voice puts it simply: “At least there’s a clear mission and transparency. That’s already more than some tools give you.” It’s not about perfection—it’s about control.</p><h2>The Skepticism Hits Hard—and Fast</h2><p>But if there’s one thing the storage community doesn’t do, it’s blind trust. Especially not with backups.</p><p>Almost immediately, doubts start creeping in. One commenter doesn’t hold back: “I’m not using vibe-coded software to manage my backups.” That line sticks because it captures a deeper concern—trust. Backups aren’t where you experiment. They’re where you expect absolute reliability.</p><p>Another user looks at the commit history and raises an eyebrow. A massive initial commit, minimal visible iteration. “Sure, maybe it was developed privately,” they say, “but it doesn’t inspire confidence.” It’s not necessarily a dealbreaker, but it’s enough to make people hesitate.</p><p>And then there’s the blunt skepticism: “lol no you didn’t. Quit lying.” It’s harsh, maybe unfair, but it reflects how cautious people are when something new shows up in a space where failure isn’t an option.</p><h2>The Open-Source Divide: Trust vs Transparency</h2><p>What makes this situation interesting is how divided the reactions are. For every skeptic, there’s someone pushing back.</p><p>“I don’t get the negativity,” one commenter argues. “It’s open source. No one’s forcing you to use it.” That’s the other side of the equation—transparency. You can inspect the code, understand how it works, and decide for yourself.</p><p>But even that doesn’t fully settle the debate. Open source doesn’t automatically mean safe. Especially when the stakes are high. One user admits they’re hesitant simply because the developer leaned on AI for parts of the frontend. Not because it’s wrong, but because it introduces uncertainty.</p><p>It’s a strange tension. People want innovation, but they also want decades of proven reliability. And those two things rarely show up at the same time.</p><h2>LTFS, Legacy Tools, and the Long-Term Question</h2><p>Beyond trust, there’s a deeper technical debate happening under the surface. FossilSafe relies on LTFS, which is convenient—but not universally loved.</p><p>Some users flat-out reject it. “LTFS is a no-go for me,” one says, pointing out concerns around long-term viability. Another brings up a compelling comparison: tar archives from the 1980s still work today. That kind of longevity is hard to ignore.</p><p>There’s also the issue of flexibility. “Why limit yourself to one type of system?” someone asks, noting that many existing backup tools already support tape indirectly. From their perspective, FossilSafe might be solving a problem that already has solutions—just not perfect ones.</p><p>And then there are the edge cases. Tape capacity inconsistencies, metadata issues when pulling from network sources, the quirks of different LTO generations. These aren’t small details—they’re the kinds of things that make or break a real-world setup.</p><h2>The Real Story: It’s Not About the Tool</h2><p>What makes this story stick isn’t just the software—it’s what it represents. Someone hit a wall, decided not to accept it, and built something instead. That alone earns respect, even from critics.</p><p>But it also exposes a bigger truth about this space. Tape storage isn’t just about hardware. It’s about trust, workflows, and the quiet assumption that your data will still be there years from now. That’s a high bar, and new tools have to climb it carefully.</p><p>Some people will take the risk. They’ll test, experiment, maybe even contribute. Others will stick with what’s proven, even if it’s clunky or outdated. And honestly, both approaches make sense.</p><p>Because when it comes to backups, you’re not just choosing software. You’re choosing how much uncertainty you’re willing to live with.</p></section>
-            <a class="back-link" href="/blog">Back to Blog</a>
-          </article>
-
-          <aside class="sidebar">
-            <section class="sidebar-card">
-              <h2>Article signal</h2>
-              <p>Recent tape-storage discussion distilled into a standalone TapeBackup.org article page with direct indexing metadata and a stable canonical URL.</p>
-            </section>
-            <section class="sidebar-card">
-              <h2>Need a deeper LTO plan?</h2>
-              <p>Browse the site resources, compare storage approaches, or contact the team for help deciding when tape belongs in your backup workflow.</p>
-              <a class="cta" href="/contact">Talk to TapeBackup</a>
-            </section>
-          </aside>
-        </div>
-      <!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul><li><a href="/blog/tape-backup-software-integration-tradeoffs">Tape Backup Software Integration Tradeoffs</a></li><li><a href="/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">The Best LTO Backup Software Is Usually the One You Will Actually Test</a></li><li><a href="/blog/scriptable-linux-tape-backups-still-have-a-process-problem">Scriptable Linux Tape Backups Still Have a Process Problem</a></li><li><a href="/best-tape-backup-software">Best tape backup software in 2026</a></li></ul></section><!-- related:end -->
-      </main>
-    </div>
-  <script src="/chat-widget.js" defer></script>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Technology article</p>
+<h1>“I Built It Because Nothing Else Worked”: The Raw, Messy Reality of Reinventing Tape Backup Software</h1>
+<p>There’s a specific kind of frustration that doesn’t fade—it compounds. That’s where this story begins. Not with ambition, not with a grand open-source vision, but...</p>
+<div class="signal-row">
+<span class="signal-chip">Technology</span>
+<span class="signal-chip">4 min read</span>
+<span class="signal-chip">March 30, 2026</span>
+</div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">In short</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/blog">Blog</a><span>/</span><span>Technology</span></div>
+<header class="article-header">
+<div class="detail-meta">
+<span class="pill">Technology</span>
+<span class="pill alt">4 min read</span>
+<span class="pill alt">March 30, 2026</span>
+</div>
+<h2 class="detail-title">“I Built It Because Nothing Else Worked”: The Raw, Messy Reality of Reinventing Tape Backup Software</h2>
+<p class="lead">There’s a specific kind of frustration that doesn’t fade—it compounds. That’s where this story begins. Not with ambition, not with a grand open-source vision, but...</p>
+</header>
+<section class="article-body"><h2>The Breaking Point That Sparks a Build</h2><p>There’s a specific kind of frustration that doesn’t fade—it compounds. That’s where this story begins. Not with ambition, not with a grand open-source vision, but with someone simply trying to archive data to tape and realizing the tools just weren’t cutting it. Enterprise software felt bloated and overpriced. Simpler tools felt half-baked or confusing. After days of trial and error, the conclusion was blunt: if nothing works the way it should, build your own .</p><figure class="page-figure"><img alt="A crossed-out heavy software stack on one side and a terminal feeding a self-describing cartridge on the other." decoding="async" height="400" loading="lazy" src="/assets/figures/blog-built-it.svg" width="960"/><figcaption>When the available tools felt bloated or half-baked, the answer was to write a small one whose tapes describe themselves.</figcaption></figure><p>That’s how FossilSafe came to life. Not as a polished product, but as a reaction. A tool built out of necessity, shaped by frustration, and aimed squarely at people who don’t have enterprise budgets but still care about long-term storage.</p><h2>The Promise: Simplicity in a Complicated Space</h2><p>On paper, the idea feels almost obvious. Tape storage is still one of the cheapest and most durable ways to archive large datasets. But the software ecosystem around it? That’s where things get messy.</p><p>FossilSafe tries to cut through that. It focuses on making tapes self-describing, meaning you don’t need some fragile central database to recover your files. It supports common sources like SMB, NFS, and S3, and it gives you both a web UI and CLI. The pitch is simple: your data should remain readable even if your entire system disappears.</p><p>You can check out the project here: [https://github.com/NotARaptor/FOSSILSAFE](https://github.com/NotARaptor/FOSSILSAFE)</p><p>That idea resonates with a lot of people. One voice puts it simply: “At least there’s a clear mission and transparency. That’s already more than some tools give you.” It’s not about perfection—it’s about control.</p><h2>The Skepticism Hits Hard—and Fast</h2><p>But if there’s one thing the storage community doesn’t do, it’s blind trust. Especially not with backups.</p><p>Almost immediately, doubts start creeping in. One commenter doesn’t hold back: “I’m not using vibe-coded software to manage my backups.” That line sticks because it captures a deeper concern—trust. Backups aren’t where you experiment. They’re where you expect absolute reliability.</p><p>Another user looks at the commit history and raises an eyebrow. A massive initial commit, minimal visible iteration. “Sure, maybe it was developed privately,” they say, “but it doesn’t inspire confidence.” It’s not necessarily a dealbreaker, but it’s enough to make people hesitate.</p><p>And then there’s the blunt skepticism: “lol no you didn’t. Quit lying.” It’s harsh, maybe unfair, but it reflects how cautious people are when something new shows up in a space where failure isn’t an option.</p><h2>The Open-Source Divide: Trust vs Transparency</h2><p>What makes this situation interesting is how divided the reactions are. For every skeptic, there’s someone pushing back.</p><p>“I don’t get the negativity,” one commenter argues. “It’s open source. No one’s forcing you to use it.” That’s the other side of the equation—transparency. You can inspect the code, understand how it works, and decide for yourself.</p><p>But even that doesn’t fully settle the debate. Open source doesn’t automatically mean safe. Especially when the stakes are high. One user admits they’re hesitant simply because the developer leaned on AI for parts of the frontend. Not because it’s wrong, but because it introduces uncertainty.</p><p>It’s a strange tension. People want innovation, but they also want decades of proven reliability. And those two things rarely show up at the same time.</p><h2>LTFS, Legacy Tools, and the Long-Term Question</h2><p>Beyond trust, there’s a deeper technical debate happening under the surface. FossilSafe relies on LTFS, which is convenient—but not universally loved.</p><p>Some users flat-out reject it. “LTFS is a no-go for me,” one says, pointing out concerns around long-term viability. Another brings up a compelling comparison: tar archives from the 1980s still work today. That kind of longevity is hard to ignore.</p><p>There’s also the issue of flexibility. “Why limit yourself to one type of system?” someone asks, noting that many existing backup tools already support tape indirectly. From their perspective, FossilSafe might be solving a problem that already has solutions—just not perfect ones.</p><p>And then there are the edge cases. Tape capacity inconsistencies, metadata issues when pulling from network sources, the quirks of different LTO generations. These aren’t small details—they’re the kinds of things that make or break a real-world setup.</p><h2>The Real Story: It’s Not About the Tool</h2><p>What makes this story stick isn’t just the software—it’s what it represents. Someone hit a wall, decided not to accept it, and built something instead. That alone earns respect, even from critics.</p><p>But it also exposes a bigger truth about this space. Tape storage isn’t just about hardware. It’s about trust, workflows, and the quiet assumption that your data will still be there years from now. That’s a high bar, and new tools have to climb it carefully.</p><p>Some people will take the risk. They’ll test, experiment, maybe even contribute. Others will stick with what’s proven, even if it’s clunky or outdated. And honestly, both approaches make sense.</p><p>Because when it comes to backups, you’re not just choosing software. You’re choosing how much uncertainty you’re willing to live with.</p></section>
+<a class="back-link" href="/blog">Back to Blog</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>Article signal</h2>
+<p>Recent tape-storage discussion distilled into a standalone TapeBackup.org article page with direct indexing metadata and a stable canonical URL.</p>
+</section>
+<section class="sidebar-card">
+<h2>Need a deeper LTO plan?</h2>
+<p>Browse the site resources, compare storage approaches, or contact the team for help deciding when tape belongs in your backup workflow.</p>
+<a class="cta" href="/contact">Talk to TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul><li><a href="/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">The Best LTO Backup Software Is Usually the One You Will Actually Test</a></li><li><a href="/blog/tape-backup-software-integration-tradeoffs">Tape Backup Software Integration Tradeoffs</a></li><li><a href="/blog/the-day-my-tape-drive-went-rogue-inside-the-frustrating-reality-of-lto-6-failures">The Day My Tape Drive Went Rogue: Inside the Frustrating Reality of LTO-6 Failures</a></li><li><a href="/best-tape-backup-software">Best tape backup software in 2026</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
 </body>
 </html>

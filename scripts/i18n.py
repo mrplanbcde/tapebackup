@@ -24,6 +24,7 @@ data/i18n/languages.json marks it "indexable": true.
 """
 
 import copy
+import glob
 import html
 import json
 import os
@@ -48,8 +49,7 @@ LANG_META = {
 }
 LANGS = ["de", "fr", "it", "es", "nl", "pl"]
 
-# Pages that exist in every language. Everything else (blog, Q&A, archives) stays English.
-SCOPE = [
+SCOPE_CORE = [
     "/", "/lto-tape-price-trend", "/lto-tape-price-trend/lto6-price", "/lto-tape-price-trend/lto7-price",
     "/lto-tape-price-trend/lto8-price", "/lto-tape-price-trend/lto9-price", "/lto-tape-price-trend/lto10-price",
     "/lto-tape-price-trend/history", "/comparisons/tape-vs-cloud-5-year-cost", "/backup-calculator",
@@ -58,6 +58,32 @@ SCOPE = [
     "/resources/tape-storage-market", "/best-tape-backup-software", "/resources/tape-backup-software/catalogicdpx",
     "/lto-tape", "/lto-tape-capacity", "/lto-tape-library", "/lto-tape-news", "/resources/ltfs", "/resources/lto-tape-data-recovery", "/why-tape/lto-tape-lifespan", "/resources/lto-cleaning-tapes-and-labels",
 ]
+
+
+def load_static_scope():
+    paths = []
+    if os.path.exists(os.path.join(ROOT, "blog", "index.html")):
+        paths.append("/blog")
+    for f in sorted(glob.glob(os.path.join(ROOT, "blog", "*", "index.html"))):
+        paths.append("/blog/" + f.split(os.sep)[-2])
+    if os.path.exists(os.path.join(ROOT, "tape-q-and-a", "index.html")):
+        paths.append("/tape-q-and-a")
+    noindex_file = os.path.join(ROOT, "data", "qa-noindex.json")
+    noindex = set(json.load(open(noindex_file, encoding="utf-8"))["slugs"]) if os.path.exists(noindex_file) else set()
+    for f in sorted(glob.glob(os.path.join(ROOT, "tape-q-and-a", "*", "index.html"))):
+        slug = f.split(os.sep)[-2]
+        if slug not in noindex:
+            paths.append("/tape-q-and-a/" + slug)
+    hist_file = os.path.join(ROOT, "data", "price-history.json")
+    if os.path.exists(hist_file):
+        hist = json.load(open(hist_file, encoding="utf-8"))
+        for snap in hist.get("snapshots", []):
+            paths.append(f"/lto-tape-price-trend/{snap['slug']}")
+    return paths
+
+
+SCOPE_STATIC = load_static_scope()
+SCOPE = SCOPE_CORE + SCOPE_STATIC
 SCOPE_SET = set(SCOPE)
 
 INLINE = {"a", "strong", "b", "em", "i", "span", "code", "br", "sup", "sub", "small", "abbr", "time", "mark", "u", "s", "input", "wbr", "img"}
@@ -446,6 +472,8 @@ def out_file(lang, path):
 
 def render_page(src_html, path, lang, tm, dnt, langs, indexable, stats):
     soup = BeautifulSoup(src_html, "html.parser")
+    for old in soup.select(".lang-switch"):
+        old.decompose()
     segs = page_segments(soup)
     ld_data = {}
     js_data = {}

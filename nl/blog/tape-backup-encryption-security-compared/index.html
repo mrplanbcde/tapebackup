@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tapeversleuteling en beveiliging | TapeBackup.org</title>
+<meta content="Welke tape-back-upsystemen bieden de beste encryptie en beveiliging? AES-256 in LTO-drives, sleutelbeheer, WORM en air gap naast elkaar vergeleken." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/nl/blog/tape-backup-encryption-security-compared" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Tapeversleuteling en beveiliging naast elkaar" property="og:title"/>
+<meta content="Welke tape-back-upsystemen bieden de beste encryptie en beveiliging? AES-256 in LTO-drives, sleutelbeheer, WORM en air gap naast elkaar vergeleken." property="og:description"/>
+<meta content="https://tapebackup.org/nl/blog/tape-backup-encryption-security-compared" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Tapeversleuteling en beveiliging naast elkaar" name="twitter:title"/>
+<meta content="Welke tape-back-upsystemen bieden de beste encryptie en beveiliging? AES-256 in LTO-drives, sleutelbeheer, WORM en air gap naast elkaar vergeleken." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Tapeversleuteling en beveiliging naast elkaar", "description": "Welke tape-back-upsystemen bieden de beste encryptie en beveiliging? AES-256 in LTO-drives, sleutelbeheer, WORM en air gap naast elkaar vergeleken.", "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "https://tapebackup.org/nl/blog/tape-backup-encryption-security-compared", "url": "https://tapebackup.org/nl/blog/tape-backup-encryption-security-compared", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "logo": {"@type": "ImageObject", "url": "https://tapebackup.org/favicon.png"}}, "articleSection": "Security"}</script>
+<meta content="nl_NL" property="og:locale"/><link href="https://tapebackup.org/blog/tape-backup-encryption-security-compared" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/tape-backup-encryption-security-compared" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/tape-backup-encryption-security-compared" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/tape-backup-encryption-security-compared" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/tape-backup-encryption-security-compared" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/tape-backup-encryption-security-compared" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/tape-backup-encryption-security-compared" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/tape-backup-encryption-security-compared" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/nl/tape-q-and-a">Tape-vragen</a><span class="sep"></span><a href="/nl/lto-tape-price-trend">LTO-prijzen</a><span class="sep"></span><a href="/nl/contact">Contact</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog/tape-backup-encryption-security-compared" hreflang="en" lang="en">EN</a><a href="/de/blog/tape-backup-encryption-security-compared" hreflang="de" lang="de">DE</a><a href="/fr/blog/tape-backup-encryption-security-compared" hreflang="fr" lang="fr">FR</a><a href="/it/blog/tape-backup-encryption-security-compared" hreflang="it" lang="it">IT</a><a href="/es/blog/tape-backup-encryption-security-compared" hreflang="es" lang="es">ES</a><a aria-current="page" class="on" href="/nl/blog/tape-backup-encryption-security-compared" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/tape-backup-encryption-security-compared" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Startpagina van TapeBackup.org" class="brand" href="/nl"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Hoofdnavigatie" class="topnav">
+<div class="price-dropdown"><a href="/nl/lto-tape">LTO-tape</a><div class="price-dropdown-menu"><a href="/nl/lto-tape">Wat is LTO-tape<span>Het formaat op één pagina</span></a><a href="/nl/lto-tape-capacity">Capaciteitstabel<span>LTO-1 tot LTO-14</span></a><a href="/nl/why-tape/lto-tape-drive">Koopgids tapedrives<span>Welke drive u koopt</span></a><a href="/nl/lto-tape-library">Bibliotheken<span>Autoloaders en bibliotheken</span></a><a href="/nl/why-tape/lto-tape-lifespan">Levensduur<span>Hoe lang tapes meegaan</span></a><a href="/nl/resources/ltfs">LTFS<span>Tape als bestandssysteem</span></a><a href="/nl/resources/lto-tape-data-recovery">Dataherstel<span>Oude tapes lezen</span></a><a href="/nl/lto-tape-news">Nieuws<span>Wat er deze maand veranderde</span></a><a href="/nl/why-tape">Waarom tape<span>Kosten, air gap en levensduur</span></a></div></div>
+<div class="price-dropdown"><a href="/nl/lto-tape-price-trend">LTO-prijzen</a><div class="price-dropdown-menu"><a href="/nl/lto-tape-price-trend">Alle generaties<span>Prijzen september 2026</span></a><a href="/nl/lto-tape-price-trend/lto6-price">Prijs LTO-6<span>2,5 TB native</span></a><a href="/nl/lto-tape-price-trend/lto7-price">Prijs LTO-7<span>6 TB native</span></a><a href="/nl/lto-tape-price-trend/lto8-price">Prijs LTO-8<span>12 TB native</span></a><a href="/nl/lto-tape-price-trend/lto9-price">Prijs LTO-9<span>18 TB native</span></a><a href="/nl/lto-tape-price-trend/lto10-price">Prijs LTO-10<span>30 / 40 TB native</span></a><a href="/nl/lto-tape-price-trend/history">Prijsgeschiedenis<span>Gearchiveerde momentopnamen sinds 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/nl/backup-calculator">Tools</a><div class="price-dropdown-menu"><a href="/nl/backup-calculator">Back-upcalculator<span>Schatting van media en kosten</span></a><a href="/nl/backup-software-finder">Softwarewijzer<span>Software die past bij uw tapegebruik</span></a><a href="/nl/best-tape-backup-software">Beste back-upsoftware voor tape<span>Vergelijking 2026</span></a></div></div>
+<a href="/nl/blog">Blog</a>
+<a href="/nl/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/nl/contact">Prijslijst opvragen</a></div>
+</div></header>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Beveiligingsartikel</p>
+<h1>Tapeversleuteling en beveiliging naast elkaar</h1>
+<p>Welke tape-back-upsystemen bieden de beste encryptie en beveiliging? AES-256 in LTO-drives, sleutelbeheer, WORM en air gap naast elkaar vergeleken.</p>
+<div class="signal-row"><span class="signal-chip">Beveiliging</span> <span class="signal-chip">4 min leestijd</span> <span class="signal-chip">12 oktober 2026</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">Kortom</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/nl/blog">Blog</a><span>/</span><span>Beveiliging</span></div>
+<header class="article-header">
+<div class="detail-meta"><span class="pill">Beveiliging</span> <span class="pill alt">4 min leestijd</span> <span class="pill alt">12 oktober 2026</span></div>
+<h2 class="detail-title">Tapeversleuteling en beveiliging naast elkaar</h2>
+<p class="lead">Welke tape-back-upsystemen bieden de beste encryptie en beveiliging? AES-256 in LTO-drives, sleutelbeheer, WORM en air gap naast elkaar vergeleken.</p>
+</header>
+<section class="article-body"><p><strong>Elke LTO-drive vanaf LTO-4 versleutelt in hardware met AES-256, welk merk er ook op het frontje staat; de drive is dus niet wat het ene tapesysteem van het andere onderscheidt. Het verschil zit in het beheer van de encryptiesleutels: door de back-upsoftware, door de tapebibliotheek via een externe sleutelbeheerder of door de tapedriver van de host. Voeg WORM-cartridges en een na uitwerpen offline kopie toe, en tape dekt de risico's af waar disk- en cloudkopieën moeite mee hebben.</strong></p>
+<h2>Wat elke huidige LTO-drive heeft</h2>
+<p>Versleuteling, write-once-media en het LTFS-bestandssysteem zijn in verschillende generaties geïntroduceerd en maken deel uit van de LTO-standaard, waardoor ze identiek functioneren op drives van HPE, IBM, Quantum en Dell van dezelfde generatie.</p>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Kenmerk</th><th>Sinds</th><th>Waar het tegen beschermt</th></tr></thead><tbody><tr><td>WORM-cartridges</td><td>LTO-3</td><td>Overschrijven of verwijderen van data, inclusief door ransomware of een kwaadwillende insider</td></tr><tr><td>AES-256 hardware-encryptie</td><td>LTO-4</td><td>Het uitlezen van een verloren of gestolen cartridge</td></tr><tr><td>LTFS-partities</td><td>LTO-5</td><td>Lock-in: de tape blijft leesbaar zonder de oorspronkelijke back-upsoftware</td></tr><tr><td>Offline na uitwerpen</td><td>Alle generaties</td><td>Alles wat over het netwerk reist</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Beveiligingsfuncties per LTO-generatie: WORM vanaf LTO-3, AES-256-encryptie vanaf LTO-4, LTFS-partities vanaf LTO-5" decoding="async" height="450" loading="lazy" src="/assets/figures/blog-sec-features-by-gen.svg" width="960"/><figcaption>Elke LTO-5-drive of nieuwer ondersteunt alle drie. De drive comprimeert gegevens alvorens deze te versleutelen, waardoor versleuteling de capaciteit niet vermindert.</figcaption></figure>
+<h2>De drie methoden voor sleutelbeheer vergeleken</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Methode</th><th>Waar de sleutel zich bevindt</th><th>Geschikt voor</th><th>Let op</th></tr></thead><tbody><tr><td>Beheerd door applicatie</td><td>De database van de back-upsoftware</td><td>Eén back-upproduct, eenvoudige configuraties</td><td>Sleutels zijn gekoppeld aan die software. Maak een back-up van de sleutelopslag, anders betekent een verloren database onleesbare tapes</td></tr><tr><td>Beheerd door tapebibliotheek</td><td>Een externe sleutelbeheerder die de bibliotheek via KMIP bereikt</td><td>Meerdere applicaties die één bibliotheek delen, audits en compliance</td><td>Vereist een sleutelbeheerder die altijd bereikbaar is; op sommige bibliotheekmodellen is dit een gelicentieerde functie</td></tr><tr><td>Systeembeheerd</td><td>Een sleutelbeheerder bereikt via de tapedriver van de host</td><td>IBM-omgevingen</td><td>Grotendeels beperkt tot IBM-stuurprogramma's en -platforms</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Door applicatie, tapebibliotheek of systeem beheerde encryptiesleutels, elk eindigend bij een LTO-drive met AES-256" decoding="async" height="460" loading="lazy" src="/assets/figures/blog-sec-key-models.svg" width="960"/><figcaption>De drive versleutelt in alle drie de gevallen op dezelfde manier. De keuze is wie de sleutel beheert: de back-upsoftware, een sleutelbeheerder via de bibliotheek of het stuurprogramma van de host.</figcaption></figure>
+<p>Welke methode u ook kiest, de regel blijft gelijk: een versleutelde cartridge zonder sleutel kan door niemand worden gelezen, noch door u, noch door een ander. Bewaar sleutels op minimaal twee locaties, gescheiden van de tapes.</p>
+<h2>Beveiliging van tape, disk en cloud naast elkaar</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th></th><th>LTO-tape</th><th>Disk-back-up</th><th>Cloud-objectopslag</th></tr></thead><tbody><tr><td>Offline kopie</td><td>Ja, eenmaal uitgeworpen</td><td>Nee, altijd online</td><td>Nee, bereikbaar met inloggegevens</td></tr><tr><td>Onveranderbaarheid</td><td>WORM-cartridges</td><td>Onveranderlijke snapshots of beveiligde repositories, afhankelijk van het product</td><td>Object Lock in compliance-modus</td></tr><tr><td>Versleuteling in rust</td><td>AES-256 in de drive</td><td>Afhankelijk van storage array of software</td><td>Standaard ingeschakeld bij grote providers</td></tr><tr><td>Bereikbaar voor ransomware</td><td>Alleen tijdens aankoppeling</td><td>Ja, via het netwerk</td><td>Via gestolen inloggegevens of API-sleutels</td></tr></tbody></table></div>
+<p>De sterkste opstellingen combineren beide: recente back-ups op disk voor snelheid, en een versleutelde tapekopie die het pand verlaat. Zie <a href="/nl/blog/offsite-tape-backups-still-beat-most-good-enough-plans">waarom externe tape nog steeds wint</a> en onze <a href="/nl/comparisons">vergelijking tussen tape, disk en cloud</a>.</p>
+<h2>Veelgestelde vragen</h2><h3>Vermindert tape-encryptie de capaciteit of snelheid?</h3><p>Niet merkbaar. De drive comprimeert de data eerst en versleutelt deze vervolgens in hardware, waardoor native en gecomprimeerde capaciteit gelijk blijven.</p><h3>Welke LTO-generaties ondersteunen hardwarematige encryptie?</h3><p>LTO-4 en elke generatie daarna, inclusief LTO-9 en LTO-10, met AES-256.</p><h3>Is WORM hetzelfde als encryptie?</h3><p>Nee. WORM voorkomt dat data wordt gewijzigd of verwijderd; encryptie voorkomt dat data zonder sleutel kan worden gelezen. Voor bescherming tegen ransomware wilt u doorgaans beide.</p><h3>Wat gebeurt er als ik de versleutelingssleutel verlies?</h3><p>De data op die cartridge kan niet worden hersteld. Bewaar sleutels in een sleutelbeheerder of in de beveiligde sleutelopslag van uw back-upsoftware, met een kopie gescheiden van de tapes.</p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Vermindert tape-encryptie de capaciteit of snelheid?", "acceptedAnswer": {"@type": "Answer", "text": "Niet merkbaar. De drive comprimeert de data eerst en versleutelt deze vervolgens in hardware, waardoor native en gecomprimeerde capaciteit gelijk blijven."}}, {"@type": "Question", "name": "Welke LTO-generaties ondersteunen hardwarematige encryptie?", "acceptedAnswer": {"@type": "Answer", "text": "LTO-4 en elke generatie daarna, inclusief LTO-9 en LTO-10, met AES-256."}}, {"@type": "Question", "name": "Is WORM hetzelfde als encryptie?", "acceptedAnswer": {"@type": "Answer", "text": "Nee. WORM voorkomt dat data wordt gewijzigd of verwijderd; encryptie voorkomt dat data zonder sleutel kan worden gelezen. Voor bescherming tegen ransomware wilt u doorgaans beide."}}, {"@type": "Question", "name": "Wat gebeurt er als ik de versleutelingssleutel verlies?", "acceptedAnswer": {"@type": "Answer", "text": "De data op die cartridge kan niet worden hersteld. Bewaar sleutels in een sleutelbeheerder of in de beveiligde sleutelopslag van uw back-upsoftware, met een kopie gescheiden van de tapes."}}], "inLanguage": "nl"}</script></section>
+<a class="back-link" href="/nl/blog">Terug naar blog</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>Artikelsignaal</h2>
+<p>Recente discussie over tapeopslag samengevat in een zelfstandig TapeBackup.org-artikel met directe indexeringsmetadata en een stabiele canonieke URL.</p>
+</section>
+<section class="sidebar-card">
+<h2>Behoefte aan een grondiger LTO-plan?</h2>
+<p>Blader door de bronnen op de site, vergelijk opslagbenaderingen of neem contact op met het team voor advies over de rol van tape in uw back-upworkflow.</p>
+<a class="cta" href="/nl/contact">Neem contact op met TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Gerelateerd op TapeBackup</h2><ul><li><a href="/nl/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying">Uw gebruikte LTO-8-drive is niet kapot totdat het SAS-pad stopt met liegen</a></li><li><a href="/nl/blog/which-lto-drive-should-you-buy-without-regretting-it-later">Welke LTO-drive moet u kopen zonder er later spijt van te krijgen?</a></li><li><a href="/nl/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them">Gebruikte LTO-bibliotheken zijn chaos, en dat is precies waarom mensen ze blijven kopen</a></li><li><a href="/nl/lto-tape-price-trend">LTO-tapeprijzen, september 2026</a></li><li><a href="/nl/why-tape">Waarom tapeopslag gebruiken</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

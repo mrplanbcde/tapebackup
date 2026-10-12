@@ -156,7 +156,8 @@ def parse_existing_post(path: Path) -> Post:
     text = path.read_text()
     # <title> may be an SEO override (data/meta-overrides.json); the JSON-LD headline is the real title.
     title = clean_text(json.loads('"' + re.search(r'"headline":"(.*?)","description"', text, re.S).group(1) + '"'))
-    description = clean_text(re.search(r'<meta name="description" content="(.*?)" />', text, re.S).group(1))
+    desc_match = re.search(r'<meta\s+name="description"\s+content="(.*?)"', text, re.S) or re.search(r'<meta\s+content="(.*?)"\s+name="description"', text, re.S)
+    description = clean_text(desc_match.group(1)) if desc_match else ""
     category = clean_text(re.search(r'"articleSection":"(.*?)"', text, re.S).group(1))
     published_text = re.search(r'"datePublished":"(\d{4}-\d{2}-\d{2})"', text, re.S).group(1)
     published = date.fromisoformat(published_text)

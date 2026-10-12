@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog de copias en cinta LTO: flujos reales | TapeBackup</title>
+<meta content="Opinión y análisis sobre copias en cinta LTO: unidades usadas, software, flujos de trabajo, copias externas e instalaciones domésticas." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/es/blog" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Blog de copias en cinta LTO: flujos reales | TapeBackup" property="og:title"/>
+<meta content="Opinión y análisis sobre copias en cinta LTO: unidades usadas, software, flujos de trabajo, copias externas e instalaciones domésticas." property="og:description"/>
+<meta content="https://tapebackup.org/es/blog" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Blog de copias en cinta LTO: flujos reales | TapeBackup" name="twitter:title"/>
+<meta content="Opinión y análisis sobre copias en cinta LTO: unidades usadas, software, flujos de trabajo, copias externas e instalaciones domésticas." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Blog", "name": "Blog de TapeBackup.org", "url": "https://tapebackup.org/es/blog", "blogPost": [{"@type": "BlogPosting", "headline": "«Sueños de 500 $ y fantasías de cinta magnética»: la adictiva ilusión del almacenamiento LTO barato", "url": "https://tapebackup.org/es/blog/500-dreams-and-magnetic-tape-fantasies-the-addictive-illusion-of-cheap-lto-storage"}, {"@type": "BlogPosting", "headline": "«6000 $ por un pisapapeles»: cuando el almacenamiento corporativo le falla en silencio", "url": "https://tapebackup.org/es/blog/6-000-for-a-paperweight-when-enterprise-grade-storage-quietly-fails-you"}, {"@type": "BlogPosting", "headline": "La estrategia de copias de seguridad se vuelve seria en cuanto el archivo supera los discos sueltos", "url": "https://tapebackup.org/es/blog/backup-strategy-gets-serious-when-your-archive-outgrows-disks"}, {"@type": "BlogPosting", "headline": "Mejor valor por TB en copia en cinta, EE. UU. 2026", "url": "https://tapebackup.org/es/blog/best-value-per-terabyte-tape-backup-us"}, {"@type": "BlogPosting", "headline": "Comprar unas pocas cintas LTO baratas suele ser el inicio de la espiral", "url": "https://tapebackup.org/es/blog/buying-a-few-cheap-lto-tapes-is-how-the-rabbit-hole-starts"}, {"@type": "BlogPosting", "headline": "«Lo construí porque nada más funcionaba»: la cruda realidad de reinventar el software de copia en cinta", "url": "https://tapebackup.org/es/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software"}, {"@type": "BlogPosting", "headline": "Cambié los discos duros por cinta: y sin querer me apunté a una vida de ruidos, fallos y obsesión", "url": "https://tapebackup.org/es/blog/i-replaced-hard-drives-with-tape-and-accidentally-signed-up-for-a-lifetime-of-noise-bugs-and-obs"}, {"@type": "BlogPosting", "headline": "La copia de seguridad en cinta LTO parece brillante hasta que el flujo de trabajo opone resistencia", "url": "https://tapebackup.org/es/blog/lto-tape-backup-costs-workflow-reality"}, {"@type": "BlogPosting", "headline": "Las copias en cinta fuera del centro aún superan a los planes ordinarios", "url": "https://tapebackup.org/es/blog/offsite-tape-backups-still-beat-most-good-enough-plans"}, {"@type": "BlogPosting", "headline": "Un archivo dañado y se pierde para siempre: la dura realidad de la que nadie avisa en almacenamiento en cinta", "url": "https://tapebackup.org/es/blog/one-bad-archive-and-it-s-gone-forever-the-brutal-trade-off-nobody-warns-you-about-in-tape-storag"}, {"@type": "BlogPosting", "headline": "Las copias en cinta programables en Linux aún tienen un problema de proceso", "url": "https://tapebackup.org/es/blog/scriptable-linux-tape-backups-still-have-a-process-problem"}, {"@type": "BlogPosting", "headline": "TCO a 5: comparativa de sistemas de cinta", "url": "https://tapebackup.org/es/blog/tape-backup-5-year-total-cost-of-ownership"}, {"@type": "BlogPosting", "headline": "Cifrado y seguridad en cinta, cara a cara", "url": "https://tapebackup.org/es/blog/tape-backup-encryption-security-compared"}, {"@type": "BlogPosting", "headline": "Consumo de energía y costes de copia en cinta", "url": "https://tapebackup.org/es/blog/tape-backup-energy-use-and-operating-cost"}, {"@type": "BlogPosting", "headline": "Compensaciones de software de copia en cinta", "url": "https://tapebackup.org/es/blog/tape-backup-software-integration-tradeoffs"}, {"@type": "BlogPosting", "headline": "La cinta está muerta, ¿verdad? Por qué vuelve a usarse para copias de seguridad", "url": "https://tapebackup.org/es/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again"}, {"@type": "BlogPosting", "headline": "El mejor software de copia LTO suele ser aquel que realmente llegará a probar", "url": "https://tapebackup.org/es/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test"}, {"@type": "BlogPosting", "headline": "El día en que mi unidad de cinta se rebeló: la frustrante realidad de los fallos de LTO-6", "url": "https://tapebackup.org/es/blog/the-day-my-tape-drive-went-rogue-inside-the-frustrating-reality-of-lto-6-failures"}, {"@type": "BlogPosting", "headline": "La instalación de LTO doméstica se vuelve seria cuando deja de tratarse como un juguete", "url": "https://tapebackup.org/es/blog/the-home-lto-setup-gets-real-when-you-stop-treating-it-like-a-toy"}, {"@type": "BlogPosting", "headline": "Las bibliotecas LTO usadas son un caos, y esa es la razón exacta por la que se siguen comprando", "url": "https://tapebackup.org/es/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them"}, {"@type": "BlogPosting", "headline": "¿Qué unidad LTO comprar sin lamentarlo después?", "url": "https://tapebackup.org/es/blog/which-lto-drive-should-you-buy-without-regretting-it-later"}, {"@type": "BlogPosting", "headline": "Su unidad LTO-8 usada no está rota hasta que la ruta SAS deje de mentirle", "url": "https://tapebackup.org/es/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying"}]}</script>
+<meta content="es_ES" property="og:locale"/><link href="https://tapebackup.org/blog" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/es/tape-q-and-a">Preguntas y respuestas</a><span class="sep"></span><a href="/es/lto-tape-price-trend">Precios LTO</a><span class="sep"></span><a href="/es/contact">Contacto</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog" hreflang="en" lang="en">EN</a><a href="/de/blog" hreflang="de" lang="de">DE</a><a href="/fr/blog" hreflang="fr" lang="fr">FR</a><a href="/it/blog" hreflang="it" lang="it">IT</a><a aria-current="page" class="on" href="/es/blog" hreflang="es" lang="es">ES</a><a href="/nl/blog" hreflang="nl" lang="nl">NL</a><a href="/pl/blog" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Inicio de TapeBackup.org" class="brand" href="/es"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Principal" class="topnav">
+<div class="price-dropdown"><a href="/es/lto-tape">Cinta LTO</a><div class="price-dropdown-menu"><a href="/es/lto-tape">Qué es la cinta LTO<span>El formato en una página</span></a><a href="/es/lto-tape-capacity">Tabla de capacidades<span>De LTO-1 a LTO-14</span></a><a href="/es/why-tape/lto-tape-drive">Guía de compra de unidades<span>Qué unidad comprar</span></a><a href="/es/lto-tape-library">Bibliotecas<span>Autocargadores y bibliotecas</span></a><a href="/es/why-tape/lto-tape-lifespan">Vida útil<span>Cuánto duran las cintas</span></a><a href="/es/resources/ltfs">LTFS<span>La cinta como sistema de archivos</span></a><a href="/es/resources/lto-tape-data-recovery">Recuperación de datos<span>Leer cintas antiguas</span></a><a href="/es/lto-tape-news">Noticias<span>Qué ha cambiado este mes</span></a><a href="/es/why-tape">Por qué la cinta<span>Coste, air gap y vida útil</span></a></div></div>
+<div class="price-dropdown"><a href="/es/lto-tape-price-trend">Precios LTO</a><div class="price-dropdown-menu"><a href="/es/lto-tape-price-trend">Todas las generaciones<span>Precios de septiembre de 2026</span></a><a href="/es/lto-tape-price-trend/lto6-price">Precio de LTO-6<span>2,5 TB nativos</span></a><a href="/es/lto-tape-price-trend/lto7-price">Precio de LTO-7<span>6 TB nativos</span></a><a href="/es/lto-tape-price-trend/lto8-price">Precio de LTO-8<span>12 TB nativos</span></a><a href="/es/lto-tape-price-trend/lto9-price">Precio de LTO-9<span>18 TB nativos</span></a><a href="/es/lto-tape-price-trend/lto10-price">Precio de LTO-10<span>30 / 40 TB nativos</span></a><a href="/es/lto-tape-price-trend/history">Historial de precios<span>Ediciones archivadas desde 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/es/backup-calculator">Herramientas</a><div class="price-dropdown-menu"><a href="/es/backup-calculator">Calculadora de copias de seguridad<span>Estimación de soportes y coste</span></a><a href="/es/backup-software-finder">Buscador de software<span>Software adecuado para su uso de la cinta</span></a><a href="/es/best-tape-backup-software">Mejor software de copia de seguridad en cinta<span>Comparativa 2026</span></a></div></div>
+<a href="/es/blog">Blog</a>
+<a href="/es/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/es/contact">Solicitar lista de precios</a></div>
+</div></header>
+<section class="hero listing-hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Blog de TapeBackup.org</p>
+<h1>Blog de copias de seguridad en cinta LTO: flujos de trabajo reales</h1>
+<p>Notas de campo sobre el uso de cintas LTO: unidades y bibliotecas usadas, software de copia, rotación externa, archivos domésticos y restauraciones fallidas.</p>
+<div class="signal-row"><span class="signal-chip">22 publicaciones recientes</span> <span class="signal-chip">Rotación externa</span> <span class="signal-chip">Unidades y bibliotecas usadas</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">¿Busca precios?</p>
+<p class="panel-copy">Los precios actuales de cintas y unidades de LTO-6 a LTO-10 figuran en el <a href="/es/lto-tape-price-trend">seguimiento de precios de LTO</a>; los consejos de compra, en la <a href="/es/lto-tape">guía de cintas LTO</a>.</p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container">
+<figure class="page-figure"><img alt="Cartuchos LTO en una estantería" decoding="async" height="300" loading="lazy" src="/assets/figures/lto-cartridge-shelf.svg" width="960"/></figure>
+<section aria-label="Entradas del blog" class="listing-grid">
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Software</span> <span class="pill alt">Lectura de 4 min</span></div>
+<h2>Compensaciones de software de copia en cinta</h2>
+<div class="listing-date">12 de octubre de 2026</div>
+<p>¿Qué soluciones de copia en cinta se integran mejor con Veeam, Commvault, Nakivo o código abierto, y cuáles son sus ventajas y costes de catálogo?</p>
+<a class="listing-link" href="/es/blog/tape-backup-software-integration-tradeoffs">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Análisis</span> <span class="pill alt">Lectura de 4 min</span></div>
+<h2>Consumo de energía y costes de copia en cinta</h2>
+<div class="listing-date">12 de octubre de 2026</div>
+<p>¿Qué opciones de cinta son más eficientes energéticamente y cómo se comparan con disco y nube en coste operativo? Modelo de 500 TB con premisas.</p>
+<a class="listing-link" href="/es/blog/tape-backup-energy-use-and-operating-cost">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Seguridad</span> <span class="pill alt">Lectura de 4 min</span></div>
+<h2>Cifrado y seguridad en cinta, cara a cara</h2>
+<div class="listing-date">12 de octubre de 2026</div>
+<p>¿Qué sistemas de copia en cinta ofrecen mejor cifrado y seguridad? AES-256 en unidades LTO, gestión de claves, WORM y air gap comparados a fondo.</p>
+<a class="listing-link" href="/es/blog/tape-backup-encryption-security-compared">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Precios</span> <span class="pill alt">Lectura de 4 min</span></div>
+<h2>TCO a 5: comparativa de sistemas de cinta</h2>
+<div class="listing-date">12 de octubre de 2026</div>
+<p>Sistemas de copia en cinta con menor coste a 5 años, comparados a 100 TB, 500 TB y 1 PB frente al almacenamiento en la nube.</p>
+<a class="listing-link" href="/es/blog/tape-backup-5-year-total-cost-of-ownership">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Precios</span> <span class="pill alt">Lectura de 4 min</span></div>
+<h2>Mejor valor por TB en copia en cinta, EE. UU. 2026</h2>
+<div class="listing-date">12 de octubre de 2026</div>
+<p>¿Qué sistemas de cinta ofrecen mejor valor por TB a largo plazo en EE. UU.? Comparativa de LTO-8, LTO-9 y LTO-10 en coste de soporte y total.</p>
+<a class="listing-link" href="/es/blog/best-value-per-terabyte-tape-backup-us">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Análisis</span> <span class="pill alt">Lectura de 5 min</span></div>
+<h2>La cinta está muerta, ¿verdad? Por qué vuelve a usarse para copias de seguridad</h2>
+<div class="listing-date">5 de mayo de 2026</div>
+<p>La cinta cuesta pocos euros por TB sobre el papel, pero la copia en LTO exige paciencia, planificación y claridad sobre el almacenamiento sin conexión.</p>
+<a class="listing-link" href="/es/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Análisis</span> <span class="pill alt">Lectura de 11 min</span></div>
+<h2>La copia de seguridad en cinta LTO parece brillante hasta que el flujo de trabajo opone resistencia</h2>
+<div class="listing-date">3 de abril de 2026</div>
+<p>Las cintas baratas hacen que LTO parezca irresistible. Aquí se desglosan los costes reales: unidades, HBA, bibliotecas, catálogos, limpiezas y operativa.</p>
+<a class="listing-link" href="/es/blog/lto-tape-backup-costs-workflow-reality">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Tecnología</span> <span class="pill alt">4 min de lectura</span></div>
+<h2>«Sueños de 500 $ y fantasías de cinta magnética»: la adictiva ilusión del almacenamiento LTO barato</h2>
+<div class="listing-date">1 de abril de 2026</div>
+<p>Por qué una unidad LTO-6 usada a la venta por 500 $ parece una ganga y por qué el bajo precio de entrada de la cinta LTO suele ser una ilusión.</p>
+<a class="listing-link" href="/es/blog/500-dreams-and-magnetic-tape-fantasies-the-addictive-illusion-of-cheap-lto-storage">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Tecnología</span> <span class="pill alt">9 min de lectura</span></div>
+<h2>Las bibliotecas LTO usadas son un caos, y esa es la razón exacta por la que se siguen comprando</h2>
+<div class="listing-date">31 de marzo de 2026</div>
+<p>Las bibliotecas de cinta retiradas son ruidosas y complejas, pero se siguen reviviendo para ganar capacidad de archivo sin facturas desorbitadas de nube.</p>
+<a class="listing-link" href="/es/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Tecnología</span> <span class="pill alt">4 min de lectura</span></div>
+<h2>«6000 $ por un pisapapeles»: cuando el almacenamiento corporativo le falla en silencio</h2>
+<div class="listing-date">31 de marzo de 2026</div>
+<p>Alguien gastó 6000 $ en una unidad LTO-7 esperando durabilidad empresarial. Lo que su fallo revela sobre confiar en hardware de almacenamiento empresarial.</p>
+<a class="listing-link" href="/es/blog/6-000-for-a-paperweight-when-enterprise-grade-storage-quietly-fails-you">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Tecnología</span> <span class="pill alt">4 min de lectura</span></div>
+<h2>«Lo construí porque nada más funcionaba»: la cruda realidad de reinventar el software de copia en cinta</h2>
+<div class="listing-date">30 de marzo de 2026</div>
+<p>La historia de quien creó su propio software de copia en cinta tras fallar las herramientas existentes, y la compleja realidad de ese desarrollo.</p>
+<a class="listing-link" href="/es/blog/i-built-it-because-nothing-else-worked-the-raw-messy-reality-of-reinventing-tape-backup-software">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Tecnología</span> <span class="pill alt">4 min de lectura</span></div>
+<h2>Cambié los discos duros por cinta: y sin querer me apunté a una vida de ruidos, fallos y obsesión</h2>
+<div class="listing-date">28 de marzo de 2026</div>
+<p>El alza de precios de los HDD llevó a un usuario a optar por cinta LTO. Lo que siguió: ruido, fallos de software y una afición convertida en obsesión.</p>
+<a class="listing-link" href="/es/blog/i-replaced-hard-drives-with-tape-and-accidentally-signed-up-for-a-lifetime-of-noise-bugs-and-obs">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Guía</span> <span class="pill alt">Lectura de 8 min</span></div>
+<h2>El mejor software de copia LTO suele ser aquel que realmente llegará a probar</h2>
+<div class="listing-date">27 de marzo de 2026</div>
+<p>¿LTFS, tar, Bacula, Bareos o una suite empresarial? Por qué el mejor flujo de copia LTO es aquel desde el que realmente ha restaurado sin dudar.</p>
+<a class="listing-link" href="/es/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Tecnología</span> <span class="pill alt">8 min de lectura</span></div>
+<h2>Su unidad LTO‑8 usada no está rota hasta que la ruta SAS deje de mentirle</h2>
+<div class="listing-date">24 de marzo de 2026</div>
+<p>Muchos fallos de unidades LTO usadas se deben al cableado, la HBA o la carcasa. Por qué descartar la ruta SAS antes de dar por rota una unidad LTO-8.</p>
+<a class="listing-link" href="/es/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Análisis</span> <span class="pill alt">Lectura de 10 min</span></div>
+<h2>Las copias en cinta fuera del centro aún superan a los planes ordinarios</h2>
+<div class="listing-date">20 de marzo de 2026</div>
+<p>Copia de seguridad en cinta externa: por qué sacar cintas del edificio cubre riesgos que la replicación, instantáneas y sincronización en nube no cubren.</p>
+<a class="listing-link" href="/es/blog/offsite-tape-backups-still-beat-most-good-enough-plans">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Sector</span> <span class="pill alt">Lectura de 7 min</span></div>
+<h2>Comprar unas pocas cintas LTO baratas suele ser el inicio de la espiral</h2>
+<div class="listing-date">17 de marzo de 2026</div>
+<p>Cómo un lote de cartuchos LTO baratos se convierte en un sistema completo y por qué los cálculos cambian al incorporar soportes extraíbles.</p>
+<a class="listing-link" href="/es/blog/buying-a-few-cheap-lto-tapes-is-how-the-rabbit-hole-starts">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Guía</span> <span class="pill alt">Lectura de 9 min</span></div>
+<h2>¿Qué unidad LTO comprar sin lamentarlo después?</h2>
+<div class="listing-date">13 de marzo de 2026</div>
+<p>Toda generación LTO tienta en el mercado usado. El coste de soportes, la compatibilidad y los planes de restauración deben guiar su compra.</p>
+<a class="listing-link" href="/es/blog/which-lto-drive-should-you-buy-without-regretting-it-later">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Tecnología</span> <span class="pill alt">3 min de lectura</span></div>
+<h2>Un archivo dañado y se pierde para siempre: la dura realidad de la que nadie avisa en almacenamiento en cinta</h2>
+<div class="listing-date">10 de marzo de 2026</div>
+<p>¿Escribir archivos tal cual o empaquetarlos antes en un único archivo? El compromiso entre archivos ordenados y perderlo todo por un archivo corrupto.</p>
+<a class="listing-link" href="/es/blog/one-bad-archive-and-it-s-gone-forever-the-brutal-trade-off-nobody-warns-you-about-in-tape-storag">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Análisis</span> <span class="pill alt">Lectura de 8 min</span></div>
+<h2>La estrategia de copias de seguridad se vuelve seria en cuanto el archivo supera los discos sueltos</h2>
+<div class="listing-date">9 de marzo de 2026</div>
+<p>Añadir otro disco duro deja de ser una estrategia de copia de seguridad cuando el archivo crece. Por qué la cinta entra en juego para muchos operadores.</p>
+<a class="listing-link" href="/es/blog/backup-strategy-gets-serious-when-your-archive-outgrows-disks">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Guía</span> <span class="pill alt">Lectura de 8 min</span></div>
+<h2>Las copias en cinta programables en Linux aún tienen un problema de proceso</h2>
+<div class="listing-date">6 de marzo de 2026</div>
+<p>Linux aporta flexibilidad y scripts para copias en cinta, pero facilita crear flujos que solo su autor entiende. Por qué el proceso importa.</p>
+<a class="listing-link" href="/es/blog/scriptable-linux-tape-backups-still-have-a-process-problem">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Tecnología</span> <span class="pill alt">4 min de lectura</span></div>
+<h2>El día en que mi unidad de cinta se rebeló: la frustrante realidad de los fallos de LTO‑6</h2>
+<div class="listing-date">4 de marzo de 2026</div>
+<p>Un testimonio directo sobre el fallo de una unidad LTO-6 y por qué una avería resulta tan frustrante en un soporte concebido para ser fiable.</p>
+<a class="listing-link" href="/es/blog/the-day-my-tape-drive-went-rogue-inside-the-frustrating-reality-of-lto-6-failures">Leer artículo -&gt;</a>
+</article>
+<article class="listing-card">
+<div class="listing-card-top"><span class="pill">Tecnología</span> <span class="pill alt">7 min de lectura</span></div>
+<h2>La instalación de LTO doméstica se vuelve seria cuando deja de tratarse como un juguete</h2>
+<div class="listing-date">27 de febrero de 2026</div>
+<p>Una instalación LTO en casa o laboratorio puede ser una infraestructura real. Lo que separa un experimento de un archivo fiable es cómo se opera.</p>
+<a class="listing-link" href="/es/blog/the-home-lto-setup-gets-real-when-you-stop-treating-it-like-a-toy">Leer artículo -&gt;</a>
+</article>
+</section>
+</div>
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

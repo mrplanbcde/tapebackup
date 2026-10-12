@@ -1,33 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Used LTO-8 Drive Dead? Check the SAS Path First | TapeBackup</title>
-    <meta name="description" content="Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead." />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Used LTO-8 Drive Dead? Check the SAS Path First | TapeBackup" />
-    <meta property="og:description" content="Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead." />
-    <meta property="og:url" content="https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" />
-    <meta property="og:image" content="https://tapebackup.org/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Used LTO-8 Drive Dead? Check the SAS Path First | TapeBackup" />
-    <meta name="twitter:description" content="Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead." />
-    <meta name="twitter:image" content="https://tapebackup.org/og-image.png" />
-    <meta name="theme-color" content="#183976" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/blog-header.css" />
-    <link rel="stylesheet" href="/blog-static.css" />
-    <script defer src="/assets/outbound-links.js"></script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Your Used LTO-8 Drive Is Not Broken Until the SAS Path Stops Lying to You","description":"A lot of used LTO drive “failures” are really cabling, HBA, enclosure, or mode confusion. Before declaring a tape drive dead, most operators first have to survive the part where the SAS path keeps misleading them.","datePublished":"2026-03-24","dateModified":"2026-03-24","mainEntityOfPage":"https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying","url":"https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying","author":{"@type":"Organization","name":"TapeBackup.org"},"publisher":{"@type":"Organization","name":"TapeBackup.org","logo":{"@type":"ImageObject","url":"https://tapebackup.org/favicon.png"}},"articleSection":"Technology"}</script>
-  </head>
-  <body>
-    <div class="site-shell">
-      <div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Tape Q&amp;A</a><span class="sep"></span><a href="/lto-tape-price-trend">LTO Prices</a><span class="sep"></span><a href="/contact">Contact Us</a></div></div>
-<header class="site-header"><div class="wrap"><a class="brand" href="/" aria-label="TapeBackup.org home"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3" stroke="#fff" stroke-width="1.8"/><circle cx="8" cy="12" r="2.2" fill="#fff"/><circle cx="16" cy="12" r="2.2" fill="#fff"/><line x1="10.2" y1="12" x2="13.8" y2="12" stroke="#fff" stroke-width="1.4"/></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
-<nav class="topnav" aria-label="Primary">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Used LTO-8 Drive Dead? Check the SAS Path First | TapeBackup</title>
+<meta content="Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Used LTO-8 Drive Dead? Check the SAS Path First | TapeBackup" property="og:title"/>
+<meta content="Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead." property="og:description"/>
+<meta content="https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Used LTO-8 Drive Dead? Check the SAS Path First | TapeBackup" name="twitter:title"/>
+<meta content="Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Your Used LTO-8 Drive Is Not Broken Until the SAS Path Stops Lying to You","description":"A lot of used LTO drive “failures” are really cabling, HBA, enclosure, or mode confusion. Before declaring a tape drive dead, most operators first have to survive the part where the SAS path keeps misleading them.","datePublished":"2026-03-24","dateModified":"2026-03-24","mainEntityOfPage":"https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying","url":"https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying","author":{"@type":"Organization","name":"TapeBackup.org"},"publisher":{"@type":"Organization","name":"TapeBackup.org","logo":{"@type":"ImageObject","url":"https://tapebackup.org/favicon.png"}},"articleSection":"Technology"}</script>
+<meta content="en_US" property="og:locale"/><link href="https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Tape Q&amp;A</a><span class="sep"></span><a href="/lto-tape-price-trend">LTO Prices</a><span class="sep"></span><a href="/contact">Contact Us</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a aria-current="page" class="on" href="/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="en" lang="en">EN</a><a href="/de/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="de" lang="de">DE</a><a href="/fr/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="fr" lang="fr">FR</a><a href="/it/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="it" lang="it">IT</a><a href="/es/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="es" lang="es">ES</a><a href="/nl/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org home" class="brand" href="/"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Primary" class="topnav">
 <div class="price-dropdown"><a href="/lto-tape">LTO Tape</a><div class="price-dropdown-menu"><a href="/lto-tape">What is LTO tape<span>The format in one page</span></a><a href="/lto-tape-capacity">Capacity chart<span>LTO-1 to LTO-14</span></a><a href="/why-tape/lto-tape-drive">Drive buying guide<span>Which drive to buy</span></a><a href="/lto-tape-library">Libraries<span>Autoloaders and libraries</span></a><a href="/why-tape/lto-tape-lifespan">Lifespan<span>How long tapes last</span></a><a href="/resources/ltfs">LTFS<span>Tape as a file system</span></a><a href="/resources/lto-tape-data-recovery">Data recovery<span>Reading old tapes</span></a><a href="/lto-tape-news">News<span>What changed this month</span></a><a href="/why-tape">Why tape<span>Cost, air gap and lifespan</span></a></div></div>
 <div class="price-dropdown"><a href="/lto-tape-price-trend">LTO Prices</a><div class="price-dropdown-menu"><a href="/lto-tape-price-trend">All generations<span>September 2026 prices</span></a><a href="/lto-tape-price-trend/lto6-price">LTO-6 Price<span>2.5 TB native</span></a><a href="/lto-tape-price-trend/lto7-price">LTO-7 Price<span>6 TB native</span></a><a href="/lto-tape-price-trend/lto8-price">LTO-8 Price<span>12 TB native</span></a><a href="/lto-tape-price-trend/lto9-price">LTO-9 Price<span>18 TB native</span></a><a href="/lto-tape-price-trend/lto10-price">LTO-10 Price<span>30 / 40 TB native</span></a><a href="/lto-tape-price-trend/history">Price history<span>Archived snapshots since 2025</span></a></div></div>
 <div class="price-dropdown"><a href="/backup-calculator">Tools</a><div class="price-dropdown-menu"><a href="/backup-calculator">Backup calculator<span>Media and cost estimate</span></a><a href="/backup-software-finder">Software finder<span>Match software to your tape use</span></a><a href="/best-tape-backup-software">Best tape backup software<span>2026 comparison</span></a></div></div>
@@ -36,58 +37,58 @@
 </nav>
 <div class="header-right"><a class="btn btn-primary btn-sm" href="/contact">Get Pricebook</a></div>
 </div></header>
-
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Technology article</p>
-            <h1>Your Used LTO-8 Drive Is Not Broken Until the SAS Path Stops Lying to You</h1>
-            <p>A lot of used LTO drive “failures” are really cabling, HBA, enclosure, or mode confusion. Before declaring a tape drive dead, most operators first have to survive the part where the SAS path keeps misleading them.</p>
-            <div class="signal-row">
-              <span class="signal-chip">Technology</span>
-              <span class="signal-chip">8 min read</span>
-              <span class="signal-chip">March 24, 2026</span>
-            </div>
-          </div>
-          <aside class="hero-panel">
-            <p class="panel-label">In short</p>
-            <p class="panel-copy">Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead.</p>
-          </aside>
-        </div>
-      </section>
-
-      <main class="page">
-        <div class="container article-layout">
-          <article class="article-card">
-            <div class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/blog">Blog</a><span>/</span><span>Technology</span></div>
-            <header class="article-header">
-              <div class="detail-meta">
-                <span class="pill">Technology</span>
-                <span class="pill alt">8 min read</span>
-                <span class="pill alt">March 24, 2026</span>
-              </div>
-              <h2 class="detail-title">Your Used LTO-8 Drive Is Not Broken Until the SAS Path Stops Lying to You</h2>
-              <p class="lead">A lot of used LTO drive “failures” are really cabling, HBA, enclosure, or mode confusion. Before declaring a tape drive dead, most operators first have to survive the part where the SAS path keeps misleading them.</p>
-            </header>
-            <section class="article-body"><p>Used enterprise tape drives have a special talent for making smart people doubt themselves.</p><figure class="page-figure"><img src="/assets/figures/blog-sas-path.svg" alt="A chain from host to HBA to SAS cable to enclosure to a drive, with a warning on the cable link." width="960" height="400" loading="lazy" decoding="async"><figcaption>Before blaming the drive, check every link on the path to it, because the cable or adapter is often the real culprit.</figcaption></figure><p>A drive shows up. It looks clean enough. The seller said it worked. You slot it into the plan, attach the cabling, boot the host, and then the confusion starts. The OS sees something strange. Or nothing at all. Or the wrong thing. Suddenly you are deep in adapter settings, firmware questions, connector diagrams, and search results from a decade ago.</p><p>At that point, most people assume the drive is dead.</p><p>That assumption is often premature.</p><h2>Used LTO troubleshooting is usually a chain problem first</h2><p>Recent conversations around secondhand IBM and HPE gear kept landing in the same place. Before you diagnose the tape drive, you have to diagnose the path. SAS controllers matter. Mode settings matter. External enclosures matter. Cable types matter more than anybody wants them to. What looks like a drive failure is frequently a negotiation failure somewhere upstream.</p><p>That is part of why these threads become so frustrating. The drive is the most expensive object in the setup, so it gets blamed first. But used tape hardware lives inside a stack of dependencies that all need to align. If the HBA firmware is wrong, if the card is in the wrong mode, if the cable is incorrect, if the host expects a different connector standard, or if the enclosure presents the device oddly, the drive can look dead while doing exactly what it is supposed to do.</p><p>The operator experience becomes one long argument with ambiguity.</p><h2>Enterprise tape gear was not designed to reassure hobbyists</h2><p>That sounds obvious, but it matters.</p><p>These devices came from environments where the surrounding assumptions were already solved. Proper host adapters. Known firmware baselines. Documented topology. Spare parts. Someone else had probably done this exact install path twenty times before. When that same drive lands in a lab or small shop, all of that invisible context disappears.</p><p>Now every component becomes suspect. Is the issue power? Firmware? Block size settings? Device visibility? Some weird seller-side reconfiguration? People start swapping ports, booting alternate systems, testing with vendor tools, and inspecting logs line by line. The work is less about tape itself and more about reassembling enough infrastructure truth to trust what the drive is telling you.</p><p>That is why patience becomes a technical skill here. Not because patience fixes hardware, but because tape troubleshooting punishes panic buys and premature conclusions.</p><h2>The used-market opportunity is still real</h2><p>Which is why people keep trying.</p><p>If secondhand tape gear were only pain, the market would not stay interesting. The reason people keep chasing it is that one successfully revived LTO-8 drive changes the math on serious archive capacity immediately. What felt like enterprise-only storage starts looking accessible. Suddenly long-retention planning, offline copies, and large staged backups are not abstract anymore.</p><p>That upside makes the troubleshooting worthwhile for the right buyer. But the right buyer is not just someone willing to spend money. It is someone willing to treat SAS, adapters, and diagnostics as part of the purchase price.</p><p>A used LTO drive is never just a drive. It is a small integration project with a tape mechanism attached.</p><p>That is the more honest way to frame the risk. Do that, and the whole situation becomes less mysterious. The question is not “Is this drive broken?” The better question is “Have I ruled out the entire path around it?”</p><p>Usually, that is where the real answer lives.</p></section>
-            <a class="back-link" href="/blog">Back to Blog</a>
-          </article>
-
-          <aside class="sidebar">
-            <section class="sidebar-card">
-              <h2>Article signal</h2>
-              <p>Recent Reddit discussion distilled into a standalone TapeBackup.org article page with direct indexing metadata and a stable canonical URL.</p>
-            </section>
-            <section class="sidebar-card">
-              <h2>Need a deeper LTO plan?</h2>
-              <p>Browse the site resources, compare storage approaches, or contact the team for help deciding when tape belongs in your backup workflow.</p>
-              <a class="cta" href="/contact">Talk to TapeBackup</a>
-            </section>
-          </aside>
-        </div>
-      <!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul><li><a href="/blog/the-day-my-tape-drive-went-rogue-inside-the-frustrating-reality-of-lto-6-failures">The Day My Tape Drive Went Rogue: Inside the Frustrating Reality of LTO-6 Failures</a></li><li><a href="/blog/backup-strategy-gets-serious-when-your-archive-outgrows-disks">Backup Strategy Gets Serious the Moment Your Archive Outgrows Loose Disks</a></li><li><a href="/blog/which-lto-drive-should-you-buy-without-regretting-it-later">Which LTO Drive Should You Buy Without Regretting It Later?</a></li><li><a href="/why-tape/lto-tape-drive">How LTO tape drives work</a></li><li><a href="/resources/cheap-lto-tapes">How to buy used LTO tapes safely</a></li></ul></section><!-- related:end -->
-      </main>
-    </div>
-  <script src="/chat-widget.js" defer></script>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Technology article</p>
+<h1>Your Used LTO-8 Drive Is Not Broken Until the SAS Path Stops Lying to You</h1>
+<p>A lot of used LTO drive “failures” are really cabling, HBA, enclosure, or mode confusion. Before declaring a tape drive dead, most operators first have to survive the part where the SAS path keeps misleading them.</p>
+<div class="signal-row">
+<span class="signal-chip">Technology</span>
+<span class="signal-chip">8 min read</span>
+<span class="signal-chip">March 24, 2026</span>
+</div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">In short</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/blog">Blog</a><span>/</span><span>Technology</span></div>
+<header class="article-header">
+<div class="detail-meta">
+<span class="pill">Technology</span>
+<span class="pill alt">8 min read</span>
+<span class="pill alt">March 24, 2026</span>
+</div>
+<h2 class="detail-title">Your Used LTO-8 Drive Is Not Broken Until the SAS Path Stops Lying to You</h2>
+<p class="lead">A lot of used LTO drive “failures” are really cabling, HBA, enclosure, or mode confusion. Before declaring a tape drive dead, most operators first have to survive the part where the SAS path keeps misleading them.</p>
+</header>
+<section class="article-body"><p>Used enterprise tape drives have a special talent for making smart people doubt themselves.</p><figure class="page-figure"><img alt="A chain from host to HBA to SAS cable to enclosure to a drive, with a warning on the cable link." decoding="async" height="400" loading="lazy" src="/assets/figures/blog-sas-path.svg" width="960"/><figcaption>Before blaming the drive, check every link on the path to it, because the cable or adapter is often the real culprit.</figcaption></figure><p>A drive shows up. It looks clean enough. The seller said it worked. You slot it into the plan, attach the cabling, boot the host, and then the confusion starts. The OS sees something strange. Or nothing at all. Or the wrong thing. Suddenly you are deep in adapter settings, firmware questions, connector diagrams, and search results from a decade ago.</p><p>At that point, most people assume the drive is dead.</p><p>That assumption is often premature.</p><h2>Used LTO troubleshooting is usually a chain problem first</h2><p>Recent conversations around secondhand IBM and HPE gear kept landing in the same place. Before you diagnose the tape drive, you have to diagnose the path. SAS controllers matter. Mode settings matter. External enclosures matter. Cable types matter more than anybody wants them to. What looks like a drive failure is frequently a negotiation failure somewhere upstream.</p><p>That is part of why these threads become so frustrating. The drive is the most expensive object in the setup, so it gets blamed first. But used tape hardware lives inside a stack of dependencies that all need to align. If the HBA firmware is wrong, if the card is in the wrong mode, if the cable is incorrect, if the host expects a different connector standard, or if the enclosure presents the device oddly, the drive can look dead while doing exactly what it is supposed to do.</p><p>The operator experience becomes one long argument with ambiguity.</p><h2>Enterprise tape gear was not designed to reassure hobbyists</h2><p>That sounds obvious, but it matters.</p><p>These devices came from environments where the surrounding assumptions were already solved. Proper host adapters. Known firmware baselines. Documented topology. Spare parts. Someone else had probably done this exact install path twenty times before. When that same drive lands in a lab or small shop, all of that invisible context disappears.</p><p>Now every component becomes suspect. Is the issue power? Firmware? Block size settings? Device visibility? Some weird seller-side reconfiguration? People start swapping ports, booting alternate systems, testing with vendor tools, and inspecting logs line by line. The work is less about tape itself and more about reassembling enough infrastructure truth to trust what the drive is telling you.</p><p>That is why patience becomes a technical skill here. Not because patience fixes hardware, but because tape troubleshooting punishes panic buys and premature conclusions.</p><h2>The used-market opportunity is still real</h2><p>Which is why people keep trying.</p><p>If secondhand tape gear were only pain, the market would not stay interesting. The reason people keep chasing it is that one successfully revived LTO-8 drive changes the math on serious archive capacity immediately. What felt like enterprise-only storage starts looking accessible. Suddenly long-retention planning, offline copies, and large staged backups are not abstract anymore.</p><p>That upside makes the troubleshooting worthwhile for the right buyer. But the right buyer is not just someone willing to spend money. It is someone willing to treat SAS, adapters, and diagnostics as part of the purchase price.</p><p>A used LTO drive is never just a drive. It is a small integration project with a tape mechanism attached.</p><p>That is the more honest way to frame the risk. Do that, and the whole situation becomes less mysterious. The question is not “Is this drive broken?” The better question is “Have I ruled out the entire path around it?”</p><p>Usually, that is where the real answer lives.</p></section>
+<a class="back-link" href="/blog">Back to Blog</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>Article signal</h2>
+<p>Recent Reddit discussion distilled into a standalone TapeBackup.org article page with direct indexing metadata and a stable canonical URL.</p>
+</section>
+<section class="sidebar-card">
+<h2>Need a deeper LTO plan?</h2>
+<p>Browse the site resources, compare storage approaches, or contact the team for help deciding when tape belongs in your backup workflow.</p>
+<a class="cta" href="/contact">Talk to TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul><li><a href="/blog/which-lto-drive-should-you-buy-without-regretting-it-later">Which LTO Drive Should You Buy Without Regretting It Later?</a></li><li><a href="/blog/the-day-my-tape-drive-went-rogue-inside-the-frustrating-reality-of-lto-6-failures">The Day My Tape Drive Went Rogue: Inside the Frustrating Reality of LTO-6 Failures</a></li><li><a href="/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them">Used LTO Libraries Are Chaos, and That Is Exactly Why People Keep Buying Them</a></li><li><a href="/why-tape/lto-tape-drive">How LTO tape drives work</a></li><li><a href="/resources/cheap-lto-tapes">How to buy used LTO tapes safely</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
 </body>
 </html>

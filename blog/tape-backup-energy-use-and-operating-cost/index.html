@@ -1,33 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tape Backup Energy Use and Operating Cost | TapeBackup.org</title>
-    <meta name="description" content="Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions." />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Tape Backup Energy Use and Operating Cost" />
-    <meta property="og:description" content="Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions." />
-    <meta property="og:url" content="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" />
-    <meta property="og:image" content="https://tapebackup.org/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tape Backup Energy Use and Operating Cost" />
-    <meta name="twitter:description" content="Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions." />
-    <meta name="twitter:image" content="https://tapebackup.org/og-image.png" />
-    <meta name="theme-color" content="#183976" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/blog-header.css" />
-    <link rel="stylesheet" href="/blog-static.css" />
-    <script defer src="/assets/outbound-links.js"></script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tape Backup Energy Use and Operating Cost","description":"Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions.","datePublished":"2026-10-12","dateModified":"2026-10-12","mainEntityOfPage":"https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost","url":"https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost","author":{"@type":"Organization","name":"TapeBackup.org"},"publisher":{"@type":"Organization","name":"TapeBackup.org","logo":{"@type":"ImageObject","url":"https://tapebackup.org/favicon.png"}},"articleSection":"Analysis"}</script>
-  </head>
-  <body>
-    <div class="site-shell">
-      <div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Tape Q&amp;A</a><span class="sep"></span><a href="/lto-tape-price-trend">LTO Prices</a><span class="sep"></span><a href="/contact">Contact Us</a></div></div>
-<header class="site-header"><div class="wrap"><a class="brand" href="/" aria-label="TapeBackup.org home"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3" stroke="#fff" stroke-width="1.8"/><circle cx="8" cy="12" r="2.2" fill="#fff"/><circle cx="16" cy="12" r="2.2" fill="#fff"/><line x1="10.2" y1="12" x2="13.8" y2="12" stroke="#fff" stroke-width="1.4"/></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
-<nav class="topnav" aria-label="Primary">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tape Backup Energy Use and Operating Cost | TapeBackup.org</title>
+<meta content="Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Tape Backup Energy Use and Operating Cost" property="og:title"/>
+<meta content="Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions." property="og:description"/>
+<meta content="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Tape Backup Energy Use and Operating Cost" name="twitter:title"/>
+<meta content="Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tape Backup Energy Use and Operating Cost","description":"Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions.","datePublished":"2026-10-12","dateModified":"2026-10-12","mainEntityOfPage":"https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost","url":"https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost","author":{"@type":"Organization","name":"TapeBackup.org"},"publisher":{"@type":"Organization","name":"TapeBackup.org","logo":{"@type":"ImageObject","url":"https://tapebackup.org/favicon.png"}},"articleSection":"Analysis"}</script>
+<meta content="en_US" property="og:locale"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/tape-q-and-a">Tape Q&amp;A</a><span class="sep"></span><a href="/lto-tape-price-trend">LTO Prices</a><span class="sep"></span><a href="/contact">Contact Us</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a aria-current="page" class="on" href="/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" lang="en">EN</a><a href="/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" lang="de">DE</a><a href="/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" lang="fr">FR</a><a href="/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" lang="it">IT</a><a href="/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" lang="es">ES</a><a href="/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org home" class="brand" href="/"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Primary" class="topnav">
 <div class="price-dropdown"><a href="/lto-tape">LTO Tape</a><div class="price-dropdown-menu"><a href="/lto-tape">What is LTO tape<span>The format in one page</span></a><a href="/lto-tape-capacity">Capacity chart<span>LTO-1 to LTO-14</span></a><a href="/why-tape/lto-tape-drive">Drive buying guide<span>Which drive to buy</span></a><a href="/lto-tape-library">Libraries<span>Autoloaders and libraries</span></a><a href="/why-tape/lto-tape-lifespan">Lifespan<span>How long tapes last</span></a><a href="/resources/ltfs">LTFS<span>Tape as a file system</span></a><a href="/resources/lto-tape-data-recovery">Data recovery<span>Reading old tapes</span></a><a href="/lto-tape-news">News<span>What changed this month</span></a><a href="/why-tape">Why tape<span>Cost, air gap and lifespan</span></a></div></div>
 <div class="price-dropdown"><a href="/lto-tape-price-trend">LTO Prices</a><div class="price-dropdown-menu"><a href="/lto-tape-price-trend">All generations<span>September 2026 prices</span></a><a href="/lto-tape-price-trend/lto6-price">LTO-6 Price<span>2.5 TB native</span></a><a href="/lto-tape-price-trend/lto7-price">LTO-7 Price<span>6 TB native</span></a><a href="/lto-tape-price-trend/lto8-price">LTO-8 Price<span>12 TB native</span></a><a href="/lto-tape-price-trend/lto9-price">LTO-9 Price<span>18 TB native</span></a><a href="/lto-tape-price-trend/lto10-price">LTO-10 Price<span>30 / 40 TB native</span></a><a href="/lto-tape-price-trend/history">Price history<span>Archived snapshots since 2025</span></a></div></div>
 <div class="price-dropdown"><a href="/backup-calculator">Tools</a><div class="price-dropdown-menu"><a href="/backup-calculator">Backup calculator<span>Media and cost estimate</span></a><a href="/backup-software-finder">Software finder<span>Match software to your tape use</span></a><a href="/best-tape-backup-software">Best tape backup software<span>2026 comparison</span></a></div></div>
@@ -36,70 +37,70 @@
 </nav>
 <div class="header-right"><a class="btn btn-primary btn-sm" href="/contact">Get Pricebook</a></div>
 </div></header>
-
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Analysis article</p>
-            <h1>Tape Backup Energy Use and Operating Cost</h1>
-            <p>Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions.</p>
-            <div class="signal-row">
-              <span class="signal-chip">Analysis</span>
-              <span class="signal-chip">4 min read</span>
-              <span class="signal-chip">October 12, 2026</span>
-            </div>
-          </div>
-          <aside class="hero-panel">
-            <p class="panel-label">In short</p>
-            <p class="panel-copy">Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions.</p>
-          </aside>
-        </div>
-      </section>
-
-      <main class="page">
-        <div class="container article-layout">
-          <article class="article-card">
-            <div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/blog">Blog</a><span>/</span><span>Analysis</span></div>
-            <header class="article-header">
-              <div class="detail-meta">
-                <span class="pill">Analysis</span>
-                <span class="pill alt">4 min read</span>
-                <span class="pill alt">October 12, 2026</span>
-              </div>
-              <h2 class="detail-title">Tape Backup Energy Use and Operating Cost</h2>
-              <p class="lead">Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions.</p>
-            </header>
-            <section class="article-body"><p><strong>A standalone LTO drive that is switched on only while it writes is the most energy-efficient way to keep an archive: a cartridge on a shelf uses no power at all. In our 500 TB model, a disk array kept online uses about 4,400 kWh a year, a small tape library left on all year about 800 kWh, and a standalone drive used only for writing about 16 kWh.</strong></p>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Analysis article</p>
+<h1>Tape Backup Energy Use and Operating Cost</h1>
+<p>Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions.</p>
+<div class="signal-row">
+<span class="signal-chip">Analysis</span>
+<span class="signal-chip">4 min read</span>
+<span class="signal-chip">October 12, 2026</span>
+</div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">In short</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/blog">Blog</a><span>/</span><span>Analysis</span></div>
+<header class="article-header">
+<div class="detail-meta">
+<span class="pill">Analysis</span>
+<span class="pill alt">4 min read</span>
+<span class="pill alt">October 12, 2026</span>
+</div>
+<h2 class="detail-title">Tape Backup Energy Use and Operating Cost</h2>
+<p class="lead">Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions.</p>
+</header>
+<section class="article-body"><p><strong>A standalone LTO drive that is switched on only while it writes is the most energy-efficient way to keep an archive: a cartridge on a shelf uses no power at all. In our 500 TB model, a disk array kept online uses about 4,400 kWh a year, a small tape library left on all year about 800 kWh, and a standalone drive used only for writing about 16 kWh.</strong></p>
 <p>Energy figures depend on your hardware, so below are the assumptions behind each number. Swap in the values from your own data sheets to redo the sums.</p>
 <h2>How the options compare on energy</h2>
 <div class="table-wrap"><table class="post-table"><thead><tr><th>Option</th><th>Assumption</th><th>kWh per year</th></tr></thead><tbody><tr><td>Disk array, always on</td><td>32 hard drives of 20 TB (500 TB plus parity and spares) at about 7 W each, plus 50% for enclosure and controllers, plus 50% for cooling</td><td>About 4,415</td></tr><tr><td>Tape library, always on</td><td>About 60 W idle for a small library with its drive, plus 50% for cooling, plus the writing below</td><td>About 804</td></tr><tr><td>Standalone tape drive, on only while writing</td><td>One full 500 TB write a year at 400 MB/s (about 347 hours) at about 30 W, plus 50% for cooling</td><td>About 16</td></tr><tr><td>Cloud archive</td><td>Energy is part of the provider's price</td><td>Not billed separately</td></tr></tbody></table></div>
-<figure class="page-figure"><img src="/assets/figures/blog-energy-kwh.svg" alt="Modelled energy use per year for a 500 TB archive on disk, a tape library, a standalone tape drive and cloud archive" width="960" height="440" loading="lazy" decoding="async"><figcaption>A disk array draws power around the clock; tape draws power only while a drive or library is switched on.</figcaption></figure>
+<figure class="page-figure"><img alt="Modelled energy use per year for a 500 TB archive on disk, a tape library, a standalone tape drive and cloud archive" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-kwh.svg" width="960"/><figcaption>A disk array draws power around the clock; tape draws power only while a drive or library is switched on.</figcaption></figure>
 <h2>Operating cost per year</h2>
 <p>At $0.13 per kWh, close to the US commercial average, the power bill is small for tape and noticeable for disk. For cloud archive storage, the monthly bill is the operating cost.</p>
 <div class="table-wrap"><table class="post-table"><thead><tr><th>Option, 500 TB</th><th>Operating cost per year</th><th>What drives it</th></tr></thead><tbody><tr><td>Cloud archive (Glacier Deep Archive)</td><td>About $5,532</td><td>Storage billed every month; restores billed on top</td></tr><tr><td>Disk array power</td><td>About $574</td><td>Drives, enclosures and cooling running all year; drives replaced every few years</td></tr><tr><td>Tape library power</td><td>About $105</td><td>Library idle draw plus writing</td></tr><tr><td>Standalone tape drive power</td><td>About $2</td><td>Only the hours spent writing</td></tr></tbody></table></div>
-<figure class="page-figure"><img src="/assets/figures/blog-energy-opcost.svg" alt="Operating cost per year for 500 TB: cloud archive storage bill, disk array power, tape library power and standalone drive power" width="960" height="440" loading="lazy" decoding="async"><figcaption>For a 500 TB archive the cloud bill dwarfs any power bill, and tape's power cost is close to zero once cartridges leave the drive.</figcaption></figure>
+<figure class="page-figure"><img alt="Operating cost per year for 500 TB: cloud archive storage bill, disk array power, tape library power and standalone drive power" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-opcost.svg" width="960"/><figcaption>For a 500 TB archive the cloud bill dwarfs any power bill, and tape's power cost is close to zero once cartridges leave the drive.</figcaption></figure>
 <h2>Other operating costs to plan for</h2>
 <p>Power is only part of the picture. Disk arrays need drives replaced every three to seven years. Tape needs cleaning cartridges, offsite storage for the second copy, a periodic read check and a migration to newer media every two or three drive generations. Cloud adds retrieval and egress fees whenever you read data back.</p>
 <p>The full five-year comparison, including hardware, is in <a href="/blog/tape-backup-5-year-total-cost-of-ownership">tape backup 5-year TCO</a>, and drive choices in the <a href="/why-tape/lto-tape-drive">LTO drive buyer's guide</a>.</p>
 <h2>Frequently asked questions</h2><h3>Does tape use power when it is stored?</h3><p>No. A cartridge on a shelf uses no electricity. Only the drive or library uses power, and only while it is switched on.</p><h3>Is a tape library worth its extra power?</h3><p>Usually yes if jobs span several cartridges or run unattended. A small library adds tens of watts of idle draw, which costs roughly $100 a year in our model.</p><h3>How can I cut tape energy further?</h3><p>Power down standalone drives between jobs, eject cartridges to the shelf, and schedule large writes together so the drive streams without stopping.</p><h3>Is cloud storage more energy efficient than tape?</h3><p>You cannot measure it directly: the energy is inside the provider's price and data centre. For cold data, tape on a shelf uses less energy than any always-on system.</p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does tape use power when it is stored?", "acceptedAnswer": {"@type": "Answer", "text": "No. A cartridge on a shelf uses no electricity. Only the drive or library uses power, and only while it is switched on."}}, {"@type": "Question", "name": "Is a tape library worth its extra power?", "acceptedAnswer": {"@type": "Answer", "text": "Usually yes if jobs span several cartridges or run unattended. A small library adds tens of watts of idle draw, which costs roughly $100 a year in our model."}}, {"@type": "Question", "name": "How can I cut tape energy further?", "acceptedAnswer": {"@type": "Answer", "text": "Power down standalone drives between jobs, eject cartridges to the shelf, and schedule large writes together so the drive streams without stopping."}}, {"@type": "Question", "name": "Is cloud storage more energy efficient than tape?", "acceptedAnswer": {"@type": "Answer", "text": "You cannot measure it directly: the energy is inside the provider's price and data centre. For cold data, tape on a shelf uses less energy than any always-on system."}}]}</script></section>
-            <a class="back-link" href="/blog">Back to Blog</a>
-          </article>
-
-          <aside class="sidebar">
-            <section class="sidebar-card">
-              <h2>Article signal</h2>
-              <p>Recent tape-storage discussion distilled into a standalone TapeBackup.org article page with direct indexing metadata and a stable canonical URL.</p>
-            </section>
-            <section class="sidebar-card">
-              <h2>Need a deeper LTO plan?</h2>
-              <p>Browse the site resources, compare storage approaches, or contact the team for help deciding when tape belongs in your backup workflow.</p>
-              <a class="cta" href="/contact">Talk to TapeBackup</a>
-            </section>
-          </aside>
-        </div>
-      <!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul><li><a href="/blog/tape-backup-encryption-security-compared">Tape Encryption and Security, Side by Side</a></li><li><a href="/blog/tape-backup-5-year-total-cost-of-ownership">Tape Backup 5-Year TCO: Systems Compared</a></li><li><a href="/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them">Used LTO Libraries Are Chaos, and That Is Exactly Why People Keep Buying Them</a></li><li><a href="/lto-tape-price-trend">LTO tape prices, September 2026</a></li></ul></section><!-- related:end -->
-      </main>
-    </div>
-  <script src="/chat-widget.js" defer></script>
+<a class="back-link" href="/blog">Back to Blog</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>Article signal</h2>
+<p>Recent tape-storage discussion distilled into a standalone TapeBackup.org article page with direct indexing metadata and a stable canonical URL.</p>
+</section>
+<section class="sidebar-card">
+<h2>Need a deeper LTO plan?</h2>
+<p>Browse the site resources, compare storage approaches, or contact the team for help deciding when tape belongs in your backup workflow.</p>
+<a class="cta" href="/contact">Talk to TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul><li><a href="/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">The Best LTO Backup Software Is Usually the One You Will Actually Test</a></li><li><a href="/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again">Tape Is Dead, Right? Then Why Are People Quietly Building Backup Systems Around It Again</a></li><li><a href="/blog/tape-backup-software-integration-tradeoffs">Tape Backup Software Integration Tradeoffs</a></li><li><a href="/lto-tape-price-trend">LTO tape prices, September 2026</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
 </body>
 </html>

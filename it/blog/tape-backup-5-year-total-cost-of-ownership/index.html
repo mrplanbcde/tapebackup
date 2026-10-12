@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TCO nastro a 5 anni: confronto sistemi | TapeBackup.org</title>
+<meta content="I sistemi di backup su nastro con il minor TCO a 5 anni, a confronto a 100 TB, 500 TB e 1 PB rispetto allo storage di archivio su cloud." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/it/blog/tape-backup-5-year-total-cost-of-ownership" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="TCO backup su nastro a 5 anni: confronto" property="og:title"/>
+<meta content="I sistemi di backup su nastro con il minor TCO a 5 anni, a confronto a 100 TB, 500 TB e 1 PB rispetto allo storage di archivio su cloud." property="og:description"/>
+<meta content="https://tapebackup.org/it/blog/tape-backup-5-year-total-cost-of-ownership" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="TCO backup su nastro a 5 anni: confronto" name="twitter:title"/>
+<meta content="I sistemi di backup su nastro con il minor TCO a 5 anni, a confronto a 100 TB, 500 TB e 1 PB rispetto allo storage di archivio su cloud." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "TCO backup su nastro a 5 anni: confronto", "description": "I sistemi di backup su nastro con il minor TCO a 5 anni, a confronto a 100 TB, 500 TB e 1 PB rispetto allo storage di archivio su cloud.", "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "https://tapebackup.org/it/blog/tape-backup-5-year-total-cost-of-ownership", "url": "https://tapebackup.org/it/blog/tape-backup-5-year-total-cost-of-ownership", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "logo": {"@type": "ImageObject", "url": "https://tapebackup.org/favicon.png"}}, "articleSection": "Pricing"}</script>
+<meta content="it_IT" property="og:locale"/><link href="https://tapebackup.org/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/it/tape-q-and-a">Domande e risposte</a><span class="sep"></span><a href="/it/lto-tape-price-trend">Prezzi LTO</a><span class="sep"></span><a href="/it/contact">Contatti</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="en" lang="en">EN</a><a href="/de/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="de" lang="de">DE</a><a href="/fr/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="fr" lang="fr">FR</a><a aria-current="page" class="on" href="/it/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="it" lang="it">IT</a><a href="/es/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="es" lang="es">ES</a><a href="/nl/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/tape-backup-5-year-total-cost-of-ownership" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="Home page di TapeBackup.org" class="brand" href="/it"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="Principale" class="topnav">
+<div class="price-dropdown"><a href="/it/lto-tape">Nastro LTO</a><div class="price-dropdown-menu"><a href="/it/lto-tape">Che cos'è il nastro LTO<span>Il formato in una pagina</span></a><a href="/it/lto-tape-capacity">Tabella delle capacità<span>Da LTO-1 a LTO-14</span></a><a href="/it/why-tape/lto-tape-drive">Guida all'acquisto delle unità<span>Quale unità comprare</span></a><a href="/it/lto-tape-library">Librerie<span>Autoloader e librerie</span></a><a href="/it/why-tape/lto-tape-lifespan">Durata<span>Quanto durano i nastri</span></a><a href="/it/resources/ltfs">LTFS<span>Il nastro come file system</span></a><a href="/it/resources/lto-tape-data-recovery">Recupero dati<span>Leggere vecchi nastri</span></a><a href="/it/lto-tape-news">Notizie<span>Cosa è cambiato questo mese</span></a><a href="/it/why-tape">Perché il nastro<span>Costi, air gap e durata</span></a></div></div>
+<div class="price-dropdown"><a href="/it/lto-tape-price-trend">Prezzi LTO</a><div class="price-dropdown-menu"><a href="/it/lto-tape-price-trend">Tutte le generazioni<span>Prezzi di settembre 2026</span></a><a href="/it/lto-tape-price-trend/lto6-price">Prezzo LTO-6<span>2,5 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto7-price">Prezzo LTO-7<span>6 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto8-price">Prezzo LTO-8<span>12 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto9-price">Prezzo LTO-9<span>18 TB nativi</span></a><a href="/it/lto-tape-price-trend/lto10-price">Prezzo LTO-10<span>30 / 40 TB nativi</span></a><a href="/it/lto-tape-price-trend/history">Storico dei prezzi<span>Rilevazioni archiviate dal 2025</span></a></div></div>
+<div class="price-dropdown"><a href="/it/backup-calculator">Strumenti</a><div class="price-dropdown-menu"><a href="/it/backup-calculator">Calcolatore di backup<span>Stima di supporti e costi</span></a><a href="/it/backup-software-finder">Ricerca software<span>Il software adatto al vostro uso del nastro</span></a><a href="/it/best-tape-backup-software">Migliori software di backup su nastro<span>Confronto 2026</span></a></div></div>
+<a href="/it/blog">Blog</a>
+<a href="/it/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/it/contact">Richiedi il listino</a></div>
+</div></header>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Articolo sui prezzi</p>
+<h1>TCO backup su nastro a 5 anni: confronto</h1>
+<p>I sistemi di backup su nastro con il minor TCO a 5 anni, a confronto a 100 TB, 500 TB e 1 PB rispetto allo storage di archivio su cloud.</p>
+<div class="signal-row"><span class="signal-chip">Prezzi</span> <span class="signal-chip">Lettura di 4 min</span> <span class="signal-chip">12 ottobre 2026</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">In breve</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/it/blog">Blog</a><span>/</span><span>Prezzi</span></div>
+<header class="article-header">
+<div class="detail-meta"><span class="pill">Prezzi</span> <span class="pill alt">Lettura di 4 min</span> <span class="pill alt">12 ottobre 2026</span></div>
+<h2 class="detail-title">TCO backup su nastro a 5 anni: confronto</h2>
+<p class="lead">I sistemi di backup su nastro con il minor TCO a 5 anni, a confronto a 100 TB, 500 TB e 1 PB rispetto allo storage di archivio su cloud.</p>
+</header>
+<section class="article-body"><p><strong>Su cinque anni, un sistema LTO-8 o LTO-9 con due copie è il modo più economico per conservare 500 TB o più negli USA: circa 19.200 $ per LTO-8 e 26.900 $ per LTO-9 a settembre 2026, contro 27.660 $ per cinque anni di Glacier Deep Archive prima dei ripristini. Sotto circa 100 TB, il cloud costa solitamente meno salvo ripristini frequenti.</strong></p>
+<p>Il nostro modello calcola gli acquisti una tantum: cartucce per due copie e le unità (una sotto 500 TB, due da 500 TB). I prezzi sono le mediane delle offerte di nuovi rivenditori USA dal <a href="/it/lto-tape-price-trend">monitoraggio prezzi</a>. La stima cloud è il listino AWS S3 Glacier Deep Archive per US East, dalla pagina <a href="/it/comparisons/tape-vs-cloud-5-year-cost">costo nastro vs cloud a 5 anni</a>.</p>
+<h2>Costo quinquennale a confronto</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Archivio</th><th>LTO-8, due copie</th><th>LTO-9, due copie</th><th>LTO-10, due copie</th><th>Glacier Deep Archive, 5 anni</th><th>Un ripristino completo da Glacier</th></tr></thead><tbody><tr><td>100 TB</td><td>7.824 $</td><td>11.824 $</td><td>25.781 $</td><td><strong>5.532 $</strong></td><td>8.615 $</td></tr><tr><td>500 TB</td><td><strong>19.247 $</strong></td><td>26.911 $</td><td>56.567 $</td><td>27.660 $</td><td>43.074 $</td></tr><tr><td>1.000 TB</td><td><strong>25.545 $</strong></td><td>32.623 $</td><td>66.019 $</td><td>55.321 $</td><td>86.147 $</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="Costo quinquennale di LTO-8, LTO-9 e LTO-10 con due copie rispetto a Glacier Deep Archive a 100 TB, 500 TB e 1 PB" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-tco-5yr.svg" width="960"/><figcaption>Il nastro comporta la maggior parte della spesa nel primo anno e poco dopo; l'archivio cloud costa lo stesso ogni mese e un ripristino completo può costare più dell'archiviazione stessa.</figcaption></figure>
+<p>Il costo del nastro è concentrato all'inizio per poi stabilizzarsi: più a lungo si conservano i dati, più il nastro risulta vantaggioso. Un archivio cloud costa lo stesso ogni mese e richiede costi aggiuntivi per la rilettura: un ripristino completo di 500 TB da Glacier Deep Archive con recupero bulk ed egress Internet costa circa 43.074 $ oltre allo storage.</p>
+<h2>Quale sistema su nastro offre il TCO più basso</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Sistema</th><th>Ideale per</th><th>Note sui costi quinquennali</th></tr></thead><tbody><tr><td>Unità LTO-8 standalone</td><td>Fino a poche centinaia di TB, cambio manuale dei nastri</td><td>Minor costo totale attuale; unità a circa 6.474 $</td></tr><tr><td>Unità LTO-9 standalone</td><td>Archivi in crescita, nastri LTO-8 esistenti</td><td>Circa 4.100 $ in più per l'unità, meno cartucce per PB</td></tr><tr><td>Autoloader o piccola libreria</td><td>Processi distribuiti su più cartucce, backup non presidiati</td><td>Aggiunge lo chassis della libreria e un dispositivo alimentato; i prezzi variano in base al modello, consultate la <a href="/it/lto-tape-library">guida alle librerie</a></td></tr><tr><td>Unità ad altezza piena LTO-10 o libreria</td><td>Archivi molto grandi con slot limitati</td><td>Costo dell'unità più alto; si ripaga attraverso la densità, non con il prezzo</td></tr></tbody></table></div>
+<h2>Cosa include inoltre un TCO completo</h2>
+<p>I nostri dati escludono costi legati all'ambiente specifico: licenze software di backup, libreria o autoloader, alimentazione, custodia offsite della seconda copia, personale e migrazione a nuovi supporti quando le unità terminano il supporto.</p>
+<figure class="page-figure"><img alt="I blocchi di costo del TCO su nastro a 5 anni, con unità e cartucce conteggiate e il resto indicato come non incluso" decoding="async" height="450" loading="lazy" src="/assets/figures/blog-tco-components.svg" width="960"/><figcaption>Unità e cartucce sono le voci di cui calcoliamo il prezzo qui. Software, libreria, alimentazione, archiviazione offsite, tempo del personale e la migrazione successiva dipendono dal vostro ambiente.</figcaption></figure>
+<p>I consumi elettrici sono la voce minore per il nastro: consultate il nostro <a href="/it/blog/tape-backup-energy-use-and-operating-cost">confronto su consumi energetici e costi operativi</a>. Il software è spesso la voce principale: confrontate le funzionalità nel <a href="/it/backup-software-finder">selettore software</a>.</p>
+<h2>Domande frequenti</h2><h3>Il nastro è più economico del cloud su cinque anni?</h3><p>A partire da circa 500 TB, sì nel nostro modello: due copie LTO-8 costano circa 19.200 $ e due copie LTO-9 circa 26.900 $, a fronte di 27.660 $ per cinque anni di Glacier Deep Archive a 500 TB, prima delle commissioni di ripristino.</p><h3>Cosa non è incluso in questi costi del nastro?</h3><p>Licenze software, libreria o autoloader, alimentazione, custodia offsite, personale e migrazione al termine del ciclo di vita dell'unità.</p><h3>Di quante unità a nastro ho bisogno?</h3><p>Un'unità è sufficiente per un piccolo archivio. A partire da circa 500 TB ne prevediamo due, in modo da poter eseguire backup e ripristino contemporaneamente ed evitare che il guasto di un'unità blocchi le attività.</p><h3>Quando LTO-10 risulta l'opzione più economica?</h3><p>Non ai prezzi attuali. LTO-10 costa di più per terabyte sia nei supporti che nelle unità; viene scelto per la densità nelle grandi librerie.</p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Il nastro è più economico del cloud su cinque anni?", "acceptedAnswer": {"@type": "Answer", "text": "A partire da circa 500 TB, sì nel nostro modello: due copie LTO-8 costano circa 19.200 $ e due copie LTO-9 circa 26.900 $, a fronte di 27.660 $ per cinque anni di Glacier Deep Archive a 500 TB, prima delle commissioni di ripristino."}}, {"@type": "Question", "name": "Cosa non è incluso in questi costi del nastro?", "acceptedAnswer": {"@type": "Answer", "text": "Licenze software, libreria o autoloader, alimentazione, custodia offsite, personale e migrazione al termine del ciclo di vita dell'unità."}}, {"@type": "Question", "name": "Di quante unità a nastro ho bisogno?", "acceptedAnswer": {"@type": "Answer", "text": "Un'unità è sufficiente per un piccolo archivio. A partire da circa 500 TB ne prevediamo due, in modo da poter eseguire backup e ripristino contemporaneamente ed evitare che il guasto di un'unità blocchi le attività."}}, {"@type": "Question", "name": "Quando LTO-10 risulta l'opzione più economica?", "acceptedAnswer": {"@type": "Answer", "text": "Non ai prezzi attuali. LTO-10 costa di più per terabyte sia nei supporti che nelle unità; viene scelto per la densità nelle grandi librerie."}}], "inLanguage": "it"}</script></section>
+<a class="back-link" href="/it/blog">Torna al Blog</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>Segnale dell'articolo</h2>
+<p>Recente discussione sullo storage su nastro riassunta in un articolo autonomo di TapeBackup.org con metadati di indicizzazione e URL canonico.</p>
+</section>
+<section class="sidebar-card">
+<h2>Serve un piano LTO più approfondito?</h2>
+<p>Esplorate le risorse del sito, confrontate gli approcci di archiviazione o contattate il team per valutare l'uso del nastro nel vostro backup.</p>
+<a class="cta" href="/it/contact">Contatta TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Contenuti correlati su TapeBackup</h2><ul><li><a href="/it/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again">Il nastro è morto, giusto? Allora perché si continuano a creare sistemi di backup basati su di esso?</a></li><li><a href="/it/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">Il miglior software di backup LTO è quello che viene effettivamente testato</a></li><li><a href="/it/blog/tape-backup-software-integration-tradeoffs">Compromessi di integrazione del software di backup su nastro</a></li><li><a href="/it/lto-tape-price-trend">Prezzi nastri LTO, settembre 2026</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>
