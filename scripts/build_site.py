@@ -256,7 +256,8 @@ def git_date(file):
 def page_date(file, default):
     s = open(file, encoding="utf-8").read()
     m = re.search(r'"dateModified":\s*"(\d{4}-\d{2}-\d{2})', s)
-    return m.group(1) if m else (git_date(os.path.relpath(file, ROOT)) or default)
+    dates = [d for d in (m.group(1) if m else None, git_date(os.path.relpath(file, ROOT))) if d]
+    return max(dates) if dates else default  # the later of the stated date and the last commit that changed the page
 
 
 def build_sitemap(today):
