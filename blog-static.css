@@ -113,3 +113,11 @@
 .article-body .video-card { margin: 1.6rem 0; }
 .article-body .video-card .eyebrow { font-family: "Space Mono", monospace; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 .3rem; }
 .article-body .video-card h2 { margin-top: 0; }
+
+/* Tables in blog posts (scripts/blog_posts_2026_10.py) */
+.article-body .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+.post-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.post-table th, .post-table td { text-align: left; vertical-align: top; padding: .7rem .75rem; border-bottom: 1px solid var(--line); }
+.post-table th { font-size: .76rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); }
+.post-table tbody tr:hover { background: var(--accent-50); }
+.article-body h3 { margin: 1.2rem 0 .3rem; font-size: 1.05rem; }

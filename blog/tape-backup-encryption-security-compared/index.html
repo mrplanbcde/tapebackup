@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tape Encryption and Security, Side by Side | TapeBackup.org</title>
+    <meta name="description" content="Which tape backup systems have the best encryption and security? AES-256 in LTO drives, key management options, WORM and air gap compared side by side." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://tapebackup.org/blog/tape-backup-encryption-security-compared" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Tape Encryption and Security, Side by Side" />
+    <meta property="og:description" content="Which tape backup systems have the best encryption and security? AES-256 in LTO drives, key management options, WORM and air gap compared side by side." />
+    <meta property="og:url" content="https://tapebackup.org/blog/tape-backup-encryption-security-compared" />
+    <meta property="og:image" content="https://tapebackup.org/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tape Encryption and Security, Side by Side" />
+    <meta name="twitter:description" content="Which tape backup systems have the best encryption and security? AES-256 in LTO drives, key management options, WORM and air gap compared side by side." />
+    <meta name="twitter:image" content="https://tapebackup.org/og-image.png" />
+    <meta name="theme-color" content="#183976" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/blog-static.css" />
+    <script defer src="/assets/outbound-links.js"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tape Encryption and Security, Side by Side","description":"Which tape backup systems have the best encryption and security? AES-256 in LTO drives, key management options, WORM and air gap compared side by side.","datePublished":"2026-10-12","dateModified":"2026-10-12","mainEntityOfPage":"https://tapebackup.org/blog/tape-backup-encryption-security-compared","url":"https://tapebackup.org/blog/tape-backup-encryption-security-compared","author":{"@type":"Organization","name":"TapeBackup.org"},"publisher":{"@type":"Organization","name":"TapeBackup.org","logo":{"@type":"ImageObject","url":"https://tapebackup.org/favicon.png"}},"articleSection":"Security"}</script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a class="brand" href="/home">
+            <img src="/assets/logo-BdaQDFFQ.png" alt="TapeBackup logo" />
+            <span class="brand-copy"><strong>LTO Tape Info</strong><span>Static article page</span></span>
+          </a>
+          <nav class="topnav" aria-label="Primary">
+            <a href="/home">Home</a>
+            <a href="/about">About LTO</a>
+            <a href="/why-tape">Why Tape</a>
+            <a href="/tape-q-and-a">Q&amp;A</a>
+            <a href="/blog" class="current">Blog</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Security article</p>
+            <h1>Tape Encryption and Security, Side by Side</h1>
+            <p>Which tape backup systems have the best encryption and security? AES-256 in LTO drives, key management options, WORM and air gap compared side by side.</p>
+            <div class="signal-row">
+              <span class="signal-chip">Security</span>
+              <span class="signal-chip">4 min read</span>
+              <span class="signal-chip">October 12, 2026</span>
+            </div>
+          </div>
+          <aside class="hero-panel">
+            <p class="panel-label">In short</p>
+            <p class="panel-copy">Which tape backup systems have the best encryption and security? AES-256 in LTO drives, key management options, WORM and air gap compared side by side.</p>
+          </aside>
+        </div>
+      </section>
+
+      <main class="page">
+        <div class="container article-layout">
+          <article class="article-card">
+            <div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/blog">Blog</a><span>/</span><span>Security</span></div>
+            <header class="article-header">
+              <div class="detail-meta">
+                <span class="pill">Security</span>
+                <span class="pill alt">4 min read</span>
+                <span class="pill alt">October 12, 2026</span>
+              </div>
+              <h2 class="detail-title">Tape Encryption and Security, Side by Side</h2>
+              <p class="lead">Which tape backup systems have the best encryption and security? AES-256 in LTO drives, key management options, WORM and air gap compared side by side.</p>
+            </header>
+            <section class="article-body"><p><strong>Every LTO drive from LTO-4 onward encrypts in hardware with AES-256, whichever brand is on the front, so the drive is not what separates one tape system from another. What differs is how the encryption keys are managed: by the backup software, by the tape library through an external key manager, or by the host's tape driver. Add WORM cartridges and a copy that is offline when ejected, and tape covers the threats disk and cloud copies struggle with.</strong></p>
+<h2>What every current LTO drive has</h2>
+<p>Encryption, write-once media and the LTFS file system arrived in different generations and are part of the LTO standard, so they behave the same on HPE, IBM, Quantum and Dell drives of the same generation.</p>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Feature</th><th>Since</th><th>What it protects against</th></tr></thead><tbody><tr><td>WORM cartridges</td><td>LTO-3</td><td>Overwriting or deleting data, including by ransomware or an insider</td></tr><tr><td>AES-256 hardware encryption</td><td>LTO-4</td><td>Reading a lost or stolen cartridge</td></tr><tr><td>LTFS partitions</td><td>LTO-5</td><td>Lock-in: the tape stays readable without the original backup software</td></tr><tr><td>Offline when ejected</td><td>All generations</td><td>Anything that travels over the network</td></tr></tbody></table></div>
+<figure class="page-figure"><img src="/assets/figures/blog-sec-features-by-gen.svg" alt="Security features by LTO generation: WORM from LTO-3, AES-256 encryption from LTO-4, LTFS partitions from LTO-5" width="960" height="450" loading="lazy" decoding="async"><figcaption>Any LTO-5 or newer drive supports all three. The drive compresses data before it encrypts it, so encryption does not reduce capacity.</figcaption></figure>
+<h2>The three ways to manage keys, compared</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>Method</th><th>Where the key lives</th><th>Good for</th><th>Watch out for</th></tr></thead><tbody><tr><td>Application-managed</td><td>The backup software's database</td><td>One backup product, simple setups</td><td>Keys are tied to that software. Back up its key store, or a lost database means unreadable tapes</td></tr><tr><td>Library-managed</td><td>An external key manager the library reaches over KMIP</td><td>Several applications sharing a library, audits and compliance</td><td>Needs a key manager that is always reachable; on some library models it is a licensed feature</td></tr><tr><td>System-managed</td><td>A key manager reached by the host's tape device driver</td><td>IBM environments</td><td>Mostly limited to IBM drivers and platforms</td></tr></tbody></table></div>
+<figure class="page-figure"><img src="/assets/figures/blog-sec-key-models.svg" alt="Application-managed, library-managed and system-managed encryption keys, each ending at an LTO drive with AES-256" width="960" height="460" loading="lazy" decoding="async"><figcaption>The drive encrypts the same way in all three. The choice is who holds the key: the backup software, a key manager through the library, or the host's driver.</figcaption></figure>
+<p>Whichever method you choose, the rule is the same: an encrypted cartridge without its key cannot be read, by you or anyone else. Keep the keys in at least two places, separate from the tapes.</p>
+<h2>Tape, disk and cloud security side by side</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th></th><th>LTO tape</th><th>Disk backup</th><th>Cloud object storage</th></tr></thead><tbody><tr><td>Offline copy</td><td>Yes, once ejected</td><td>No, always online</td><td>No, reachable with credentials</td></tr><tr><td>Immutability</td><td>WORM cartridges</td><td>Immutable snapshots or hardened repositories, depending on product</td><td>Object Lock in compliance mode</td></tr><tr><td>Encryption at rest</td><td>AES-256 in the drive</td><td>Depends on array or software</td><td>On by default at major providers</td></tr><tr><td>Reachable by ransomware</td><td>Only while mounted</td><td>Yes, over the network</td><td>Through stolen credentials or API keys</td></tr></tbody></table></div>
+<p>The strongest setups combine them: recent backups on disk for speed, and an encrypted tape copy that leaves the building. See <a href="/blog/offsite-tape-backups-still-beat-most-good-enough-plans">why offsite tape still wins</a> and our <a href="/comparisons">tape, disk and cloud comparison</a>.</p>
+<h2>Frequently asked questions</h2><h3>Does tape encryption reduce capacity or speed?</h3><p>Not noticeably. The drive compresses data first and then encrypts it in hardware, so native and compressed capacity stay the same.</p><h3>Which LTO generations support hardware encryption?</h3><p>LTO-4 and every generation since, including LTO-9 and LTO-10, with AES-256.</p><h3>Is WORM the same as encryption?</h3><p>No. WORM stops data from being changed or deleted; encryption stops it from being read without the key. For ransomware protection you usually want both.</p><h3>What happens if I lose the encryption key?</h3><p>The data on that cartridge cannot be recovered. Store keys in a key manager or in your backup software's protected key store, with a copy kept away from the tapes.</p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does tape encryption reduce capacity or speed?", "acceptedAnswer": {"@type": "Answer", "text": "Not noticeably. The drive compresses data first and then encrypts it in hardware, so native and compressed capacity stay the same."}}, {"@type": "Question", "name": "Which LTO generations support hardware encryption?", "acceptedAnswer": {"@type": "Answer", "text": "LTO-4 and every generation since, including LTO-9 and LTO-10, with AES-256."}}, {"@type": "Question", "name": "Is WORM the same as encryption?", "acceptedAnswer": {"@type": "Answer", "text": "No. WORM stops data from being changed or deleted; encryption stops it from being read without the key. For ransomware protection you usually want both."}}, {"@type": "Question", "name": "What happens if I lose the encryption key?", "acceptedAnswer": {"@type": "Answer", "text": "The data on that cartridge cannot be recovered. Store keys in a key manager or in your backup software's protected key store, with a copy kept away from the tapes."}}]}</script></section>
+            <a class="back-link" href="/blog">Back to Blog</a>
+          </article>
+
+          <aside class="sidebar">
+            <section class="sidebar-card">
+              <h2>Article signal</h2>
+              <p>Recent tape-storage discussion distilled into a standalone TapeBackup.org article page with direct indexing metadata and a stable canonical URL.</p>
+            </section>
+            <section class="sidebar-card">
+              <h2>Need a deeper LTO plan?</h2>
+              <p>Browse the site resources, compare storage approaches, or contact the team for help deciding when tape belongs in your backup workflow.</p>
+              <a class="cta" href="/contact">Talk to TapeBackup</a>
+            </section>
+          </aside>
+        </div>
+      <!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul><li><a href="/blog/tape-backup-5-year-total-cost-of-ownership">Tape Backup 5-Year TCO: Systems Compared</a></li><li><a href="/blog/best-value-per-terabyte-tape-backup-us">Best Value per TB in Tape Backup, US 2026</a></li><li><a href="/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again">Tape Is Dead, Right? Then Why Are People Quietly Building Backup Systems Around It Again</a></li><li><a href="/lto-tape-price-trend">LTO tape prices, September 2026</a></li><li><a href="/why-tape">Why use tape storage</a></li></ul></section><!-- related:end -->
+      </main>
+    </div>
+  <script src="/chat-widget.js" defer></script>
+</body>
+</html>
