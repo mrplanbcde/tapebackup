@@ -121,3 +121,4 @@
 .post-table th { font-size: .76rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); }
 .post-table tbody tr:hover { background: var(--accent-50); }
 .article-body h3 { margin: 1.2rem 0 .3rem; font-size: 1.05rem; }
+.article-layout > * { min-width: 0; }

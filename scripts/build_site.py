@@ -87,6 +87,24 @@ def blog_fixes():
     return n
 
 
+OLD_BLOG_HEADER = re.compile(r'<header class="topbar">.*?</header>', re.S)
+
+
+def blog_site_header():
+    """Hand-published blog pages: swap the old unstyled header for the site header and its styles."""
+    n = 0
+    for f in glob.glob(rel("blog", "index.html")) + glob.glob(rel("blog", "*", "index.html")):
+        s = open(f, encoding="utf-8").read()
+        new = OLD_BLOG_HEADER.sub(lambda m: site_shell.header(), s, count=1)
+        if 'href="/blog-header.css"' not in new:
+            new = new.replace('<link rel="stylesheet" href="/blog-static.css" />',
+                              '<link rel="stylesheet" href="/blog-header.css" />\n    <link rel="stylesheet" href="/blog-static.css" />', 1)
+        if new != s:
+            open(f, "w", encoding="utf-8").write(new)
+            n += 1
+    return n
+
+
 def apply_meta_overrides():
     with open(rel("data", "meta-overrides.json"), encoding="utf-8") as f:
         overrides = json.load(f)
@@ -398,7 +416,7 @@ def main():
     page_paths = build_pages.build_all(current) + build_articles.build_all(current) + build_guides.build_all(current)
     n = apply_meta_overrides()
     print(f"figure files: {page_figures.write_files()}, figures placed on pages: {page_figures.add_figures(ROOT)}, JS clips: {jsvideo.add_clips(ROOT)}")
-    print(f"blog fixes: {blog_fixes()}")
+    print(f"blog fixes: {blog_fixes()}, blog headers: {blog_site_header()}")
     apply_qa_noindex()
     print(f"QAPage schema: {qa_page_schema()}")
     print(f"answer-first panels: {answer_first_panels()}, blog posts with related links: {blog_related_links()}")

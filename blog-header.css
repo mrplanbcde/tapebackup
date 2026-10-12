@@ -1,0 +1,215 @@
+/* Site header for the hand-published blog pages: copied from tape-q-and-a.css (variables, topbar, site header,
+
+   brand, nav, buttons, price dropdowns). Loaded before blog-static.css. Regenerate if the site header changes. */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f7f6fa;
+  --surface-2: #f0eef5;
+  --background: #f7f6fa;
+  --background-soft: #f0eef5;
+  --line: #e8e7ed;
+  --line-2: #dedce6;
+  --card: rgba(255,255,255,0.94);
+  --card-strong: #f7f6fa;
+
+  --ink: #161320;
+  --ink-2: #39354a;
+  --muted: #6e6a7c;
+  --faint: #9a96a8;
+
+  /* keep --foreground aliases for inner page content compat */
+  --foreground: #161320;
+  --foreground-soft: #6e6a7c;
+
+  --accent: #5b27d6;
+  --accent-press: #4a1fb0;
+  --accent-100: #e6dcfb;
+  --accent-50: #f2ecfd;
+  --accent-tint: #faf8ff;
+
+  /* aliases used in inner page content classes */
+  --primary: #5b27d6;
+  --primary-ink: #ffffff;
+  --secondary: #8a5cf0;
+  --signal: oklch(0.69 0.11 70);
+
+  --display: "Space Grotesk", system-ui, sans-serif;
+  --sans: "Hanken Grotesk", system-ui, sans-serif;
+  --mono: "Space Mono", ui-monospace, monospace;
+
+  --maxw: 1180px;
+  --container: 1240px;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --shadow-sm: 0 1px 2px rgba(22,19,32,.04), 0 1px 3px rgba(22,19,32,.05);
+  --shadow-soft: 0 8px 30px rgba(22,19,32,.08), 0 2px 8px rgba(22,19,32,.04);
+  --shadow-md: 0 8px 30px rgba(22,19,32,.08), 0 2px 8px rgba(22,19,32,.04);
+  --shadow-hover: 0 24px 60px rgba(40,20,90,.12), 0 6px 18px rgba(22,19,32,.06);
+  --shadow-lg: 0 24px 60px rgba(40,20,90,.12), 0 6px 18px rgba(22,19,32,.06);
+  --ease: cubic-bezier(.4,0,.2,1);
+}
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
+
+/* ============================================================
+   Topbar
+   ============================================================ */
+.topbar {
+  background: var(--ink);
+  color: #cfcbdb;
+  font-size: 13px;
+}
+.topbar .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 26px;
+  height: 38px;
+}
+.topbar a { color: #cfcbdb; transition: color .15s var(--ease); white-space: nowrap; flex-shrink: 0; }
+.topbar a:hover { color: #fff; }
+.topbar .sep { width: 1px; height: 14px; background: rgba(255,255,255,.16); }
+/* compat alias */
+.topbar-inner { display: contents; }
+
+/* ============================================================
+   Site header
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: rgba(255,255,255,.82);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 74px;
+}
+
+/* Brand */
+.brand { display: flex; align-items: center; gap: 11px; flex-shrink: 0; }
+.brand .mark {
+  width: 40px; height: 40px; border-radius: 9px;
+  background: linear-gradient(150deg, var(--accent), #7d4be6);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 14px rgba(91,39,214,.28);
+}
+.brand .mark svg { display: block; }
+.brand .wm { line-height: 1; display: flex; flex-direction: column; gap: 3px; }
+.brand .wm .t1 { display: block; font-family: var(--display); font-weight: 700; font-size: 20px; letter-spacing: .02em; color: var(--ink); }
+.brand .wm .t2 { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: .34em; color: var(--faint); text-transform: uppercase; }
+
+/* Nav */
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  margin-left: 6px;
+}
+.topnav a {
+  display: flex;
+  align-items: center;
+  height: 74px;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink-2);
+  border-bottom: 2px solid transparent;
+  transition: color .15s var(--ease);
+  text-decoration: none;
+}
+.topnav a:hover, .topnav a.current { color: var(--accent); }
+
+.header-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+  font-family: var(--sans); font-weight: 600; font-size: 15px;
+  height: 46px; padding: 0 22px; border-radius: 10px; border: 1px solid transparent;
+  transition: background .18s var(--ease), color .18s var(--ease), border-color .18s var(--ease), transform .12s var(--ease);
+  white-space: nowrap; text-decoration: none;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-press); }
+.btn-sm { height: 38px; padding: 0 16px; font-size: 14px; }
+
+
+
+/* Price dropdown nav */
+.price-dropdown { position: relative; }
+.price-dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0 15px;
+  height: 74px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink-2);
+  transition: color .15s var(--ease);
+}
+.price-dropdown > a::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-0.08rem) rotate(45deg);
+}
+.price-dropdown > a:hover { color: var(--accent); }
+.price-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  right: 0;
+  min-width: 16rem;
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.35rem);
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+  z-index: 80;
+}
+.price-dropdown:hover .price-dropdown-menu,
+.price-dropdown:focus-within .price-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.price-dropdown-menu a {
+  display: block;
+  padding: 0.8rem 0.9rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--ink-2);
+  font-size: 14px;
+  transition: background .14s ease, color .14s ease;
+}
+.price-dropdown-menu a:hover { background: var(--accent-50); color: var(--accent); }
+.price-dropdown-menu a.current { background: var(--accent); color: #fff; }
+.price-dropdown-menu a span {
+  display: block;
+  font-size: 12px;
+  color: var(--faint);
+  font-weight: 400;
+  margin-top: 1px;
+}
+
+@media (max-width: 760px) {
+  .wrap { padding: 0 20px; }
+  .topnav, .topbar { display: none; }
+}
