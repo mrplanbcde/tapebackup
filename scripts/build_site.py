@@ -9,6 +9,7 @@ fully generated. Needs beautifulsoup4 (pip install beautifulsoup4).
 """
 
 import glob
+from pathlib import Path
 import html
 import json
 import os
@@ -310,6 +311,13 @@ def build_sitemap(today):
     return len(urls)
 
 
+def llms_blog_posts():
+    """Blog posts for llms.txt, newest first (title and description from each post's own metadata)."""
+    import generate_blog_posts as G
+    posts = [G.parse_existing_post(Path(f)) for f in glob.glob(rel("blog", "*", "index.html"))]
+    return sorted(posts, key=lambda p: (p.published, p.slug), reverse=True)
+
+
 def build_llms(current):
     P = build_prices
     g = current["generations"]
@@ -338,6 +346,18 @@ def build_llms(current):
         f"- [Tape backup software finder]({SITE}/backup-software-finder) and [best tape backup software 2026]({SITE}/best-tape-backup-software).",
         f"- [Why tape]({SITE}/why-tape), [LTO tape explained]({SITE}/lto-tape), [LTO capacity chart]({SITE}/lto-tape-capacity), [LTO tape drive buying guide]({SITE}/why-tape/lto-tape-drive), [LTO tape libraries]({SITE}/lto-tape-library), [LTFS]({SITE}/resources/ltfs), [LTO tape data recovery]({SITE}/resources/lto-tape-data-recovery), [LTO tape lifespan]({SITE}/why-tape/lto-tape-lifespan), [LTO tape news]({SITE}/lto-tape-news), [LTO vs HDD]({SITE}/why-tape/lto-vs-hdd), [LTO tape brands]({SITE}/lto-tape-brand).",
         f"- [Tape Q&A]({SITE}/tape-q-and-a) and [blog]({SITE}/blog).",
+        f"- [Tape vs cloud 5-year cost]({SITE}/comparisons/tape-vs-cloud-5-year-cost) and [tape, disk and cloud compared]({SITE}/comparisons).",
+        f"- [Contact and volume quotes]({SITE}/contact): tell us how many cartridges you need for a special discount.",
+        "",
+        "## Buyer guides and analysis",
+    ] + [f"- [{p.title}]({SITE}/blog/{p.slug}) ({p.published.isoformat()}): {p.description}" for p in llms_blog_posts()[:12]] + [
+        "",
+        "## Videos",
+        f"- YouTube channel: https://www.youtube.com/@lida4ever",
+    ] + [f"- [{v['title']}](https://youtu.be/{v['id']}): {v['desc']} Embedded on {SITE}/{path}." for path, v in videos.VIDEOS.items()] + [
+        "",
+        "## Languages",
+        f"- English (US prices in USD) at {SITE}/; " + "; ".join(f"{i18n.load_langs().get(l, {}).get('name', l)} at {SITE}/{l}/" for l in published_langs()) + " (local seller prices in local currency).",
         "",
         "## Full data",
         f"- [llms-full.txt]({SITE}/llms-full.txt): every current listing with seller and part number, plus the price history table.",
@@ -372,6 +392,21 @@ def build_llms(current):
     full.append("## Market notes")
     for n in current["marketNotes"]:
         full.append(f"- {n['text']} ({n['url']})")
+    full.append("")
+    full.append("## Buyer guides and analysis")
+    for post in llms_blog_posts():
+        lead = re.search(r"<p><strong>(.*?)</strong></p>", post.body_html, re.S)
+        answer = html.unescape(re.sub(r"<[^>]+>", "", lead.group(1))).strip() if lead else ""
+        if len(answer) < 80:  # a bolded title or pull quote, not an answer
+            answer = post.description
+        full.append(f"- {post.title} ({SITE}/blog/{post.slug}, {post.published.isoformat()}): {answer}")
+    full.append("")
+    full.append("## Videos")
+    for path, v in videos.VIDEOS.items():
+        full.append(f"- {v['title']}: https://youtu.be/{v['id']} (on {SITE}/{path}). {v['desc']}")
+    full.append("")
+    full.append("## Volume quotes")
+    full.append(f"- Cartridge price tables on each generation page include a quote row: tell us how many cartridges you need at {SITE}/contact and we send a special discount.")
     open(rel("llms-full.txt"), "w", encoding="utf-8").write("\n".join(full) + "\n")
 
 
