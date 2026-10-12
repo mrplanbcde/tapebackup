@@ -37,6 +37,8 @@ MARKETS = {
 }
 
 LANG_TO_MARKET = {m["lang"]: code for code, m in MARKETS.items()}
+LANG_TO_MARKET["ja"] = "us"
+LANG_TO_MARKET["zh"] = "us"
 
 ITEMS = ("cartridge", "cartridge40TB", "worm", "driveInternal", "driveExternal")
 DROP_NOTE = re.compile(r"excluded|price not accurate|listing error", re.I)

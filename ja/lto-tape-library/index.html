@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>LTOテープライブラリ・オートローダー購入ガイド</title>
+<meta content="LTOオートローダーやライブラリの導入時期、HPE、IBM、Dell、Quantumの主要モデル、スロット数、購入前の確認事項を解説します。" name="description"/>
+<meta content="noindex, follow" name="robots"/>
+<link href="https://tapebackup.org/ja/lto-tape-library" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="LTOテープライブラリ・オートローダー購入ガイド" property="og:title"/>
+<meta content="LTOオートローダーやライブラリの導入時期、HPE、IBM、Dell、Quantumの主要モデル、スロット数、購入前の確認事項を解説します。" property="og:description"/>
+<meta content="https://tapebackup.org/ja/lto-tape-library" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="LTOテープライブラリ・オートローダー購入ガイド" name="twitter:title"/>
+<meta content="LTOオートローダーやライブラリの導入時期、HPE、IBM、Dell、Quantumの主要モデル、スロット数、購入前の確認事項を解説します。" name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script defer="" src="https://js-eu1.hsforms.net/forms/embed/147689578.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "LTOテープライブラリとオートローダー", "description": "LTOオートローダーやライブラリの導入時期、HPE、IBM、Dell、Quantumの主要モデル、スロット数、購入前の確認事項を解説します。", "datePublished": "2026-10-03", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}, "mainEntityOfPage": "https://tapebackup.org/ja/lto-tape-library", "inLanguage": "ja"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tapebackup.org/ja"}, {"@type": "ListItem", "position": 2, "name": "LTOテープ", "item": "https://tapebackup.org/ja/lto-tape"}, {"@type": "ListItem", "position": 3, "name": "テープライブラリ", "item": "https://tapebackup.org/ja/lto-tape-library"}], "inLanguage": "ja"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "オートローダーとテープライブラリの違いは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "オートローダーは一台のドライブとおよそ8〜16スロットの単一マガジンで構成されます。ライブラリは一台以上のドライブと多数のスロットを備え、通常追加モジュールで拡張可能です。"}}, {"@type": "Question", "name": "小型LTOライブラリは何巻のテープを収容できますか？", "acceptedAnswer": {"@type": "Answer", "text": "ベースモジュールは通常25〜50巻のカートリッジを保持し、これはLTO-9において450〜900 TBに相当します。ほとんどのモデルはモジュールを積み重ねて拡張できます。"}}, {"@type": "Question", "name": "テープライブラリにはバーコードラベルが必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。ライブラリはバーコードラベルによって各カートリッジを識別するため、すべてのデータ用およびクリーニング用カートリッジにライブラリが想定する形式のラベルが必要です。"}}, {"@type": "Question", "name": "単一のライブラリ内で異なるLTO世代を混在させることはできますか？", "acceptedAnswer": {"@type": "Answer", "text": "ライブラリとお使いのバックアップソフトウェアが両方をサポートしていれば、通常は各世代のドライブを混在させて運用できます。ただし各ドライブは自身が対応する世代のみを読み取ります。"}}], "inLanguage": "ja"}</script>
+<meta content="ja_JP" property="og:locale"/><link href="https://tapebackup.org/lto-tape-library" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/lto-tape-library" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/lto-tape-library" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/lto-tape-library" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/lto-tape-library" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/lto-tape-library" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/lto-tape-library" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/lto-tape-library" hreflang="x-default" rel="alternate"/></head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/ja/tape-q-and-a">テープQ&amp;A</a><span class="sep"></span><a href="/ja/lto-tape-price-trend">LTO価格</a><span class="sep"></span><a href="/ja/contact">お問い合わせ</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/lto-tape-library" hreflang="en" lang="en">EN</a><a href="/de/lto-tape-library" hreflang="de" lang="de">DE</a><a href="/fr/lto-tape-library" hreflang="fr" lang="fr">FR</a><a href="/it/lto-tape-library" hreflang="it" lang="it">IT</a><a href="/es/lto-tape-library" hreflang="es" lang="es">ES</a><a href="/nl/lto-tape-library" hreflang="nl" lang="nl">NL</a><a href="/pl/lto-tape-library" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org ホーム" class="brand" href="/ja"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="プライマリ" class="topnav">
+<div class="price-dropdown"><a href="/ja/lto-tape">LTOテープ</a><div class="price-dropdown-menu"><a href="/ja/lto-tape">LTOテープとは<span>規格の全体像を一枚で解説</span></a><a href="/ja/lto-tape-capacity">容量一覧表<span>LTO-1〜LTO-14</span></a><a href="/ja/why-tape/lto-tape-drive">ドライブ購入ガイド<span>選ぶべきドライブ</span></a><a href="/ja/lto-tape-library">ライブラリ<span>オートローダーとライブラリ</span></a><a href="/ja/why-tape/lto-tape-lifespan">寿命<span>テープの耐久年数</span></a><a href="/ja/resources/ltfs">LTFS<span>ファイルシステムとしてのテープ</span></a><a href="/ja/resources/lto-tape-data-recovery">データ復旧<span>古いテープの読み取り</span></a><a href="/ja/lto-tape-news">ニュース<span>今月の動向</span></a><a href="/ja/why-tape">テープを選ぶ理由<span>コスト、エアギャップ、寿命</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/lto-tape-price-trend">LTO価格</a><div class="price-dropdown-menu"><a href="/ja/lto-tape-price-trend">全世代<span>2026年九月の価格</span></a><a href="/ja/lto-tape-price-trend/lto6-price">LTO-6価格<span>ネイティブ2.5 TB</span></a><a href="/ja/lto-tape-price-trend/lto7-price">LTO-7価格<span>ネイティブ6 TB</span></a><a href="/ja/lto-tape-price-trend/lto8-price">LTO-8価格<span>ネイティブ12 TB</span></a><a href="/ja/lto-tape-price-trend/lto9-price">LTO-9価格<span>ネイティブ18 TB</span></a><a href="/ja/lto-tape-price-trend/lto10-price">LTO-10価格<span>ネイティブ30 / 40 TB</span></a><a href="/ja/lto-tape-price-trend/history">価格履歴<span>2025年以降のアーカイブ記録</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/backup-calculator">ツール</a><div class="price-dropdown-menu"><a href="/ja/backup-calculator">バックアップ計算機<span>メディアと費用の見積もり</span></a><a href="/ja/backup-software-finder">ソフトウェアファインダー<span>テープ用途に合ったソフトウェアの選定</span></a><a href="/ja/best-tape-backup-software">おすすめのテープバックアップソフトウェア<span>2026の比較</span></a></div></div>
+<a href="/ja/blog">Blog</a>
+<a href="/ja/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/ja/contact">価格表を入手する</a></div>
+</div></header>
+<section class="hero"><div class="container"><div class="hero-copy" style="max-width:900px">
+<p class="eyebrow">ライブラリガイド</p><h1 style="max-width:none">LTOテープライブラリとオートローダー</h1>
+<p><strong>LTOオートローダーは一台のドライブとおよそ8〜16巻のカートリッジを収容し、ライブラリは一台以上のドライブとモジュールあたり25個以上のスロットを備えています。バックアップが複数巻にまたがる場合やテープ交換の担当者がいない場合はライブラリへの移行を検討してください。</strong></p></div></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><p class="eyebrow">必要となる場面</p><h2>ドライブ、オートローダー、ライブラリの比較</h2>
+<p>各バックアップが一巻のカートリッジに収まり手動でテープ交換できる間は、単一ドライブで十分です。しかしジョブが複数巻にまたがる場合、夜間実行される場合、あるいは毎週テープをオフサイトへローテーションする場合は、人件費削減やバックアップ漏れ防止の面からオートチェンジャーの導入費用を十分に回収できます。</p>
+<ul>
+<li><strong>オートローダー：</strong> 1Uまたは2Uに一台のドライブとおよそ8〜16スロットのマガジンを搭載。小規模オフィスや単一サーバーに適しています。</li>
+<li><strong>小型ライブラリ：</strong>一台以上のドライブとモジュールあたり25〜50スロットを備え、モジュールを積み重ねて拡張可能です。中規模環境や複数の並行バックアップストリームに適しています。</li>
+<li><strong>エンタープライズライブラリ：</strong>数百から数千のスロットと数十台のドライブを備え、アプリケーション間でパーティション分割されます。</li>
+</ul></section><section class="section-card"><figure class="page-figure"><img alt="カートリッジマガジン、レール上のロボットピッカー、二台のドライブを備え、スロットからドライブへカートリッジを搬送する矢印が描かれたテープライブラリ。" decoding="async" height="420" loading="lazy" src="/assets/figures/lto-library-anatomy.svg" width="960"/><figcaption>ライブラリではロボットピッカーがスロットとドライブ間でカートリッジを搬送するため、多数のテープにまたがるバックアップもメディアの交換作業なしで実行されます。ライブラリが必要とするバーコードについては<a href="/ja/resources/lto-cleaning-tapes-and-labels">ラベルとクリーニングテープ</a>をご覧ください。</figcaption></figure></section><section class="section-card"><p class="eyebrow">モデル</p><h2>一般的なオートローダーと小型ライブラリ</h2>
+<div class="table-wrap"><table aria-label="LTOオートローダーおよびライブラリ" class="price-table"><thead><tr><th>モデル</th><th>タイプ</th><th>スロット数（ベースユニット）</th><th>備考</th></tr></thead><tbody><tr><td>HPE StoreEver 1/8 G2</td><td>オートローダー</td><td>8</td><td>1U、ドライブ一台</td></tr><tr><td>Dell PowerVault TL1000 / IBM TS2900</td><td>オートローダー</td><td>9</td><td>1U、ハーフハイトドライブ一台</td></tr><tr><td>Quantum SuperLoader 3</td><td>オートローダー</td><td>16</td><td>2U、8スロットマガジン二基</td></tr><tr><td>Quantum Scalar i3</td><td>ライブラリ</td><td>25</td><td>3Uモジュール、拡張可能</td></tr><tr><td>IBM TS4300 / Dell PowerVault ML3</td><td>ライブラリ</td><td>40</td><td>3Uモジュール、拡張可能</td></tr><tr><td>HPE StoreEver MSL3040</td><td>ライブラリ</td><td>40</td><td>3Uモジュール、拡張可能</td></tr><tr><td>Qualstar Qシリーズ、Spectra Stack</td><td>ライブラリ</td><td>構成による</td><td>モジュール型、LTO-9およびLTO-10ドライブ</td></tr></tbody></table></div>
+<p>スロット数は標準構成のベースユニットの値です。各モデルがサポートするドライブ世代についてはデータシートをご確認ください。ライブラリ用ドライブはそのライブラリ専用モジュールとして販売されます。</p></section><section class="section-card"><p class="eyebrow">確認事項</p><h2>購入チェックリスト</h2>
+<ul>
+<li><strong>ドライブの世代と台数。</strong>二台のドライブがあれば、テープ間コピーの実行や、バックアップとリストアの同時実行が可能です。</li>
+<li><strong>インターフェース。</strong>単一ホスト向けにはSAS、SAN経由でライブラリを共有するにはFibre Channelを使用します。</li>
+<li><strong>バーコードリーダーとラベル。</strong> ライブラリはバーコードでカートリッジを管理するため、すべてのテープに適切な形式のラベルが必要です。<a href="/ja/resources/lto-cleaning-tapes-and-labels">ラベルとクリーニングテープ</a>をご覧ください。</li>
+<li><strong>メールスロット。</strong>I/Oスロットによりマガジンを開けずにカートリッジを外部へ搬出できます。</li>
+<li><strong>ソフトウェアのサポート。</strong>ドライブ単体だけでなく、ライブラリのモデル自体がお使いのバックアップソフトのサポート一覧に掲載されている必要があります。</li>
+<li>複数のアプリケーションやチームで共有する場合は、<strong>パーティショニングと暗号化キー管理</strong>が必要です。</li>
+</ul></section><section class="section-card"><p class="eyebrow">容量</p><h2>ライブラリの収容容量</h2>
+<p>スロット数にネイティブ容量を掛けます：40スロットのライブラリは非圧縮で、LTO-9なら720 TB、30 TBのLTO-10カートリッジなら1.2 PBを保持します。クリーニングカートリッジ用やオフサイト搬出待ち用として数スロットを確保してください。カートリッジ価格は<a href="/ja/lto-tape-price-trend">LTO価格トラッカー</a>に記載されています。</p></section><section class="section-card"><p class="eyebrow">その他のガイド</p><h2>その他のLTOガイド</h2><div class="link-grid"><a href="/ja/lto-tape">LTOテープとは<span>規格の全体像を一枚で解説</span></a><a href="/ja/lto-tape-capacity">LTO容量比較表<span>LTO-1〜LTO-14</span></a><a href="/ja/why-tape/lto-tape-drive">LTOテープドライブ購入ガイド<span>選ぶべきドライブ</span></a><a href="/ja/why-tape/lto-tape-lifespan">LTOテープの寿命<span>テープの耐久年数</span></a><a href="/ja/resources/ltfs">LTFS解説<span>ファイルシステムとしてのテープ</span></a><a href="/ja/resources/lto-tape-data-recovery">LTOテープデータ復旧<span>古いテープの読み取り</span></a><a href="/ja/resources/lto-cleaning-tapes-and-labels">クリーニングテープとラベル<span>消耗品と取り扱い</span></a><a href="/ja/lto-tape-news">LTOテープニュース<span>今月の動向</span></a></div></section>
+<section class="cta-band"><p class="eyebrow">価格表</p><h2>LTO価格表を入手する</h2><p>移行やリプレースの予算を立てる前に、最新のLTOメディアおよびドライブの価格をお問い合わせください。</p>
+<div class="hubspot-shell"><div class="hs-form-frame" data-form-id="3f49124b-a1cb-4f2b-a54f-8f0c266fa59d" data-portal-id="147689578" data-region="eu1"></div></div>
+<div class="cta-actions"><a class="cta-secondary" href="/ja/lto-tape-price-trend/history">価格履歴を見る</a></div></section>
+<section aria-label="LTOテープライブラリおよびオートローダーFAQ" class="faq-grid"><article class="faq-card"><h3>オートローダーとテープライブラリの違いは何ですか？</h3><p>オートローダーは一台のドライブとおよそ8〜16スロットの単一マガジンで構成されます。ライブラリは一台以上のドライブと多数のスロットを備え、通常追加モジュールで拡張可能です。</p></article><article class="faq-card"><h3>小型LTOライブラリは何巻のテープを収容できますか？</h3><p>ベースモジュールは通常25〜50巻のカートリッジを保持し、これはLTO-9において450〜900 TBに相当します。ほとんどのモデルはモジュールを積み重ねて拡張できます。</p></article><article class="faq-card"><h3>テープライブラリにはバーコードラベルが必要ですか？</h3><p>はい。ライブラリはバーコードラベルによって各カートリッジを識別するため、すべてのデータ用およびクリーニング用カートリッジにライブラリが想定する形式のラベルが必要です。</p></article><article class="faq-card"><h3>単一のライブラリ内で異なるLTO世代を混在させることはできますか？</h3><p>ライブラリとお使いのバックアップソフトウェアが両方をサポートしていれば、通常は各世代のドライブを混在させて運用できます。ただし各ドライブは自身が対応する世代のみを読み取ります。</p></article></section>
+</div></div></main>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="TapeBackup.org ホーム" class="brand" href="/ja"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.orgは、LTOテープバックアップ技術、価格、ワークフローに関する独立した情報リソースです。LTOプログラムとは提携していません。</p></div><div class="fcol"><h4>LTO価格</h4><a href="/ja/lto-tape-price-trend">価格推移</a><a href="/ja/lto-tape-price-trend/lto6-price">LTO-6 価格</a><a href="/ja/lto-tape-price-trend/lto7-price">LTO-7 価格</a><a href="/ja/lto-tape-price-trend/lto8-price">LTO-8 価格</a><a href="/ja/lto-tape-price-trend/lto9-price">LTO-9 価格</a><a href="/ja/lto-tape-price-trend/lto10-price">LTO-10 価格</a><a href="/ja/lto-tape-price-trend/history">価格履歴</a></div><div class="fcol"><h4>リソース</h4><a href="/ja/lto-tape">LTOテープとは</a><a href="/ja/lto-tape-capacity">LTO容量表</a><a href="/ja/why-tape/lto-tape-drive">LTOテープドライブ</a><a href="/ja/lto-tape-news">LTOテープニュース</a><a href="/ja/tape-q-and-a">テープQ&amp;A</a><a href="/ja/blog">Blog</a><a href="/ja/why-tape">テープを選ぶ理由</a><a href="/ja/resources">ガイド</a><a href="/ja/lto-tape-brand">LTOテープブランド</a><a href="/ja/comparisons">比較</a></div><div class="fcol"><h4>ツール</h4><a href="/ja/backup-calculator">バックアップ計算機</a><a href="/ja/backup-software-finder">ソフトウェア検索</a><a href="/ja/best-tape-backup-software">おすすめのテープバックアップソフトウェア</a></div><div class="fcol"><h4>企業情報</h4><a href="/ja/about">概要</a><a href="/ja/contact">お問い合わせ</a><a href="/sitemap.xml">サイトマップ</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org。中立的なLTOテープバックアップ情報サイト。</span><div class="links"><a href="/ja/about">会社概要</a><a href="/ja/contact">お問い合わせ</a><a href="/sitemap.xml">サイトマップ</a></div></div></div></footer>
+</div>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

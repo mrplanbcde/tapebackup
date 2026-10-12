@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>LTOテープ移行：アーカイブの新メディアへの移行</title>
+<meta content="LTOアーカイブの移行方法：ドライブ互換性、本数、500 TBの費用と時間、コピー検証。" name="description"/>
+<meta content="noindex, follow" name="robots"/>
+<link href="https://tapebackup.org/ja/resources/lto-tape-migration" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="LTOテープ移行：アーカイブの新メディアへの移行" property="og:title"/>
+<meta content="LTOアーカイブの移行方法：ドライブ互換性、本数、500 TBの費用と時間、コピー検証。" property="og:description"/>
+<meta content="https://tapebackup.org/ja/resources/lto-tape-migration" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="LTOテープ移行：アーカイブの新メディアへの移行" name="twitter:title"/>
+<meta content="LTOアーカイブの移行方法：ドライブ互換性、本数、500 TBの費用と時間、コピー検証。" name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script defer="" src="https://js-eu1.hsforms.net/forms/embed/147689578.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "LTOテープの移行", "description": "LTOアーカイブの移行方法：ドライブ互換性、本数、500 TBの費用と時間、コピー検証。", "datePublished": "2026-09-20", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}, "mainEntityOfPage": "https://tapebackup.org/ja/resources/lto-tape-migration", "inLanguage": "ja"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tapebackup.org/ja"}, {"@type": "ListItem", "position": 2, "name": "リソース", "item": "https://tapebackup.org/ja/resources"}, {"@type": "ListItem", "position": 3, "name": "LTOテープ移行", "item": "https://tapebackup.org/ja/resources/lto-tape-migration"}], "inLanguage": "ja"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "LTO-9ドライブでLTO-6テープを読み取れますか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。LTO-9ドライブが読み書きできるのはLTO-9およびLTO-8メディアのみです。LTO-6カートリッジにはLTO-6またはLTO-7ドライブが必要です。LTO-8ドライブはLTO-7を読み取れますがLTO-6は読めないため、移行が完了するまで適切な世代のドライブを維持してください。"}}, {"@type": "Question", "name": "100 TBのテープ移行にはどのくらいの時間がかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "読み取りと書き込みを含め、400 MB/sの単一LTO-9ドライブで約六日間の連続コピーが必要です。古い移行元ドライブはより低速です。LTO-5メディアから100 TBを読み取るだけでも約八日間を要します。"}}, {"@type": "Question", "name": "500 TBをLTO-9へ移行するにはどのくらいの費用がかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "メディアだけでも28巻のカートリッジ（各$ 92.45〜$ 111.55）が必要で、2026年九月時点で約$ 2,600〜$ 3,100になります。ドライブをお持ちでない場合は$ 7,699〜$ 13,500のドライブ代に加え、HBA、ソフトウェア、作業工数が加算されます。"}}, {"@type": "Question", "name": "LTO-9またはLTO-10のどちらへ移行すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "多くの移行にはLTO-9が適しています：TB単価が$ 5.14〜$ 6.20であり、LTO-10の$ 8.53〜$ 10.00と比べて安価で、そのドライブはお手元のLTO-8テープを引き続き読み取れます。メディア費用よりもカートリッジ数やライブラリスロット数を重視する場合はLTO-10を選択してください。"}}, {"@type": "Question", "name": "テープの移行を検証するにはどうすればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "すべての新しいカートリッジを読み戻し、書き込み時に記録されたチェックサムだけでなくソースとのチェックサムを比較してください。実ファイルのサンプルをリストアし、新しいテープがリストア用カタログに登録されていることを確認し、それらすべてが合格するまで元のメディアを保管してください。"}}], "inLanguage": "ja"}</script>
+<meta content="ja_JP" property="og:locale"/><link href="https://tapebackup.org/resources/lto-tape-migration" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/resources/lto-tape-migration" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/resources/lto-tape-migration" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/resources/lto-tape-migration" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/resources/lto-tape-migration" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/resources/lto-tape-migration" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/resources/lto-tape-migration" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/resources/lto-tape-migration" hreflang="x-default" rel="alternate"/></head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/ja/tape-q-and-a">テープQ&amp;A</a><span class="sep"></span><a href="/ja/lto-tape-price-trend">LTO価格</a><span class="sep"></span><a href="/ja/contact">お問い合わせ</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/resources/lto-tape-migration" hreflang="en" lang="en">EN</a><a href="/de/resources/lto-tape-migration" hreflang="de" lang="de">DE</a><a href="/fr/resources/lto-tape-migration" hreflang="fr" lang="fr">FR</a><a href="/it/resources/lto-tape-migration" hreflang="it" lang="it">IT</a><a href="/es/resources/lto-tape-migration" hreflang="es" lang="es">ES</a><a href="/nl/resources/lto-tape-migration" hreflang="nl" lang="nl">NL</a><a href="/pl/resources/lto-tape-migration" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org ホーム" class="brand" href="/ja"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="プライマリ" class="topnav">
+<div class="price-dropdown"><a href="/ja/lto-tape">LTOテープ</a><div class="price-dropdown-menu"><a href="/ja/lto-tape">LTOテープとは<span>規格の全体像を一枚で解説</span></a><a href="/ja/lto-tape-capacity">容量一覧表<span>LTO-1〜LTO-14</span></a><a href="/ja/why-tape/lto-tape-drive">ドライブ購入ガイド<span>選ぶべきドライブ</span></a><a href="/ja/lto-tape-library">ライブラリ<span>オートローダーとライブラリ</span></a><a href="/ja/why-tape/lto-tape-lifespan">寿命<span>テープの耐久年数</span></a><a href="/ja/resources/ltfs">LTFS<span>ファイルシステムとしてのテープ</span></a><a href="/ja/resources/lto-tape-data-recovery">データ復旧<span>古いテープの読み取り</span></a><a href="/ja/lto-tape-news">ニュース<span>今月の動向</span></a><a href="/ja/why-tape">テープを選ぶ理由<span>コスト、エアギャップ、寿命</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/lto-tape-price-trend">LTO価格</a><div class="price-dropdown-menu"><a href="/ja/lto-tape-price-trend">全世代<span>2026年九月の価格</span></a><a href="/ja/lto-tape-price-trend/lto6-price">LTO-6価格<span>ネイティブ2.5 TB</span></a><a href="/ja/lto-tape-price-trend/lto7-price">LTO-7価格<span>ネイティブ6 TB</span></a><a href="/ja/lto-tape-price-trend/lto8-price">LTO-8価格<span>ネイティブ12 TB</span></a><a href="/ja/lto-tape-price-trend/lto9-price">LTO-9価格<span>ネイティブ18 TB</span></a><a href="/ja/lto-tape-price-trend/lto10-price">LTO-10価格<span>ネイティブ30 / 40 TB</span></a><a href="/ja/lto-tape-price-trend/history">価格履歴<span>2025年以降のアーカイブ記録</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/backup-calculator">ツール</a><div class="price-dropdown-menu"><a href="/ja/backup-calculator">バックアップ計算機<span>メディアと費用の見積もり</span></a><a href="/ja/backup-software-finder">ソフトウェアファインダー<span>テープ用途に合ったソフトウェアの選定</span></a><a href="/ja/best-tape-backup-software">おすすめのテープバックアップソフトウェア<span>2026の比較</span></a></div></div>
+<a href="/ja/blog">Blog</a>
+<a href="/ja/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/ja/contact">価格表を入手する</a></div>
+</div></header>
+<section class="hero"><div class="container"><div class="hero-copy" style="max-width:900px">
+<p class="eyebrow">移行ガイド</p><h1 style="max-width:none">LTOテープの移行</h1>
+<p><strong>それを読み取れるドライブが市場から消える前にLTOアーカイブを移行してください。LTO-9ドライブはLTO-9とLTO-8しか読めず、LTO-10ドライブは過去世代を一切読めないため、世代を飛ばすほど旧テープの読み取り可能期間は狭まります。</strong></p></div></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><p class="eyebrow">移行を実施すべき時期</p><h2>アーカイブを新メディアへ移行すべき兆候</h2>
+<ul>
+<li><strong>お使いのドライブ世代が市場から消えつつあります。</strong> 新品のLTO-6ドライブは事実上入手できなくなり、いくつかのLTO-7モデルも問い合わせ対応となっています。ドライブが故障して交換できなくなると、そのドライブで書き込んだテープはデータ復旧作業を要することになります。</li>
+<li><strong>互換性の範囲は狭まりました。</strong>LTO-8およびLTO-9ドライブは一世代前までしか読み取れず（LTO-9はLTO-8を読み取り可能）、LTO-7までのドライブは二世代前まで読み取れ、LTO-10ドライブはLTO-10のみを読み取ります。LTO-5テープにはLTO-5、LTO-6、またはLTO-7ドライブが必要であり、それ以降の新しいドライブではマウントできません。</li>
+<li><strong>カートリッジ本数こそが真のコストです。</strong> LTO-5で500 TBを保管すると、保管、ラベル貼り、取り扱い、そして将来の読み戻し作業が必要なカートリッジは334巻になります。同じアーカイブがLTO-9ならわずか28巻で済みます。</li>
+<li><strong>アーカイブが読み取り可能であることを証明できません。</strong> 何年もそれらのテープからリストアを行っていない場合、移行作業はこれまで先延ばしにしてきた検証作業も兼ねることになります。</li>
+</ul></section><section class="section-card"><figure class="page-figure"><img alt="左側に6 TBのLTO-7カートリッジ84巻のグリッド、中央にドライブと矢印、右側に500 TBとラベル付けされた18 TBのLTO-9カートリッジ28巻のグリッド。" decoding="async" height="420" loading="lazy" src="/assets/figures/lto-migration-500tb.svg" width="960"/><figcaption>同じ500 TBを保管する場合、LTO-7なら84巻必要ですが、LTO-9ならわずか28巻で済むため、移行によって保管場所、ラベリング、取り扱いの負担も軽減されます。</figcaption></figure></section><section class="section-card"><p class="eyebrow">費用と所要時間</p><h2>500 TBのデータ移行にかかる実際のコスト</h2>
+<p>メディア費用の試算は容易です。アーカイブ容量を移行先世代のネイティブ容量で割り、カートリッジ価格を掛けます。2026年九月17日時点で、LTO-9メディアは18 TBカートリッジあたり$ 92.45〜$ 111.55（TBあたり$ 5.14〜$ 6.20）であり、新品の内蔵LTO-9ドライブは$ 7,699〜$ 13,500です。</p>
+<div class="table-wrap"><table aria-label="LTO移行費用の事例" class="price-table"><thead><tr><th>移行元アーカイブ</th><th>現在のカートリッジ</th><th>LTO-9の場合</th><th>新品メディアのコスト</th><th>読み取りおよび書き込み時間</th></tr></thead><tbody><tr><td>LTO-5 (1.5 TB)</td><td>334巻のカートリッジ</td><td>28のLTO-9カートリッジ</td><td>$ 2,589から$ 3,123</td><td>ドライブ一組で56日</td></tr><tr><td>LTO-6 (2.5 TB)</td><td>200巻のカートリッジ</td><td>28のLTO-9カートリッジ</td><td>$ 2,589から$ 3,123</td><td>ドライブ一組で51日</td></tr><tr><td>LTO-7 (6 TB)</td><td>84巻のカートリッジ</td><td>28のLTO-9カートリッジ</td><td>$ 2,589から$ 3,123</td><td>ドライブ一組で34日</td></tr></tbody></table></div>
+<p>所要時間列は、移行元世代の公称速度（LTO-5：最大140 MB/s、LTO-6：160 MB/s、LTO-7：300 MB/s）での読み取りと、LTO-9の400 MB/sでの書き込みを停止なく全速力で実行した合算時間です。通常は旧ドライブがボトルネックになるため、同じ500 TBでもLTO-5の行はLTO-7の行より約三分の二長くかかります。読み取りと書き込みを別々のドライブで並行実行すれば、合算値ではなく二つのうち遅い方の数値に近づきます。</p>
+<p>メディア以外の費用も予算に計上してください。ドライブごとのSAS HBA、テープ間コピーを行わない場合にデータをステージングする十分なディスクを備えたサーバー、バックアップソフトウェアやLTFSツール、ライブラリがない場合はカートリッジ装填の手間が必要です。</p></section><section class="section-card"><p class="eyebrow">実施手順</p><h2>データを失わない移行計画</h2>
+<ol>
+<li><strong>まずインベントリを作成します。</strong>すべてのカートリッジ、その世代、ラベル、カタログに記載された内容をリストアップしてください。誰も中身を特定できないカートリッジがあると、データ移行作業がまるで遺跡発掘調査のようになってしまいます。</li>
+<li><strong>移行先の世代を決定します。</strong>LTO-9はテラバイト単価が最も安く、そのドライブは今でもLTO-8を読み取れます。LTO-10はカートリッジ本数をさらに半減させますが、テラバイト単価が高く過去世代の読み取りに対応していないため、移行よりも新規アーカイブに適しています。</li>
+<li><strong>作業完了まで旧ドライブを保管してください。</strong>移行先コピーが検証されるまでは、移行元メディアを読み取れる唯一のドライブを廃棄しないでください。一部のテープが手元に残る場合に備え、旧世代の正常動作品を一台確保しておきましょう。</li>
+<li><strong>コピー後に読み戻して検証します。</strong> コピー時に書き込まれるチェックサムはバッファ内のデータのみを証明します。古いメディアを廃棄する前に、新しいカートリッジを読み戻して移行元とハッシュ値を比較してください。</li>
+<li><strong>カタログも一緒に移行してください。</strong>インデックスのない完璧なコピーは、検索不可能なデータの山にすぎません。バックアップソフトを使うかLTFSを使うかにかかわらず、リストア時に実際に参照する場所に新テープの情報が記録されていることを確認してください。</li>
+<li><strong>移行中は二組のコピーを維持してください。</strong>書き換え中のカートリッジにしかアーカイブが存在しない期間は、そのライフサイクルの中で最も危険な瞬間です。</li>
+</ol></section><section class="section-card"><p class="eyebrow">テープ間直接移行またはディスク経由移行</p><h2>データ移行の二つの方法</h2>
+<p><strong>テープ間直接コピー</strong>は一台のホストに二台のドライブを接続し、ステージング領域なしで複製します。両世代が同一ライブラリ内または同一SASバス上にある場合に最もシンプルな手順となり、全工程を一つのツールで制御し続けられます。</p>
+<p><strong>ディスク経由</strong>では、まず元のデータをディスクプールにステージングしてから新しいカートリッジに書き込みます。時間はかかりディスク容量も必要ですが、重複排除、再カタログ化、または容量の一部しか使われていない多数の古いカートリッジを満杯の新しいカートリッジに再パックすることができ、低速な古いドライブと高速な新しいドライブの速度差を切り離すことができます。</p>
+<p>再パックは見かけ以上に重要です。数年前に細かいジョブで書き込まれたアーカイブではカートリッジが半分しか使われていないことが多く、実際のカートリッジ本数は単純な容量計算よりも大幅に多くなる場合があります。</p></section><section class="section-card"><p class="eyebrow">アウトソーシング</p><h2>データ移行を専門業者に委託すべき場合</h2>
+<p>元の世代に対応した動作ドライブが誰も持っていない場合、アーカイブが大規模で何ヶ月もドライブを専有すると他の業務に支障が出る場合、あるいはデータセンターの移転や閉鎖により期日が迫っている場合は、代行サービスの利用が理に適っています。どの業者に対しても三つの点を確認してください。書き込み後に各カートリッジをどのように検証するか、施設外へ搬出されるメディアの管理体制が文書化されているか、読み取り不能なカートリッジにどう対処するかです。これらの回答こそが、単なる運送業者とマイグレーションサービスを分ける基準となります。</p>
+<p>メディアとドライブの価格については最新の<a href="/ja/lto-tape-price-trend">LTO価格トラッカー</a>を、移行先世代の規模算出には<a href="/ja/backup-calculator">バックアップ計算機</a>をご覧ください。</p></section>
+<section class="cta-band"><p class="eyebrow">価格表</p><h2>LTO価格表を入手する</h2><p>移行やリプレースの予算を立てる前に、最新のLTOメディアおよびドライブの価格をお問い合わせください。</p>
+<div class="hubspot-shell"><div class="hs-form-frame" data-form-id="3f49124b-a1cb-4f2b-a54f-8f0c266fa59d" data-portal-id="147689578" data-region="eu1"></div></div>
+<div class="cta-actions"><a class="cta-secondary" href="/ja/lto-tape-price-trend/history">価格履歴を見る</a></div></section>
+<section aria-label="LTOテープ移行FAQ" class="faq-grid"><article class="faq-card"><h3>LTO-9ドライブでLTO-6テープを読み取れますか？</h3><p>いいえ。LTO-9ドライブが読み書きできるのはLTO-9およびLTO-8メディアのみです。LTO-6カートリッジにはLTO-6またはLTO-7ドライブが必要です。LTO-8ドライブはLTO-7を読み取れますがLTO-6は読めないため、移行が完了するまで適切な世代のドライブを維持してください。</p></article><article class="faq-card"><h3>100 TBのテープ移行にはどのくらいの時間がかかりますか？</h3><p>読み取りと書き込みを含め、400 MB/sの単一LTO-9ドライブで約六日間の連続コピーが必要です。古い移行元ドライブはより低速です。LTO-5メディアから100 TBを読み取るだけでも約八日間を要します。</p></article><article class="faq-card"><h3>500 TBをLTO-9へ移行するにはどのくらいの費用がかかりますか？</h3><p>メディアだけでも28巻のカートリッジ（各$ 92.45〜$ 111.55）が必要で、2026年九月時点で約$ 2,600〜$ 3,100になります。ドライブをお持ちでない場合は$ 7,699〜$ 13,500のドライブ代に加え、HBA、ソフトウェア、作業工数が加算されます。</p></article><article class="faq-card"><h3>LTO-9またはLTO-10のどちらへ移行すべきですか？</h3><p>多くの移行にはLTO-9が適しています：TB単価が$ 5.14〜$ 6.20であり、LTO-10の$ 8.53〜$ 10.00と比べて安価で、そのドライブはお手元のLTO-8テープを引き続き読み取れます。メディア費用よりもカートリッジ数やライブラリスロット数を重視する場合はLTO-10を選択してください。</p></article><article class="faq-card"><h3>テープの移行を検証するにはどうすればよいですか？</h3><p>すべての新しいカートリッジを読み戻し、書き込み時に記録されたチェックサムだけでなくソースとのチェックサムを比較してください。実ファイルのサンプルをリストアし、新しいテープがリストア用カタログに登録されていることを確認し、それらすべてが合格するまで元のメディアを保管してください。</p></article></section>
+</div></div></main>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="TapeBackup.org ホーム" class="brand" href="/ja"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.orgは、LTOテープバックアップ技術、価格、ワークフローに関する独立した情報リソースです。LTOプログラムとは提携していません。</p></div><div class="fcol"><h4>LTO価格</h4><a href="/ja/lto-tape-price-trend">価格推移</a><a href="/ja/lto-tape-price-trend/lto6-price">LTO-6 価格</a><a href="/ja/lto-tape-price-trend/lto7-price">LTO-7 価格</a><a href="/ja/lto-tape-price-trend/lto8-price">LTO-8 価格</a><a href="/ja/lto-tape-price-trend/lto9-price">LTO-9 価格</a><a href="/ja/lto-tape-price-trend/lto10-price">LTO-10 価格</a><a href="/ja/lto-tape-price-trend/history">価格履歴</a></div><div class="fcol"><h4>リソース</h4><a href="/ja/lto-tape">LTOテープとは</a><a href="/ja/lto-tape-capacity">LTO容量表</a><a href="/ja/why-tape/lto-tape-drive">LTOテープドライブ</a><a href="/ja/lto-tape-news">LTOテープニュース</a><a href="/ja/tape-q-and-a">テープQ&amp;A</a><a href="/ja/blog">Blog</a><a href="/ja/why-tape">テープを選ぶ理由</a><a href="/ja/resources">ガイド</a><a href="/ja/lto-tape-brand">LTOテープブランド</a><a href="/ja/comparisons">比較</a></div><div class="fcol"><h4>ツール</h4><a href="/ja/backup-calculator">バックアップ計算機</a><a href="/ja/backup-software-finder">ソフトウェア検索</a><a href="/ja/best-tape-backup-software">おすすめのテープバックアップソフトウェア</a></div><div class="fcol"><h4>企業情報</h4><a href="/ja/about">概要</a><a href="/ja/contact">お問い合わせ</a><a href="/sitemap.xml">サイトマップ</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org。中立的なLTOテープバックアップ情報サイト。</span><div class="links"><a href="/ja/about">会社概要</a><a href="/ja/contact">お問い合わせ</a><a href="/sitemap.xml">サイトマップ</a></div></div></div></footer>
+</div>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

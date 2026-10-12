@@ -53,11 +53,13 @@ def export(lang, parts, part, label=None):
 
 
 def rendered_len(row, tgt):
-    """Approximate final length: placeholders replaced by the English example's values."""
+    """Approximate final length: placeholders replaced by the English example's values.
+    Each CJK character counts as width 2 in search results."""
     ex_vals = re.findall(r"\S*\d\S*", row.get("example", ""))
     s = re.sub(r"</?[a-z]+\d+/?>", "", tgt)
     s = re.sub(r"\{(\d+)\}", lambda m: ex_vals[int(m.group(1))] if int(m.group(1)) < len(ex_vals) else "0000", s)
-    return len(s.replace("&amp;", "&"))
+    s = s.replace("&amp;", "&")
+    return sum(2 if re.match(r"[\u3000-\u9fff\uff00-\uffef]", c) else 1 for c in s)
 
 
 def problems(row, tgt):

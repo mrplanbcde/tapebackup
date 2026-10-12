@@ -40,12 +40,15 @@ VIDEOS = {
 }
 
 LABEL = {"en": "Watch", "de": "Video (Englisch)", "fr": "Vidéo (en anglais)", "it": "Video (in inglese)",
-         "es": "Vídeo (en inglés)", "nl": "Video (Engels)", "pl": "Wideo (po angielsku)"}
+         "es": "Vídeo (en inglés)", "nl": "Video (Engels)", "pl": "Wideo (po angielsku)",
+         "ja": "動画（英語）", "zh": "视频（英文）"}
 PLAY = {"en": "Play video", "de": "Video abspielen", "fr": "Lire la vidéo", "it": "Riproduci il video",
-        "es": "Reproducir el vídeo", "nl": "Video afspelen", "pl": "Odtwórz wideo"}
+        "es": "Reproducir el vídeo", "nl": "Video afspelen", "pl": "Odtwórz wideo",
+        "ja": "動画を再生", "zh": "播放视频"}
 
 ONYT = {"en": "Watch on YouTube", "de": "Auf YouTube ansehen", "fr": "Voir sur YouTube", "it": "Guarda su YouTube",
-        "es": "Ver en YouTube", "nl": "Bekijk op YouTube", "pl": "Obejrzyj na YouTube"}
+        "es": "Ver en YouTube", "nl": "Bekijk op YouTube", "pl": "Obejrzyj na YouTube",
+        "ja": "YouTubeで視聴", "zh": "在YouTube上观看"}
 
 SCRIPT = ('<script>document.addEventListener("click",function(e){var b=e.target.closest(".yt-facade");if(!b)return;'
           'var f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.yt+"?autoplay=1&rel=0";'

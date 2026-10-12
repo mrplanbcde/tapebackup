@@ -33,6 +33,28 @@
   --ease:cubic-bezier(.4,0,.2,1);
 }
 
+html[lang="ja"]{
+  --display:"Space Grotesk","Hiragino Sans","Noto Sans JP","Yu Gothic",system-ui,sans-serif;
+  --sans:"Hanken Grotesk","Hiragino Sans","Noto Sans JP","Yu Gothic",system-ui,sans-serif;
+}
+html[lang="ja"] body{
+  word-break:normal;
+  line-break:strict;
+  overflow-wrap:anywhere;
+  line-height:1.7;
+}
+
+html[lang|="zh"]{
+  --display:"Space Grotesk","PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  --sans:"Hanken Grotesk","PingFang SC","Noto Sans SC","Microsoft YaHei",system-ui,sans-serif;
+}
+html[lang|="zh"] body{
+  word-break:normal;
+  line-break:strict;
+  overflow-wrap:anywhere;
+  line-height:1.7;
+}
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{

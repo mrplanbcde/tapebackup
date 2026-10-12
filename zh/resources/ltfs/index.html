@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>LTFS 详解：像使用磁盘一样使用 LTO 磁带</title>
+<meta content="LTFS（线性磁带文件系统）解析：适用于Windows、macOS和Linux的免费软件、格式化与挂载方法及限制。" name="description"/>
+<meta content="noindex, follow" name="robots"/>
+<link href="https://tapebackup.org/zh/resources/ltfs" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="LTFS 详解：像使用磁盘一样使用 LTO 磁带" property="og:title"/>
+<meta content="LTFS（线性磁带文件系统）解析：适用于Windows、macOS和Linux的免费软件、格式化与挂载方法及限制。" property="og:description"/>
+<meta content="https://tapebackup.org/zh/resources/ltfs" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="LTFS 详解：像使用磁盘一样使用 LTO 磁带" name="twitter:title"/>
+<meta content="LTFS（线性磁带文件系统）解析：适用于Windows、macOS和Linux的免费软件、格式化与挂载方法及限制。" name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script defer="" src="https://js-eu1.hsforms.net/forms/embed/147689578.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "LTFS：线性磁带文件系统", "description": "LTFS（线性磁带文件系统）解析：适用于Windows、macOS和Linux的免费软件、格式化与挂载方法及限制。", "datePublished": "2026-10-03", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}, "mainEntityOfPage": "https://tapebackup.org/zh/resources/ltfs", "inLanguage": "zh"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://tapebackup.org/zh"}, {"@type": "ListItem", "position": 2, "name": "资源", "item": "https://tapebackup.org/zh/resources"}, {"@type": "ListItem", "position": 3, "name": "LTFS", "item": "https://tapebackup.org/zh/resources/ltfs"}], "inLanguage": "zh"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "什么是LTFS？", "acceptedAnswer": {"@type": "Answer", "text": "线性磁带文件系统（LTFS）：一种可将 LTO-5 或更新的磁带像磁盘一样挂载的格式，文件可以像常规方式一样复制，索引则存储在磁带本身上。"}}, {"@type": "Question", "name": "LTFS 是免费的吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的。IBM、HPE 和 Quantum 为其驱动器提供免费的 LTFS 软件，GitHub 上也有开源参考实现。"}}, {"@type": "Question", "name": "LTFS支持Mac和Windows系统吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的。IBM 和 HPE 为 Windows 和 macOS 提供 LTFS 支持，Thunderbolt 桌面驱动器通常随附该工具。"}}, {"@type": "Question", "name": "我可以删除 LTFS 磁带上的文件吗？", "acceptedAnswer": {"@type": "Answer", "text": "您可以从索引中删除它们，但在重新格式化整盒磁带之前，该空间不会被重复使用。"}}, {"@type": "Question", "name": "LTFS 算备份吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。它只是一种文件系统。调度、版本控制和数据校验请使用备份或归档软件，或者自行添加校验和并制作第二份副本。"}}], "inLanguage": "zh"}</script>
+<meta content="zh_CN" property="og:locale"/><link href="https://tapebackup.org/resources/ltfs" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/resources/ltfs" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/resources/ltfs" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/resources/ltfs" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/resources/ltfs" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/resources/ltfs" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/resources/ltfs" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/resources/ltfs" hreflang="x-default" rel="alternate"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "How to Use LTFS on Linux, Mac and Windows (LTO Tape Like a USB Drive)", "description": "How LTFS works, the free tools for each OS, the Linux commands step by step, the Mac and Windows apps, and why you must always unmount.", "thumbnailUrl": ["https://i.ytimg.com/vi/e1ANLap0inI/maxresdefault.jpg", "https://i.ytimg.com/vi/e1ANLap0inI/hqdefault.jpg"], "uploadDate": "2026-10-04", "duration": "PT1M34S", "embedUrl": "https://www.youtube-nocookie.com/embed/e1ANLap0inI", "contentUrl": "https://youtu.be/e1ANLap0inI", "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}}</script>
+</head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/zh/tape-q-and-a">磁带问答</a><span class="sep"></span><a href="/zh/lto-tape-price-trend">LTO价格</a><span class="sep"></span><a href="/zh/contact">联系我们</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/resources/ltfs" hreflang="en" lang="en">EN</a><a href="/de/resources/ltfs" hreflang="de" lang="de">DE</a><a href="/fr/resources/ltfs" hreflang="fr" lang="fr">FR</a><a href="/it/resources/ltfs" hreflang="it" lang="it">IT</a><a href="/es/resources/ltfs" hreflang="es" lang="es">ES</a><a href="/nl/resources/ltfs" hreflang="nl" lang="nl">NL</a><a href="/pl/resources/ltfs" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org 首页" class="brand" href="/zh"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="主要" class="topnav">
+<div class="price-dropdown"><a href="/zh/lto-tape">LTO 磁带</a><div class="price-dropdown-menu"><a href="/zh/lto-tape">什么是LTO磁带<span>一页全面了解该规格</span></a><a href="/zh/lto-tape-capacity">容量图表<span>LTO-1至LTO-14</span></a><a href="/zh/why-tape/lto-tape-drive">驱动器选购指南<span>该选购哪款驱动器</span></a><a href="/zh/lto-tape-library">磁带库<span>自动加载机与磁带库</span></a><a href="/zh/why-tape/lto-tape-lifespan">使用寿命<span>磁带能保存多久</span></a><a href="/zh/resources/ltfs">LTFS<span>作为文件系统使用的磁带</span></a><a href="/zh/resources/lto-tape-data-recovery">数据恢复<span>读取旧磁带</span></a><a href="/zh/lto-tape-news">新闻动态<span>本月最新变化</span></a><a href="/zh/why-tape">为何选用磁带<span>成本、气隙隔离与寿命</span></a></div></div>
+<div class="price-dropdown"><a href="/zh/lto-tape-price-trend">LTO价格</a><div class="price-dropdown-menu"><a href="/zh/lto-tape-price-trend">所有世代<span>2026 年九月价格</span></a><a href="/zh/lto-tape-price-trend/lto6-price">LTO-6 价格<span>原生 2.5 TB</span></a><a href="/zh/lto-tape-price-trend/lto7-price">LTO-7 价格<span>原生 6 TB</span></a><a href="/zh/lto-tape-price-trend/lto8-price">LTO-8 价格<span>原生 12 TB</span></a><a href="/zh/lto-tape-price-trend/lto9-price">LTO-9 价格<span>原生 18 TB</span></a><a href="/zh/lto-tape-price-trend/lto10-price">LTO-10 价格<span>原生 30 / 40 TB</span></a><a href="/zh/lto-tape-price-trend/history">价格历史<span>2025 年以来的归档快照</span></a></div></div>
+<div class="price-dropdown"><a href="/zh/backup-calculator">工具</a><div class="price-dropdown-menu"><a href="/zh/backup-calculator">备份计算器<span>介质与成本估算</span></a><a href="/zh/backup-software-finder">软件推荐工具<span>匹配适合您磁带用途的软件</span></a><a href="/zh/best-tape-backup-software">最佳磁带备份软件<span>2026横向对比</span></a></div></div>
+<a href="/zh/blog">Blog</a>
+<a href="/zh/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/zh/contact">获取价格表</a></div>
+</div></header>
+<section class="hero"><div class="container"><div class="hero-copy" style="max-width:900px">
+<p class="eyebrow">LTFS 指南</p><h1 style="max-width:none">LTFS：线性磁带文件系统</h1>
+<p><strong>LTFS（线性磁带文件系统）可将 LTO-5 或更新的磁带像磁盘一样挂载，以便您使用常规文件管理器复制文件，且任何 LTFS 系统均可读取该磁带；IBM、HPE 和 Quantum 均提供免费工具，同时也有开源版本。</strong></p></div></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><p class="eyebrow">基本概念</p><h2>LTFS的功能特点</h2>
+<p>LTFS（线性磁带文件系统）将从 LTO-5 开始的 LTO 磁带盒格式化为两个分区：保存文件索引的小分区和保存文件本身的大分区。挂载磁带后它会显示为驱动器或文件夹；您可以使用常规文件管理器或命令行向其中复制文件，其他任何 LTFS 系统都可以在无需写入软件的情况下读取它。</p>
+<p>这种自描述格式正是 LTFS 成为企业间（特别是在电影、电视和后期制作领域）交换磁带的标准的原因。</p></section><section class="section-card video-card" id="video"><p class="eyebrow">视频（英文）</p><h2>How to Use LTFS on Linux, Mac and Windows (LTO Tape Like a USB Drive)</h2><div class="video-embed"><button type="button" class="yt-facade" data-yt="e1ANLap0inI" data-title="How to Use LTFS on Linux, Mac and Windows (LTO Tape Like a USB Drive)" aria-label="播放视频: How to Use LTFS on Linux, Mac and Windows (LTO Tape Like a USB Drive)"><img src="https://i.ytimg.com/vi/e1ANLap0inI/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button></div><p class="video-link"><a href="https://youtu.be/e1ANLap0inI" rel="noopener">在YouTube上观看</a></p></section><section class="section-card"><p class="eyebrow">软件</p><h2>免费LTFS软件</h2>
+<div class="table-wrap"><table aria-label="LTFS软件" class="price-table"><thead><tr><th>工具</th><th>系统</th><th>备注</th></tr></thead><tbody><tr><td>IBM Storage Archive Single Drive Edition</td><td>Windows, Linux, macOS</td><td>免费；前身为Spectrum Archive SDE</td></tr><tr><td>配备 LTFS 的 HPE StoreOpen</td><td>Windows, macOS, Linux</td><td>免费；适用于HPE驱动器</td></tr><tr><td>Quantum LTFS</td><td>Windows, macOS, Linux</td><td>适用于Quantum驱动器</td></tr><tr><td>LTFS参考实现</td><td>Linux, macOS</td><td>GitHub 上的开源项目</td></tr><tr><td>WinLtfs</td><td>Windows</td><td>社区开源工具</td></tr></tbody></table></div>
+<p>桌面磁带机制造商通常会捆绑其中一款软件。面向媒体工作流的付费工具则增加了编目、校验和以及跨磁带分卷功能。</p></section><section class="section-card"><p class="eyebrow">如何使用它</p><h2>格式化并挂载磁带</h2>
+<p>在 Linux 上使用开源工具，使用 <code>mkltfs</code> 格式化空白磁带并使用 <code>ltfs</code> 进行挂载（两者均指向驱动器的设备节点），随后即可像往常一样将文件复制到挂载点中。弹出前务必卸载：LTFS 在卸载时写入最终索引，若未卸载就拔出磁带，可能仅显示截止到上次索引时的文件。</p>
+<p>图形化工具通过“格式化”按钮以及分配驱动器号或卷来实现相同的功能。格式化完成后，您可以使用普通文件管理器或命令行复制文件。</p></section><section class="section-card"><p class="eyebrow">限制与局限</p><h2>LTFS不擅长的场景</h2>
+<ul>
+<li><strong>小文件。</strong>每个文件都会消耗索引空间和磁带寻道动作；请先将成千上万个小文件打包成归档包。</li>
+<li><strong>删除操作。</strong>删除文件不会释放空间。只有在重新格式化整盒磁带时空间才会回收。</li>
+<li><strong>随机访问。</strong>打开磁带中间的一个文件需要快进寻道，这可能耗时一到两分钟。</li>
+<li><strong>备份。</strong>LTFS 是一种文件系统，而非备份软件：它本身不负责调度、版本控制或数据校验。</li>
+</ul></section><section class="section-card"><p class="eyebrow">兼容性</p><h2>LTFS版本与驱动器</h2>
+<p>LTFS支持LTO-5及后续各代。较新的LTFS版本可读取较早版本写入的磁带，但旧工具可能会拒绝使用更新索引版本格式化的磁带，因此在交换磁带时请使用相同或更新的版本。驱动器仍需支持读取该磁带世代；兼容性请参阅<a href="/zh/lto-tape-capacity">LTO容量图表</a>。</p></section><section class="section-card"><p class="eyebrow">更多指南</p><h2>其他 LTO 指南</h2><div class="link-grid"><a href="/zh/lto-tape">什么是 LTO 磁带<span>一页看懂该格式</span></a><a href="/zh/lto-tape-capacity">LTO 容量图表<span>LTO-1 至 LTO-14</span></a><a href="/zh/why-tape/lto-tape-drive">LTO 磁带机选购指南<span>该选哪款驱动器</span></a><a href="/zh/lto-tape-library">LTO 磁带库<span>自动加载机与带库</span></a><a href="/zh/why-tape/lto-tape-lifespan">LTO 磁带使用寿命<span>磁带能保存多久</span></a><a href="/zh/resources/lto-tape-data-recovery">LTO 磁带数据恢复<span>读取旧磁带</span></a><a href="/zh/resources/lto-cleaning-tapes-and-labels">清洗带与标签<span>耗材与操作规范</span></a><a href="/zh/lto-tape-news">LTO 磁带新闻<span>本月最新动态</span></a></div></section>
+<section class="cta-band"><p class="eyebrow">价格表</p><h2>获取LTO价格表</h2><p>在制定数据迁移或设备更新预算前，请先索取最新的LTO介质与驱动器报价。</p>
+<div class="hubspot-shell"><div class="hs-form-frame" data-form-id="3f49124b-a1cb-4f2b-a54f-8f0c266fa59d" data-portal-id="147689578" data-region="eu1"></div></div>
+<div class="cta-actions"><a class="cta-secondary" href="/zh/lto-tape-price-trend/history">查看价格历史</a></div></section>
+<section aria-label="LTFS：线性磁带文件系统常见问题解答" class="faq-grid"><article class="faq-card"><h3>什么是LTFS？</h3><p>线性磁带文件系统（LTFS）：一种可将 LTO-5 或更新的磁带像磁盘一样挂载的格式，文件可以像常规方式一样复制，索引则存储在磁带本身上。</p></article><article class="faq-card"><h3>LTFS 是免费的吗？</h3><p>是的。IBM、HPE 和 Quantum 为其驱动器提供免费的 LTFS 软件，GitHub 上也有开源参考实现。</p></article><article class="faq-card"><h3>LTFS支持Mac和Windows系统吗？</h3><p>是的。IBM 和 HPE 为 Windows 和 macOS 提供 LTFS 支持，Thunderbolt 桌面驱动器通常随附该工具。</p></article><article class="faq-card"><h3>我可以删除 LTFS 磁带上的文件吗？</h3><p>您可以从索引中删除它们，但在重新格式化整盒磁带之前，该空间不会被重复使用。</p></article><article class="faq-card"><h3>LTFS 算备份吗？</h3><p>不能。它只是一种文件系统。调度、版本控制和数据校验请使用备份或归档软件，或者自行添加校验和并制作第二份副本。</p></article></section>
+</div></div></main>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="TapeBackup.org 首页" class="brand" href="/zh"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.org 是有关 LTO 磁带备份技术、价格与工作流的独立资源。与 LTO 联盟无关。</p></div><div class="fcol"><h4>LTO价格</h4><a href="/zh/lto-tape-price-trend">价格追踪</a><a href="/zh/lto-tape-price-trend/lto6-price">LTO-6 价格</a><a href="/zh/lto-tape-price-trend/lto7-price">LTO-7 价格</a><a href="/zh/lto-tape-price-trend/lto8-price">LTO-8 价格</a><a href="/zh/lto-tape-price-trend/lto9-price">LTO-9 价格</a><a href="/zh/lto-tape-price-trend/lto10-price">LTO-10 价格</a><a href="/zh/lto-tape-price-trend/history">价格历史</a></div><div class="fcol"><h4>资源</h4><a href="/zh/lto-tape">什么是LTO磁带</a><a href="/zh/lto-tape-capacity">LTO 容量表</a><a href="/zh/why-tape/lto-tape-drive">LTO 磁带机</a><a href="/zh/lto-tape-news">LTO 磁带新闻</a><a href="/zh/tape-q-and-a">磁带问答</a><a href="/zh/blog">Blog</a><a href="/zh/why-tape">为什么选择磁带</a><a href="/zh/resources">指南</a><a href="/zh/lto-tape-brand">LTO 磁带品牌</a><a href="/zh/comparisons">对比</a></div><div class="fcol"><h4>工具</h4><a href="/zh/backup-calculator">备份计算器</a><a href="/zh/backup-software-finder">软件查找工具</a><a href="/zh/best-tape-backup-software">最佳磁带备份软件</a></div><div class="fcol"><h4>公司信息</h4><a href="/zh/about">关于</a><a href="/zh/contact">联系我们</a><a href="/sitemap.xml">网站地图</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org。中立的LTO磁带备份资源。</span><div class="links"><a href="/zh/about">关于</a><a href="/zh/contact">联系我们</a><a href="/sitemap.xml">网站地图</a></div></div></div></footer>
+</div>
+<script>document.addEventListener("click",function(e){var b=e.target.closest(".yt-facade");if(!b)return;var f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.yt+"?autoplay=1&rel=0";f.title=b.dataset.title;f.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";f.allowFullscreen=true;b.replaceWith(f);});</script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

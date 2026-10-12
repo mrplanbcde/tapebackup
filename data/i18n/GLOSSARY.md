@@ -110,3 +110,18 @@ Translate country names ("Germany", "the United States", "US") and month names n
 - Table cells that hold only a seller name or part number.
 - `LTFS · WORM READY` and `ULTRIUM` (decorative cartridge label).
 - Button values and ids inside tokens.
+
+## Japanese (`ja`) Conventions
+- Use です/ます form (polite, direct, professional).
+- Use standard IT katakana: テープ, ドライブ, カートリッジ, バックアップ, アーカイブ, ライブラリ.
+- Write "LTO-9" and units like "TB", "GB", "MB/s" as is (half-width Latin).
+- Use full-width punctuation (、。「」) and half-width digits.
+- Do not translate brands or product names: TapeBackup, TapeBackup.org, Veeam, Commvault, IBM, HPE, Quantum, Dell, etc.
+
+## Simplified Chinese (`zh` / `zh-Hans`) Conventions
+- Mainland China technical usage.
+- Standard storage terms: 磁带, 磁带机, 磁带库, 备份, 归档, 带库, 离线, 勒索软件.
+- Units stay as "TB", "GB", "MB/s".
+- Use full-width punctuation (，。：“” or 「」) and half-width digits.
+- Do not use Traditional characters.
+- Brand and product names remain in Latin script (TapeBackup, Veeam, Commvault, IBM, HPE, etc.).

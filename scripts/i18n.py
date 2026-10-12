@@ -39,15 +39,17 @@ STAGE = os.path.join(ROOT, ".build")
 SITE = "https://tapebackup.org"
 
 LANG_META = {
-    "en": {"name": "English", "locale": "en_US"},
-    "de": {"name": "Deutsch", "locale": "de_DE"},
-    "fr": {"name": "Français", "locale": "fr_FR"},
-    "it": {"name": "Italiano", "locale": "it_IT"},
-    "es": {"name": "Español", "locale": "es_ES"},
-    "nl": {"name": "Nederlands", "locale": "nl_NL"},
-    "pl": {"name": "Polski", "locale": "pl_PL"},
+    "en": {"name": "English", "locale": "en_US", "hreflang": "en", "html_lang": "en"},
+    "de": {"name": "Deutsch", "locale": "de_DE", "hreflang": "de", "html_lang": "de"},
+    "fr": {"name": "Français", "locale": "fr_FR", "hreflang": "fr", "html_lang": "fr"},
+    "it": {"name": "Italiano", "locale": "it_IT", "hreflang": "it", "html_lang": "it"},
+    "es": {"name": "Español", "locale": "es_ES", "hreflang": "es", "html_lang": "es"},
+    "nl": {"name": "Nederlands", "locale": "nl_NL", "hreflang": "nl", "html_lang": "nl"},
+    "pl": {"name": "Polski", "locale": "pl_PL", "hreflang": "pl", "html_lang": "pl"},
+    "ja": {"name": "日本語", "locale": "ja_JP", "hreflang": "ja", "html_lang": "ja"},
+    "zh": {"name": "简体中文", "locale": "zh_CN", "hreflang": "zh-Hans", "html_lang": "zh-Hans"},
 }
-LANGS = ["de", "fr", "it", "es", "nl", "pl"]
+LANGS = ["de", "fr", "it", "es", "nl", "pl", "ja", "zh"]
 
 SCOPE_CORE = [
     "/", "/lto-tape-price-trend", "/lto-tape-price-trend/lto6-price", "/lto-tape-price-trend/lto7-price",
@@ -195,13 +197,18 @@ FMT = {
     "es": {"dec": ",", "grp": ".", "after": True, "min_grp": 5},
     "nl": {"dec": ",", "grp": ".", "after": False, "min_grp": 4},
     "pl": {"dec": ",", "grp": " ", "after": True, "min_grp": 5},
+    "ja": {"dec": ".", "grp": ",", "after": False, "min_grp": 4},
+    "zh": {"dec": ".", "grp": ",", "after": False, "min_grp": 4},
 }
 NBSP = " "
 UNIT_AFTER = re.compile(r"\s+(?:[KMGTPE]i?B|[KMGTP]o|[KMG]B/s|[MG]o/s)\b")
 ISO_DATE = re.compile(r"(?<![\w/.:-])((?:19|20)\d\d)-(\d\d)-(\d\d)(?![\w/:-]|\.\d)")
-DATE_FMT = {"de": "{d}.{m}.{y}", "fr": "{d}/{m}/{y}", "it": "{d}/{m}/{y}", "es": "{d}/{m}/{y}", "nl": "{d}-{m}-{y}", "pl": "{d}.{m}.{y}"}
+DATE_FMT = {
+    "de": "{d}.{m}.{y}", "fr": "{d}/{m}/{y}", "it": "{d}/{m}/{y}", "es": "{d}/{m}/{y}", "nl": "{d}-{m}-{y}", "pl": "{d}.{m}.{y}",
+    "ja": "{y}年{m}月{d}日", "zh": "{y}年{m}月{d}日",
+}
 LOC_RE = re.compile(
-    r"(?P<sym>[$€]|zł)\s?(?P<mnum>\d(?:[\d,]*\d)?(?:\.\d+)?)(?:[-–](?P<mnum2>\d(?:[\d,]*\d)?(?:\.\d+)?)(?![\w.]))?"
+    r"(?P<sym>[$€¥￥]|zł)\s?(?P<mnum>\d(?:[\d,]*\d)?(?:\.\d+)?)(?:[-–](?P<mnum2>\d(?:[\d,]*\d)?(?:\.\d+)?)(?![\w.]))?"
     r"|(?<![\w.,/:\-])(?P<num>\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+\.\d+)(?![\d])(?!\.\d)(?![A-Za-z]*\d)"
 )
 
@@ -244,13 +251,18 @@ def localize_numbers(text, lang):
                 n = f"{n}–{fmt_number(m.group('mnum2'), lang)}"
             return f"{n}{NBSP}{sym}" if f["after"] else f"{sym}{NBSP}{n}"
         return fmt_number(m.group("num"), lang)
-    text = ISO_DATE.sub(lambda m: DATE_FMT[lang].format(y=m.group(1), m=m.group(2), d=m.group(3)), text)
+    def date_repl(m):
+        fmt = DATE_FMT[lang]
+        if lang in ("ja", "zh"):
+            return fmt.format(y=m.group(1), m=str(int(m.group(2))), d=str(int(m.group(3))))
+        return fmt.format(y=m.group(1), m=m.group(2), d=m.group(3))
+    text = ISO_DATE.sub(date_repl, text)
     out = LOC_RE.sub(rep, text)
     num = r"\d[\d.,  ]*"
     if f["after"]:
-        out = re.sub(rf"({num}){NBSP}([$€]|zł)\s?[-–]\s?({num}){NBSP}\2", rf"\1–\3{NBSP}\2", out)
+        out = re.sub(rf"({num}){NBSP}([$€¥￥]|zł)\s?[-–]\s?({num}){NBSP}\2", rf"\1–\3{NBSP}\2", out)
     else:
-        out = re.sub(rf"([$€]){NBSP}({num})\s?[-–]\s?\1{NBSP}({num})", rf"\1{NBSP}\2–\3", out)
+        out = re.sub(rf"([$€¥￥]){NBSP}({num})\s?[-–]\s?\1{NBSP}({num})", rf"\1{NBSP}\2–\3", out)
     return out
 
 
@@ -404,13 +416,15 @@ def switcher_html(path, current, langs):
         if path not in SCOPE_SET:
             href = "/" if code == "en" else f"/{code}"
         cls = ' class="on" aria-current="page"' if code == current else ""
-        items.append(f'<a href="{href}" hreflang="{code}" lang="{code}"{cls}>{label}</a>')
+        href_lang = LANG_META.get(code, {}).get("hreflang", code)
+        html_lang = LANG_META.get(code, {}).get("html_lang", code)
+        items.append(f'<a href="{href}" hreflang="{href_lang}" lang="{html_lang}"{cls}>{label}</a>')
     return f'<span class="lang-switch" data-i18n-skip aria-label="Language">{"".join(items)}</span>'
 
 
 def set_head(soup, path, lang, langs, indexable=True):
     root = soup.html
-    root["lang"] = lang
+    root["lang"] = LANG_META.get(lang, {}).get("html_lang", lang)
     head = soup.head
     for link in head.find_all("link", rel="alternate"):
         if link.get("hreflang"):
@@ -426,11 +440,15 @@ def set_head(soup, path, lang, langs, indexable=True):
     head.append(loc)
     if path in SCOPE_SET:
         for code in ["en"] + langs:
-            head.append(soup.new_tag("link", rel="alternate", hreflang=code, href=lang_url(path, code)))
+            href_lang = LANG_META.get(code, {}).get("hreflang", code)
+            head.append(soup.new_tag("link", rel="alternate", hreflang=href_lang, href=lang_url(path, code)))
         head.append(soup.new_tag("link", rel="alternate", hreflang="x-default", href=lang_url(path, "en")))
     robots = head.find("meta", attrs={"name": "robots"})
     if robots and lang != "en" and not indexable:
         robots["content"] = "noindex, follow"
+    elif not robots and lang != "en" and not indexable:
+        robots = soup.new_tag("meta", attrs={"name": "robots", "content": "noindex, follow"})
+        head.append(robots)
 
 
 def add_switcher(soup, path, lang, langs):

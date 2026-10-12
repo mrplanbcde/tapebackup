@@ -592,7 +592,7 @@ def build_legacy(path, key, title, desc):
 
 # ---------------------------------------------------------------- tools
 
-JS_LOCALE = {"en": "en-US", "de": "de-DE", "fr": "fr-FR", "it": "it-IT", "es": "es-ES", "nl": "nl-NL", "pl": "pl-PL"}
+JS_LOCALE = {"en": "en-US", "de": "de-DE", "fr": "fr-FR", "it": "it-IT", "es": "es-ES", "nl": "nl-NL", "pl": "pl-PL", "ja": "ja-JP", "zh": "zh-CN"}
 
 
 def i18n_json(el_id, strings):

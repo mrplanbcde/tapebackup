@@ -10,7 +10,9 @@
     it: ["Chiedi su LTO", "Assistente TapeBackup", "Risposte brevi su nastro LTO, software di backup e i nostri video. 3 domande al giorno.", "es. Quanto costa un nastro LTO-9?", "Chiedi", "Sto pensando…", "domande rimaste oggi"],
     es: ["Pregunta sobre LTO", "Asistente de TapeBackup", "Respuestas breves sobre cinta LTO, software de copia de seguridad y nuestros vídeos. 3 preguntas al día.", "p. ej. ¿Cuánto cuesta una cinta LTO-9?", "Preguntar", "Pensando…", "preguntas restantes hoy"],
     nl: ["Vraag over LTO", "TapeBackup-assistent", "Korte antwoorden over LTO-tape, back-upsoftware en onze video's. 3 vragen per dag.", "bijv. Wat kost een LTO-9-tape?", "Vraag", "Even denken…", "vragen over vandaag"],
-    pl: ["Zapytaj o LTO", "Asystent TapeBackup", "Krótkie odpowiedzi o taśmach LTO, oprogramowaniu do backupu i naszych filmach. 3 pytania dziennie.", "np. Ile kosztuje taśma LTO-9?", "Zapytaj", "Myślę…", "pytań zostało na dziś"]
+    pl: ["Zapytaj o LTO", "Asystent TapeBackup", "Krótkie odpowiedzi o taśmach LTO, oprogramowaniu do backupu i naszych filmach. 3 pytania dziennie.", "np. Ile kosztuje taśma LTO-9?", "Zapytaj", "Myślę…", "pytań zostało na dziś"],
+    ja: ["LTOについて質問", "TapeBackupアシスタント", "LTOテープ、バックアップソフトウェア、動画についての短い回答。1日3問まで。", "例: LTO-9テープの価格は？", "質問する", "考え中…", "本日残り質問数"],
+    zh: ["咨询LTO磁带", "TapeBackup智能助手", "关于LTO磁带、备份软件与视频的简明解答。每日限提3问。", "例如：LTO-9磁带多少钱？", "提问", "正在思考…", "今日剩余提问次数"]
   }[lang] || null;
   T = T || ["Ask about LTO", "Ask the TapeBackup assistant", "Short answers on LTO tape, backup software and our videos. 3 questions per day.", "e.g. How much does an LTO-9 tape cost?", "Ask", "Thinking…", "questions left today"];
 

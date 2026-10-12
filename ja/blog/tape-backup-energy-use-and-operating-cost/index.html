@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>テープの消費電力と運用コストの比較 | TapeBackup.org</title>
+<meta content="どのテープバックアップが最もエネルギー効率に優れ、運用コストでディスクやクラウドとどう比較されるか？500 TBモデルによる試算。" name="description"/>
+<meta content="noindex, follow" name="robots"/>
+<link href="https://tapebackup.org/ja/blog/tape-backup-energy-use-and-operating-cost" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="テープバックアップの消費電力と運用コスト" property="og:title"/>
+<meta content="どのテープバックアップが最もエネルギー効率に優れ、運用コストでディスクやクラウドとどう比較されるか？500 TBモデルによる試算。" property="og:description"/>
+<meta content="https://tapebackup.org/ja/blog/tape-backup-energy-use-and-operating-cost" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="テープバックアップの消費電力と運用コスト" name="twitter:title"/>
+<meta content="どのテープバックアップが最もエネルギー効率に優れ、運用コストでディスクやクラウドとどう比較されるか？500 TBモデルによる試算。" name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "テープバックアップの消費電力と運用コスト", "description": "どのテープバックアップが最もエネルギー効率に優れ、運用コストでディスクやクラウドとどう比較されるか？500 TBモデルによる試算。", "datePublished": "2026-10-12", "dateModified": "2026-10-12", "mainEntityOfPage": "https://tapebackup.org/ja/blog/tape-backup-energy-use-and-operating-cost", "url": "https://tapebackup.org/ja/blog/tape-backup-energy-use-and-operating-cost", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "logo": {"@type": "ImageObject", "url": "https://tapebackup.org/favicon.png"}}, "articleSection": "Analysis"}</script>
+<meta content="ja_JP" property="og:locale"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/blog/tape-backup-energy-use-and-operating-cost" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/ja/tape-q-and-a">テープQ&amp;A</a><span class="sep"></span><a href="/ja/lto-tape-price-trend">LTO価格</a><span class="sep"></span><a href="/ja/contact">お問い合わせ</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog/tape-backup-energy-use-and-operating-cost" hreflang="en" lang="en">EN</a><a href="/de/blog/tape-backup-energy-use-and-operating-cost" hreflang="de" lang="de">DE</a><a href="/fr/blog/tape-backup-energy-use-and-operating-cost" hreflang="fr" lang="fr">FR</a><a href="/it/blog/tape-backup-energy-use-and-operating-cost" hreflang="it" lang="it">IT</a><a href="/es/blog/tape-backup-energy-use-and-operating-cost" hreflang="es" lang="es">ES</a><a href="/nl/blog/tape-backup-energy-use-and-operating-cost" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/tape-backup-energy-use-and-operating-cost" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org ホーム" class="brand" href="/ja"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="プライマリ" class="topnav">
+<div class="price-dropdown"><a href="/ja/lto-tape">LTOテープ</a><div class="price-dropdown-menu"><a href="/ja/lto-tape">LTOテープとは<span>規格の全体像を一枚で解説</span></a><a href="/ja/lto-tape-capacity">容量一覧表<span>LTO-1〜LTO-14</span></a><a href="/ja/why-tape/lto-tape-drive">ドライブ購入ガイド<span>選ぶべきドライブ</span></a><a href="/ja/lto-tape-library">ライブラリ<span>オートローダーとライブラリ</span></a><a href="/ja/why-tape/lto-tape-lifespan">寿命<span>テープの耐久年数</span></a><a href="/ja/resources/ltfs">LTFS<span>ファイルシステムとしてのテープ</span></a><a href="/ja/resources/lto-tape-data-recovery">データ復旧<span>古いテープの読み取り</span></a><a href="/ja/lto-tape-news">ニュース<span>今月の動向</span></a><a href="/ja/why-tape">テープを選ぶ理由<span>コスト、エアギャップ、寿命</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/lto-tape-price-trend">LTO価格</a><div class="price-dropdown-menu"><a href="/ja/lto-tape-price-trend">全世代<span>2026年九月の価格</span></a><a href="/ja/lto-tape-price-trend/lto6-price">LTO-6価格<span>ネイティブ2.5 TB</span></a><a href="/ja/lto-tape-price-trend/lto7-price">LTO-7価格<span>ネイティブ6 TB</span></a><a href="/ja/lto-tape-price-trend/lto8-price">LTO-8価格<span>ネイティブ12 TB</span></a><a href="/ja/lto-tape-price-trend/lto9-price">LTO-9価格<span>ネイティブ18 TB</span></a><a href="/ja/lto-tape-price-trend/lto10-price">LTO-10価格<span>ネイティブ30 / 40 TB</span></a><a href="/ja/lto-tape-price-trend/history">価格履歴<span>2025年以降のアーカイブ記録</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/backup-calculator">ツール</a><div class="price-dropdown-menu"><a href="/ja/backup-calculator">バックアップ計算機<span>メディアと費用の見積もり</span></a><a href="/ja/backup-software-finder">ソフトウェアファインダー<span>テープ用途に合ったソフトウェアの選定</span></a><a href="/ja/best-tape-backup-software">おすすめのテープバックアップソフトウェア<span>2026の比較</span></a></div></div>
+<a href="/ja/blog">Blog</a>
+<a href="/ja/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/ja/contact">価格表を入手する</a></div>
+</div></header>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">分析記事</p>
+<h1>テープバックアップの消費電力と運用コスト</h1>
+<p>どのテープバックアップが最もエネルギー効率に優れ、運用コストでディスクやクラウドとどう比較されるか？500 TBモデルによる試算。</p>
+<div class="signal-row"><span class="signal-chip">分析</span> <span class="signal-chip">読了時間 4 分</span> <span class="signal-chip">2026年十月12日</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">要約</p>
+<p class="panel-copy"></p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">ホーム</a><span>/</span><a href="/ja/blog">ブログ</a><span>/</span><span>分析</span></div>
+<header class="article-header">
+<div class="detail-meta"><span class="pill">分析</span> <span class="pill alt">読了時間 4 分</span> <span class="pill alt">2026年十月12日</span></div>
+<h2 class="detail-title">テープバックアップの消費電力と運用コスト</h2>
+<p class="lead">どのテープバックアップが最もエネルギー効率に優れ、運用コストでディスクやクラウドとどう比較されるか？500 TBモデルによる試算。</p>
+</header>
+<section class="article-body"><p><strong>書き込み時のみ電源を入れるスタンドアロンLTOドライブは、アーカイブ保管において最もエネルギー効率に優れた方法です。棚の上のカートリッジは電力を全く消費しません。500 TBモデルにおいて、オンライン維持のディスクアレイは年間約4,400 kWh、常時通電の小型テープライブラリは約800 kWh、書き込み時のみ使用するスタンドアロンドライブは約16 kWhを消費します。</strong></p>
+<p>消費電力の数値はお使いの機器によって異なるため、以下に各数値の根拠となる前提条件を示します。ご自身のデータシートの値に置き換えて再計算してください。</p>
+<h2>各選択肢の消費電力比較</h2>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>選択肢</th><th>前提条件</th><th>年間kWh</th></tr></thead><tbody><tr><td>ディスクアレイ、常時稼働</td><td>各約7 Wの20 TBハードディスク32台（500 TBにパリティと予備を追加）、エンクロージャおよびコントローラ用に50%、冷却用に50%を追加</td><td>約4,415</td></tr><tr><td>テープライブラリ、常時通電</td><td>ドライブ搭載の小型ライブラリでアイドル時約60 W、冷却用に+50%、さらに後述の書き込み電力が加算</td><td>約804</td></tr><tr><td>スタンドアロンテープドライブ、書き込み時のみ通電</td><td>年一回の500 TBフル書き込み（400 MB/s、約347時間、約30 W）、さらに冷却用に50%を追加</td><td>約16</td></tr><tr><td>クラウドアーカイブ</td><td>電力はプロバイダーの料金に含まれています</td><td>個別請求なし</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="ディスク、テープライブラリ、スタンドアロンテープドライブ、クラウドアーカイブにおける500 TBアーカイブの年間消費電力モデル" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-kwh.svg" width="960"/><figcaption>ディスクアレイは常時電力を消費しますが、テープはドライブまたはライブラリの電源が入っている間しか電力を消費しません。</figcaption></figure>
+<h2>年間運用コスト</h2>
+<p>米国の商用平均に近いkWhあたり$ 0.13の電気料金では、テープの電気代はわずかですが、ディスクでは無視できない額になります。クラウドアーカイブでは毎月の請求書が運用コストそのものとなります。</p>
+<div class="table-wrap"><table class="post-table"><thead><tr><th>選択肢、500 TB</th><th>年間運用コスト</th><th>主な要因</th></tr></thead><tbody><tr><td>クラウドアーカイブ（Glacier Deep Archive）</td><td>約$ 5,532</td><td>保管料が毎月請求され、リストア時には追加料金が発生</td></tr><tr><td>ディスクアレイの消費電力</td><td>約$ 574</td><td>通年稼働するドライブ、エンクロージャ、冷却装置。ドライブは数年ごとに交換。</td></tr><tr><td>テープライブラリの消費電力</td><td>約$ 105</td><td>ライブラリアイドル時電力＋書き込み電力</td></tr><tr><td>スタンドアロンテープドライブの消費電力</td><td>約$ 2</td><td>書き込みを行っている時間のみ</td></tr></tbody></table></div>
+<figure class="page-figure"><img alt="500 TBにおける年間運用コスト：クラウドアーカイブストレージ料金、ディスクアレイ電力、テープライブラリ電力、スタンドアロンドライブ電力" decoding="async" height="440" loading="lazy" src="/assets/figures/blog-energy-opcost.svg" width="960"/><figcaption>500 TBのアーカイブにおいてクラウド料金は電気代を圧倒し、カートリッジがドライブから取り出された後のテープの電力コストは実質ゼロです。</figcaption></figure>
+<h2>計画すべきその他の運用コスト</h2>
+<p>消費電力は全体像の一部にすぎません。ディスクアレイは三〜七年ごとにドライブの交換が必要です。テープにはクリーニングカートリッジ、二次コピー用のオフサイト保管場所、定期的な読み取り検証、そして二〜三ドライブ世代ごとの新メディアへの移行が必要です。クラウドではデータを読み戻すたびに取り出し料金とイーグレス料金が発生します。</p>
+<p>ハードウェアを含む五年間の詳細な比較は<a href="/ja/blog/tape-backup-5-year-total-cost-of-ownership">テープバックアップ5年間TCO</a>に、ドライブの選択肢は<a href="/ja/why-tape/lto-tape-drive">LTOドライブ購入ガイド</a>に掲載されています。</p>
+<h2>よくある質問</h2><h3>テープは保管時に電力を消費しますか？</h3><p>いいえ。棚に置かれたカートリッジは電力を消費しません。ドライブやライブラリのみが電力を消費し、それも電源が入っている間だけです。</p><h3>テープライブラリの消費電力増は正当化できるか？</h3><p>ジョブが複数のカートリッジにまたがる場合や無人運転を行う場合は、通常必要です。小型ライブラリでは数十ワットの待機電力が追加され、当モデルの試算では年間約$ 100のコストになります。</p><h3>テープの消費電力をさらに削減するにはどうすればよいですか？</h3><p>ジョブの合間にスタンドアロンドライブの電源をオフにし、カートリッジを取り出して棚に保管し、ドライブが途切れることなくストリーミング書き込みできるよう大規模な書き込みをまとめてスケジュールします。</p><h3>クラウドストレージはテープよりもエネルギー効率が高いですか？</h3><p>直接計測することはできません。エネルギー消費はプロバイダーの料金体系とデータセンター内部に含まれています。コールドデータに関して、棚の上に置かれたテープは常時稼働システムよりも消費電力が少なくなります。</p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "テープは保管時に電力を消費しますか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。棚に置かれたカートリッジは電力を消費しません。ドライブやライブラリのみが電力を消費し、それも電源が入っている間だけです。"}}, {"@type": "Question", "name": "テープライブラリの消費電力増は正当化できるか？", "acceptedAnswer": {"@type": "Answer", "text": "ジョブが複数のカートリッジにまたがる場合や無人運転を行う場合は、通常必要です。小型ライブラリでは数十ワットの待機電力が追加され、当モデルの試算では年間約$ 100のコストになります。"}}, {"@type": "Question", "name": "テープの消費電力をさらに削減するにはどうすればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "ジョブの合間にスタンドアロンドライブの電源をオフにし、カートリッジを取り出して棚に保管し、ドライブが途切れることなくストリーミング書き込みできるよう大規模な書き込みをまとめてスケジュールします。"}}, {"@type": "Question", "name": "クラウドストレージはテープよりもエネルギー効率が高いですか？", "acceptedAnswer": {"@type": "Answer", "text": "直接計測することはできません。エネルギー消費はプロバイダーの料金体系とデータセンター内部に含まれています。コールドデータに関して、棚の上に置かれたテープは常時稼働システムよりも消費電力が少なくなります。"}}], "inLanguage": "ja"}</script></section>
+<a class="back-link" href="/ja/blog">ブログ一覧に戻る</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>記事のポイント</h2>
+<p>直近のテープストレージに関する議論を、直接インデックス可能なメタデータと恒久的な正規URLを備えた独立したTapeBackup.orgの記事ページにまとめました。</p>
+</section>
+<section class="sidebar-card">
+<h2>より詳細なLTO導入計画が必要ですか？</h2>
+<p>サイト内の各種リソースを閲覧し、ストレージ手法を比較するか、バックアップ運用にテープを組み込むべきかの判断について担当チームにお問い合わせください。</p>
+<a class="cta" href="/ja/contact">TapeBackupに相談する</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>TapeBackupの関連記事</h2><ul><li><a href="/ja/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">最適なLTOバックアップソフトとは、実際に検証を実施できるソフトである</a></li><li><a href="/ja/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again">テープは終わったのでは？それでもテープを中心にバックアップ環境を静かに再構築する人がいる理由</a></li><li><a href="/ja/blog/tape-backup-software-integration-tradeoffs">テープバックアップソフト統合のトレードオフ</a></li><li><a href="/ja/lto-tape-price-trend">LTOテープ価格、2026年九月</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script defer="" src="/chat-widget.js"></script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

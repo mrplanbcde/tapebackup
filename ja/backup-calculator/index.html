@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>LTO計算ツール：必要本数とバックアップ費用</title>
+<meta content="無料のテープバックアップ計算機：データ規模、コピー数、復旧目標を入力し、2026年LTO価格に基づくテープ、ディスク、クラウドの最適構成を算出。" name="description"/>
+<meta content="noindex, follow" name="robots"/>
+<link href="https://tapebackup.org/ja/backup-calculator" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="LTO計算ツール：必要本数とバックアップ費用" property="og:title"/>
+<meta content="無料のテープバックアップ計算機：データ規模、コピー数、復旧目標を入力し、2026年LTO価格に基づくテープ、ディスク、クラウドの最適構成を算出。" property="og:description"/>
+<meta content="https://tapebackup.org/ja/backup-calculator" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="LTO計算ツール：必要本数とバックアップ費用" name="twitter:title"/>
+<meta content="無料のテープバックアップ計算機：データ規模、コピー数、復旧目標を入力し、2026年LTO価格に基づくテープ、ディスク、クラウドの最適構成を算出。" name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "LTOテープは何巻必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "データを世代のネイティブ容量で割り、コピー数を掛けます（圧縮は考慮しません）：100 TBで二つのコピーを保持する場合、約12巻のLTO-9カートリッジが必要になります。圧縮は圧縮可能なデータにのみ効果があるため、容量計画では当てにすべきではありません。"}}, {"@type": "Question", "name": "テープがディスクやクラウドより安価になるのはいつですか？", "acceptedAnswer": {"@type": "Answer", "text": "ドライブの導入費用が十分な数のカートリッジに分散される、およそ15 TB以上からです。それ未満の容量であれば、通常NASとクラウドのコールド層を組み合わせる方が安価でシンプルです。"}}, {"@type": "Question", "name": "圧縮によって必要なテープ本数は変わりますか？", "acceptedAnswer": {"@type": "Answer", "text": "圧縮可能なデータの場合のみです。ベンダーは2.5:1と記載しますが、動画や画像はすでに圧縮されており、暗号化ファイルは圧縮できないため、実際の保存容量はネイティブ容量に近くなります。"}}], "inLanguage": "ja"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://tapebackup.org/ja"}, {"@type": "ListItem", "position": 2, "name": "バックアップ計算機", "item": "https://tapebackup.org/ja/backup-calculator"}], "inLanguage": "ja"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "LTOテープバックアップ計算ツール", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "url": "https://tapebackup.org/ja/backup-calculator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "inLanguage": "ja"}</script>
+<meta content="ja_JP" property="og:locale"/><link href="https://tapebackup.org/backup-calculator" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/backup-calculator" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/backup-calculator" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/backup-calculator" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/backup-calculator" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/backup-calculator" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/backup-calculator" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/backup-calculator" hreflang="x-default" rel="alternate"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "How Many LTO Tapes Do You Need? Free Backup Calculator Walkthrough", "description": "A walkthrough of the free tapebackup.org backup calculator: data size, copies, recovery targets and the recommended LTO setup.", "thumbnailUrl": ["https://i.ytimg.com/vi/spbiOvrW-zQ/maxresdefault.jpg", "https://i.ytimg.com/vi/spbiOvrW-zQ/hqdefault.jpg"], "uploadDate": "2026-10-04", "duration": "PT49S", "embedUrl": "https://www.youtube-nocookie.com/embed/spbiOvrW-zQ", "contentUrl": "https://youtu.be/spbiOvrW-zQ", "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}}</script>
+</head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/ja/tape-q-and-a">テープQ&amp;A</a><span class="sep"></span><a href="/ja/lto-tape-price-trend">LTO価格</a><span class="sep"></span><a href="/ja/contact">お問い合わせ</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/backup-calculator" hreflang="en" lang="en">EN</a><a href="/de/backup-calculator" hreflang="de" lang="de">DE</a><a href="/fr/backup-calculator" hreflang="fr" lang="fr">FR</a><a href="/it/backup-calculator" hreflang="it" lang="it">IT</a><a href="/es/backup-calculator" hreflang="es" lang="es">ES</a><a href="/nl/backup-calculator" hreflang="nl" lang="nl">NL</a><a href="/pl/backup-calculator" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org ホーム" class="brand" href="/ja"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="プライマリ" class="topnav">
+<div class="price-dropdown"><a href="/ja/lto-tape">LTOテープ</a><div class="price-dropdown-menu"><a href="/ja/lto-tape">LTOテープとは<span>規格の全体像を一枚で解説</span></a><a href="/ja/lto-tape-capacity">容量一覧表<span>LTO-1〜LTO-14</span></a><a href="/ja/why-tape/lto-tape-drive">ドライブ購入ガイド<span>選ぶべきドライブ</span></a><a href="/ja/lto-tape-library">ライブラリ<span>オートローダーとライブラリ</span></a><a href="/ja/why-tape/lto-tape-lifespan">寿命<span>テープの耐久年数</span></a><a href="/ja/resources/ltfs">LTFS<span>ファイルシステムとしてのテープ</span></a><a href="/ja/resources/lto-tape-data-recovery">データ復旧<span>古いテープの読み取り</span></a><a href="/ja/lto-tape-news">ニュース<span>今月の動向</span></a><a href="/ja/why-tape">テープを選ぶ理由<span>コスト、エアギャップ、寿命</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/lto-tape-price-trend">LTO価格</a><div class="price-dropdown-menu"><a href="/ja/lto-tape-price-trend">全世代<span>2026年九月の価格</span></a><a href="/ja/lto-tape-price-trend/lto6-price">LTO-6価格<span>ネイティブ2.5 TB</span></a><a href="/ja/lto-tape-price-trend/lto7-price">LTO-7価格<span>ネイティブ6 TB</span></a><a href="/ja/lto-tape-price-trend/lto8-price">LTO-8価格<span>ネイティブ12 TB</span></a><a href="/ja/lto-tape-price-trend/lto9-price">LTO-9価格<span>ネイティブ18 TB</span></a><a href="/ja/lto-tape-price-trend/lto10-price">LTO-10価格<span>ネイティブ30 / 40 TB</span></a><a href="/ja/lto-tape-price-trend/history">価格履歴<span>2025年以降のアーカイブ記録</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/backup-calculator">ツール</a><div class="price-dropdown-menu"><a href="/ja/backup-calculator">バックアップ計算機<span>メディアと費用の見積もり</span></a><a href="/ja/backup-software-finder">ソフトウェアファインダー<span>テープ用途に合ったソフトウェアの選定</span></a><a href="/ja/best-tape-backup-software">おすすめのテープバックアップソフトウェア<span>2026の比較</span></a></div></div>
+<a href="/ja/blog">Blog</a>
+<a href="/ja/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/ja/contact">価格表を入手する</a></div>
+</div></header>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy">
+<p class="eyebrow">ツール</p><h1>LTOテープバックアップ計算ツール</h1>
+<p><strong>テープはおよそ15 TBのデータ量から費用対効果を発揮します。それ未満ではディスクとクラウドの組み合わせが安価ですが、それを超えるとTBあたり約$ 5〜$ 7のLTO-8またはLTO-9メディアが、ディスク上での長期保管を大きく上回ります。</strong></p>
+<p>保護対象データ量、保持するコピー数、必要な復旧速度を入力してください。計算ツールがテープ、ディスク、クラウド、またはそれらの組み合わせを推奨し、2026年九月のLTO価格に基づいてカートリッジ本数とメディア費用を算出します。</p></div>
+<aside class="hero-panel"><p class="panel-label">適用価格</p><p class="panel-copy"><a href="/ja/lto-tape-price-trend">LTO価格トラッカー</a>掲載の中間値：LTO-8テープは$ 75、LTO-9テープは$ 102、LTO-10の30 TBテープは$ 278。</p></aside></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card jsv-card"><div class="jsv" data-clip="calc" role="group"><div class="jsv-stage"></div><div class="jsv-bar"><button class="jsv-btn" type="button"><svg aria-hidden="true" class="i-play" height="18" viewbox="0 0 24 24" width="18"><path d="M7 4.5v15l13-7.5z" fill="currentColor"></path></svg><svg aria-hidden="true" class="i-pause" height="18" viewbox="0 0 24 24" width="18"><path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor"></path></svg></button><div class="jsv-track"><i></i></div><span class="jsv-time">0:00 / 0:12</span></div></div><p class="jsv-cap">例：二重コピーで100 TBを保管する場合、12巻のLTO-9カートリッジが必要です。以下の計算ツールにご自身の数値を入力してください。</p><script id="jsv-data" type="application/json">{"dur": 12, "gen": "LTO-9", "n": 12}</script><script data-i18n="" id="jsv-text" type="application/json">{"title": "LTOテープは何巻必要ですか？", "l1": "保護対象データ", "l2": "コピー数", "l3": "目標復旧時間（RTO）", "l4": "目標復旧時点（RPO）", "v3": "時間", "v4": "毎日", "btn": "おすすめを表示", "rec": "推奨", "carts": "カートリッジ", "media": "メディア", "drive": "ドライブ一台", "m1": "$ 1,224", "m2": "$ 10,600", "play": "再生", "pause": "一時停止"}</script></section><section class="section-card"><h2>バックアップ構成を計算する</h2>
+<form class="tool-form" id="calc" novalidate="">
+<div><label for="capacity">保護対象の総データ量（TB）</label><input id="capacity" inputmode="decimal" min="1" required="" step="1" type="number" value="50"/></div>
+<div><label for="copies">コピー数</label><select id="copies"><option value="1">1 コピー（高リスク）</option><option selected="" value="2">2 コピー</option><option value="3">3 コピー（標準は3-2-1）</option></select></div>
+<div><label for="rto">目標復旧時間（RTO）</label><p class="hint">どれほど迅速なデータ復旧が必要ですか？</p><select id="rto"><option value="instant">数分（ミッションクリティカル）</option><option selected="" value="hours">数時間以内（標準）</option><option value="days">数日以内（アーカイブ）</option></select></div>
+<div><label for="rpo">目標復旧時点（RPO）</label><p class="hint">どれだけの直近データを失うことを許容できますか？</p><select id="rpo"><option value="continuous">数秒（リアルタイム）</option><option selected="" value="daily">24 時間（日次バックアップ）</option><option value="weekly">一週間（週次バックアップ）</option></select></div>
+<button class="tool-submit" type="submit">おすすめを表示</button>
+</form>
+<div aria-live="polite" class="tool-result" hidden="" id="calc-result"></div>
+<figure class="page-figure"><img alt="100 TBに必要なカートリッジ数：LTO-8が9巻、LTO-9が6巻、またはLTO-10が4巻" decoding="async" height="440" loading="lazy" src="/assets/figures/lto-cartridges-per-100tb.svg" width="960"/><figcaption>圧縮前のネイティブ容量において、100 TBの一重コピーには9巻のLTO-8、6巻のLTO-9、または4巻のLTO-10カートリッジが必要です。</figcaption></figure>
+</section>
+<section class="section-card video-card" id="video"><p class="eyebrow">動画（英語）</p><h2>How Many LTO Tapes Do You Need? Free Backup Calculator Walkthrough</h2><div class="video-embed"><button type="button" class="yt-facade" data-yt="spbiOvrW-zQ" data-title="How Many LTO Tapes Do You Need? Free Backup Calculator Walkthrough" aria-label="動画を再生: How Many LTO Tapes Do You Need? Free Backup Calculator Walkthrough"><img src="https://i.ytimg.com/vi/spbiOvrW-zQ/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></button></div><p class="video-link"><a href="https://youtu.be/spbiOvrW-zQ" rel="noopener">YouTubeで視聴</a></p></section><section class="section-card"><p class="eyebrow">仕組み</p><h2>計算ツールの判定ロジック</h2>
+<ul><li>15 TB未満ではテープドライブの投資回収が難しいため、ディスクとクラウドの組み合わせをおすすめします。</li><li>数分以内での復旧が必要な場合、最初のコピーはディスクまたはフラッシュに置き、長期保管およびオフラインコピーにテープを使用する必要があります。</li><li>それ以外の場合は、50 TB未満にはLTO-8、500 TBまではLTO-9、それ以上にはLTO-9またはLTO-10をおすすめします。</li><li>カートリッジ本数は圧縮なしのネイティブ容量で算出しており、費用は現行の販売業者出品価格の中央値に基づいています。ドライブ費用は新品の内蔵ドライブが掲載されている場合の一台分です。</li></ul>
+<p>試算にはソフトウェア、HBA、ライブラリ、税金、送料は含まれていません。これらの数値の背景にある掲載価格については<a href="/ja/lto-tape-price-trend">LTO価格トラッカー</a>をご覧ください。</p></section>
+<section aria-label="バックアップ計算機FAQ" class="faq-grid"><article class="faq-card"><h3>LTOテープは何巻必要ですか？</h3><p>データを世代のネイティブ容量で割り、コピー数を掛けます（圧縮は考慮しません）：100 TBで二つのコピーを保持する場合、約12巻のLTO-9カートリッジが必要になります。圧縮は圧縮可能なデータにのみ効果があるため、容量計画では当てにすべきではありません。</p></article><article class="faq-card"><h3>テープがディスクやクラウドより安価になるのはいつですか？</h3><p>ドライブの導入費用が十分な数のカートリッジに分散される、およそ15 TB以上からです。それ未満の容量であれば、通常NASとクラウドのコールド層を組み合わせる方が安価でシンプルです。</p></article><article class="faq-card"><h3>圧縮によって必要なテープ本数は変わりますか？</h3><p>圧縮可能なデータの場合のみです。ベンダーは2.5:1と記載しますが、動画や画像はすでに圧縮されており、暗号化ファイルは圧縮できないため、実際の保存容量はネイティブ容量に近くなります。</p></article></section>
+</div></div></main>
+<script id="calc-cfg" type="application/json">{"model": {"LTO-8": {"tb": 12, "tape": 74.97, "drive": 6474.48}, "LTO-9": {"tb": 18, "tape": 102.0, "drive": 10599.5}, "LTO-10": {"tb": 30, "tape": 278.0, "drive": 23557.5}}, "locale": "en-US", "currency": "USD"}</script>
+<script data-i18n="" id="calc-i18n" type="application/json">{"est": "<p><strong>{gen}の見積もり：<\/strong> カートリッジ{n}巻（各ネイティブ{tb} TB）、メディア費用約{media}。<\/p>", "est_drive": "<p><strong>{gen}の見積もり：<\/strong> カートリッジ{n}巻（各ネイティブ{tb} TB）、メディア費用約{media}、ドライブ一台分約{drive}。<\/p>", "h_invalid": "データ容量を入力してください", "t_invalid": "<p>保護が必要な合計データ量をテラバイト単位で入力してください。<\/p>", "h_conflict": "以下の要件を確認してください", "t_conflict": "<p>リアルタイムバックアップを選択されましたが、復旧に数日かかる設定になっています。継続的なデータ保護を必要とするチームは通常、迅速な復旧も必要とします。より短い復旧時間、または日次・週次の目標復旧時点を選択してください。<\/p>", "h_small_instant": "推奨：SSDまたはHDD ＋ クラウド", "h_small": "推奨：NAS（HDD）＋ クラウドアーカイブ", "t_small": "<p>{tb} TBの容量では、テープドライブの導入コストを正当化するのは困難です。迅速なリストア用にローカルディスクのコピーを保持し、オフサイト用にクラウドのコールド層コピーを維持してください。<\/p>", "h_instant": "推奨：一次保管はディスクまたはフラッシュ、二次保管はLTOテープ", "t_instant": "<p>即時復旧を行うには、最初のコピーをディスクまたはフラッシュに配置する必要があります。全コピー合計で{total} TBの場合、直近のリストアポイントのみをディスクに残し、長期保管用のオフラインコピーをLTOテープに保存してください。<\/p>", "h_tape": "推奨：{gen}テープ", "h_tape_big": "推奨：LTO-9またはLTO-10テープ", "t_lto8": "<p>LTO-8（ネイティブ12 TB）は、このデータ規模においてドライブコストを抑えつつ、オフラインコピーを確保できます。<\/p>", "t_lto9": "<p>LTO-9（ネイティブ18 TB）は2026年においてテラバイトあたりのメディアコストが最も低く、LTO-8よりも管理するカートリッジ本数が少なくなります。<\/p>", "t_big": "<p>この規模では密度が重要になります。LTO-9は最低のTB単価を提供し、LTO-10はカートリッジ数とライブラリスロットを削減できますがTB単価が高く新品のフルハイトドライブを必要とします。<\/p>", "t_airgap": "<p>全コピー合計で{total} TBの場合、テープはランサムウェアに対するエアギャップを提供し、クラウドの復元費用を回避できます。<\/p>", "t_continuous": "<p><em>リアルタイムの復旧ポイントには、テープの前段にディスクバッファが必要です（ディスクからディスク、そしてテープへ）。<\/em><\/p>"}</script>
+<script>
+(function(){
+var C=JSON.parse(document.getElementById('calc-cfg').textContent),L=JSON.parse(document.getElementById('calc-i18n').textContent),M=C.model;
+var f=document.getElementById('calc'),out=document.getElementById('calc-result');
+var nf=new Intl.NumberFormat(C.locale),cf=new Intl.NumberFormat(C.locale,{style:'currency',currency:C.currency,maximumFractionDigits:0});
+function fill(s,v){return s.replace(/\{(\w+)\}/g,function(m,k){return k in v?v[k]:m;});}
+function est(gen,total){var g=M[gen];var n=Math.ceil(total/g.tb);var v={gen:gen,n:nf.format(n),tb:nf.format(g.tb),media:cf.format(n*g.tape)};if(g.drive){v.drive=cf.format(g.drive);return fill(L.est_drive,v);}return fill(L.est,v);}
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var tb=parseFloat(document.getElementById('capacity').value),copies=parseInt(document.getElementById('copies').value,10),rto=document.getElementById('rto').value,rpo=document.getElementById('rpo').value;
+var h,t,tape=false;
+if(!tb||tb<=0){h=L.h_invalid;t=L.t_invalid;}
+else if(rpo==='continuous'&&rto==='days'){h=L.h_conflict;t=L.t_conflict;}
+else{
+var total=tb*copies,v={tb:nf.format(tb),total:nf.format(total)};
+if(tb<15){h=rto==='instant'?L.h_small_instant:L.h_small;t=fill(L.t_small,v)+est('LTO-8',total);}
+else if(rto==='instant'){h=L.h_instant;t=fill(L.t_instant,v)+est(tb<500?'LTO-9':'LTO-10',total);tape=true;}
+else{var gen=tb<50?'LTO-8':(tb<500?'LTO-9':'LTO-10');h=tb<500?fill(L.h_tape,{gen:gen}):L.h_tape_big;tape=true;
+t=tb<50?L.t_lto8:(tb<500?L.t_lto9:L.t_big);
+t+=est(tb<500?gen:'LTO-9',total);if(tb>=500){t+=est('LTO-10',total);}
+t+=fill(L.t_airgap,v);}
+if(rpo==='continuous'&&tape){t+=L.t_continuous;}
+}
+out.innerHTML='<h3>'+h+'</h3>'+t;out.hidden=false;
+});
+})();
+</script>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="TapeBackup.org ホーム" class="brand" href="/ja"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.orgは、LTOテープバックアップ技術、価格、ワークフローに関する独立した情報リソースです。LTOプログラムとは提携していません。</p></div><div class="fcol"><h4>LTO価格</h4><a href="/ja/lto-tape-price-trend">価格推移</a><a href="/ja/lto-tape-price-trend/lto6-price">LTO-6 価格</a><a href="/ja/lto-tape-price-trend/lto7-price">LTO-7 価格</a><a href="/ja/lto-tape-price-trend/lto8-price">LTO-8 価格</a><a href="/ja/lto-tape-price-trend/lto9-price">LTO-9 価格</a><a href="/ja/lto-tape-price-trend/lto10-price">LTO-10 価格</a><a href="/ja/lto-tape-price-trend/history">価格履歴</a></div><div class="fcol"><h4>リソース</h4><a href="/ja/lto-tape">LTOテープとは</a><a href="/ja/lto-tape-capacity">LTO容量表</a><a href="/ja/why-tape/lto-tape-drive">LTOテープドライブ</a><a href="/ja/lto-tape-news">LTOテープニュース</a><a href="/ja/tape-q-and-a">テープQ&amp;A</a><a href="/ja/blog">Blog</a><a href="/ja/why-tape">テープを選ぶ理由</a><a href="/ja/resources">ガイド</a><a href="/ja/lto-tape-brand">LTOテープブランド</a><a href="/ja/comparisons">比較</a></div><div class="fcol"><h4>ツール</h4><a href="/ja/backup-calculator">バックアップ計算機</a><a href="/ja/backup-software-finder">ソフトウェア検索</a><a href="/ja/best-tape-backup-software">おすすめのテープバックアップソフトウェア</a></div><div class="fcol"><h4>企業情報</h4><a href="/ja/about">概要</a><a href="/ja/contact">お問い合わせ</a><a href="/sitemap.xml">サイトマップ</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org。中立的なLTOテープバックアップ情報サイト。</span><div class="links"><a href="/ja/about">会社概要</a><a href="/ja/contact">お問い合わせ</a><a href="/sitemap.xml">サイトマップ</a></div></div></div></footer>
+</div>
+<script defer="" src="/jsvideo.js"></script>
+<script>document.addEventListener("click",function(e){var b=e.target.closest(".yt-facade");if(!b)return;var f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.yt+"?autoplay=1&rel=0";f.title=b.dataset.title;f.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";f.allowFullscreen=true;b.replaceWith(f);});</script>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

@@ -297,7 +297,7 @@ def build_sitemap(today):
     def alternates(p):
         if p not in i18n.SCOPE_SET or not langs:
             return ""
-        links = [f'    <xhtml:link rel="alternate" hreflang="{c}" href="{i18n.lang_url(p, c)}"/>' for c in ["en"] + langs]
+        links = [f'    <xhtml:link rel="alternate" hreflang="{i18n.LANG_META.get(c, {}).get("hreflang", c)}" href="{i18n.lang_url(p, c)}"/>' for c in ["en"] + langs]
         links.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{i18n.lang_url(p, "en")}"/>')
         return "\n".join(links) + "\n"
 

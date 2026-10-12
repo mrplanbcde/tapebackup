@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>LTO磁带迁移：将归档迁移至新介质</title>
+<meta content="如何将LTO归档迁移至新介质：驱动器兼容性限制、磁带数量、500 TB的成本与时间，以及如何校验副本。" name="description"/>
+<meta content="noindex, follow" name="robots"/>
+<link href="https://tapebackup.org/zh/resources/lto-tape-migration" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="LTO磁带迁移：将归档迁移至新介质" property="og:title"/>
+<meta content="如何将LTO归档迁移至新介质：驱动器兼容性限制、磁带数量、500 TB的成本与时间，以及如何校验副本。" property="og:description"/>
+<meta content="https://tapebackup.org/zh/resources/lto-tape-migration" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="LTO磁带迁移：将归档迁移至新介质" name="twitter:title"/>
+<meta content="如何将LTO归档迁移至新介质：驱动器兼容性限制、磁带数量、500 TB的成本与时间，以及如何校验副本。" name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script defer="" src="https://js-eu1.hsforms.net/forms/embed/147689578.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "LTO磁带迁移", "description": "如何将LTO归档迁移至新介质：驱动器兼容性限制、磁带数量、500 TB的成本与时间，以及如何校验副本。", "datePublished": "2026-09-20", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}, "mainEntityOfPage": "https://tapebackup.org/zh/resources/lto-tape-migration", "inLanguage": "zh"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://tapebackup.org/zh"}, {"@type": "ListItem", "position": 2, "name": "资源", "item": "https://tapebackup.org/zh/resources"}, {"@type": "ListItem", "position": 3, "name": "LTO磁带迁移", "item": "https://tapebackup.org/zh/resources/lto-tape-migration"}], "inLanguage": "zh"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "LTO-9 驱动器能读取 LTO-6 磁带吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。LTO-9 驱动器仅可读写 LTO-9 和 LTO-8 介质。LTO-6 磁带需要 LTO-6 或 LTO-7 驱动器，因为 LTO-8 驱动器能读取 LTO-7 但无法读取 LTO-6，因此在迁移完成前请保留正确世代的驱动器。"}}, {"@type": "Question", "name": "迁移 100 TB 磁带需要多长时间？", "acceptedAnswer": {"@type": "Answer", "text": "在单台传输率为400 MB/s的LTO-9驱动器上连续复制约需六天（包含读取与写入时间）。旧版源驱动器更慢：仅从LTO-5介质读取100 TB数据本身就需要约八天。"}}, {"@type": "Question", "name": "将 500 TB 迁移至 LTO-9 需要多少成本？", "acceptedAnswer": {"@type": "Answer", "text": "仅介质就需要28盒磁带（每盒售价$ 92.45至$ 111.55），在2026年九月总计约合$ 2,600至$ 3,100。如果您尚未配备驱动器，还需增加$ 7,699至$ 13,500的采购费用，外加HBA卡、软件和人员工时成本。"}}, {"@type": "Question", "name": "我应该迁移到LTO-9还是LTO-10？", "acceptedAnswer": {"@type": "Answer", "text": "大多数迁移推荐 LTO-9：每 TB 成本为 $ 5.14 至 $ 6.20，相比之下 LTO-10 为 $ 8.53 至 $ 10.00，且其驱动器仍可读取您的 LTO-8 磁带。当磁带盒数量或磁带库槽位比介质成本更重要时，请选择 LTO-10。"}}, {"@type": "Question", "name": "我该如何验证磁带迁移？", "acceptedAnswer": {"@type": "Answer", "text": "回读每盒新磁带并将校验和与源磁带进行比对，而不仅仅是核对写入时记录的校验和。恢复真实文件的样本，确认新磁带已包含在您恢复所用的目录中，并保留源介质直至所有验证均告通过。"}}], "inLanguage": "zh"}</script>
+<meta content="zh_CN" property="og:locale"/><link href="https://tapebackup.org/resources/lto-tape-migration" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/resources/lto-tape-migration" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/resources/lto-tape-migration" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/resources/lto-tape-migration" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/resources/lto-tape-migration" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/resources/lto-tape-migration" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/resources/lto-tape-migration" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/resources/lto-tape-migration" hreflang="x-default" rel="alternate"/></head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/zh/tape-q-and-a">磁带问答</a><span class="sep"></span><a href="/zh/lto-tape-price-trend">LTO价格</a><span class="sep"></span><a href="/zh/contact">联系我们</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/resources/lto-tape-migration" hreflang="en" lang="en">EN</a><a href="/de/resources/lto-tape-migration" hreflang="de" lang="de">DE</a><a href="/fr/resources/lto-tape-migration" hreflang="fr" lang="fr">FR</a><a href="/it/resources/lto-tape-migration" hreflang="it" lang="it">IT</a><a href="/es/resources/lto-tape-migration" hreflang="es" lang="es">ES</a><a href="/nl/resources/lto-tape-migration" hreflang="nl" lang="nl">NL</a><a href="/pl/resources/lto-tape-migration" hreflang="pl" lang="pl">PL</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org 首页" class="brand" href="/zh"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="主要" class="topnav">
+<div class="price-dropdown"><a href="/zh/lto-tape">LTO 磁带</a><div class="price-dropdown-menu"><a href="/zh/lto-tape">什么是LTO磁带<span>一页全面了解该规格</span></a><a href="/zh/lto-tape-capacity">容量图表<span>LTO-1至LTO-14</span></a><a href="/zh/why-tape/lto-tape-drive">驱动器选购指南<span>该选购哪款驱动器</span></a><a href="/zh/lto-tape-library">磁带库<span>自动加载机与磁带库</span></a><a href="/zh/why-tape/lto-tape-lifespan">使用寿命<span>磁带能保存多久</span></a><a href="/zh/resources/ltfs">LTFS<span>作为文件系统使用的磁带</span></a><a href="/zh/resources/lto-tape-data-recovery">数据恢复<span>读取旧磁带</span></a><a href="/zh/lto-tape-news">新闻动态<span>本月最新变化</span></a><a href="/zh/why-tape">为何选用磁带<span>成本、气隙隔离与寿命</span></a></div></div>
+<div class="price-dropdown"><a href="/zh/lto-tape-price-trend">LTO价格</a><div class="price-dropdown-menu"><a href="/zh/lto-tape-price-trend">所有世代<span>2026 年九月价格</span></a><a href="/zh/lto-tape-price-trend/lto6-price">LTO-6 价格<span>原生 2.5 TB</span></a><a href="/zh/lto-tape-price-trend/lto7-price">LTO-7 价格<span>原生 6 TB</span></a><a href="/zh/lto-tape-price-trend/lto8-price">LTO-8 价格<span>原生 12 TB</span></a><a href="/zh/lto-tape-price-trend/lto9-price">LTO-9 价格<span>原生 18 TB</span></a><a href="/zh/lto-tape-price-trend/lto10-price">LTO-10 价格<span>原生 30 / 40 TB</span></a><a href="/zh/lto-tape-price-trend/history">价格历史<span>2025 年以来的归档快照</span></a></div></div>
+<div class="price-dropdown"><a href="/zh/backup-calculator">工具</a><div class="price-dropdown-menu"><a href="/zh/backup-calculator">备份计算器<span>介质与成本估算</span></a><a href="/zh/backup-software-finder">软件推荐工具<span>匹配适合您磁带用途的软件</span></a><a href="/zh/best-tape-backup-software">最佳磁带备份软件<span>2026横向对比</span></a></div></div>
+<a href="/zh/blog">Blog</a>
+<a href="/zh/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/zh/contact">获取价格表</a></div>
+</div></header>
+<section class="hero"><div class="container"><div class="hero-copy" style="max-width:900px">
+<p class="eyebrow">迁移指南</p><h1 style="max-width:none">LTO磁带迁移</h1>
+<p><strong>务必在能读取旧磁带的驱动器消失前迁移 LTO 归档：LTO-9 驱动器仅可读 LTO-9 和 LTO-8，而 LTO-10 驱动器无法读取任何更早世代，因此每跳过一个世代，读取旧磁带的窗口期就会进一步缩窄。</strong></p></div></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><p class="eyebrow">何时进行迁移</p><h2>应将归档迁移至更新介质的迹象</h2>
+<ul>
+<li><strong>您的驱动器世代正在淡出市场。</strong>全新LTO-6驱动器实际上已无现货，数款LTO-7型号目前也需要致电确认库存。一旦驱动器损坏且无法替换，其写入的磁带就不得不变成一项数据抢救工程。</li>
+<li><strong>兼容性窗口已经关闭。</strong>LTO-8 和 LTO-9 驱动器仅能向后读取一代（LTO-9 可读取 LTO-8），最高至 LTO-7 的驱动器可向后读取两代，而 LTO-10 驱动器仅能读取 LTO-10。LTO-5 磁带需要 LTO-5、LTO-6 或 LTO-7 驱动器；更新的驱动器均无法挂载它。</li>
+<li><strong>磁带盒数量才是真正的成本核心。</strong>使用LTO-5存储500 TB需要334盒磁带进行存放、贴签、搬运并最终回读；而同样的归档规模使用LTO-9只需28盒磁带。</li>
+<li><strong>您无法证明归档仍可读取。</strong>如果多年未从这些磁带恢复过任何数据，那么迁移同时也是您一直拖延的校验过程。</li>
+</ul></section><section class="section-card"><figure class="page-figure"><img alt="左侧为容量为6 TB的84盒LTO-7磁带网格，中间为驱动器与箭头，右侧为标有500 TB、容量为18 TB的28盒LTO-9磁带网格。" decoding="async" height="420" loading="lazy" src="/assets/figures/lto-migration-500tb.svg" width="960"/><figcaption>同样的500 TB容量需要84盒LTO-7磁带，但仅需28盒LTO-9磁带，因此迁移还能缩减您需要存放、贴签和人工处理的介质数量。</figcaption></figure></section><section class="section-card"><p class="eyebrow">成本与耗时</p><h2>迁移 500 TB 数据的实际开销</h2>
+<p>介质预算很容易计算：将归档数据量除以目标世代的原生容量，再乘以单盒磁带价格。截至 2026 年九月 17，LTO-9 介质每盒 18 TB 磁带的售价为 $ 92.45 至 $ 111.55（每 TB 为 $ 5.14 至 $ 6.20），而一台全新内置 LTO-9 驱动器价格在 $ 7,699 至 $ 13,500 之间。</p>
+<div class="table-wrap"><table aria-label="LTO迁移成本示例" class="price-table"><thead><tr><th>源归档</th><th>目前的磁带盒数量</th><th>在 LTO-9 上</th><th>新介质成本</th><th>读取加写入时间</th></tr></thead><tbody><tr><td>LTO-5 (1.5 TB)</td><td>334 盒磁带</td><td>28盒LTO-9磁带</td><td>$ 2,589 至 $ 3,123</td><td>单对驱动器需 56 天</td></tr><tr><td>LTO-6 (2.5 TB)</td><td>200 盒磁带</td><td>28盒LTO-9磁带</td><td>$ 2,589 至 $ 3,123</td><td>单对驱动器需 51 天</td></tr><tr><td>LTO-7 (6 TB)</td><td>84 盒磁带</td><td>28盒LTO-9磁带</td><td>$ 2,589 至 $ 3,123</td><td>单对驱动器需 34 天</td></tr></tbody></table></div>
+<p>时间列是将源世代标称读取速度（LTO-5 最高 140 MB/s、LTO-6 为 160 MB/s、LTO-7 为 300 MB/s）与 LTO-9 以 400 MB/s 全速无停顿写入相加得出的。旧驱动器通常是瓶颈所在，这就是为何对于相同的 500 TB 数据，LTO-5 行的耗时比 LTO-7 行高出约三分之二。如果在不同驱动器上并行执行读取和写入，耗时将趋近于两者中较慢者而非两者之和。</p>
+<p>为介质以外的开销做好预算：每个驱动器一张 SAS HBA 卡、如果不进行磁带到磁带直接复制则需要配备充足磁盘空间以暂存数据的服务器、备份软件或 LTFS 工具，以及在没有磁带库的情况下装载磁带盒的人工工时。</p></section><section class="section-card"><p class="eyebrow">操作方法</p><h2>确保零数据丢失的迁移方案</h2>
+<ol>
+<li><strong>首先清点资产。</strong>列出每盒磁带、其世代、标签以及目录中记录的内容。无人能识别内容的磁带正是把数据迁移变成考古发掘项目的罪魁祸首。</li>
+<li><strong>确定目标世代。</strong>LTO-9 每 TB 成本最低，其驱动器仍可读取 LTO-8。LTO-10 使磁带数量减半，但每 TB 成本更高且无法读取更旧世代，因此更适合新建归档而非数据迁移。</li>
+<li><strong>始终保留旧驱动器直到最后一刻。</strong>在新副本通过校验之前，切勿退役唯一能读取源介质的驱动器；若之后仍有任何旧磁带留存，请保留一台可正常工作的旧世代驱动器。</li>
+<li><strong>先复制，再通过回读进行验证。</strong>复制时记录的校验和只能证明缓冲区当时持有的数据。在淘汰任何旧介质前，请务必回读新磁带盒并与源数据比对哈希值。</li>
+<li><strong>一并迁移目录。</strong>没有索引的完美副本只是一堆无法检索的数据。无论使用备份软件还是 LTFS，都要确保新磁带已记录在实际恢复时会检索的位置。</li>
+<li><strong>迁移期间务必保留两份副本。</strong>归档数据仅存在于正在被重写的磁带上的过渡窗口，是其整个生命周期中风险最高的时刻。</li>
+</ol></section><section class="section-card"><p class="eyebrow">磁带到磁带直接迁移或经由磁盘暂存</p><h2>迁移数据的两种途径</h2>
+<p><strong>磁带到磁带</strong>需要在一台主机上连接两台驱动器，并且无需暂存区域即可进行复制。当两个世代位于同一磁带库或同一 SAS 总线上时，这是最简单的路径，并且自始至终将数据保持在一个工具的控制之下。</p>
+<p><strong>经由磁盘暂存</strong>会先将源数据暂存到磁盘池中，然后再写入新磁带。这种方式耗时较长且需要充足空间，但便于执行重复数据删除、重新编目，或将多盘未写满的旧磁带整合写入装满的新磁带，同时还能化解慢速旧磁带机与高速新磁带机之间的速率差异。</p>
+<p>重新整合磁带比表面看起来更重要：多年前以零散任务写入的归档往往只使用了半盘磁带，因此实际磁带数量可能远超单纯容量计算所得的数值。</p></section><section class="section-card"><p class="eyebrow">外包</p><h2>何时将迁移工作委托给专业服务商</h2>
+<p>当没有人仍持有可读取源世代的正常驱动器时、当归档规模庞大到占用数月驱动器时间会阻碍其他工作时、或者数据中心搬迁停机设定了明确截止日期时，聘请专业迁移服务是合情合理的。向任何服务商核实三件事：写入后如何验证每盒磁带、运出场地的介质是否有完备的监管链记录、以及对不可读磁带如何处理。这些回答正是区分专业数据迁移服务与普通物流运输公司的分水岭。</p>
+<p>有关介质和驱动器价格，请参阅最新的<a href="/zh/lto-tape-price-trend">LTO价格追踪器</a>；有关目标世代的规划规模，请参阅<a href="/zh/backup-calculator">备份计算器</a>。</p></section>
+<section class="cta-band"><p class="eyebrow">价格表</p><h2>获取LTO价格表</h2><p>在制定数据迁移或设备更新预算前，请先索取最新的LTO介质与驱动器报价。</p>
+<div class="hubspot-shell"><div class="hs-form-frame" data-form-id="3f49124b-a1cb-4f2b-a54f-8f0c266fa59d" data-portal-id="147689578" data-region="eu1"></div></div>
+<div class="cta-actions"><a class="cta-secondary" href="/zh/lto-tape-price-trend/history">查看价格历史</a></div></section>
+<section aria-label="LTO磁带迁移常见问题" class="faq-grid"><article class="faq-card"><h3>LTO-9 驱动器能读取 LTO-6 磁带吗？</h3><p>不能。LTO-9 驱动器仅可读写 LTO-9 和 LTO-8 介质。LTO-6 磁带需要 LTO-6 或 LTO-7 驱动器，因为 LTO-8 驱动器能读取 LTO-7 但无法读取 LTO-6，因此在迁移完成前请保留正确世代的驱动器。</p></article><article class="faq-card"><h3>迁移 100 TB 磁带需要多长时间？</h3><p>在单台传输率为400 MB/s的LTO-9驱动器上连续复制约需六天（包含读取与写入时间）。旧版源驱动器更慢：仅从LTO-5介质读取100 TB数据本身就需要约八天。</p></article><article class="faq-card"><h3>将 500 TB 迁移至 LTO-9 需要多少成本？</h3><p>仅介质就需要28盒磁带（每盒售价$ 92.45至$ 111.55），在2026年九月总计约合$ 2,600至$ 3,100。如果您尚未配备驱动器，还需增加$ 7,699至$ 13,500的采购费用，外加HBA卡、软件和人员工时成本。</p></article><article class="faq-card"><h3>我应该迁移到LTO-9还是LTO-10？</h3><p>大多数迁移推荐 LTO-9：每 TB 成本为 $ 5.14 至 $ 6.20，相比之下 LTO-10 为 $ 8.53 至 $ 10.00，且其驱动器仍可读取您的 LTO-8 磁带。当磁带盒数量或磁带库槽位比介质成本更重要时，请选择 LTO-10。</p></article><article class="faq-card"><h3>我该如何验证磁带迁移？</h3><p>回读每盒新磁带并将校验和与源磁带进行比对，而不仅仅是核对写入时记录的校验和。恢复真实文件的样本，确认新磁带已包含在您恢复所用的目录中，并保留源介质直至所有验证均告通过。</p></article></section>
+</div></div></main>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="TapeBackup.org 首页" class="brand" href="/zh"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.org 是有关 LTO 磁带备份技术、价格与工作流的独立资源。与 LTO 联盟无关。</p></div><div class="fcol"><h4>LTO价格</h4><a href="/zh/lto-tape-price-trend">价格追踪</a><a href="/zh/lto-tape-price-trend/lto6-price">LTO-6 价格</a><a href="/zh/lto-tape-price-trend/lto7-price">LTO-7 价格</a><a href="/zh/lto-tape-price-trend/lto8-price">LTO-8 价格</a><a href="/zh/lto-tape-price-trend/lto9-price">LTO-9 价格</a><a href="/zh/lto-tape-price-trend/lto10-price">LTO-10 价格</a><a href="/zh/lto-tape-price-trend/history">价格历史</a></div><div class="fcol"><h4>资源</h4><a href="/zh/lto-tape">什么是LTO磁带</a><a href="/zh/lto-tape-capacity">LTO 容量表</a><a href="/zh/why-tape/lto-tape-drive">LTO 磁带机</a><a href="/zh/lto-tape-news">LTO 磁带新闻</a><a href="/zh/tape-q-and-a">磁带问答</a><a href="/zh/blog">Blog</a><a href="/zh/why-tape">为什么选择磁带</a><a href="/zh/resources">指南</a><a href="/zh/lto-tape-brand">LTO 磁带品牌</a><a href="/zh/comparisons">对比</a></div><div class="fcol"><h4>工具</h4><a href="/zh/backup-calculator">备份计算器</a><a href="/zh/backup-software-finder">软件查找工具</a><a href="/zh/best-tape-backup-software">最佳磁带备份软件</a></div><div class="fcol"><h4>公司信息</h4><a href="/zh/about">关于</a><a href="/zh/contact">联系我们</a><a href="/sitemap.xml">网站地图</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org。中立的LTO磁带备份资源。</span><div class="links"><a href="/zh/about">关于</a><a href="/zh/contact">联系我们</a><a href="/sitemap.xml">网站地图</a></div></div></div></footer>
+</div>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

@@ -22,5 +22,13 @@
  "pl": {
   "name": "Polski",
   "indexable": true
+ },
+ "ja": {
+  "name": "日本語",
+  "indexable": false
+ },
+ "zh": {
+  "name": "简体中文",
+  "indexable": false
  }
 }
