@@ -1,0 +1,7 @@
+{
+ "<a1>Backup calculator<s2>Media and cost estimate</s2></a1><a3>Software finder<s4>Match software to your tape use</s4></a3><a5>Tape archive advisor<s6>AI shortlist of archive software</s6></a5><a7>Best tape backup software<s8>{0} comparison</s8></a7>": "<a1>バックアップ計算機<s2>メディアと費用の見積もり</s2></a1><a3>ソフトウェアファインダー<s4>テープ用途に合ったソフトウェアの選定</s4></a3><a5>テープアーカイブ・アドバイザー<s6>AI によるアーカイブソフトの候補</s6></a5><a7>おすすめのテープバックアップソフトウェア<s8>{0}の比較</s8></a7>",
+ "<a1>Tape backup software finder<s2>Four questions, one match</s2></a1><a3>Tape archive advisor<s4>AI shortlist of {0} archive products</s4></a3>": "<a1>テープバックアップソフト検索<s2>4 つの質問で候補を表示</s2></a1><a3>テープアーカイブ・アドバイザー<s4>{0}件のアーカイブ製品から AI が候補を提示</s4></a3>",
+ "Choosing archive software rather than backup software? The <a1>tape archive advisor</a1> ranks {0} tape archive products for your data, drives and budget.": "バックアップソフトではなくアーカイブソフトをお探しですか？<a1>テープアーカイブ・アドバイザー</a1>が、データ量、ドライブ、予算に合わせて{0}件のテープアーカイブ製品を順位付けします。",
+ "Get a shortlist for your own setup": "ご自身の環境に合う候補を探す",
+ "Tape archive advisor": "テープアーカイブ・アドバイザー"
+}

@@ -31,6 +31,7 @@ import videos  # noqa: E402
 import chatbot  # noqa: E402
 import page_figures  # noqa: E402
 import jsvideo  # noqa: E402
+import advisor_page  # noqa: E402
 from site_shell import GENS, ROOT, SITE, esc, slug_for  # noqa: E402
 
 
@@ -275,7 +276,7 @@ def build_sitemap(today):
     hist = json.load(open(rel("data", "price-history.json"), encoding="utf-8"))
     for snap in hist["snapshots"]:
         entries.append((f"/lto-tape-price-trend/{snap['slug']}", snap["published"], "0.5", "yearly"))
-    for path in ["/resources/lto-tape-migration", "/resources/tape-storage-market", "/comparisons/tape-vs-cloud-5-year-cost", "/backup-calculator", "/backup-software-finder", "/best-tape-backup-software", "/why-tape", "/why-tape/lto-tape-drive", "/why-tape/lto-vs-hdd", "/lto-tape", "/lto-tape-capacity", "/lto-tape-library", "/lto-tape-news", "/resources/ltfs", "/resources/lto-tape-data-recovery", "/why-tape/lto-tape-lifespan", "/resources/lto-cleaning-tapes-and-labels",
+    for path in ["/resources/lto-tape-migration", "/resources/tape-storage-market", "/comparisons/tape-vs-cloud-5-year-cost", "/backup-calculator", "/backup-software-finder", "/tape-archive-advisor", "/best-tape-backup-software", "/why-tape", "/why-tape/lto-tape-drive", "/why-tape/lto-vs-hdd", "/lto-tape", "/lto-tape-capacity", "/lto-tape-library", "/lto-tape-news", "/resources/ltfs", "/resources/lto-tape-data-recovery", "/why-tape/lto-tape-lifespan", "/resources/lto-cleaning-tapes-and-labels",
                 
                  "/comparisons", "/lto-tape-brand", "/resources", "/resources/cheap-lto-tapes", "/resources/tape-backup-software/catalogicdpx", "/about", "/contact"]:
         add(path, idx(path), "0.7", "monthly")
@@ -345,6 +346,7 @@ def build_llms(current):
         f"- [LTO price history]({SITE}/lto-tape-price-trend/history): archived snapshots from September 2025 onward.",
         f"- [Backup calculator]({SITE}/backup-calculator): tape, disk or cloud recommendation with cartridge count and media cost.",
         f"- [Tape backup software finder]({SITE}/backup-software-finder) and [best tape backup software 2026]({SITE}/best-tape-backup-software).",
+        f"- [Tape archive advisor]({SITE}/tape-archive-advisor): describe your LTO archive and get a ranked shortlist of 14 tape archive products (HSM, S3 to tape gateways, media archives) scored by the Tape Archive Software Ledger 2026, with a suggested setup and steps.",
         f"- [Why tape]({SITE}/why-tape), [LTO tape explained]({SITE}/lto-tape), [LTO capacity chart]({SITE}/lto-tape-capacity), [LTO tape drive buying guide]({SITE}/why-tape/lto-tape-drive), [LTO tape libraries]({SITE}/lto-tape-library), [LTFS]({SITE}/resources/ltfs), [LTO tape data recovery]({SITE}/resources/lto-tape-data-recovery), [LTO tape lifespan]({SITE}/why-tape/lto-tape-lifespan), [LTO tape news]({SITE}/lto-tape-news), [LTO vs HDD]({SITE}/why-tape/lto-vs-hdd), [LTO tape brands]({SITE}/lto-tape-brand).",
         f"- [Tape Q&A]({SITE}/tape-q-and-a) and [blog]({SITE}/blog).",
         f"- [Tape vs cloud 5-year cost]({SITE}/comparisons/tape-vs-cloud-5-year-cost) and [tape, disk and cloud compared]({SITE}/comparisons).",
@@ -455,7 +457,7 @@ def build_languages():
 
 def main():
     price_paths, current = build_prices.build_all()
-    page_paths = build_pages.build_all(current) + build_articles.build_all(current) + build_guides.build_all(current)
+    page_paths = build_pages.build_all(current) + build_articles.build_all(current) + build_guides.build_all(current) + advisor_page.build_all()
     n = apply_meta_overrides()
     print(f"figure files: {page_figures.write_files()}, figures placed on pages: {page_figures.add_figures(ROOT)}, JS clips: {jsvideo.add_clips(ROOT)}")
     print(f"blog fixes: {blog_fixes()}, blog headers: {blog_site_header()}")

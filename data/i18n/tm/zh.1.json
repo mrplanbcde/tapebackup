@@ -1,0 +1,7 @@
+{
+ "<a1>Backup calculator<s2>Media and cost estimate</s2></a1><a3>Software finder<s4>Match software to your tape use</s4></a3><a5>Tape archive advisor<s6>AI shortlist of archive software</s6></a5><a7>Best tape backup software<s8>{0} comparison</s8></a7>": "<a1>备份计算器<s2>介质与成本估算</s2></a1><a3>软件推荐工具<s4>匹配适合您磁带用途的软件</s4></a3><a5>磁带归档顾问<s6>AI 推荐归档软件</s6></a5><a7>最佳磁带备份软件<s8>{0}横向对比</s8></a7>",
+ "<a1>Tape backup software finder<s2>Four questions, one match</s2></a1><a3>Tape archive advisor<s4>AI shortlist of {0} archive products</s4></a3>": "<a1>磁带备份软件查找工具<s2>四个问题，一个结果</s2></a1><a3>磁带归档顾问<s4>从{0}款归档产品中由 AI 推荐</s4></a3>",
+ "Choosing archive software rather than backup software? The <a1>tape archive advisor</a1> ranks {0} tape archive products for your data, drives and budget.": "要选的是归档软件而不是备份软件？<a1>磁带归档顾问</a1>会根据你的数据量、磁带机和预算，为{0}款磁带归档产品排名。",
+ "Get a shortlist for your own setup": "为你的环境生成候选名单",
+ "Tape archive advisor": "磁带归档顾问"
+}

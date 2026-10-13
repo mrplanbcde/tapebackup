@@ -1,0 +1,1282 @@
+{
+  "slug": "tape-archive-advisor",
+  "host": "tapebackup.org",
+  "envPrefix": "TAPE_ADVISOR",
+  "promptVersion": 1,
+  "brand": "TapeBackup.org",
+  "langs": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "es",
+    "nl",
+    "pl",
+    "ja",
+    "zh"
+  ],
+  "paths": {
+    "public": ".",
+    "content": "data/advisors"
+  },
+  "topic": "tape archive software",
+  "expert": "a senior tape archive architect",
+  "scope": "choosing tape archive or tape backup software for LTO drives and libraries: HSM and tiering to tape, S3 or file gateways to tape, media and video archives, research and HPC archives, compliance archives, leaving an old tape product, sizing a tape archive, for any size from one drive to petabytes",
+  "offTopicMsg": "I only help you choose tape archive software. Describe your archive, for example: 300 TB of video, LTO-9 library, two sites, small team.",
+  "source": {
+    "name": "Tape Archive Software Ledger 2026",
+    "url": "https://tapebackup.org/tape-archive-advisor#questions",
+    "edition": "2026-10-04"
+  },
+  "rules": [
+    "A small site (under about 200 TB, one or two drives, one admin or a small budget) makes free_entry, common_skills and price_safety important (weight 4 or 5). Scale and tiering only matter when the visitor mentions petabytes, many drives or HSM.",
+    "Anything kept for ten years or longer (long term archive, research data, medical images, compliance records) makes formats and integrity important, and exit_ease too because the archive will outlive the product. Compliance, legal hold, WORM or audits make security and integrity important.",
+    "Video post production and broadcast need tapes other facilities can read, so formats (LTFS) matter, plus access and common_skills for small media teams; broadcasters with a MAM and an existing archive also need tiering and delivery. Offsite rotation or a vault makes media important; a cloud copy makes cloud important.",
+    "Petabytes, HPC, research computing or many drives make scale, tiering and hardware important. Vendor support required makes delivery important.",
+    "CERN Tape Archive is a physics scale open-source engine that needs the EOS or dCache stack, a catalogue database and scarce skills: exclude cta unless the visitor runs petabytes and has an in-house team that can run open-source storage without a vendor. Exclude it whenever the visitor needs vendor support.",
+    "Exclude a candidate only for a stated or clearly implied hard requirement taken from the facts, for example a required operating system the product does not run on (some run only on Windows or only on macOS), a need for vendor support, or a format the visitor will not accept. Never exclude a candidate only because it scores lower."
+  ],
+  "criteria": [
+    {
+      "id": "hardware",
+      "label": "Drives and libraries",
+      "icon": "library",
+      "desc": "support for current LTO generations up to LTO-10, enterprise tape drives and many library brands (Ledger: tape library and drive support)"
+    },
+    {
+      "id": "formats",
+      "label": "Open tape formats",
+      "icon": "open",
+      "desc": "writes LTFS or another open, documented format, so tapes stay readable without the product years later (Ledger: open formats and portability)"
+    },
+    {
+      "id": "tiering",
+      "label": "Data tiering",
+      "icon": "migration",
+      "desc": "policy based movement between disk, tape and cloud, HSM stubs, partial and fast recall (Ledger: data movement and tiering)"
+    },
+    {
+      "id": "integrity",
+      "label": "Integrity and fixity",
+      "icon": "dr",
+      "desc": "checksums, fixity checks, media verification, multiple copies and repack for long term preservation (Ledger: integrity and preservation)"
+    },
+    {
+      "id": "access",
+      "label": "Access: S3, NFS, SMB",
+      "icon": "network",
+      "desc": "how users and applications reach the archive: S3 or Glacier style API, NFS, SMB, APIs (Ledger: access protocols)"
+    },
+    {
+      "id": "scale",
+      "label": "Scale and throughput",
+      "icon": "scale",
+      "desc": "petabyte scale, many drives in parallel, high ingest and recall throughput (Ledger: scale and performance)"
+    },
+    {
+      "id": "security",
+      "label": "Security and WORM",
+      "icon": "security",
+      "desc": "encryption and key management, WORM and retention lock, audit trails, access control (Ledger: security and compliance)"
+    },
+    {
+      "id": "media",
+      "label": "Media and vaulting",
+      "icon": "tape",
+      "desc": "tracking cartridges, offsite vaulting and rotation, media health, migration to new LTO generations (Ledger: media management and vaulting)"
+    },
+    {
+      "id": "cloud",
+      "label": "Cloud copy and hybrid",
+      "icon": "cloud",
+      "desc": "a copy or tier in public cloud object storage next to tape (Ledger: cloud and hybrid)"
+    },
+    {
+      "id": "mgmt",
+      "label": "Management and API",
+      "icon": "automation",
+      "desc": "admin interface, REST API, monitoring and automation (Ledger: management and automation)"
+    },
+    {
+      "id": "price_safety",
+      "label": "Price and licence safety",
+      "icon": "compliance",
+      "desc": "low buyer risk on price rises, licence rules, owner changes and the cost of staying supported (inverted Ledger commercial risk)"
+    },
+    {
+      "id": "exit_ease",
+      "label": "Easy to leave later",
+      "icon": "lockin",
+      "desc": "little format, stack and skills coupling, so moving the archive away later is cheap (inverted Ledger technical lock-in)"
+    },
+    {
+      "id": "free_entry",
+      "label": "Easy to start buying",
+      "icon": "cost",
+      "desc": "few purchase constraints: trial or free start, no bundled hardware or minimum purchase (inverted Ledger purchase constraints)"
+    },
+    {
+      "id": "common_skills",
+      "label": "Common skills",
+      "icon": "ease",
+      "desc": "runs on skills and tools most storage admins already have, so a small team can run it (inverted Ledger skills and tooling coupling)"
+    },
+    {
+      "id": "delivery",
+      "label": "Vendor keeps promises",
+      "icon": "support",
+      "desc": "release cadence, published roadmap and shipping what was announced (Ledger credibility)"
+    }
+  ],
+  "solution": {
+    "guide": [
+      "Sizing: native cartridge capacity is 6 TB for LTO-7, 12 TB for LTO-8, 18 TB for LTO-9 and 30 TB for LTO-10 (a 40 TB LTO-10 cartridge also exists). Use the visitor's LTO generation, or assume LTO-9 when they give none, and do not count compression. Cartridges = data now plus one year of growth, divided by native capacity, rounded up, times the number of copies. Assume two copies (one in the library, one offsite) unless the visitor says otherwise. Write the assumption in sizing, for example \"LTO-9, 2 copies, 24 cartridges, 2 drives\".",
+      "Drives: two or more for production so a drive can fail and reads can run beside writes; one drive is fine for a small archive under about 100 TB. Library slots: the onsite copy plus about 10 percent spare and a cleaning slot. Disk cache in front of tape: about one week of incoming data, or 5 to 10 percent of the archive for HSM.",
+      "Topology icons: the archive server or gateway (server icon, or nas for a small Windows or Mac archive box), the disk cache (storage icon), the tape library (library icon, put the drive count in the label such as \"Library, 2 drives\"), the offsite cartridge copy (tape icon in zone second, suggested when the visitor did not mention offsite), a cloud copy (object icon in zone cloud) only when the visitor mentions cloud or a third copy, where the data comes from (users, app or vm_host icon), and management (mgmt icon) for larger sites. Link labels: SAS, FC, S3, NFS or SMB, courier, replication.",
+      "Steps: 1 check that the product supports the visitor's drives and library, 2 pilot with a small data set and restore it, 3 set the policies (number of copies, retention, LTFS or the product's own format, encryption keys), 4 migrate the old archive or tapes when the visitor has one, 5 run a scheduled restore test and media health checks, then rotate the offsite copy.",
+      "Notices: the tape format from the facts (a proprietary format means the product is needed to read the tapes, LTFS means other tools can read them), the LTO read back rule (LTO-8 and LTO-9 drives read one generation back, LTO-10 drives read only LTO-10 cartridges, so plan a migration when changing generation), the licence model from the facts, keeping encryption keys safe, and storing cartridges cool and dry with labels and an offsite log."
+    ]
+  },
+  "page": {
+    "render": "none",
+    "title": "Which Tape Archive Software Is Best? Free AI Advisor",
+    "description": "Describe your LTO archive and get a ranked shortlist of 14 tape archive products, a suggested setup and step by step plan in a short video, from Ledger scores.",
+    "name": {
+      "en": "Tape Archive Advisor",
+      "de": "Tape-Archiv-Advisor",
+      "fr": "Conseiller archivage bande",
+      "it": "Consulente archivio nastro",
+      "es": "Asesor de archivo en cinta",
+      "nl": "Tape-archiefadviseur",
+      "pl": "Doradca archiwum taśmowego",
+      "ja": "テープアーカイブ・アドバイザー",
+      "zh": "磁带归档顾问"
+    },
+    "eyebrow": "AI Tape Archive Advisor",
+    "publisher": "TapeBackup.org",
+    "videoAccent": "#a78bfa",
+    "videoAccent2": "#38bdf8",
+    "tokens": {
+      "background": "#f7f6fa",
+      "foreground": "#161320",
+      "card": "#ffffff",
+      "border": "#e8e7ed",
+      "input": "#dedce6",
+      "muted": "#f0eef5",
+      "muted-foreground": "#6e6a7c",
+      "primary": "#5b27d6",
+      "primary-foreground": "#ffffff",
+      "primary-hover": "#4a1fb0",
+      "secondary": "#f2ecfd",
+      "destructive": "#b42318",
+      "ring": "rgba(91,39,214,.45)"
+    },
+    "idleIcons": [
+      "library",
+      "tape",
+      "open",
+      "dr",
+      "network",
+      "scale",
+      "security",
+      "cloud"
+    ],
+    "links": [
+      {
+        "href": "/backup-software-finder",
+        "label": {
+          "en": "Tape backup software finder",
+          "de": "Finder für Backup-Software",
+          "fr": "Outil de choix du logiciel de sauvegarde",
+          "it": "Ricerca software di backup",
+          "es": "Buscador de software de copia",
+          "nl": "Back-upsoftwarezoeker",
+          "pl": "Wyszukiwarka oprogramowania",
+          "ja": "バックアップソフト検索",
+          "zh": "备份软件查找工具"
+        }
+      },
+      {
+        "href": "/best-tape-backup-software",
+        "label": {
+          "en": "Best tape backup software",
+          "de": "Beste Tape-Backup-Software",
+          "fr": "Meilleurs logiciels de sauvegarde sur bande",
+          "it": "Migliori software di backup su nastro",
+          "es": "Mejor software de copia en cinta",
+          "nl": "Beste tape-back-upsoftware",
+          "pl": "Najlepsze oprogramowanie do backupu na taśmy",
+          "ja": "おすすめテープバックアップソフト",
+          "zh": "最佳磁带备份软件"
+        }
+      },
+      {
+        "href": "/lto-tape-capacity",
+        "label": {
+          "en": "LTO capacity chart",
+          "de": "LTO-Kapazitätstabelle",
+          "fr": "Capacités LTO",
+          "it": "Capacità LTO",
+          "es": "Capacidades LTO",
+          "nl": "LTO-capaciteit",
+          "pl": "Pojemności LTO",
+          "ja": "LTO 容量表",
+          "zh": "LTO 容量表"
+        }
+      },
+      {
+        "href": "/contact",
+        "label": {
+          "en": "Talk to a human",
+          "de": "Mit einem Menschen sprechen",
+          "fr": "Parler à un humain",
+          "it": "Parla con una persona",
+          "es": "Hablar con una persona",
+          "nl": "Praat met een mens",
+          "pl": "Porozmawiaj z człowiekiem",
+          "ja": "担当者に相談",
+          "zh": "联系真人"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Which tape archive software is best for a small business?",
+        "a": "It depends on how much data you keep, your LTO drives, your operating system and who runs it. Type your setup into the advisor: it weights price, ease of leaving later and the features you need, then ranks 14 tape archive products with the Tape Archive Software Ledger scores."
+      },
+      {
+        "q": "Why does the tape format matter so much?",
+        "a": "An archive often outlives the software that wrote it. Products that write LTFS or another open format leave tapes that other tools can read; a proprietary format means you need that product, or its vendor's tools, to get the data back. The advisor weighs this whenever you keep data for many years."
+      },
+      {
+        "q": "Where do the scores come from, and is the advisor vendor neutral?",
+        "a": "From the Tape Archive Software Ledger 2026, which scores tape archive products on ten capability areas, vendor credibility, buyer risk and lock-in from public records only. TapeBackup.org is not paid by any vendor on the list, and the ranking is computed from those scores and the weights read from your message. The AI never writes a score."
+      }
+    ],
+    "faqTitle": "Questions",
+    "i18n": {
+      "en": {
+        "h1": "Which tape archive software is best for me?",
+        "lead": "Tell us how much data you keep, which LTO drives you have and what the archive is for, in any language. You get a 30 second video with a ranked shortlist of 14 tape archive products, a suggested setup, the steps to get there and what to watch out for. Every score comes from the Tape Archive Software Ledger 2026.",
+        "ph": "Anything else? e.g. video post house, LTFS tapes for clients, Mac editors, one admin",
+        "go": "Find my tape archive software",
+        "hint": "Fill in what you know and leave the rest empty. Works in English, Deutsch, Français, Italiano, Español, Nederlands, Polski, 日本語 and 中文.",
+        "how1": "You describe your archive: how much data, growth, drives and library, sites, budget, team and what the data is for.",
+        "how2": "The advisor turns that into weighted needs and ranks 14 tape archive products with the Ledger scores (the numbers come from the Ledger, never from the AI). Then it designs a first setup around the best fit: topology, steps and pitfalls.",
+        "how3": "Your browser draws the video as soon as the answer arrives. Download it or share the link.",
+        "note": "The answer is general guidance written by AI (Claude) on top of the Tape Archive Software Ledger 2026. It is not a design review. Test a restore before you buy. Each visitor can ask 10 new questions per day; the examples and shared links do not count.",
+        "designing": "Weighing 14 tape archive products and drawing your setup…",
+        "errTopic": "I only help you choose tape archive software. Describe your archive, for example: 300 TB of video, LTO-9 library, two sites, small team.",
+        "errNoPlan": "Could not build an answer for that. Say how much data you keep, which LTO drives you have and what matters most."
+      },
+      "de": {
+        "h1": "Welche Tape-Archivsoftware passt zu mir?",
+        "lead": "Beschreiben Sie in einer beliebigen Sprache, wie viele Daten Sie archivieren, welche LTO-Laufwerke Sie haben und wofür das Archiv dient. Sie erhalten ein 30-Sekunden-Video mit einer Rangliste von 14 Tape-Archivprodukten, einem Vorschlag für den Aufbau, den Schritten dorthin und den Stolperstellen. Jede Bewertung stammt aus dem Tape Archive Software Ledger 2026.",
+        "ph": "Noch etwas? z. B. Postproduktion, LTFS-Bänder für Kunden, Mac-Schnittplätze, ein Admin",
+        "go": "Meine Archivsoftware finden",
+        "hint": "Füllen Sie aus, was Sie wissen, der Rest darf leer bleiben. Funktioniert auf Deutsch, Englisch und sieben weiteren Sprachen.",
+        "how1": "Sie beschreiben Ihr Archiv: Datenmenge, Wachstum, Laufwerke und Library, Standorte, Budget, Team und Zweck der Daten.",
+        "how2": "Der Advisor macht daraus gewichtete Anforderungen und reiht 14 Tape-Archivprodukte nach den Ledger-Bewertungen (die Zahlen stammen aus dem Ledger, nie von der KI). Dann entwirft er einen ersten Aufbau um den besten Treffer: Topologie, Schritte und Fallstricke.",
+        "how3": "Ihr Browser zeichnet das Video, sobald die Antwort da ist. Laden Sie es herunter oder teilen Sie den Link.",
+        "note": "Die Antwort ist eine allgemeine Orientierung, von KI (Claude) auf Basis des Tape Archive Software Ledger 2026 geschrieben. Sie ersetzt kein Design-Review. Testen Sie eine Wiederherstellung vor dem Kauf. Jeder Besucher kann 10 neue Fragen pro Tag stellen; Beispiele und geteilte Links zählen nicht.",
+        "designing": "14 Tape-Archivprodukte werden gewichtet und Ihr Aufbau gezeichnet…",
+        "errTopic": "Ich helfe nur bei der Wahl einer Tape-Archivsoftware. Beschreiben Sie Ihr Archiv, zum Beispiel: 300 TB Video, LTO-9-Library, zwei Standorte, kleines Team.",
+        "errNoPlan": "Dafür konnte keine Antwort erstellt werden. Nennen Sie Datenmenge, LTO-Laufwerke und was Ihnen am wichtigsten ist."
+      },
+      "fr": {
+        "h1": "Quel logiciel d'archivage sur bande me convient ?",
+        "lead": "Dites-nous, dans n'importe quelle langue, combien de données vous gardez, quels lecteurs LTO vous avez et à quoi sert l'archive. Vous obtenez une vidéo de 30 secondes avec un classement de 14 produits d'archivage sur bande, une architecture proposée, les étapes pour y arriver et les points de vigilance. Chaque note vient du Tape Archive Software Ledger 2026.",
+        "ph": "Autre chose ? ex. postproduction vidéo, bandes LTFS pour les clients, monteurs sur Mac, un seul admin",
+        "go": "Trouver mon logiciel d'archivage",
+        "hint": "Remplissez ce que vous savez et laissez le reste vide. Fonctionne en français, en anglais et dans sept autres langues.",
+        "how1": "Vous décrivez votre archive : volume, croissance, lecteurs et bibliothèque, sites, budget, équipe et usage des données.",
+        "how2": "Le conseiller en tire des besoins pondérés et classe 14 produits d'archivage sur bande selon les notes du Ledger (les chiffres viennent du Ledger, jamais de l'IA). Puis il conçoit une première architecture autour du meilleur choix : topologie, étapes et pièges.",
+        "how3": "Votre navigateur dessine la vidéo dès que la réponse arrive. Téléchargez-la ou partagez le lien.",
+        "note": "La réponse est un conseil général rédigé par une IA (Claude) à partir du Tape Archive Software Ledger 2026. Ce n'est pas une revue d'architecture. Testez une restauration avant d'acheter. Chaque visiteur peut poser 10 nouvelles questions par jour ; les exemples et les liens partagés ne comptent pas.",
+        "designing": "Pondération des 14 produits et dessin de votre architecture…",
+        "errTopic": "Je vous aide uniquement à choisir un logiciel d'archivage sur bande. Décrivez votre archive, par exemple : 300 To de vidéo, bibliothèque LTO-9, deux sites, petite équipe.",
+        "errNoPlan": "Impossible de construire une réponse. Indiquez le volume de données, vos lecteurs LTO et ce qui compte le plus."
+      },
+      "it": {
+        "h1": "Quale software di archiviazione su nastro fa per me?",
+        "lead": "Raccontaci in qualsiasi lingua quanti dati conservi, quali unità LTO hai e a cosa serve l'archivio. Ricevi un video di 30 secondi con una classifica di 14 prodotti di archiviazione su nastro, un'architettura suggerita, i passi per arrivarci e cosa tenere d'occhio. Ogni punteggio viene dal Tape Archive Software Ledger 2026.",
+        "ph": "Altro? es. post produzione video, nastri LTFS per i clienti, montatori su Mac, un solo admin",
+        "go": "Trova il mio software di archiviazione",
+        "hint": "Compila ciò che sai e lascia vuoto il resto. Funziona in italiano, inglese e altre sette lingue.",
+        "how1": "Descrivi il tuo archivio: quantità di dati, crescita, unità e libreria, sedi, budget, team e uso dei dati.",
+        "how2": "Il consulente ne ricava esigenze pesate e ordina 14 prodotti di archiviazione su nastro con i punteggi del Ledger (i numeri vengono dal Ledger, mai dall'IA). Poi progetta una prima architettura attorno alla scelta migliore: topologia, passi e insidie.",
+        "how3": "Il browser disegna il video appena arriva la risposta. Scaricalo o condividi il link.",
+        "note": "La risposta è un'indicazione generale scritta da un'IA (Claude) sulla base del Tape Archive Software Ledger 2026. Non è una revisione di progetto. Prova un ripristino prima di acquistare. Ogni visitatore può fare 10 nuove domande al giorno; gli esempi e i link condivisi non contano.",
+        "designing": "Valutazione dei 14 prodotti e disegno della tua architettura…",
+        "errTopic": "Aiuto solo a scegliere un software di archiviazione su nastro. Descrivi il tuo archivio, ad esempio: 300 TB di video, libreria LTO-9, due sedi, team piccolo.",
+        "errNoPlan": "Non è stato possibile creare una risposta. Indica quanti dati conservi, quali unità LTO hai e cosa conta di più."
+      },
+      "es": {
+        "h1": "¿Qué software de archivo en cinta me conviene?",
+        "lead": "Cuéntanos en cualquier idioma cuántos datos guardas, qué unidades LTO tienes y para qué sirve el archivo. Recibes un vídeo de 30 segundos con una clasificación de 14 productos de archivo en cinta, una arquitectura sugerida, los pasos para llegar y en qué fijarte. Cada puntuación procede del Tape Archive Software Ledger 2026.",
+        "ph": "¿Algo más? p. ej. posproducción de vídeo, cintas LTFS para clientes, editores con Mac, un solo administrador",
+        "go": "Encontrar mi software de archivo",
+        "hint": "Rellena lo que sepas y deja el resto vacío. Funciona en español, inglés y otros siete idiomas.",
+        "how1": "Describes tu archivo: volumen de datos, crecimiento, unidades y librería, sedes, presupuesto, equipo y uso de los datos.",
+        "how2": "El asesor lo convierte en necesidades ponderadas y ordena 14 productos de archivo en cinta con las puntuaciones del Ledger (los números vienen del Ledger, nunca de la IA). Después diseña una primera arquitectura en torno a la mejor opción: topología, pasos y riesgos.",
+        "how3": "Tu navegador dibuja el vídeo en cuanto llega la respuesta. Descárgalo o comparte el enlace.",
+        "note": "La respuesta es una orientación general escrita por IA (Claude) a partir del Tape Archive Software Ledger 2026. No es una revisión de diseño. Prueba una restauración antes de comprar. Cada visitante puede hacer 10 preguntas nuevas al día; los ejemplos y los enlaces compartidos no cuentan.",
+        "designing": "Ponderando 14 productos y dibujando tu arquitectura…",
+        "errTopic": "Solo ayudo a elegir software de archivo en cinta. Describe tu archivo, por ejemplo: 300 TB de vídeo, librería LTO-9, dos sedes, equipo pequeño.",
+        "errNoPlan": "No se pudo crear una respuesta. Indica cuántos datos guardas, qué unidades LTO tienes y qué es lo más importante."
+      },
+      "nl": {
+        "h1": "Welke tape-archiefsoftware past bij mij?",
+        "lead": "Vertel ons in elke taal hoeveel data u bewaart, welke LTO-drives u hebt en waarvoor het archief dient. U krijgt een video van 30 seconden met een ranglijst van 14 tape-archiefproducten, een voorgestelde opzet, de stappen ernaartoe en waar u op moet letten. Elke score komt uit de Tape Archive Software Ledger 2026.",
+        "ph": "Nog iets? bv. videopostproductie, LTFS-tapes voor klanten, editors op Mac, één beheerder",
+        "go": "Vind mijn archiefsoftware",
+        "hint": "Vul in wat u weet en laat de rest leeg. Werkt in het Nederlands, Engels en zeven andere talen.",
+        "how1": "U beschrijft uw archief: hoeveelheid data, groei, drives en library, locaties, budget, team en waarvoor de data dient.",
+        "how2": "De adviseur maakt daar gewogen behoeften van en rangschikt 14 tape-archiefproducten met de Ledger-scores (de cijfers komen uit de Ledger, nooit van de AI). Daarna ontwerpt hij een eerste opzet rond de beste keuze: topologie, stappen en valkuilen.",
+        "how3": "Uw browser tekent de video zodra het antwoord binnen is. Download hem of deel de link.",
+        "note": "Het antwoord is algemeen advies, geschreven door AI (Claude) op basis van de Tape Archive Software Ledger 2026. Het is geen ontwerpreview. Test een restore voordat u koopt. Elke bezoeker kan 10 nieuwe vragen per dag stellen; voorbeelden en gedeelde links tellen niet mee.",
+        "designing": "14 tape-archiefproducten worden gewogen en uw opzet getekend…",
+        "errTopic": "Ik help alleen bij het kiezen van tape-archiefsoftware. Beschrijf uw archief, bijvoorbeeld: 300 TB video, LTO-9-library, twee locaties, klein team.",
+        "errNoPlan": "Daar kon geen antwoord voor worden gemaakt. Vermeld hoeveel data u bewaart, welke LTO-drives u hebt en wat het belangrijkst is."
+      },
+      "pl": {
+        "h1": "Jakie oprogramowanie do archiwizacji na taśmach wybrać?",
+        "lead": "Opisz w dowolnym języku, ile danych przechowujesz, jakie masz napędy LTO i do czego służy archiwum. Dostaniesz 30-sekundowe wideo z rankingiem 14 produktów do archiwizacji na taśmach, proponowaną architekturą, krokami wdrożenia i tym, na co uważać. Każda ocena pochodzi z Tape Archive Software Ledger 2026.",
+        "ph": "Coś jeszcze? np. postprodukcja wideo, taśmy LTFS dla klientów, montażyści na Macach, jeden administrator",
+        "go": "Znajdź oprogramowanie do archiwum",
+        "hint": "Wpisz to, co wiesz, resztę zostaw pustą. Działa po polsku, angielsku i w siedmiu innych językach.",
+        "how1": "Opisujesz archiwum: ilość danych, przyrost, napędy i bibliotekę, lokalizacje, budżet, zespół i przeznaczenie danych.",
+        "how2": "Doradca zamienia to na ważone potrzeby i układa ranking 14 produktów według ocen z Ledgera (liczby pochodzą z Ledgera, nigdy od AI). Potem projektuje pierwszą architekturę wokół najlepszego wyboru: topologię, kroki i pułapki.",
+        "how3": "Przeglądarka rysuje wideo, gdy tylko nadejdzie odpowiedź. Pobierz je lub udostępnij link.",
+        "note": "Odpowiedź to ogólna wskazówka napisana przez AI (Claude) na podstawie Tape Archive Software Ledger 2026. Nie zastępuje przeglądu projektu. Przed zakupem przetestuj odtwarzanie danych. Każdy odwiedzający może zadać 10 nowych pytań dziennie; przykłady i udostępnione linki się nie liczą.",
+        "designing": "Ważenie 14 produktów i rysowanie architektury…",
+        "errTopic": "Pomagam tylko w wyborze oprogramowania do archiwizacji na taśmach. Opisz archiwum, na przykład: 300 TB wideo, biblioteka LTO-9, dwie lokalizacje, mały zespół.",
+        "errNoPlan": "Nie udało się przygotować odpowiedzi. Podaj, ile danych przechowujesz, jakie masz napędy LTO i co jest najważniejsze."
+      },
+      "ja": {
+        "h1": "自分に合うテープアーカイブソフトはどれ？",
+        "lead": "保存するデータ量、お持ちの LTO ドライブ、アーカイブの用途を、どの言語でも入力してください。テープアーカイブ製品 14 件のランキング、構成案、導入までの手順、注意点を 30 秒の動画でお見せします。評価はすべて Tape Archive Software Ledger 2026 に基づきます。",
+        "ph": "ほかには？ 例：映像ポストプロダクション、顧客向け LTFS テープ、Mac の編集者、管理者は 1 人",
+        "go": "アーカイブソフトを探す",
+        "hint": "分かる項目だけ入力し、残りは空欄で構いません。日本語、英語など 9 言語に対応しています。",
+        "how1": "アーカイブの状況を入力します：データ量、増加量、ドライブとライブラリ、拠点、予算、チーム、データの用途。",
+        "how2": "アドバイザーがそれを重み付きの要件に変換し、Ledger の評価で 14 製品を順位付けします（数値は Ledger のもので、AI が作ることはありません）。続いて最適な製品を中心に、構成、手順、注意点を設計します。",
+        "how3": "回答が届くとすぐにブラウザが動画を描画します。ダウンロードやリンクの共有もできます。",
+        "note": "回答は Tape Archive Software Ledger 2026 をもとに AI（Claude）が書いた一般的な助言で、設計レビューではありません。購入前に復元テストを行ってください。新しい質問は 1 人 1 日 10 件までです。例と共有リンクは数えません。",
+        "designing": "14 製品を比較して構成を描いています…",
+        "errTopic": "テープアーカイブソフトの選定だけをお手伝いします。例：映像 300 TB、LTO-9 ライブラリ、2 拠点、少人数チーム のように入力してください。",
+        "errNoPlan": "回答を作成できませんでした。データ量、LTO ドライブ、最も重視する点を入力してください。"
+      },
+      "zh": {
+        "h1": "哪款磁带归档软件最适合我？",
+        "lead": "用任何语言告诉我们：要保存多少数据、有哪些 LTO 磁带机、归档用来做什么。你会得到一段 30 秒的视频，包括 14 款磁带归档产品的排名、建议的架构、实施步骤和注意事项。所有评分都来自 Tape Archive Software Ledger 2026。",
+        "ph": "还有别的吗？例如：视频后期公司、给客户的 LTFS 磁带、Mac 剪辑师、只有一名管理员",
+        "go": "找到适合我的归档软件",
+        "hint": "填写你知道的部分，其余留空即可。支持中文、英文等 9 种语言。",
+        "how1": "描述你的归档：数据量、年增长、磁带机和带库、站点、预算、团队以及数据用途。",
+        "how2": "顾问把这些转换为带权重的需求，用 Ledger 评分给 14 款产品排名（数字来自 Ledger，绝不由 AI 编写），再围绕最合适的产品设计初步方案：拓扑、步骤和注意事项。",
+        "how3": "答案一到，浏览器就开始绘制视频。可以下载或分享链接。",
+        "note": "答案是 AI（Claude）基于 Tape Archive Software Ledger 2026 写的一般性建议，不是设计评审。购买前请先做恢复测试。每位访客每天可以提 10 个新问题，示例和分享链接不计入。",
+        "designing": "正在比较 14 款产品并绘制你的方案…",
+        "errTopic": "我只帮你选择磁带归档软件。请描述你的归档，例如：300 TB 视频、LTO-9 带库、两个站点、小团队。",
+        "errNoPlan": "无法生成答案。请说明数据量、LTO 磁带机和最看重什么。"
+      }
+    },
+    "form": {
+      "workloadsTitle": {
+        "en": "Your archive",
+        "de": "Ihr Archiv",
+        "fr": "Votre archive",
+        "it": "Il tuo archivio",
+        "es": "Tu archivo",
+        "nl": "Uw archief",
+        "pl": "Twoje archiwum",
+        "ja": "アーカイブ",
+        "zh": "你的归档"
+      },
+      "workloads": [
+        {
+          "id": "tb_now",
+          "label": {
+            "en": "TB to archive now",
+            "de": "TB jetzt zu archivieren",
+            "fr": "To à archiver maintenant",
+            "it": "TB da archiviare ora",
+            "es": "TB a archivar ahora",
+            "nl": "TB nu te archiveren",
+            "pl": "TB do archiwizacji teraz",
+            "ja": "現在のデータ量 (TB)",
+            "zh": "当前要归档的 TB"
+          }
+        },
+        {
+          "id": "tb_year",
+          "label": {
+            "en": "Growth per year (TB)",
+            "de": "Wachstum pro Jahr (TB)",
+            "fr": "Croissance par an (To)",
+            "it": "Crescita annua (TB)",
+            "es": "Crecimiento anual (TB)",
+            "nl": "Groei per jaar (TB)",
+            "pl": "Przyrost rocznie (TB)",
+            "ja": "年間増加量 (TB)",
+            "zh": "每年增长 (TB)"
+          }
+        },
+        {
+          "id": "drives",
+          "label": {
+            "en": "Tape drives",
+            "de": "Bandlaufwerke",
+            "fr": "Lecteurs de bande",
+            "it": "Unità a nastro",
+            "es": "Unidades de cinta",
+            "nl": "Tapedrives",
+            "pl": "Napędy taśmowe",
+            "ja": "テープドライブ",
+            "zh": "磁带机"
+          }
+        },
+        {
+          "id": "slots",
+          "label": {
+            "en": "Library slots",
+            "de": "Library-Slots",
+            "fr": "Emplacements de bibliothèque",
+            "it": "Slot della libreria",
+            "es": "Ranuras de la librería",
+            "nl": "Library-slots",
+            "pl": "Sloty w bibliotece",
+            "ja": "ライブラリのスロット",
+            "zh": "带库槽位"
+          }
+        },
+        {
+          "id": "sites",
+          "label": {
+            "en": "Sites",
+            "de": "Standorte",
+            "fr": "Sites",
+            "it": "Sedi",
+            "es": "Sedes",
+            "nl": "Locaties",
+            "pl": "Lokalizacje",
+            "ja": "拠点",
+            "zh": "站点"
+          }
+        }
+      ],
+      "selects": [
+        {
+          "id": "gen",
+          "label": {
+            "en": "LTO generation today",
+            "de": "LTO-Generation heute",
+            "fr": "Génération LTO actuelle",
+            "it": "Generazione LTO attuale",
+            "es": "Generación LTO actual",
+            "nl": "LTO-generatie nu",
+            "pl": "Obecna generacja LTO",
+            "ja": "現在の LTO 世代",
+            "zh": "当前 LTO 代"
+          },
+          "options": [
+            {
+              "en": "No tape yet",
+              "de": "Noch kein Tape",
+              "fr": "Pas encore de bande",
+              "it": "Ancora nessun nastro",
+              "es": "Aún sin cinta",
+              "nl": "Nog geen tape",
+              "pl": "Jeszcze bez taśm",
+              "ja": "まだテープなし",
+              "zh": "还没有磁带"
+            },
+            {
+              "en": "LTO-7",
+              "de": "LTO-7",
+              "fr": "LTO-7",
+              "it": "LTO-7",
+              "es": "LTO-7",
+              "nl": "LTO-7",
+              "pl": "LTO-7",
+              "ja": "LTO-7",
+              "zh": "LTO-7"
+            },
+            {
+              "en": "LTO-8",
+              "de": "LTO-8",
+              "fr": "LTO-8",
+              "it": "LTO-8",
+              "es": "LTO-8",
+              "nl": "LTO-8",
+              "pl": "LTO-8",
+              "ja": "LTO-8",
+              "zh": "LTO-8"
+            },
+            {
+              "en": "LTO-9",
+              "de": "LTO-9",
+              "fr": "LTO-9",
+              "it": "LTO-9",
+              "es": "LTO-9",
+              "nl": "LTO-9",
+              "pl": "LTO-9",
+              "ja": "LTO-9",
+              "zh": "LTO-9"
+            },
+            {
+              "en": "LTO-10",
+              "de": "LTO-10",
+              "fr": "LTO-10",
+              "it": "LTO-10",
+              "es": "LTO-10",
+              "nl": "LTO-10",
+              "pl": "LTO-10",
+              "ja": "LTO-10",
+              "zh": "LTO-10"
+            }
+          ]
+        },
+        {
+          "id": "use",
+          "label": {
+            "en": "Main use",
+            "de": "Hauptzweck",
+            "fr": "Usage principal",
+            "it": "Uso principale",
+            "es": "Uso principal",
+            "nl": "Hoofdgebruik",
+            "pl": "Główne zastosowanie",
+            "ja": "主な用途",
+            "zh": "主要用途"
+          },
+          "options": [
+            {
+              "en": "Backup copy",
+              "de": "Backup-Kopie",
+              "fr": "Copie de sauvegarde",
+              "it": "Copia di backup",
+              "es": "Copia de seguridad",
+              "nl": "Back-upkopie",
+              "pl": "Kopia zapasowa",
+              "ja": "バックアップコピー",
+              "zh": "备份副本"
+            },
+            {
+              "en": "Long term archive",
+              "de": "Langzeitarchiv",
+              "fr": "Archive à long terme",
+              "it": "Archivio a lungo termine",
+              "es": "Archivo a largo plazo",
+              "nl": "Langetermijnarchief",
+              "pl": "Archiwum długoterminowe",
+              "ja": "長期アーカイブ",
+              "zh": "长期归档"
+            },
+            {
+              "en": "Media and video",
+              "de": "Medien und Video",
+              "fr": "Médias et vidéo",
+              "it": "Media e video",
+              "es": "Medios y vídeo",
+              "nl": "Media en video",
+              "pl": "Media i wideo",
+              "ja": "メディアと映像",
+              "zh": "媒体和视频"
+            },
+            {
+              "en": "Research data",
+              "de": "Forschungsdaten",
+              "fr": "Données de recherche",
+              "it": "Dati di ricerca",
+              "es": "Datos de investigación",
+              "nl": "Onderzoeksdata",
+              "pl": "Dane badawcze",
+              "ja": "研究データ",
+              "zh": "科研数据"
+            },
+            {
+              "en": "Compliance records",
+              "de": "Compliance-Daten",
+              "fr": "Données de conformité",
+              "it": "Dati di conformità",
+              "es": "Registros de cumplimiento",
+              "nl": "Compliancegegevens",
+              "pl": "Dane zgodności",
+              "ja": "コンプライアンス記録",
+              "zh": "合规记录"
+            }
+          ]
+        },
+        {
+          "id": "budget",
+          "label": {
+            "en": "Budget",
+            "de": "Budget",
+            "fr": "Budget",
+            "it": "Budget",
+            "es": "Presupuesto",
+            "nl": "Budget",
+            "pl": "Budżet",
+            "ja": "予算",
+            "zh": "预算"
+          },
+          "options": [
+            {
+              "en": "As low as possible",
+              "de": "So niedrig wie möglich",
+              "fr": "Le plus bas possible",
+              "it": "Il più basso possibile",
+              "es": "Lo más bajo posible",
+              "nl": "Zo laag mogelijk",
+              "pl": "Jak najniższy",
+              "ja": "できるだけ低く",
+              "zh": "越低越好"
+            },
+            {
+              "en": "Moderate",
+              "de": "Mittel",
+              "fr": "Modéré",
+              "it": "Medio",
+              "es": "Moderado",
+              "nl": "Gemiddeld",
+              "pl": "Umiarkowany",
+              "ja": "中程度",
+              "zh": "中等"
+            },
+            {
+              "en": "Enterprise",
+              "de": "Enterprise",
+              "fr": "Entreprise",
+              "it": "Enterprise",
+              "es": "Empresarial",
+              "nl": "Enterprise",
+              "pl": "Korporacyjny",
+              "ja": "エンタープライズ",
+              "zh": "企业级"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "label": {
+            "en": "Team",
+            "de": "Team",
+            "fr": "Équipe",
+            "it": "Team",
+            "es": "Equipo",
+            "nl": "Team",
+            "pl": "Zespół",
+            "ja": "チーム",
+            "zh": "团队"
+          },
+          "options": [
+            {
+              "en": "One person",
+              "de": "Eine Person",
+              "fr": "Une personne",
+              "it": "Una persona",
+              "es": "Una persona",
+              "nl": "Eén persoon",
+              "pl": "Jedna osoba",
+              "ja": "1 人",
+              "zh": "一个人"
+            },
+            {
+              "en": "Small IT team",
+              "de": "Kleines IT-Team",
+              "fr": "Petite équipe IT",
+              "it": "Piccolo team IT",
+              "es": "Equipo de TI pequeño",
+              "nl": "Klein IT-team",
+              "pl": "Mały zespół IT",
+              "ja": "少人数の IT チーム",
+              "zh": "小型 IT 团队"
+            },
+            {
+              "en": "Dedicated storage team",
+              "de": "Eigenes Storage-Team",
+              "fr": "Équipe stockage dédiée",
+              "it": "Team storage dedicato",
+              "es": "Equipo de almacenamiento propio",
+              "nl": "Eigen storageteam",
+              "pl": "Dedykowany zespół storage",
+              "ja": "専任のストレージチーム",
+              "zh": "专职存储团队"
+            }
+          ]
+        },
+        {
+          "id": "support",
+          "label": {
+            "en": "Support",
+            "de": "Support",
+            "fr": "Support",
+            "it": "Supporto",
+            "es": "Soporte",
+            "nl": "Support",
+            "pl": "Wsparcie",
+            "ja": "サポート",
+            "zh": "支持"
+          },
+          "options": [
+            {
+              "en": "Community is fine",
+              "de": "Community reicht",
+              "fr": "La communauté suffit",
+              "it": "Basta la community",
+              "es": "Comunidad es suficiente",
+              "nl": "Community is genoeg",
+              "pl": "Społeczność wystarczy",
+              "ja": "コミュニティで十分",
+              "zh": "社区支持即可"
+            },
+            {
+              "en": "Vendor support needed",
+              "de": "Herstellersupport nötig",
+              "fr": "Support éditeur requis",
+              "it": "Serve il supporto del fornitore",
+              "es": "Necesito soporte del fabricante",
+              "nl": "Leveranciersondersteuning nodig",
+              "pl": "Potrzebne wsparcie producenta",
+              "ja": "ベンダーサポート必須",
+              "zh": "需要厂商支持"
+            }
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "href": "/contact",
+      "urlLabel": "tapebackup.org/contact",
+      "title": {
+        "en": "Want a second opinion? Talk to us",
+        "de": "Zweite Meinung? Sprechen Sie mit uns",
+        "fr": "Besoin d'un second avis ? Parlons-en",
+        "it": "Vuoi un secondo parere? Parliamone",
+        "es": "¿Quieres una segunda opinión? Habla con nosotros",
+        "nl": "Een second opinion? Praat met ons",
+        "pl": "Potrzebujesz drugiej opinii? Porozmawiajmy",
+        "ja": "セカンドオピニオンが必要ですか？ご相談ください",
+        "zh": "想听听第二意见？联系我们"
+      },
+      "line": {
+        "en": "Book a consulting call: we review your archive design, LTO sizing, tape format and migration plan.",
+        "de": "Buchen Sie ein Beratungsgespräch: Wir prüfen Archivdesign, LTO-Sizing, Bandformat und Migrationsplan.",
+        "fr": "Réservez un échange de conseil : nous relisons l'architecture, le dimensionnement LTO, le format de bande et le plan de migration.",
+        "it": "Prenota una consulenza: rivediamo architettura dell'archivio, dimensionamento LTO, formato del nastro e piano di migrazione.",
+        "es": "Reserva una consulta: revisamos el diseño del archivo, el dimensionamiento LTO, el formato de cinta y el plan de migración.",
+        "nl": "Plan een adviesgesprek: wij beoordelen uw archiefontwerp, LTO-sizing, tapeformaat en migratieplan.",
+        "pl": "Umów konsultację: sprawdzimy projekt archiwum, dobór LTO, format taśm i plan migracji.",
+        "ja": "コンサルティングを予約：アーカイブ設計、LTO のサイジング、テープ形式、移行計画を確認します。",
+        "zh": "预约咨询：我们帮你审核归档架构、LTO 容量规划、磁带格式和迁移计划。"
+      },
+      "button": {
+        "en": "Contact us",
+        "de": "Kontakt",
+        "fr": "Nous contacter",
+        "it": "Contattaci",
+        "es": "Contáctanos",
+        "nl": "Neem contact op",
+        "pl": "Skontaktuj się",
+        "ja": "お問い合わせ",
+        "zh": "联系我们"
+      }
+    }
+  },
+  "examples": [
+    {
+      "id": "post-house",
+      "label": {
+        "en": "Video post house",
+        "de": "Postproduktion",
+        "fr": "Postproduction vidéo",
+        "it": "Post produzione video",
+        "es": "Posproducción de vídeo",
+        "nl": "Videopostproductie",
+        "pl": "Postprodukcja wideo",
+        "ja": "映像ポスプロ",
+        "zh": "视频后期公司"
+      },
+      "q": {
+        "en": "Video post production house, 400 TB of finished projects, 80 TB new per year, LTO-9 with two drives, Mac editors, clients want LTFS tapes, one admin, moderate budget",
+        "de": "Postproduktion, 400 TB fertige Projekte, 80 TB neu pro Jahr, LTO-9 mit zwei Laufwerken, Mac-Schnittplätze, Kunden wollen LTFS-Bänder, ein Admin, mittleres Budget",
+        "fr": "Société de postproduction vidéo, 400 To de projets terminés, 80 To de plus par an, LTO-9 avec deux lecteurs, monteurs sur Mac, les clients veulent des bandes LTFS, un seul admin, budget modéré",
+        "it": "Società di post produzione video, 400 TB di progetti finiti, 80 TB in più ogni anno, LTO-9 con due unità, montatori su Mac, i clienti vogliono nastri LTFS, un solo admin, budget medio",
+        "es": "Productora de posproducción de vídeo, 400 TB de proyectos terminados, 80 TB nuevos al año, LTO-9 con dos unidades, editores con Mac, los clientes quieren cintas LTFS, un solo administrador, presupuesto moderado",
+        "nl": "Videopostproductiebedrijf, 400 TB afgeronde projecten, 80 TB nieuw per jaar, LTO-9 met twee drives, editors op Mac, klanten willen LTFS-tapes, één beheerder, gemiddeld budget",
+        "pl": "Studio postprodukcji wideo, 400 TB gotowych projektów, 80 TB nowych rocznie, LTO-9 z dwoma napędami, montażyści na Macach, klienci chcą taśm LTFS, jeden administrator, umiarkowany budżet",
+        "ja": "映像ポストプロダクション、完成プロジェクト 400 TB、年 80 TB 増加、LTO-9 ドライブ 2 台、編集者は Mac、顧客は LTFS テープを希望、管理者 1 人、予算は中程度",
+        "zh": "视频后期公司，已完成项目 400 TB，每年新增 80 TB，LTO-9 两台磁带机，剪辑师用 Mac，客户要求 LTFS 磁带，一名管理员，中等预算"
+      }
+    },
+    {
+      "id": "university",
+      "label": {
+        "en": "University research",
+        "de": "Hochschulforschung",
+        "fr": "Recherche universitaire",
+        "it": "Ricerca universitaria",
+        "es": "Investigación universitaria",
+        "nl": "Universitair onderzoek",
+        "pl": "Badania uczelni",
+        "ja": "大学の研究データ",
+        "zh": "高校科研"
+      },
+      "q": {
+        "en": "University research computing, 3 PB of research data growing 600 TB a year, Linux HPC cluster, LTO-9 library with 8 drives, data must stay readable for 15 years, storage team of four",
+        "de": "Hochschul-Rechenzentrum, 3 PB Forschungsdaten mit 600 TB Wachstum pro Jahr, Linux-HPC-Cluster, LTO-9-Library mit 8 Laufwerken, Daten müssen 15 Jahre lesbar bleiben, Storage-Team mit vier Personen",
+        "fr": "Calcul scientifique universitaire, 3 Po de données de recherche avec 600 To de plus par an, cluster HPC Linux, bibliothèque LTO-9 avec 8 lecteurs, données lisibles pendant 15 ans, équipe stockage de quatre personnes",
+        "it": "Calcolo scientifico universitario, 3 PB di dati di ricerca con crescita di 600 TB l'anno, cluster HPC Linux, libreria LTO-9 con 8 unità, dati leggibili per 15 anni, team storage di quattro persone",
+        "es": "Computación científica universitaria, 3 PB de datos de investigación que crecen 600 TB al año, clúster HPC Linux, librería LTO-9 con 8 unidades, los datos deben poder leerse durante 15 años, equipo de almacenamiento de cuatro personas",
+        "nl": "Universitaire onderzoekscomputing, 3 PB onderzoeksdata met 600 TB groei per jaar, Linux HPC-cluster, LTO-9-library met 8 drives, data moet 15 jaar leesbaar blijven, storageteam van vier mensen",
+        "pl": "Centrum obliczeniowe uczelni, 3 PB danych badawczych, przyrost 600 TB rocznie, klaster HPC na Linuksie, biblioteka LTO-9 z 8 napędami, dane muszą być czytelne przez 15 lat, zespół storage z czterech osób",
+        "ja": "大学の研究計算センター、研究データ 3 PB、年 600 TB 増加、Linux HPC クラスター、LTO-9 ライブラリ（ドライブ 8 台）、15 年間読める必要あり、ストレージチーム 4 人",
+        "zh": "高校科研计算中心，3 PB 科研数据，每年增长 600 TB，Linux HPC 集群，LTO-9 带库 8 台磁带机，数据需可读 15 年，存储团队四人"
+      }
+    },
+    {
+      "id": "hospital-pacs",
+      "label": {
+        "en": "Hospital image archive",
+        "de": "Klinik-Bildarchiv",
+        "fr": "Archive d'imagerie",
+        "it": "Archivio immagini ospedale",
+        "es": "Archivo de imágenes",
+        "nl": "Ziekenhuisbeeldarchief",
+        "pl": "Archiwum obrazów szpitala",
+        "ja": "病院の画像アーカイブ",
+        "zh": "医院影像归档"
+      },
+      "q": {
+        "en": "Hospital PACS image archive, 250 TB growing 60 TB a year, two sites, records kept for 30 years, Windows servers, small IT team, vendor support required",
+        "de": "PACS-Bildarchiv einer Klinik, 250 TB mit 60 TB Wachstum pro Jahr, zwei Standorte, Aufbewahrung 30 Jahre, Windows-Server, kleines IT-Team, Herstellersupport nötig",
+        "fr": "Archive d'images PACS d'un hôpital, 250 To avec 60 To de plus par an, deux sites, conservation 30 ans, serveurs Windows, petite équipe IT, support éditeur requis",
+        "it": "Archivio immagini PACS di un ospedale, 250 TB con crescita di 60 TB l'anno, due sedi, conservazione per 30 anni, server Windows, piccolo team IT, serve il supporto del fornitore",
+        "es": "Archivo de imágenes PACS de un hospital, 250 TB que crecen 60 TB al año, dos sedes, conservación durante 30 años, servidores Windows, equipo de TI pequeño, necesito soporte del fabricante",
+        "nl": "PACS-beeldarchief van een ziekenhuis, 250 TB met 60 TB groei per jaar, twee locaties, 30 jaar bewaren, Windows-servers, klein IT-team, leveranciersondersteuning nodig",
+        "pl": "Archiwum obrazów PACS szpitala, 250 TB, przyrost 60 TB rocznie, dwie lokalizacje, przechowywanie przez 30 lat, serwery Windows, mały zespół IT, potrzebne wsparcie producenta",
+        "ja": "病院の PACS 画像アーカイブ、250 TB、年 60 TB 増加、2 拠点、30 年保存、Windows サーバー、少人数の IT チーム、ベンダーサポート必須",
+        "zh": "医院 PACS 影像归档，250 TB，每年增长 60 TB，两个站点，保存 30 年，Windows 服务器，小型 IT 团队，需要厂商支持"
+      }
+    },
+    {
+      "id": "smb-old-backup",
+      "label": {
+        "en": "SMB leaving old backup",
+        "de": "KMU ersetzt alte Sicherung",
+        "fr": "PME, ancienne sauvegarde",
+        "it": "PMI, vecchio backup",
+        "es": "Pyme deja su copia antigua",
+        "nl": "MKB vervangt oude back-up",
+        "pl": "MŚP zmienia stary backup",
+        "ja": "中小企業の旧バックアップ",
+        "zh": "中小企业替换旧备份"
+      },
+      "q": {
+        "en": "Small company, 60 TB on an old LTO-6 backup tool that is no longer supported, want a cheap archive on LTO-9 with one drive, one IT person, as low a budget as possible",
+        "de": "Kleine Firma, 60 TB auf einer alten LTO-6-Sicherungssoftware ohne Support, wir wollen ein günstiges Archiv auf LTO-9 mit einem Laufwerk, eine IT-Person, Budget so niedrig wie möglich",
+        "fr": "Petite entreprise, 60 To sur un ancien outil de sauvegarde LTO-6 qui n'est plus supporté, nous voulons une archive peu chère sur LTO-9 avec un lecteur, une seule personne IT, budget le plus bas possible",
+        "it": "Piccola azienda, 60 TB su un vecchio software di backup LTO-6 non più supportato, vogliamo un archivio economico su LTO-9 con una unità, una persona IT, budget il più basso possibile",
+        "es": "Empresa pequeña, 60 TB en una herramienta de copia LTO-6 antigua sin soporte, queremos un archivo barato en LTO-9 con una unidad, una persona de TI, presupuesto lo más bajo posible",
+        "nl": "Klein bedrijf, 60 TB op oude LTO-6-back-upsoftware zonder ondersteuning, wil een goedkoop archief op LTO-9 met één drive, één IT-medewerker, budget zo laag mogelijk",
+        "pl": "Mała firma, 60 TB w starym, niewspieranym programie do backupu na LTO-6, chcemy taniego archiwum na LTO-9 z jednym napędem, jedna osoba w IT, jak najniższy budżet",
+        "ja": "小さな会社、サポート終了した古い LTO-6 バックアップツールに 60 TB、LTO-9 ドライブ 1 台で安いアーカイブにしたい、IT 担当は 1 人、予算はできるだけ低く",
+        "zh": "小公司，60 TB 数据在已停止支持的旧 LTO-6 备份软件里，想用一台 LTO-9 磁带机做低成本归档，只有一名 IT 人员，预算越低越好"
+      }
+    },
+    {
+      "id": "broadcaster",
+      "label": {
+        "en": "Broadcaster",
+        "de": "Sender",
+        "fr": "Diffuseur",
+        "it": "Emittente",
+        "es": "Televisión",
+        "nl": "Omroep",
+        "pl": "Nadawca",
+        "ja": "放送局",
+        "zh": "广播电视台"
+      },
+      "q": {
+        "en": "Regional TV broadcaster, 2 PB archive with a MAM, 300 TB new per year, LTO-8 library to move to LTO-10, playout needs fast partial restores, cloud copy wanted, vendor support required",
+        "de": "Regionaler TV-Sender, 2 PB Archiv mit MAM, 300 TB neu pro Jahr, LTO-8-Library soll auf LTO-10 wechseln, Playout braucht schnelle Teilwiederherstellung, Cloud-Kopie gewünscht, Herstellersupport nötig",
+        "fr": "Chaîne de télévision régionale, archive de 2 Po avec un MAM, 300 To de plus par an, bibliothèque LTO-8 à passer en LTO-10, la diffusion exige des restaurations partielles rapides, copie cloud souhaitée, support éditeur requis",
+        "it": "Emittente TV regionale, archivio di 2 PB con MAM, 300 TB in più ogni anno, libreria LTO-8 da portare a LTO-10, la messa in onda richiede ripristini parziali rapidi, copia in cloud voluta, serve il supporto del fornitore",
+        "es": "Televisión regional, archivo de 2 PB con un MAM, 300 TB nuevos al año, librería LTO-8 que pasará a LTO-10, la emisión necesita restauraciones parciales rápidas, queremos una copia en la nube, necesito soporte del fabricante",
+        "nl": "Regionale tv-omroep, archief van 2 PB met een MAM, 300 TB nieuw per jaar, LTO-8-library moet naar LTO-10, playout vraagt snelle gedeeltelijke restores, cloudkopie gewenst, leveranciersondersteuning nodig",
+        "pl": "Regionalna telewizja, archiwum 2 PB z systemem MAM, 300 TB nowych danych rocznie, biblioteka LTO-8 do przejścia na LTO-10, emisja wymaga szybkiego częściowego odtwarzania, chcemy kopii w chmurze, potrzebne wsparcie producenta",
+        "ja": "地方テレビ局、MAM 連携の 2 PB アーカイブ、年 300 TB 増加、LTO-8 ライブラリを LTO-10 へ移行予定、送出用に高速な部分復元が必要、クラウドにもコピーしたい、ベンダーサポート必須",
+        "zh": "地方电视台，2 PB 归档并接入 MAM，每年新增 300 TB，LTO-8 带库准备升级到 LTO-10，播出需要快速部分恢复，希望有云端副本，需要厂商支持"
+      }
+    },
+    {
+      "id": "compliance",
+      "label": {
+        "en": "Compliance archive",
+        "de": "Compliance-Archiv",
+        "fr": "Archive réglementaire",
+        "it": "Archivio di conformità",
+        "es": "Archivo de cumplimiento",
+        "nl": "Compliance-archief",
+        "pl": "Archiwum zgodności",
+        "ja": "コンプライアンス保管",
+        "zh": "合规归档"
+      },
+      "q": {
+        "en": "Financial firm, 120 TB of records that must be kept unchanged for 10 years, WORM and encryption required, audits every year, offsite copy at a second site, Linux servers, vendor support required",
+        "de": "Finanzunternehmen, 120 TB Aufzeichnungen, die 10 Jahre unverändert bleiben müssen, WORM und Verschlüsselung Pflicht, jährliche Audits, Kopie an einem zweiten Standort, Linux-Server, Herstellersupport nötig",
+        "fr": "Société financière, 120 To de données à conserver sans modification pendant 10 ans, WORM et chiffrement obligatoires, audit chaque année, copie hors site sur un second site, serveurs Linux, support éditeur requis",
+        "it": "Società finanziaria, 120 TB di registrazioni da conservare inalterate per 10 anni, WORM e cifratura obbligatori, audit ogni anno, copia fuori sede in una seconda sede, server Linux, serve il supporto del fornitore",
+        "es": "Empresa financiera, 120 TB de registros que deben guardarse sin cambios durante 10 años, WORM y cifrado obligatorios, auditorías anuales, copia externa en una segunda sede, servidores Linux, necesito soporte del fabricante",
+        "nl": "Financiële onderneming, 120 TB gegevens die 10 jaar ongewijzigd bewaard moeten worden, WORM en versleuteling verplicht, jaarlijkse audits, kopie op een tweede locatie, Linux-servers, leveranciersondersteuning nodig",
+        "pl": "Firma finansowa, 120 TB zapisów, które muszą być przechowywane bez zmian przez 10 lat, WORM i szyfrowanie wymagane, coroczne audyty, kopia w drugiej lokalizacji, serwery Linux, potrzebne wsparcie producenta",
+        "ja": "金融会社、10 年間改変せずに保存すべき記録 120 TB、WORM と暗号化が必須、毎年監査あり、第 2 拠点にオフサイトコピー、Linux サーバー、ベンダーサポート必須",
+        "zh": "金融公司，120 TB 记录须原样保存 10 年，必须 WORM 和加密，每年审计，第二站点存放异地副本，Linux 服务器，需要厂商支持"
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "id": "ibm",
+      "name": "IBM Storage Archive",
+      "kind": "HSM / tiering",
+      "url": "",
+      "facts": "Ledger archetype: Scale-bound LTFS tiering. IBM keeps Storage Archive as the tape tier of Storage Scale and adds new IBM drives on the day they ship. The record shows LTO-8, LTO-9 and LTO-10 supported at launch and LTFS tapes that other tools can read, but no cloud tier, no file checksums and IBM libraries only. A buyer gets a portable tape format in exchange for a hard dependency on Storage Scale and IBM tape hardware. Formats: EE writes LTFS (SNIA 2.4) readable on any LTFS system; Space Management data sits in Storage Protect pools with no open-format statement; Export path: Exit path: read LTFS tapes with any LTFS implementation; namespace and stub mapping stay in Scale and EE metadata.",
+      "scores": {
+        "hardware": 4,
+        "formats": 4,
+        "tiering": 4,
+        "integrity": 3,
+        "access": 4,
+        "scale": 4,
+        "security": 3,
+        "media": 3.5,
+        "cloud": 0,
+        "mgmt": 4,
+        "price_safety": 3,
+        "exit_ease": 2,
+        "free_entry": 2,
+        "common_skills": 2,
+        "delivery": 3
+      }
+    },
+    {
+      "id": "quantum",
+      "name": "Quantum StorNext",
+      "kind": "HSM / tiering",
+      "url": "",
+      "facts": "Ledger archetype: Media-era multi-tier HSM. Quantum keeps StorNext Storage Manager as a policy engine that moves files between disk, tape, object storage and public cloud tiers. The record shows broad library support, checksums and multi-copy repair since before 2016, but a release gap from 2023 to 2025 and LTO-10 arriving about 14 months after the drives. A buyer gets a mature multi-tier archive tied to the StorNext file system, from a vendor whose finances have been under strain since 2024. Formats: Default ANTF is Quantum-specific with no published spec; LTFS option stores files by object ID with the path in xattrs; Export path: LTFS and ANTF export/import with manifests into another.",
+      "scores": {
+        "hardware": 4.5,
+        "formats": 3,
+        "tiering": 4.5,
+        "integrity": 4,
+        "access": 4,
+        "scale": 4,
+        "security": 3,
+        "media": 4,
+        "cloud": 4.5,
+        "mgmt": 4,
+        "price_safety": 2,
+        "exit_ease": 2,
+        "free_entry": 2,
+        "common_skills": 2,
+        "delivery": 3
+      }
+    },
+    {
+      "id": "hpedmf",
+      "name": "HPE DMF",
+      "kind": "HSM / tiering",
+      "url": "",
+      "facts": "Ledger archetype: HPC HSM in maintenance. HPE runs DMF 7 as a database-backed HSM for large HPC file systems and has spent the last three releases on platform upkeep and a first public API. The record shows broad library support, per-block checksums and policy-driven tape generation moves, but a proprietary tape format, no encryption or WORM features, no LTO-10 and no release for 12 months. A buyer gets proven HPC scale on any major library in exchange for a format only DMF can read and an uncertain release pace. Formats: Proprietary DMF media format with zones and chunks; no documented reader outside DMF; Export path: Chunk-to-volume mapping lives in the Library Server and Cassandra.",
+      "scores": {
+        "hardware": 4,
+        "formats": 1.5,
+        "tiering": 4,
+        "integrity": 4.5,
+        "access": 4,
+        "scale": 4.5,
+        "security": 1,
+        "media": 3.5,
+        "cloud": 4,
+        "mgmt": 3,
+        "price_safety": 1.5,
+        "exit_ease": 1.5,
+        "free_entry": 1,
+        "common_skills": 1.5,
+        "delivery": 2.5
+      }
+    },
+    {
+      "id": "spectra",
+      "name": "Spectra BlackPearl",
+      "kind": "S3 or file gateway to tape",
+      "url": "",
+      "facts": "Ledger archetype: Appliance S3-to-tape gateway. Spectra is building BlackPearl into an S3 and Glacier-compatible object tier on its own tape libraries, with StorCycle feeding it from file storage. The record shows steady dated releases, LTO-10 support before the generation's launch and LTFS on tape with object names kept in extended attributes. The trade-off is hardware coupling: BlackPearl is a Spectra appliance, non-Spectra libraries need a paid key, WORM media is not supported and full release notes sit behind a support login. Formats: LTFS with object names in LTFS extended attributes; objects split into 64 GB blobs may span tapes, readability of split objects without BlackPearl not.",
+      "scores": {
+        "hardware": 4,
+        "formats": 4,
+        "tiering": 4.5,
+        "integrity": 4.5,
+        "access": 4.5,
+        "scale": 4,
+        "security": 3.5,
+        "media": 4,
+        "cloud": 4.5,
+        "mgmt": 4,
+        "price_safety": 3.5,
+        "exit_ease": 2.5,
+        "free_entry": 2.5,
+        "common_skills": 3,
+        "delivery": 3
+      }
+    },
+    {
+      "id": "versity",
+      "name": "Versity ScoutAM",
+      "kind": "HSM / tiering",
+      "url": "",
+      "facts": "Ledger archetype: Open-format HPC archive challenger. Versity is building ScoutAM into an exabyte archive for research sites that leave older HSMs, with an open S3 gateway and GPU data paths around it. The record shows open tar-based tapes, wide library support with LTO-10 within months, and large public deployments, but ScoutAM release notes are private and media management is barely documented. A buyer gets low format and contract lock-in from a small private vendor whose core product can only be checked through its own pages and customer stories. Formats: VSM tar variant readable with standard tar for files under about 64 GB, star above; ScoutAM claims open formats readable without.",
+      "scores": {
+        "hardware": 4.5,
+        "formats": 4,
+        "tiering": 4,
+        "integrity": 4,
+        "access": 4.5,
+        "scale": 4.5,
+        "security": 3.5,
+        "media": 2,
+        "cloud": 4,
+        "mgmt": 4,
+        "price_safety": 3.5,
+        "exit_ease": 3,
+        "free_entry": 3.5,
+        "common_skills": 2.5,
+        "delivery": 3.5
+      }
+    },
+    {
+      "id": "atempo",
+      "name": "Atempo Miria",
+      "kind": "data mover",
+      "url": "",
+      "facts": "Ledger archetype: Broad data mover with tape archive. Atempo positions Miria as a data-movement engine that archives from NAS, HPC file systems and object stores to tape and cloud, and it kept shipping through receivership and a court-ordered sale. The public compatibility guides show wide library support, LTO-10 within about six months, TAR and LTFS on tape and KMS-based encryption, with four releases since early 2025. The trade-off is owner and lifecycle risk: new owners since 2025, a steady list of removed features and mandatory database moves, and no S3 or Glacier front end of its own. Formats: TAR (PAX) with metadata on tape and LTFS 2.5.1; WORM only with TAR; erasure-coded chunks need.",
+      "scores": {
+        "hardware": 4.5,
+        "formats": 4,
+        "tiering": 4.5,
+        "integrity": 3.5,
+        "access": 3.5,
+        "scale": 4,
+        "security": 4,
+        "media": 3,
+        "cloud": 4,
+        "mgmt": 4,
+        "price_safety": 2,
+        "exit_ease": 3.5,
+        "free_entry": 2.5,
+        "common_skills": 2.5,
+        "delivery": 3
+      }
+    },
+    {
+      "id": "grau",
+      "name": "Grau XtreemStore",
+      "kind": "S3 or file gateway to tape",
+      "url": "",
+      "facts": "Ledger archetype: Quiet S3 Glacier tape store. Grau Data rebuilt XtreemStore around 2019 as an object store that puts S3 and S3 Glacier on tape, and it now sells it through partners and as a turnkey appliance with COMBACK. The public record shows a standard S3 Glacier interface, TAR containers in LTFS format that the vendor says are readable without its software, and new partner integrations in 2025 and 2026. The trade-off is thin evidence: no release notes, versions, compatibility list, encryption or checksum documentation, and prices only through resellers. Formats: TAR containers in LTFS format; how S3 keys and metadata map to TAR contents is not documented; Export path: Vendor says data.",
+      "scores": {
+        "hardware": 3.5,
+        "formats": 3.5,
+        "tiering": 3.5,
+        "integrity": 2.5,
+        "access": 4,
+        "scale": 3.5,
+        "security": 2.5,
+        "media": 1.5,
+        "cloud": 1.5,
+        "mgmt": 3.5,
+        "price_safety": 2.5,
+        "exit_ease": 3.5,
+        "free_entry": 2,
+        "common_skills": 4,
+        "delivery": 2
+      }
+    },
+    {
+      "id": "qstar",
+      "name": "QStar Archive Manager",
+      "kind": "S3 or file gateway to tape",
+      "url": "",
+      "facts": "Ledger archetype: Long-running multi-protocol tape gateway. QStar sells capacity-licensed software that puts SMB, NFS and S3 shares in front of almost any tape library, with Network Migrator for stub-based tiering and Global ArchiveSpace to spread one library over many nodes. Its dated compatibility lists show LTO-9 within about four months, LTO-10 listed before the specification and TS1170, but there are no public release notes and manuals come only on request. The trade-off for a buyer is a proprietary TDO format unless LTFS is chosen, thin public documentation, and nine unpatched CVEs from 2024 with no vendor response found. Formats: Choice per volume of proprietary TDO (no public.",
+      "scores": {
+        "hardware": 4.5,
+        "formats": 3.5,
+        "tiering": 4,
+        "integrity": 4,
+        "access": 4,
+        "scale": 3.5,
+        "security": 3.5,
+        "media": 3.5,
+        "cloud": 4,
+        "mgmt": 3.5,
+        "price_safety": 3.5,
+        "exit_ease": 3.5,
+        "free_entry": 3,
+        "common_skills": 3,
+        "delivery": 2
+      }
+    },
+    {
+      "id": "point",
+      "name": "PoINT Storage Manager",
+      "kind": "S3 or file gateway to tape",
+      "url": "",
+      "facts": "Ledger archetype: Small-vendor S3 Glacier on tape. PoINT pairs a Windows file tiering and HSM product with an S3 gateway that writes straight to tape and presents disk and tape as S3 Standard and Glacier classes. Its public revision tables show LTO-9 within three months, IBM LTO-10 at the specification date, TS1170, redundant drive paths and a free LTFS option added in 2026. The trade-off is a small private vendor with release notes behind a login, no published prices, and older PAG tapes in an erasure-coded PoINT format that needs PoINT's specification or tools to read. Formats: PSM writes LTFS (default) or MTF (WORM) with UDF-based archive volumes; PAG wrote only its own erasure-coded.",
+      "scores": {
+        "hardware": 4.5,
+        "formats": 4,
+        "tiering": 4.5,
+        "integrity": 4,
+        "access": 4,
+        "scale": 4,
+        "security": 4,
+        "media": 4,
+        "cloud": 4,
+        "mgmt": 3.5,
+        "price_safety": 3.5,
+        "exit_ease": 3.5,
+        "free_entry": 3.5,
+        "common_skills": 3.5,
+        "delivery": 3.5
+      }
+    },
+    {
+      "id": "xendata",
+      "name": "XenData",
+      "kind": "media archive",
+      "url": "",
+      "facts": "Ledger archetype: Windows LTO archive appliance. XenData sells Windows-based LTO archive appliances and software, mostly to media companies, that present tape as a file system with S3 as a paid add-on and cloud tiers beside it. Its public release notes show LTO-8 and LTO-9 within about two months of launch, LTFS 2.4 and TAR on tape, partial-file restore and readers for several competitors' tape formats, with IBM LTO-10 added in 2026. The trade-off is a Windows-only stack with no REST management API, no software tape encryption or retention lock found, and some recent announcements (ALTO, X10) not yet visible in shipped releases. Formats: LTFS 2.4 on rewritable LTO-5 and later, or XenData.",
+      "scores": {
+        "hardware": 4,
+        "formats": 4,
+        "tiering": 4,
+        "integrity": 4,
+        "access": 4,
+        "scale": 3.5,
+        "security": 3,
+        "media": 3.5,
+        "cloud": 4,
+        "mgmt": 3,
+        "price_safety": 3.5,
+        "exit_ease": 3.5,
+        "free_entry": 3.5,
+        "common_skills": 3,
+        "delivery": 3
+      }
+    },
+    {
+      "id": "archiware",
+      "name": "Archiware P5",
+      "kind": "media archive",
+      "url": "",
+      "facts": "Ledger archetype: Budget media archive with LTFS. Archiware sells P5 Archive as low-cost perpetual software that archives media projects to LTO, disk and cloud from almost any server, with LTFS pools, an S3 Glacier-class endpoint and policy-based data movement added since 2021. The public record is unusually complete: dated releases, a discontinuations page, list prices and NAB or IBC previews that shipped within a year, with LTO hardware encryption added in 2026. The trade-off is reach: no enterprise tape drives, no NFS or SMB view of the archive, no KMIP or WORM handling, and the native pool format can only be read by P5. Formats: Two pool formats: P5 native (proprietary, 'exclusively.",
+      "scores": {
+        "hardware": 3.5,
+        "formats": 4,
+        "tiering": 4,
+        "integrity": 4,
+        "access": 3.5,
+        "scale": 3,
+        "security": 3,
+        "media": 3.5,
+        "cloud": 4,
+        "mgmt": 3.5,
+        "price_safety": 4,
+        "exit_ease": 3.5,
+        "free_entry": 4,
+        "common_skills": 3,
+        "delivery": 4
+      }
+    },
+    {
+      "id": "diva",
+      "name": "Telestream DIVA",
+      "kind": "media archive",
+      "url": "",
+      "facts": "Ledger archetype: Broadcast object archive, many owners. Telestream is modernising DIVA into a Windows-based broadcast archive with cloud lifecycle tiers, faster tape migration and a web interface, and folding FlashNet customers into it. The public documents show wide library and enterprise-tape support, IBM LTO-10 about six months after launch, an open AXF format with LTFS since 2022 and a standalone reader since 2026, and four or more releases a year. The trade-off is owner and lifecycle risk: lenders took the company in 2025, the product has changed owner and name repeatedly, upgrades need new licences, and support windows are short. Formats: AXF (open, self-describing) and LTFS AXF.",
+      "scores": {
+        "hardware": 4.5,
+        "formats": 4,
+        "tiering": 4,
+        "integrity": 4.5,
+        "access": 3.5,
+        "scale": 3.5,
+        "security": 3,
+        "media": 4,
+        "cloud": 4.5,
+        "mgmt": 4,
+        "price_safety": 2,
+        "exit_ease": 3,
+        "free_entry": 2.5,
+        "common_skills": 2,
+        "delivery": 3.5
+      }
+    },
+    {
+      "id": "yoyotta",
+      "name": "YoYotta",
+      "kind": "media archive",
+      "url": "",
+      "facts": "Ledger archetype: Mac LTFS archive for post-production. YoYotta is a small Mac application that archives camera and project media to LTFS tapes in standalone drives and libraries, now with up to four libraries and eight drives. The record shows LTO-8, LTO-9 and LTO-10 supported at launch, LTFS as the only write format with checksums carried on tape, and low public prices. The trade-off is scope: it runs only on macOS, has no encryption, WORM, policy tiering, network access or API, and since 2023 it needs a yearly licence to keep running jobs. Formats: Writes only LTFS 2.4, readable by any LTFS implementation; Export path: Tapes readable without YoYotta; checksums in extended attributes, MHL.",
+      "scores": {
+        "hardware": 3.5,
+        "formats": 4.5,
+        "tiering": 2.5,
+        "integrity": 3.5,
+        "access": 2.5,
+        "scale": 3,
+        "security": 1,
+        "media": 3,
+        "cloud": 2.5,
+        "mgmt": 2,
+        "price_safety": 3,
+        "exit_ease": 3.5,
+        "free_entry": 2.5,
+        "common_skills": 3.5,
+        "delivery": 2.5
+      }
+    },
+    {
+      "id": "cta",
+      "name": "CERN Tape Archive",
+      "kind": "open-source engine",
+      "url": "",
+      "facts": "Ledger archetype: Physics-scale tape engine. CERN is preparing CTA for LHC Run 4 with a PostgreSQL scheduler, gRPC administration and OpenTelemetry metrics, behind EOS or dCache disk buffers. The record shows an archive near one exabyte running at up to about 60 GB/s with tape verification, automated repack and public tags every few weeks, but no LTO-10 code yet, no file or S3 access of its own and a tape format that is not self-describing. A buyer gets free, proven large-scale tape software but must run the CERN stack around it without commercial support and must protect the catalogue, because file names do not live on tape. Formats: Own CTA/CASTOR AUL format, documented label by label.",
+      "scores": {
+        "hardware": 3.5,
+        "formats": 3,
+        "tiering": 3.5,
+        "integrity": 4.5,
+        "access": 2.5,
+        "scale": 4.5,
+        "security": 3,
+        "media": 4,
+        "cloud": 0,
+        "mgmt": 3.5,
+        "price_safety": 3,
+        "exit_ease": 2,
+        "free_entry": 5,
+        "common_skills": 1,
+        "delivery": 3.5
+      },
+      "onlyIf": {
+        "criterion": "scale",
+        "minWeight": 4
+      }
+    }
+  ]
+}

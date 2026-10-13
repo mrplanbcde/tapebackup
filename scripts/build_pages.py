@@ -566,6 +566,8 @@ def build_legacy(path, key, title, desc):
 <a href="/lto-tape-news">LTO tape news<span>What changed this month</span></a>
 <a href="/lto-tape-brand">LTO tape brands<span>Who really makes the tape</span></a>
 <a href="/tape-q-and-a">Tape Q&amp;A<span>Short answers to tape questions</span></a></div></section>"""
+    if path == "/best-tape-backup-software":
+        related += '<section class="section-card"><p class="eyebrow">Tools</p><h2>Get a shortlist for your own setup</h2><div class="link-grid"><a href="/backup-software-finder">Tape backup software finder<span>Four questions, one match</span></a><a href="/tape-archive-advisor">Tape archive advisor<span>AI shortlist of 14 archive products</span></a></div></section>'
     if re.search(r"[$€]|zł", body_sections) and path in ("/why-tape/lto-tape-drive", "/about", "/resources/cheap-lto-tapes", "/comparisons", "/why-tape"):
         related += '<section class="section-card"><p class="eyebrow">Current prices</p><h2>Check current LTO prices</h2><p>Prices on this page are rounded guidance. For seller listings checked in September 2026, see the <a href="/lto-tape-price-trend">LTO price tracker</a> and the <a href="/lto-tape-price-trend/history">price history</a>.</p></section>'
     crumbs = [("Home", "/")]
@@ -738,7 +740,7 @@ def build_finder():
 <p class="eyebrow">Tool</p><h1>Tape Backup Software: Find the Right One for LTO</h1>
 <p><strong>The best tape backup software depends on how you use tape: Veeam suits mostly virtual estates that keep tape as a second copy, Commvault suits large mixed estates, Nakivo suits smaller budgets, and LTFS is free for simple archives.</strong></p>
 <p>Hardware is half the job. Answer four questions to get a shortlist of backup software for your LTO drives or library, based on your environment, how you use tape, the size of your estate and your budget.</p></div>
-<aside class="hero-panel"><p class="panel-label">Want the detail?</p><p class="panel-copy">Read the <a href="/best-tape-backup-software">best tape backup software comparison</a>, the <a href="/resources/ltfs">LTFS guide</a> for the free route, or the <a href="/why-tape/lto-tape-drive">LTO drive buyer's guide</a>.</p></aside></div></section>
+<aside class="hero-panel"><p class="panel-label">Want the detail?</p><p class="panel-copy">Read the <a href="/best-tape-backup-software">best tape backup software comparison</a>, the <a href="/resources/ltfs">LTFS guide</a> for the free route, or the <a href="/why-tape/lto-tape-drive">LTO drive buyer's guide</a>.</p><p class="panel-copy">Choosing archive software rather than backup software? The <a href="/tape-archive-advisor">tape archive advisor</a> ranks 14 tape archive products for your data, drives and budget.</p></aside></div></section>
 <main class="page"><div class="container"><div class="section-stack">
 <section class="section-card"><h2>Find your tape backup software</h2>
 <form class="tool-form" id="finder">{fields}<button class="tool-submit" type="submit">Show my match</button></form>
