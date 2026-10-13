@@ -3,6 +3,11 @@
   "host": "tapebackup.org",
   "envPrefix": "TAPE_ADVISOR",
   "promptVersion": 1,
+  "limits": {
+    "perIp": 3,
+    "translatePerIp": 9,
+    "dailyCap": 400
+  },
   "brand": "TapeBackup.org",
   "langs": [
     "en",
@@ -264,7 +269,7 @@
         "how1": "You describe your archive: how much data, growth, drives and library, sites, budget, team and what the data is for.",
         "how2": "The advisor turns that into weighted needs and ranks 14 tape archive products with the Ledger scores (the numbers come from the Ledger, never from the AI). Then it designs a first setup around the best fit: topology, steps and pitfalls.",
         "how3": "Your browser draws the video as soon as the answer arrives. Download it or share the link.",
-        "note": "The answer is general guidance written by AI (Claude) on top of the Tape Archive Software Ledger 2026. It is not a design review. Test a restore before you buy. Each visitor can ask 10 new questions per day; the examples and shared links do not count.",
+        "note": "The answer is general guidance written by AI (Claude) on top of the Tape Archive Software Ledger 2026. It is not a design review. Test a restore before you buy. Each visitor can ask 3 new questions per day; the examples and shared links do not count.",
         "designing": "Weighing 14 tape archive products and drawing your setup…",
         "errTopic": "I only help you choose tape archive software. Describe your archive, for example: 300 TB of video, LTO-9 library, two sites, small team.",
         "errNoPlan": "Could not build an answer for that. Say how much data you keep, which LTO drives you have and what matters most."
@@ -278,7 +283,7 @@
         "how1": "Sie beschreiben Ihr Archiv: Datenmenge, Wachstum, Laufwerke und Library, Standorte, Budget, Team und Zweck der Daten.",
         "how2": "Der Advisor macht daraus gewichtete Anforderungen und reiht 14 Tape-Archivprodukte nach den Ledger-Bewertungen (die Zahlen stammen aus dem Ledger, nie von der KI). Dann entwirft er einen ersten Aufbau um den besten Treffer: Topologie, Schritte und Fallstricke.",
         "how3": "Ihr Browser zeichnet das Video, sobald die Antwort da ist. Laden Sie es herunter oder teilen Sie den Link.",
-        "note": "Die Antwort ist eine allgemeine Orientierung, von KI (Claude) auf Basis des Tape Archive Software Ledger 2026 geschrieben. Sie ersetzt kein Design-Review. Testen Sie eine Wiederherstellung vor dem Kauf. Jeder Besucher kann 10 neue Fragen pro Tag stellen; Beispiele und geteilte Links zählen nicht.",
+        "note": "Die Antwort ist eine allgemeine Orientierung, von KI (Claude) auf Basis des Tape Archive Software Ledger 2026 geschrieben. Sie ersetzt kein Design-Review. Testen Sie eine Wiederherstellung vor dem Kauf. Jeder Besucher kann 3 neue Fragen pro Tag stellen; Beispiele und geteilte Links zählen nicht.",
         "designing": "14 Tape-Archivprodukte werden gewichtet und Ihr Aufbau gezeichnet…",
         "errTopic": "Ich helfe nur bei der Wahl einer Tape-Archivsoftware. Beschreiben Sie Ihr Archiv, zum Beispiel: 300 TB Video, LTO-9-Library, zwei Standorte, kleines Team.",
         "errNoPlan": "Dafür konnte keine Antwort erstellt werden. Nennen Sie Datenmenge, LTO-Laufwerke und was Ihnen am wichtigsten ist."
@@ -292,7 +297,7 @@
         "how1": "Vous décrivez votre archive : volume, croissance, lecteurs et bibliothèque, sites, budget, équipe et usage des données.",
         "how2": "Le conseiller en tire des besoins pondérés et classe 14 produits d'archivage sur bande selon les notes du Ledger (les chiffres viennent du Ledger, jamais de l'IA). Puis il conçoit une première architecture autour du meilleur choix : topologie, étapes et pièges.",
         "how3": "Votre navigateur dessine la vidéo dès que la réponse arrive. Téléchargez-la ou partagez le lien.",
-        "note": "La réponse est un conseil général rédigé par une IA (Claude) à partir du Tape Archive Software Ledger 2026. Ce n'est pas une revue d'architecture. Testez une restauration avant d'acheter. Chaque visiteur peut poser 10 nouvelles questions par jour ; les exemples et les liens partagés ne comptent pas.",
+        "note": "La réponse est un conseil général rédigé par une IA (Claude) à partir du Tape Archive Software Ledger 2026. Ce n'est pas une revue d'architecture. Testez une restauration avant d'acheter. Chaque visiteur peut poser 3 nouvelles questions par jour ; les exemples et les liens partagés ne comptent pas.",
         "designing": "Pondération des 14 produits et dessin de votre architecture…",
         "errTopic": "Je vous aide uniquement à choisir un logiciel d'archivage sur bande. Décrivez votre archive, par exemple : 300 To de vidéo, bibliothèque LTO-9, deux sites, petite équipe.",
         "errNoPlan": "Impossible de construire une réponse. Indiquez le volume de données, vos lecteurs LTO et ce qui compte le plus."
@@ -306,7 +311,7 @@
         "how1": "Descrivi il tuo archivio: quantità di dati, crescita, unità e libreria, sedi, budget, team e uso dei dati.",
         "how2": "Il consulente ne ricava esigenze pesate e ordina 14 prodotti di archiviazione su nastro con i punteggi del Ledger (i numeri vengono dal Ledger, mai dall'IA). Poi progetta una prima architettura attorno alla scelta migliore: topologia, passi e insidie.",
         "how3": "Il browser disegna il video appena arriva la risposta. Scaricalo o condividi il link.",
-        "note": "La risposta è un'indicazione generale scritta da un'IA (Claude) sulla base del Tape Archive Software Ledger 2026. Non è una revisione di progetto. Prova un ripristino prima di acquistare. Ogni visitatore può fare 10 nuove domande al giorno; gli esempi e i link condivisi non contano.",
+        "note": "La risposta è un'indicazione generale scritta da un'IA (Claude) sulla base del Tape Archive Software Ledger 2026. Non è una revisione di progetto. Prova un ripristino prima di acquistare. Ogni visitatore può fare 3 nuove domande al giorno; gli esempi e i link condivisi non contano.",
         "designing": "Valutazione dei 14 prodotti e disegno della tua architettura…",
         "errTopic": "Aiuto solo a scegliere un software di archiviazione su nastro. Descrivi il tuo archivio, ad esempio: 300 TB di video, libreria LTO-9, due sedi, team piccolo.",
         "errNoPlan": "Non è stato possibile creare una risposta. Indica quanti dati conservi, quali unità LTO hai e cosa conta di più."
@@ -320,7 +325,7 @@
         "how1": "Describes tu archivo: volumen de datos, crecimiento, unidades y librería, sedes, presupuesto, equipo y uso de los datos.",
         "how2": "El asesor lo convierte en necesidades ponderadas y ordena 14 productos de archivo en cinta con las puntuaciones del Ledger (los números vienen del Ledger, nunca de la IA). Después diseña una primera arquitectura en torno a la mejor opción: topología, pasos y riesgos.",
         "how3": "Tu navegador dibuja el vídeo en cuanto llega la respuesta. Descárgalo o comparte el enlace.",
-        "note": "La respuesta es una orientación general escrita por IA (Claude) a partir del Tape Archive Software Ledger 2026. No es una revisión de diseño. Prueba una restauración antes de comprar. Cada visitante puede hacer 10 preguntas nuevas al día; los ejemplos y los enlaces compartidos no cuentan.",
+        "note": "La respuesta es una orientación general escrita por IA (Claude) a partir del Tape Archive Software Ledger 2026. No es una revisión de diseño. Prueba una restauración antes de comprar. Cada visitante puede hacer 3 preguntas nuevas al día; los ejemplos y los enlaces compartidos no cuentan.",
         "designing": "Ponderando 14 productos y dibujando tu arquitectura…",
         "errTopic": "Solo ayudo a elegir software de archivo en cinta. Describe tu archivo, por ejemplo: 300 TB de vídeo, librería LTO-9, dos sedes, equipo pequeño.",
         "errNoPlan": "No se pudo crear una respuesta. Indica cuántos datos guardas, qué unidades LTO tienes y qué es lo más importante."
@@ -334,7 +339,7 @@
         "how1": "U beschrijft uw archief: hoeveelheid data, groei, drives en library, locaties, budget, team en waarvoor de data dient.",
         "how2": "De adviseur maakt daar gewogen behoeften van en rangschikt 14 tape-archiefproducten met de Ledger-scores (de cijfers komen uit de Ledger, nooit van de AI). Daarna ontwerpt hij een eerste opzet rond de beste keuze: topologie, stappen en valkuilen.",
         "how3": "Uw browser tekent de video zodra het antwoord binnen is. Download hem of deel de link.",
-        "note": "Het antwoord is algemeen advies, geschreven door AI (Claude) op basis van de Tape Archive Software Ledger 2026. Het is geen ontwerpreview. Test een restore voordat u koopt. Elke bezoeker kan 10 nieuwe vragen per dag stellen; voorbeelden en gedeelde links tellen niet mee.",
+        "note": "Het antwoord is algemeen advies, geschreven door AI (Claude) op basis van de Tape Archive Software Ledger 2026. Het is geen ontwerpreview. Test een restore voordat u koopt. Elke bezoeker kan 3 nieuwe vragen per dag stellen; voorbeelden en gedeelde links tellen niet mee.",
         "designing": "14 tape-archiefproducten worden gewogen en uw opzet getekend…",
         "errTopic": "Ik help alleen bij het kiezen van tape-archiefsoftware. Beschrijf uw archief, bijvoorbeeld: 300 TB video, LTO-9-library, twee locaties, klein team.",
         "errNoPlan": "Daar kon geen antwoord voor worden gemaakt. Vermeld hoeveel data u bewaart, welke LTO-drives u hebt en wat het belangrijkst is."
@@ -348,7 +353,7 @@
         "how1": "Opisujesz archiwum: ilość danych, przyrost, napędy i bibliotekę, lokalizacje, budżet, zespół i przeznaczenie danych.",
         "how2": "Doradca zamienia to na ważone potrzeby i układa ranking 14 produktów według ocen z Ledgera (liczby pochodzą z Ledgera, nigdy od AI). Potem projektuje pierwszą architekturę wokół najlepszego wyboru: topologię, kroki i pułapki.",
         "how3": "Przeglądarka rysuje wideo, gdy tylko nadejdzie odpowiedź. Pobierz je lub udostępnij link.",
-        "note": "Odpowiedź to ogólna wskazówka napisana przez AI (Claude) na podstawie Tape Archive Software Ledger 2026. Nie zastępuje przeglądu projektu. Przed zakupem przetestuj odtwarzanie danych. Każdy odwiedzający może zadać 10 nowych pytań dziennie; przykłady i udostępnione linki się nie liczą.",
+        "note": "Odpowiedź to ogólna wskazówka napisana przez AI (Claude) na podstawie Tape Archive Software Ledger 2026. Nie zastępuje przeglądu projektu. Przed zakupem przetestuj odtwarzanie danych. Każdy odwiedzający może zadać 3 nowe pytania dziennie; przykłady i udostępnione linki się nie liczą.",
         "designing": "Ważenie 14 produktów i rysowanie architektury…",
         "errTopic": "Pomagam tylko w wyborze oprogramowania do archiwizacji na taśmach. Opisz archiwum, na przykład: 300 TB wideo, biblioteka LTO-9, dwie lokalizacje, mały zespół.",
         "errNoPlan": "Nie udało się przygotować odpowiedzi. Podaj, ile danych przechowujesz, jakie masz napędy LTO i co jest najważniejsze."
@@ -362,7 +367,7 @@
         "how1": "アーカイブの状況を入力します：データ量、増加量、ドライブとライブラリ、拠点、予算、チーム、データの用途。",
         "how2": "アドバイザーがそれを重み付きの要件に変換し、Ledger の評価で 14 製品を順位付けします（数値は Ledger のもので、AI が作ることはありません）。続いて最適な製品を中心に、構成、手順、注意点を設計します。",
         "how3": "回答が届くとすぐにブラウザが動画を描画します。ダウンロードやリンクの共有もできます。",
-        "note": "回答は Tape Archive Software Ledger 2026 をもとに AI（Claude）が書いた一般的な助言で、設計レビューではありません。購入前に復元テストを行ってください。新しい質問は 1 人 1 日 10 件までです。例と共有リンクは数えません。",
+        "note": "回答は Tape Archive Software Ledger 2026 をもとに AI（Claude）が書いた一般的な助言で、設計レビューではありません。購入前に復元テストを行ってください。新しい質問は 1 人 1 日 3 件までです。例と共有リンクは数えません。",
         "designing": "14 製品を比較して構成を描いています…",
         "errTopic": "テープアーカイブソフトの選定だけをお手伝いします。例：映像 300 TB、LTO-9 ライブラリ、2 拠点、少人数チーム のように入力してください。",
         "errNoPlan": "回答を作成できませんでした。データ量、LTO ドライブ、最も重視する点を入力してください。"
@@ -376,7 +381,7 @@
         "how1": "描述你的归档：数据量、年增长、磁带机和带库、站点、预算、团队以及数据用途。",
         "how2": "顾问把这些转换为带权重的需求，用 Ledger 评分给 14 款产品排名（数字来自 Ledger，绝不由 AI 编写），再围绕最合适的产品设计初步方案：拓扑、步骤和注意事项。",
         "how3": "答案一到，浏览器就开始绘制视频。可以下载或分享链接。",
-        "note": "答案是 AI（Claude）基于 Tape Archive Software Ledger 2026 写的一般性建议，不是设计评审。购买前请先做恢复测试。每位访客每天可以提 10 个新问题，示例和分享链接不计入。",
+        "note": "答案是 AI（Claude）基于 Tape Archive Software Ledger 2026 写的一般性建议，不是设计评审。购买前请先做恢复测试。每位访客每天可以提 3 个新问题，示例和分享链接不计入。",
         "designing": "正在比较 14 款产品并绘制你的方案…",
         "errTopic": "我只帮你选择磁带归档软件。请描述你的归档，例如：300 TB 视频、LTO-9 带库、两个站点、小团队。",
         "errNoPlan": "无法生成答案。请说明数据量、LTO 磁带机和最看重什么。"

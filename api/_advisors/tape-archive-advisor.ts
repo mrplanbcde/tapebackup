@@ -15,6 +15,11 @@ const config: AdvisorConfig = {
     "edition": "2026-10-04"
   },
   "brand": "TapeBackup.org",
+  "limits": {
+    "perIp": 3,
+    "translatePerIp": 9,
+    "dailyCap": 400
+  },
   "rules": [
     "A small site (under about 200 TB, one or two drives, one admin or a small budget) makes free_entry, common_skills and price_safety important (weight 4 or 5). Scale and tiering only matter when the visitor mentions petabytes, many drives or HSM.",
     "Anything kept for ten years or longer (long term archive, research data, medical images, compliance records) makes formats and integrity important, and exit_ease too because the archive will outlive the product. Compliance, legal hold, WORM or audits make security and integrity important.",

@@ -28,6 +28,8 @@ export type AdvisorConfig = {
   scope: string; // what counts as on topic
   offTopicMsg: string;
   source: { name: string; url: string; edition: string };
+  /** Per-IP and global limits (defaults 3 new answers and 9 translations per IP per day, 400 answers a day overall); env vars override. */
+  limits?: { perIp?: number; translatePerIp?: number; dailyCap?: number };
   /** Who the expert works for in the prompt (default "Mr.PlanB"). */
   brand?: string;
   rules: string[]; // domain rules for choosing weights and exclusions
@@ -45,9 +47,10 @@ const cut = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1).trimE
 export function makeAdvisor(cfg: AdvisorConfig) {
   const env = (k: string, d: string) => process.env[`${cfg.envPrefix}_${k}`] || d;
   const MODEL = env("MODEL", process.env.BACKUP_ADVISOR_MODEL || "claude-haiku-5-5");
-  const LIMIT = Number(env("LIMIT_PER_IP", "10"));
-  const DAILY_CAP = Number(env("DAILY_CAP", "400"));
-  const TRANSLATE_LIMIT = Number(env("TRANSLATE_LIMIT", "40"));
+  // Da Li's rule for every Claude-backed tool: 3 new answers per IP per day (env or config can change it)
+  const LIMIT = Number(env("LIMIT_PER_IP", String(cfg.limits?.perIp ?? 3)));
+  const DAILY_CAP = Number(env("DAILY_CAP", String(cfg.limits?.dailyCap ?? 400)));
+  const TRANSLATE_LIMIT = Number(env("TRANSLATE_LIMIT", String(cfg.limits?.translatePerIp ?? 9)));
   const CACHE_S = 30 * 86400;
   const P = cfg.slug.replace(/[^a-z0-9]/g, "").slice(0, 12);
   const crit = cfg.criteria.map((c) => c.id) as [string, ...string[]];
