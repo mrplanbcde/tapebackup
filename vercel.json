@@ -1,7 +1,4 @@
 {
-  "functions": {
-    "api/tape-archive-advisor.ts": { "maxDuration": 30 }
-  },
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [

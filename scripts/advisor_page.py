@@ -1,10 +1,11 @@
-"""AI advisor pages ("which X is best for me") rendered in the site's own header and footer.
+"""Advisor pages ("which X is best for me") rendered in the site's own header and footer.
 
-The advisor itself (API route, video engine, examples) is made by the advisor-builder skill:
+The advisor (video engine, rules file, examples) is made by the advisor-builder skill:
     node ~/.claude/skills/advisor-builder/scripts/scaffold.mjs advisor.json --repo .
 which writes data/advisors/<slug>.json (config) and data/advisors/<slug>.page.json (page data).
-This module turns each page.json into /<slug>/index.html. English only: the page has its
-own language switch (the engine translates the form and the video in the browser).
+The Tape Archive Advisor runs in local mode: /<slug>/local.js answers from the form and keywords
+in the browser, with no AI or API call. This module turns each page.json into /<slug>/index.html.
+English only: the page has its own language switch (the engine redraws everything in the browser).
 """
 
 import glob

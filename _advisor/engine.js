@@ -633,7 +633,10 @@
     }
     box.innerHTML = h;
   }
-  function clearForm() { formVals = {}; renderForm(); }
+  function setForm(v) { formVals = v || {}; var box = $("scenario"); if (box) box.innerHTML = ""; renderForm(); }
+  function clearForm() { setForm({}); }
+  function packForm(f) { return Object.keys(f || {}).filter(function (k) { return f[k] !== "" && f[k] !== undefined; }).map(function (k) { return k + "=" + f[k]; }).join(";"); }
+  function unpackForm(s) { var f = {}; String(s || "").split(";").forEach(function (p) { var i = p.indexOf("="); if (i > 0) f[p.slice(0, i)] = p.slice(i + 1); }); return f; }
   function compose() {
     var free = $("q").value.trim();
     if (!F) return free;
@@ -693,7 +696,7 @@
     shareLink = link || ""; details(plan);
     if (link && history.replaceState) history.replaceState(null, "", link.replace(location.origin, ""));
   }
-  function linkFor() { var base = location.origin + location.pathname + "?"; return CUR.id ? base + "example=" + CUR.id + "&lang=" + UI : base + "q=" + encodeURIComponent(CUR.q) + "&lang=" + UI; }
+  function linkFor() { var base = location.origin + location.pathname + "?"; if (LOCAL && !CUR.id) return base + "f=" + encodeURIComponent(packForm(CUR.form)) + (CUR.q ? "&q=" + encodeURIComponent(CUR.q) : "") + "&lang=" + UI; return CUR.id ? base + "example=" + CUR.id + "&lang=" + UI : base + "q=" + encodeURIComponent(CUR.q) + "&lang=" + UI; }
   function translateAndShow(source, store) {
     if (store[UI]) { show(store[UI], linkFor()); return; }
     var want = UI; S = null; idleMsg = T("translating"); idleSpin = true; $("plan").style.display = "none";
@@ -705,6 +708,7 @@
   }
   function playCurrent() {
     if (!CUR) return;
+    if (LOCAL) { var ex0 = CUR.id && EX[CUR.id], lp = LOCAL.answer(ex0 ? { form: ex0.form || {}, q: ex0.q[UI] || ex0.q.en || "" } : { form: CUR.form, q: CUR.q }, UI); if (lp && !lp.error) show(lp, linkFor()); return; }
     if (CUR.id) { var plans = EX[CUR.id].plans; if (plans[UI]) { show(plans[UI], linkFor()); return; } translateAndShow(plans.en || plans[Object.keys(plans)[0]], plans); return; }
     if (CUR.source.lang && CUR.source.lang.slice(0, 2) === UI) { show(CUR.source, linkFor()); return; }
     translateAndShow(CUR.source, TR);
@@ -716,11 +720,17 @@
     Object.keys(EX).forEach(function (id) {
       var ex = EX[id], b = document.createElement("button"); b.type = "button"; b.className = "chip";
       b.textContent = ex.label[UI] || ex.label.en; b.title = ex.q[UI] || ex.q.en || "";
-      b.onclick = function () { clearForm(); $("q").value = ex.q[UI] || ex.q.en || ""; setStatus(""); CUR = { id: id }; playCurrent(); document.querySelector(".stage").scrollIntoView({ behavior: "smooth", block: "start" }); };
+      b.onclick = function () { setForm(ex.form ? JSON.parse(JSON.stringify(ex.form)) : {}); $("q").value = ex.q[UI] || ex.q.en || ""; setStatus(""); CUR = { id: id }; playCurrent(); document.querySelector(".stage").scrollIntoView({ behavior: "smooth", block: "start" }); };
       chips.appendChild(b);
     });
   }
-  var exReady = fetch(location.pathname.replace(/\/$/, "") + "/examples.json").then(function (r) { return r.json(); }).then(function (d) { EX = d || {}; renderChips(); }).catch(function () {});
+  // Local mode (A.local = URL of an advisor rules file that sets window.ADVISOR_LOCAL = {answer(input, lang), examples}):
+  // the answer is computed in the browser from the form and keywords, so there is no API call, cost or daily limit.
+  var LOCAL = null;
+  var exReady = A.local ? new Promise(function (res) {
+      var sc = document.createElement("script"); sc.src = A.local; sc.onload = sc.onerror = function () { res(); }; document.head.appendChild(sc); offs.push(function () { sc.remove(); });
+    }).then(function () { LOCAL = window.ADVISOR_LOCAL || null; if (LOCAL) { (LOCAL.examples || []).forEach(function (ex) { EX[ex.id] = { label: ex.label, q: ex.q, form: ex.form || {} }; }); renderChips(); } })
+    : fetch(location.pathname.replace(/\/$/, "") + "/examples.json").then(function (r) { return r.json(); }).then(function (d) { EX = d || {}; renderChips(); }).catch(function () {});
   applyLang(UI, true);
 
   var busy = false;
@@ -744,12 +754,20 @@
       .catch(function (e) { idleSpin = false; idleMsg = e && e.message && !/fetch|network/i.test(e.message) ? e.message : T("errFail"); setStatus(idleMsg, true); })
       .then(function () { busy = false; $("go").disabled = false; });
   }
-  $("f").onsubmit = function (e) { e.preventDefault(); var q = compose(); if (q.length < 3) { setStatus(T("errShort"), true); return; } ask(q); };
+  function runLocal() {
+    readForm(); var form = JSON.parse(JSON.stringify(formVals)), q = $("q").value.trim();
+    var lp = LOCAL.answer({ form: form, q: q }, UI);
+    if (!lp || lp.error) { setStatus(T(lp && lp.error === "topic" ? "errTopic" : "errShort"), true); return; }
+    setStatus(""); CUR = { form: form, q: q }; show(lp, linkFor());
+    if (window.innerWidth < 720) document.querySelector(".stage").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  $("f").onsubmit = function (e) { e.preventDefault(); if (LOCAL) { runLocal(); return; } var q = compose(); if (q.length < 3) { setStatus(T("errShort"), true); return; } ask(q); };
   $("q").addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("f").onsubmit(e); } });
   var params = new URLSearchParams(location.search);
   exReady.then(function () {
     var id = params.get("example"), q = params.get("q");
-    if (id && EX[id]) { $("q").value = EX[id].q[UI] || EX[id].q.en || ""; CUR = { id: id }; playCurrent(); }
+    if (LOCAL && !(id && EX[id]) && (params.get("f") || q)) { setForm(unpackForm(params.get("f"))); $("q").value = q || ""; runLocal(); return; }
+    if (id && EX[id]) { if (EX[id].form) setForm(JSON.parse(JSON.stringify(EX[id].form))); $("q").value = EX[id].q[UI] || EX[id].q.en || ""; CUR = { id: id }; playCurrent(); }
     else if (q) { $("q").value = q; ask(q); }
   });
 

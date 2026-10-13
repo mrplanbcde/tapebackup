@@ -567,7 +567,7 @@ def build_legacy(path, key, title, desc):
 <a href="/lto-tape-brand">LTO tape brands<span>Who really makes the tape</span></a>
 <a href="/tape-q-and-a">Tape Q&amp;A<span>Short answers to tape questions</span></a></div></section>"""
     if path == "/best-tape-backup-software":
-        related += '<section class="section-card"><p class="eyebrow">Tools</p><h2>Get a shortlist for your own setup</h2><div class="link-grid"><a href="/backup-software-finder">Tape backup software finder<span>Four questions, one match</span></a><a href="/tape-archive-advisor">Tape archive advisor<span>AI shortlist of 14 archive products</span></a></div></section>'
+        related += '<section class="section-card"><p class="eyebrow">Tools</p><h2>Get a shortlist for your own setup</h2><div class="link-grid"><a href="/backup-software-finder">Tape backup software finder<span>Four questions, one match</span></a><a href="/tape-archive-advisor">Tape archive advisor<span>Ranked shortlist of 14 archive products</span></a></div></section>'
     if re.search(r"[$€]|zł", body_sections) and path in ("/why-tape/lto-tape-drive", "/about", "/resources/cheap-lto-tapes", "/comparisons", "/why-tape"):
         related += '<section class="section-card"><p class="eyebrow">Current prices</p><h2>Check current LTO prices</h2><p>Prices on this page are rounded guidance. For seller listings checked in September 2026, see the <a href="/lto-tape-price-trend">LTO price tracker</a> and the <a href="/lto-tape-price-trend/history">price history</a>.</p></section>'
     crumbs = [("Home", "/")]

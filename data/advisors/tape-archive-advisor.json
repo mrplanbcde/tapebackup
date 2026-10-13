@@ -3,11 +3,6 @@
   "host": "tapebackup.org",
   "envPrefix": "TAPE_ADVISOR",
   "promptVersion": 1,
-  "limits": {
-    "perIp": 3,
-    "translatePerIp": 9,
-    "dailyCap": 400
-  },
   "brand": "TapeBackup.org",
   "langs": [
     "en",
@@ -144,7 +139,7 @@
   },
   "page": {
     "render": "none",
-    "title": "Which Tape Archive Software Is Best? Free AI Advisor",
+    "title": "Which Tape Archive Software Is Best? Free Advisor",
     "description": "Describe your LTO archive and get a ranked shortlist of 14 tape archive products, a suggested setup and step by step plan in a short video, from Ledger scores.",
     "name": {
       "en": "Tape Archive Advisor",
@@ -157,7 +152,7 @@
       "ja": "テープアーカイブ・アドバイザー",
       "zh": "磁带归档顾问"
     },
-    "eyebrow": "AI Tape Archive Advisor",
+    "eyebrow": "Tape Archive Advisor",
     "publisher": "TapeBackup.org",
     "videoAccent": "#a78bfa",
     "videoAccent2": "#38bdf8",
@@ -255,136 +250,145 @@
       },
       {
         "q": "Where do the scores come from, and is the advisor vendor neutral?",
-        "a": "From the Tape Archive Software Ledger 2026, which scores tape archive products on ten capability areas, vendor credibility, buyer risk and lock-in from public records only. TapeBackup.org is not paid by any vendor on the list, and the ranking is computed from those scores and the weights read from your message. The AI never writes a score."
+        "a": "From the Tape Archive Software Ledger 2026, which scores tape archive products on ten capability areas, vendor credibility, buyer risk and lock-in from public records only. TapeBackup.org is not paid by any vendor on the list. The ranking is the weighted average of those scores, with weights set by fixed rules from your answers; no AI model writes the answer."
       }
     ],
     "faqTitle": "Questions",
     "i18n": {
       "en": {
         "h1": "Which tape archive software is best for me?",
-        "lead": "Tell us how much data you keep, which LTO drives you have and what the archive is for, in any language. You get a 30 second video with a ranked shortlist of 14 tape archive products, a suggested setup, the steps to get there and what to watch out for. Every score comes from the Tape Archive Software Ledger 2026.",
-        "ph": "Anything else? e.g. video post house, LTFS tapes for clients, Mac editors, one admin",
+        "lead": "Fill in what you know about your archive: data, growth, LTO drives, sites, budget and team. You get a 30 second video with a ranked shortlist of 14 tape archive products, a suggested setup, the steps to get there and what to watch out for. Every score comes from the Tape Archive Software Ledger 2026.",
+        "ph": "Anything else? e.g. LTFS tapes for clients, WORM, S3 access, cloud copy, offsite vault",
         "go": "Find my tape archive software",
         "hint": "Fill in what you know and leave the rest empty. Works in English, Deutsch, Français, Italiano, Español, Nederlands, Polski, 日本語 and 中文.",
         "how1": "You describe your archive: how much data, growth, drives and library, sites, budget, team and what the data is for.",
-        "how2": "The advisor turns that into weighted needs and ranks 14 tape archive products with the Ledger scores (the numbers come from the Ledger, never from the AI). Then it designs a first setup around the best fit: topology, steps and pitfalls.",
-        "how3": "Your browser draws the video as soon as the answer arrives. Download it or share the link.",
-        "note": "The answer is general guidance written by AI (Claude) on top of the Tape Archive Software Ledger 2026. It is not a design review. Test a restore before you buy. Each visitor can ask 3 new questions per day; the examples and shared links do not count.",
+        "how2": "Fixed rules turn your choices and keywords (LTFS, WORM, S3, cloud, offsite and more) into weighted needs, then rank 14 products with the Ledger scores. Sizing, setup and steps follow from your numbers.",
+        "how3": "Everything runs in your browser, so the video starts at once. Download it or share the link.",
+        "note": "The answer comes from fixed rules on top of the Tape Archive Software Ledger 2026, not from an AI model, so the same input always gives the same result. It is general guidance, not a design review. Test a restore before you buy.",
         "designing": "Weighing 14 tape archive products and drawing your setup…",
-        "errTopic": "I only help you choose tape archive software. Describe your archive, for example: 300 TB of video, LTO-9 library, two sites, small team.",
-        "errNoPlan": "Could not build an answer for that. Say how much data you keep, which LTO drives you have and what matters most."
+        "errTopic": "Describe your tape archive, for example: 300 TB of video, LTO-9 library, two sites, small team.",
+        "errNoPlan": "Could not build an answer for that. Say how much data you keep, which LTO drives you have and what matters most.",
+        "errShort": "Fill in at least one field or describe your archive."
       },
       "de": {
         "h1": "Welche Tape-Archivsoftware passt zu mir?",
-        "lead": "Beschreiben Sie in einer beliebigen Sprache, wie viele Daten Sie archivieren, welche LTO-Laufwerke Sie haben und wofür das Archiv dient. Sie erhalten ein 30-Sekunden-Video mit einer Rangliste von 14 Tape-Archivprodukten, einem Vorschlag für den Aufbau, den Schritten dorthin und den Stolperstellen. Jede Bewertung stammt aus dem Tape Archive Software Ledger 2026.",
-        "ph": "Noch etwas? z. B. Postproduktion, LTFS-Bänder für Kunden, Mac-Schnittplätze, ein Admin",
+        "lead": "Geben Sie an, was Sie über Ihr Archiv wissen: Datenmenge, Wachstum, LTO-Laufwerke, Standorte, Budget und Team. Sie erhalten ein 30-Sekunden-Video mit einer Rangliste von 14 Tape-Archivprodukten, einem Vorschlag für den Aufbau, den Schritten dorthin und den Stolperstellen. Jede Bewertung stammt aus dem Tape Archive Software Ledger 2026.",
+        "ph": "Noch etwas? z. B. LTFS-Bänder für Kunden, WORM, S3-Zugriff, Cloud-Kopie, externes Lager",
         "go": "Meine Archivsoftware finden",
         "hint": "Füllen Sie aus, was Sie wissen, der Rest darf leer bleiben. Funktioniert auf Deutsch, Englisch und sieben weiteren Sprachen.",
         "how1": "Sie beschreiben Ihr Archiv: Datenmenge, Wachstum, Laufwerke und Library, Standorte, Budget, Team und Zweck der Daten.",
-        "how2": "Der Advisor macht daraus gewichtete Anforderungen und reiht 14 Tape-Archivprodukte nach den Ledger-Bewertungen (die Zahlen stammen aus dem Ledger, nie von der KI). Dann entwirft er einen ersten Aufbau um den besten Treffer: Topologie, Schritte und Fallstricke.",
-        "how3": "Ihr Browser zeichnet das Video, sobald die Antwort da ist. Laden Sie es herunter oder teilen Sie den Link.",
-        "note": "Die Antwort ist eine allgemeine Orientierung, von KI (Claude) auf Basis des Tape Archive Software Ledger 2026 geschrieben. Sie ersetzt kein Design-Review. Testen Sie eine Wiederherstellung vor dem Kauf. Jeder Besucher kann 3 neue Fragen pro Tag stellen; Beispiele und geteilte Links zählen nicht.",
+        "how2": "Feste Regeln machen aus Ihren Angaben und Stichworten (LTFS, WORM, S3, Cloud, Auslagerung und mehr) gewichtete Anforderungen und reihen 14 Produkte nach den Ledger-Bewertungen. Sizing, Aufbau und Schritte folgen aus Ihren Zahlen.",
+        "how3": "Alles läuft in Ihrem Browser, das Video startet sofort. Laden Sie es herunter oder teilen Sie den Link.",
+        "note": "Die Antwort entsteht aus festen Regeln auf Basis des Tape Archive Software Ledger 2026, nicht durch ein KI-Modell. Gleiche Angaben ergeben immer dasselbe Ergebnis. Sie ist eine allgemeine Orientierung und ersetzt kein Design-Review. Testen Sie eine Wiederherstellung vor dem Kauf.",
         "designing": "14 Tape-Archivprodukte werden gewichtet und Ihr Aufbau gezeichnet…",
-        "errTopic": "Ich helfe nur bei der Wahl einer Tape-Archivsoftware. Beschreiben Sie Ihr Archiv, zum Beispiel: 300 TB Video, LTO-9-Library, zwei Standorte, kleines Team.",
-        "errNoPlan": "Dafür konnte keine Antwort erstellt werden. Nennen Sie Datenmenge, LTO-Laufwerke und was Ihnen am wichtigsten ist."
+        "errTopic": "Beschreiben Sie Ihr Bandarchiv, zum Beispiel: 300 TB Video, LTO-9-Library, zwei Standorte, kleines Team.",
+        "errNoPlan": "Dafür konnte keine Antwort erstellt werden. Nennen Sie Datenmenge, LTO-Laufwerke und was Ihnen am wichtigsten ist.",
+        "errShort": "Füllen Sie mindestens ein Feld aus oder beschreiben Sie Ihr Archiv."
       },
       "fr": {
         "h1": "Quel logiciel d'archivage sur bande me convient ?",
-        "lead": "Dites-nous, dans n'importe quelle langue, combien de données vous gardez, quels lecteurs LTO vous avez et à quoi sert l'archive. Vous obtenez une vidéo de 30 secondes avec un classement de 14 produits d'archivage sur bande, une architecture proposée, les étapes pour y arriver et les points de vigilance. Chaque note vient du Tape Archive Software Ledger 2026.",
-        "ph": "Autre chose ? ex. postproduction vidéo, bandes LTFS pour les clients, monteurs sur Mac, un seul admin",
+        "lead": "Indiquez ce que vous savez de votre archive : volume, croissance, lecteurs LTO, sites, budget et équipe. Vous obtenez une vidéo de 30 secondes avec un classement de 14 produits d'archivage sur bande, une architecture proposée, les étapes pour y arriver et les points de vigilance. Chaque note vient du Tape Archive Software Ledger 2026.",
+        "ph": "Autre chose ? ex. bandes LTFS pour les clients, WORM, accès S3, copie cloud, coffre hors site",
         "go": "Trouver mon logiciel d'archivage",
         "hint": "Remplissez ce que vous savez et laissez le reste vide. Fonctionne en français, en anglais et dans sept autres langues.",
         "how1": "Vous décrivez votre archive : volume, croissance, lecteurs et bibliothèque, sites, budget, équipe et usage des données.",
-        "how2": "Le conseiller en tire des besoins pondérés et classe 14 produits d'archivage sur bande selon les notes du Ledger (les chiffres viennent du Ledger, jamais de l'IA). Puis il conçoit une première architecture autour du meilleur choix : topologie, étapes et pièges.",
-        "how3": "Votre navigateur dessine la vidéo dès que la réponse arrive. Téléchargez-la ou partagez le lien.",
-        "note": "La réponse est un conseil général rédigé par une IA (Claude) à partir du Tape Archive Software Ledger 2026. Ce n'est pas une revue d'architecture. Testez une restauration avant d'acheter. Chaque visiteur peut poser 3 nouvelles questions par jour ; les exemples et les liens partagés ne comptent pas.",
+        "how2": "Des règles fixes transforment vos choix et mots clés (LTFS, WORM, S3, cloud, hors site, etc.) en besoins pondérés, puis classent 14 produits selon les notes du Ledger. Dimensionnement, architecture et étapes découlent de vos chiffres.",
+        "how3": "Tout se passe dans votre navigateur, la vidéo démarre aussitôt. Téléchargez-la ou partagez le lien.",
+        "note": "La réponse vient de règles fixes appliquées au Tape Archive Software Ledger 2026, pas d'un modèle d'IA : les mêmes données donnent toujours le même résultat. C'est un conseil général, pas une revue d'architecture. Testez une restauration avant d'acheter.",
         "designing": "Pondération des 14 produits et dessin de votre architecture…",
-        "errTopic": "Je vous aide uniquement à choisir un logiciel d'archivage sur bande. Décrivez votre archive, par exemple : 300 To de vidéo, bibliothèque LTO-9, deux sites, petite équipe.",
-        "errNoPlan": "Impossible de construire une réponse. Indiquez le volume de données, vos lecteurs LTO et ce qui compte le plus."
+        "errTopic": "Décrivez votre archive sur bande, par exemple : 300 To de vidéo, bibliothèque LTO-9, deux sites, petite équipe.",
+        "errNoPlan": "Impossible de construire une réponse. Indiquez le volume de données, vos lecteurs LTO et ce qui compte le plus.",
+        "errShort": "Remplissez au moins un champ ou décrivez votre archive."
       },
       "it": {
         "h1": "Quale software di archiviazione su nastro fa per me?",
-        "lead": "Raccontaci in qualsiasi lingua quanti dati conservi, quali unità LTO hai e a cosa serve l'archivio. Ricevi un video di 30 secondi con una classifica di 14 prodotti di archiviazione su nastro, un'architettura suggerita, i passi per arrivarci e cosa tenere d'occhio. Ogni punteggio viene dal Tape Archive Software Ledger 2026.",
-        "ph": "Altro? es. post produzione video, nastri LTFS per i clienti, montatori su Mac, un solo admin",
+        "lead": "Inserisci ciò che sai del tuo archivio: dati, crescita, unità LTO, sedi, budget e team. Ricevi un video di 30 secondi con una classifica di 14 prodotti di archiviazione su nastro, un'architettura suggerita, i passi per arrivarci e cosa tenere d'occhio. Ogni punteggio viene dal Tape Archive Software Ledger 2026.",
+        "ph": "Altro? es. nastri LTFS per i clienti, WORM, accesso S3, copia in cloud, caveau esterno",
         "go": "Trova il mio software di archiviazione",
         "hint": "Compila ciò che sai e lascia vuoto il resto. Funziona in italiano, inglese e altre sette lingue.",
         "how1": "Descrivi il tuo archivio: quantità di dati, crescita, unità e libreria, sedi, budget, team e uso dei dati.",
-        "how2": "Il consulente ne ricava esigenze pesate e ordina 14 prodotti di archiviazione su nastro con i punteggi del Ledger (i numeri vengono dal Ledger, mai dall'IA). Poi progetta una prima architettura attorno alla scelta migliore: topologia, passi e insidie.",
-        "how3": "Il browser disegna il video appena arriva la risposta. Scaricalo o condividi il link.",
-        "note": "La risposta è un'indicazione generale scritta da un'IA (Claude) sulla base del Tape Archive Software Ledger 2026. Non è una revisione di progetto. Prova un ripristino prima di acquistare. Ogni visitatore può fare 3 nuove domande al giorno; gli esempi e i link condivisi non contano.",
+        "how2": "Regole fisse trasformano le tue scelte e parole chiave (LTFS, WORM, S3, cloud, fuori sede e altro) in esigenze pesate e ordinano 14 prodotti con i punteggi del Ledger. Dimensionamento, architettura e passi seguono dai tuoi numeri.",
+        "how3": "Tutto avviene nel browser, il video parte subito. Scaricalo o condividi il link.",
+        "note": "La risposta nasce da regole fisse sul Tape Archive Software Ledger 2026, non da un modello di IA: gli stessi dati danno sempre lo stesso risultato. È un'indicazione generale, non una revisione di progetto. Prova un ripristino prima di acquistare.",
         "designing": "Valutazione dei 14 prodotti e disegno della tua architettura…",
-        "errTopic": "Aiuto solo a scegliere un software di archiviazione su nastro. Descrivi il tuo archivio, ad esempio: 300 TB di video, libreria LTO-9, due sedi, team piccolo.",
-        "errNoPlan": "Non è stato possibile creare una risposta. Indica quanti dati conservi, quali unità LTO hai e cosa conta di più."
+        "errTopic": "Descrivi il tuo archivio su nastro, ad esempio: 300 TB di video, libreria LTO-9, due sedi, team piccolo.",
+        "errNoPlan": "Non è stato possibile creare una risposta. Indica quanti dati conservi, quali unità LTO hai e cosa conta di più.",
+        "errShort": "Compila almeno un campo o descrivi il tuo archivio."
       },
       "es": {
         "h1": "¿Qué software de archivo en cinta me conviene?",
-        "lead": "Cuéntanos en cualquier idioma cuántos datos guardas, qué unidades LTO tienes y para qué sirve el archivo. Recibes un vídeo de 30 segundos con una clasificación de 14 productos de archivo en cinta, una arquitectura sugerida, los pasos para llegar y en qué fijarte. Cada puntuación procede del Tape Archive Software Ledger 2026.",
-        "ph": "¿Algo más? p. ej. posproducción de vídeo, cintas LTFS para clientes, editores con Mac, un solo administrador",
+        "lead": "Indica lo que sepas de tu archivo: datos, crecimiento, unidades LTO, sedes, presupuesto y equipo. Recibes un vídeo de 30 segundos con una clasificación de 14 productos de archivo en cinta, una arquitectura sugerida, los pasos para llegar y en qué fijarte. Cada puntuación procede del Tape Archive Software Ledger 2026.",
+        "ph": "¿Algo más? p. ej. cintas LTFS para clientes, WORM, acceso S3, copia en la nube, custodia externa",
         "go": "Encontrar mi software de archivo",
         "hint": "Rellena lo que sepas y deja el resto vacío. Funciona en español, inglés y otros siete idiomas.",
         "how1": "Describes tu archivo: volumen de datos, crecimiento, unidades y librería, sedes, presupuesto, equipo y uso de los datos.",
-        "how2": "El asesor lo convierte en necesidades ponderadas y ordena 14 productos de archivo en cinta con las puntuaciones del Ledger (los números vienen del Ledger, nunca de la IA). Después diseña una primera arquitectura en torno a la mejor opción: topología, pasos y riesgos.",
-        "how3": "Tu navegador dibuja el vídeo en cuanto llega la respuesta. Descárgalo o comparte el enlace.",
-        "note": "La respuesta es una orientación general escrita por IA (Claude) a partir del Tape Archive Software Ledger 2026. No es una revisión de diseño. Prueba una restauración antes de comprar. Cada visitante puede hacer 3 preguntas nuevas al día; los ejemplos y los enlaces compartidos no cuentan.",
+        "how2": "Reglas fijas convierten tus elecciones y palabras clave (LTFS, WORM, S3, nube, fuera de la sede y más) en necesidades ponderadas y ordenan 14 productos con las puntuaciones del Ledger. El dimensionamiento, la arquitectura y los pasos salen de tus cifras.",
+        "how3": "Todo funciona en tu navegador, así que el vídeo empieza al instante. Descárgalo o comparte el enlace.",
+        "note": "La respuesta sale de reglas fijas sobre el Tape Archive Software Ledger 2026, no de un modelo de IA, así que los mismos datos dan siempre el mismo resultado. Es una orientación general, no una revisión de diseño. Prueba una restauración antes de comprar.",
         "designing": "Ponderando 14 productos y dibujando tu arquitectura…",
-        "errTopic": "Solo ayudo a elegir software de archivo en cinta. Describe tu archivo, por ejemplo: 300 TB de vídeo, librería LTO-9, dos sedes, equipo pequeño.",
-        "errNoPlan": "No se pudo crear una respuesta. Indica cuántos datos guardas, qué unidades LTO tienes y qué es lo más importante."
+        "errTopic": "Describe tu archivo en cinta, por ejemplo: 300 TB de vídeo, librería LTO-9, dos sedes, equipo pequeño.",
+        "errNoPlan": "No se pudo crear una respuesta. Indica cuántos datos guardas, qué unidades LTO tienes y qué es lo más importante.",
+        "errShort": "Rellena al menos un campo o describe tu archivo."
       },
       "nl": {
         "h1": "Welke tape-archiefsoftware past bij mij?",
-        "lead": "Vertel ons in elke taal hoeveel data u bewaart, welke LTO-drives u hebt en waarvoor het archief dient. U krijgt een video van 30 seconden met een ranglijst van 14 tape-archiefproducten, een voorgestelde opzet, de stappen ernaartoe en waar u op moet letten. Elke score komt uit de Tape Archive Software Ledger 2026.",
-        "ph": "Nog iets? bv. videopostproductie, LTFS-tapes voor klanten, editors op Mac, één beheerder",
+        "lead": "Vul in wat u over uw archief weet: data, groei, LTO-drives, locaties, budget en team. U krijgt een video van 30 seconden met een ranglijst van 14 tape-archiefproducten, een voorgestelde opzet, de stappen ernaartoe en waar u op moet letten. Elke score komt uit de Tape Archive Software Ledger 2026.",
+        "ph": "Nog iets? bv. LTFS-tapes voor klanten, WORM, S3-toegang, cloudkopie, externe kluis",
         "go": "Vind mijn archiefsoftware",
         "hint": "Vul in wat u weet en laat de rest leeg. Werkt in het Nederlands, Engels en zeven andere talen.",
         "how1": "U beschrijft uw archief: hoeveelheid data, groei, drives en library, locaties, budget, team en waarvoor de data dient.",
-        "how2": "De adviseur maakt daar gewogen behoeften van en rangschikt 14 tape-archiefproducten met de Ledger-scores (de cijfers komen uit de Ledger, nooit van de AI). Daarna ontwerpt hij een eerste opzet rond de beste keuze: topologie, stappen en valkuilen.",
-        "how3": "Uw browser tekent de video zodra het antwoord binnen is. Download hem of deel de link.",
-        "note": "Het antwoord is algemeen advies, geschreven door AI (Claude) op basis van de Tape Archive Software Ledger 2026. Het is geen ontwerpreview. Test een restore voordat u koopt. Elke bezoeker kan 3 nieuwe vragen per dag stellen; voorbeelden en gedeelde links tellen niet mee.",
+        "how2": "Vaste regels maken van uw keuzes en trefwoorden (LTFS, WORM, S3, cloud, extern en meer) gewogen behoeften en rangschikken 14 producten met de Ledger-scores. Sizing, opzet en stappen volgen uit uw cijfers.",
+        "how3": "Alles draait in uw browser, dus de video start meteen. Download hem of deel de link.",
+        "note": "Het antwoord komt uit vaste regels op basis van de Tape Archive Software Ledger 2026, niet uit een AI-model, dus dezelfde invoer geeft altijd hetzelfde resultaat. Het is algemeen advies, geen ontwerpreview. Test een restore voordat u koopt.",
         "designing": "14 tape-archiefproducten worden gewogen en uw opzet getekend…",
-        "errTopic": "Ik help alleen bij het kiezen van tape-archiefsoftware. Beschrijf uw archief, bijvoorbeeld: 300 TB video, LTO-9-library, twee locaties, klein team.",
-        "errNoPlan": "Daar kon geen antwoord voor worden gemaakt. Vermeld hoeveel data u bewaart, welke LTO-drives u hebt en wat het belangrijkst is."
+        "errTopic": "Beschrijf uw tape-archief, bijvoorbeeld: 300 TB video, LTO-9-library, twee locaties, klein team.",
+        "errNoPlan": "Daar kon geen antwoord voor worden gemaakt. Vermeld hoeveel data u bewaart, welke LTO-drives u hebt en wat het belangrijkst is.",
+        "errShort": "Vul minstens één veld in of beschrijf uw archief."
       },
       "pl": {
         "h1": "Jakie oprogramowanie do archiwizacji na taśmach wybrać?",
-        "lead": "Opisz w dowolnym języku, ile danych przechowujesz, jakie masz napędy LTO i do czego służy archiwum. Dostaniesz 30-sekundowe wideo z rankingiem 14 produktów do archiwizacji na taśmach, proponowaną architekturą, krokami wdrożenia i tym, na co uważać. Każda ocena pochodzi z Tape Archive Software Ledger 2026.",
-        "ph": "Coś jeszcze? np. postprodukcja wideo, taśmy LTFS dla klientów, montażyści na Macach, jeden administrator",
+        "lead": "Wpisz, co wiesz o archiwum: ilość danych, przyrost, napędy LTO, lokalizacje, budżet i zespół. Dostaniesz 30-sekundowe wideo z rankingiem 14 produktów do archiwizacji na taśmach, proponowaną architekturą, krokami wdrożenia i tym, na co uważać. Każda ocena pochodzi z Tape Archive Software Ledger 2026.",
+        "ph": "Coś jeszcze? np. taśmy LTFS dla klientów, WORM, dostęp S3, kopia w chmurze, sejf poza firmą",
         "go": "Znajdź oprogramowanie do archiwum",
         "hint": "Wpisz to, co wiesz, resztę zostaw pustą. Działa po polsku, angielsku i w siedmiu innych językach.",
         "how1": "Opisujesz archiwum: ilość danych, przyrost, napędy i bibliotekę, lokalizacje, budżet, zespół i przeznaczenie danych.",
-        "how2": "Doradca zamienia to na ważone potrzeby i układa ranking 14 produktów według ocen z Ledgera (liczby pochodzą z Ledgera, nigdy od AI). Potem projektuje pierwszą architekturę wokół najlepszego wyboru: topologię, kroki i pułapki.",
-        "how3": "Przeglądarka rysuje wideo, gdy tylko nadejdzie odpowiedź. Pobierz je lub udostępnij link.",
-        "note": "Odpowiedź to ogólna wskazówka napisana przez AI (Claude) na podstawie Tape Archive Software Ledger 2026. Nie zastępuje przeglądu projektu. Przed zakupem przetestuj odtwarzanie danych. Każdy odwiedzający może zadać 3 nowe pytania dziennie; przykłady i udostępnione linki się nie liczą.",
+        "how2": "Stałe reguły zamieniają Twoje wybory i słowa kluczowe (LTFS, WORM, S3, chmura, poza firmą i inne) na ważone potrzeby i układają ranking 14 produktów według ocen z Ledgera. Dobór, architektura i kroki wynikają z Twoich liczb.",
+        "how3": "Wszystko działa w przeglądarce, więc wideo startuje od razu. Pobierz je lub udostępnij link.",
+        "note": "Odpowiedź powstaje ze stałych reguł na podstawie Tape Archive Software Ledger 2026, a nie z modelu AI, więc te same dane zawsze dają ten sam wynik. To ogólna wskazówka, nie przegląd projektu. Przed zakupem przetestuj odtwarzanie danych.",
         "designing": "Ważenie 14 produktów i rysowanie architektury…",
-        "errTopic": "Pomagam tylko w wyborze oprogramowania do archiwizacji na taśmach. Opisz archiwum, na przykład: 300 TB wideo, biblioteka LTO-9, dwie lokalizacje, mały zespół.",
-        "errNoPlan": "Nie udało się przygotować odpowiedzi. Podaj, ile danych przechowujesz, jakie masz napędy LTO i co jest najważniejsze."
+        "errTopic": "Opisz archiwum taśmowe, na przykład: 300 TB wideo, biblioteka LTO-9, dwie lokalizacje, mały zespół.",
+        "errNoPlan": "Nie udało się przygotować odpowiedzi. Podaj, ile danych przechowujesz, jakie masz napędy LTO i co jest najważniejsze.",
+        "errShort": "Wypełnij co najmniej jedno pole albo opisz archiwum."
       },
       "ja": {
         "h1": "自分に合うテープアーカイブソフトはどれ？",
-        "lead": "保存するデータ量、お持ちの LTO ドライブ、アーカイブの用途を、どの言語でも入力してください。テープアーカイブ製品 14 件のランキング、構成案、導入までの手順、注意点を 30 秒の動画でお見せします。評価はすべて Tape Archive Software Ledger 2026 に基づきます。",
-        "ph": "ほかには？ 例：映像ポストプロダクション、顧客向け LTFS テープ、Mac の編集者、管理者は 1 人",
+        "lead": "データ量、増加量、LTO ドライブ、拠点、予算、チームなど、分かる範囲で入力してください。テープアーカイブ製品 14 件のランキング、構成案、導入までの手順、注意点を 30 秒の動画でお見せします。評価はすべて Tape Archive Software Ledger 2026 に基づきます。",
+        "ph": "ほかには？ 例：顧客向け LTFS テープ、WORM、S3 アクセス、クラウドコピー、オフサイト保管",
         "go": "アーカイブソフトを探す",
         "hint": "分かる項目だけ入力し、残りは空欄で構いません。日本語、英語など 9 言語に対応しています。",
         "how1": "アーカイブの状況を入力します：データ量、増加量、ドライブとライブラリ、拠点、予算、チーム、データの用途。",
-        "how2": "アドバイザーがそれを重み付きの要件に変換し、Ledger の評価で 14 製品を順位付けします（数値は Ledger のもので、AI が作ることはありません）。続いて最適な製品を中心に、構成、手順、注意点を設計します。",
-        "how3": "回答が届くとすぐにブラウザが動画を描画します。ダウンロードやリンクの共有もできます。",
-        "note": "回答は Tape Archive Software Ledger 2026 をもとに AI（Claude）が書いた一般的な助言で、設計レビューではありません。購入前に復元テストを行ってください。新しい質問は 1 人 1 日 3 件までです。例と共有リンクは数えません。",
+        "how2": "固定ルールが、選択肢とキーワード（LTFS、WORM、S3、クラウド、オフサイトなど）を重み付きの要件に変換し、Ledger の評価で 14 製品を順位付けします。サイジング、構成、手順は入力した数値から決まります。",
+        "how3": "すべてブラウザ内で動くので、動画はすぐ始まります。ダウンロードやリンクの共有もできます。",
+        "note": "回答は Tape Archive Software Ledger 2026 に固定ルールを当てはめたもので、AI モデルは使っていません。同じ入力なら常に同じ結果です。一般的な助言であり、設計レビューではありません。購入前に復元テストを行ってください。",
         "designing": "14 製品を比較して構成を描いています…",
-        "errTopic": "テープアーカイブソフトの選定だけをお手伝いします。例：映像 300 TB、LTO-9 ライブラリ、2 拠点、少人数チーム のように入力してください。",
-        "errNoPlan": "回答を作成できませんでした。データ量、LTO ドライブ、最も重視する点を入力してください。"
+        "errTopic": "テープアーカイブについて入力してください。例：映像 300 TB、LTO-9 ライブラリ、2 拠点、少人数チーム。",
+        "errNoPlan": "回答を作成できませんでした。データ量、LTO ドライブ、最も重視する点を入力してください。",
+        "errShort": "1 つ以上の項目を入力するか、アーカイブを説明してください。"
       },
       "zh": {
         "h1": "哪款磁带归档软件最适合我？",
-        "lead": "用任何语言告诉我们：要保存多少数据、有哪些 LTO 磁带机、归档用来做什么。你会得到一段 30 秒的视频，包括 14 款磁带归档产品的排名、建议的架构、实施步骤和注意事项。所有评分都来自 Tape Archive Software Ledger 2026。",
-        "ph": "还有别的吗？例如：视频后期公司、给客户的 LTFS 磁带、Mac 剪辑师、只有一名管理员",
+        "lead": "填写你了解的归档情况：数据量、年增长、LTO 磁带机、站点、预算和团队。你会得到一段 30 秒的视频，包括 14 款磁带归档产品的排名、建议的架构、实施步骤和注意事项。所有评分都来自 Tape Archive Software Ledger 2026。",
+        "ph": "还有别的吗？例如：给客户的 LTFS 磁带、WORM、S3 访问、云端副本、异地保管",
         "go": "找到适合我的归档软件",
         "hint": "填写你知道的部分，其余留空即可。支持中文、英文等 9 种语言。",
         "how1": "描述你的归档：数据量、年增长、磁带机和带库、站点、预算、团队以及数据用途。",
-        "how2": "顾问把这些转换为带权重的需求，用 Ledger 评分给 14 款产品排名（数字来自 Ledger，绝不由 AI 编写），再围绕最合适的产品设计初步方案：拓扑、步骤和注意事项。",
-        "how3": "答案一到，浏览器就开始绘制视频。可以下载或分享链接。",
-        "note": "答案是 AI（Claude）基于 Tape Archive Software Ledger 2026 写的一般性建议，不是设计评审。购买前请先做恢复测试。每位访客每天可以提 3 个新问题，示例和分享链接不计入。",
+        "how2": "固定规则把你的选项和关键词（LTFS、WORM、S3、云、异地等）转换为带权重的需求，再用 Ledger 评分给 14 款产品排名。容量规划、架构和步骤都根据你填写的数字得出。",
+        "how3": "全部在浏览器中运行，视频立即开始。可以下载或分享链接。",
+        "note": "答案来自基于 Tape Archive Software Ledger 2026 的固定规则，不使用 AI 模型，相同输入总是得到相同结果。这是一般性建议，不是设计评审。购买前请先做恢复测试。",
         "designing": "正在比较 14 款产品并绘制你的方案…",
-        "errTopic": "我只帮你选择磁带归档软件。请描述你的归档，例如：300 TB 视频、LTO-9 带库、两个站点、小团队。",
-        "errNoPlan": "无法生成答案。请说明数据量、LTO 磁带机和最看重什么。"
+        "errTopic": "请描述你的磁带归档，例如：300 TB 视频、LTO-9 带库、两个站点、小团队。",
+        "errNoPlan": "无法生成答案。请说明数据量、LTO 磁带机和最看重什么。",
+        "errShort": "请至少填写一项，或描述你的归档。"
       }
     },
     "form": {
@@ -749,6 +753,66 @@
               "zh": "需要厂商支持"
             }
           ]
+        },
+        {
+          "id": "os",
+          "label": {
+            "en": "Server OS",
+            "de": "Server-Betriebssystem",
+            "fr": "OS du serveur",
+            "it": "Sistema del server",
+            "es": "SO del servidor",
+            "nl": "Server-besturingssysteem",
+            "pl": "System serwera",
+            "ja": "サーバー OS",
+            "zh": "服务器系统"
+          },
+          "options": [
+            {
+              "en": "Any",
+              "de": "Egal",
+              "fr": "Peu importe",
+              "it": "Qualsiasi",
+              "es": "Cualquiera",
+              "nl": "Maakt niet uit",
+              "pl": "Dowolny",
+              "ja": "指定なし",
+              "zh": "不限"
+            },
+            {
+              "en": "Windows",
+              "de": "Windows",
+              "fr": "Windows",
+              "it": "Windows",
+              "es": "Windows",
+              "nl": "Windows",
+              "pl": "Windows",
+              "ja": "Windows",
+              "zh": "Windows"
+            },
+            {
+              "en": "Linux",
+              "de": "Linux",
+              "fr": "Linux",
+              "it": "Linux",
+              "es": "Linux",
+              "nl": "Linux",
+              "pl": "Linux",
+              "ja": "Linux",
+              "zh": "Linux"
+            },
+            {
+              "en": "macOS",
+              "de": "macOS",
+              "fr": "macOS",
+              "it": "macOS",
+              "es": "macOS",
+              "nl": "macOS",
+              "pl": "macOS",
+              "ja": "macOS",
+              "zh": "macOS"
+            }
+          ]
         }
       ]
     },
@@ -788,7 +852,8 @@
         "ja": "お問い合わせ",
         "zh": "联系我们"
       }
-    }
+    },
+    "local": "local/local.js"
   },
   "examples": [
     {
@@ -942,6 +1007,7 @@
       }
     }
   ],
+  "api": false,
   "candidates": [
     {
       "id": "ibm",
