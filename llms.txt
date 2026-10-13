@@ -46,7 +46,7 @@
 - [Why Your Backup Tapes Need to Leave the Building (Offsite Tape Rotation)](https://youtu.be/z4awYQws8Lw): Why one tape set should always be outside the building, and how a weekly offsite rotation keeps it there. Embedded on https://tapebackup.org/blog/offsite-tape-backups-still-beat-most-good-enough-plans.
 
 ## Languages
-- English (US prices in USD) at https://tapebackup.org/; Deutsch at https://tapebackup.org/de/; Français at https://tapebackup.org/fr/; Italiano at https://tapebackup.org/it/; Español at https://tapebackup.org/es/; Nederlands at https://tapebackup.org/nl/; Polski at https://tapebackup.org/pl/ (local seller prices in local currency).
+- English (US prices in USD) at https://tapebackup.org/; Deutsch at https://tapebackup.org/de/; Français at https://tapebackup.org/fr/; Italiano at https://tapebackup.org/it/; Español at https://tapebackup.org/es/; Nederlands at https://tapebackup.org/nl/; Polski at https://tapebackup.org/pl/; 日本語 at https://tapebackup.org/ja/ (US prices in USD); 简体中文 at https://tapebackup.org/zh/ (US prices in USD). The European editions show local seller prices in local currency.
 
 ## Full data
 - [llms-full.txt](https://tapebackup.org/llms-full.txt): every current listing with seller and part number, plus the price history table.

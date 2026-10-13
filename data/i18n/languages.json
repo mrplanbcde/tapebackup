@@ -25,10 +25,10 @@
  },
  "ja": {
   "name": "日本語",
-  "indexable": false
+  "indexable": true
  },
  "zh": {
   "name": "简体中文",
-  "indexable": false
+  "indexable": true
  }
 }

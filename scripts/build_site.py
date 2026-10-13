@@ -360,7 +360,7 @@ def build_llms(current):
     ] + [f"- [{v['title']}](https://youtu.be/{v['id']}): {v['desc']} Embedded on {SITE}/{path}." for path, v in videos.VIDEOS.items()] + [
         "",
         "## Languages",
-        f"- English (US prices in USD) at {SITE}/; " + "; ".join(f"{i18n.load_langs().get(l, {}).get('name', l)} at {SITE}/{l}/" for l in published_langs()) + " (local seller prices in local currency).",
+        f"- English (US prices in USD) at {SITE}/; " + "; ".join(f"{i18n.load_langs().get(l, {}).get('name', l)} at {SITE}/{l}/" + (" (US prices in USD)" if markets.LANG_TO_MARKET.get(l) == "us" else "") for l in published_langs()) + ". The European editions show local seller prices in local currency.",
         "",
         "## Full data",
         f"- [llms-full.txt]({SITE}/llms-full.txt): every current listing with seller and part number, plus the price history table.",
