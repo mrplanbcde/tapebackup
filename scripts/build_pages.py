@@ -556,6 +556,9 @@ def build_legacy(path, key, title, desc):
 <a href="/resources/lto-tape-migration">LTO tape migration<span>Move an archive to newer media</span></a>
 <a href="/resources/tape-storage-market">Tape storage market<span>Shipments, supply and prices</span></a>
 <a href="/lto-tape">What is LTO tape<span>The format in one page</span></a>
+<a href="/lto-storage">LTO storage<span>How tape storage works and costs</span></a>
+<a href="/resources/how-to-store-lto-tapes">How to store LTO tapes<span>Conditions, cases and cabinets</span></a>
+<a href="/resources/owc-lto-tape-drives">OWC LTO drives<span>Mercury Pro and Archive Pro</span></a>
 <a href="/lto-tape-capacity">LTO capacity chart<span>LTO-1 to LTO-14</span></a>
 <a href="/why-tape/lto-tape-drive">LTO tape drive buying guide<span>Which drive to buy</span></a>
 <a href="/lto-tape-library">LTO tape libraries<span>Autoloaders and libraries</span></a>
@@ -566,6 +569,8 @@ def build_legacy(path, key, title, desc):
 <a href="/lto-tape-news">LTO tape news<span>What changed this month</span></a>
 <a href="/lto-tape-brand">LTO tape brands<span>Who really makes the tape</span></a>
 <a href="/tape-q-and-a">Tape Q&amp;A<span>Short answers to tape questions</span></a></div></section>"""
+    if path == "/comparisons":
+        related += '<section class="section-card"><p class="eyebrow">More comparisons</p><h2>Tape against other storage</h2><div class="link-grid"><a href="/comparisons/tape-vs-cloud-5-year-cost">Tape vs cloud, 5-year cost<span>What an archive really costs</span></a><a href="/comparisons/lto-vs-object-storage">LTO vs object storage<span>S3, Wasabi, Glacier and tape</span></a><a href="/why-tape/lto-vs-hdd">LTO vs HDD<span>Tape against hard drives</span></a></div></section>'
     if path == "/best-tape-backup-software":
         related += '<section class="section-card"><p class="eyebrow">Tools</p><h2>Get a shortlist for your own setup</h2><div class="link-grid"><a href="/backup-software-finder">Tape backup software finder<span>Four questions, one match</span></a><a href="/tape-archive-advisor">Tape archive advisor<span>Ranked shortlist of 14 archive products</span></a></div></section>'
     if re.search(r"[$€]|zł", body_sections) and path in ("/why-tape/lto-tape-drive", "/about", "/resources/cheap-lto-tapes", "/comparisons", "/why-tape"):

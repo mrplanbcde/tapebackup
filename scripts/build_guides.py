@@ -31,6 +31,7 @@ def link_grid(items):
 
 GUIDE_LINKS = [
     ("What is LTO tape", "/lto-tape", "The format in one page"),
+    ("LTO storage", "/lto-storage", "How tape storage works and costs"),
     ("LTO capacity chart", "/lto-tape-capacity", "LTO-1 to LTO-14"),
     ("LTO tape drive buying guide", "/why-tape/lto-tape-drive", "Which drive to buy"),
     ("LTO tape libraries", "/lto-tape-library", "Autoloaders and libraries"),
@@ -55,7 +56,7 @@ def build_pillar(current):
     where = "" if BP.MKT.is_us else f" in {BP.MKT.country}"
     sections = [
         sec("The basics", "What LTO tape is", """
-<p>LTO (Linear Tape-Open) is an open standard for magnetic data tape, set by the LTO Program, whose members are HPE, IBM and Quantum. A cartridge holds a single reel of half-inch tape; the drive pulls it past a head that writes many parallel tracks, end to end and back again. The format is called Ultrium, which is why cartridges are labelled "LTO Ultrium".</p>
+<p>LTO (Linear Tape-Open) is an open standard for magnetic data tape, set by the LTO Program, whose members are HPE, IBM and Quantum. A cartridge holds a single reel of half-inch tape; the drive pulls it past a head that writes many parallel tracks, end to end and back again. The format is called Ultrium, which is why cartridges are labelled "LTO Ultrium". How it works as a storage system, and what it costs per terabyte, is in <a href="/lto-storage">LTO storage explained</a>.</p>
 <p>Only two companies make LTO tape: Fujifilm and Sony. Cartridges sold under HPE, IBM, Quantum or Dell labels contain tape from one of them, and every certified cartridge of a generation works in every brand of drive of that generation. See <a href="/lto-tape-brand">LTO tape brands</a>.</p>"""),
         sec("Generations", "LTO generations at a glance", f"""
 <p>A new generation arrives every two to four years and roughly doubles capacity. The current generation is LTO-10, and LTO-9 is the one most people buy.</p>
@@ -351,7 +352,8 @@ def build_lifespan(current):
 <li><strong>Acclimatise before use:</strong> give cartridges about a day in the room with the drive if they come from a colder or warmer place.</li>
 <li><strong>Keep them in their cases,</strong> upright, away from dust, direct sunlight and strong magnetic fields.</li>
 <li><strong>Do not drop them.</strong> A dropped cartridge can lose its leader pin or shift the reel; test it before trusting it.</li>
-</ul>"""),
+</ul>
+<p>Cases, cabinets, racks and offsite rotation are covered in <a href="/resources/how-to-store-lto-tapes">how to store LTO tapes</a>.</p>"""),
         sec("Wear", "Loads and passes", """
 <p>A cartridge is rated for many thousands of loads; LTO-9 media is rated for 20,000 load and unload cycles. An archive tape that is written once and read occasionally will never get near that. Tapes used for daily backups wear faster, which is one reason to rotate them and replace them on a schedule.</p>"""),
         sec("The real limit", "Drives run out before tapes do", f"""
@@ -388,7 +390,7 @@ def build_supplies(current):
 <p>Libraries and autoloaders identify cartridges by barcode. The standard LTO label has six characters you choose, then a two-character media code: for example 000001L9 is an LTO-9 data cartridge and 000001L8 an LTO-8 one. WORM cartridges use their own codes (LZ for LTO-9 WORM, LY for LTO-8 WORM), and cleaning cartridges start with CLN.</p>
 <p>Buy labels printed for your generation, keep the numbers unique across the whole library, and never put a label over the cartridge's write-protect switch or edges.</p>"""),
         sec("Cases and transport", "Cases for storage and offsite copies", """
-<p>Keep each cartridge in its jewel case on a shelf, and use padded turtle-style cases for 5, 10 or 20 cartridges when moving tapes offsite. Avoid loose cartridges in a box: drops and dust are the most common causes of handling damage.</p>"""),
+<p>Keep each cartridge in its jewel case on a shelf, and use padded turtle-style cases for 5, 10 or 20 cartridges when moving tapes offsite. Avoid loose cartridges in a box: drops and dust are the most common causes of handling damage. Storage conditions, cabinets and racks are in <a href="/resources/how-to-store-lto-tapes">how to store LTO tapes</a>.</p>"""),
         sec("Disposal", "Destroying old tapes", """
 <p>Erasing or overwriting a tape takes as long as filling it. For tapes with sensitive data, use a tape shredder or a destruction service that issues a certificate. Degaussing needs a degausser rated for high-coercivity barium ferrite media, and it also erases the servo tracks, so the cartridge cannot be reused afterwards.</p>"""),
         more_guides(path),

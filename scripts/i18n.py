@@ -59,6 +59,8 @@ SCOPE_CORE = [
     "/comparisons", "/lto-tape-brand", "/resources", "/resources/cheap-lto-tapes", "/resources/lto-tape-migration",
     "/resources/tape-storage-market", "/best-tape-backup-software", "/resources/tape-backup-software/catalogicdpx",
     "/lto-tape", "/lto-tape-capacity", "/lto-tape-library", "/lto-tape-news", "/resources/ltfs", "/resources/lto-tape-data-recovery", "/why-tape/lto-tape-lifespan", "/resources/lto-cleaning-tapes-and-labels",
+    # LTO storage pages (docs/seo/lto-storage-keyword-plan-2026-10.md)
+    "/lto-storage", "/resources/how-to-store-lto-tapes", "/resources/owc-lto-tape-drives", "/comparisons/lto-vs-object-storage",
 ]
 
 

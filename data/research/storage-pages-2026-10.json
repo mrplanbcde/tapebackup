@@ -1,0 +1,119 @@
+{
+  "asOf": "2026-10-17",
+  "notes": "All values verified on the cited page on 2026-10-17 unless marked otherwise. 'secondary' means the source is not the vendor itself.",
+  "storageConditions": [
+    {"vendor": "IBM", "product": "LTO-9 / LTO-10 data cartridges (IBM LTO Ultrium Data Cartridges Family Data Sheet, (c) 2026)", "field": "operating", "value": "10-45 C (50-113 F), 10-80% RH, 26 C wet bulb max", "quote": "10°C - 45°C (50°F - 113°F); 10% - 80% RH;-26°C (79°F) wet bulb max", "url": "https://www.ibm.com/downloads/documents/es-es/107a02e95dc8f8a9"},
+    {"vendor": "IBM", "product": "LTO-9 / LTO-10 data cartridges", "field": "recommendedStorage (long-term)", "value": "16-25 C (61-77 F), 20-50% RH, 26 C wet bulb max", "quote": "Recommended storage conditions 16°C - 25°C (61°F - 77°F); 20% - 50% RH; 26°C (79°F) wet bulb max", "url": "https://www.ibm.com/downloads/documents/es-es/107a02e95dc8f8a9"},
+    {"vendor": "IBM", "product": "LTO-9 / LTO-10 data cartridges", "field": "allowableStorage (short-term)", "value": "16-32 C (61-90 F), 20-80% RH, 26 C wet bulb max", "quote": "Allowable storage conditions 16°C - 32°C (61°F - 90°F); 20% - 80% RH; 26°C (79°F) wet bulb max", "url": "https://www.ibm.com/downloads/documents/es-es/107a02e95dc8f8a9"},
+    {"vendor": "IBM", "product": "LTO-9 / LTO-10 data cartridges", "field": "shipping", "value": "-23 to 49 C (-9 to 120 F), 5-80% RH, 26 C wet bulb max", "quote": "Shipping conditions -23°C - 49°C (-9°F - 120°F); 5% - 80% RH; 26°C (79°F) wet bulb max", "url": "https://www.ibm.com/downloads/documents/es-es/107a02e95dc8f8a9"},
+    {"vendor": "IBM", "product": "LTO-9 / LTO-10 data cartridges", "field": "warranty", "value": "Limited lifetime warranty", "quote": "Free from defects in manufacturing and material defects for the useful life of the product", "url": "https://www.ibm.com/downloads/documents/es-es/107a02e95dc8f8a9"},
+    {"vendor": "IBM", "product": "Ultrium 6 through Ultrium 10 data cartridges", "field": "loadUnloadCycles", "value": "20,000 nominal load/unload cycles (Ultrium 9 and Ultrium 10 both 20,000)", "quote": "Nominal cartridge life: Load/unload cycles ... Ultrium 9 20,000 (20k)", "url": "https://www.ibm.com/docs/en/STAKKZ/con_LTOdrive_cartridges.html"},
+    {"vendor": "IBM", "product": "LTO tape cartridges (IBM Docs, handling)", "field": "acclimatisation", "value": "24 hours, or longer if needed to prevent condensation", "quote": "acclimate it to the operating environment for 24 hours or the time necessary to prevent condensation in the drive", "url": "https://www.ibm.com/docs/en/STAKKZ/con_LTOdrive_cartridges_handling_environment.html"},
+    {"vendor": "IBM", "product": "LTO tape cartridges (IBM Docs, handling)", "field": "sunlightMoisture", "value": "Keep away from moisture and direct sunlight", "quote": "Do not expose the cartridge to moisture or direct sunlight.", "url": "https://www.ibm.com/docs/en/STAKKZ/con_LTOdrive_cartridges_handling_environment.html"},
+    {"vendor": "IBM", "product": "LTO tape cartridges (IBM Docs, handling)", "field": "magneticFields", "value": "Avoid stray fields above 100 oersteds", "quote": "Do not expose recorded or blank cartridges to stray magnetic fields of greater than 100 oersteds.", "url": "https://www.ibm.com/docs/en/STAKKZ/con_LTOdrive_cartridges_handling_environment.html"},
+    {"vendor": "Fujifilm", "product": "LTO Ultrium 9 data cartridge (sell sheet, (c) 2021)", "field": "operating (recommended)", "value": "15-25 C, 20-50% RH, 22 C max dew point", "quote": "Recommended Operating Environment** 15°C to 25°C 20% to 50% 22°C max", "url": "https://asset.fujifilm.com/www/us/files/2024-01/ce72cf783970aa0d05d4463e4febcb62/FB_LTO9_SellSheet_V1.pdf"},
+    {"vendor": "Fujifilm", "product": "LTO Ultrium 9 data cartridge (sell sheet)", "field": "operating (allowable)", "value": "15-35 C, 20-80% RH, 22 C max dew point", "quote": "Allowable Operating Environment** 15°C to 35°C 20% to 80% 22°C max", "url": "https://asset.fujifilm.com/www/us/files/2024-01/ce72cf783970aa0d05d4463e4febcb62/FB_LTO9_SellSheet_V1.pdf"},
+    {"vendor": "Fujifilm", "product": "LTO Ultrium 9 data cartridge (sell sheet)", "field": "maxLocalTapeTemperature", "value": "Above 52 C may cause permanent damage", "quote": "Local tape temperature in excess of 52°C may cause permanent tape damage", "url": "https://asset.fujifilm.com/www/us/files/2024-01/ce72cf783970aa0d05d4463e4febcb62/FB_LTO9_SellSheet_V1.pdf"},
+    {"vendor": "Fujifilm", "product": "LTO specifications page (multi-generation table)", "field": "storage (short/long term)", "value": "Short term 16-35 C / 20-80% RH; long term 16-25 C / 20-50% RH. Page text flattens the table, so which generation columns carry this split could not be confirmed.", "quote": "16～35℃(Short Term)/16～25℃(Long Term) ... 20～80%RH(Short Term)/20～50%RH(Long Term)", "url": "https://fujifilm.com/ro/en/business/data-management/datastorage/ltotape/specifications"},
+    {"vendor": "Fujifilm", "product": "LTO specifications page", "field": "maxWetBulb / dewPoint", "value": "26 C max wet bulb (allowable operation, some generations); 22 C max dew point (LTO-9/10 columns, inferred)", "quote": "26℃ (Max Wet Bulb Temperature) ... 22℃ (Max Dew Point Temperature)", "url": "https://fujifilm.com/ro/en/business/data-management/datastorage/ltotape/specifications"},
+    {"vendor": "Fujifilm", "product": "LTO Ultrium 10 (40TB) data cartridge (press release 2025-12-22, updated 2026-01-19)", "field": "operating", "value": "15-35 C (extended from 15-25 C); humidity up to 80% at 15-25 C; up to 47% at 35 C", "quote": "extended from 15°C–25°C to 15°C–35°C", "url": "https://www.fujifilm.com/lt/en/news/hq/13191"},
+    {"vendor": "HPE", "product": "HPE Storage LTO-10 Ultrium 75TB RW Data Cartridge Q2080A (data sheet PSN1014894658WWEN, June 2025; copy hosted on a reseller CDN, hpe.com timed out)", "field": "archivalLife", "value": "30 years (up to 30 years if stored at recommended conditions)", "quote": "including up to 30 years of archival life, if stored at the recommended storage conditions", "url": "https://cdn.shopify.com/s/files/1/0043/9916/9622/files/HPE_LTO_10_Data_Sheet.pdf"},
+    {"vendor": "HPE", "product": "HPE Storage LTO Ultrium cartridges", "field": "loadUnloadCycles", "value": "No cycle count stated; HPE says it runs load/unload qualification tests", "quote": "HPE brand qualification test procedures (load/unload, shoeshine, drop testing and environmental stress testing)", "url": "https://cdn.shopify.com/s/files/1/0043/9916/9622/files/HPE_LTO_10_Data_Sheet.pdf"},
+    {"vendor": "Overland-Tandberg", "product": "LTO Tape Handling Guide (August 2023)", "field": "archivalStorage", "value": "16-25 C, 20-50% RH (35 C / 80% RH if archiving under 6 months); 26 C max wet bulb", "quote": "Archive temperature should be between 16°C and 25°C (61°F to 77 °F) (35°C (95°F) if archiving < 6 months).", "url": "https://www.overlandtandberg.com/MVImages/channel_newsletters/10_23/LTO_Tape_Handling_Guide.pdf"},
+    {"vendor": "Overland-Tandberg", "product": "LTO Tape Handling Guide (August 2023)", "field": "orientation", "value": "Store vertically; ship on edge. Note: same guide also says cartridges may be stacked up to 6 high, and elsewhere 'never stack them'.", "quote": "Media should be stored vertically.", "url": "https://www.overlandtandberg.com/MVImages/channel_newsletters/10_23/LTO_Tape_Handling_Guide.pdf"},
+    {"vendor": "Overland-Tandberg", "product": "LTO Tape Handling Guide (August 2023)", "field": "acclimatisation", "value": "At least 24 hours (8 h in shipping box, 8 h unpacked in case, 8 h out of case)", "quote": "Allow cartridges to acclimate for at least 24 hours prior to use", "url": "https://www.overlandtandberg.com/MVImages/channel_newsletters/10_23/LTO_Tape_Handling_Guide.pdf"},
+    {"vendor": "Overland-Tandberg", "product": "LTO Tape Handling Guide (August 2023)", "field": "magneticFields", "value": "Keep 8-12 cm from high-current cables, power supplies, motors; data at risk above 40 gauss", "quote": "Recorded information could be lost if the magnetic field is greater than 40 gauss in air", "url": "https://www.overlandtandberg.com/MVImages/channel_newsletters/10_23/LTO_Tape_Handling_Guide.pdf"},
+    {"vendor": "Overland-Tandberg", "product": "LTO Tape Handling Guide (August 2023)", "field": "shippingOrientation", "value": "Ship on edge, tape reel axis horizontal", "quote": "oriented on edge (tape reel axis horizontal) inside the final box", "url": "https://www.overlandtandberg.com/MVImages/channel_newsletters/10_23/LTO_Tape_Handling_Guide.pdf"},
+    {"vendor": "Dell", "product": "KB 000122049 How to handle backup tapes (last modified 2026-04-18)", "field": "orientation", "value": "Store and transport vertically, in case, never stacked", "quote": "Always pack the tape inside the case when not in use, always in an upright position and never stack them.", "url": "https://www.dell.com/support/kbdoc/en-au/000122049/how-to-handle-backup-tapes"},
+    {"vendor": "Dell", "product": "KB 000122049 How to handle backup tapes", "field": "acclimatisation", "value": "24 hours", "quote": "Before using the tape, allow it to cool to room temperature for 24 hours.", "url": "https://www.dell.com/support/kbdoc/en-au/000122049/how-to-handle-backup-tapes"},
+    {"vendor": "MagStor (secondary, media reseller/brand)", "product": "FAQ: How do I store my LTO tape cartridges safely?", "field": "orientation", "value": "Store on edge like books; horizontal storage stresses the tape pack", "quote": "Store tapes vertically, standing on their edge like books on a shelf.", "url": "https://magstor.com/blogs/magstor-faqs-page/how-do-i-store-my-lto-tape-cartridges-safely"}
+  ],
+  "storageSummary": {
+    "verticalStorageRecommended": "Yes, by Overland-Tandberg, Dell and MagStor (in case, on edge). IBM, HPE and Fujifilm data sheets checked do not address orientation.",
+    "archivalLifeYears": "30 (HPE LTO-10 data sheet). IBM data sheet gives a limited lifetime warranty but no year figure. Fujifilm 30-year figure seen only on retailer pages.",
+    "loadUnload": "20,000 (IBM, Ultrium 6 to 10)",
+    "acclimatisation": "24 hours (IBM Docs, Dell, Overland-Tandberg)"
+  },
+  "owc": {
+    "lineageNote": "Mercury Pro LTO (2020, Thunderbolt 3) is now sold as 'OWC Archive Pro' (Thunderbolt). OWC's manual is titled 'Archive Pro LTO | Mercury Pro LTO' and says 'Legacy OWC Mercury Pro LTO users can also follow these driver setup instructions.' No official rename announcement or date found.",
+    "mercuryProLTO": {
+      "launch": {"date": "2020-09-24", "generation": "LTO-8 (reads/writes LTO-7 and LTO-8)", "drive": "IBM LTO-8", "interface": "Thunderbolt 3 (USB-C)", "software": "myLTO (Imagine Products)", "launchPriceUSD": 4499, "quote": "for $4,499 and includes the myLTO® software, LTO-8 tape and cleaning cartridge", "url": "https://owc.com/news/owc-introduces-mercury-pro-lto-solution-making-archiving-seamless"},
+      "argestBundle": {"date": "2021-08-17", "value": "Shipped with ArGest Backup Desktop Edition from Aug 2021", "quote": "Mercury Pro LTO units ship with ArGest Backup Desktop Edition", "url": "https://arabianreseller.com/2021/08/17/owc-announces-argest-backup-easy-drag-and-drop-backup-archival-and-restore-solution/", "sourceType": "secondary (trade press reprint)"},
+      "lto9": {"value": "LTO-9 version reviewed Feb 2022 at $6,299 direct from OWC (ArGest licence not included in that price)", "quote": "The price of the unit as reviewed here is $6,299 direct from OWC", "url": "https://www.techradar.com/reviews/owc-mercury-pro-lto-lto-9"},
+      "lto7": "Sold today only under the Archive Pro name (see below); no Mercury Pro LTO-7 launch source found.",
+      "lto10": "not found"
+    },
+    "archiveProThunderbolt": {
+      "what": "Desktop Thunderbolt LTO drive enclosure with optional onboard SSD bay, extra Thunderbolt 3 port, Mini-SAS HD port and DisplayPort; LTFS tapes",
+      "drive": "IBM LTO Ultrium 9 mechanism in the LTO-9 model",
+      "driveQuote": "LTO Mechanism IBM LTO Ultrium 9",
+      "interface": "Thunderbolt 3 (USB-C) host port up to 40Gb/s; drive talks SAS internally and needs the ATTO Express SAS HBA driver",
+      "speed": "LTO-9: up to 300MB/s native (750MB/s compressed) per OWC spec tab",
+      "software": "Hedge Canister included on '...H' SKUs (OWC calls it a $399 value); OWC-Hedge partnership announced Jan 2025",
+      "os": "macOS 11 Big Sur to macOS 26 Tahoe; Windows 10 64-bit, Windows 11, Windows Server 2022; Linux 'Yes'",
+      "warranty": "3 Year OWC Limited Warranty",
+      "generationsSold": ["LTO-7", "LTO-8", "LTO-9"],
+      "pricesSeen2026-10-17_macsalesUSD": {
+        "OWCTBLTMP70000H (LTO-7 + Canister)": 5999.99,
+        "OWCTBLTMP70N04H (LTO-7 + Canister + 4TB onboard)": 7149.99,
+        "OWCTBLTMP70N08H (LTO-7 + Canister + 8TB onboard)": 8749.99,
+        "OWCTBLTMP80000H (LTO-8 + Canister)": 8799.99,
+        "OWCTBLTMP80N04H (LTO-8 + Canister + 4TB onboard)": 9949.99,
+        "OWCTBLTMP80N08H (LTO-8 + Canister + 8TB onboard)": 11199.99,
+        "OWCTBLTMP90000H (LTO-9 + Canister)": 12499.99,
+        "OWCTBLTMP90N04H (LTO-9 + Canister + 4TB onboard)": 13649.99,
+        "OWCTBLTMP90N08H (LTO-9 + Canister + 8TB onboard)": 14899.99
+      },
+      "priceCaveat": "macsales.com LTO-9 H price ($12,499.99) is about double third-party listings found in search (Full Compass $6,199.99 for OWCTBLTMP90000, no date). Re-check before publishing.",
+      "url": "https://eshop.macsales.com/item/OWC/TBLTMP90000H/",
+      "productPage": "https://www.owc.com/solutions/archive-pro",
+      "discontinued": "Non-Canister SKUs OWCTBLTMP90000 (LTO-9) and OWCTBLTMP80000 (LTO-8) show 'Sold Out'; the LTO-9 one says 'We're sorry, but this item is no longer for sale.'",
+      "lto10": "not found"
+    },
+    "archiveProEthernet": {
+      "what": "Network-attached LTO appliance: tape drive shared over 10Gb iSCSI using built-in ATTO XstreamCORE 8100T; LTFS",
+      "launch": {"date": "2025-04-02", "startingPriceUSD": 7799, "quote": "LTO-7, LTO-8, and LTO-9 configurations", "url": "https://www.owc.com/news/other-world-computing-owc-launches-owc-archive-pro-ethernet-network-based-lto-backup-and-archiving-solution"},
+      "ethernet": "(2) 10GbE host ports (RJ45 / SFP+ per spec tab) plus (1) Gigabit maintenance port",
+      "drive": "IBM LTO Ultrium 9 in the LTO-9 model; launch release says 'IBM LTO-7, LTO-8, or LTO-9 made in Japan premium drive options'",
+      "speed": "LTO-9: up to 400MB/s native (1000MB/s compressed) per OWC spec tab",
+      "software": "Hedge Canister plus ATTO Xtend SAN v.7 Mac iSCSI Initiator (both listed under Includes)",
+      "os": "macOS 13 Ventura to macOS 26 Tahoe; Windows 10 64-bit, Windows 11, Windows Server 2022; Linux 'Yes'",
+      "pricesSeen2026-10-17_macsalesUSD": {
+        "OWC10GLTMP08H (LTO-8)": 11499.99,
+        "OWC10GLTMP09H (LTO-9)": 14999.99
+      },
+      "availability": "LTO-8 in stock (1 left); LTO-9 'Ships: Pending' (schema OutOfStock); LTO-7 OWC10GLTMP07H 'no longer for sale'",
+      "urls": ["https://eshop.macsales.com/item/OWC/10GLTMP09H/", "https://eshop.macsales.com/item/OWC/10GLTMP08H/", "https://www.owc.com/solutions/archive-pro-ethernet"],
+      "lto10": "not found"
+    },
+    "reviews": [
+      {"publication": "TechRadar Pro (Mark Pickavance), 2022-02-02", "product": "Mercury Pro LTO (LTO-9)", "url": "https://www.techradar.com/reviews/owc-mercury-pro-lto-lto-9", "takeaway": "Tape economics look good, but managing many 18TB tapes is harder than it looks; $6,299 excluding ArGest licence.", "quote": "managing an extensive achieve of files over numerous 18TB tapes isn't as easy as it might appear"},
+      {"publication": "Larry Jordan (larryjordan.com), 2021 (exact date not found; comments from Oct 2021)", "product": "Mercury Pro LTO (LTO-8)", "url": "https://larryjordan.com/?p=132746", "takeaway": "Well-built, user-upgradeable drive and SSD; recommended for media archiving despite upfront cost. Reviewer used a loaner unit.", "quote": "I'm very impressed with the Mercury Pro LTO."}
+    ]
+  },
+  "cloud": {
+    "awsS3": {
+      "storageStandardFirst50TB_usEast1": {"value": 0.023, "unit": "USD per GB-month", "quote": "$0.023 per GB - first 50 TB / month of storage used", "source": "AWS Price List API, AmazonS3 us-east-1 offer, publicationDate 2026-10-15", "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/current/us-east-1/index.json", "humanPage": "https://aws.amazon.com/s3/pricing/", "seen": "2026-10-17"},
+      "egressInternetFirst10TB_usEast1": {"value": 0.09, "unit": "USD per GB", "quote": "$0.090 per GB - first 10 TB / month data transfer out beyond the global free tier", "freeTier": "First 100GB/month out to internet free (aggregated across AWS services)", "freeTierQuote": "Data transferred out to the internet for the first 100GB per month", "source": "AWS Price List API, AWSDataTransfer us-east-1 offer, publicationDate 2026-09-16", "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSDataTransfer/current/us-east-1/index.json", "humanPage": "https://aws.amazon.com/s3/pricing/", "seen": "2026-10-17"}
+    },
+    "backblazeB2": {
+      "storage": {"value": 6.95, "unit": "USD per TB-month (pay as you go)", "quote": "starting at $6.95/TB/mo. Free egress up to 3x storage, no minimum fees", "url": "https://www.backblaze.com/cloud-storage/pricing", "seen": "2026-10-17"},
+      "egressRule": {"value": "Free egress up to 3x average monthly data stored, then $0.01/GB", "quote": "Up to 3x of average monthly data stored, then $0.01/GB for additional egress", "url": "https://www.backblaze.com/cloud-storage/pricing", "seen": "2026-10-17"},
+      "other": "First 10GB free; no minimum file size or minimum storage duration fees; billed per byte-hour."
+    }
+  },
+  "notFound": [
+    "HPE LTO-9 data sheet/QuickSpecs environmental figures (hpe.com pages timed out / blocked; only retailer copies found)",
+    "HPE load/unload cycle count (HPE does not state one in the LTO-10 data sheet)",
+    "Quantum LTO-9 or LTO-10 media data sheet from quantum.com (only reseller listings; Quantum Media Care Guide copy at cdn.iceshop.nl now returns 404)",
+    "Fujifilm archival life (years) on a Fujifilm-owned page (30 years appears only on retailer listings)",
+    "Fujifilm statement on vertical storage, magnetic fields or sunlight",
+    "Vertical/on-edge storage guidance from IBM, HPE, Fujifilm or Quantum official documents",
+    "Explicit 'short-term storage' label in IBM sheet (IBM uses 'Recommended' vs 'Allowable' storage instead)",
+    "Any OWC LTO-10 product (Mercury Pro or Archive Pro)",
+    "Official OWC announcement or date for renaming Mercury Pro LTO to Archive Pro",
+    "Mercury Pro LTO-7 launch details",
+    "Independent review of OWC Archive Pro (Thunderbolt) or Archive Pro Ethernet; no Reddit user reports surfaced in search",
+    "OWC YoYotta or Archiware P5 bundles (only myLTO, ArGest and Hedge Canister found)"
+  ]
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
+<title>如何存放 LTO 磁带：温度、盒具与机柜</title>
+<meta content="如何存放 LTO 磁带：依据介质规格的存放温度与湿度、盒具、机柜与机架、异地轮换及操作清单。" name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/zh/resources/how-to-store-lto-tapes" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="TapeBackup.org" property="og:site_name"/>
+<meta content="如何存放 LTO 磁带：温度、盒具与机柜" property="og:title"/>
+<meta content="如何存放 LTO 磁带：依据介质规格的存放温度与湿度、盒具、机柜与机架、异地轮换及操作清单。" property="og:description"/>
+<meta content="https://tapebackup.org/zh/resources/how-to-store-lto-tapes" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="如何存放 LTO 磁带：温度、盒具与机柜" name="twitter:title"/>
+<meta content="如何存放 LTO 磁带：依据介质规格的存放温度与湿度、盒具、机柜与机架、异地轮换及操作清单。" name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#5b27d6" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="/tape-q-and-a.css" rel="stylesheet"/>
+<link href="/pages.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script defer="" src="https://js-eu1.hsforms.net/forms/embed/147689578.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "如何存放 LTO 磁带", "description": "如何存放 LTO 磁带：依据介质规格的存放温度与湿度、盒具、机柜与机架、异地轮换及操作清单。", "datePublished": "2026-10-17", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}, "mainEntityOfPage": "https://tapebackup.org/zh/resources/how-to-store-lto-tapes", "inLanguage": "zh"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://tapebackup.org/zh"}, {"@type": "ListItem", "position": 2, "name": "资源", "item": "https://tapebackup.org/zh/resources"}, {"@type": "ListItem", "position": 3, "name": "如何存放 LTO 磁带", "item": "https://tapebackup.org/zh/resources/how-to-store-lto-tapes"}], "inLanguage": "zh"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "LTO 磁带应在什么温度下存放？", "acceptedAnswer": {"@type": "Answer", "text": "据 IBM 和 Fujifilm，长期存放为 16 至 25 °C（61 至 77 °F）。短期内 IBM 允许 16 至 32 °C，磁带本身不得超过 52 °C。"}}, {"@type": "Question", "name": "存放 LTO 磁带最适宜的湿度是多少？", "acceptedAnswer": {"@type": "Answer", "text": "长期存放相对湿度为 20 至 50%，不得结露。短期存放可到 80%，但30年额定寿命的前提是稳定而干燥。"}}, {"@type": "Question", "name": "LTO 磁带应平放还是直立存放？", "acceptedAnswer": {"@type": "Answer", "text": "直立。Overland-Tandberg 说介质应垂直存放，Dell 说磁带应放在盒内直立，不要堆叠。"}}, {"@type": "Question", "name": "磁带使用前应放置多久适应环境？", "acceptedAnswer": {"@type": "Answer", "text": "让磁带在磁带机所在房间放置 24 小时；如果来自温度低得多或潮湿得多的地方，则放置更久，以免磁带机内结露。"}}, {"@type": "Question", "name": "LTO 磁带能放在普通防火保险箱里吗？", "acceptedAnswer": {"@type": "Answer", "text": "只按纸张等级认证的保险箱不够，因为箱内温度会升到远高于磁带承受的程度。请使用符合磁性介质等级的保险箱或机柜（美国为 UL 72 Class 150），或在异地保存第二份副本。"}}, {"@type": "Question", "name": "磁带应如何存放到异地？", "acceptedAnswer": {"@type": "Answer", "text": "放在与本地条件相同的温湿度可控场所，装在带衬垫的箱子里运输，加密，并有记录，确保始终知道每盒磁带在哪里。"}}], "inLanguage": "zh"}</script>
+<meta content="zh_CN" property="og:locale"/><link href="https://tapebackup.org/resources/how-to-store-lto-tapes" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/resources/how-to-store-lto-tapes" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/resources/how-to-store-lto-tapes" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/resources/how-to-store-lto-tapes" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/resources/how-to-store-lto-tapes" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/resources/how-to-store-lto-tapes" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/resources/how-to-store-lto-tapes" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/ja/resources/how-to-store-lto-tapes" hreflang="ja" rel="alternate"/><link href="https://tapebackup.org/zh/resources/how-to-store-lto-tapes" hreflang="zh-Hans" rel="alternate"/><link href="https://tapebackup.org/resources/how-to-store-lto-tapes" hreflang="x-default" rel="alternate"/></head>
+<body class="price-page">
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/zh/tape-q-and-a">磁带问答</a><span class="sep"></span><a href="/zh/lto-tape-price-trend">LTO价格</a><span class="sep"></span><a href="/zh/contact">联系我们</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/resources/how-to-store-lto-tapes" hreflang="en" lang="en">EN</a><a href="/de/resources/how-to-store-lto-tapes" hreflang="de" lang="de">DE</a><a href="/fr/resources/how-to-store-lto-tapes" hreflang="fr" lang="fr">FR</a><a href="/it/resources/how-to-store-lto-tapes" hreflang="it" lang="it">IT</a><a href="/es/resources/how-to-store-lto-tapes" hreflang="es" lang="es">ES</a><a href="/nl/resources/how-to-store-lto-tapes" hreflang="nl" lang="nl">NL</a><a href="/pl/resources/how-to-store-lto-tapes" hreflang="pl" lang="pl">PL</a><a href="/ja/resources/how-to-store-lto-tapes" hreflang="ja" lang="ja">JA</a><a aria-current="page" class="on" href="/zh/resources/how-to-store-lto-tapes" hreflang="zh-Hans" lang="zh-Hans">ZH</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org 首页" class="brand" href="/zh"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="主要" class="topnav">
+<div class="price-dropdown"><a href="/zh/lto-tape">LTO 磁带</a><div class="price-dropdown-menu"><a href="/zh/lto-tape">什么是 LTO 磁带<span>一页读懂这一格式</span></a><a href="/zh/lto-storage">LTO 存储<span>磁带存储的原理与成本</span></a><a href="/zh/lto-tape-capacity">容量表<span>LTO-1至LTO-14</span></a><a href="/zh/why-tape/lto-tape-drive">磁带机选购指南<span>该买哪款磁带机</span></a><a href="/zh/lto-tape-library">磁带库<span>自动加载器与磁带库</span></a><a href="/zh/why-tape/lto-tape-lifespan">使用寿命<span>磁带能保存多久</span></a><a href="/zh/resources/ltfs">LTFS<span>把磁带当文件系统用</span></a><a href="/zh/resources/lto-tape-data-recovery">数据恢复<span>读取旧磁带</span></a><a href="/zh/lto-tape-news">资讯<span>本月有何变化</span></a><a href="/zh/why-tape">为什么选磁带<span>成本、物理隔离与寿命</span></a></div></div>
+<div class="price-dropdown"><a href="/zh/lto-tape-price-trend">LTO价格</a><div class="price-dropdown-menu"><a href="/zh/lto-tape-price-trend">所有世代<span>2026 年九月价格</span></a><a href="/zh/lto-tape-price-trend/lto6-price">LTO-6 价格<span>原生 2.5 TB</span></a><a href="/zh/lto-tape-price-trend/lto7-price">LTO-7 价格<span>原生 6 TB</span></a><a href="/zh/lto-tape-price-trend/lto8-price">LTO-8 价格<span>原生 12 TB</span></a><a href="/zh/lto-tape-price-trend/lto9-price">LTO-9 价格<span>原生 18 TB</span></a><a href="/zh/lto-tape-price-trend/lto10-price">LTO-10 价格<span>原生 30 / 40 TB</span></a><a href="/zh/lto-tape-price-trend/history">价格历史<span>2025 年以来的归档快照</span></a></div></div>
+<div class="price-dropdown"><a href="/zh/backup-calculator">工具</a><div class="price-dropdown-menu"><a href="/zh/backup-calculator">备份计算器<span>介质与成本估算</span></a><a href="/zh/backup-software-finder">软件推荐工具<span>匹配适合您磁带用途的软件</span></a><a href="/tape-archive-advisor">磁带归档顾问<span>基于 Ledger 评分的候选名单</span></a><a href="/zh/best-tape-backup-software">最佳磁带备份软件<span>2026横向对比</span></a></div></div>
+<a href="/zh/blog">Blog</a>
+<a href="/zh/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/zh/contact">获取价格表</a></div>
+</div></header>
+<section class="hero"><div class="container"><div class="hero-copy" style="max-width:900px">
+<p class="eyebrow">存放指南</p><h1 style="max-width:none">如何存放 LTO 磁带</h1>
+<p><strong>长期存放 LTO 磁带请保持 16 至 25 °C（61 至 77 °F）、相对湿度 20 至 50%，在盒内直立放置，远离磁铁和阳光；使用前在磁带机所在房间放置 24 小时，并在另一处保存第二份副本。</strong></p></div></div></section>
+<main class="page"><div class="container"><div class="section-stack">
+<section class="section-card"><p class="eyebrow">环境条件</p><h2>LTO 磁带的温度与湿度</h2>
+<figure class="page-figure"><img alt="LTO 磁带的温湿度范围：长期存放的窄范围为 16 至 25 °C、湿度 20 至 50%，位于短期存放、磁带机内使用和运输的更宽范围之内" decoding="async" height="400" loading="lazy" src="/assets/figures/lto-storage-conditions.svg" width="960"/><figcaption>长期存放的范围最窄：16 至 25 °C，相对湿度 20 至 50%。磁带盒短时间内可承受更宽的范围，例如在磁带机内或运输途中，但30年的额定寿命以窄范围为前提。</figcaption></figure>
+<div class="table-wrap"><table aria-label="LTO 磁带存放条件" class="price-table"><thead><tr><th>用途</th><th>温度</th><th>相对湿度</th><th>说明</th></tr></thead><tbody><tr><td>长期（归档）存放</td><td>16 至 25 °C（61 至 77 °F）</td><td>20 至 50%</td><td>IBM 推荐存放条件；Fujifilm 长期存放</td></tr><tr><td>较短期存放</td><td>16 至 32 °C（61 至 90 °F）</td><td>20 至 80%</td><td>IBM 允许的存放条件；Fujifilm 允许短期最高 35 °C</td></tr><tr><td>在磁带机内（推荐）</td><td>15 至 25 °C（59 至 77 °F）</td><td>20 至 50%</td><td>Fujifilm LTO-9 推荐工作范围</td></tr><tr><td>在磁带机内（允许）</td><td>10 至 45 °C（50 至 113 °F）</td><td>10 至 80%</td><td>IBM 工作范围</td></tr><tr><td>运输</td><td>−23 至 49 °C（−9 至 120 °F）</td><td>5 至 80%</td><td>IBM；磁带本身温度不得超过 52 °C（Fujifilm）</td></tr></tbody></table></div>
+<p>数据来自 <a href="https://www.ibm.com/downloads/documents/es-es/107a02e95dc8f8a9" rel="nofollow noopener" target="_blank">IBM LTO Ultrium 数据磁带盒数据表</a>（LTO-9和LTO-10）和 <a href="https://asset.fujifilm.com/www/us/files/2024-01/ce72cf783970aa0d05d4463e4febcb62/FB_LTO9_SellSheet_V1.pdf" rel="nofollow noopener" target="_blank">Fujifilm LTO-9 数据表</a>。<a href="https://www.overlandtandberg.com/MVImages/channel_newsletters/10_23/LTO_Tape_Handling_Guide.pdf" rel="nofollow noopener" target="_blank">Overland-Tandberg 磁带操作指南</a>给出了相同的归档范围。所有范围都假设不结露；IBM 规定的最高湿球温度为 26 °C。</p>
+<ul>
+<li><strong>保持稳定。</strong>缓慢的小幅变化无害，每日剧烈波动和结露才有害。空调办公室里的封闭柜子，比车库或外墙边更好。</li>
+<li><strong>使用前先适应环境。</strong>IBM、Dell 和 Overland-Tandberg 都要求使用前让磁带在磁带机所在房间内放置 24 小时，必要时更久，以免结露（<a href="https://www.ibm.com/docs/en/STAKKZ/con_LTOdrive_cartridges_handling_environment.html" rel="nofollow noopener" target="_blank">IBM</a>、<a href="https://www.dell.com/support/kbdoc/en-au/000122049/how-to-handle-backup-tapes" rel="nofollow noopener" target="_blank">Dell</a>）。</li>
+<li><strong>远离磁铁、热源和阳光。</strong>IBM 要求不要让磁带盒暴露在高于 100 奥斯特的杂散磁场中，Overland-Tandberg 建议让磁带盒与大电流电缆、电源和电机保持 8 至 12 cm（3 至 5 英寸）的距离。请避开阳光直射，也不要放在暖气片上。</li>
+</ul>
+<p>30年归档额定寿命就是以这些条件为前提的。磁带能保存多久，详见 <a href="/zh/why-tape/lto-tape-lifespan">LTO 磁带使用寿命</a>。</p></section><section class="section-card"><p class="eyebrow">盒具、机柜和机架</p><h2>磁带盒放在哪里</h2>
+<figure class="page-figure"><img alt="保管 LTO 磁带盒的四种方式：侧立的单个透明盒、可放 5 至 20 盒磁带的带衬垫运输箱、带抽屉的介质柜，以及 19 英寸机架中的搁板" decoding="async" height="400" loading="lazy" src="/assets/figures/lto-storage-options.svg" width="960"/><figcaption>从一盒到几百盒：每盒磁带装入盒内侧立，用带衬垫的箱子携带，较大的收藏则放在介质柜或机架搁板上，并置于条件稳定的房间。</figcaption></figure>
+<div class="table-wrap"><table aria-label="LTO 磁带盒的存放方式" class="price-table"><thead><tr><th>选项</th><th>最适合</th><th>考查要点</th></tr></thead><tbody><tr><td>透明盒（磁带盒出厂时自带的盒子）</td><td>每盒磁带都放在架上</td><td>像书一样侧立存放，不要平放堆叠</td></tr><tr><td>可装 5、10 或 20 盒磁带的带衬垫运输箱（turtle case）</td><td>把磁带运往异地和运回</td><td>固定每盒磁带的泡沫槽、可锁定的搭扣，以及放封条或标签的位置</td></tr><tr><td>存储盒或抽屉内衬</td><td>办公室柜子里的小型归档</td><td>让磁带盒直立并相互隔开的槽位；防尘盖</td></tr><tr><td>介质柜</td><td>一个房间里数十到数百盒磁带</td><td>尺寸适合 LTO 的抽屉、锁，重要归档还要有针对磁性介质的防火等级，其内部温度必须比纸质保险箱更低</td></tr><tr><td>机架搁板或磁带库</td><td>机房中紧挨磁带机的磁带盒</td><td>适合 19 英寸机架中 LTO 磁带盒的搁板；磁带盒很多时，<a href="/zh/lto-tape-library">磁带库</a>会替您存放并加载</td></tr></tbody></table></div>
+<p>对磁带来说，普通防火保险箱不够：它的设计目标是让纸张保持在燃点以下，而这个温度远高于磁带的承受范围。请选用符合磁性介质防火等级的机柜或保险箱（在美国，磁带和胶片的等级是 UL 72 Class 150，纸张是 Class 350），或者依靠另一处的第二份副本。条码标签和清洁磁带见<a href="/zh/resources/lto-cleaning-tapes-and-labels">清洁磁带、标签与盒具</a>。</p></section><section class="section-card"><p class="eyebrow">异地</p><h2>异地存放与轮换</h2>
+<figure class="page-figure"><img alt="每周一组磁带离开大楼前往异地，上一组磁带则运回" decoding="async" height="420" loading="lazy" src="/assets/figures/offsite-tape-rotation.svg" width="960"/><figcaption>简单的每周轮换：一组磁带离开大楼，上一组磁带回来重复使用或继续保存，这样始终有一份完整副本在别处。</figcaption></figure>
+<p>数据始终应有一份放在主站点发生火灾、水灾或入室盗窃时也够不着的地方。对磁带来说，就是按计划把磁带盒带出大楼：</p>
+<ul>
+<li><strong>日、周、月备份组。</strong>常见方案（常称祖父、父亲、儿子轮换）是：日备份磁带保留一两周，周备份磁带保留一两个月，月备份磁带保留一年或更久，并把最新的周或月备份组放到异地。</li>
+<li><strong>归档副本。</strong>对只写一次的归档，一开始就做两份，并把其中一份放在另一处。</li>
+<li><strong>日志。</strong>记录每盒磁带在哪里、谁移动过、何时移动。备份软件和磁带库可以把这叫作“保管库管理”并自动跟踪。</li>
+<li><strong>运输的磁带要加密。</strong>放在汽车或快递车里的磁带盒可能丢失；用磁带机加密（AES-256、LTO-4及更新世代），丢失的磁带也不会泄露任何内容。</li>
+</ul>
+<p>如果使用保管库公司，请询问他们在哪里、如何存放磁带（温湿度控制），能多快送回一盒磁带，如何记录监管链，以及如何在站点之间运送磁带。异地磁带为何仍有价值，见<a href="/zh/blog/offsite-tape-backups-still-beat-most-good-enough-plans">异地磁带备份仍胜过多数“够用就行”的方案</a>。</p></section><section class="section-card"><p class="eyebrow">操作</p><h2>操作清单</h2>
+<ul>
+<li>拿磁带盒时只握外壳，绝不要触碰磁带或拉引带销。</li>
+<li>不要摔落。摔过的磁带盒在保存唯一副本之前应先测试，或者直接报废。</li>
+<li>磁带盒不在磁带机或磁带库内时，一律放回盒中。</li>
+<li>使用规范的条码标签，不要用可能在磁带机内脱落的手写贴纸。</li>
+<li>直立存放，绝不平放堆叠，也绝不要留在车里。</li>
+<li>每一两年抽样读回一批磁带盒，检查归档是否仍可读取。</li>
+</ul></section><section class="section-card"><p class="eyebrow">更多指南</p><h2>其他 LTO 指南</h2><div class="link-grid"><a href="/zh/lto-tape">什么是 LTO 磁带<span>一页读懂这一格式</span></a><a href="/zh/lto-storage">LTO 存储<span>磁带存储的原理与成本</span></a><a href="/zh/lto-tape-capacity">LTO 容量表<span>LTO-1至LTO-14</span></a><a href="/zh/why-tape/lto-tape-drive">LTO 磁带机选购指南<span>该买哪款磁带机</span></a><a href="/zh/lto-tape-library">LTO 磁带库<span>自动加载器与磁带库</span></a><a href="/zh/why-tape/lto-tape-lifespan">LTO 磁带使用寿命<span>磁带能保存多久</span></a><a href="/zh/resources/ltfs">LTFS 详解<span>把磁带当文件系统用</span></a><a href="/zh/resources/lto-tape-data-recovery">LTO 磁带数据恢复<span>读取旧磁带</span></a><a href="/zh/resources/lto-cleaning-tapes-and-labels">清洁磁带与标签<span>耗材与操作</span></a><a href="/zh/lto-tape-news">LTO 磁带资讯<span>本月有何变化</span></a></div></section>
+<section class="cta-band"><p class="eyebrow">价格表</p><h2>获取LTO价格表</h2><p>在制定数据迁移或设备更新预算前，请先索取最新的LTO介质与驱动器报价。</p>
+<div class="hubspot-shell"><div class="hs-form-frame" data-form-id="3f49124b-a1cb-4f2b-a54f-8f0c266fa59d" data-portal-id="147689578" data-region="eu1"></div></div>
+<div class="cta-actions"><a class="cta-secondary" href="/zh/lto-tape-price-trend/history">查看价格历史</a></div></section>
+<section aria-label="如何存放 LTO 磁带常见问题" class="faq-grid"><article class="faq-card"><h3>LTO 磁带应在什么温度下存放？</h3><p>据 IBM 和 Fujifilm，长期存放为 16 至 25 °C（61 至 77 °F）。短期内 IBM 允许 16 至 32 °C，磁带本身不得超过 52 °C。</p></article><article class="faq-card"><h3>存放 LTO 磁带最适宜的湿度是多少？</h3><p>长期存放相对湿度为 20 至 50%，不得结露。短期存放可到 80%，但30年额定寿命的前提是稳定而干燥。</p></article><article class="faq-card"><h3>LTO 磁带应平放还是直立存放？</h3><p>直立。Overland-Tandberg 说介质应垂直存放，Dell 说磁带应放在盒内直立，不要堆叠。</p></article><article class="faq-card"><h3>磁带使用前应放置多久适应环境？</h3><p>让磁带在磁带机所在房间放置 24 小时；如果来自温度低得多或潮湿得多的地方，则放置更久，以免磁带机内结露。</p></article><article class="faq-card"><h3>LTO 磁带能放在普通防火保险箱里吗？</h3><p>只按纸张等级认证的保险箱不够，因为箱内温度会升到远高于磁带承受的程度。请使用符合磁性介质等级的保险箱或机柜（美国为 UL 72 Class 150），或在异地保存第二份副本。</p></article><article class="faq-card"><h3>磁带应如何存放到异地？</h3><p>放在与本地条件相同的温湿度可控场所，装在带衬垫的箱子里运输，加密，并有记录，确保始终知道每盒磁带在哪里。</p></article></section>
+</div></div></main>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a aria-label="TapeBackup.org 首页" class="brand" href="/zh"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a><p class="blurb">TapeBackup.org 是有关 LTO 磁带备份技术、价格与工作流的独立资源。与 LTO 联盟无关。</p></div><div class="fcol"><h4>LTO价格</h4><a href="/zh/lto-tape-price-trend">价格追踪</a><a href="/zh/lto-tape-price-trend/lto6-price">LTO-6 价格</a><a href="/zh/lto-tape-price-trend/lto7-price">LTO-7 价格</a><a href="/zh/lto-tape-price-trend/lto8-price">LTO-8 价格</a><a href="/zh/lto-tape-price-trend/lto9-price">LTO-9 价格</a><a href="/zh/lto-tape-price-trend/lto10-price">LTO-10 价格</a><a href="/zh/lto-tape-price-trend/history">价格历史</a></div><div class="fcol"><h4>资源</h4><a href="/zh/lto-tape">什么是LTO磁带</a><a href="/zh/lto-tape-capacity">LTO 容量表</a><a href="/zh/why-tape/lto-tape-drive">LTO 磁带机</a><a href="/zh/lto-tape-news">LTO 磁带新闻</a><a href="/zh/tape-q-and-a">磁带问答</a><a href="/zh/blog">Blog</a><a href="/zh/why-tape">为什么选择磁带</a><a href="/zh/resources">指南</a><a href="/zh/lto-tape-brand">LTO 磁带品牌</a><a href="/zh/comparisons">对比</a></div><div class="fcol"><h4>工具</h4><a href="/zh/backup-calculator">备份计算器</a><a href="/zh/backup-software-finder">软件查找工具</a><a href="/tape-archive-advisor">磁带归档顾问</a><a href="/zh/best-tape-backup-software">最佳磁带备份软件</a></div><div class="fcol"><h4>公司信息</h4><a href="/zh/about">关于</a><a href="/zh/contact">联系我们</a><a href="/sitemap.xml">网站地图</a></div></div>
+<div class="footer-bot"><span>© 2026 TapeBackup.org。中立的LTO磁带备份资源。</span><div class="links"><a href="/zh/about">关于</a><a href="/zh/contact">联系我们</a><a href="/sitemap.xml">网站地图</a></div></div></div></footer>
+</div>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>
