@@ -1,31 +1,49 @@
 {
- "month": "September 2026",
- "title": "What happened in LTO tape in September 2026",
- "answer": "LTO tape news for September 2026: shipped capacity rose 57% year on year in the first quarter after a 9% dip in 2025, 40 TB LTO-10 cartridges went on general sale for about $490 to $555, half-height LTO-10 drives have still not reached sellers, and LTO-9 media prices stayed flat while hard drive prices climbed.",
+ "month": "October 2026",
+ "title": "What happened in LTO tape in October 2026",
+ "answer": "LTO tape storage news for October 2026: 40 TB LTO-10 cartridges sold for about $494, well below their list price, Spectra Logic added an Italian distributor, cheap used LTO-5 drives drew homelab interest, TapeArk began moving old tape archives into cloud virtual tape libraries, and still no half-height LTO-10 drive is on sale.",
  "items": [
-  {"headline": "LTO shipments up 57% in the first quarter of 2026",
-   "summary": "The LTO Program reported 160.3 EB of LTO capacity shipped in 2025, down 9% from the 176.5 EB record in 2024, and a 57% year-on-year rise in the first quarter of 2026, driven by LTO-9 adoption and the LTO-10 ramp. It expects 2026 to set a new record.",
-   "source": "LTO Program", "date": "1 September 2026",
-   "url": "https://www.lto.org/2026/09/lto-capacity-shipments-grow-57-yoy-in-q1-2026-as-ai-and-archive-demand-accelerates/"},
-  {"headline": "Why 2025 dipped: tariffs and buyers waiting for LTO-10",
-   "summary": "The Register quoted analyst Tom Coughlin linking the 2025 dip to caution over the international trade environment. Blocks and Files suggested buyers were waiting for LTO-10 and estimated 2026 could reach about 252 EB if the first-quarter pace holds.",
-   "source": "The Register and Blocks and Files", "date": "2 and 4 September 2026",
-   "url": "https://www.blocksandfiles.com/tape/2026/09/04/tape-capacity-shipments-fell-in-2025-but-2026-could-be-a-boom-year-for-tape/5294464"},
-  {"headline": "40 TB LTO-10 cartridges on general sale",
-   "summary": "The 40 TB LTO-10 cartridge, which uses an aramid base film and works in existing LTO-10 drives, is now listed by US sellers at $491 to $555, below the roughly $570 Symply had expected at launch. Fujifilm shipped first in January 2026 and IBM's cartridges followed in March.",
-   "source": "TapeBackup.org price check and Symply", "date": "17 September 2026",
-   "url": "https://gosymply.com/lto-10-40tb-update-is-the-extra-10tb-worth-the-cost/"},
-  {"headline": "Still no half-height LTO-10 drive",
-   "summary": "Symply had said half-height LTO-10 drives were expected in the second quarter of 2026, because full-height drives came first with a new head guide assembly. None was listed at any seller we checked in September, so LTO-10 remains a full-height, higher-cost option.",
-   "source": "Symply support and TapeBackup.org price check", "date": "17 September 2026",
-   "url": "https://support.gosymply.com/support/solutions/articles/80001179382-about-lto-10"},
-  {"headline": "Tape stays flat while hard drive prices rise",
-   "summary": "DatacenterDisk reported LTO media largely stable at about $4 to $6 per TB while hard drive prices rose sharply in 2026, widening tape's cost advantage per terabyte from about 2 times to 3.5 times. Our own September check found LTO-9 cartridges flat against early 2026.",
-   "source": "DatacenterDisk", "date": "17 September 2026",
-   "url": "https://datacenterdisk.com/news/hard-drive-prices-up-50-percent-2026"},
-  {"headline": "Roadmap: LTO-11 planned at 70 TB",
-   "summary": "The roadmap the LTO Program refreshed in November 2025 still stands: LTO-11 at 70 TB native and LTO-14 at 365 TB, lower targets than before in favour of reliability and cost per terabyte. No LTO-11 date has been announced.",
-   "source": "LTO Program", "date": "November 2025",
-   "url": "https://www.lto.org/2025/11/lto-program-announces-new-40-tb-lto-10-cartridge-specifications-and-refreshes-its-roadmap-for-ultra-high-density-ai-ready-archival-storage/"}
+  {
+   "headline": "40 TB LTO-10 cartridges sell for about $494",
+   "summary": "Chinese tech site IT Home reported Fujifilm's 40 TB native LTO-10 cartridge selling for about $494, far below the $888.89 suggested retail price. Our September price check found 40 TB cartridges at $491 to $555 at US sellers.",
+   "source": "IT Home (via ifeng Tech)",
+   "date": "27 September 2026",
+   "url": "https://tech.ifeng.com/c/8wkkDzLojud"
+  },
+  {
+   "headline": "Spectra Logic signs Italian distributor ICOS",
+   "summary": "Tape library maker Spectra Logic signed a distribution agreement with ICOS S.p.A., giving ICOS's Italian channel partners access to Spectra's storage products.",
+   "source": "Spectra Logic",
+   "date": "6 October 2026",
+   "url": "https://spectralogic.com/press-releases/spectra-logic-and-icos-spa/"
+  },
+  {
+   "headline": "Used LTO-5 drives bring tape back to homelabs",
+   "summary": "Hackaday covered a homelab builder backing up to a second-hand LTO-5 drive, noting that used tapes cost far less per terabyte than the cheapest new hard drives. Used drives need care: see our buying advice for used drives.",
+   "source": "Hackaday",
+   "date": "12 October 2026",
+   "url": "https://hackaday.com/2026/10/12/backup-tapes-come-back-to-the-homelab/"
+  },
+  {
+   "headline": "TapeArk moves old tape archives into cloud virtual tape libraries",
+   "summary": "TapeArk reads customers' legacy tapes at its own ingest centres and loads the data into virtual tape libraries in public cloud, accessed through its Nexus platform.",
+   "source": "Blocks & Files",
+   "date": "13 October 2026",
+   "url": "https://www.blocksandfiles.com/tape/2026/10/13/tapeark-moves-tape-libraries-to-public-cloud-vtls-for-lower-cost-and-higher-speed/5302765"
+  },
+  {
+   "headline": "Still no half-height LTO-10 drive",
+   "summary": "As of mid-October 2026, IBM and Quantum sell LTO-10 drives only as full-height units inside their libraries, and HPE's current drive specifications list LTO-8 and LTO-9 only. Stand-alone buyers are still choosing LTO-9 drives.",
+   "source": "IBM, Quantum and HPE product pages",
+   "date": "October 2026",
+   "url": "https://www.ibm.com/products/lto-tape-drive"
+  },
+  {
+   "headline": "LTO shipments fell 9% in 2025, then rose 57% in the first quarter of 2026",
+   "summary": "The LTO Program reported 160.3 EB shipped in 2025, down from the 176.5 EB record in 2024, and a 57% year-on-year rise in the first quarter of 2026. The LTO Program re-posted the coverage on 10 October.",
+   "source": "The Register",
+   "date": "2 September 2026",
+   "url": "https://www.theregister.com/a/5293813"
+  }
  ]
 }

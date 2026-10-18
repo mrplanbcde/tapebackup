@@ -603,6 +603,8 @@ def build_hub(current, history):
         ("What is the cheapest LTO tape per terabyte in 2026?",
          f"{cheap}. New {gens[cheap]['nativeTB']:g} TB {cheap} cartridges were listed at {rng(gens[cheap]['cartridge'], True)}, or {per_tb(gens[cheap]['cartridge'])} per native TB"
          + (f", slightly below LTO-8 at {per_tb(gens['LTO-8']['cartridge'])}." if cheap == "LTO-9" and gens["LTO-8"]["cartridge"].get("perTBLow") is not None else ".")),
+        ("How much does LTO tape storage cost per TB in 2026?",
+         f"Media costs {per_tb(gens[cheap]['cartridge'])} per native TB for {cheap}, the cheapest generation, as of {date_text()}. Add a drive, from {rng(gens['LTO-9']['driveInternal'], False)} for a new internal LTO-9 drive, which matters less the more data you store."),
         ("How much does an LTO-10 tape cost?",
          f"30 TB LTO-10 cartridges were listed at {rng(l10['cartridge'], True)}" + (f" and the newer 40 TB cartridge at {rng(c40, True)}" if c40.get("low") is not None else "") + f" on {date_text()}."),
         ("How much does an LTO-9 tape drive cost?",
@@ -644,6 +646,9 @@ def build_hub(current, history):
 <p>New items only, {currency_phrase()}. Ranges cover single cartridges; see each generation guide for packs and individual listings.</p>
 {summary}
 <p class="updated-note">Checked {date_text()}.{' No new internal LTO-6 or LTO-10 drive, and only one new external LTO-6 drive, was listed at the sellers checked.' if MKT.is_us else ''}</p></section>
+<section class="section-card" id="cost-per-tb"><p class="eyebrow">Cost per TB</p><h2>LTO tape storage cost per TB in 2026</h2>
+<ul>{"".join(f"<li><strong>{g}</strong>: {per_tb(gens[g]['cartridge'])} per native TB</li>" for g in GENS if gens[g]['cartridge'].get('perTBLow') is not None)}</ul>
+<p>Media is only part of the cost of LTO storage. A drive is a fixed cost of {rng(gens['LTO-9']['driveInternal'], False)} for a new internal LTO-9 drive, so the cost per terabyte of a whole tape storage system falls the more you store. How the parts fit together is in <a href="/lto-storage">LTO storage explained</a>, and the five-year comparison with cloud storage in <a href="/comparisons/tape-vs-cloud-5-year-cost">tape vs cloud cost</a>.</p></section>
 <section class="section-card" id="changes"><p class="eyebrow">What changed</p><h2>How LTO cartridge prices moved in 2026</h2>
 {changes_intro}
 {changes}

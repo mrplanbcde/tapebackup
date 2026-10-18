@@ -124,13 +124,16 @@ def build_capacity(current):
         ("What is the capacity of LTO-9?", "18 TB native, or 45 TB with 2.5 to 1 compression."),
         ("What is the capacity of LTO-8?", "12 TB native, or 30 TB with 2.5 to 1 compression."),
         ("What is the capacity of LTO-10?", "30 TB native (75 TB compressed) on the standard cartridge, and 40 TB native (100 TB compressed) on the cartridge that shipped in 2026."),
-        ("What is the capacity of LTO-7 and LTO-6?", "LTO-7 holds 6 TB native (15 TB compressed) and LTO-6 holds 2.5 TB native (6.25 TB compressed)."),
+        ("What is the capacity of LTO-7?", "LTO-7 holds 6 TB native, or 15 TB with 2.5 to 1 compression."),
+        ("What is the native storage capacity of an LTO-6 tape?", "2.5 TB native, or 6.25 TB with 2.5 to 1 compression. LTO-6 drives read LTO-4 to LTO-6 cartridges and write LTO-5 and LTO-6."),
+        ("What is the difference between raw and actual LTO storage capacity?", "Raw, or native, capacity is what the cartridge holds before compression. The space available to files is slightly less once LTFS reserves its index partition, and the compressed figure is only reached when data compresses 2.5 to 1, which video, images and encrypted files do not."),
+        ("How much can an LTO storage library hold?", "Multiply the cartridge capacity by the number of slots: a 16-slot autoloader with LTO-9 holds 288 TB native, and large libraries hold thousands of cartridges. See the tape library guide for common sizes."),
         ("When will LTO-11 come out?", "No date has been announced. The November 2025 roadmap plans LTO-11 at 70 TB native; generations have historically arrived two to four years apart."),
         ("Are all LTO tapes the same size?", "Yes. Every generation uses the same 102 × 105.4 × 21.5 mm cartridge, so they fit the same slots and cases."),
     ]
-    return article(path, "LTO Tape Capacity Chart: LTO-1 to LTO-14 Sizes",
+    return article(path, "LTO Tape Capacity Chart: LTO-1 to LTO-14 Storage Sizes",
                    "Native and compressed capacity of every LTO generation from LTO-1 to LTO-10, the LTO-11 to LTO-14 roadmap, speeds, release years and cartridges per TB.",
-                   "LTO Tape Capacity by Generation",
+                   "LTO Tape Storage Capacity by Generation",
                    "LTO-9 holds 18 TB native (45 TB compressed), LTO-10 holds 30 TB or 40 TB native (75 or 100 TB compressed), and LTO-8 holds 12 TB native; plan with native capacity, because video, images and encrypted data do not compress.",
                    "Capacity chart", sections, faqs, PUBLISHED, [("Home", "/"), ("LTO tape", "/lto-tape"), ("Capacity chart", path)])
 
@@ -170,6 +173,29 @@ def build_drive_guide(current):
 <p>A drive also needs software: backup software that lists the drive model as supported, or LTFS for drag-and-drop use. See <a href="/resources/ltfs">LTFS explained</a>.</p>"""),
         sec("Brands", "HPE, IBM, Quantum, Dell or a desktop brand", """
 <p>Current LTO drive mechanisms come from IBM, and the brands differ in firmware, enclosure, bundled software, support and warranty. Pick the brand your backup software and server vendor support, then compare the exact part number between sellers, because the same drive is often listed thousands apart.</p>"""),
+        sec("Models", "LTO drive models by brand", table(["Brand and model", "Generation", "Form", "Interface", "Status"], [
+            ['<a href="https://support.hpe.com/hpesc/public/api/document/c04123270" rel="nofollow noopener" target="_blank">HPE StoreEver LTO-9 Ultrium 45000</a> (BC040A internal, BC042A external)', "LTO-9", "Half-height, internal or external", "12 Gb/s SAS", "Current"],
+            ["HPE StoreEver LTO-8 Ultrium 30750 (BC022A internal, BC023A external)", "LTO-8", "Half-height, internal or external", "6 Gb/s SAS", "Current"],
+            ["HP LTO-6 Ultrium 6250 (EH969A internal, EH970A external)", "LTO-6", "Half-height, internal or external", "SAS", "Legacy, used market"],
+            ["HP LTO-5 Ultrium 3000 SAS External (EH958B)", "LTO-5", "External", "SAS", "Legacy, used market"],
+            ['<a href="https://www.ibm.com/products/stand-alone-drive" rel="nofollow noopener" target="_blank">IBM TS2290</a> (3580 H9S)', "LTO-9", "External half-height, desktop or rack shelf", "12 Gb/s SAS, two ports, plus Ethernet", "Current"],
+            ["IBM TS2280 (3580 H8S)", "LTO-8", "External half-height", "6 Gb/s SAS", "Still listed"],
+            ['<a href="https://www.ibm.com/products/lto-tape-drive" rel="nofollow noopener" target="_blank">IBM LTO-10 drive</a>', "LTO-10", "Full-height, inside IBM libraries only", "12 Gb/s SAS or 32 Gb/s Fibre Channel", "Current, library only"],
+            ['<a href="https://www.quantum.com/en/products/tape-storage/lto-tape-drives/" rel="nofollow noopener" target="_blank">Quantum LTO Tape Drive, Half Height</a>', "LTO-7 to LTO-9", "Tabletop, internal or 1U rackmount", "12 Gb/s SAS on LTO-9", "Current"],
+            ["Quantum LTO-10", "LTO-10", "Full-height, in Scalar libraries only", "Library", "Current, library only"],
+            ['<a href="https://www.dell.com/support/home/en-us/product-support/product/powervault-lto9/docs" rel="nofollow noopener" target="_blank">Dell PowerVault LTO9</a>', "LTO-9", "Half-height, internal or external", "12 Gb/s SAS", "Supported; check stock with Dell"],
+            ['<a href="/resources/owc-lto-tape-drives">OWC Archive Pro</a>', "LTO-7 to LTO-9", "Desktop enclosure", "Thunderbolt", "Current"],
+        ], "LTO drive models by brand") + """
+<p>As of October 2026 no brand sells a half-height LTO-10 drive: LTO-10 drives are full-height and mostly sold inside libraries. Older drives labelled <strong>IBM TotalStorage</strong> carry IBM's former brand name for its 3580 Ultrium drives, so check the generation on the label before buying one used. Models and part numbers come from HPE QuickSpecs and PartSurfer and from the IBM, Quantum and Dell product and support pages, checked in October 2026; prices are in the <a href="/lto-tape-price-trend">LTO price tracker</a>.</p>"""),
+        sec("Rack mounting", "Rack mount kits and enclosures", """
+<p>A half-height internal drive needs a 5.25-inch bay in a server, a desktop enclosure, or a rack kit. External drives can also sit on a rack shelf. The vendors' own options:</p>
+""" + table(["Option", "Holds", "Note"], [
+            ["HPE StoreEver 1U Generic Rack Mount Kit (BC029A)", "Up to two internal half-height SAS LTO-8 or LTO-9 drives", "No drives included; HPE lists cable P35174-B21 for it"],
+            ["IBM rack mount shelf for TS2290 and TS2280", "Two external half-height drives side by side on a 19 inch shelf", "Sold as part 00NV426 through the Lenovo channel"],
+            ["IBM 7226 Multimedia Enclosure", "Up to four devices in 1U, including half-height LTO drives", "Aimed at IBM Power servers"],
+            ["Quantum LTO Tape Drive, Half Height, Single, 1U Rackmount", "One or two Quantum half-height drives", "Ordered as a rackmount drive model"],
+        ], "LTO drive rack mount kits") + """
+<p>A rack kit only holds drives; someone still loads cartridges by hand. When that becomes a chore, look at an autoloader or library, covered in <a href="/lto-tape-library">LTO tape libraries</a>.</p>"""),
         sec("Used drives", "Buying a used or refurbished drive", """
 <p>A used drive is reasonable for reading old tapes. Ask for the head and tape-motion hours, a recent firmware version and a return period, and test it with a cartridge you can afford to lose before trusting it with an archive. Avoid drives sold as untested; a bad head can damage the tapes you put in it.</p>"""),
         sec("Before you buy", "Checklist", """
@@ -208,7 +234,8 @@ def build_library(current):
 <li><strong>Autoloader:</strong> one drive and a magazine of about 8 to 16 slots in 1U or 2U. Good for a small office or a single server.</li>
 <li><strong>Small library:</strong> one or more drives and 25 to 50 slots per module, expandable by stacking modules. Good for a mid-size estate or several backup streams.</li>
 <li><strong>Enterprise library:</strong> hundreds to thousands of slots and dozens of drives, partitioned between applications.</li>
-</ul>"""),
+</ul>
+<p>Any of these is an LTO tape storage library: the cartridges stay in their slots, offline and powered down, until the robot loads one. How a library fits into a complete tape storage system is in <a href="/lto-storage">LTO storage explained</a>.</p>"""),
         sec("Models", "Common autoloaders and small libraries", f"""
 {table(["Model", "Type", "Slots (base unit)", "Notes"], [
             ["HPE StoreEver 1/8 G2", "Autoloader", "8", "1U, one drive"],
@@ -234,12 +261,13 @@ def build_library(current):
         more_guides(path),
     ]
     faqs = [
+        ("What is an LTO tape storage library?", "A cabinet that holds many LTO cartridges in slots, one or more drives and a robot that moves cartridges between them, so backups and restores run without anyone changing tapes. Small ones are called autoloaders."),
         ("What is the difference between an autoloader and a tape library?", "An autoloader has one drive and a single magazine of about 8 to 16 slots. A library has one or more drives, more slots, and can usually be expanded with extra modules."),
         ("How many tapes does a small LTO library hold?", "Base modules typically hold 25 to 50 cartridges, which is 450 to 900 TB on LTO-9, and most can be expanded by stacking modules."),
         ("Do tape libraries need barcode labels?", "Yes. The library identifies each cartridge by its barcode label, so every data and cleaning cartridge needs one in the format the library expects."),
         ("Can I mix LTO generations in one library?", "Usually yes, with drives of each generation, as long as the library and your backup software support both. Each drive still only reads its supported generations."),
     ]
-    return article(path, "LTO Tape Libraries and Autoloaders: Buying Guide",
+    return article(path, "LTO Tape Libraries and Autoloaders: Storage Buying Guide",
                    "When you need an LTO autoloader or tape library, common models from HPE, IBM, Dell and Quantum, slot counts, and what to check before buying.",
                    "LTO Tape Libraries and Autoloaders",
                    "An LTO autoloader holds one drive and about 8 to 16 cartridges, while a library holds one or more drives and 25 or more slots per module; move to one when a backup spans several cartridges or nobody is there to change tapes.",
@@ -427,11 +455,11 @@ def build_news(current):
     faqs = [
         ("Are LTO tape shipments growing?", "Yes again in 2026. The LTO Program reported 160.3 EB shipped in 2025, down 9% from the 2024 record, and a 57% rise in the first quarter of 2026."),
         ("Is there a 40 TB LTO-10 tape?", "Yes. 40 TB LTO-10 cartridges from Fujifilm and IBM began shipping in 2026 and work in existing LTO-10 drives."),
-        ("Are half-height LTO-10 drives available?", "Not yet at the sellers we checked in September 2026. LTO-10 drives so far ship as full-height units."),
+        ("Are half-height LTO-10 drives available?", "Not as of October 2026. IBM and Quantum sell LTO-10 drives as full-height units inside their libraries, and HPE's current drive line covers LTO-8 and LTO-9."),
     ]
-    return article(path, f"LTO Tape News: {news['month']} Roundup | TapeBackup",
-                   f"LTO tape news for {news['month']}: shipments, 40 TB LTO-10 cartridges, LTO-10 drives, the roadmap and current LTO-9 and LTO-10 prices.",
-                   f"LTO Tape News, {news['month']}",
+    return article(path, f"LTO Tape Storage News: {news['month']} | TapeBackup",
+                   f"LTO tape storage news for {news['month']}: 40 TB LTO-10 cartridge prices, LTO-10 drives, shipments, library and archive news, and current LTO prices.",
+                   f"LTO Tape Storage News, {news['month']}",
                    news["answer"], "News roundup", sections, faqs, PUBLISHED, [("Home", "/"), ("LTO tape news", path)])
 
 

@@ -1,0 +1,270 @@
+{
+  "asOf": "2026-10-18",
+  "drives": [
+    {
+      "vendor": "HPE",
+      "productName": "HPE StoreEver LTO-9 Ultrium 45000 Internal Tape Drive",
+      "partNumber": "BC040A",
+      "generation": "LTO-9",
+      "form": "internal half-height (5.25-inch)",
+      "interface": "12Gb/s dual-port SAS (internal connector mini-SAS SFF8482)",
+      "status": "current",
+      "notes": "TAA-compliant variant BC041A (HPE StoreEver LTO-9 Ultrium 45000 Internal TAA-compliant Tape Drive). HPE now brands the family 'HPE Storage LTO Ultrium Tape Drives' (rebranding applied Feb 2026) but SKU names still say StoreEver.",
+      "url": "https://support.hpe.com/hpesc/public/api/document/c04123270",
+      "quote": "HPE StoreEver LTO-9 Ultrium 45000 Internal Tape Drive BC040A",
+      "sourceNote": "HPE QuickSpecs c04123270, Version 53, 17-Aug-2026; name confirmed on HPE PartSurfer"
+    },
+    {
+      "vendor": "HPE",
+      "productName": "HPE StoreEver LTO-9 Ultrium 45000 External Tape Drive",
+      "partNumber": "BC042A",
+      "generation": "LTO-9",
+      "form": "external desktop, half-height drive",
+      "interface": "12Gb/s dual-port SAS (external connector mini-SAS HD SFF8644)",
+      "status": "current",
+      "notes": "US-English localization BC042A#ABA.",
+      "url": "https://support.hpe.com/hpesc/public/api/document/c04123270",
+      "quote": "HPE StoreEver LTO-9 Ultrium 45000 External Tape Drive BC042A",
+      "sourceNote": "HPE QuickSpecs c04123270 V53 (17-Aug-2026); buy.hpe.com product page exists but blocks automated fetch: https://buy.hpe.com/emea_europe/en/storage/tape-storage/tape-drives-ultrium/storeever-ultrium-tape-drives/hpe-storeever-lto%E2%80%919-ultrium-45000-external-tape-drive/p/bc042a"
+    },
+    {
+      "vendor": "HPE",
+      "productName": "HPE StoreEver LTO-8 Ultrium 30750 Internal / External Tape Drive",
+      "partNumber": "BC022A (internal), BC024A (internal TAA), BC023A (external)",
+      "generation": "LTO-8",
+      "form": "internal half-height and external desktop",
+      "interface": "6Gb/s dual-port SAS",
+      "status": "current (still in QuickSpecs V53)",
+      "notes": "Included for context; QuickSpecs V53 now covers only LTO-8 Ultrium 30750 and LTO-9 Ultrium 45000 (LTO-7 Ultrium 15000 removed Aug 2026).",
+      "url": "https://support.hpe.com/hpesc/public/api/document/c04123270",
+      "quote": "content is focused exclusively on: LTO-8 Ultrium 30750, LTO-9 Ultrium 45000",
+      "sourceNote": "HPE QuickSpecs V53 version history"
+    },
+    {
+      "vendor": "HP / HPE",
+      "productName": "HPE StoreEver LTO-5 Ultrium 3000 SAS External Tape Drive",
+      "partNumber": "EH958B",
+      "generation": "LTO-5",
+      "form": "external desktop, half-height drive",
+      "interface": "SAS",
+      "status": "legacy (no longer in current HPE QuickSpecs ordering tables; spares record only)",
+      "notes": "Sold originally as HP StoreEver LTO-5 Ultrium 3000. HPE QuickSpecs lists Ultrium 3000 only in the generation compatibility history.",
+      "url": "https://partsurfer.hpe.com/Search.aspx?SearchText=EH958B",
+      "quote": "HPE STOREEVER LTO-5 ULTRIUM 3000 SAS EXTERNAL TAPE DRIVE",
+      "sourceNote": "HPE PartSurfer description; QuickSpecs c04123270: 'Fifth-generation LTO Ultrium drives (Ultrium 3280, Ultrium 3000) read and write LTO-4 and LTO-5 media'"
+    },
+    {
+      "vendor": "HP / HPE",
+      "productName": "HPE StoreEver LTO-6 Ultrium 6250 Internal Tape Drive",
+      "partNumber": "EH969A",
+      "generation": "LTO-6",
+      "form": "internal half-height",
+      "interface": "SAS (6Gb/s SAS-2 per reseller listings; not confirmed on an HPE page)",
+      "status": "legacy",
+      "url": "https://partsurfer.hpe.com/Search.aspx?SearchText=EH969A",
+      "quote": "HPE STOREEVER LTO-6 ULTRIUM 6250 INTERNAL TAPE DRIVE",
+      "sourceNote": "HPE PartSurfer description"
+    },
+    {
+      "vendor": "HP / HPE",
+      "productName": "HPE StoreEver LTO-6 Ultrium 6250 External Tape Drive",
+      "partNumber": "EH970A",
+      "generation": "LTO-6",
+      "form": "external desktop, half-height drive",
+      "interface": "SAS (6Gb/s SAS-2 per reseller listings; not confirmed on an HPE page)",
+      "status": "legacy",
+      "url": "https://partsurfer.hpe.com/Search.aspx?SearchText=EH970A",
+      "quote": "HPE STOREEVER LTO-6 ULTRIUM 6250 EXTERNAL TAPE DRIVE",
+      "sourceNote": "HPE PartSurfer description"
+    },
+    {
+      "vendor": "IBM",
+      "productName": "IBM TS2290 Tape Drive (IBM Stand-Alone Drive family)",
+      "partNumber": "Model 3580 H9S",
+      "generation": "LTO-9",
+      "form": "external half-height; desktop or rack-mounted (two side by side on a 19-inch rack shelf)",
+      "interface": "12 Gbps SAS, two SAS ports plus one Ethernet port",
+      "status": "current",
+      "notes": "IBM's Stand-Alone Drive page and its Tape Storage overview still describe the stand-alone drive as LTO-9 only. Lenovo resells the same drive as 6160-H9S.",
+      "url": "https://www.ibm.com/products/stand-alone-drive",
+      "quote": "Model 3580 H9S—One LTO Ultrium 9 tape drive, 12 Gbps SAS interface",
+      "sourceNote": "Quote from IBM TS2290 datasheet https://www.ibm.com/downloads/documents/jp-ja/10c31775c5d40001; ibm.com/products/ts2290 redirects to /products/stand-alone-drive"
+    },
+    {
+      "vendor": "IBM",
+      "productName": "IBM TS2280 Tape Drive",
+      "partNumber": "3580 H8S (Lenovo 6160-H8S)",
+      "generation": "LTO-8",
+      "form": "external half-height; standalone or rack shelf",
+      "interface": "6Gb SAS, two ports (Mini-SAS SFF-8088)",
+      "status": "listed by Lenovo Press with no withdrawal noted; not featured on IBM's current Stand-Alone Drive page",
+      "url": "https://lenovopress.lenovo.com/tips1305-ibm-ts2290-ts2280-lto-ultrium-tape-drives",
+      "quote": "Standalone or 2U rack mount (on a fixed shelf)",
+      "sourceNote": "Lenovo Press TIPS1305 (reseller documentation, not IBM)"
+    },
+    {
+      "vendor": "IBM",
+      "productName": "IBM LTO Ultrium 10 tape drive (full-height, library drive)",
+      "partNumber": "ULT3580-TDA (device type); TS4500 drive model FAC",
+      "generation": "LTO-10",
+      "form": "full-height, for IBM libraries (Diamondback, TS4500, TS4300); no stand-alone LTO-10 product found",
+      "interface": "32 Gbps FC or 12 Gbps SAS (SAS models: two SAS ports plus one Ethernet port)",
+      "status": "current (library only)",
+      "url": "https://www.ibm.com/products/lto-tape-drive",
+      "quote": "LTO tape drives are available in Full Height and Half Height form factors",
+      "sourceNote": "IBM Tape Storage overview lists Diamondback as 'LTO FH' with LTO-10; ULT3580-TDA from https://www.ibm.com/support/pages/ibm-ultrium-generation-10-lto-10-drive-configuration-information-ibm-storage-protect-server"
+    },
+    {
+      "vendor": "Quantum",
+      "productName": "Quantum LTO Tape Drive, Half Height, Tabletop",
+      "partNumber": "LTO-9 SAS tabletop: TD-L92BN-AR / TC-L92BN-AR (reseller listings; not shown on Quantum page)",
+      "generation": "LTO-9 (also LTO-8, LTO-7)",
+      "form": "external desktop (tabletop), half-height",
+      "interface": "LTO-9: 12Gb/s SAS, SFF-8644; LTO-8/7: 6Gb/s SAS, SFF8088",
+      "status": "current",
+      "url": "https://www.quantum.com/en/products/tape-storage/lto-tape-drives/",
+      "quote": "Quantum offers LTO-9, LTO-8, and LTO-7 tape drives in a half-height form factor",
+      "sourceNote": "Quantum 'LTO Half-Height Drives' page, fetched 2026-10-18"
+    },
+    {
+      "vendor": "Quantum",
+      "productName": "Quantum LTO Tape Drive, Half Height, Internal",
+      "generation": "LTO-9 (also LTO-8, LTO-7)",
+      "form": "internal half-height",
+      "interface": "LTO-9: 12Gb/s SAS, SFF-8482 with integrated power",
+      "status": "current",
+      "url": "https://www.quantum.com/en/products/tape-storage/lto-tape-drives/",
+      "quote": "Quantum LTO Tape Drive, Half Height, Internal For integration into a third-party server",
+      "sourceNote": "Quantum LTO Half-Height Drives page"
+    },
+    {
+      "vendor": "Quantum",
+      "productName": "Quantum LTO-10 full-height drive in Scalar libraries",
+      "generation": "LTO-10",
+      "form": "full-height, Scalar library drive only; no Quantum standalone LTO-10 drive found",
+      "interface": "not stated on the page fetched",
+      "status": "current (library only)",
+      "url": "https://www.quantum.com/en/products/tape-storage/",
+      "quote": "Scalar tape libraries now support LTO-10 full-height tape drives",
+      "sourceNote": "Quantum Tape Storage page; the half-height drive page lists no LTO-10 drive"
+    },
+    {
+      "vendor": "Dell",
+      "productName": "PowerVault LTO9",
+      "generation": "LTO-9",
+      "form": "half-height (300 MB/s HH); internal and external versions per Dell 2021 spec sheet (sheet URL now returns 404)",
+      "interface": "12 Gb SAS (Dell matrix lists '12 Gb SAS / 8 Gb FC' for the LTO9 column, FC applies to library drives)",
+      "status": "current on Dell support; US store configurator URL now redirects to Dell homepage, so retail availability unverified",
+      "url": "https://www.dell.com/support/home/en-us/product-support/product/powervault-lto9/docs",
+      "quote": "PowerVault LTO9",
+      "sourceNote": "Dell support product name; Dell KB 000134122 LTO Compatibility and Specification Matrix https://www.dell.com/support/kbdoc/en-us/000134122"
+    }
+  ],
+  "rackMount": [
+    {
+      "vendor": "HPE",
+      "productName": "HPE StoreEver 1U Generic Rack Mount Kit",
+      "partNumber": "BC029A",
+      "holds": "up to two internal SAS half-height drives (LTO-8 Ultrium 30750 or LTO-9 Ultrium 45000); no drives included",
+      "status": "current",
+      "relatedPart": "P35174-B21, HPE 12Gb Mini SAS High Density (SFF-8644) to LTO Drive 4m Cable for 1U Rack Mount Kit",
+      "url": "https://support.hpe.com/hpesc/public/api/document/c04123270",
+      "quote": "For racked servers. No drives included. Accommodates up to two internal SAS half-height drives",
+      "sourceNote": "HPE QuickSpecs V53 'Rack-mount Options'; HPE store now calls the line 'HPE Storage Rack-mount Kits'"
+    },
+    {
+      "vendor": "IBM",
+      "productName": "6160 Rack Mount Shelf Kit w/PDU Line Cord (for TS2290/TS2280)",
+      "partNumber": "00NV426 (feature AS1C)",
+      "holds": "TS2290/TS2280 external drives on a fixed 2U shelf (IBM: two TS2290s side by side on a 19-inch rack shelf)",
+      "status": "current per Lenovo Press",
+      "url": "https://lenovopress.lenovo.com/tips1305-ibm-ts2290-ts2280-lto-ultrium-tape-drives",
+      "quote": "Standalone or 2U rack mount (on a fixed shelf)",
+      "sourceNote": "Lenovo-channel part number; IBM-channel feature code for the 3580 shelf not verified"
+    },
+    {
+      "vendor": "IBM",
+      "productName": "IBM 7226 Multimedia Enclosure",
+      "holds": "up to four devices in 1U, incl. half-high LTO Ultrium drives (Power Systems oriented)",
+      "status": "current (listed on IBM Tape Storage page)",
+      "url": "https://www.ibm.com/products/tape",
+      "quote": "Deploy up to four stage devices in a 1U space in a 19-inch rack"
+    },
+    {
+      "vendor": "Quantum",
+      "productName": "Quantum LTO Tape Drive, Half Height, Single, 1U Rackmount",
+      "holds": "one or two Quantum half-height LTO drives",
+      "status": "current",
+      "url": "https://www.quantum.com/en/products/tape-storage/lto-tape-drives/",
+      "quote": "For mounting in a data center rack, with options to hold one or two half-height Quantum LTO Tape Drives"
+    }
+  ],
+  "news": [
+    {
+      "headline": "Fujifilm's 40TB LTO-10 cartridge shows up at about $494",
+      "summary": "Chinese tech site IT Home (republished by ifeng) reported that Fujifilm's 40TB native LTO-10 cartridge was selling for $494, well under the $888.89 suggested retail price. TechRadar ran the same price story; its date could not be confirmed.",
+      "source": "IT之家 (IT Home) via ifeng Tech",
+      "date": "2026-09-27",
+      "url": "https://tech.ifeng.com/c/8wkkDzLojud",
+      "secondaryUrl": "https://www.techradar.com/pro/40tb-lto-10-tapes-quietly-go-on-sale-for-usd494-a-single-tape-can-hold-13-000-000-songs-and-up-to-100tb-of-compressed-data-with-a-400mb-s-transfer-rate",
+      "dateNote": "ifeng timestamp 2026-09-27 07:26 Beijing time; TechRadar publication date not shown in fetched page"
+    },
+    {
+      "headline": "Spectra Logic signs Italian distributor ICOS",
+      "summary": "Tape library maker Spectra Logic signed a distribution deal with ICOS S.p.A., giving ICOS's Italian channel partners access to Spectra's storage products.",
+      "source": "Spectra Logic press release",
+      "date": "2026-10-06",
+      "url": "https://spectralogic.com/press-releases/spectra-logic-and-icos-spa/",
+      "quote": "Distribution agreement strengthens Spectra Logic's presence in the Italian market"
+    },
+    {
+      "headline": "Cheap used LTO-5 drives bring tape back to homelabs",
+      "summary": "Hackaday covered a homelab builder using a second-hand LTO-5 drive for backups, pointing out that used tapes cost about $2 per TB against roughly $16 per TB for the cheapest new hard drives.",
+      "source": "Hackaday (Tyler August)",
+      "date": "2026-10-12",
+      "url": "https://hackaday.com/2026/10/12/backup-tapes-come-back-to-the-homelab/",
+      "quote": "tape remains the god of cheap storage"
+    },
+    {
+      "headline": "TapeArk moves old tape archives into public-cloud virtual tape libraries",
+      "summary": "TapeArk reads customers' legacy tapes at its ingest centers and loads the data into cloud virtual tape libraries, accessed through its Nexus SaaS platform, pitching lower cost, faster access and AI analysis.",
+      "source": "Blocks & Files",
+      "date": "2026-10-13",
+      "url": "https://www.blocksandfiles.com/tape/2026/10/13/tapeark-moves-tape-libraries-to-public-cloud-vtls-for-lower-cost-and-higher-speed/5302765",
+      "quote": "a longitudinal dataset waiting for liberation"
+    },
+    {
+      "headline": "LTO shipments dipped 9% in 2025, then jumped 57% in Q1 2026",
+      "summary": "The LTO Program (HPE, IBM, Quantum) reported 160.3 EB compressed shipped in 2025, down from the 176.5 EB record in 2024, while Q1 2026 capacity shipped rose 57% year on year on LTO-9 volume and the LTO-10 ramp.",
+      "source": "The Register",
+      "date": "2026-09-02",
+      "url": "https://www.theregister.com/a/5293813",
+      "secondaryUrl": "https://www.blocksandfiles.com/tape/2026/09/04/tape-capacity-shipments-fell-in-2025-but-2026-could-be-a-boom-year-for-tape/5294464",
+      "quote": "160.3 exabytes worth of LTO tape went out the door during 2025",
+      "windowNote": "Outside the 2026-09-20 to 2026-10-18 window; included from the extended 2026-09-01 window. LTO.org re-posted this coverage on 2026-10-10."
+    }
+  ],
+  "notFound": [
+    "HPE LTO-10 standalone (internal/external half-height) drive: none in HPE QuickSpecs c04123270 V53 (17-Aug-2026), which covers only LTO-8 Ultrium 30750 and LTO-9 Ultrium 45000. HPE LTO-10 media pages say the cartridges are for full-height drives.",
+    "IBM stand-alone LTO-10 drive (e.g. a 'TS2300'): no such model found. IBM's Stand-Alone Drive page is still LTO-9 (TS2290); LTO-10 drives appear only as full-height library drives.",
+    "Quantum standalone or rack-mount LTO-10 drive: not found. Quantum's half-height drive page lists LTO-9/8/7 only; LTO-10 is full-height in Scalar libraries.",
+    "Any shipping half-height LTO-10 drive from any vendor as of 2026-10-18: not found.",
+    "Quantum exact part numbers for the 1U Rackmount and tabletop LTO-9 SKUs on a Quantum-owned page: only reseller listings (TD-L92BN-AR, TC-L92BN-AR) found.",
+    "Dell PowerVault LTO9 external vs internal SKU names and part numbers on a live Dell page: the US store configurator URL redirects to the homepage and the PowerVault tape compare sheet PDF returns 404. The third-party part number 0CY63X (LTO-9 HH SAS) is unverified.",
+    "HPE/HP 1U rack mount kit for the LTO-5/LTO-6 era (before BC029A): no verified name or part number. Note: C8S07B is NOT a rack kit; HPE PartSurfer lists it as 'HPE RDX EXTERNAL DOCKING STATION'.",
+    "HP LTO-6 Ultrium 6250 interface speed on an HPE-owned page: only resellers state SAS-2 (6Gb/s).",
+    "Official HPE web page for EH958B/EH969A/EH970A beyond PartSurfer spares records: buy.hpe.com blocks automated fetches (HTTP 403).",
+    "IBM TotalStorage brand: verified as the historical IBM brand on 3580 LTO drives (IBM support page 'Overview - IBM TotalStorage Ultrium Tape Drive (3580-L23)'; IT Jungle 2005-02-22: 'In December, IBM introduced its first LTO 3 tape drive, the TotalStorage 3580 Model L33'). The exact year IBM switched to 'System Storage' naming was not verified.",
+    "TechRadar 'quietly go on sale for $494' article publication date: not visible in fetched page.",
+    "Tape news from IBM, HPE, Sony or Fujifilm (corporate press releases) dated 2026-09-20 to 2026-10-18: none found. Quantum's only releases in the window were executive appointments (e.g. COO James C. Clancy, 2026-09-28), not tape news."
+  ],
+  "historyNotes": {
+    "ibmTotalStorage": {
+      "fact": "IBM TotalStorage was IBM's storage brand used on its LTO Ultrium drives (3580 stand-alone, 3588 drive models) in the early-to-mid 2000s, later replaced by System Storage and TS-series names (e.g. TS2290).",
+      "sources": [
+        {"url": "https://www.ibm.com/support/pages/node/806998", "quote": "The IBM TotalStorage Ultrium Tape Drive 3580 model L23"},
+        {"url": "https://itjungle.com/fhs/fhs022205-story03.html", "date": "2005-02-22", "quote": "In December, IBM introduced its first LTO 3 tape drive, the TotalStorage 3580 Model L33"}
+      ]
+    }
+  }
+}
