@@ -33,6 +33,7 @@ import page_figures  # noqa: E402
 import jsvideo  # noqa: E402
 import advisor_page  # noqa: E402
 import build_storage  # noqa: E402
+import build_badges  # noqa: E402
 from site_shell import GENS, ROOT, SITE, esc, slug_for  # noqa: E402
 
 
@@ -461,6 +462,7 @@ def build_languages():
 
 def main():
     price_paths, current = build_prices.build_all()
+    build_badges.build_all(current)
     page_paths = build_pages.build_all(current) + build_articles.build_all(current) + build_guides.build_all(current) + build_storage.build_all(current) + advisor_page.build_all()
     n = apply_meta_overrides()
     print(f"figure files: {page_figures.write_files()}, figures placed on pages: {page_figures.add_figures(ROOT)}, JS clips: {jsvideo.add_clips(ROOT)}")
