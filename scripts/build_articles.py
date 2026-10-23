@@ -9,6 +9,7 @@ import json
 import os
 
 import build_prices as BP
+from markets import PRICE_MONTH
 from build_prices import CURRENT_LABEL, cheapest_per_tb, date_text, load, money, money0, per_tb, per_tb0, rng, short_rng
 from site_shell import ROOT, SITE, breadcrumb_ld, esc, faq_html, faq_ld, hubspot_cta, page, write
 
@@ -187,9 +188,9 @@ def tape_cost(tb, g, copies):
 
 def cloud_data():
     """Cloud list prices for this market's region (US or Frankfurt), in USD as published."""
-    if not BP.MKT.is_us and os.path.exists(os.path.join(ROOT, "data", "eu", "cloud-prices-eu-2026-09.json")):
-        return load("eu/cloud-prices-eu-2026-09.json"), "EU (Frankfurt)"
-    return load("cloud-prices-2026-09.json"), "US East"
+    if not BP.MKT.is_us and os.path.exists(os.path.join(ROOT, "data", "eu", f"cloud-prices-eu-{PRICE_MONTH}.json")):
+        return load(f"eu/cloud-prices-eu-{PRICE_MONTH}.json"), "EU (Frankfurt)"
+    return load(f"cloud-prices-{PRICE_MONTH}.json"), "US East"
 
 
 def build_tco(current):

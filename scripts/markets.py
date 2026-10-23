@@ -16,7 +16,10 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 
-PRICE_MONTH = "2026-09"
+PRICE_MONTH = "2026-10"
+PREV_MONTH = "2026-09"          # the outgoing month; its EU files feed the history rows
+PREV_LABEL = "September 2026"
+EU_START_LABEL = "September 2026"  # first edition with European prices
 
 MARKETS = {
     "us": {"lang": "en", "country": "the United States", "country_short": "US", "currency": "USD", "sym": "$", "vat": 0.0,
@@ -98,7 +101,7 @@ def _norm_dp(dp, vat, src_market, sym=""):
             "note": note, "pack": pack, "unit": round(gross / pack, 2) if pack else None, "market": src_market}
 
 
-OUT_OF_STOCK = re.compile(r"(?:^|;\s*)(?:out of stock|sold out)(?:$|[;,])", re.I)
+OUT_OF_STOCK = re.compile(r"(?:^|[;,]\s*)(?:out of stock|sold out)(?:$|[;,])", re.I)
 
 
 def _summarise(dps, native_tb):
@@ -191,6 +194,15 @@ class Market:
                     if d["market"] == self.code:
                         names.add(d["seller"])
         return sorted(names)
+
+
+def previous_generations(code):
+    """The previous month's summarised prices for a market, or None (used for EU history rows)."""
+    if not PREV_MONTH:
+        return None
+    cfg = MARKETS[code]
+    raw = _load(cfg["file"].replace(PRICE_MONTH, PREV_MONTH))
+    return normalise(raw, cfg["vat"], code, cfg["sym"]) if raw else None
 
 
 def load_fx():

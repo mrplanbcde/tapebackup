@@ -2,12 +2,12 @@
 
 > Independent reference for LTO (Linear Tape-Open) tape backup: current LTO-6 to LTO-10 cartridge and drive prices from seller listings, price history since September 2025, buying guides, backup software comparisons and short technical answers.
 
-## Current LTO prices (September 2026, checked 17 September 2026)
-- [LTO-6 price guide](https://tapebackup.org/lto-tape-price-trend/lto6-price): 2.5 TB native; cartridge $38.00 to $56.45 ($15.20 to $22.58 per TB); WORM $71.29 to $95.00; external drive $4,937.
-- [LTO-7 price guide](https://tapebackup.org/lto-tape-price-trend/lto7-price): 6 TB native; cartridge $59.99 to $79.99 ($10.00 to $13.33 per TB); WORM $93.08 to $111.72; internal drive $3,419 to $4,253; external drive $3,699 to $4,999.
-- [LTO-8 price guide](https://tapebackup.org/lto-tape-price-trend/lto8-price): 12 TB native; cartridge $69.95 to $80.00 ($5.83 to $6.67 per TB); WORM $100.77 to $170.00; internal drive $4,850 to $8,099; external drive $5,309 to $8,441.
-- [LTO-9 price guide](https://tapebackup.org/lto-tape-price-trend/lto9-price): 18 TB native; cartridge $92.45 to $111.55 ($5.14 to $6.20 per TB); WORM $124.94 to $195.00; internal drive $7,699 to $13,500; external drive $8,999 to $13,385.
-- [LTO-10 price guide](https://tapebackup.org/lto-tape-price-trend/lto10-price): 30 TB native; cartridge $256.00 to $299.99 ($8.53 to $10.00 per TB); WORM $420.00 to $460.80; external drive $22,165 to $24,950.
+## Current LTO prices (October 2026, checked 23 October 2026)
+- [LTO-6 price guide](https://tapebackup.org/lto-tape-price-trend/lto6-price): 2.5 TB native; cartridge $38.00 to $56.60 ($15.20 to $22.64 per TB); WORM $69.65 to $95.00; external drive $4,937.
+- [LTO-7 price guide](https://tapebackup.org/lto-tape-price-trend/lto7-price): 6 TB native; cartridge $62.75 to $79.99 ($10.46 to $13.33 per TB); WORM $87.95 to $111.72; internal drive $3,419 to $4,253; external drive $4,999 to $5,598.
+- [LTO-8 price guide](https://tapebackup.org/lto-tape-price-trend/lto8-price): 12 TB native; cartridge $70.25 to $84.36 ($5.85 to $7.03 per TB); WORM $96.10 to $170.00; internal drive $4,850 to $8,985; external drive $7,300 to $10,433.
+- [LTO-9 price guide](https://tapebackup.org/lto-tape-price-trend/lto9-price): 18 TB native; cartridge $92.45 to $129.00 ($5.14 to $7.17 per TB); WORM $124.94 to $175.00; internal drive $8,009 to $13,329; external drive $9,199 to $15,225.
+- [LTO-10 price guide](https://tapebackup.org/lto-tape-price-trend/lto10-price): 30 TB native; cartridge $259.00 to $299.99 ($8.63 to $10.00 per TB); WORM $420.00 to $460.80; external drive $23,422 to $24,950.
 - LTO-10 40 TB cartridge: $491.00 to $555.00 ($12.28 to $13.88 per TB). LTO-10 drives are full height only and do not read older generations.
 
 ## Core pages

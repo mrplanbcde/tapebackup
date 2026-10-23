@@ -5,7 +5,7 @@
     /resources/owc-lto-tape-drives        N3 OWC Mercury Pro and Archive Pro
     /comparisons/lto-vs-object-storage    N4 tape vs S3-style object storage
 
-Prices come from the current market (build_prices) and data/cloud-prices-2026-09.json;
+Prices come from the current market (build_prices) and data/cloud-prices-<month>.json;
 vendor facts come from data/research/storage-pages-2026-10.json (sources kept there).
 Figures are drawn by scripts/figs_storage.py.
 """

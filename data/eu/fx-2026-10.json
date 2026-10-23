@@ -1,0 +1,13 @@
+{
+ "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+ "date": "2026-10-23",
+ "eur_per": {
+  "USD": 1.1193,
+  "PLN": 4.3945
+ },
+ "per_usd": {
+  "USD": 1.0,
+  "EUR": 0.893416,
+  "PLN": 3.926115
+ }
+}

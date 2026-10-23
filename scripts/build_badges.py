@@ -2,7 +2,7 @@
 
     assets/badges/price-tracker-light.svg, -dark.svg     "Listed on the LTO Price Tracker" (sellers)
     assets/badges/archive-advisor-light.svg, -dark.svg   "Ranked in the Tape Archive Advisor" (archive vendors)
-    assets/press/lto-cost-per-tb-2026-09.svg             cost per TB chart for the monthly price note
+    assets/press/lto-cost-per-tb-<month>.svg               cost per TB chart for the monthly price note
     /badges                                              copy-paste embed code (noindex utility page)
 
 Outreach drafts that use these live outside the repo in ~/coldmail/tapebackup-outreach.
@@ -12,6 +12,7 @@ import os
 
 import build_prices as BP
 from build_prices import GENS, date_text
+from markets import PRICE_MONTH
 from site_shell import ROOT, SITE, esc, page, write
 
 ACC, ACC_D, INK, MUTED, SURF = "#5b27d6", "#4a1fb0", "#161320", "#6e6a7c", "#f7f6fa"
@@ -72,7 +73,7 @@ def build_all(current):
     press = os.path.join(ROOT, "assets", "press")
     os.makedirs(press, exist_ok=True)
     if BP.MKT.is_us:
-        open(os.path.join(press, "lto-cost-per-tb-2026-09.svg"), "w", encoding="utf-8").write(cost_chart(current))
+        open(os.path.join(press, f"lto-cost-per-tb-{PRICE_MONTH}.svg"), "w", encoding="utf-8").write(cost_chart(current))
     cards = ""
     for key, (top, main, href, who) in BADGES.items():
         for variant in ("light", "dark"):

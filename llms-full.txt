@@ -1,32 +1,39 @@
 # TapeBackup.org LTO price data
 
-Checked 17 September 2026. New items, USD, listed price before tax and shipping.
+Checked 23 October 2026. New items, USD, listed price before tax and shipping.
 
 ## LTO-6 (2.5 TB native)
-### Cartridge: $38.00 to $56.45
+### Cartridge: $38.00 to $56.60
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| 229558 (Maxell) | Tape4Backup | $38.00 |  |
-| LTX2500G (Sony) | Tape4Backup | $41.25 |  |
-| MR-L6MQN-03 (Quantum) | Tape4Backup | $42.50 |  |
-| 00V7590 (IBM) | Tape4Backup | $43.25 |  |
-| 16310732 (Fujifilm) | Tape4Backup | $44.95 |  |
-| 16310732 (Fujifilm) | LTO World | $50.52 | Sale price |
-| C7976A (HPE) | Tape4Backup | $51.15 |  |
-| C7976A (HPE) | LTO World | $51.75 |  |
-| 00V7590 (IBM) | LTO World | $52.25 |  |
-| MR-L6MQN-01 (Quantum, IBM drives only) | LTO World | $56.45 |  |
-| MR-L6MQN-03-10PK (Quantum 10-pack) | Tape4Backup | $445.00 | 10-pack = $44.50/unit; not in single range |
-| Q1G95A (HPE 10-pack library) | Tape4Backup | $515.50 | 10-pack = $51.55/unit; not in single range |
+| 229558 (Maxell) | Tape4Backup | $38.00 | In stock |
+| LTX2500G (Sony) | Tape4Backup | $41.25 | Limited stock |
+| MR-L6MQN-03 (Quantum) | Tape4Backup | $42.50 | In stock |
+| 00V7590 (IBM) | Tape4Backup | $43.25 | In stock |
+| 16310732 (Fujifilm) | Tape4Backup | $44.95 | In stock |
+| MR-L6MQN-03 (Quantum, MP) | TapeandMedia | $48.00 | Out of stock; not counted in the range |
+| 16310732 (Fujifilm) | LTO World | $50.52 | Sale price; in stock |
+| C7976A (HPE) | Tape4Backup | $51.15 | In stock |
+| C7976A (HPE) | TapeandMedia | $51.60 | In stock (ships same business day) |
+| C7976A (HPE) | LTO World | $51.75 | In stock |
+| 00V7590 (IBM) | LTO World | $52.25 | In stock |
+| 00V7590 (IBM) | TapeandMedia | $52.35 | In stock (ships same business day) |
+| Fujifilm LTO-6 BaFe | TapeandMedia | $53.95 | In stock (ships same business day) |
+| MR-L6MQN-01 (Quantum, IBM drives only) | LTO World | $56.45 | In stock |
+| Quantum LTO-6 BaFe | TapeandMedia | $56.60 | In stock (ships same business day) |
+| MR-L6MQN-03-10PK (Quantum 10-pack) | Tape4Backup | $445.00 | 10-pack = $44.50/unit; not in single range; in stock |
+| Q1G95A (HPE 10-pack library) | Tape4Backup | $515.50 | 10-pack = $51.55/unit; not in single range; in stock |
 
-### WORM cartridge: $71.29 to $95.00
+### WORM cartridge: $69.65 to $95.00
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| C7976W (HPE) | LTO World | $71.29 | Sale |
-| MR-L6MQN-02 (Quantum) | LTO World | $79.13 | Sale |
-| MR-L6WQN-04 (Quantum, MP) | Tape4Backup | $82.50 |  |
-| 00V7591 (IBM) | LTO World | $91.29 |  |
-| C7976W (HPE) | Tape4Backup | $95.00 |  |
+| C7976W (HPE) | TapeandMedia | $69.65 | In stock (ships same business day) |
+| C7976W (HPE) | LTO World | $71.29 | Sale; in stock |
+| MR-L6MQN-02 (Quantum) | TapeandMedia | $72.20 |  |
+| MR-L6MQN-02 (Quantum) | LTO World | $79.13 | Sale; in stock |
+| MR-L6WQN-04 (Quantum, MP) | Tape4Backup | $82.50 | Limited stock |
+| 00V7591 (IBM) | LTO World | $91.29 | In stock |
+| C7976W (HPE) | Tape4Backup | $95.00 | In stock |
 
 ### External drive: $4,937
 | Part | Seller | Price | Note |
@@ -34,239 +41,290 @@ Checked 17 September 2026. New items, USD, listed price before tax and shipping.
 | 3850-H6S (IBM TS2260 LTO-6 HH SAS external) | LTO World | $4,937.00 | New, in stock; only new LTO-6 standalone drive found |
 
 ## LTO-7 (6 TB native)
-### Cartridge: $59.99 to $79.99
+### Cartridge: $62.75 to $79.99
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| MR-L7MQN-01 (Quantum) | DatacenterDisk | $59.99 |  |
-| MR-L7MQN-01 (Quantum) | Tape4Backup | $61.75 |  |
-| 38L7302 (IBM) | LTO World | $64.00 | Sale |
-| MR-L7MQN-01 (Quantum) | LTO World | $65.00 | Sale |
-| 16456574 (Fujifilm) | LTO World | $65.25 |  |
-| C7977A (HPE) | LTO World | $65.35 | Sale |
-| 38L7302 (IBM) | Tape4Backup | $65.95 |  |
-| C7977A (HPE) | Tape4Backup | $66.55 |  |
-| 16456574 (Fujifilm) | Tape4Backup | $66.60 |  |
-| LTX6000G (Sony) | Tape4Backup | $71.15 |  |
-| 38L7302 (IBM) | MagStor | $75.39 |  |
-| C7977A (HPE) | MagStor | $79.99 |  |
-| QTMMR-L7MQN-01-5PK (Quantum 5-pack) | Tape4Backup | $325.50 | 5-pack = $65.10/unit |
+| 16456574 (Fujifilm) | TapeandMedia | $62.75 | In stock (ships same business day) |
+| 38L7302 (IBM) | LTO World | $64.00 | Sale; in stock |
+| 38L7302 (IBM) | TapeandMedia | $64.95 | In stock (ships same business day) |
+| MR-L7MQN-01 (Quantum) | DatacenterDisk | $64.99 | Amazon listing |
+| MR-L7MQN-01 (Quantum) | Tape4Backup | $65.00 | In stock |
+| MR-L7MQN-01 (Quantum) | LTO World | $65.00 | Sale; in stock |
+| 16456574 (Fujifilm) | LTO World | $65.25 | In stock |
+| C7977A (HPE) | LTO World | $65.35 | Sale; in stock |
+| MR-L7MQN-01 (Quantum) | TapeandMedia | $65.50 | In stock (ships same business day) |
+| 38L7302 (IBM) | Tape4Backup | $65.95 | In stock |
+| C7977A (HPE) | TapeandMedia | $66.25 | In stock (ships same business day) |
+| C7977A (HPE) | Tape4Backup | $66.55 | In stock |
+| 16456574 (Fujifilm) | Tape4Backup | $66.60 | In stock |
+| LTX6000G (Sony) | Tape4Backup | $71.15 | Limited stock |
+| C7977B (HP) | Tape4Backup | $71.68 | In stock |
+| 38L7302 (IBM) | MagStor | $75.39 | In stock |
+| C7977A (HPE) | MagStor | $79.99 | In stock |
+| 16456574-5 Pack (Fujifilm 5-pack) | TapeandMedia | $313.75 | 5-pack = $62.75/unit; in stock |
+| QTMMR-L7MQN-01-5PK (Quantum 5-pack) | Tape4Backup | $325.50 | 5-pack = $65.10/unit; in stock |
+| MR-L7MQN-01-10PK (Quantum 10-pack) | Tape4Backup | $605.00 | 10-pack = $60.50/unit; in stock |
+| NP-L7-10PK (MagStor NanoPure 10-pack) | MagStor | $849.99 | 10-pack = $85.00/unit; MagStor-branded media; sale, regular $899; in stock |
 
-### WORM cartridge: $93.08 to $111.72
+### WORM cartridge: $87.95 to $111.72
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| C7977W (HPE) | LTO World | $93.08 | Sale |
-| C7977W (HPE) | Tape4Backup | $95.75 |  |
-| MR-L7MQN-02 (Quantum) | LTO World | $96.88 | Sale |
-| 38L7303 (IBM) | LTO World | $108.83 | Sale |
-| MR-L7MQN-02 (Quantum) | Tape4Backup | $111.72 |  |
+| 16495661 (Fujifilm) | TapeandMedia | $87.95 |  |
+| C7977W (HPE) | TapeandMedia | $92.10 | In stock (ships same business day) |
+| C7977W (HPE) | LTO World | $93.08 | Sale; in stock |
+| C7977W (HPE) | Tape4Backup | $95.75 | Limited stock |
+| MR-L7MQN-02 (Quantum) | TapeandMedia | $96.25 | Out of stock; not counted in the range |
+| MR-L7MQN-02 (Quantum) | LTO World | $96.88 | Sale; in stock |
+| 38L7303 (IBM) | LTO World | $108.83 | Sale; in stock |
+| MR-L7MQN-02 (Quantum) | Tape4Backup | $111.72 | In stock |
+| 38L7303 (IBM) | TapeandMedia | $113.71 | Out of stock; not counted in the range |
 
 ### Internal drive: $3,419 to $4,253
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| SAS-HL7i (MagStor LTO-7 HH SAS internal) | LTO World | $3,419.10 | New, sale |
+| SAS-HL7i (MagStor LTO-7 HH SAS internal) | LTO World | $3,419.10 | New, 2-yr warranty option (3-yr $3,799); in stock |
 | TD-L72GN-BR (Quantum LTO-7 add-on drive) | BackupWorks | $4,208.00 | New; add-on for 1U rack kit |
 | TD-L72AN-BR (Quantum LTO-7 HH SAS bare) | BackupWorks | $4,253.00 | New |
 
-### External drive: $3,699 to $4,999
+### External drive: $4,999 to $5,598
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| BB874A (HPE StoreEver LTO-7 Ultrium 15000 external) | LTO World | $3,699.00 | New, in stock |
-| SAS-HL7-8088 (MagStor LTO-7 HH SAS desktop) | LTO World | $3,779.10 | New, sale |
-| SAS-HL7-8644 (MagStor LTO-7 HH SAS desktop) | LTO World | $3,779.10 | Certified refurbished, 1-yr warranty |
-| TD-L72BN-AR (Quantum LTO-7 SAS tabletop kit) | TapeandMedia | $4,453.00 | New, special order |
-| TD-L72BN-AR (Quantum LTO-7 SAS tabletop kit) | BackupWorks | $4,974.00 | New |
-| TD-L72BN-AR (Quantum LTO-7 SAS tabletop kit) | LTO World | $4,999.00 | New |
+| TD-L72BN-AR (Quantum LTO-7 SAS tabletop kit) | TapeandMedia | $4,453.00 | New, special order; out of stock; not counted in the range |
+| TD-L72BN-AR (Quantum LTO-7 SAS tabletop kit) | LTO World | $4,999.00 | New, in stock |
+| TD-L72BN-AR (Quantum LTO-7 SAS tabletop kit) | BackupWorks | $5,598.00 | New |
 
 ## LTO-8 (12 TB native)
-### Cartridge: $69.95 to $80.00
+### Cartridge: $70.25 to $84.36
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| 16551221 (Fujifilm) | Tape4Backup | $69.95 |  |
-| MR-L8MQN-01 (Quantum) | Tape4Backup | $72.00 |  |
-| 01PL041 (IBM) | LTO World | $72.25 | Sale |
-| Q2078A (HPE) | LTO World | $72.75 | Sale |
-| 16551221 (Fujifilm) | LTO World | $72.90 |  |
-| Q2078A (HPE) | Tape4Backup | $73.00 |  |
-| MR-L8MQN-01 (Quantum) | LTO World | $73.25 | Sale |
-| 16551221 (Fujifilm) | BackupWorks | $73.50 |  |
-| 01PL041 (IBM) | Tape4Backup | $73.95 |  |
-| 01PL041 (IBM) | BackupWorks | $75.50 |  |
-| MR-L8MQN-01 (Quantum) | BackupWorks | $76.00 |  |
-| Fujifilm LTO-8 single | DatacenterDisk | $77.99 |  |
+| 22932600 (Maxell) | Tape4Backup | $70.25 | Limited stock |
+| 16551221 (Fujifilm) | Tape4Backup | $70.75 | In stock |
+| 16551221 (Fujifilm) | TapeandMedia | $70.75 | In stock (ships same business day) |
+| MR-L8MQN-01 (Quantum) | Tape4Backup | $71.55 | In stock |
+| MR-L8MQN-01 (Quantum) | TapeandMedia | $71.60 | Out of stock; not counted in the range |
+| 01PL041 (IBM) | LTO World | $72.25 | Sale; in stock |
+| Q2078A (HPE) | Tape4Backup | $72.75 | In stock |
+| Q2078A (HPE) | LTO World | $72.75 | Sale; in stock |
+| 16551221 (Fujifilm) | LTO World | $72.90 | In stock |
+| 01PL041 (IBM) | TapeandMedia | $72.90 | Out of stock; not counted in the range |
+| MR-L8MQN-01 (Quantum) | LTO World | $73.25 | Sale; in stock |
+| Q2078A (HPE) | TapeandMedia | $73.25 | In stock (ships same business day) |
+| 01PL041 (IBM) | Tape4Backup | $73.95 | Limited stock |
+| 16551221 (Fujifilm) | BackupWorks | $75.50 |  |
+| Fujifilm LTO-8 single | DatacenterDisk | $77.99 | Amazon listing |
+| 16551221 (Fujifilm) | MagStor | $78.47 | In stock |
 | Q2078A (HPE) | BackupWorks | $80.00 |  |
+| 01PL041 (IBM) | BackupWorks | $81.00 |  |
+| MR-L8MQN-01 (Quantum) | BackupWorks | $81.00 |  |
+| Q2078A (HPE) | MagStor | $84.36 | Sale; in stock |
+| 01PL041 (IBM) | MagStor | $130.00 | In stock; not counted in the range |
+| 16551221-5 Pack (Fujifilm 5-pack) | TapeandMedia | $353.75 | 5-pack = $70.75/unit; in stock |
+| Q2078A-5 Pack (HPE 5-pack) | TapeandMedia | $369.25 | 5-pack = $73.85/unit; in stock |
+| NP-L8-10PK (MagStor NanoPure 10-pack) | MagStor | $899.99 | 10-pack = $90.00/unit; MagStor-branded media; sale, regular $999; in stock |
 | MR-L8LQN-BC (Quantum 20-pack labeled) | Tape4Backup | $1,450.00 | 20-pack = $72.50/unit |
 | Q2078AN (HPE 20-pack) | Tape4Backup | $1,460.00 | 20-pack = $73.00/unit |
-| 01PL054 (IBM 20-pack) | DatacenterDisk | $1,485.99 | 20-pack = $74.30/unit |
-| 01PL054 (IBM 20-pack) | BackupWorks | $1,500.00 | 20-pack = $75.00/unit |
-| MR-L8MQN-20 (Quantum 20-pack) | DatacenterDisk | $1,539.80 | 20-pack = $76.99/unit |
+| MR-L8MQN-20 (Quantum 20-pack) | DatacenterDisk | $1,499.99 | 20-pack = $75.00/unit; Amazon listing |
+| 01PL054 (IBM 20-pack) | BackupWorks | $1,560.00 | 20-pack = $78.00/unit |
+| 01PL054 (IBM 20-pack) | DatacenterDisk | $1,639.99 | 20-pack = $82.00/unit; Amazon listing |
 
-### WORM cartridge: $100.77 to $170.00
+### WORM cartridge: $96.10 to $170.00
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| MR-L8MQN-02 (Quantum) | LTO World | $100.77 | Sale |
-| Q2078W (HPE) | LTO World | $103.54 | Sale |
-| 16551233 (Fujifilm) | LTO World | $104.00 |  |
-| 01PL042 (IBM) | LTO World | $105.54 | Sale |
+| 16551233 (Fujifilm) | TapeandMedia | $96.10 | Special order |
+| MR-L8MQN-02 (Quantum) | TapeandMedia | $99.65 | Out of stock; not counted in the range |
+| MR-L8MQN-02 (Quantum) | LTO World | $100.77 | Sale; in stock |
+| 01PL042 (IBM) | TapeandMedia | $101.60 | Out of stock; not counted in the range |
+| Q2078W (HPE) | TapeandMedia | $103.25 | In stock (ships same business day) |
+| Q2078W (HPE) | LTO World | $103.54 | Sale; in stock |
+| 16551233 (Fujifilm) | LTO World | $104.00 | In stock |
+| 01PL042 (IBM) | LTO World | $105.54 | Sale; in stock |
 | Q2078W (HPE) | BackupWorks | $115.25 |  |
 | MR-L8WQN-BC (Quantum) | BackupWorks | $139.00 |  |
-| Q2078W (HPE) | Tape4Backup | $139.95 |  |
-| 01PL042 (IBM) | Tape4Backup | $140.00 |  |
-| MR-L8MQN-02 (Quantum) | Tape4Backup | $140.00 |  |
-| 16551233 (Fujifilm) | Tape4Backup | $170.00 |  |
+| Q2078W (HPE) | Tape4Backup | $139.95 | Limited stock |
+| 01PL042 (IBM) | Tape4Backup | $140.00 | Limited stock |
+| MR-L8MQN-02 (Quantum) | Tape4Backup | $140.00 | Limited stock |
+| 16551233 (Fujifilm) | Tape4Backup | $170.00 | Limited stock |
 
-### Internal drive: $4,850 to $8,099
+### Internal drive: $4,850 to $8,985
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
 | BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal) | StoragePartsDirect | $4,849.95 | New, 90-day warranty, 2 in stock |
-| SAS-HL8i (MagStor LTO-8 HH SAS internal) | LTO World | $5,039.10 | New, sale |
-| TD-L82AN-BR (Quantum LTO-8 HH SAS) | LTO World | $5,099.00 | New, in stock |
-| TD-L82AN-BR (Quantum LTO-8 HH SAS bare) | BackupWorks | $5,635.00 | New |
-| TD-L82AN-EY (Quantum LTO-8 HH SAS kit) | BackupWorks | $5,760.00 | New |
-| BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal) | TapeandMedia | $7,695.00 | New |
+| SAS-HL8i (MagStor LTO-8 HH SAS internal) | LTO World | $5,039.10 | New, 2-yr warranty option; out of stock; not counted in the range |
+| TD-L82AN-BR (Quantum LTO-8 HH SAS) | LTO World | $6,629.99 | New, in stock |
+| TD-L82AN-BR (Quantum LTO-8 HH SAS bare) | BackupWorks | $6,763.00 | New |
+| TD-L82AN-EY (Quantum LTO-8 HH SAS kit) | BackupWorks | $6,888.00 | New |
+| SAS-HL8i (MagStor LTO-8 HH SAS internal, 3-yr warranty) | LTO World | $7,899.99 | New, sale (regular $8,299); in stock |
+| SAS-HL8i (MagStor LTO-8 HH SAS internal) | MagStor | $7,899.99 | New, sale (regular $8,299); in stock |
 | SAS-HL8i (MagStor LTO-8 HH SAS internal) | BackupWorks | $8,099.00 | New |
+| BC022A (HPE StoreEver LTO-8 Ultrium 30750 internal) | TapeandMedia | $8,985.00 | New, ships in 3-14 days |
 
-### External drive: $5,309 to $8,441
+### External drive: $7,300 to $10,433
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| SAS-HL8-8644 (MagStor LTO-8 HH SAS desktop) | LTO World | $5,309.10 | New, sale (regular $8,649) |
-| TD-L82BN-AR (Quantum LTO-8 SAS desktop) | LTO World | $5,499.00 | New |
-| TD-L82BN-AR (Quantum LTO-8 SAS tabletop kit) | BackupWorks | $6,507.00 | New |
-| SYSAS-DS1L8HH1-BT (Symply LTO-8 HH SAS desktop) | BackupWorks | $6,774.00 | New |
-| BC023A (HPE StoreEver LTO-8 Ultrium 30750 SAS external) | TapeandMedia | $8,330.00 | New, ships same day |
-| SAS-HL8-8644 (MagStor LTO-8 HH SAS desktop) | TapeandMedia | $8,425.00 | New |
+| SAS-HL8-8644 (MagStor LTO-8 HH SAS desktop) | LTO World | $5,309.10 | New, 2-yr warranty option; out of stock; not counted in the range |
+| BC023A (HPE StoreEver LTO-8 Ultrium 30750 SAS external) | StoragePartsDirect | $7,299.95 | New sealed spare, 1-yr warranty, 3 in stock |
+| TD-L82BN-AR (Quantum LTO-8 SAS desktop) | LTO World | $7,659.99 | New, in stock |
+| SYSAS-DS1L8HH1-BT (Symply LTO-8 HH SAS desktop) | BackupWorks | $7,806.00 | New, sale price |
+| TD-L82BN-AR (Quantum LTO-8 SAS tabletop kit) | BackupWorks | $7,811.00 | New |
+| SYSAS-DS2L8H2B-CT (SymplyLTO XTH LTO-8 HH SAS desktop) | BackupWorks | $8,197.00 | New |
+| SAS-HL8-8644 (MagStor LTO-8 HH SAS desktop, 3-yr warranty) | LTO World | $8,249.99 | New, sale (regular $8,649); in stock |
+| SAS-HL8-8644 (MagStor LTO-8 HH SAS desktop) | MagStor | $8,249.99 | New, sale (regular $8,649); in stock |
+| SAS-HL8-8644 (MagStor LTO-8 HH SAS desktop) | TapeandMedia | $8,425.00 | New, ships in 2-5 business days |
 | SAS-HL8-8088 (MagStor LTO-8 HH SAS desktop) | BackupWorks | $8,441.00 | New |
+| SAS-HL8-8644 (MagStor LTO-8 HH SAS desktop) | BackupWorks | $8,441.00 | New |
+| BC023A (HPE StoreEver LTO-8 Ultrium 30750 SAS external) | TapeandMedia | $10,433.00 | New, ships same business day |
 
 ## LTO-9 (18 TB native)
-### Cartridge: $92.45 to $111.55
+### Cartridge: $92.45 to $129.00
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| Q2079A (HPE) | LTO World | $92.45 | Sale |
-| Q2079A (HPE) | Tape4Backup | $93.50 |  |
-| Q2079A (HPE) | TapeandMedia | $94.95 |  |
-| MR-L9MQN-01 (Quantum) | LTO World | $95.75 | Sale |
-| MR-L9MQN-01 (Quantum) | Tape4Backup | $96.75 |  |
-| 02XW568 (IBM) | Tape4Backup | $97.50 |  |
-| Q2079A (HPE) | BackupWorks | $98.50 |  |
-| 16659047 (Fujifilm) | LTO World | $98.50 | Sale |
-| Q2079A (HPE) | DatacenterDisk | $98.99 |  |
-| MR-L9MQN-01 (Quantum) | TapeandMedia | $99.35 |  |
-| 16659047 (Fujifilm) | Tape4Backup | $99.50 |  |
-| 16659047 (Fujifilm) | TapeandMedia | $99.95 |  |
-| 16659047 (Fujifilm) | BackupWorks | $101.75 | Qty 20-59: $100.73; 100-500: $98.69 |
-| MR-L9MQN-01 (Quantum) | BackupWorks | $101.75 |  |
-| 02XW568 (IBM) | BackupWorks | $104.50 |  |
-| 02XW568 (IBM) | LTO World | $106.25 | Sale |
-| 02XW568 (IBM) | TapeandMedia | $111.55 |  |
-| Q2079A-5 Pack (HPE 5-pack) | TapeandMedia | $474.75 | 5-pack = $94.95/unit |
-| 16659047-5 Pack (Fujifilm 5-pack) | TapeandMedia | $499.75 | 5-pack = $99.95/unit |
-| 02XW568-5 Pack (IBM 5-pack) | TapeandMedia | $557.75 | 5-pack = $111.55/unit |
-| Fujifilm LTO-9 10-pack | DatacenterDisk | $879.99 | 10-pack = $88.00/unit |
-| Q2079AC (HPE 20-pack custom labeled) | Tape4Backup | $1,890.00 | 20-pack = $94.50/unit |
-| MR-L9MQN-01 (Quantum 20-pack) | DatacenterDisk | $1,909.89 | 20-pack = $95.49/unit |
-| Q2079AN (HPE 20-pack) | TapeandMedia | $1,938.00 | 20-pack = $96.90/unit |
-| MR-L9MQN-20 (Quantum 20-pack) | Tape4Backup | $2,260.00 | 20-pack = $113.00/unit |
+| Q2079A (HPE) | Tape4Backup | $92.45 | Sale (was $119.00); in stock |
+| Q2079A (HPE) | LTO World | $92.45 | Sale; in stock |
+| MR-L9MQN-01 (Quantum) | Tape4Backup | $95.75 | In stock |
+| MR-L9MQN-01 (Quantum) | LTO World | $95.75 | Sale; in stock |
+| 16659047 (Fujifilm) | Tape4Backup | $98.50 | In stock |
+| 16659047 (Fujifilm) | LTO World | $98.50 | Sale; in stock |
+| Q2079A (HPE) | DatacenterDisk | $98.99 | Amazon listing |
+| MR-L9MQN-01 (Quantum) | TapeandMedia | $99.35 | In stock (ships same business day) |
+| 16659047 (Fujifilm) | TapeandMedia | $99.95 | In stock (ships same business day) |
+| MR-L9MQN-01 (Quantum) | BackupWorks | $101.75 | Now shipping |
+| Q2079A (HPE) | TapeandMedia | $102.95 | In stock (ships same business day) |
+| 16659047 (Fujifilm) | BackupWorks | $103.25 |  |
+| Q2079A (HPE) | MagStor | $105.59 | Sale; in stock |
+| 02XW568 (IBM) | Tape4Backup | $105.99 | In stock |
+| 02XW568 (IBM) | LTO World | $106.25 | Sale; in stock |
+| Q2079A (HPE) | BackupWorks | $107.50 | In stock |
+| 02XW568 (IBM) | TapeandMedia | $111.55 | In stock (ships same business day) |
+| 02XW568 (IBM) | BackupWorks | $115.00 | Now shipping |
+| 02XW568 (IBM) | MagStor | $129.00 | In stock |
+| MR-L9MQN-01-5 Pack (Quantum 5-pack) | TapeandMedia | $496.75 | 5-pack = $99.35/unit; in stock |
+| 16659047-5 Pack (Fujifilm 5-pack) | TapeandMedia | $499.75 | 5-pack = $99.95/unit; in stock |
+| Q2079A-5 Pack (HPE 5-pack) | TapeandMedia | $514.75 | 5-pack = $102.95/unit; in stock |
+| 02XW568-5 Pack (IBM 5-pack) | TapeandMedia | $557.75 | 5-pack = $111.55/unit; in stock |
+| Fujifilm LTO-9 10-pack | DatacenterDisk | $879.99 | 10-pack = $88.00/unit; Amazon listing |
+| NP-L9-10PK (MagStor NanoPure 10-pack) | MagStor | $1,199.99 | 10-pack = $120.00/unit; MagStor-branded media; in stock |
+| Q2079AC (HPE 20-pack custom labeled) | Tape4Backup | $1,890.00 | 20-pack = $94.50/unit; limited stock |
+| MR-L9MQN-01 (Quantum 20-pack) | DatacenterDisk | $1,899.99 | 20-pack = $95.00/unit; Amazon listing |
+| MR-L9MQN-20 (Quantum 20-pack) | Tape4Backup | $1,920.00 | 20-pack = $96.00/unit; limited stock |
+| 16671693 (Fujifilm 20-pack library) | Tape4Backup | $2,000.00 | 20-pack = $100.00/unit; limited stock |
+| Q2079AN (HPE 20-pack) | TapeandMedia | $2,105.00 | 20-pack = $105.25/unit; in stock |
 
-### WORM cartridge: $124.94 to $195.00
+### WORM cartridge: $124.94 to $175.00
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| 16659059 (Fujifilm) | LTO World | $124.94 |  |
-| MR-L9MQN-02 (Quantum) | LTO World | $125.44 | Sale |
-| Q2079W (HPE) | LTO World | $138.70 | Sale |
-| 02XW569 (IBM) | LTO World | $150.26 | Sale |
-| 02XW569 (IBM) | Tape4Backup | $175.00 |  |
-| MR-L9MQN-02 (Quantum) | Tape4Backup | $185.50 |  |
-| 16659059 (Fujifilm) | Tape4Backup | $195.00 |  |
-| Q2079W (HPE) | Tape4Backup | $195.00 |  |
+| 16659059 (Fujifilm) | LTO World | $124.94 | In stock |
+| MR-L9MQN-02 (Quantum) | LTO World | $125.44 | Sale; in stock |
+| MR-L9MQN-02 (Quantum) | TapeandMedia | $127.65 | Out of stock; not counted in the range |
+| Q2079W (HPE) | LTO World | $138.70 | Sale; in stock |
+| Q2079W (HPE) | TapeandMedia | $139.00 | Special order |
+| 16659059 (Fujifilm) | TapeandMedia | $142.95 | In stock (ships same business day) |
+| 02XW569 (IBM) | TapeandMedia | $145.95 | In stock (ships same business day) |
+| 02XW569 (IBM) | LTO World | $150.26 | Sale; in stock |
+| 02XW569 (IBM) | Tape4Backup | $175.00 | Limited stock |
+| MR-L9MQN-02 (Quantum) | Tape4Backup | $185.50 | Out of stock; not counted in the range |
+| 16659059 (Fujifilm) | Tape4Backup | $195.00 | Out of stock; not counted in the range |
+| Q2079W (HPE) | Tape4Backup | $195.00 | Out of stock; not counted in the range |
 
-### Internal drive: $7,699 to $13,500
+### Internal drive: $8,009 to $13,329
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| TD-L92AN-BR (Quantum LTO-9 HH SAS) | LTO World | $7,699.00 | New, in stock |
-| SAS-HL9i (MagStor LTO-9 HH SAS internal) | LTO World | $8,009.10 | New, sale (regular $12,599) |
-| TD-L92AN-BR (Quantum LTO-9 HH SAS bare) | BackupWorks | $8,480.00 | New |
-| TD-L92AN-FZ (Quantum LTO-9 HH SAS + HBA bundle) | BackupWorks | $9,250.00 | New |
-| BC040A (HPE StoreEver LTO-9 Ultrium 45000 SAS internal) | TapeandMedia | $13,500.00 | New, ships 3-14 days |
+| SAS-HL9i (MagStor LTO-9 HH SAS internal) | LTO World | $8,009.10 | New, 2-yr warranty option (3-yr $11,999.99); in stock |
+| TD-L92AN-BR (Quantum LTO-9 HH SAS) | LTO World | $9,989.99 | New, in stock |
+| TD-L92AN-BR (Quantum LTO-9 HH SAS bare) | BackupWorks | $10,191.00 | New |
+| TD-L92AN-FZ (Quantum LTO-9 HH SAS + HBA bundle) | BackupWorks | $10,963.00 | New |
+| SAS-HL9i (MagStor LTO-9 HH SAS internal) | MagStor | $11,999.99 | New, sale (regular $12,599); in stock |
+| BC040A (HPE StoreEver LTO-9 Ultrium 45000 SAS internal) | TapeandMedia | $13,329.00 | New, ships in 3-14 days |
 
-### External drive: $8,999 to $13,385
+### External drive: $9,199 to $15,225
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| TD-L92BN-AR (Quantum LTO-9 SAS desktop kit) | LTO World | $8,999.00 | New, in stock |
-| SYSAS-DS2L9H1B-CT (Symply LTO-9 HH SAS desktop) | BackupWorks | $9,678.00 | New |
-| TD-L92BN-AR (Quantum LTO-9 SAS tabletop) | BackupWorks | $9,883.00 | New |
-| SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop) | LTO World | $12,349.99 | New, sale |
-| SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop) | TapeandMedia | $12,611.00 | New |
+| SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop) | Tape4Backup | $9,199.00 | New, limited stock |
+| TD-L92BN-AR (Quantum LTO-9 SAS desktop kit) | LTO World | $11,629.99 | New, in stock |
+| SYSAS-DS2L9H1B-CT (Symply LTO-9 HH SAS desktop) | BackupWorks | $11,710.00 | New |
+| TD-L92BN-AR (Quantum LTO-9 SAS tabletop) | BackupWorks | $11,863.00 | New |
+| TD-L92BN-AR (Quantum LTO-9 SAS tabletop) | TapeandMedia | $12,249.00 | New, ships within 1-2 weeks |
+| SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop) | LTO World | $12,349.99 | New, sale (regular $12,949); in stock |
+| SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop) | MagStor | $12,349.99 | New, sale (regular $12,949); in stock |
+| SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop) | TapeandMedia | $12,611.00 | New, ships in 2-5 business days |
 | SAS-HL9-8644 (MagStor LTO-9 HH SAS desktop) | BackupWorks | $12,637.00 | New |
-| BC042A (HPE StoreEver LTO-9 Ultrium 45000 external) | TapeandMedia | $13,385.00 | New, ships 3-14 days; LTO World shows BC042A out of stock |
+| SAS-L9-8644 (MagStor LTO-9 FH SAS desktop) | BackupWorks | $13,233.00 | New, full-height |
+| BC042A (HPE StoreEver LTO-9 Ultrium 45000 external) | TapeandMedia | $15,225.00 | New, ships in 3-14 days |
 
 ## LTO-10 (30 TB native)
-### Cartridge: $256.00 to $299.99
+### Cartridge: $259.00 to $299.99
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| Q2080A (HPE, 30TB) | Tape4Backup | $256.00 | Page text mislabels capacity; part number is the 30TB cartridge |
-| Q2080A (HPE) | LTO World | $259.99 | Sale, regular $449.99 |
-| 03PL170 (IBM) | LTO World | $259.99 | Sale |
-| MR-L10MQN-01 (Quantum) | LTO World | $259.99 | Sale |
-| Q2080A (HPE) | MagStor | $259.99 | Sale |
-| 16944686 (Fujifilm, 30TB) | Tape4Backup | $260.00 |  |
-| 03PL170 (IBM) | MagStor | $260.98 | Sale |
-| 03PL170 (IBM, 30TB) | Tape4Backup | $261.00 |  |
-| Q2080A (HPE) | TapeandMedia | $263.00 |  |
-| Q2080A (HPE, 30TB) | BackupWorks | $263.25 |  |
-| 03PL170 (IBM, 30TB) | BackupWorks | $270.75 |  |
-| MR-L10MQN-01 (Quantum, 30TB) | BackupWorks | $275.00 |  |
+| Q2080A (HPE, 30TB) | Tape4Backup | $259.00 | Sale (was $319.00); in stock |
+| 03PL170 (IBM, 30TB) | Tape4Backup | $259.95 | Sale (was $319.00); in stock |
+| MR-L10MQN-01 (Quantum, 30TB) | Tape4Backup | $259.95 | Sale (was $325.00); in stock |
+| Q2080A (HPE) | LTO World | $259.99 | Sale, regular $449.99; in stock |
+| 03PL170 (IBM) | LTO World | $259.99 | Sale; in stock |
+| MR-L10MQN-01 (Quantum) | LTO World | $259.99 | Sale; in stock |
+| Q2080A (HPE) | MagStor | $259.99 | Sale; in stock |
+| 03PL170 (IBM) | MagStor | $260.98 | Sale; in stock |
+| Q2080A (HPE) | TapeandMedia | $263.00 | Ships same business day |
+| Q2080A (HPE, 30TB) | BackupWorks | $275.00 | Now shipping |
+| 03PL170 (IBM, 30TB) | BackupWorks | $280.00 |  |
 | MR-L10MQN-01 (Quantum) | TapeandMedia | $282.70 |  |
+| 16944686 (Fujifilm, 30TB) | BackupWorks | $285.00 |  |
+| MR-L10MQN-01 (Quantum, 30TB) | BackupWorks | $285.00 |  |
 | 16944686 (Fujifilm) | TapeandMedia | $285.35 | Usually ships same day |
-| MR-L10MQN-01 (Quantum, 30TB) | Tape4Backup | $286.75 |  |
-| 16944686 (Fujifilm, 30TB) | BackupWorks | $295.00 |  |
-| 16944686 (Fujifilm) | LTO World | $299.99 | Sale |
-| 16944686 (Fujifilm) | MagStor | $299.99 | Sale |
-| 16944703 (Fujifilm 20-pack library) | Tape4Backup | $5,120.00 | 20-pack = $256.00/unit |
-| 03PL172 (IBM 20-pack library) | Tape4Backup | $5,838.00 | 20-pack = $291.90/unit |
-| MR-L10MQN-20 (Quantum 20-pack library) | Tape4Backup | $5,946.00 | 20-pack = $297.30/unit |
+| 16944686 (Fujifilm, 30TB) | Tape4Backup | $289.00 | Limited stock |
+| 16944686 (Fujifilm) | LTO World | $299.99 | Sale; in stock |
+| 16944686 (Fujifilm) | MagStor | $299.99 | Sale; in stock |
+| 16944703 (Fujifilm 20-pack library) | Tape4Backup | $5,120.00 | 20-pack = $256.00/unit; out of stock |
+| 03PL172 (IBM 20-pack library) | Tape4Backup | $5,838.00 | 20-pack = $291.90/unit; out of stock |
+| MR-L10MQN-20 (Quantum 20-pack library) | Tape4Backup | $5,946.00 | 20-pack = $297.30/unit; out of stock |
 
 ### 40 TB cartridge: $491.00 to $555.00
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| 16978170 (Fujifilm LTO-10 40TB) | TapeandMedia | $491.00 | In stock on category page; shown out of stock in a related-products list |
-| 16978170 (Fujifilm LTO-10 40TB) | MagStor | $499.99 | Sale, regular $888.89; library pack 16978182 also listed |
-| 16978170 (Fujifilm LTO-10 40TB) | BackupWorks | $525.00 |  |
+| 16978170 (Fujifilm LTO-10 40TB) | Tape4Backup | $491.00 | Limited stock |
+| 16978170 (Fujifilm LTO-10 40TB) | TapeandMedia | $499.95 | Special order |
+| 16978170 (Fujifilm LTO-10 40TB) | MagStor | $499.99 | Sale, regular $888.89; in stock |
+| 16978170 (Fujifilm LTO-10 40TB) | BackupWorks | $535.00 |  |
 | MR-A10MQN-01 (Quantum LTO-10 40TB) | TapeandMedia | $555.00 | Pre-order |
+| MR-A10MQN-01 (Quantum LTO-10 40TB) | Tape4Backup | $555.00 | Limited stock |
 
 ### WORM cartridge: $420.00 to $460.80
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| 03PL171 (IBM LTO-10 WORM 30TB) | Tape4Backup | $420.00 |  |
-| Q2080W (HPE LTO-10 WORM 30TB) | Tape4Backup | $432.00 |  |
-| MR-L10MQN-02 (Quantum LTO-10 WORM 30TB) | Tape4Backup | $446.50 |  |
-| 16944698 (Fujifilm LTO-10 WORM 30TB) | Tape4Backup | $460.80 |  |
+| 03PL171 (IBM LTO-10 WORM 30TB) | Tape4Backup | $420.00 | Out of stock; not counted in the range |
+| Q2080W (HPE LTO-10 WORM 30TB) | Tape4Backup | $432.00 | Out of stock; not counted in the range |
+| MR-L10MQN-02 (Quantum LTO-10 WORM 30TB) | Tape4Backup | $446.50 | Out of stock; not counted in the range |
+| 16944698 (Fujifilm LTO-10 WORM 30TB) | Tape4Backup | $460.80 | Out of stock; not counted in the range |
 
-### External drive: $22,165 to $24,950
+### External drive: $23,422 to $24,950
 | Part | Seller | Price | Note |
 | --- | --- | --- | --- |
-| SYSAS-DS2LAF1B-CT (SymplyPro XTF LTO-10 FH SAS desktop) | BackupWorks | $22,165.00 | New, full-height |
-| SAS-L10-MAX (MagStor LTO-10 FH SAS desktop) | LTO World | $23,999.99 | New, sale (regular $25,249), in stock |
+| SYSAS-DS2LAF1B-CT (SymplyPro XTF LTO-10 FH SAS desktop) | BackupWorks | $23,422.00 | New, full-height |
+| SAS-L10-MAX (MagStor LTO-10 FH SAS desktop) | LTO World | $23,999.99 | New, sale (regular $25,249); in stock |
+| SAS-L10-MAX (MagStor LTO-10 FH SAS desktop) | MagStor | $23,999.99 | New, sale (regular $25,249); in stock |
 | SAS-L10-MAX (MagStor LTO-10 FH SAS desktop) | BackupWorks | $24,642.00 | New, full-height |
 | SAS-L10-MAX (MagStor LTO-10 FH SAS desktop) | TapeandMedia | $24,950.00 | New, ships 1-2 business days |
 
 ## Cartridge price history
-| Generation | September 2026 | August 2026 | March 2026 | January 2026 | November to December 2025 | September to October 2025 |
-| --- | --- | --- | --- | --- | --- | --- |
-| LTO-5 |  |  | $25-$35 | $18-$31 | $18-$31 | $18-$31 |
-| LTO-6 | $38.00 to $56.45 | $10-$30 | $30-$45 | $30-$47 | $30-$47 | $30-$47 |
-| LTO-7 | $59.99 to $79.99 | $20-$45 | $55-$65 | $58-$62 | $59-$62 | $59-$62 |
-| LTO-8 | $69.95 to $80.00 | $40-$70 | $60-$70 | $65-$68 | $65-$68 | $65-$68 |
-| LTO-9 | $92.45 to $111.55 | $80-$120 | $85-$100 | $85-$102 | $85-$102 | $85-$102 |
-| LTO-10 | $256.00 to $299.99 | $265-$295 (30 TB), list prices from $400 | $260-$300 | $265-$300 | $265-$300 | $295-$300 |
+| Generation | October 2026 | September 2026 | August 2026 | March 2026 | January 2026 | November to December 2025 | September to October 2025 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| LTO-5 |  |  |  | $25-$35 | $18-$31 | $18-$31 | $18-$31 |
+| LTO-6 | $38.00 to $56.60 | $38.00-$56.45 | $10-$30 | $30-$45 | $30-$47 | $30-$47 | $30-$47 |
+| LTO-7 | $62.75 to $79.99 | $59.99-$79.99 | $20-$45 | $55-$65 | $58-$62 | $59-$62 | $59-$62 |
+| LTO-8 | $70.25 to $84.36 | $69.95-$80.00 | $40-$70 | $60-$70 | $65-$68 | $65-$68 | $65-$68 |
+| LTO-9 | $92.45 to $129.00 | $92.45-$111.55 | $80-$120 | $85-$100 | $85-$102 | $85-$102 | $85-$102 |
+| LTO-10 | $259.00 to $299.99 | $256.00-$299.99 | $265-$295 (30 TB), list prices from $400 | $260-$300 | $265-$300 | $265-$300 | $295-$300 |
 
 ## Market notes
-- Tape4Backup shows a site-wide banner: 'From September 1st, 2026, all LTO Tape prices have increased.' Despite that, its LTO-9 singles ($93.50-$99.50) and LTO-10 30TB singles ($256-$286.75) sit in line with other sellers. (https://www.tape4backup.com/collections/lto-9-tapes)
-- Trend vs early 2026: LTO-9 cartridges flat (Symply quoted about $94 in Feb 2026; now $92-$112). LTO-10 30TB roughly flat to slightly down (Symply ~$280 in Feb 2026; now $256-$300). LTO-10 40TB lower than expected launch price (Symply expected ~$570 or $14.25/TB; now $491-$555 or $12.28-$13.88/TB). Symply blamed the 40TB premium on launch pricing, tight Aramid base film supply and hyperscaler deals. (https://gosymply.com/lto-10-40tb-update-is-the-extra-10tb-worth-the-cost/)
+- October 2026 (seen 2026-10-23): Quantum standalone drives repriced upward. BackupWorks: LTO-8 TD-L82AN-BR $5,635 to $6,763, LTO-9 TD-L92AN-BR $8,480 to $10,191, LTO-9 tabletop TD-L92BN-AR $9,883 to $11,863 (about +20%). LTO World: TD-L92AN-BR $7,699 to $9,989.99, TD-L82BN-AR $5,499 to $7,659.99 (about +30-40%). Symply desktop drives at BackupWorks rose 6-21%; MagStor drive prices were unchanged at BackupWorks, LTO World and MagStor. (https://www.backupworks.com/LTO-9-Tape-Drive.aspx)
+- October 2026 (seen 2026-10-23): HPE StoreEver drives up at TapeandMedia: LTO-8 BC023A external $8,330 to $10,433, LTO-8 BC022A internal $7,695 to $8,985, LTO-9 BC042A external $13,385 to $15,225 (BC040A internal slightly down, $13,500 to $13,329). (https://tapeandmedia.com/Hewlett_Packard_Enterprise_tape_storage_drive)
+- October 2026 (seen 2026-10-23): cartridge prices mostly flat, with small rises at two sellers. BackupWorks LTO-9 HPE Q2079A $98.50 to $107.50 and IBM $104.50 to $115; its LTO-10 30TB singles rose to $275-$285 (from $263.25-$295) and Fujifilm 40TB to $535. TapeandMedia raised HPE LTO-9 Q2079A from $94.95 to $102.95. Tape4Backup, LTO World and MagStor media prices were unchanged or within a few dollars. (https://www.backupworks.com/LTO-9-Tape-Media.aspx)
+- Tape4Backup still shows its banner on 2026-10-23: 'From September 1st, 2026, all LTO Tape prices have increased.' Its single-cartridge prices moved little since 2026-09-17 (LTO-9 $92.45-$105.99, LTO-10 30TB $259-$289), but its 30TB LTO-10 WORM cartridges and LTO-10 20-packs are now all out of stock. (https://www.tape4backup.com/collections/lto-10-tapes)
+- Trend vs early 2026 (updated 2026-10-23): LTO-9 cartridges flat (Symply quoted about $94 in Feb 2026; now $92-$129). LTO-10 30TB roughly flat (Symply ~$280 in Feb 2026; now $259-$300). LTO-10 40TB below the expected launch price (Symply expected ~$570 or $14.25/TB; now $491-$555 or $12.28-$13.88/TB). Symply blamed the 40TB premium on launch pricing, tight Aramid base film supply and hyperscaler deals. (https://gosymply.com/lto-10-40tb-update-is-the-extra-10tb-worth-the-cost/)
 - DatacenterDisk (published 2026-08-17, data updated 2026-09-17): LTO tape 'largely stable at $4-$6/TB' while HDD prices rose sharply in 2026; tape's $/TB edge over HDD widened from about 2x to 3.5x. The stated reason is an independent supply chain (Fujifilm and Sony in Japan) that avoids the NAND shortage and hyperscale HDD demand. (https://datacenterdisk.com/news/hard-drive-prices-up-50-percent-2026)
 - LTO Program (Sept 2026): 160.3 EB of LTO capacity shipped in 2025 (down 9% from the 176.5 EB record in 2024); Q1 2026 shipped capacity up 57% YoY, driven by LTO-9 adoption and the LTO-10 ramp; 2026 expected to set a new record. (https://www.lto.org/2026/09/lto-capacity-shipments-grow-57-yoy-in-q1-2026-as-ai-and-archive-demand-accelerates/)
 - The Register (2026-09-02): only Sony and Fujifilm make LTO cartridges. Analyst Tom Coughlin tied the 2025 dip to 'the evolving international trade environment' making buyers more cautious (tariff-related caution, but no price figure given). (https://www.theregister.com/storage/2026/09/02/tape-still-isnt-dead-but-shipments-slipped-by-16-exabytes-in-2025/5293813)
 - Blocks & Files (2026-09-04): suggests the 2025 dip may reflect buyers waiting for LTO-10; projects 2026 could reach about 251.67 EB if Q1 pace holds. (https://www.blocksandfiles.com/tape/2026/09/04/tape-capacity-shipments-fell-in-2025-but-2026-could-be-a-boom-year-for-tape/5294464)
 - Fujifilm LTO Ultrium 10 40TB cartridge (16978170) uses an aramid base film and began shipping January 2026; it works in existing LTO-10 drives. IBM 40TB cartridges (models 564/664) available 2026-03-06. (https://www.storagenewsletter.com/2026/01/15/ibm-lto-10-40tb-data-cartridges-models-564-and-664/)
-- Half-height LTO-10 drives: Symply support article said HH drives expected Q2 2026 (FH first because of the new head guide assembly). No HH LTO-10 drive was listed at any seller checked on 2026-09-17. (https://support.gosymply.com/support/solutions/articles/80001179382-about-lto-10)
+- Half-height LTO-10 drives: Symply support article said HH drives expected Q2 2026 (FH first because of the new head guide assembly). No HH LTO-10 drive was listed at any seller checked on 2026-09-17 or 2026-10-23. (https://support.gosymply.com/support/solutions/articles/80001179382-about-lto-10)
 
 ## Buyer guides and analysis
 - Tape Backup Software Integration Tradeoffs (https://tapebackup.org/blog/tape-backup-software-integration-tradeoffs, 2026-10-12): The tape systems that integrate best are the ones on your backup software's compatibility list. Current LTO drives and libraries from HPE, IBM, Quantum and Dell work with Veeam, Commvault and the other mainstream products when the exact model, firmware and host adapter are listed. The real tradeoffs sit in the software: built-in automation and a searchable catalogue against being able to read the tapes without that software.

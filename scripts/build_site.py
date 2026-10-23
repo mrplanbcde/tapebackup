@@ -156,7 +156,7 @@ def apply_qa_noindex():
 PANEL_RE = re.compile(r'<p class="panel-label">(?:Reader note|Why this page exists|Short answer|In short)</p>\s*<p class="panel-copy">.*?</p>', re.S)
 
 GUIDE_LINKS = [
-    (("price", "cheap", "cost", "buy", "dollar", "500", "000"), "/lto-tape-price-trend", "LTO tape prices, September 2026"),
+    (("price", "cheap", "cost", "buy", "dollar", "500", "000"), "/lto-tape-price-trend", "Current LTO tape prices"),
     (("software", "script", "linux", "built"), "/best-tape-backup-software", "Best tape backup software in 2026"),
     (("drive", "sas", "rogue", "lto-6", "lto-8", "paperweight"), "/why-tape/lto-tape-drive", "How LTO tape drives work"),
     (("offsite", "archive", "strategy", "disks", "hard"), "/why-tape/lto-vs-hdd", "LTO tape vs HDD for long-term storage"),
@@ -210,7 +210,7 @@ def blog_related_links():
     for slug, (f, title, words) in posts.items():
         others = sorted((len(words & w2), s2) for s2, (_, _, w2) in posts.items() if s2 != slug)
         picks = [s2 for _, s2 in reversed(others)][:3]
-        guides = [(u, t) for keys, u, t in GUIDE_LINKS if any(k in slug for k in keys)][:2] or [("/lto-tape-price-trend", "LTO tape prices, September 2026"), ("/why-tape", "Why use tape storage")]
+        guides = [(u, t) for keys, u, t in GUIDE_LINKS if any(k in slug for k in keys)][:2] or [("/lto-tape-price-trend", "Current LTO tape prices"), ("/why-tape", "Why use tape storage")]
         items = "".join(f'<li><a href="/blog/{p}">{esc(posts[p][1])}</a></li>' for p in picks) + "".join(f'<li><a href="{u}">{esc(t)}</a></li>' for u, t in guides)
         html_block = f'<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>Related on TapeBackup</h2><ul>{items}</ul></section><!-- related:end -->'
         s = open(f, encoding="utf-8").read()

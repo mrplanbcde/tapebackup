@@ -548,7 +548,7 @@ def build_legacy(path, key, title, desc):
     related = ""
     if path == "/resources":
         related = """<section class="section-card"><p class="eyebrow">Price guides and tools</p><h2>LTO price guides and buying tools</h2><div class="link-grid">
-<a href="/lto-tape-price-trend">LTO price tracker<span>September 2026 tape and drive prices</span></a>
+<a href="/lto-tape-price-trend">LTO price tracker<span>Current tape and drive prices</span></a>
 <a href="/lto-tape-price-trend/history">LTO price history<span>Snapshots since September 2025</span></a>
 <a href="/backup-calculator">Backup calculator<span>Cartridges and cost for your data</span></a>
 <a href="/backup-software-finder">Software finder<span>Match software to your tape use</span></a>
@@ -799,7 +799,7 @@ def build_contact():
 <main class="page"><div class="container"><div class="section-stack">
 {hubspot_cta("Send us a message", "Tell us what you need, including the LTO generation and quantity if you are asking about prices.")}
 <section class="section-card"><p class="eyebrow">Before you write</p><h2>Answers that may already exist</h2><div class="link-grid">
-<a href="/lto-tape-price-trend">Current LTO prices<span>September 2026 tapes and drives</span></a>
+<a href="/lto-tape-price-trend">Current LTO prices<span>Tapes and drives, updated monthly</span></a>
 <a href="/tape-q-and-a">Tape Q&amp;A<span>Short answers to common questions</span></a>
 <a href="/backup-calculator">Backup calculator<span>Estimate cartridges and cost</span></a></div></section>
 </div></div></main>"""
@@ -811,7 +811,7 @@ def build_contact():
 def build_404():
     body = """<section class="hero"><div class="container"><div class="hero-copy" style="max-width:760px"><p class="eyebrow">404</p><h1 style="max-width:none">Page not found</h1><p>The page you asked for does not exist or has moved.</p></div></div></section>
 <main class="page"><div class="container"><div class="section-stack"><section class="section-card"><h2>Try one of these</h2><div class="link-grid">
-<a href="/">Home<span>TapeBackup.org</span></a><a href="/lto-tape-price-trend">LTO prices<span>September 2026</span></a><a href="/tape-q-and-a">Tape Q&amp;A<span>Answers</span></a><a href="/blog">Blog<span>Real-world LTO</span></a></div></section></div></div></main>"""
+<a href="/">Home<span>TapeBackup.org</span></a><a href="/lto-tape-price-trend">LTO prices<span>Updated monthly</span></a><a href="/tape-q-and-a">Tape Q&amp;A<span>Answers</span></a><a href="/blog">Blog<span>Real-world LTO</span></a></div></section></div></div></main>"""
     html_ = page("/404", "Page Not Found | TapeBackup.org", "The page you are looking for does not exist on TapeBackup.org. Try the LTO price tracker, Tape Q&A or the blog.", body, robots="noindex, follow")
     write("/404.html", html_)
     return None
@@ -833,7 +833,7 @@ def build_home(current):
     )
     where = "" if BP.MKT.is_us else f" in {BP.MKT.country}"
     out = (tpl.replace("{{PER_TB_9}}", per_tb_9).replace("{{LTO9_RANGE}}", f"{sym}{l9['low']:.0f} to {sym}{l9['high']:.0f}")
-           .replace("for an 18 TB LTO-9 cartridge in September 2026)", f"for an 18 TB LTO-9 cartridge{where} in September 2026)").replace("{{BLOG_CARDS}}", cards))
+           .replace("for an 18 TB LTO-9 cartridge in September 2026)", f"for an 18 TB LTO-9 cartridge{where} in {BP.CURRENT_LABEL})").replace("{{BLOG_CARDS}}", cards).replace("September 2026", BP.CURRENT_LABEL))
     write("/", out)
     return "/"
 

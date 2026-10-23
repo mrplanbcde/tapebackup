@@ -19,12 +19,12 @@ import math
 import os
 import re
 
-from markets import MARKETS, Market, load_fx
+from markets import EU_START_LABEL, MARKETS, PREV_LABEL, Market, load_fx, previous_generations
 from site_shell import GENS, ROOT, breadcrumb_ld, esc, faq_html, faq_ld, hubspot_cta, page, slug_for, write
 
-CURRENT_LABEL = "September 2026"
-CURRENT_DATE_TEXT = "17 September 2026"
-CURRENT_ISO = "2026-09-17"
+CURRENT_LABEL = "October 2026"
+CURRENT_DATE_TEXT = "23 October 2026"
+CURRENT_ISO = "2026-10-23"
 NATIVE = {"LTO-5": 1.5, "LTO-6": 2.5, "LTO-7": 6, "LTO-8": 12, "LTO-9": 18, "LTO-10": 30}
 COMPRESSED = {"LTO-6": "6.25 TB", "LTO-7": "15 TB", "LTO-8": "30 TB", "LTO-9": "45 TB", "LTO-10": "75 TB"}
 
@@ -501,7 +501,10 @@ def build_gen_page(gen, g, history, current):
         ug = US.generations[gen]
         hist_rows = [[f"<strong>{CURRENT_LABEL}, {MKT.country_short} (current)</strong>", esc(rng(c, True)), esc(drive_cell(wi, de))],
                      [f"{CURRENT_LABEL} (US)", esc(rng(ug["cartridge"], True, "$")), esc(drive_cell(ug.get("driveInternal"), ug.get("driveExternal"), "$"))]]
-        hist_intro = f"Prices in {MKT.country} are tracked from {CURRENT_LABEL}. Earlier rows are US snapshots in US dollars before sales tax: rounded guide ranges, with March 2026 drive figures that were estimates rather than seller listings, so compare directions rather than exact amounts."
+        pg = (previous_generations(MKT.code) or {}).get(gen)
+        if pg:
+            hist_rows.insert(1, [f"{PREV_LABEL}, {MKT.country_short}", esc(rng(pg["cartridge"], True)), esc(drive_cell(pg.get("driveInternal"), pg.get("driveExternal")))])
+        hist_intro = f"Prices in {MKT.country} are tracked from {EU_START_LABEL}. Earlier rows are US snapshots in US dollars before sales tax: rounded guide ranges, with March 2026 drive figures that were estimates rather than seller listings, so compare directions rather than exact amounts."
     hist_rows += history_rows_for(gen, history)
     parts.append(f"""<section class="section-card" id="price-history"><p class="eyebrow">Price history</p><h2>{gen} price history</h2>
 <p>{hist_intro}</p>
@@ -569,19 +572,22 @@ def build_hub(current, history):
             rows.append([f'<a href="/lto-tape-price-trend/lto10-price#lto10-40tb"><strong>LTO-10 40 TB</strong></a>', "40 TB", esc(rng(c40, True)), esc(per_tb(c40)), "Not listed", "Uses LTO-10 drives", "Uses LTO-10 drives"])
     summary = table(["Generation", "Native", "Cartridge", "Per native TB", "WORM cartridge", "Internal drive", "External drive"], rows, "LTO price summary")
 
-    jan = next(s for s in history["snapshots"] if s["slug"] == "jan-2026")
-    mar = next(s for s in history["snapshots"] if s["slug"] == "mar-2026")
+    snap_by = {x["slug"]: x for x in history["snapshots"]}
+    compare = [snap_by[k] for k in (("jan-2026", "mar-2026", "sep-2026") if MKT.is_us else ("mar-2026", "sep-2026")) if k in snap_by]
+    prev_local = None if MKT.is_us else previous_generations(MKT.code)
     change_rows = []
     for gen in GENS:
         g = gens[gen]
-        row = [f"<strong>{gen}</strong>", esc(jan["cartridges"][gen]["range"]), esc(mar["cartridges"][gen]["range"]), esc(rng(US.generations[gen]["cartridge"], True, "$"))]
+        row = [f"<strong>{gen}</strong>"] + [esc((x["cartridges"].get(gen) or {}).get("range", "")) for x in compare] + [esc(rng(US.generations[gen]["cartridge"], True, "$"))]
         if not MKT.is_us:
+            if prev_local:
+                row.append(esc(rng(prev_local[gen]["cartridge"], True)))
             row.append(esc(rng(g["cartridge"], True)))
         change_rows.append(row)
     if MKT.is_us:
-        change_head = ["Generation", "January 2026", "March 2026", CURRENT_LABEL]
+        change_head = ["Generation"] + [x["label"] for x in compare] + [CURRENT_LABEL]
     else:
-        change_head = ["Generation", "January 2026 (US)", "March 2026 (US)", f"{CURRENT_LABEL} (US)", f"{CURRENT_LABEL} ({MKT.country_short})"]
+        change_head = ["Generation"] + [f"{x['label']} (US)" for x in compare] + [f"{CURRENT_LABEL} (US)"] + ([f"{PREV_LABEL} ({MKT.country_short})"] if prev_local else []) + [f"{CURRENT_LABEL} ({MKT.country_short})"]
     changes = table(change_head, change_rows, "LTO cartridge price change in 2026")
 
     notes = "".join(
@@ -610,17 +616,17 @@ def build_hub(current, history):
         ("How much does an LTO-9 tape drive cost?",
          f"New internal half-height SAS LTO-9 drives were listed at {rng(gens['LTO-9']['driveInternal'], False)} and external desktop SAS drives at {rng(gens['LTO-9']['driveExternal'], False)}."),
         ("Are LTO tape prices going up in 2026?",
-         ("" if MKT.is_us else "At US sellers, ") + ("Cartridge" if MKT.is_us else "cartridge") + " prices are flat to slightly higher than in early 2026, while listed drive prices are well above the estimates published earlier in the year. One seller announced a general LTO tape price increase from 1 September 2026, but its prices still match other sellers."),
+         ("" if MKT.is_us else "At US sellers, ") + ("Cartridge" if MKT.is_us else "cartridge") + " prices are mostly flat: the cheapest LTO-9 and LTO-10 cartridges cost about the same in October as in September 2026, though the top of some ranges rose. Drive prices are rising: several sellers raised Quantum LTO-8 and LTO-9 drives by about 20 to 40% between September and October, and HPE drives rose too." + ("" if MKT.is_us else f" Compare the September and October columns for {MKT.country} in the table on this page.")),
         ("Where can I see older LTO prices?",
          "Every earlier snapshot, from September 2025 onwards, is kept on the LTO price history page with links to the full archived tables."),
     ]
 
     if MKT.is_us:
-        changes_intro = "<p>The January and March 2026 editions were compiled from different sources and rounded, so small differences are noise. The clear moves: LTO-6 and LTO-7 media got more expensive as supply thinned, LTO-8 and LTO-9 rose a little, and LTO-10 30 TB held steady.</p>"
-        drive_para = f"<p>Drive prices look very different. The March 2026 edition estimated LTO-9 internal drives at $4,500 to $6,500; seller listings in {CURRENT_LABEL} run from {rng(gens['LTO-9']['driveInternal'], False)}. Part of that gap is method (estimates versus listings), so treat it as a warning to get quotes rather than a precise increase.</p>"
+        changes_intro = "<p>The January and March 2026 editions were compiled from different sources and rounded, so small differences are noise. The clear moves: LTO-6 and LTO-7 media got more expensive as supply thinned, LTO-8 and LTO-9 rose a little, and LTO-10 30 TB held steady. From September to October 2026 the cheapest cartridges held steady too, while the top of some ranges rose.</p>"
+        drive_para = f"<p>Drives are where prices moved: between September and October several sellers raised Quantum LTO-8 and LTO-9 drives by about 20 to 40%, and HPE drives rose as well. Drive prices also look very different from early 2026. The March 2026 edition estimated LTO-9 internal drives at $4,500 to $6,500; seller listings in {CURRENT_LABEL} run from {rng(gens['LTO-9']['driveInternal'], False)}. Part of that gap is method (estimates versus listings), so treat it as a warning to get quotes rather than a precise increase.</p>"
         method = "We load product pages at specialist tape resellers (Tape4Backup, LTO World, BackupWorks, TapeandMedia, MagStor, DatacenterDisk and StoragePartsDirect in this edition) and record the listed price, part number and stock note. We exclude listings the seller marks as inaccurate and prices that look like listing errors. Amazon, B&amp;H, CDW, Connection and the HPE Store blocked automated checks or showed no price, so big-box and used-market prices are not included. When a new edition is published, the previous one moves to the price history."
     else:
-        changes_intro = f"<p>Prices in {MKT.country} are tracked from {CURRENT_LABEL}, so the history below comes from US sellers. The January and March 2026 US editions were compiled from different sources and rounded, so small differences are noise. The clear moves: LTO-6 and LTO-7 media got more expensive as supply thinned, LTO-8 and LTO-9 rose a little, and LTO-10 30 TB held steady.</p>"
+        changes_intro = f"<p>Prices in {MKT.country} are tracked from {EU_START_LABEL}; the earlier history comes from US sellers. The January and March 2026 US editions were compiled from different sources and rounded, so small differences are noise. The clear moves: LTO-6 and LTO-7 media got more expensive as supply thinned, LTO-8 and LTO-9 rose a little, and LTO-10 30 TB held steady. Between September and October 2026, drive prices rose at many sellers, in {MKT.country} as in the US, while cartridge prices moved less.</p>"
         drive_para = f"<p>Drive prices look very different. The March 2026 US edition estimated LTO-9 internal drives at $4,500 to $6,500; US seller listings in {CURRENT_LABEL} run from {rng(US.generations['LTO-9']['driveInternal'], False, '$')}. Part of that gap is method (estimates versus listings), so treat it as a warning to get quotes rather than a precise increase.</p>"
         blocked = blocked_not_used()
         method = (f"We load product pages at sellers in {MKT.seller_region} ({esc(and_list(MKT.sellers_used()))} in this edition) and record the listed price, part number and stock note."
@@ -683,12 +689,16 @@ def build_history(current, history):
     if MKT.is_us:
         head = ["Generation", f"{CURRENT_LABEL} (current)"] + [s["label"] for s in snaps]
     else:
-        head = ["Generation", f"{CURRENT_LABEL}, {MKT.country_short}", f"{CURRENT_LABEL}, US"] + [f"{s['label']} (US)" for s in snaps]
+        prev_local = previous_generations(MKT.code)
+        head = ["Generation", f"{CURRENT_LABEL}, {MKT.country_short}"] + ([f"{PREV_LABEL}, {MKT.country_short}"] if prev_local else []) + [f"{CURRENT_LABEL}, US"] + [f"{s['label']} (US)" for s in snaps]
     rows = []
     for gen in gens_all:
         cur = current["generations"].get(gen)
         row = [f"<strong>{gen}</strong>", esc(rng(cur["cartridge"], True)) if cur else "Not tracked"]
         if not MKT.is_us:
+            if prev_local:
+                pc = prev_local.get(gen)
+                row.append(esc(rng(pc["cartridge"], True)) if pc else "Not tracked")
             ucur = US.generations.get(gen)
             row.append(esc(rng(ucur["cartridge"], True, "$")) if ucur else "Not tracked")
         for s in snaps:
@@ -714,10 +724,10 @@ def build_history(current, history):
         drive_intro = f"Drive prices were first tracked in March 2026 as estimated street ranges. The {CURRENT_LABEL} figures are seller listings for new standalone SAS drives."
         panel = f"{len(snaps) + 1} editions from September 2025 to {CURRENT_LABEL}. Older editions mixed individual listings and rounded guide ranges, so read the trend, not the cents."
     else:
-        intro = f"Every LTO price snapshot TapeBackup.org has published since September 2025, side by side. Prices in {MKT.country} start with the {CURRENT_LABEL} edition; the older columns are US snapshots in US dollars before sales tax. Current prices live on the <a href=\"/lto-tape-price-trend\">LTO price tracker</a>."
+        intro = f"Every LTO price snapshot TapeBackup.org has published since September 2025, side by side. Prices in {MKT.country} start with the {EU_START_LABEL} edition; the older columns are US snapshots in US dollars before sales tax. Current prices live on the <a href=\"/lto-tape-price-trend\">LTO price tracker</a>."
         drive_head = ["Generation", f"Internal, {MKT.country_short}", f"External, {MKT.country_short}", f"Internal, US {CURRENT_LABEL}", f"External, US {CURRENT_LABEL}", "Internal, US March 2026", "External, US March 2026"]
         drive_intro = f"US drive prices were first tracked in March 2026 as estimated street ranges. The {CURRENT_LABEL} figures are seller listings for new standalone SAS drives, in {MKT.country} including VAT and in the US before sales tax."
-        panel = f"{len(snaps) + 1} US editions from September 2025 to {CURRENT_LABEL}, plus the first {MKT.country_short} edition. Older editions mixed individual listings and rounded guide ranges, so read the trend, not the cents."
+        panel = f"{len(snaps) + 1} US editions from September 2025 to {CURRENT_LABEL}, plus the {MKT.country_short} editions since {EU_START_LABEL}. Older editions mixed individual listings and rounded guide ranges, so read the trend, not the cents."
     body = f"""<section class="hero"><div class="container hero-grid"><div class="hero-copy">
 <p class="eyebrow">LTO price history</p><h1>LTO Tape Price History</h1>
 <p>{intro}</p>
@@ -736,6 +746,7 @@ def build_history(current, history):
 
 
 ARCHIVE_TITLES = {
+    "sep-2026": "LTO Tape Prices September 2026 (Archive) | TapeBackup",
     "aug-2026": "LTO Tape Prices August 2026 (Archive) | TapeBackup",
     "mar-2026": "LTO Tape and Drive Prices March 2026 (Archive)",
     "jan-2026": "LTO Tape Prices January 2026 (Archive) | TapeBackup",
@@ -773,7 +784,7 @@ def build_archive(snap, history):
             f"<h3>{esc(v['vendor'])}</h3>" + table(["Generation", "Internal or module", "External"], [[esc(a), esc(b), esc(c)] for a, b, c in v["rows"]], v["vendor"])
             for v in snap.get("driveVendors", [])
         )
-        parts.append(f'<section class="section-card" id="drives"><p class="eyebrow">Hardware</p><h2>LTO drive prices, {esc(snap["label"])}</h2><p>Estimated street prices for single standalone drives.</p>{table(["Generation", "Internal or module", "External or tabletop"], drows, "Drive prices")}{vend}</section>')
+        parts.append(f'<section class="section-card" id="drives"><p class="eyebrow">Hardware</p><h2>LTO drive prices, {esc(snap["label"])}</h2><p>{esc(snap.get("drivesNote", "Estimated street prices for single standalone drives."))}</p>{table(["Generation", "Internal or module", "External or tabletop"], drows, "Drive prices")}{vend}</section>')
 
     if snap.get("notes"):
         parts.append('<section class="section-card" id="notes"><p class="eyebrow">Notes</p><h2>Notes on this snapshot</h2><ul>' + "".join(f"<li>{esc(n)}</li>" for n in snap["notes"]) + "</ul></section>")
