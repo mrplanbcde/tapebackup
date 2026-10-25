@@ -8,11 +8,13 @@ Runs from build_site.py after llms-full.txt is written.
 import glob
 import json
 import os
+import re
 
 import videos
 from site_shell import ROOT, SITE
 
 TAG = '<script src="/chat-widget.js" defer></script>'
+WIDGET_RE = re.compile(r'[ \t]*<script[^>]*src="/chat-widget\.js"[^>]*>\s*</script>\n?')
 CHANNEL = "https://www.youtube.com/@lida4ever"
 
 
@@ -36,10 +38,13 @@ def add_widget():
         if os.sep + ".build" + os.sep in f or os.sep + "node_modules" + os.sep in f:
             continue
         s = open(f, encoding="utf-8").read()
-        if TAG in s or "</body>" not in s:
+        if "</body>" not in s:
             continue
-        open(f, "w", encoding="utf-8").write(s.replace("</body>", TAG + "\n</body>", 1))
-        n += 1
+        # Other steps re-serialise pages (bs4 writes defer="" src=...), so match any form of the tag and keep exactly one.
+        s2 = WIDGET_RE.sub("", s).replace("</body>", TAG + "\n</body>", 1)
+        if s2 != s:
+            open(f, "w", encoding="utf-8").write(s2)
+            n += 1
     return n
 
 

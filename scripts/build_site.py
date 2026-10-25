@@ -236,9 +236,12 @@ def qa_page_schema():
         question = html.unescape(re.sub(r"<[^>]+>", "", q.group(1))).strip()
         answer = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", block.group(1)))).strip()
         slug = f.split(os.sep)[-2]
+        published = first_git_date(f) or "2026-06-08"
+        author = {"@type": "Organization", "name": "TapeBackup.org", "url": SITE}
         ld = {"@context": "https://schema.org", "@type": "QAPage", "mainEntity": {"@type": "Question", "name": question,
-              "text": question, "answerCount": 1, "acceptedAnswer": {"@type": "Answer", "text": answer,
-              "url": f"{SITE}/tape-q-and-a/{slug}"}}}
+              "text": question, "answerCount": 1, "upvoteCount": 0, "datePublished": published, "author": author,
+              "acceptedAnswer": {"@type": "Answer", "text": answer, "upvoteCount": 0, "datePublished": published,
+                                 "author": author, "url": f"{SITE}/tape-q-and-a/{slug}"}}}
         tag = '<script type="application/ld+json" data-qa-schema>' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>"
         s2 = re.sub(r'[ \t]*<script type="application/ld\+json" data-qa-schema>.*?</script>\n?', "", s, flags=re.S)
         s2 = s2.replace("</head>", tag + "\n  </head>", 1)
@@ -246,6 +249,15 @@ def qa_page_schema():
             open(f, "w", encoding="utf-8").write(s2)
             n += 1
     return n
+
+
+def first_git_date(file):
+    """Date the file was first committed (YYYY-MM-DD), or None."""
+    try:
+        out = subprocess.run(["git", "log", "--diff-filter=A", "--follow", "--format=%cs", "--", file], cwd=ROOT, capture_output=True, text=True).stdout.split()
+        return out[-1] if out else None
+    except Exception:
+        return None
 
 
 def git_date(file):
