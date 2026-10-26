@@ -1,20 +1,20 @@
 [
   {
-    "href": "/blog/best-value-per-terabyte-tape-backup-us",
-    "cat": "Pricing",
-    "date": "Oct 2026",
-    "h": "Best Value per TB in Tape Backup, US 2026"
-  },
-  {
-    "href": "/blog/tape-backup-5-year-total-cost-of-ownership",
-    "cat": "Pricing",
-    "date": "Oct 2026",
-    "h": "Tape Backup 5-Year TCO: Systems Compared"
-  },
-  {
-    "href": "/blog/tape-backup-encryption-security-compared",
+    "href": "/blog/air-gap-backup-physical-tape-vs-cloud",
     "cat": "Security",
     "date": "Oct 2026",
-    "h": "Tape Encryption and Security, Side by Side"
+    "h": "Air Gap Backup: Physical Tape vs Cloud"
+  },
+  {
+    "href": "/blog/tape-backup-software-integration-tradeoffs",
+    "cat": "Software",
+    "date": "Oct 2026",
+    "h": "Tape Backup Software Integration Tradeoffs"
+  },
+  {
+    "href": "/blog/tape-backup-energy-use-and-operating-cost",
+    "cat": "Analysis",
+    "date": "Oct 2026",
+    "h": "Tape Backup Energy Use and Operating Cost"
   }
 ]

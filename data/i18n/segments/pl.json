@@ -1,1 +1,500 @@
-[]
+[
+ {
+  "key": "Air Gap Backup: Physical Tape vs Cloud",
+  "ctx": [
+   "h1",
+   "h2",
+   "json-ld headline",
+   "meta og:title",
+   "meta twitter:title"
+  ],
+  "pages": [
+   "/blog",
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Air Gap Backup: Physical Tape vs Cloud"
+ },
+ {
+  "key": "Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description",
+   "p"
+  ],
+  "pages": [
+   "/blog",
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Tape Backup Software Integration Tradeoffs | TapeBackup.org&lt;/title&gt; &lt;meta content=\"Which tape backup solutions integrate best with Veeam, Commvault, Nakivo and open-source tools, and what are the tradeoffs in format, catalogue and cost?",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Tape Backup Software Integration Tradeoffs | TapeBackup.org</title> <meta content=\"Which tape backup solutions integrate best with Veeam, Commvault, Nakivo and open-source tools, and what are the tradeoffs in format, catalogue and cost?"
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Tape Backup Energy Use and Operating Cost | TapeBackup.org&lt;/title&gt; &lt;meta content=\"Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A {1} TB model with assumptions.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Tape Backup Energy Use and Operating Cost | TapeBackup.org</title> <meta content=\"Which tape backup options are the most energy efficient, and how do they compare with disk and cloud on operating cost? A 500 TB model with assumptions."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Tape Encryption and Security, Side by Side | TapeBackup.org&lt;/title&gt; &lt;meta content=\"Which tape backup systems have the best encryption and security? {1} in LTO drives, key management options, WORM and air gap compared side by side.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Tape Encryption and Security, Side by Side | TapeBackup.org</title> <meta content=\"Which tape backup systems have the best encryption and security? AES-256 in LTO drives, key management options, WORM and air gap compared side by side."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Tape Backup {1}-Year TCO: Systems Compared | TapeBackup.org&lt;/title&gt; &lt;meta content=\"The tape backup systems with the lowest {2}-year total cost of ownership, compared at {3} TB, {4} TB and {5} PB against cloud archive storage.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Tape Backup 5-Year TCO: Systems Compared | TapeBackup.org</title> <meta content=\"The tape backup systems with the lowest 5-year total cost of ownership, compared at 100 TB, 500 TB and 1 PB against cloud archive storage."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Best Value per TB in Tape Backup, US {1} | TapeBackup.org&lt;/title&gt; &lt;meta content=\"Which tape backup systems give the best value per terabyte for long-term storage in the US? {2}, {3} and {4} compared on media and total cost.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Best Value per TB in Tape Backup, US 2026 | TapeBackup.org</title> <meta content=\"Which tape backup systems give the best value per terabyte for long-term storage in the US? LTO-8, LTO-9 and LTO-10 compared on media and total cost."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Tape Is Dead? Why Backup Systems Use It Again | TapeBackup&lt;/title&gt; &lt;meta content=\"Tape costs a few euros per terabyte on paper, but real LTO backup still demands patience, planning, and a clear idea of where offline storage belongs.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Tape Is Dead? Why Backup Systems Use It Again | TapeBackup</title> <meta content=\"Tape costs a few euros per terabyte on paper, but real LTO backup still demands patience, planning, and a clear idea of where offline storage belongs."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;LTO Backup Costs Once the Workflow Fights Back | TapeBackup&lt;/title&gt; &lt;meta content=\"Cheap tapes make LTO look irresistible. This breaks down the real costs: drives, HBAs, libraries, catalogs, cleaning, restores, and daily operation.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>LTO Backup Costs Once the Workflow Fights Back | TapeBackup</title> <meta content=\"Cheap tapes make LTO look irresistible. This breaks down the real costs: drives, HBAs, libraries, catalogs, cleaning, restores, and daily operation."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;{1} Dreams: The Illusion of Cheap LTO Storage | TapeBackup&lt;/title&gt; &lt;meta content=\"Why a used {2} drive listed for {3} feels like a steal, and why the cheap entry price of LTO tape storage is so often an illusion.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>$500 Dreams: The Illusion of Cheap LTO Storage | TapeBackup</title> <meta content=\"Why a used LTO-6 drive listed for $500 feels like a steal, and why the cheap entry price of LTO tape storage is so often an illusion."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Used LTO Libraries: Loud, Fussy, and Addictive | TapeBackup&lt;/title&gt; &lt;meta content=\"Decommissioned tape libraries are loud and fussy, yet backup teams and homelabbers keep reviving them for archive capacity without a cloud-sized bill.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Used LTO Libraries: Loud, Fussy, and Addictive | TapeBackup</title> <meta content=\"Decommissioned tape libraries are loud and fussy, yet backup teams and homelabbers keep reviving them for archive capacity without a cloud-sized bill."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;{1} Paperweight: When an {2} Drive Fails | TapeBackup&lt;/title&gt; &lt;meta content=\"Someone spent {3} on an {4} drive expecting enterprise durability. What its failure says about trusting enterprise-grade storage hardware.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>$6,000 Paperweight: When an LTO-7 Drive Fails | TapeBackup</title> <meta content=\"Someone spent $6,000 on an LTO-7 drive expecting enterprise durability. What its failure says about trusting enterprise-grade storage hardware."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Tape Backup Software: Why I Built My Own | TapeBackup&lt;/title&gt; &lt;meta content=\"The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Tape Backup Software: Why I Built My Own | TapeBackup</title> <meta content=\"The story of someone who wrote their own tape backup software after existing tools kept failing them, and the messy reality of that build."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Hard Drives to LTO Tape: Noise, Bugs, Obsession | TapeBackup&lt;/title&gt; &lt;meta content=\"Rising HDD prices pushed one builder to switch to LTO tape instead. What followed: drive noise, software bugs, and a hobby that became an obsession.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Hard Drives to LTO Tape: Noise, Bugs, Obsession | TapeBackup</title> <meta content=\"Rising HDD prices pushed one builder to switch to LTO tape instead. What followed: drive noise, software bugs, and a hobby that became an obsession."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Best LTO Backup Software Is the One You Test | TapeBackup&lt;/title&gt; &lt;meta content=\"LTFS, tar, Bacula, Bareos, or an enterprise suite? Why the best LTO backup workflow is the one you have actually restored from without guessing.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Best LTO Backup Software Is the One You Test | TapeBackup</title> <meta content=\"LTFS, tar, Bacula, Bareos, or an enterprise suite? Why the best LTO backup workflow is the one you have actually restored from without guessing."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Used {1} Drive Dead? Check the SAS Path First | TapeBackup&lt;/title&gt; &lt;meta content=\"Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an {2} drive dead.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Used LTO-8 Drive Dead? Check the SAS Path First | TapeBackup</title> <meta content=\"Many used LTO drive failures are really cabling, HBA, enclosure, or mode problems. Why to rule out the SAS path before declaring an LTO-8 drive dead."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Offsite Tape Storage Beats Good-Enough Backup Plans&lt;/title&gt; &lt;meta content=\"Offsite tape storage for backups: why a tape copy moved out of the building still covers risks that replication, snapshots and cloud sync leave open.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Offsite Tape Storage Beats Good-Enough Backup Plans</title> <meta content=\"Offsite tape storage for backups: why a tape copy moved out of the building still covers risks that replication, snapshots and cloud sync leave open."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Cheap LTO Tapes: How the Rabbit Hole Starts | TapeBackup&lt;/title&gt; &lt;meta content=\"How a pile of cheap LTO cartridges turns into a full tape setup, and why archive math looks different once removable media enters the picture.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Cheap LTO Tapes: How the Rabbit Hole Starts | TapeBackup</title> <meta content=\"How a pile of cheap LTO cartridges turns into a full tape setup, and why archive math looks different once removable media enters the picture."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Which LTO Drive Should You Buy Without Regret? | TapeBackup&lt;/title&gt; &lt;meta content=\"Every LTO generation looks tempting on the used market. How media costs, compatibility rules, and restore plans should decide which drive you buy.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Which LTO Drive Should You Buy Without Regret? | TapeBackup</title> <meta content=\"Every LTO generation looks tempting on the used market. How media costs, compatibility rules, and restore plans should decide which drive you buy."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;One Bad Tape Archive and It's Gone Forever | TapeBackup&lt;/title&gt; &lt;meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>One Bad Tape Archive and It's Gone Forever | TapeBackup</title> <meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Backup Strategy When an Archive Outgrows Disks | TapeBackup&lt;/title&gt; &lt;meta content=\"Adding another hard drive stops being a backup strategy once an archive grows. Why that is the point where tape enters the picture for many operators.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Backup Strategy When an Archive Outgrows Disks | TapeBackup</title> <meta content=\"Adding another hard drive stops being a backup strategy once an archive grows. Why that is the point where tape enters the picture for many operators."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Linux Tape Backups Still Have a Process Problem | TapeBackup&lt;/title&gt; &lt;meta content=\"Linux makes tape backup flexible and scriptable. It also makes it easy to build a workflow that only its author understands. Why process matters.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Linux Tape Backups Still Have a Process Problem | TapeBackup</title> <meta content=\"Linux makes tape backup flexible and scriptable. It also makes it easy to build a workflow that only its author understands. Why process matters."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;{1} Failure: The Day My Tape Drive Went Rogue | TapeBackup&lt;/title&gt; &lt;meta content=\"A firsthand look at an {2} tape drive failure, and why a breakdown feels so frustrating in storage that is supposed to be dependable.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>LTO-6 Failure: The Day My Tape Drive Went Rogue | TapeBackup</title> <meta content=\"A firsthand look at an LTO-6 tape drive failure, and why a breakdown feels so frustrating in storage that is supposed to be dependable."
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Home LTO Setup: Stop Treating It Like a Toy | TapeBackup&lt;/title&gt; &lt;meta content=\"A home or lab LTO setup can be real backup infrastructure. What separates a weekend experiment from a reliable archive is how you operate it.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Home LTO Setup: Stop Treating It Like a Toy | TapeBackup</title> <meta content=\"A home or lab LTO setup can be real backup infrastructure. What separates a weekend experiment from a reliable archive is how you operate it."
+ },
+ {
+  "key": "Air Gap Backup: Physical Tape vs Cloud | TapeBackup.org",
+  "ctx": [
+   "title"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Air Gap Backup: Physical Tape vs Cloud | TapeBackup.org"
+ },
+ {
+  "key": "<b1>Air gap backup has split into two competing designs: physical isolation and logical software locks. While cloud providers sell immutable object storage as a modern air gap, ransomware groups increasingly hijack administrative identity planes to delete cloud repositories. A physical LTO tape sitting on a shelf or unmounted inside an automated library remains the only recovery copy that network credentials cannot reach or destroy.</b1>",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Air gap backup has split into two competing designs: physical isolation and logical software locks. While cloud providers sell immutable object storage as a modern air gap, ransomware groups increasingly hijack administrative identity planes to delete cloud repositories. A physical LTO tape sitting on a shelf or unmounted inside an automated library remains the only recovery copy that network credentials cannot reach or destroy."
+ },
+ {
+  "key": "What broke logical air gaps",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "What broke logical air gaps"
+ },
+ {
+  "key": "For several years, storage teams replaced offline media with cloud-based immutable buckets and separate backup accounts. The theory seemed sound: configure object lock with compliance retention, lock the policy for thirty days, and treat the bucket as an air-gapped copy.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "For several years, storage teams replaced offline media with cloud-based immutable buckets and separate backup accounts. The theory seemed sound: configure object lock with compliance retention, lock the policy for thirty days, and treat the bucket as an air-gapped copy."
+ },
+ {
+  "key": "Modern threat actors bypass this safeguard without touching the storage protocol. Instead of breaking cryptographic locks, attackers target the identity plane. Through session token theft, compromised identity provider credentials, or elevated role abuse, intruders gain access to the root tenancy. From that vantage point, attackers do not need to modify locked objects. They can delete the entire cloud subscription, alter billing permissions to cause account termination, or destroy the encryption keys stored in key management services. When the management plane fails, logical isolation vanishes with it.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Modern threat actors bypass this safeguard without touching the storage protocol. Instead of breaking cryptographic locks, attackers target the identity plane. Through session token theft, compromised identity provider credentials, or elevated role abuse, intruders gain access to the root tenancy. From that vantage point, attackers do not need to modify locked objects. They can delete the entire cloud subscription, alter billing permissions to cause account termination, or destroy the encryption keys stored in key management services. When the management plane fails, logical isolation vanishes with it."
+ },
+ {
+  "key": "Why physical tape isolation cannot be reached over IP",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Why physical tape isolation cannot be reached over IP"
+ },
+ {
+  "key": "A physical air gap relies on an absolute boundary: the absence of an electrical and network path. An LTO cartridge stores data on barium ferrite or metal particle tape inside a plastic housing. When the write process finishes and the drive unloads the cartridge, all electrical contact ends.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "A physical air gap relies on an absolute boundary: the absence of an electrical and network path. An LTO cartridge stores data on barium ferrite or metal particle tape inside a plastic housing. When the write process finishes and the drive unloads the cartridge, all electrical contact ends."
+ },
+ {
+  "key": "Inside an automated tape library, robotic arms place the media into passive storage slots. Even if an attacker gains root credentials on your backup server, controls your hypervisors, and compromises your switches, the unmounted tape cannot execute commands. It has no IP address, no operating system kernel, no remote management port, and no firmware listener. Modifying an offline cartridge requires physical human presence in the data room.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Inside an automated tape library, robotic arms place the media into passive storage slots. Even if an attacker gains root credentials on your backup server, controls your hypervisors, and compromises your switches, the unmounted tape cannot execute commands. It has no IP address, no operating system kernel, no remote management port, and no firmware listener. Modifying an offline cartridge requires physical human presence in the data room."
+ },
+ {
+  "key": "The economics of offline archive storage",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "The economics of offline archive storage"
+ },
+ {
+  "key": "Security is the initial reason teams reintroduce tape, but operating costs keep it in place. Our September {0} US price tracker lists {1} TB {2} cartridges at {3} to {4}, which comes to {5} to {6} per native terabyte. An {7} cartridge costs between {8} and {9} for {10} TB, or {11} to {12} per native terabyte.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Security is the initial reason teams reintroduce tape, but operating costs keep it in place. Our September 2026 US price tracker lists 18 TB LTO-9 cartridges at $92 to $112, which comes to $5.14 to $6.20 per native terabyte. An LTO-8 cartridge costs between $70 and $80 for 12 TB, or $5.83 to $6.67 per native terabyte."
+ },
+ {
+  "key": "Storing that same petabyte in hot or cold cloud storage requires perpetual monthly capacity charges. When an enterprise suffers a catastrophic incident and must restore hundreds of terabytes immediately, cloud egress fees and retrieval penalties create massive emergency expenses. A tape cartridge sitting on a shelf draws zero watts of electricity, produces zero heat, and incurs zero monthly cloud subscription bills.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Storing that same petabyte in hot or cold cloud storage requires perpetual monthly capacity charges. When an enterprise suffers a catastrophic incident and must restore hundreds of terabytes immediately, cloud egress fees and retrieval penalties create massive emergency expenses. A tape cartridge sitting on a shelf draws zero watts of electricity, produces zero heat, and incurs zero monthly cloud subscription bills."
+ },
+ {
+  "key": "How to build a practical air-gapped workflow",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "How to build a practical air-gapped workflow"
+ },
+ {
+  "key": "Adopting an air-gapped tape backup does not mean abandoning disk snapshots or cloud replication. Fast daily recoveries for individual lost files belong on local disk arrays. Tape provides the deep, immutable foundation underneath them.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Adopting an air-gapped tape backup does not mean abandoning disk snapshots or cloud replication. Fast daily recoveries for individual lost files belong on local disk arrays. Tape provides the deep, immutable foundation underneath them."
+ },
+ {
+  "key": "A standard resilience pattern keeps daily and weekly recovery points on primary storage, writes monthly and quarterly full archives to LTO tape, and ejects those tapes to an offsite fireproof vault or separate facility. In an automated library, dedicated air-gap software partitions isolate vault cartridges from active drive pools. If ransomware encrypts every server on the network, the offline tape set guarantees a clean restoration baseline.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "A standard resilience pattern keeps daily and weekly recovery points on primary storage, writes monthly and quarterly full archives to LTO tape, and ejects those tapes to an offsite fireproof vault or separate facility. In an automated library, dedicated air-gap software partitions isolate vault cartridges from active drive pools. If ransomware encrypts every server on the network, the offline tape set guarantees a clean restoration baseline."
+ },
+ {
+  "key": "What is the difference between a physical air gap and a logical air gap?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "What is the difference between a physical air gap and a logical air gap?"
+ },
+ {
+  "key": "A physical air gap disconnects the storage media entirely from electrical and network connections, as with an ejected LTO tape. A logical air gap keeps storage connected to the network but restricts access through software rules, access control lists, or immutable bucket policies. Logical gaps can be bypassed if administrative credentials are compromised.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "A physical air gap disconnects the storage media entirely from electrical and network connections, as with an ejected LTO tape. A logical air gap keeps storage connected to the network but restricts access through software rules, access control lists, or immutable bucket policies. Logical gaps can be bypassed if administrative credentials are compromised."
+ },
+ {
+  "key": "Can ransomware infect an unmounted tape cartridge?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Can ransomware infect an unmounted tape cartridge?"
+ },
+ {
+  "key": "No. An unmounted tape sits in a slot or storage shelf with no electrical connection, no processor, and no network interface. Remote software cannot write to, read from, or delete data on an unmounted cartridge.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "No. An unmounted tape sits in a slot or storage shelf with no electrical connection, no processor, and no network interface. Remote software cannot write to, read from, or delete data on an unmounted cartridge."
+ },
+ {
+  "key": "Do tape drives support hardware-based encryption?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Do tape drives support hardware-based encryption?"
+ },
+ {
+  "key": "Yes. All LTO tape drives from {0} through {1} support hardware-level {2}-bit AES encryption directly on the drive ASIC. Data is encrypted before being written to media, with no performance penalty.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Yes. All LTO tape drives from LTO-4 through LTO-10 support hardware-level 256-bit AES encryption directly on the drive ASIC. Data is encrypted before being written to media, with no performance penalty."
+ },
+ {
+  "key": "How does the total cost of tape compare to cloud archive tiers?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "How does the total cost of tape compare to cloud archive tiers?"
+ },
+ {
+  "key": "For archives above {0} terabytes held longer than two years, LTO tape costs significantly less than cloud cold storage. Tape media requires a one-time purchase with no recurring monthly capacity charges and no egress fees during restores.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "For archives above 100 terabytes held longer than two years, LTO tape costs significantly less than cloud cold storage. Tape media requires a one-time purchase with no recurring monthly capacity charges and no egress fees during restores."
+ },
+ {
+  "key": "Compare current media options on our <a1>LTO price tracker</a1>, calculate your capacity with the <a2>backup calculator</a2>, or read our guide on <a3>LTO tape vs cloud storage</a3>.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Compare current media options on our LTO price tracker , calculate your capacity with the backup calculator , or read our guide on LTO tape vs cloud storage ."
+ },
+ {
+  "key": "<a1>Air Gap Backup: Physical Tape vs Cloud</a1>",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying"
+  ],
+  "example": "Air Gap Backup: Physical Tape vs Cloud"
+ }
+]

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Air Gap Backup: Physical Tape vs Cloud | TapeBackup.org</title>
+<meta content="Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/ja/blog/air-gap-backup-physical-tape-vs-cloud" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Air Gap Backup: Physical Tape vs Cloud" property="og:title"/>
+<meta content="Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks." property="og:description"/>
+<meta content="https://tapebackup.org/ja/blog/air-gap-backup-physical-tape-vs-cloud" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Air Gap Backup: Physical Tape vs Cloud" name="twitter:title"/>
+<meta content="Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Air Gap Backup: Physical Tape vs Cloud", "description": "Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks.", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "mainEntityOfPage": "https://tapebackup.org/ja/blog/air-gap-backup-physical-tape-vs-cloud", "url": "https://tapebackup.org/ja/blog/air-gap-backup-physical-tape-vs-cloud", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "logo": {"@type": "ImageObject", "url": "https://tapebackup.org/favicon.png"}}, "articleSection": "Security"}</script>
+<meta content="ja_JP" property="og:locale"/><link href="https://tapebackup.org/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/ja/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="ja" rel="alternate"/><link href="https://tapebackup.org/zh/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="zh-Hans" rel="alternate"/><link href="https://tapebackup.org/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/ja/tape-q-and-a">テープQ&amp;A</a><span class="sep"></span><a href="/ja/lto-tape-price-trend">LTO価格</a><span class="sep"></span><a href="/ja/contact">お問い合わせ</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="en" lang="en">EN</a><a href="/de/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="de" lang="de">DE</a><a href="/fr/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="fr" lang="fr">FR</a><a href="/it/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="it" lang="it">IT</a><a href="/es/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="es" lang="es">ES</a><a href="/nl/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="pl" lang="pl">PL</a><a aria-current="page" class="on" href="/ja/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="ja" lang="ja">JA</a><a href="/zh/blog/air-gap-backup-physical-tape-vs-cloud" hreflang="zh-Hans" lang="zh-Hans">ZH</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org ホーム" class="brand" href="/ja"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="プライマリ" class="topnav">
+<div class="price-dropdown"><a href="/ja/lto-tape">LTOテープ</a><div class="price-dropdown-menu"><a href="/ja/lto-tape">LTOテープとは<span>規格を一ページで解説</span></a><a href="/ja/lto-storage">LTOストレージ<span>テープストレージの仕組みと費用</span></a><a href="/ja/lto-tape-capacity">容量表<span>LTO-1からLTO-14</span></a><a href="/ja/why-tape/lto-tape-drive">ドライブ購入ガイド<span>どのドライブを選ぶか</span></a><a href="/ja/lto-tape-library">ライブラリ<span>オートローダーとライブラリ</span></a><a href="/ja/why-tape/lto-tape-lifespan">寿命<span>テープの保存期間</span></a><a href="/ja/resources/ltfs">LTFS<span>テープをファイルシステムとして使う</span></a><a href="/ja/resources/lto-tape-data-recovery">データ復旧<span>古いテープの読み取り</span></a><a href="/ja/lto-tape-news">ニュース<span>今月の変更点</span></a><a href="/ja/why-tape">テープを選ぶ理由<span>費用、エアギャップ、寿命</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/lto-tape-price-trend">LTO価格</a><div class="price-dropdown-menu"><a href="/ja/lto-tape-price-trend">全世代<span>現行価格、毎月更新</span></a><a href="/ja/lto-tape-price-trend/lto6-price">LTO-6価格<span>ネイティブ2.5 TB</span></a><a href="/ja/lto-tape-price-trend/lto7-price">LTO-7価格<span>ネイティブ6 TB</span></a><a href="/ja/lto-tape-price-trend/lto8-price">LTO-8価格<span>ネイティブ12 TB</span></a><a href="/ja/lto-tape-price-trend/lto9-price">LTO-9価格<span>ネイティブ18 TB</span></a><a href="/ja/lto-tape-price-trend/lto10-price">LTO-10価格<span>ネイティブ30 / 40 TB</span></a><a href="/ja/lto-tape-price-trend/history">価格履歴<span>2025年からのアーカイブ済みスナップショット</span></a></div></div>
+<div class="price-dropdown"><a href="/ja/backup-calculator">ツール</a><div class="price-dropdown-menu"><a href="/ja/backup-calculator">バックアップ計算機<span>メディアと費用の見積もり</span></a><a href="/ja/backup-software-finder">ソフトウェアファインダー<span>テープ用途に合ったソフトウェアの選定</span></a><a href="/tape-archive-advisor">テープアーカイブ・アドバイザー<span>Ledger の評価から候補を提示</span></a><a href="/ja/best-tape-backup-software">おすすめのテープバックアップソフトウェア<span>2026の比較</span></a></div></div>
+<a href="/ja/blog">Blog</a>
+<a href="/ja/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/ja/contact">価格表を入手する</a></div>
+</div></header>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">セキュリティ記事</p>
+<h1>Air Gap Backup: Physical Tape vs Cloud</h1>
+<p>Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks.</p>
+<div class="signal-row"><span class="signal-chip">セキュリティ</span> <span class="signal-chip">読了時間 5 分</span> <span class="signal-chip">2026年十月26日</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">要約</p>
+<p class="panel-copy">Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks.</p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">ホーム</a><span>/</span><a href="/ja/blog">ブログ</a><span>/</span><span>セキュリティ</span></div>
+<header class="article-header">
+<div class="detail-meta"><span class="pill">セキュリティ</span> <span class="pill alt">読了時間 5 分</span> <span class="pill alt">2026年十月26日</span></div>
+<h2 class="detail-title">Air Gap Backup: Physical Tape vs Cloud</h2>
+<p class="lead">Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks.</p>
+</header>
+<section class="article-body"><p><strong>Air gap backup has split into two competing designs: physical isolation and logical software locks. While cloud providers sell immutable object storage as a modern air gap, ransomware groups increasingly hijack administrative identity planes to delete cloud repositories. A physical LTO tape sitting on a shelf or unmounted inside an automated library remains the only recovery copy that network credentials cannot reach or destroy.</strong></p>
+<h2>What broke logical air gaps</h2>
+<p>For several years, storage teams replaced offline media with cloud-based immutable buckets and separate backup accounts. The theory seemed sound: configure object lock with compliance retention, lock the policy for thirty days, and treat the bucket as an air-gapped copy.</p>
+<p>Modern threat actors bypass this safeguard without touching the storage protocol. Instead of breaking cryptographic locks, attackers target the identity plane. Through session token theft, compromised identity provider credentials, or elevated role abuse, intruders gain access to the root tenancy. From that vantage point, attackers do not need to modify locked objects. They can delete the entire cloud subscription, alter billing permissions to cause account termination, or destroy the encryption keys stored in key management services. When the management plane fails, logical isolation vanishes with it.</p>
+<h2>Why physical tape isolation cannot be reached over IP</h2>
+<p>A physical air gap relies on an absolute boundary: the absence of an electrical and network path. An LTO cartridge stores data on barium ferrite or metal particle tape inside a plastic housing. When the write process finishes and the drive unloads the cartridge, all electrical contact ends.</p>
+<p>Inside an automated tape library, robotic arms place the media into passive storage slots. Even if an attacker gains root credentials on your backup server, controls your hypervisors, and compromises your switches, the unmounted tape cannot execute commands. It has no IP address, no operating system kernel, no remote management port, and no firmware listener. Modifying an offline cartridge requires physical human presence in the data room.</p>
+<h2>The economics of offline archive storage</h2>
+<p>Security is the initial reason teams reintroduce tape, but operating costs keep it in place. Our September 2026 US price tracker lists 18 TB LTO-9 cartridges at $ 92 to $ 112, which comes to $ 5.14 to $ 6.20 per native terabyte. An LTO-8 cartridge costs between $ 70 and $ 80 for 12 TB, or $ 5.83 to $ 6.67 per native terabyte.</p>
+<p>Storing that same petabyte in hot or cold cloud storage requires perpetual monthly capacity charges. When an enterprise suffers a catastrophic incident and must restore hundreds of terabytes immediately, cloud egress fees and retrieval penalties create massive emergency expenses. A tape cartridge sitting on a shelf draws zero watts of electricity, produces zero heat, and incurs zero monthly cloud subscription bills.</p>
+<h2>How to build a practical air-gapped workflow</h2>
+<p>Adopting an air-gapped tape backup does not mean abandoning disk snapshots or cloud replication. Fast daily recoveries for individual lost files belong on local disk arrays. Tape provides the deep, immutable foundation underneath them.</p>
+<p>A standard resilience pattern keeps daily and weekly recovery points on primary storage, writes monthly and quarterly full archives to LTO tape, and ejects those tapes to an offsite fireproof vault or separate facility. In an automated library, dedicated air-gap software partitions isolate vault cartridges from active drive pools. If ransomware encrypts every server on the network, the offline tape set guarantees a clean restoration baseline.</p>
+<h2>よくある質問</h2>
+<h3>What is the difference between a physical air gap and a logical air gap?</h3>
+<p>A physical air gap disconnects the storage media entirely from electrical and network connections, as with an ejected LTO tape. A logical air gap keeps storage connected to the network but restricts access through software rules, access control lists, or immutable bucket policies. Logical gaps can be bypassed if administrative credentials are compromised.</p>
+<h3>Can ransomware infect an unmounted tape cartridge?</h3>
+<p>No. An unmounted tape sits in a slot or storage shelf with no electrical connection, no processor, and no network interface. Remote software cannot write to, read from, or delete data on an unmounted cartridge.</p>
+<h3>Do tape drives support hardware-based encryption?</h3>
+<p>Yes. All LTO tape drives from LTO-4 through LTO-10 support hardware-level 256-bit AES encryption directly on the drive ASIC. Data is encrypted before being written to media, with no performance penalty.</p>
+<h3>How does the total cost of tape compare to cloud archive tiers?</h3>
+<p>For archives above 100 terabytes held longer than two years, LTO tape costs significantly less than cloud cold storage. Tape media requires a one-time purchase with no recurring monthly capacity charges and no egress fees during restores.</p>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between a physical air gap and a logical air gap?", "acceptedAnswer": {"@type": "Answer", "text": "A physical air gap disconnects the storage media entirely from electrical and network connections, as with an ejected LTO tape. A logical air gap keeps storage connected to the network but restricts access through software rules, access control lists, or immutable bucket policies. Logical gaps can be bypassed if administrative credentials are compromised."}}, {"@type": "Question", "name": "Can ransomware infect an unmounted tape cartridge?", "acceptedAnswer": {"@type": "Answer", "text": "No. An unmounted tape sits in a slot or storage shelf with no electrical connection, no processor, and no network interface. Remote software cannot write to, read from, or delete data on an unmounted cartridge."}}, {"@type": "Question", "name": "Do tape drives support hardware-based encryption?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All LTO tape drives from LTO-4 through LTO-10 support hardware-level 256-bit AES encryption directly on the drive ASIC. Data is encrypted before being written to media, with no performance penalty."}}, {"@type": "Question", "name": "How does the total cost of tape compare to cloud archive tiers?", "acceptedAnswer": {"@type": "Answer", "text": "For archives above 100 terabytes held longer than two years, LTO tape costs significantly less than cloud cold storage. Tape media requires a one-time purchase with no recurring monthly capacity charges and no egress fees during restores."}}], "inLanguage": "ja"}</script>
+<p>Compare current media options on our <a href="/ja/lto-tape-price-trend">LTO price tracker</a>, calculate your capacity with the <a href="/ja/backup-calculator">backup calculator</a>, or read our guide on <a href="/why-tape/lto-vs-cloud">LTO tape vs cloud storage</a>.</p>
+</section>
+<a class="back-link" href="/ja/blog">ブログ一覧に戻る</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>記事のポイント</h2>
+<p>直近のテープストレージに関する議論を、直接インデックス可能なメタデータと恒久的な正規URLを備えた独立したTapeBackup.orgの記事ページにまとめました。</p>
+</section>
+<section class="sidebar-card">
+<h2>より詳細なLTO導入計画が必要ですか？</h2>
+<p>サイト内の各種リソースを閲覧し、ストレージ手法を比較するか、バックアップ運用にテープを組み込むべきかの判断について担当チームにお問い合わせください。</p>
+<a class="cta" href="/ja/contact">TapeBackupに相談する</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>TapeBackupの関連記事</h2><ul><li><a href="/ja/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying">SAS経路の嘘を排除するまで、中古LTO-8ドライブの故障を決めつけてはならない</a></li><li><a href="/ja/blog/the-best-lto-backup-software-is-usually-the-one-youll-actually-test">最適なLTOバックアップソフトとは、実際に検証を実施できるソフトである</a></li><li><a href="/ja/blog/tape-is-dead-right-then-why-are-people-quietly-building-backup-systems-around-it-again">テープは終わったのでは？それでもテープを中心にバックアップ環境を静かに再構築する人がいる理由</a></li><li><a href="/ja/lto-tape-price-trend">LTOテープの現行価格</a></li><li><a href="/ja/why-tape">テープストレージを使用する理由</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>
