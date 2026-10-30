@@ -23,6 +23,7 @@ from markets import EU_START_LABEL, MARKETS, PREV_LABEL, Market, load_fx, previo
 from site_shell import GENS, ROOT, breadcrumb_ld, esc, faq_html, faq_ld, hubspot_cta, page, slug_for, write
 
 CURRENT_LABEL = "October 2026"
+CURRENT_SHORT = CURRENT_LABEL.split()[0][:3] + " " + CURRENT_LABEL.split()[1]  # titles are capped at 60 chars
 CURRENT_DATE_TEXT = "23 October 2026"
 CURRENT_ISO = "2026-10-23"
 NATIVE = {"LTO-5": 1.5, "LTO-6": 2.5, "LTO-7": 6, "LTO-8": 12, "LTO-9": 18, "LTO-10": 30}
@@ -431,6 +432,14 @@ def specs_section(gen):
 <p>{read_by} Half-height drives are often rated below the full-height speed, so check the data sheet of the exact model. See every generation side by side in the <a href="/lto-tape-capacity">LTO capacity chart</a>, how to choose a drive in the <a href="/why-tape/lto-tape-drive">LTO tape drive buying guide</a>, and how long cartridges last in <a href="/why-tape/lto-tape-lifespan">LTO tape lifespan</a>.{(" Nearby generations: " + links + ".") if links else ""}</p></section>"""
 
 
+def drive_headline(g):
+    """Cheapest-first drive range for titles: internal if listed, else external."""
+    for k in ("driveInternal", "driveExternal"):
+        if (g.get(k) or {}).get("low") is not None:
+            return short_rng(g[k])
+    return None
+
+
 def build_gen_page(gen, g, history, current):
     copy = gen_copy(gen, current["generations"])
     path = f"/lto-tape-price-trend/{slug_for(gen)}"
@@ -438,11 +447,15 @@ def build_gen_page(gen, g, history, current):
     native = g.get("nativeTB")
     cap_text = f"{native:g} TB native" + (f", up to {COMPRESSED[gen]} compressed" if gen in COMPRESSED else "")
 
-    desc = f"{gen} tapes cost {short_rng(c)} ({per_tb(c).replace(' to ', '-')}/TB) at {sellers_phrase()} in {CURRENT_LABEL}. Drive prices, WORM media and price history."
-    if len(desc) > 155:
-        desc = f"{gen} tapes cost {short_rng(c)} at {sellers_phrase()} in {CURRENT_LABEL}. Drive prices, WORM media, cost per TB and price history."
-    if len(desc) > 155:
-        desc = f"{gen} tapes cost {short_rng(c)} in {CURRENT_LABEL}. Drive prices, WORM media, cost per TB and price history."
+    drv = drive_headline(g)
+    title = f"{gen} Price {CURRENT_SHORT}: Tape {short_rng(c)}" + (f", Drive {drv}" if drv else "")
+    if len(title) > 60:
+        title = f"{gen} Price {CURRENT_SHORT}: Tape {short_rng(c)} ({per_tb(c).replace(' to ', '-')}/TB)"
+    desc = f"{gen} price in {CURRENT_LABEL}: tapes {short_rng(c)} ({per_tb(c).replace(' to ', '-')}/TB)" + (f", drives {drv}" if drv else "") + f". Checked at {sellers_phrase()} on {date_text()}, with WORM media and price history."
+    if len(desc) > 160:
+        desc = f"{gen} price in {CURRENT_LABEL}: tapes {short_rng(c)}" + (f", drives {drv}" if drv else "") + f". Checked at {sellers_phrase()}, with WORM media, cost per TB and price history."
+    if len(desc) > 160:
+        desc = f"{gen} price in {CURRENT_LABEL}: tapes {short_rng(c)}" + (f", drives {drv}" if drv else "") + ". WORM media, cost per TB and price history."
 
     stats = [
         (short_rng(c), f"New single {gen} cartridge, {native:g} TB native"),
@@ -553,7 +566,7 @@ def build_gen_page(gen, g, history, current):
         breadcrumb_ld([("Home", "/"), ("LTO Prices", "/lto-tape-price-trend"), (f"{gen} Price", path)]),
         faq_ld(faqs),
     ]
-    write(path, page(path, copy["title"], desc, body, ld, hubspot=True, og_type="article"))
+    write(path, page(path, title, desc, body, ld, hubspot=True, og_type="article"))
     return path
 
 
@@ -654,7 +667,7 @@ def build_hub(current, history):
 <p class="updated-note">Checked {date_text()}.{' No new internal LTO-6 or LTO-10 drive, and only one new external LTO-6 drive, was listed at the sellers checked.' if MKT.is_us else ''}</p></section>
 <section class="section-card" id="cost-per-tb"><p class="eyebrow">Cost per TB</p><h2>LTO tape storage cost per TB in 2026</h2>
 <ul>{"".join(f"<li><strong>{g}</strong>: {per_tb(gens[g]['cartridge'])} per native TB</li>" for g in GENS if gens[g]['cartridge'].get('perTBLow') is not None)}</ul>
-<p>Media is only part of the cost of LTO storage. A drive is a fixed cost of {rng(gens['LTO-9']['driveInternal'], False)} for a new internal LTO-9 drive, so the cost per terabyte of a whole tape storage system falls the more you store. How the parts fit together is in <a href="/lto-storage">LTO storage explained</a>, and the five-year comparison with cloud storage in <a href="/comparisons/tape-vs-cloud-5-year-cost">tape vs cloud cost</a>.</p></section>
+<p>Media is only part of the cost of LTO storage. A drive is a fixed cost of {rng(gens['LTO-9']['driveInternal'], False)} for a new internal LTO-9 drive, so the cost per terabyte of a whole tape storage system falls the more you store. How the parts fit together is in <a href="/lto-storage">LTO storage explained</a>, and the five-year comparison with cloud storage in <a href="/comparisons/tape-vs-cloud-5-year-cost">tape vs cloud cost</a>.</p><p>New to the format? Read <a href="/lto-tape">what LTO tape is, how it works and what each generation holds</a>. Choosing hardware? The <a href="/why-tape/lto-tape-drive">LTO tape drive buying guide</a> covers internal vs external drives, SAS vs Thunderbolt and which drive reads which tape.</p></section>
 <section class="section-card" id="changes"><p class="eyebrow">What changed</p><h2>How LTO cartridge prices moved in 2026</h2>
 {changes_intro}
 {changes}
@@ -669,14 +682,17 @@ def build_hub(current, history):
 {faq_html(faqs, "LTO price FAQ")}
 </div></div></main>"""
 
-    desc = f"LTO tape prices for {CURRENT_LABEL}: LTO-6 to LTO-10 cartridges, WORM media and drives from seller listings, with cost per TB and price history."
+    hub_title = f"LTO Tape Price {CURRENT_SHORT}: LTO-9 {short_rng(gens['LTO-9']['cartridge'])}, LTO-10 {short_rng(l10['cartridge'])}"
+    desc = f"LTO tape price and cost in {CURRENT_LABEL}: LTO-9 {short_rng(gens['LTO-9']['cartridge'])} ({per_tb(gens['LTO-9']['cartridge']).replace(' to ', '-')}/TB), LTO-10 {short_rng(l10['cartridge'])}. LTO-6 to LTO-10 media and drives, with price history."
+    if len(desc) > 160:
+        desc = f"LTO tape price and cost in {CURRENT_LABEL}: LTO-9 {short_rng(gens['LTO-9']['cartridge'])}, LTO-10 {short_rng(l10['cartridge'])}. LTO-6 to LTO-10 media, drives and price history."
     ld = [
         {"@context": "https://schema.org", "@type": "Article", "headline": f"LTO Tape Prices: LTO-6 to LTO-10 ({CURRENT_LABEL})", "description": desc, "dateModified": CURRENT_ISO,
          "datePublished": "2025-10-01", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}, "mainEntityOfPage": "https://tapebackup.org" + path},
         breadcrumb_ld([("Home", "/"), ("LTO Prices", path)]),
         faq_ld(faqs),
     ]
-    write(path, page(path, "LTO Tape Price Tracker 2026: LTO-6 to LTO-10 Costs", desc, body, ld, hubspot=True, og_type="article"))
+    write(path, page(path, hub_title, desc, body, ld, hubspot=True, og_type="article"))
     return path
 
 

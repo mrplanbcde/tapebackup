@@ -68,7 +68,8 @@ def build_pillar(current):
 <p>This is the rule that decides when an archive has to be migrated: once no drive you own can read a generation, its tapes become a recovery job. See <a href="/resources/lto-tape-migration">LTO tape migration</a>.</p>"""),
         sec("Cost", "What LTO tape costs", f"""
 <p>As of {date_text()}, an 18 TB LTO-9 cartridge costs {rng(l9['cartridge'], True)}{where}, or {per_tb(l9['cartridge'])} per TB, which makes it the cheapest LTO media per terabyte. A 30 TB LTO-10 cartridge costs {rng(l10['cartridge'], True)}. The drive is the larger cost: a new internal LTO-9 drive is listed at {drive_rng(l9.get('driveInternal'))}.</p>
-<p>Because the drive is a fixed cost and media is cheap, tape gets cheaper per terabyte the more you store. Below about 15 TB, disk or cloud is usually cheaper; for large archives, tape wins. See the <a href="/lto-tape-price-trend">LTO price tracker</a> and the <a href="/comparisons/tape-vs-cloud-5-year-cost">tape vs cloud cost comparison</a>.</p>"""),
+<p>Because the drive is a fixed cost and media is cheap, tape gets cheaper per terabyte the more you store. Below about 15 TB, disk or cloud is usually cheaper; for large archives, tape wins. See the <a href="/lto-tape-price-trend">LTO price tracker</a> and the <a href="/comparisons/tape-vs-cloud-5-year-cost">tape vs cloud cost comparison</a>.</p>
+<p>Price by generation: <a href="/lto-tape-price-trend/lto9-price">LTO-9 price</a> and <a href="/lto-tape-price-trend/lto10-price">LTO-10 price</a>. Ready to buy hardware? See the <a href="/why-tape/lto-tape-drive">LTO tape drive buying guide</a> and the <a href="/lto-tape-capacity">LTO capacity chart</a>.</p>"""),
         sec("Why use it", "What LTO tape is good at", """
 <ul>
 <li><strong>Cheap capacity.</strong> The lowest media cost per terabyte of any storage you can buy and keep yourself.</li>
@@ -92,8 +93,8 @@ def build_pillar(current):
         ("How much does LTO tape cost?", f"An 18 TB LTO-9 cartridge costs {rng(l9['cartridge'], True)}{where} as of {date_text()}, about {per_tb(l9['cartridge'])} per TB. A new LTO-9 drive costs {drive_rng(l9.get('driveInternal'))}."),
         ("Do I need special software for LTO tape?", "Yes, either backup software that supports tape drives or LTFS, which lets the operating system mount a tape like a disk. Windows, macOS and Linux all have free LTFS tools."),
     ]
-    return article(path, "LTO Tape: What It Is, Capacity, Lifespan and Cost",
-                   "What LTO tape is, how much each generation holds, which drives read which tapes, how long cartridges last and what LTO-9 and LTO-10 cost today.",
+    return article(path, "LTO Tape: Capacity, Price, Drives and Lifespan Explained",
+                   f"LTO tape explained: what it is, capacity by generation, which drives read which tapes, lifespan and price (LTO-9 {BP.short_rng(l9['cartridge'])} in {BP.CURRENT_SHORT}).",
                    "LTO Tape Explained",
                    f"LTO (Linear Tape-Open) is the standard magnetic tape for backup and archive: an LTO-9 cartridge holds 18 TB and costs {rng(l9['cartridge'], True)}{where}, an LTO-10 cartridge holds 30 TB or 40 TB, and cartridges are rated for 30 years on a shelf.",
                    "LTO tape guide", sections, faqs, PUBLISHED, [("Home", "/"), ("LTO tape", path)])
@@ -216,8 +217,8 @@ def build_drive_guide(current):
         ("Can I use an LTO drive with a Mac?", "Yes, with a Thunderbolt desktop drive or a SAS drive on a Thunderbolt-to-SAS adapter, plus LTFS or Mac backup software that supports tape."),
         ("Is it worth buying a used LTO drive?", "For reading old tapes, yes, if the seller states head hours and offers returns. For new archives, buy new: a failing drive can damage cartridges."),
     ]
-    return article(path, "LTO Tape Drive Buying Guide 2026: Prices and Models",
-                   "Which LTO tape drive to buy in 2026: LTO-8, LTO-9 and LTO-10 drive prices, internal vs external, SAS vs Thunderbolt, compatibility and used drives.",
+    return article(path, f"LTO Tape Drive Prices & Guide {BP.CURRENT_SHORT}: LTO-9 {BP.short_rng(l9['driveInternal'])}",
+                   f"LTO tape drive prices, {CURRENT_LABEL}: LTO-9 internal {BP.short_rng(l9['driveInternal'])}, LTO-10 external {BP.short_rng(g['LTO-10']['driveExternal'])}. Compare generations, SAS vs Thunderbolt and compatibility.",
                    "LTO Tape Drive Buying Guide",
                    f"For most buyers the right LTO tape drive in 2026 is LTO-9: new internal drives cost {drive_rng(l9.get('driveInternal'))}, it uses the cheapest media per terabyte and it reads LTO-8 tapes; LTO-10 suits very large archives but reads no older generation.",
                    "Drive buying guide", sections, faqs, PUBLISHED, [("Home", "/"), ("Why tape", "/why-tape"), ("LTO tape drive", path)])
