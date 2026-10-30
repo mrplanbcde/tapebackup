@@ -3,6 +3,17 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.tapebackup.org"
+        }
+      ],
+      "destination": "https://tapebackup.org/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
