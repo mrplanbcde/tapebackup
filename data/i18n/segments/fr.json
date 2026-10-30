@@ -1,5 +1,35 @@
 [
  {
+  "key": "Fujifilm LTO Tape Production to Rise {0}x",
+  "ctx": [
+   "h1",
+   "h2",
+   "json-ld headline",
+   "meta og:title",
+   "meta twitter:title"
+  ],
+  "pages": [
+   "/blog",
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Fujifilm LTO Tape Production to Rise 5x"
+ },
+ {
+  "key": "Fujifilm LTO tape production is set to rise about fivefold by fiscal {0}. What the Odawara plan means for {1} and {2} prices, stock and buying now.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description",
+   "p"
+  ],
+  "pages": [
+   "/blog",
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Fujifilm LTO tape production is set to rise about fivefold by fiscal 2028. What the Odawara plan means for LTO-9 and LTO-10 prices, stock and buying now."
+ },
+ {
   "key": "Air Gap Backup: Physical Tape vs Cloud",
   "ctx": [
    "h1",
@@ -15,19 +45,14 @@
   "example": "Air Gap Backup: Physical Tape vs Cloud"
  },
  {
-  "key": "Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks.",
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Air Gap Backup: Physical Tape vs Cloud | TapeBackup.org&lt;/title&gt; &lt;meta content=\"Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks.",
   "ctx": [
-   "json-ld description",
-   "meta description",
-   "meta og:description",
-   "meta twitter:description",
    "p"
   ],
   "pages": [
-   "/blog",
-   "/blog/air-gap-backup-physical-tape-vs-cloud"
+   "/blog"
   ],
-  "example": "Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks."
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Air Gap Backup: Physical Tape vs Cloud | TapeBackup.org</title> <meta content=\"Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks."
  },
  {
   "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Tape Backup Software Integration Tradeoffs | TapeBackup.org&lt;/title&gt; &lt;meta content=\"Which tape backup solutions integrate best with Veeam, Commvault, Nakivo and open-source tools, and what are the tradeoffs in format, catalogue and cost?",
@@ -260,6 +285,20 @@
   "example": "Air Gap Backup: Physical Tape vs Cloud | TapeBackup.org"
  },
  {
+  "key": "Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description",
+   "p"
+  ],
+  "pages": [
+   "/blog/air-gap-backup-physical-tape-vs-cloud"
+  ],
+  "example": "Air gap backup is surging as ransomware hits cloud accounts. Here is why physical LTO tape isolation stops attacks that bypass logical cloud locks."
+ },
+ {
   "key": "<b1>Air gap backup has split into two competing designs: physical isolation and logical software locks. While cloud providers sell immutable object storage as a modern air gap, ransomware groups increasingly hijack administrative identity planes to delete cloud repositories. A physical LTO tape sitting on a shelf or unmounted inside an automated library remains the only recovery copy that network credentials cannot reach or destroy.</b1>",
   "ctx": [
    "p"
@@ -488,13 +527,393 @@
   "example": "Compare current media options on our LTO price tracker , calculate your capacity with the backup calculator , or read our guide on LTO tape vs cloud storage ."
  },
  {
-  "key": "<a1>Air Gap Backup: Physical Tape vs Cloud</a1>",
+  "key": "Fujifilm LTO Tape Production to Rise {0}x | TapeBackup.org",
+  "ctx": [
+   "title"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Fujifilm LTO Tape Production to Rise 5x | TapeBackup.org"
+ },
+ {
+  "key": "<s1>Industry</s1> <s2>{0} min read</s2> <s3>October {1}, {2}</s3>",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Industry 6 min read October 30, 2026"
+ },
+ {
+  "key": "Fujifilm LTO tape production capacity is set to grow about fivefold. On {0} October {1} Fujifilm said it will invest about {2} billion yen at its Odawara site from fiscal {3} through fiscal {4}, mainly for {5} media. The extra supply arrives over three years and Fujifilm said nothing about prices, so plan purchases around today's {6} and {7} street prices.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Fujifilm LTO tape production capacity is set to grow about fivefold. On 29 October 2026 Fujifilm said it will invest about 10 billion yen at its Odawara site from fiscal 2026 through fiscal 2028, mainly for LTO-10 media. The extra supply arrives over three years and Fujifilm said nothing about prices, so plan purchases around today's LTO-9 and LTO-10 street prices."
+ },
+ {
+  "key": "What Fujifilm announced",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "What Fujifilm announced"
+ },
+ {
+  "key": "Fujifilm's <a1>English release</a1> and <a2>Japanese release</a2>, both dated {0} October {1}, say the company will spend about {2} billion yen at its Kanagawa Factory, Odawara Site. The money pays for more manufacturing equipment and more staff. Fujifilm calls it the largest investment it has made in facilities dedicated to LTO tape.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Fujifilm's English release and Japanese release , both dated 29 October 2026, say the company will spend about 10 billion yen at its Kanagawa Factory, Odawara Site. The money pays for more manufacturing equipment and more staff. Fujifilm calls it the largest investment it has made in facilities dedicated to LTO tape."
+ },
+ {
+  "key": "The fivefold figure comes with a footnote: it is based on shipment capacity, compared with fiscal {0}. That is total terabytes shipped, and Fujifilm gave no cartridge count. A {1} TB {2} cartridge holds more than twice as much as an {3} TB {4} cartridge, so part of the growth can come from shifting output to the bigger format.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "The fivefold figure comes with a footnote: it is based on shipment capacity, compared with fiscal 2025. That is total terabytes shipped, and Fujifilm gave no cartridge count. A 40 TB LTO-10 cartridge holds more than twice as much as an 18 TB LTO-9 cartridge, so part of the growth can come from shifting output to the bigger format."
+ },
+ {
+  "key": "Fujifilm says the investment centres on its latest LTO Ultrium {0} cartridges, sold in {1} TB and {2} TB versions. The reason it gives is archive demand from generative AI and cloud services, wider use of tape by large cloud and data centre operators, and interest in offline copies as protection against ransomware.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Fujifilm says the investment centres on its latest LTO Ultrium 10 cartridges, sold in 30 TB and 40 TB versions. The reason it gives is archive demand from generative AI and cloud services, wider use of tape by large cloud and data centre operators, and interest in offline copies as protection against ransomware."
+ },
+ {
+  "key": "<a1>Blocks &amp; Files</a1> reported the plan on {0} October {1}, citing Nikkei Asia, and converted the investment to about {2} million.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Blocks & Files reported the plan on 28 October 2026, citing Nikkei Asia, and converted the investment to about $63 million."
+ },
+ {
+  "key": "Why Fujifilm is adding capacity now",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Why Fujifilm is adding capacity now"
+ },
+ {
+  "key": "Tape shipments are growing again. The <a1>LTO Program said on {0} September {1}</a1> that {2} exabytes of LTO capacity shipped in {3}, a record, and {4} exabytes in {5}, down {6}%. Shipped capacity in the first quarter of {7} was {8}% higher than a year earlier, which the LTO Program credits to {9} sales and the early {10} ramp. It expects {11} to set a new record.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Tape shipments are growing again. The LTO Program said on 1 September 2026 that 176.5 exabytes of LTO capacity shipped in 2024, a record, and 160.3 exabytes in 2025, down 9%. Shipped capacity in the first quarter of 2026 was 57% higher than a year earlier, which the LTO Program credits to LTO-9 sales and the early LTO-10 ramp. It expects 2026 to set a new record."
+ },
+ {
+  "key": "Only two companies make LTO media, Fujifilm and Sony. Blocks &amp; Files suggested Sony may raise output too. Sony has not announced anything.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Only two companies make LTO media, Fujifilm and Sony. Blocks & Files suggested Sony may raise output too. Sony has not announced anything."
+ },
+ {
+  "key": "Will LTO tape prices fall?",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Will LTO tape prices fall?"
+ },
+ {
+  "key": "Nothing in Fujifilm's release points to lower prices, and it gives no figures on prices or lead times. Here is what buyers pay today, from our <a1>US price check of {0} October {1}</a1>:",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Nothing in Fujifilm's release points to lower prices, and it gives no figures on prices or lead times. Here is what buyers pay today, from our US price check of 23 October 2026 :"
+ },
+ {
+  "key": "{0} ({1} TB native): {2} to {3} per cartridge. Fujifilm's {4} cartridge ({5}) ranged from {6} to {7}.",
   "ctx": [
    "li"
   ],
   "pages": [
-   "/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying"
+   "/blog/fujifilm-lto-tape-production-increase"
   ],
-  "example": "Air Gap Backup: Physical Tape vs Cloud"
+  "example": "LTO-9 (18 TB native): $92.45 to $129 per cartridge. Fujifilm's LTO-9 cartridge (16659047) ranged from $98.50 to $103.25."
+ },
+ {
+  "key": "{0} {1} TB: {2} to {3}.",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "LTO-10 30 TB: $259 to $299.99."
+ },
+ {
+  "key": "{0} {1} TB: {2} to {3}, or {4} to {5} per native terabyte. MagStor listed the Fujifilm {6} TB cartridge ({7}) at {8} against a regular price of {9}.",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "LTO-10 40 TB: $491 to $555, or $12.28 to $13.88 per native terabyte. MagStor listed the Fujifilm 40 TB cartridge (16978170) at $499.99 against a regular price of $888.89."
+ },
+ {
+  "key": "In that check, cartridge prices were mostly flat against September {0}, with small rises at BackupWorks and TapeandMedia. {1} still showed a banner saying all its LTO tape prices went up from {2} September {3}.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "In that check, cartridge prices were mostly flat against September 2026, with small rises at BackupWorks and TapeandMedia. Tape4Backup still showed a banner saying all its LTO tape prices went up from 1 September 2026."
+ },
+ {
+  "key": "Drives are a separate story. Quantum standalone {0} drives rose about {1}% to {2}% at BackupWorks and LTO World between {3} September and {4} October {5}, according to our tracker. Fujifilm's plan covers media only, so it does nothing for drive prices.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Drives are a separate story. Quantum standalone LTO-9 drives rose about 20% to 30% at BackupWorks and LTO World between 17 September and 23 October 2026, according to our tracker. Fujifilm's plan covers media only, so it does nothing for drive prices."
+ },
+ {
+  "key": "With the new capacity spread across fiscal {0} to {1}, waiting for a media price drop is a gamble with no announced date behind it.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "With the new capacity spread across fiscal 2026 to 2028, waiting for a media price drop is a gamble with no announced date behind it."
+ },
+ {
+  "key": "{0} availability today",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "LTO-10 availability today"
+ },
+ {
+  "key": "At the sellers we checked on {0} October {1}, {2} TB {3} cartridges were broadly in stock. Supply of {4} TB cartridges was patchy: Fujifilm's {5} TB was in stock at MagStor, in limited stock at {6} and special order at TapeandMedia, and Quantum's {7} TB was on pre-order at TapeandMedia. {8} had no {9} TB {10} WORM cartridges in stock.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "At the sellers we checked on 23 October 2026, 30 TB LTO-10 cartridges were broadly in stock. Supply of 40 TB cartridges was patchy: Fujifilm's 40 TB was in stock at MagStor, in limited stock at Tape4Backup and special order at TapeandMedia, and Quantum's 40 TB was on pre-order at TapeandMedia. Tape4Backup had no 30 TB LTO-10 WORM cartridges in stock."
+ },
+ {
+  "key": "No seller we checked listed a half-height {0} drive, so {1} still means full-height drives. {2} drives also cannot read or write older LTO generations, which matters if you hold {3} or {4} archives. Fujifilm says the investment is meant to secure stable supply of {5} cartridges, which is where stock is thinnest today.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "No seller we checked listed a half-height LTO-10 drive, so LTO-10 still means full-height drives. LTO-10 drives also cannot read or write older LTO generations, which matters if you hold LTO-8 or LTO-9 archives. Fujifilm says the investment is meant to secure stable supply of LTO-10 cartridges, which is where stock is thinnest today."
+ },
+ {
+  "key": "What to do if you are buying tape now",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "What to do if you are buying tape now"
+ },
+ {
+  "key": "Buy media for the next six to twelve months at current prices. Nothing announced so far gives a reason to hold off, and nothing suggests stockpiling either.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Buy media for the next six to twelve months at current prices. Nothing announced so far gives a reason to hold off, and nothing suggests stockpiling either."
+ },
+ {
+  "key": "For most buyers {0} is still the cheaper medium. At our {1} October {2} prices it costs {3} to {4} per native terabyte, against {5} to {6} for {7} TB {8} and {9} to {10} for {11} TB {12}. Choose {13} when slot count in a library is the limit or when you are buying drives anyway and want the longer roadmap.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "For most buyers LTO-9 is still the cheaper medium. At our 23 October 2026 prices it costs $5.14 to $7.17 per native terabyte, against $8.63 to $10.00 for 30 TB LTO-10 and $12.28 to $13.88 for 40 TB LTO-10. Choose LTO-10 when slot count in a library is the limit or when you are buying drives anyway and want the longer roadmap."
+ },
+ {
+  "key": "If you plan a library around {0} TB cartridges, ask resellers for a written lead time before you order, and price the job with {1} TB cartridges as a fallback. Our <a1>backup calculator</a1> gives cartridge counts for either size, and the <a2>tape library guide</a2> covers slot and drive sizing.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "If you plan a library around 40 TB cartridges, ask resellers for a written lead time before you order, and price the job with 30 TB cartridges as a fallback. Our backup calculator gives cartridge counts for either size, and the tape library guide covers slot and drive sizing."
+ },
+ {
+  "key": "Is Fujifilm increasing LTO tape production?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Is Fujifilm increasing LTO tape production?"
+ },
+ {
+  "key": "Yes. On {0} October {1} Fujifilm said it will invest about {2} billion yen at its Odawara site in Kanagawa to raise data storage tape production capacity about fivefold, measured by shipped capacity against fiscal {3}. The spending runs from fiscal {4} through fiscal {5} and goes mainly to {6} (LTO Ultrium {7}) media.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Yes. On 29 October 2026 Fujifilm said it will invest about 10 billion yen at its Odawara site in Kanagawa to raise data storage tape production capacity about fivefold, measured by shipped capacity against fiscal 2025. The spending runs from fiscal 2026 through fiscal 2028 and goes mainly to LTO-10 (LTO Ultrium 10) media."
+ },
+ {
+  "key": "Will LTO tape prices go down because of Fujifilm's expansion?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Will LTO tape prices go down because of Fujifilm's expansion?"
+ },
+ {
+  "key": "Fujifilm's announcement says nothing about prices. Our {0} October {1} US price check found {2} cartridges at {3} to {4} and {5} TB {6} cartridges at {7} to {8}, mostly flat against September. More supply may ease pressure later, but no source we checked forecasts a price cut.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Fujifilm's announcement says nothing about prices. Our 23 October 2026 US price check found LTO-9 cartridges at $92.45 to $129 and 40 TB LTO-10 cartridges at $491 to $555, mostly flat against September. More supply may ease pressure later, but no source we checked forecasts a price cut."
+ },
+ {
+  "key": "When will the extra Fujifilm {0} supply arrive?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "When will the extra Fujifilm LTO-10 supply arrive?"
+ },
+ {
+  "key": "Fujifilm gives the investment period as fiscal {0} through fiscal {1} and has not published an interim ramp schedule. Expect the added capacity to arrive in steps over those years, so it will not change what you can buy this quarter.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Fujifilm gives the investment period as fiscal 2026 through fiscal 2028 and has not published an interim ramp schedule. Expect the added capacity to arrive in steps over those years, so it will not change what you can buy this quarter."
+ },
+ {
+  "key": "Should I buy {0} or {1} tapes now?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Should I buy LTO-9 or LTO-10 tapes now?"
+ },
+ {
+  "key": "On cost per terabyte, {0} is cheaper today: {1} to {2} per native TB against {3} to {4} for {5} TB {6} and {7} to {8} for {9} TB {10}, based on our {11} October {12} US price check. {13} makes sense when you need more capacity per slot or are buying new drives anyway, since {14} drives cannot read older generations.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "On cost per terabyte, LTO-9 is cheaper today: $5.14 to $7.17 per native TB against $8.63 to $10.00 for 30 TB LTO-10 and $12.28 to $13.88 for 40 TB LTO-10, based on our 23 October 2026 US price check. LTO-10 makes sense when you need more capacity per slot or are buying new drives anyway, since LTO-10 drives cannot read older generations."
+ },
+ {
+  "key": "Who makes LTO tape cartridges?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Who makes LTO tape cartridges?"
+ },
+ {
+  "key": "Two companies manufacture LTO tape media: Fujifilm and Sony. Blocks &amp; Files suggested on {0} October {1} that Sony may also raise output, but Sony has announced nothing.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Two companies manufacture LTO tape media: Fujifilm and Sony. Blocks & Files suggested on 28 October 2026 that Sony may also raise output, but Sony has announced nothing."
+ },
+ {
+  "key": "Current media prices by generation are on the <a1>{0} price</a1> and <a2>{1} price</a2> pages, and monthly tape news is on <a3>LTO tape news</a3>.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Current media prices by generation are on the LTO-9 price and LTO-10 price pages, and monthly tape news is on LTO tape news ."
+ },
+ {
+  "key": "<a1>Fujifilm LTO Tape Production to Rise {0}x</a1>",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them"
+  ],
+  "example": "Fujifilm LTO Tape Production to Rise 5x"
  }
 ]
