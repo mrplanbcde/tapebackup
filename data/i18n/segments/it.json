@@ -1,5 +1,196 @@
 [
  {
+  "key": "LTO Tape Price Oct {0}: {1} {2}-{3}, {4} {5}-{6}",
+  "ctx": [
+   "meta og:title",
+   "meta twitter:title",
+   "title"
+  ],
+  "pages": [
+   "/lto-tape-price-trend"
+  ],
+  "example": "LTO Tape Price Oct 2026: LTO-9 €80-€156, LTO-10 €260-€359"
+ },
+ {
+  "key": "LTO tape price and cost in October {0}: {1} {2}-{3} ({4}-{5}/TB), {6} {7}-{8}. {9} to {10} media and drives, with price history.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description"
+  ],
+  "pages": [
+   "/lto-tape-price-trend"
+  ],
+  "example": "LTO tape price and cost in October 2026: LTO-9 €80-€156 (€4.44-€8.63/TB), LTO-10 €260-€359. LTO-6 to LTO-10 media and drives, with price history."
+ },
+ {
+  "key": "New to the format? Read <a1>what LTO tape is, how it works and what each generation holds</a1>. Choosing hardware? The <a2>LTO tape drive buying guide</a2> covers internal vs external drives, SAS vs Thunderbolt and which drive reads which tape.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/lto-tape-price-trend"
+  ],
+  "example": "New to the format? Read what LTO tape is, how it works and what each generation holds . Choosing hardware? The LTO tape drive buying guide covers internal vs external drives, SAS vs Thunderbolt and which drive reads which tape."
+ },
+ {
+  "key": "{0} Price Oct {1}: Tape {2}-{3}, Drive {4}-{5}",
+  "ctx": [
+   "meta og:title",
+   "meta twitter:title",
+   "title"
+  ],
+  "pages": [
+   "/lto-tape-price-trend/lto6-price",
+   "/lto-tape-price-trend/lto7-price",
+   "/lto-tape-price-trend/lto8-price",
+   "/lto-tape-price-trend/lto9-price"
+  ],
+  "example": "LTO-6 Price Oct 2026: Tape €38-€71, Drive €2,397-€3,600"
+ },
+ {
+  "key": "{0} price in October {1}: tapes {2}-{3}, drives {4}-{5}. Checked at sellers in Italy, with WORM media, cost per TB and price history.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description"
+  ],
+  "pages": [
+   "/lto-tape-price-trend/lto6-price",
+   "/lto-tape-price-trend/lto7-price",
+   "/lto-tape-price-trend/lto8-price",
+   "/lto-tape-price-trend/lto9-price"
+  ],
+  "example": "LTO-6 price in October 2026: tapes €38-€71, drives €2,397-€3,600. Checked at sellers in Italy, with WORM media, cost per TB and price history."
+ },
+ {
+  "key": "{0} Price Oct {1}: Tape {2}-{3}, Drive {4}",
+  "ctx": [
+   "meta og:title",
+   "meta twitter:title",
+   "title"
+  ],
+  "pages": [
+   "/lto-tape-price-trend/lto10-price"
+  ],
+  "example": "LTO-10 Price Oct 2026: Tape €260-€359, Drive €24,990"
+ },
+ {
+  "key": "{0} price in October {1}: tapes {2}-{3}, drives {4}. Checked at sellers in Italy, with WORM media, cost per TB and price history.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description"
+  ],
+  "pages": [
+   "/lto-tape-price-trend/lto10-price"
+  ],
+  "example": "LTO-10 price in October 2026: tapes €260-€359, drives €24,990. Checked at sellers in Italy, with WORM media, cost per TB and price history."
+ },
+ {
+  "key": "LTO Tape Drive Prices &amp; Guide Oct {0}: {1} {2}-{3}",
+  "ctx": [
+   "meta og:title",
+   "meta twitter:title",
+   "title"
+  ],
+  "pages": [
+   "/why-tape/lto-tape-drive"
+  ],
+  "example": "LTO Tape Drive Prices & Guide Oct 2026: LTO-9 €8,592-€17,490"
+ },
+ {
+  "key": "LTO tape drive prices, October {0}: {1} internal {2}-{3}, {4} external {5}. Compare generations, SAS vs Thunderbolt and compatibility.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description"
+  ],
+  "pages": [
+   "/why-tape/lto-tape-drive"
+  ],
+  "example": "LTO tape drive prices, October 2026: LTO-9 internal €8,592-€17,490, LTO-10 external €24,990. Compare generations, SAS vs Thunderbolt and compatibility."
+ },
+ {
+  "key": "LTO Tape: Capacity, Price, Drives and Lifespan Explained",
+  "ctx": [
+   "meta og:title",
+   "meta twitter:title",
+   "title"
+  ],
+  "pages": [
+   "/lto-tape"
+  ],
+  "example": "LTO Tape: Capacity, Price, Drives and Lifespan Explained"
+ },
+ {
+  "key": "LTO tape explained: what it is, capacity by generation, which drives read which tapes, lifespan and price ({0} {1}-{2} in Oct {3}).",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description"
+  ],
+  "pages": [
+   "/lto-tape"
+  ],
+  "example": "LTO tape explained: what it is, capacity by generation, which drives read which tapes, lifespan and price (LTO-9 €80-€156 in Oct 2026)."
+ },
+ {
+  "key": "Price by generation: <a1>{0} price</a1> and <a2>{1} price</a2>. Ready to buy hardware? See the <a3>LTO tape drive buying guide</a3> and the <a4>LTO capacity chart</a4>.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/lto-tape"
+  ],
+  "example": "Price by generation: LTO-9 price and LTO-10 price . Ready to buy hardware? See the LTO tape drive buying guide and the LTO capacity chart ."
+ },
+ {
+  "key": "<s1>Storage</s1> <s2>{0} min read</s2>",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "Storage 4 min read"
+ },
+ {
+  "key": "LTO Roadmap: {0} TB Tape vs Cloud TCO",
+  "ctx": [
+   "h1",
+   "h2",
+   "json-ld headline",
+   "meta og:title",
+   "meta twitter:title"
+  ],
+  "pages": [
+   "/blog",
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "LTO Roadmap: 365 TB Tape vs Cloud TCO"
+ },
+ {
+  "key": "The LTO roadmap targets {0} TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description",
+   "p"
+  ],
+  "pages": [
+   "/blog",
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills."
+ },
+ {
   "key": "Fujifilm LTO Tape Production to Rise {0}x",
   "ctx": [
    "h1",
@@ -15,19 +206,14 @@
   "example": "Fujifilm LTO Tape Production to Rise 5x"
  },
  {
-  "key": "Fujifilm LTO tape production is set to rise about fivefold by fiscal {0}. What the Odawara plan means for {1} and {2} prices, stock and buying now.",
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Fujifilm LTO Tape Production to Rise {1}x | TapeBackup.org&lt;/title&gt; &lt;meta content=\"Fujifilm LTO tape production is set to rise about fivefold by fiscal {2}. What the Odawara plan means for {3} and {4} prices, stock and buying now.",
   "ctx": [
-   "json-ld description",
-   "meta description",
-   "meta og:description",
-   "meta twitter:description",
    "p"
   ],
   "pages": [
-   "/blog",
-   "/blog/fujifilm-lto-tape-production-increase"
+   "/blog"
   ],
-  "example": "Fujifilm LTO tape production is set to rise about fivefold by fiscal 2028. What the Odawara plan means for LTO-9 and LTO-10 prices, stock and buying now."
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Fujifilm LTO Tape Production to Rise 5x | TapeBackup.org</title> <meta content=\"Fujifilm LTO tape production is set to rise about fivefold by fiscal 2028. What the Odawara plan means for LTO-9 and LTO-10 prices, stock and buying now."
  },
  {
   "key": "Air Gap Backup: Physical Tape vs Cloud",
@@ -225,14 +411,14 @@
   "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Which LTO Drive Should You Buy Without Regret? | TapeBackup</title> <meta content=\"Every LTO generation looks tempting on the used market. How media costs, compatibility rules, and restore plans should decide which drive you buy."
  },
  {
-  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;One Bad Tape Archive and It's Gone Forever | TapeBackup&lt;/title&gt; &lt;meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file.",
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;One Bad Tape Archive and It&amp;#x{1};s Gone Forever | TapeBackup&lt;/title&gt; &lt;meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file.",
   "ctx": [
    "p"
   ],
   "pages": [
    "/blog"
   ],
-  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>One Bad Tape Archive and It's Gone Forever | TapeBackup</title> <meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file."
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>One Bad Tape Archive and It&#x27;s Gone Forever | TapeBackup</title> <meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file."
  },
  {
   "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Backup Strategy When an Archive Outgrows Disks | TapeBackup&lt;/title&gt; &lt;meta content=\"Adding another hard drive stops being a backup strategy once an archive grows. Why that is the point where tape enters the picture for many operators.",
@@ -273,6 +459,18 @@
    "/blog"
   ],
   "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Home LTO Setup: Stop Treating It Like a Toy | TapeBackup</title> <meta content=\"A home or lab LTO setup can be real backup infrastructure. What separates a weekend experiment from a reliable archive is how you operate it."
+ },
+ {
+  "key": "<a1>LTO Roadmap: {0} TB Tape vs Cloud TCO</a1>",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/500-dreams-and-magnetic-tape-fantasies-the-addictive-illusion-of-cheap-lto-storage",
+   "/blog/6-000-for-a-paperweight-when-enterprise-grade-storage-quietly-fails-you",
+   "/blog/one-bad-archive-and-it-s-gone-forever-the-brutal-trade-off-nobody-warns-you-about-in-tape-storag"
+  ],
+  "example": "LTO Roadmap: 365 TB Tape vs Cloud TCO"
  },
  {
   "key": "Air Gap Backup: Physical Tape vs Cloud | TapeBackup.org",
@@ -535,6 +733,20 @@
    "/blog/fujifilm-lto-tape-production-increase"
   ],
   "example": "Fujifilm LTO Tape Production to Rise 5x | TapeBackup.org"
+ },
+ {
+  "key": "Fujifilm LTO tape production is set to rise about fivefold by fiscal {0}. What the Odawara plan means for {1} and {2} prices, stock and buying now.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description",
+   "p"
+  ],
+  "pages": [
+   "/blog/fujifilm-lto-tape-production-increase"
+  ],
+  "example": "Fujifilm LTO tape production is set to rise about fivefold by fiscal 2028. What the Odawara plan means for LTO-9 and LTO-10 prices, stock and buying now."
  },
  {
   "key": "<s1>Industry</s1> <s2>{0} min read</s2> <s3>October {1}, {2}</s3>",
@@ -907,13 +1119,281 @@
   "example": "Current media prices by generation are on the LTO-9 price and LTO-10 price pages, and monthly tape news is on LTO tape news ."
  },
  {
-  "key": "<a1>Fujifilm LTO Tape Production to Rise {0}x</a1>",
+  "key": "LTO Roadmap: {0} TB Tape vs Cloud TCO | TapeBackup.org",
+  "ctx": [
+   "title"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "LTO Roadmap: 365 TB Tape vs Cloud TCO | TapeBackup.org"
+ },
+ {
+  "key": "Storage article",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Storage article"
+ },
+ {
+  "key": "<s1>Storage</s1> <s2>{0} min read</s2> <s3>October {1}, {2}</s3>",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Storage 4 min read October 31, 2026"
+ },
+ {
+  "key": "<a1>Home</a1><s2>/</s2><a3>Blog</a3><s4>/</s4><s5>Storage</s5>",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Home / Blog / Storage"
+ },
+ {
+  "key": "<b1>The LTO Program roadmap officially targets up to {0} TB of native capacity per cartridge across future generations without altering the standard physical form factor. With enterprise AI training checkpoints and long-term compliance archives outgrowing disk arrays, tape remains the most economical tier for petabyte-scale data that must be kept safe for decades at zero idle power.</b1>",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "The LTO Program roadmap officially targets up to 365 TB of native capacity per cartridge across future generations without altering the standard physical form factor. With enterprise AI training checkpoints and long-term compliance archives outgrowing disk arrays, tape remains the most economical tier for petabyte-scale data that must be kept safe for decades at zero idle power."
+ },
+ {
+  "key": "The {0}x scaling curve without form factor changes",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "The 400x scaling curve without form factor changes"
+ },
+ {
+  "key": "Linear Tape-Open began twenty-five years ago with {0}, storing {1} GB on a single half-inch magnetic tape cartridge. Current mainstream deployments run on {2} TB {3} and {4} to {5} TB {6} media. The extended technology roadmap mapped by HPE, IBM, and Quantum projects capacity scaling through {7} to {8} TB native per cartridge.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Linear Tape-Open began twenty-five years ago with LTO-1, storing 100 GB on a single half-inch magnetic tape cartridge. Current mainstream deployments run on 18 TB LTO-9 and 30 to 40 TB LTO-10 media. The extended technology roadmap mapped by HPE, IBM, and Quantum projects capacity scaling through LTO-14 to 365 TB native per cartridge."
+ },
+ {
+  "key": "What makes this trajectory unique in enterprise infrastructure is physical consistency. Robotic library frames, automated tape arms, picker mechanisms, and rack dimensions designed for early LTO formats still accommodate modern generations. Upgrading a data center from petabytes to exabytes requires replacing tape drives and media cartridges rather than purchasing new floor space and structural frames.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "What makes this trajectory unique in enterprise infrastructure is physical consistency. Robotic library frames, automated tape arms, picker mechanisms, and rack dimensions designed for early LTO formats still accommodate modern generations. Upgrading a data center from petabytes to exabytes requires replacing tape drives and media cartridges rather than purchasing new floor space and structural frames."
+ },
+ {
+  "key": "Media density versus spinning disk physical limits",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Media density versus spinning disk physical limits"
+ },
+ {
+  "key": "Hard drive manufacturers rely on heat-assisted magnetic recording (HAMR) and dual-actuator mechanics to reach {0} to {1} TB per {2}-inch drive. While engineering achievements in hard disk density continue, spinning disks face strict physical boundaries: platter count, rotational vibration, power draw, and mechanical wear on spindle bearings.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Hard drive manufacturers rely on heat-assisted magnetic recording (HAMR) and dual-actuator mechanics to reach 30 to 40 TB per 3.5-inch drive. While engineering achievements in hard disk density continue, spinning disks face strict physical boundaries: platter count, rotational vibration, power draw, and mechanical wear on spindle bearings."
+ },
+ {
+  "key": "Magnetic tape operates under different physics. Because tape media unrolls across a recording head only during read and write operations, the surface area available to store bits is hundreds of times larger than rigid platters. Advanced barium ferrite and strontium ferrite particulate formulations allow areal density to double repeatedly without exceeding the mechanical tolerances of tape drives.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Magnetic tape operates under different physics. Because tape media unrolls across a recording head only during read and write operations, the surface area available to store bits is hundreds of times larger than rigid platters. Advanced barium ferrite and strontium ferrite particulate formulations allow areal density to double repeatedly without exceeding the mechanical tolerances of tape drives."
+ },
+ {
+  "key": "Zero idle power in the AI data center",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Zero idle power in the AI data center"
+ },
+ {
+  "key": "Power constraints have overtaken hardware budgets as the primary bottleneck in hyperscale and enterprise data centers. An active hard disk drive consumes six to nine watts even while idling in a storage shelf. Multiplied across tens of thousands of archive drives, spinning disk arrays generate constant heat loads and demand megawatt-scale power allocations.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Power constraints have overtaken hardware budgets as the primary bottleneck in hyperscale and enterprise data centers. An active hard disk drive consumes six to nine watts even while idling in a storage shelf. Multiplied across tens of thousands of archive drives, spinning disk arrays generate constant heat loads and demand megawatt-scale power allocations."
+ },
+ {
+  "key": "In contrast, a tape cartridge resting in a library slot consumes zero watts of electricity and produces zero heat. For AI organizations retaining multi-terabyte model weights, raw training corpuses, and multi-year compliance archives, tape decouples storage capacity from facilities power budgets.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "In contrast, a tape cartridge resting in a library slot consumes zero watts of electricity and produces zero heat. For AI organizations retaining multi-terabyte model weights, raw training corpuses, and multi-year compliance archives, tape decouples storage capacity from facilities power budgets."
+ },
+ {
+  "key": "The cost equation against cloud cold storage",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "The cost equation against cloud cold storage"
+ },
+ {
+  "key": "Public cloud providers market cold archive tiers as inexpensive storage, but the pricing model conceals severe operational risks. Storing petabytes incurs perpetual monthly charges, while data retrieval triggers punitive per-gigabyte egress fees and API transaction penalties.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Public cloud providers market cold archive tiers as inexpensive storage, but the pricing model conceals severe operational risks. Storing petabytes incurs perpetual monthly charges, while data retrieval triggers punitive per-gigabyte egress fees and API transaction penalties."
+ },
+ {
+  "key": "Our September {0} US price tracker lists {1} TB {2} media at {3} to {4} per native terabyte. Once the hardware capital cost of the drive is amortized across an archive, tape media requires no monthly subscription and no retrieval fees during forensic audits or full disaster recoveries.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Our September 2026 US price tracker lists 18 TB LTO-9 media at $5.14 to $6.20 per native terabyte. Once the hardware capital cost of the drive is amortized across an archive, tape media requires no monthly subscription and no retrieval fees during forensic audits or full disaster recoveries."
+ },
+ {
+  "key": "What is the native capacity of {0}?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "What is the native capacity of LTO-10?"
+ },
+ {
+  "key": "Standard {0} cartridges provide {1} TB of native uncompressed capacity, with extended-length media providing {2} TB native (and up to {3} TB with standard {4} compression).",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Standard LTO-10 cartridges provide 30 TB of native uncompressed capacity, with extended-length media providing 40 TB native (and up to 100 TB with standard 2.5:1 compression)."
+ },
+ {
+  "key": "How does LTO plan to reach {0} TB per cartridge?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "How does LTO plan to reach 365 TB per cartridge?"
+ },
+ {
+  "key": "The LTO roadmap achieves {0} TB across generations through advanced magnetic particles such as strontium ferrite, narrower track widths, smoother tape substrates, and higher linear recording densities.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "The LTO roadmap achieves 365 TB across generations through advanced magnetic particles such as strontium ferrite, narrower track widths, smoother tape substrates, and higher linear recording densities."
+ },
+ {
+  "key": "Do newer LTO drives read older tape formats?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Do newer LTO drives read older tape formats?"
+ },
+ {
+  "key": "{0} and {1} drives read and write the previous generation (for example, {2} drives read and write {3} tapes). Due to the transition to narrower tracks, {4} drives focus natively on {5} media to maximize throughput and reliability.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "LTO-8 and LTO-9 drives read and write the previous generation (for example, LTO-9 drives read and write LTO-8 tapes). Due to the transition to narrower tracks, LTO-10 drives focus natively on LTO-10 media to maximize throughput and reliability."
+ },
+ {
+  "key": "What is the shelf life of modern LTO tape?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "What is the shelf life of modern LTO tape?"
+ },
+ {
+  "key": "Under recommended environmental conditions ({0} to {1} degrees Celsius and {2} to {3} percent relative humidity), barium ferrite LTO tape cartridges have an archival lifespan exceeding thirty years.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Under recommended environmental conditions (15 to 25 degrees Celsius and 20 to 50 percent relative humidity), barium ferrite LTO tape cartridges have an archival lifespan exceeding thirty years."
+ },
+ {
+  "key": "Track current media and drive pricing on our <a1>LTO price tracker</a1>, review our <a2>LTO capacity comparison chart</a2>, or test your numbers in the <a3>tape backup calculator</a3>.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "Track current media and drive pricing on our LTO price tracker , review our LTO capacity comparison chart , or test your numbers in the tape backup calculator ."
+ },
+ {
+  "key": "<a1>Air Gap Backup: Physical Tape vs Cloud</a1>",
   "ctx": [
    "li"
   ],
   "pages": [
-   "/blog/used-lto-libraries-are-chaos-and-thats-why-people-love-them"
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
   ],
-  "example": "Fujifilm LTO Tape Production to Rise 5x"
+  "example": "Air Gap Backup: Physical Tape vs Cloud"
  }
 ]

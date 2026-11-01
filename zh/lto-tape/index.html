@@ -6,19 +6,19 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L2S102SRML"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L2S102SRML');</script>
-<title>LTO磁带详解：概念、容量、寿命与成本</title>
-<meta content="LTO磁带详解：各世代容量规格、驱动器读取兼容性、磁带使用寿命，以及当前LTO-9与LTO-10的市场价格。" name="description"/>
+<title>LTO Tape: Capacity, Price, Drives and Lifespan Explained</title>
+<meta content="LTO tape explained: what it is, capacity by generation, which drives read which tapes, lifespan and price (LTO-9 $ 92–129 in Oct 2026)." name="description"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://tapebackup.org/zh/lto-tape" rel="canonical"/>
 <meta content="article" property="og:type"/>
 <meta content="TapeBackup.org" property="og:site_name"/>
-<meta content="LTO磁带详解：概念、容量、寿命与成本" property="og:title"/>
-<meta content="LTO磁带详解：各世代容量规格、驱动器读取兼容性、磁带使用寿命，以及当前LTO-9与LTO-10的市场价格。" property="og:description"/>
+<meta content="LTO Tape: Capacity, Price, Drives and Lifespan Explained" property="og:title"/>
+<meta content="LTO tape explained: what it is, capacity by generation, which drives read which tapes, lifespan and price (LTO-9 $ 92–129 in Oct 2026)." property="og:description"/>
 <meta content="https://tapebackup.org/zh/lto-tape" property="og:url"/>
 <meta content="https://tapebackup.org/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="LTO磁带详解：概念、容量、寿命与成本" name="twitter:title"/>
-<meta content="LTO磁带详解：各世代容量规格、驱动器读取兼容性、磁带使用寿命，以及当前LTO-9与LTO-10的市场价格。" name="twitter:description"/>
+<meta content="LTO Tape: Capacity, Price, Drives and Lifespan Explained" name="twitter:title"/>
+<meta content="LTO tape explained: what it is, capacity by generation, which drives read which tapes, lifespan and price (LTO-9 $ 92–129 in Oct 2026)." name="twitter:description"/>
 <meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
 <meta content="#5b27d6" name="theme-color"/>
 <link href="/favicon.png" rel="icon" type="image/png"/>
@@ -28,7 +28,7 @@
 <link href="/pages.css" rel="stylesheet"/>
 <script defer="" src="/assets/outbound-links.js"></script>
 <script defer="" src="https://js-eu1.hsforms.net/forms/embed/147689578.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "LTO 磁带详解", "description": "LTO磁带详解：各世代容量规格、驱动器读取兼容性、磁带使用寿命，以及当前LTO-9与LTO-10的市场价格。", "datePublished": "2026-10-03", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}, "mainEntityOfPage": "https://tapebackup.org/zh/lto-tape", "inLanguage": "zh"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "LTO 磁带详解", "description": "LTO tape explained: what it is, capacity by generation, which drives read which tapes, lifespan and price (LTO-9 $ 92–129 in Oct 2026).", "datePublished": "2026-10-03", "dateModified": "2026-09-20", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}, "mainEntityOfPage": "https://tapebackup.org/zh/lto-tape", "inLanguage": "zh"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://tapebackup.org/zh"}, {"@type": "ListItem", "position": 2, "name": "LTO磁带", "item": "https://tapebackup.org/zh/lto-tape"}], "inLanguage": "zh"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "LTO代表什么？", "acceptedAnswer": {"@type": "Answer", "text": "线性磁带开放协议（Linear Tape-Open），由HPE、IBM和Quantum共同创立的开放式磁带标准。其磁带格式本身称为Ultrium。"}}, {"@type": "Question", "name": "一盒 LTO 磁带能容纳多少数据？", "acceptedAnswer": {"@type": "Answer", "text": "LTO-9 原生容量为 18 TB，LTO-10 原生容量为 30 TB（使用较新磁带盒可达 40 TB）。厂商通常还会标称高出 2.5 倍的压缩容量，但这仅适用于可压缩的数据。"}}, {"@type": "Question", "name": "LTO 磁带现在仍在使用吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的。在归档、人工智能训练数据和离线备份副本的推动下，LTO在2025年出货容量达160.3 EB，且2026年第一季度的出货量较去年同期增长了57%。"}}, {"@type": "Question", "name": "LTO 磁带能使用多久？", "acceptedAnswer": {"@type": "Answer", "text": "厂商标定 LTO 磁带在 16 至 25 °C 与 20 至 50% 湿度下的归档保存期为 30 年。在实践中，限制通常在于驱动器的可用性，因此建议规划每隔两到三个世代迁移一次。"}}, {"@type": "Question", "name": "LTO 磁带价格是多少？", "acceptedAnswer": {"@type": "Answer", "text": "截至2026年十月23日，18 TB LTO-9 磁带盒售价 $ 92.45 至 $ 129.00，约合每 TB $ 5.14 至 $ 7.17。新的 LTO-9 磁带机售价 $ 8,009 至 $ 13,329。"}}, {"@type": "Question", "name": "向LTO磁带写入数据是否需要专用软件？", "acceptedAnswer": {"@type": "Answer", "text": "是的，要么需要支持磁带机的备份软件，要么需要LTFS（它允许操作系统像磁盘一样挂载磁带）。Windows、macOS和Linux均提供免费的LTFS工具。"}}], "inLanguage": "zh"}</script>
 <meta content="zh_CN" property="og:locale"/><link href="https://tapebackup.org/lto-tape" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/lto-tape" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/lto-tape" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/lto-tape" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/lto-tape" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/lto-tape" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/lto-tape" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/ja/lto-tape" hreflang="ja" rel="alternate"/><link href="https://tapebackup.org/zh/lto-tape" hreflang="zh-Hans" rel="alternate"/><link href="https://tapebackup.org/lto-tape" hreflang="x-default" rel="alternate"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "What Is LTO Tape? Linear Tape-Open Explained in Under 2 Minutes", "description": "What LTO tape is, how a drive writes it, capacity by generation, the compatibility rule, what it costs in 2026 and why people keep it offline.", "thumbnailUrl": ["https://i.ytimg.com/vi/2Fal_k0P6Yc/maxresdefault.jpg", "https://i.ytimg.com/vi/2Fal_k0P6Yc/hqdefault.jpg"], "uploadDate": "2026-10-04", "duration": "PT1M38S", "embedUrl": "https://www.youtube-nocookie.com/embed/2Fal_k0P6Yc", "contentUrl": "https://youtu.be/2Fal_k0P6Yc", "publisher": {"@type": "Organization", "name": "TapeBackup.org", "url": "https://tapebackup.org"}}</script>
@@ -60,7 +60,8 @@
 <ul><li>LTO-6 磁带可在 LTO-6 和 LTO-7 驱动器中读取，但无法在 LTO-8 或更新的驱动器中读取。</li><li>LTO-7磁带盒可在LTO-7与LTO-8驱动器中进行读写，但无法在LTO-9或更新的驱动器中使用。</li><li>LTO-8 磁带可在 LTO-8 和 LTO-9 驱动器中读写，但无法在 LTO-10 中使用。</li><li>LTO-9 磁带需要 LTO-9 驱动器：LTO-10 驱动器无法读取它们。</li><li>LTO-10 磁带需要 LTO-10 驱动器，而 LTO-10 驱动器无法读取任何更早世代。</li></ul>
 <p>这是决定何时必须迁移归档的规则：一旦您拥有的驱动器都无法读取某个世代，其磁带就沦为了紧急数据抢救任务。参见 <a href="/zh/resources/lto-tape-migration">LTO 磁带迁移</a>。</p></section><section class="section-card"><p class="eyebrow">成本</p><h2>LTO 磁带成本几何</h2>
 <p>截至2026年十月23日，18 TB LTO-9 磁带盒售价 $ 92.45 至 $ 129.00，即每 TB $ 5.14 至 $ 7.17，是每 TB 最便宜的 LTO 介质。30 TB LTO-10 磁带盒售价 $ 259.00 至 $ 299.99。磁带机才是更大的开支：新的 LTO-9 内置磁带机报价为 $ 8,009 至 $ 13,329。</p>
-<p>由于驱动器属于固定投资且介质极其低廉，您存储的数据量越大，磁带每TB成本就越低。在约15 TB以下，磁盘或云存储通常更经济；对于海量归档，磁带优势显著。详见<a href="/zh/lto-tape-price-trend">LTO价格追踪器</a>与<a href="/zh/comparisons/tape-vs-cloud-5-year-cost">磁带与云存储成本对比</a>。</p></section><section class="section-card"><p class="eyebrow">为何使用它</p><h2>LTO 磁带擅长的领域</h2>
+<p>由于驱动器属于固定投资且介质极其低廉，您存储的数据量越大，磁带每TB成本就越低。在约15 TB以下，磁盘或云存储通常更经济；对于海量归档，磁带优势显著。详见<a href="/zh/lto-tape-price-trend">LTO价格追踪器</a>与<a href="/zh/comparisons/tape-vs-cloud-5-year-cost">磁带与云存储成本对比</a>。</p>
+<p>Price by generation: <a href="/zh/lto-tape-price-trend/lto9-price">LTO-9 price</a> and <a href="/zh/lto-tape-price-trend/lto10-price">LTO-10 price</a>. Ready to buy hardware? See the <a href="/zh/why-tape/lto-tape-drive">LTO tape drive buying guide</a> and the <a href="/zh/lto-tape-capacity">LTO capacity chart</a>.</p></section><section class="section-card"><p class="eyebrow">为何使用它</p><h2>LTO 磁带擅长的领域</h2>
 <ul>
 <li><strong>低成本容量。</strong>在您可以自行购买并留存的各类存储中，每 TB 介质成本最低。</li>
 <li><strong>离线副本。</strong>放在架子上的磁带盒不受勒索软件和网络错误的影响。WORM 磁带盒完全无法被覆写。</li>

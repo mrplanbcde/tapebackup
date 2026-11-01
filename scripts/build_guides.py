@@ -217,7 +217,12 @@ def build_drive_guide(current):
         ("Can I use an LTO drive with a Mac?", "Yes, with a Thunderbolt desktop drive or a SAS drive on a Thunderbolt-to-SAS adapter, plus LTFS or Mac backup software that supports tape."),
         ("Is it worth buying a used LTO drive?", "For reading old tapes, yes, if the seller states head hours and offers returns. For new archives, buy new: a failing drive can damage cartridges."),
     ]
-    return article(path, f"LTO Tape Drive Prices & Guide {BP.CURRENT_SHORT}: LTO-9 {BP.short_rng(l9['driveInternal'])}",
+    guide_title = f"LTO Tape Drive Prices & Guide {BP.CURRENT_SHORT}: LTO-9 {BP.short_rng(l9['driveInternal'])}"
+    if len(guide_title) > 60:
+        guide_title = f"LTO Tape Drive Guide {BP.CURRENT_SHORT}: LTO-9 {BP.short_rng(l9['driveInternal'])}"
+    if len(guide_title) > 60:
+        guide_title = f"LTO Tape Drive Prices & Guide {BP.CURRENT_SHORT}"
+    return article(path, guide_title,
                    f"LTO tape drive prices, {CURRENT_LABEL}: LTO-9 internal {BP.short_rng(l9['driveInternal'])}, LTO-10 external {BP.short_rng(g['LTO-10']['driveExternal'])}. Compare generations, SAS vs Thunderbolt and compatibility.",
                    "LTO Tape Drive Buying Guide",
                    f"For most buyers the right LTO tape drive in 2026 is LTO-9: new internal drives cost {drive_rng(l9.get('driveInternal'))}, it uses the cheapest media per terabyte and it reads LTO-8 tapes; LTO-10 suits very large archives but reads no older generation.",

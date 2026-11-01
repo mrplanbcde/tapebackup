@@ -683,6 +683,10 @@ def build_hub(current, history):
 </div></div></main>"""
 
     hub_title = f"LTO Tape Price {CURRENT_SHORT}: LTO-9 {short_rng(gens['LTO-9']['cartridge'])}, LTO-10 {short_rng(l10['cartridge'])}"
+    if len(hub_title) > 60:
+        hub_title = f"LTO Tape Price {CURRENT_SHORT}: LTO-9 {short_rng(gens['LTO-9']['cartridge'])}"
+    if len(hub_title) > 60:
+        hub_title = f"LTO Tape Prices {CURRENT_SHORT}"
     desc = f"LTO tape price and cost in {CURRENT_LABEL}: LTO-9 {short_rng(gens['LTO-9']['cartridge'])} ({per_tb(gens['LTO-9']['cartridge']).replace(' to ', '-')}/TB), LTO-10 {short_rng(l10['cartridge'])}. LTO-6 to LTO-10 media and drives, with price history."
     if len(desc) > 160:
         desc = f"LTO tape price and cost in {CURRENT_LABEL}: LTO-9 {short_rng(gens['LTO-9']['cartridge'])}, LTO-10 {short_rng(l10['cartridge'])}. LTO-6 to LTO-10 media, drives and price history."

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LTO Roadmap: 365 TB Tape vs Cloud TCO | TapeBackup.org</title>
+<meta content="The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://tapebackup.org/zh/blog/lto-roadmap-365tb-tape-cartridge-capacity" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="LTO Roadmap: 365 TB Tape vs Cloud TCO" property="og:title"/>
+<meta content="The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills." property="og:description"/>
+<meta content="https://tapebackup.org/zh/blog/lto-roadmap-365tb-tape-cartridge-capacity" property="og:url"/>
+<meta content="https://tapebackup.org/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="LTO Roadmap: 365 TB Tape vs Cloud TCO" name="twitter:title"/>
+<meta content="The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills." name="twitter:description"/>
+<meta content="https://tapebackup.org/og-image.png" name="twitter:image"/>
+<meta content="#183976" name="theme-color"/>
+<link href="/favicon.png" rel="icon" type="image/png"/>
+<link href="/blog-header.css" rel="stylesheet"/>
+<link href="/blog-static.css" rel="stylesheet"/>
+<script defer="" src="/assets/outbound-links.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "LTO Roadmap: 365 TB Tape vs Cloud TCO", "description": "The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills.", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "mainEntityOfPage": "https://tapebackup.org/zh/blog/lto-roadmap-365tb-tape-cartridge-capacity", "url": "https://tapebackup.org/zh/blog/lto-roadmap-365tb-tape-cartridge-capacity", "author": {"@type": "Organization", "name": "TapeBackup.org"}, "publisher": {"@type": "Organization", "name": "TapeBackup.org", "logo": {"@type": "ImageObject", "url": "https://tapebackup.org/favicon.png"}}, "articleSection": "Storage"}</script>
+<meta content="zh_CN" property="og:locale"/><link href="https://tapebackup.org/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="en" rel="alternate"/><link href="https://tapebackup.org/de/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="de" rel="alternate"/><link href="https://tapebackup.org/fr/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="fr" rel="alternate"/><link href="https://tapebackup.org/it/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="it" rel="alternate"/><link href="https://tapebackup.org/es/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="es" rel="alternate"/><link href="https://tapebackup.org/nl/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="nl" rel="alternate"/><link href="https://tapebackup.org/pl/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="pl" rel="alternate"/><link href="https://tapebackup.org/ja/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="ja" rel="alternate"/><link href="https://tapebackup.org/zh/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="zh-Hans" rel="alternate"/><link href="https://tapebackup.org/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="x-default" rel="alternate"/></head>
+<body>
+<div class="site-shell">
+<div class="topbar"><div class="wrap"><a href="/zh/tape-q-and-a">磁带问答</a><span class="sep"></span><a href="/zh/lto-tape-price-trend">LTO价格</a><span class="sep"></span><a href="/zh/contact">联系我们</a><span aria-label="Language" class="lang-switch" data-i18n-skip=""><a href="/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="en" lang="en">EN</a><a href="/de/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="de" lang="de">DE</a><a href="/fr/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="fr" lang="fr">FR</a><a href="/it/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="it" lang="it">IT</a><a href="/es/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="es" lang="es">ES</a><a href="/nl/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="nl" lang="nl">NL</a><a href="/pl/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="pl" lang="pl">PL</a><a href="/ja/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="ja" lang="ja">JA</a><a aria-current="page" class="on" href="/zh/blog/lto-roadmap-365tb-tape-cartridge-capacity" hreflang="zh-Hans" lang="zh-Hans">ZH</a></span></div></div>
+<header class="site-header"><div class="wrap"><a aria-label="TapeBackup.org 首页" class="brand" href="/zh"><span class="mark"><svg aria-hidden="true" fill="none" height="20" viewbox="0 0 24 24" width="20"><rect height="12" rx="3" stroke="#fff" stroke-width="1.8" width="18" x="3" y="6"></rect><circle cx="8" cy="12" fill="#fff" r="2.2"></circle><circle cx="16" cy="12" fill="#fff" r="2.2"></circle><line stroke="#fff" stroke-width="1.4" x1="10.2" x2="13.8" y1="12" y2="12"></line></svg></span><span class="wm"><span class="t1">TapeBackup</span><span class="t2">LTO Tape Info</span></span></a>
+<nav aria-label="主要" class="topnav">
+<div class="price-dropdown"><a href="/zh/lto-tape">LTO 磁带</a><div class="price-dropdown-menu"><a href="/zh/lto-tape">什么是 LTO 磁带<span>一页读懂这一格式</span></a><a href="/zh/lto-storage">LTO 存储<span>磁带存储的原理与成本</span></a><a href="/zh/lto-tape-capacity">容量表<span>LTO-1至LTO-14</span></a><a href="/zh/why-tape/lto-tape-drive">磁带机选购指南<span>该买哪款磁带机</span></a><a href="/zh/lto-tape-library">磁带库<span>自动加载器与磁带库</span></a><a href="/zh/why-tape/lto-tape-lifespan">使用寿命<span>磁带能保存多久</span></a><a href="/zh/resources/ltfs">LTFS<span>把磁带当文件系统用</span></a><a href="/zh/resources/lto-tape-data-recovery">数据恢复<span>读取旧磁带</span></a><a href="/zh/lto-tape-news">资讯<span>本月有何变化</span></a><a href="/zh/why-tape">为什么选磁带<span>成本、物理隔离与寿命</span></a></div></div>
+<div class="price-dropdown"><a href="/zh/lto-tape-price-trend">LTO价格</a><div class="price-dropdown-menu"><a href="/zh/lto-tape-price-trend">全部世代<span>当前价格，每月更新</span></a><a href="/zh/lto-tape-price-trend/lto6-price">LTO-6 价格<span>原生 2.5 TB</span></a><a href="/zh/lto-tape-price-trend/lto7-price">LTO-7 价格<span>原生 6 TB</span></a><a href="/zh/lto-tape-price-trend/lto8-price">LTO-8 价格<span>原生 12 TB</span></a><a href="/zh/lto-tape-price-trend/lto9-price">LTO-9 价格<span>原生 18 TB</span></a><a href="/zh/lto-tape-price-trend/lto10-price">LTO-10 价格<span>原生 30 / 40 TB</span></a><a href="/zh/lto-tape-price-trend/history">价格历史<span>自2025年起的存档快照</span></a></div></div>
+<div class="price-dropdown"><a href="/zh/backup-calculator">工具</a><div class="price-dropdown-menu"><a href="/zh/backup-calculator">备份计算器<span>介质与成本估算</span></a><a href="/zh/backup-software-finder">软件推荐工具<span>匹配适合您磁带用途的软件</span></a><a href="/tape-archive-advisor">磁带归档顾问<span>基于 Ledger 评分的候选名单</span></a><a href="/zh/best-tape-backup-software">最佳磁带备份软件<span>2026横向对比</span></a></div></div>
+<a href="/zh/blog">Blog</a>
+<a href="/zh/tape-q-and-a">Q&amp;A</a>
+</nav>
+<div class="header-right"><a class="btn btn-primary btn-sm" href="/zh/contact">获取价格表</a></div>
+</div></header>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">Storage article</p>
+<h1>LTO Roadmap: 365 TB Tape vs Cloud TCO</h1>
+<p>The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills.</p>
+<div class="signal-row"><span class="signal-chip">Storage</span> <span class="signal-chip">4 min read</span> <span class="signal-chip">October 31, 2026</span></div>
+</div>
+<aside class="hero-panel">
+<p class="panel-label">简而言之</p>
+<p class="panel-copy">The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills.</p>
+</aside>
+</div>
+</section>
+<main class="page">
+<div class="container article-layout">
+<article class="article-card">
+<div class="breadcrumbs"><a href="/home">Home</a><span>/</span><a href="/zh/blog">Blog</a><span>/</span><span>Storage</span></div>
+<header class="article-header">
+<div class="detail-meta"><span class="pill">Storage</span> <span class="pill alt">4 min read</span> <span class="pill alt">October 31, 2026</span></div>
+<h2 class="detail-title">LTO Roadmap: 365 TB Tape vs Cloud TCO</h2>
+<p class="lead">The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills.</p>
+</header>
+<section class="article-body"><p><strong>The LTO Program roadmap officially targets up to 365 TB of native capacity per cartridge across future generations without altering the standard physical form factor. With enterprise AI training checkpoints and long-term compliance archives outgrowing disk arrays, tape remains the most economical tier for petabyte-scale data that must be kept safe for decades at zero idle power.</strong></p>
+<h2>The 400x scaling curve without form factor changes</h2>
+<p>Linear Tape-Open began twenty-five years ago with LTO-1, storing 100 GB on a single half-inch magnetic tape cartridge. Current mainstream deployments run on 18 TB LTO-9 and 30 to 40 TB LTO-10 media. The extended technology roadmap mapped by HPE, IBM, and Quantum projects capacity scaling through LTO-14 to 365 TB native per cartridge.</p>
+<p>What makes this trajectory unique in enterprise infrastructure is physical consistency. Robotic library frames, automated tape arms, picker mechanisms, and rack dimensions designed for early LTO formats still accommodate modern generations. Upgrading a data center from petabytes to exabytes requires replacing tape drives and media cartridges rather than purchasing new floor space and structural frames.</p>
+<h2>Media density versus spinning disk physical limits</h2>
+<p>Hard drive manufacturers rely on heat-assisted magnetic recording (HAMR) and dual-actuator mechanics to reach 30 to 40 TB per 3.5-inch drive. While engineering achievements in hard disk density continue, spinning disks face strict physical boundaries: platter count, rotational vibration, power draw, and mechanical wear on spindle bearings.</p>
+<p>Magnetic tape operates under different physics. Because tape media unrolls across a recording head only during read and write operations, the surface area available to store bits is hundreds of times larger than rigid platters. Advanced barium ferrite and strontium ferrite particulate formulations allow areal density to double repeatedly without exceeding the mechanical tolerances of tape drives.</p>
+<h2>Zero idle power in the AI data center</h2>
+<p>Power constraints have overtaken hardware budgets as the primary bottleneck in hyperscale and enterprise data centers. An active hard disk drive consumes six to nine watts even while idling in a storage shelf. Multiplied across tens of thousands of archive drives, spinning disk arrays generate constant heat loads and demand megawatt-scale power allocations.</p>
+<p>In contrast, a tape cartridge resting in a library slot consumes zero watts of electricity and produces zero heat. For AI organizations retaining multi-terabyte model weights, raw training corpuses, and multi-year compliance archives, tape decouples storage capacity from facilities power budgets.</p>
+<h2>The cost equation against cloud cold storage</h2>
+<p>Public cloud providers market cold archive tiers as inexpensive storage, but the pricing model conceals severe operational risks. Storing petabytes incurs perpetual monthly charges, while data retrieval triggers punitive per-gigabyte egress fees and API transaction penalties.</p>
+<p>Our September 2026 US price tracker lists 18 TB LTO-9 media at $ 5.14 to $ 6.20 per native terabyte. Once the hardware capital cost of the drive is amortized across an archive, tape media requires no monthly subscription and no retrieval fees during forensic audits or full disaster recoveries.</p>
+<h2>常见问题解答</h2>
+<h3>What is the native capacity of LTO-10?</h3>
+<p>Standard LTO-10 cartridges provide 30 TB of native uncompressed capacity, with extended-length media providing 40 TB native (and up to 100 TB with standard 2.5:1 compression).</p>
+<h3>How does LTO plan to reach 365 TB per cartridge?</h3>
+<p>The LTO roadmap achieves 365 TB across generations through advanced magnetic particles such as strontium ferrite, narrower track widths, smoother tape substrates, and higher linear recording densities.</p>
+<h3>Do newer LTO drives read older tape formats?</h3>
+<p>LTO-8 and LTO-9 drives read and write the previous generation (for example, LTO-9 drives read and write LTO-8 tapes). Due to the transition to narrower tracks, LTO-10 drives focus natively on LTO-10 media to maximize throughput and reliability.</p>
+<h3>What is the shelf life of modern LTO tape?</h3>
+<p>Under recommended environmental conditions (15 to 25 degrees Celsius and 20 to 50 percent relative humidity), barium ferrite LTO tape cartridges have an archival lifespan exceeding thirty years.</p>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the native capacity of LTO-10?", "acceptedAnswer": {"@type": "Answer", "text": "Standard LTO-10 cartridges provide 30 TB of native uncompressed capacity, with extended-length media providing 40 TB native (and up to 100 TB with standard 2.5:1 compression)."}}, {"@type": "Question", "name": "How does LTO plan to reach 365 TB per cartridge?", "acceptedAnswer": {"@type": "Answer", "text": "The LTO roadmap achieves 365 TB across generations through advanced magnetic particles such as strontium ferrite, narrower track widths, smoother tape substrates, and higher linear recording densities."}}, {"@type": "Question", "name": "Do newer LTO drives read older tape formats?", "acceptedAnswer": {"@type": "Answer", "text": "LTO-8 and LTO-9 drives read and write the previous generation (for example, LTO-9 drives read and write LTO-8 tapes). Due to the transition to narrower tracks, LTO-10 drives focus natively on LTO-10 media to maximize throughput and reliability."}}, {"@type": "Question", "name": "What is the shelf life of modern LTO tape?", "acceptedAnswer": {"@type": "Answer", "text": "Under recommended environmental conditions (15 to 25 degrees Celsius and 20 to 50 percent relative humidity), barium ferrite LTO tape cartridges have an archival lifespan exceeding thirty years."}}], "inLanguage": "zh"}</script>
+<p>Track current media and drive pricing on our <a href="/zh/lto-tape-price-trend">LTO price tracker</a>, review our <a href="/zh/lto-tape-capacity">LTO capacity comparison chart</a>, or test your numbers in the <a href="/zh/backup-calculator">tape backup calculator</a>.</p>
+</section>
+<a class="back-link" href="/zh/blog">返回博客</a>
+</article>
+<aside class="sidebar">
+<section class="sidebar-card">
+<h2>文章摘要</h2>
+<p>将近期有关磁带存储的讨论精炼为独立的 TapeBackup.org 文章页面，配有直接索引元数据与固定规范 URL。</p>
+</section>
+<section class="sidebar-card">
+<h2>需要更深入的LTO规划？</h2>
+<p>浏览网站资源、对比存储方式，或探索将磁带融入您备份流程的最佳途径。</p>
+<a class="cta" href="/zh/contact">咨询 TapeBackup</a>
+</section>
+</aside>
+</div>
+<!-- related:start --><section class="related-reading" style="max-width:760px;margin:2.5rem auto 0;padding:0 1rem"><h2>TapeBackup 相关推荐</h2><ul><li><a href="/zh/blog/one-bad-archive-and-it-s-gone-forever-the-brutal-trade-off-nobody-warns-you-about-in-tape-storag">一次归档故障导致永久丢失：磁带存储中无人预警的残酷代价</a></li><li><a href="/zh/blog/air-gap-backup-physical-tape-vs-cloud">Air Gap Backup: Physical Tape vs Cloud</a></li><li><a href="/zh/blog/6-000-for-a-paperweight-when-enterprise-grade-storage-quietly-fails-you">“花了$ 6,000买回一个大铁坨”：当‘企业级’存储悄然让你失望</a></li><li><a href="/zh/lto-tape-price-trend">当前 LTO 磁带价格</a></li><li><a href="/zh/why-tape">为何使用磁带存储</a></li></ul></section><!-- related:end -->
+</main>
+</div>
+<script src="/chat-widget.js" defer></script>
+</body>
+</html>

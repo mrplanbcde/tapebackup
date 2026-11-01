@@ -1,5 +1,11 @@
 [
   {
+    "href": "/blog/lto-roadmap-365tb-tape-cartridge-capacity",
+    "cat": "Storage",
+    "date": "Oct 2026",
+    "h": "LTO Roadmap: 365 TB Tape vs Cloud TCO"
+  },
+  {
     "href": "/blog/fujifilm-lto-tape-production-increase",
     "cat": "Industry",
     "date": "Oct 2026",
@@ -10,11 +16,5 @@
     "cat": "Security",
     "date": "Oct 2026",
     "h": "Air Gap Backup: Physical Tape vs Cloud"
-  },
-  {
-    "href": "/blog/tape-backup-software-integration-tradeoffs",
-    "cat": "Software",
-    "date": "Oct 2026",
-    "h": "Tape Backup Software Integration Tradeoffs"
   }
 ]
