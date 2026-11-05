@@ -75,6 +75,22 @@ def header():
 </div></header>"""
 
 
+# Sister sites run by the same owner: one footer row on every page. Pages that do not use footer()
+# (home template, hand-published blog and Q&A) get it from build_site.network_footer(). Plain followed links.
+NETWORK_SITES = [
+    ("https://servertoohot.com/", "servertoohot.com"),  # server, storage and network hardware reference
+    ("https://rack-density.com/", "rack-density.com"),  # 3D rack twins and rack power
+    ("https://www.mrplanb.com/", "mrplanb.com"),  # Proxmox, storage and backup guides
+    ("https://outagecost.org/", "outagecost.org"),  # downtime cost calculator
+    ("https://sensaka.com/", "sensaka.com"),  # data center and AI infrastructure management
+]
+
+
+def network_row():
+    links = "".join(f'<a href="{u}">{esc(n)}</a>' for u, n in NETWORK_SITES)
+    return f'<div class="footer-net"><span class="lbl">Our other sites</span><div class="links">{links}</div></div>'
+
+
 def footer():
     cols = [
         ("LTO Prices", [("Price tracker", "/lto-tape-price-trend")] + [(f"{g} Price", f"/lto-tape-price-trend/{slug_for(g)}") for g in GENS] + [("Price history", "/lto-tape-price-trend/history")]),
@@ -86,7 +102,7 @@ def footer():
         f'<div class="fcol"><h4>{esc(h)}</h4>' + "".join(f'<a href="{href}">{esc(t)}</a>' for t, href in links) + "</div>"
         for h, links in cols
     )
-    return f"""<footer class="footer"><div class="wrap"><div class="footer-top"><div>{brand()}<p class="blurb">TapeBackup.org is an independent resource for LTO tape backup technology, pricing, and workflows. Not affiliated with the LTO Program.</p></div>{col_html}</div>
+    return f"""<footer class="footer"><div class="wrap"><div class="footer-top"><div>{brand()}<p class="blurb">TapeBackup.org is an independent resource for LTO tape backup technology, pricing, and workflows. Not affiliated with the LTO Program.</p></div>{col_html}</div>{network_row()}
 <div class="footer-bot"><span>&copy; 2026 TapeBackup.org. Independent LTO tape backup resource.</span><div class="links"><a href="/about">About</a><a href="/contact">Contact</a><a href="/sitemap.xml">Sitemap</a></div></div></div></footer>"""
 
 

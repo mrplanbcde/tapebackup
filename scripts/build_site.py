@@ -224,6 +224,40 @@ def blog_related_links():
     return len(posts)
 
 
+NETWORK_SKIP_DIRS = {"data", "node_modules", ".build", ".git", ".vercel"} | set(i18n.LANGS)
+NETWORK_ROW_RE = re.compile(r'<div class="footer-net">.*?</div></div>', re.S)
+
+
+def network_footer(root=ROOT):
+    """Sister-site row (site_shell.network_row) on pages that do not use site_shell.footer():
+    the home template's footer, Q&A pages' old footer, and the blog, which has no footer at all.
+    A row already on a page is replaced, so editing NETWORK_SITES and rebuilding updates every page."""
+    row = site_shell.network_row()
+    n = 0
+    for dirpath, dirs, files in os.walk(root):
+        if dirpath == root:
+            dirs[:] = [d for d in dirs if d not in NETWORK_SKIP_DIRS]
+        for name in files:
+            if not name.endswith(".html"):
+                continue
+            f = os.path.join(dirpath, name)
+            s = open(f, encoding="utf-8").read()
+            if "</body>" not in s:
+                continue
+            if 'class="footer-net"' in s:
+                new = NETWORK_ROW_RE.sub(lambda _: row, s, count=1)
+            elif '<div class="footer-bot">' in s:
+                new = s.replace('<div class="footer-bot">', row + '\n<div class="footer-bot">', 1)
+            elif "</footer>" in s:
+                new = s.replace("</footer>", f'<div class="wrap">{row}</div></footer>', 1)
+            else:
+                new = s.replace("</body>", f'<footer class="footer footer-slim"><div class="wrap">{row}</div></footer>\n</body>', 1)
+            if new != s:
+                open(f, "w", encoding="utf-8").write(new)
+                n += 1
+    return n
+
+
 def qa_page_schema():
     """Each Q&A page is one question with one answer: mark it up as QAPage so answer engines can use it."""
     n = 0
@@ -463,6 +497,7 @@ def build_languages():
             if os.path.exists(src):
                 os.makedirs(os.path.dirname(dst), exist_ok=True)
                 shutil.copy2(src, dst)
+        network_footer(stage)
         shutil.rmtree(os.path.join(ROOT, lang), ignore_errors=True)
         written, total, missing = i18n.render_language(lang, langs)
         built.append(lang)
@@ -482,6 +517,7 @@ def main():
     apply_qa_noindex()
     print(f"QAPage schema: {qa_page_schema()}")
     print(f"answer-first panels: {answer_first_panels()}, blog posts with related links: {blog_related_links()}")
+    print(f"sister-site footer row added to: {network_footer()} pages")
     for f in glob.glob(rel("blog", "*", "index.html")) + glob.glob(rel("tape-q-and-a", "*", "index.html")):
         t = re.search(r"<title>(.*?)</title>", open(f, encoding="utf-8").read(), re.S)
         if t and len(html.unescape(t.group(1))) > 60:

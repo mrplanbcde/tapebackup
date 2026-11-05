@@ -1119,6 +1119,14 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: -.02
 .footer-bot .links { display: flex; gap: 22px; }
 .footer-bot a:hover { color: #fff; }
 
+/* sister-site row ("Our other sites"), above .footer-bot */
+.footer-net { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 22px; padding-top: 22px; font-size: 13px; color: #7a7491; }
+.footer-net .lbl { color: #b6b1c6; font-weight: 600; }
+.footer-net .links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.footer-net a { color: #9c96b0; text-decoration: none; }
+.footer-net a:hover { color: #fff; }
+.footer-slim { margin-top: 56px; padding: 12px 0 34px; } /* blog: footer that holds only the sister-site row */
+
 /* compat aliases for old footer */
 .footer-inner { display: contents; }
 .footer-links { display: contents; }
