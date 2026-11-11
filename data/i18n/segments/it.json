@@ -461,18 +461,6 @@
   "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Home LTO Setup: Stop Treating It Like a Toy | TapeBackup</title> <meta content=\"A home or lab LTO setup can be real backup infrastructure. What separates a weekend experiment from a reliable archive is how you operate it."
  },
  {
-  "key": "<a1>LTO Roadmap: {0} TB Tape vs Cloud TCO</a1>",
-  "ctx": [
-   "li"
-  ],
-  "pages": [
-   "/blog/500-dreams-and-magnetic-tape-fantasies-the-addictive-illusion-of-cheap-lto-storage",
-   "/blog/6-000-for-a-paperweight-when-enterprise-grade-storage-quietly-fails-you",
-   "/blog/one-bad-archive-and-it-s-gone-forever-the-brutal-trade-off-nobody-warns-you-about-in-tape-storag"
-  ],
-  "example": "LTO Roadmap: 365 TB Tape vs Cloud TCO"
- },
- {
   "key": "Air Gap Backup: Physical Tape vs Cloud | TapeBackup.org",
   "ctx": [
    "title"
@@ -1395,5 +1383,382 @@
    "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
   ],
   "example": "Air Gap Backup: Physical Tape vs Cloud"
+ },
+ {
+  "key": "mLogic Vault LTO: Thunderbolt {0} Tape Drive | TapeBackup.org",
+  "ctx": [
+   "title"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "mLogic Vault LTO: Thunderbolt 5 Tape Drive | TapeBackup.org"
+ },
+ {
+  "key": "mLogic unveiled Vault LTO, the first desktop LTO tape drive with Thunderbolt {0} connectivity. What it means for Mac Studio and PC video archiving.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "mLogic unveiled Vault LTO, the first desktop LTO tape drive with Thunderbolt 5 connectivity. What it means for Mac Studio and PC video archiving."
+ },
+ {
+  "key": "mLogic Vault LTO: First Thunderbolt {0} Desktop Tape Drive",
+  "ctx": [
+   "h1",
+   "h2",
+   "json-ld headline",
+   "meta og:title",
+   "meta twitter:title"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "mLogic Vault LTO: First Thunderbolt 5 Desktop Tape Drive"
+ },
+ {
+  "key": "Hardware announcement",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Hardware announcement"
+ },
+ {
+  "key": "mLogic announced Vault LTO on {0} November {1}, delivering the first desktop {2}, {3}, and {4} tape drive with native Thunderbolt {5} connectivity. What it changes for video production and studio archives.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "mLogic announced Vault LTO on 10 November 2026, delivering the first desktop LTO-7, LTO-8, and LTO-9 tape drive with native Thunderbolt 5 connectivity. What it changes for video production and studio archives."
+ },
+ {
+  "key": "<s1>Hardware</s1> <s2>{0} min read</s2> <s3>November {1}, {2}</s3>",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Hardware 4 min read November 11, 2026"
+ },
+ {
+  "key": "<a1>Home</a1><s2>/</s2><a3>Blog</a3><s4>/</s4><s5>Hardware</s5>",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Home / Blog / Hardware"
+ },
+ {
+  "key": "<b1>mLogic announced Vault LTO on {0} November {1}, introducing the world's first desktop LTO tape archiving solution powered by Thunderbolt {2}. Supporting IBM {3}, {4}, and {5} tape drives, the unit eliminates the bulky external SAS converter boxes historically required to connect magnetic tape drives to modern workstations like the Apple Mac Studio and Windows mobile edit rigs.</b1>",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "mLogic announced Vault LTO on 10 November 2026, introducing the world's first desktop LTO tape archiving solution powered by Thunderbolt 5. Supporting IBM LTO-7, LTO-8, and LTO-9 tape drives, the unit eliminates the bulky external SAS converter boxes historically required to connect magnetic tape drives to modern workstations like the Apple Mac Studio and Windows mobile edit rigs."
+ },
+ {
+  "key": "The problem with desktop tape connectivity",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "The problem with desktop tape connectivity"
+ },
+ {
+  "key": "For creative agencies, digital imaging technicians (DITs), and post-production houses, LTO tape remains the industry standard for master project delivery and insurance compliance. However, tape drives natively communicate over enterprise Serial Attached SCSI (SAS) interfaces.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "For creative agencies, digital imaging technicians (DITs), and post-production houses, LTO tape remains the industry standard for master project delivery and insurance compliance. However, tape drives natively communicate over enterprise Serial Attached SCSI (SAS) interfaces."
+ },
+ {
+  "key": "Connecting a SAS tape drive to a modern compact workstation historically required an awkward chain of hardware: an external PCIe expansion enclosure, a dedicated {0} Gb/s SAS Host Bus Adapter (HBA), external SAS cabling, and proprietary driver packages that frequently conflicted with macOS security permissions. If an adapter glitched during a {1}-hour offload, the entire tape archive job failed.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Connecting a SAS tape drive to a modern compact workstation historically required an awkward chain of hardware: an external PCIe expansion enclosure, a dedicated 12 Gb/s SAS Host Bus Adapter (HBA), external SAS cabling, and proprietary driver packages that frequently conflicted with macOS security permissions. If an adapter glitched during a 15-hour offload, the entire tape archive job failed."
+ },
+ {
+  "key": "What Thunderbolt {0} brings to desktop archiving",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "What Thunderbolt 5 brings to desktop archiving"
+ },
+ {
+  "key": "Vault LTO integrates the SAS bridge directly inside an all-in-one aluminum desktop chassis. It connects to the host computer using a single Thunderbolt {0} cable. The technical advantages over older Thunderbolt {1} and {2} docks include:",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Vault LTO integrates the SAS bridge directly inside an all-in-one aluminum desktop chassis. It connects to the host computer using a single Thunderbolt 5 cable. The technical advantages over older Thunderbolt 3 and 4 docks include:"
+ },
+ {
+  "key": "<b1>Bandwidth headroom:</b1> Thunderbolt {0} delivers {1} Gbps of bidirectional bandwidth and up to {2} Gbps of asymmetric throughput. While an {3} drive writes at a maximum sustained rate of {4} MB/s uncompressed (up to {5} MB/s with {6} hardware compression), the massive bus headroom ensures zero PCIe lane contention when concurrent NVMe scratch drives and high-resolution monitors share the same Thunderbolt controller.",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Bandwidth headroom: Thunderbolt 5 delivers 80 Gbps of bidirectional bandwidth and up to 120 Gbps of asymmetric throughput. While an LTO-9 drive writes at a maximum sustained rate of 300 MB/s uncompressed (up to 750 MB/s with 2.5:1 hardware compression), the massive bus headroom ensures zero PCIe lane contention when concurrent NVMe scratch drives and high-resolution monitors share the same Thunderbolt controller."
+ },
+ {
+  "key": "<b1>Daisy-chain expansion:</b1> Vault LTO features dual Thunderbolt {0} ports, allowing operators to daisy-chain high-speed RAID storage, {1}K reference displays, or additional LTO drives from a single computer port.",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Daisy-chain expansion: Vault LTO features dual Thunderbolt 5 ports, allowing operators to daisy-chain high-speed RAID storage, 8K reference displays, or additional LTO drives from a single computer port."
+ },
+ {
+  "key": "<b1>Universal driverless operation:</b1> The internal bridge translates SAS commands into standard {0}/PCIe transactions, enabling plug-and-play operation on Apple Silicon (M-series) Macs and modern Windows workstations.",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Universal driverless operation: The internal bridge translates SAS commands into standard USB4/PCIe transactions, enabling plug-and-play operation on Apple Silicon (M-series) Macs and modern Windows workstations."
+ },
+ {
+  "key": "LTFS drag-and-drop workflow",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "LTFS drag-and-drop workflow"
+ },
+ {
+  "key": "Each Vault LTO system includes Linear Tape File System (LTFS) utility software. LTFS formats the magnetic tape into two partitions: one holding metadata and the file index, and the other holding raw file payloads.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Each Vault LTO system includes Linear Tape File System (LTFS) utility software. LTFS formats the magnetic tape into two partitions: one holding metadata and the file index, and the other holding raw file payloads."
+ },
+ {
+  "key": "Once mounted, an {0} tape cartridge appears on macOS Finder or Windows File Explorer exactly like a standard removable flash drive or external SSD. Editors and archivists can drag camera raw reels, sound stems, and project files directly onto tape without being locked into proprietary backup software databases.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Once mounted, an LTO-9 tape cartridge appears on macOS Finder or Windows File Explorer exactly like a standard removable flash drive or external SSD. Editors and archivists can drag camera raw reels, sound stems, and project files directly onto tape without being locked into proprietary backup software databases."
+ },
+ {
+  "key": "Drive options and capacities",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Drive options and capacities"
+ },
+ {
+  "key": "mLogic offers Vault LTO in three drive configurations:",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "mLogic offers Vault LTO in three drive configurations:"
+ },
+ {
+  "key": "<b1>Vault {0}:</b1> {1} TB native capacity (up to {2} TB compressed) with transfer rates up to {3} MB/s.",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Vault LTO-7: 6 TB native capacity (up to 15 TB compressed) with transfer rates up to 300 MB/s."
+ },
+ {
+  "key": "All units feature rugged anodized aluminum construction, internal universal power supplies, and whisper-quiet cooling fans designed for quiet audio suites and desktop editing environments.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "All units feature rugged anodized aluminum construction, internal universal power supplies, and whisper-quiet cooling fans designed for quiet audio suites and desktop editing environments."
+ },
+ {
+  "key": "What is mLogic Vault LTO?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "What is mLogic Vault LTO?"
+ },
+ {
+  "key": "mLogic Vault LTO is an all-in-one desktop tape archiving enclosure featuring integrated Thunderbolt {0} connectivity and IBM {1}, {2}, or {3} half-height tape drives.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "mLogic Vault LTO is an all-in-one desktop tape archiving enclosure featuring integrated Thunderbolt 5 connectivity and IBM LTO-7, LTO-8, or LTO-9 half-height tape drives."
+ },
+ {
+  "key": "Does Vault LTO work with Thunderbolt {0} and {1} ports?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Does Vault LTO work with Thunderbolt 3 and 4 ports?"
+ },
+ {
+  "key": "Yes. Thunderbolt {0} is backward compatible with Thunderbolt {1}, Thunderbolt {2}, and {3} ports on both macOS and Windows, operating at the maximum speed supported by the host port.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Yes. Thunderbolt 5 is backward compatible with Thunderbolt 4, Thunderbolt 3, and USB4 ports on both macOS and Windows, operating at the maximum speed supported by the host port."
+ },
+ {
+  "key": "Can I write to tape like an external hard drive with Vault LTO?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Can I write to tape like an external hard drive with Vault LTO?"
+ },
+ {
+  "key": "Yes. Using the included LTFS mounting software, LTO tapes mount directly on your desktop filesystem, enabling standard drag-and-drop file copying without proprietary backup software.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Yes. Using the included LTFS mounting software, LTO tapes mount directly on your desktop filesystem, enabling standard drag-and-drop file copying without proprietary backup software."
+ },
+ {
+  "key": "Does Vault LTO require an external SAS adapter?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Does Vault LTO require an external SAS adapter?"
+ },
+ {
+  "key": "No. The SAS controller is built directly into the Vault LTO chassis. The unit connects to your computer via a single included Thunderbolt {0} cable.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "No. The SAS controller is built directly into the Vault LTO chassis. The unit connects to your computer via a single included Thunderbolt 5 cable."
+ },
+ {
+  "key": "Check the latest drive prices in our <a1>LTO tape drive guide</a1>, track cartridge media pricing on our <a2>LTO price tracker</a2>, or estimate media requirements using the <a3>tape backup calculator</a3>.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Check the latest drive prices in our LTO tape drive guide , track cartridge media pricing on our LTO price tracker , or estimate media requirements using the tape backup calculator ."
+ },
+ {
+  "key": "First Thunderbolt {0} LTO tape drive hardware announcement distilled for media professionals, DITs, and studio archive operators.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "First Thunderbolt 5 LTO tape drive hardware announcement distilled for media professionals, DITs, and studio archive operators."
+ },
+ {
+  "key": "Need a desktop LTO plan?",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Need a desktop LTO plan?"
+ },
+ {
+  "key": "Browse our drive comparisons, check media prices, or reach out to our team for advice on desktop tape workflows.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "Browse our drive comparisons, check media prices, or reach out to our team for advice on desktop tape workflows."
+ },
+ {
+  "key": "<a1>mLogic Vault LTO: First Thunderbolt {0} Desktop Tape Drive</a1>",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/the-day-my-tape-drive-went-rogue-inside-the-frustrating-reality-of-lto-6-failures",
+   "/blog/which-lto-drive-should-you-buy-without-regretting-it-later",
+   "/blog/your-used-lto-8-drive-isnt-broken-until-the-sas-path-stops-lying"
+  ],
+  "example": "mLogic Vault LTO: First Thunderbolt 5 Desktop Tape Drive"
  }
 ]
