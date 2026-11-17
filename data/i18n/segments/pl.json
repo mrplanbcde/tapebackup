@@ -151,6 +151,56 @@
   "example": "Price by generation: LTO-9 price and LTO-10 price . Ready to buy hardware? See the LTO tape drive buying guide and the LTO capacity chart ."
  },
  {
+  "key": "<s1>Buying Guide</s1> <s2>{0} min read</s2>",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "Buying Guide 7 min read"
+ },
+ {
+  "key": "{0} Price and Compatibility Guide",
+  "ctx": [
+   "h1",
+   "h2",
+   "json-ld headline",
+   "meta og:title",
+   "meta twitter:title"
+  ],
+  "pages": [
+   "/blog",
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "LTO-10 Price and Compatibility Guide"
+ },
+ {
+  "key": "November {0}, {1}",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "November 17, 2026"
+ },
+ {
+  "key": "US street prices for {0} drives and {1}TB or {2}TB media on {3} October {4}, compatibility limits, and per-TB math against {5} for tape buyers.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description",
+   "p"
+  ],
+  "pages": [
+   "/blog",
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "US street prices for LTO-10 drives and 30TB or 40TB media on 23 October 2026, compatibility limits, and per-TB math against LTO-9 for tape buyers."
+ },
+ {
   "key": "<s1>Storage</s1> <s2>{0} min read</s2>",
   "ctx": [
    "div"
@@ -159,6 +209,31 @@
    "/blog"
   ],
   "example": "Storage 4 min read"
+ },
+ {
+  "key": "mLogic Vault LTO: First Thunderbolt {0} Desktop Tape Drive",
+  "ctx": [
+   "h1",
+   "h2",
+   "json-ld headline",
+   "meta og:title",
+   "meta twitter:title"
+  ],
+  "pages": [
+   "/blog",
+   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
+  ],
+  "example": "mLogic Vault LTO: First Thunderbolt 5 Desktop Tape Drive"
+ },
+ {
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;mLogic Vault LTO: Thunderbolt {1} Tape Drive | TapeBackup.org&lt;/title&gt; &lt;meta content=\"mLogic unveiled Vault LTO, the first desktop LTO tape drive with Thunderbolt {2} connectivity. What it means for Mac Studio and PC video archiving.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog"
+  ],
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>mLogic Vault LTO: Thunderbolt 5 Tape Drive | TapeBackup.org</title> <meta content=\"mLogic unveiled Vault LTO, the first desktop LTO tape drive with Thunderbolt 5 connectivity. What it means for Mac Studio and PC video archiving."
  },
  {
   "key": "LTO Roadmap: {0} TB Tape vs Cloud TCO",
@@ -176,19 +251,14 @@
   "example": "LTO Roadmap: 365 TB Tape vs Cloud TCO"
  },
  {
-  "key": "The LTO roadmap targets {0} TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills.",
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;LTO Roadmap: {1} TB Tape vs Cloud TCO | TapeBackup.org&lt;/title&gt; &lt;meta content=\"The LTO roadmap targets {2} TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills.",
   "ctx": [
-   "json-ld description",
-   "meta description",
-   "meta og:description",
-   "meta twitter:description",
    "p"
   ],
   "pages": [
-   "/blog",
-   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+   "/blog"
   ],
-  "example": "The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills."
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>LTO Roadmap: 365 TB Tape vs Cloud TCO | TapeBackup.org</title> <meta content=\"The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills."
  },
  {
   "key": "Fujifilm LTO Tape Production to Rise {0}x",
@@ -411,14 +481,14 @@
   "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>Which LTO Drive Should You Buy Without Regret? | TapeBackup</title> <meta content=\"Every LTO generation looks tempting on the used market. How media costs, compatibility rules, and restore plans should decide which drive you buy."
  },
  {
-  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;One Bad Tape Archive and It&amp;#x{1};s Gone Forever | TapeBackup&lt;/title&gt; &lt;meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file.",
+  "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;One Bad Tape Archive and It's Gone Forever | TapeBackup&lt;/title&gt; &lt;meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file.",
   "ctx": [
    "p"
   ],
   "pages": [
    "/blog"
   ],
-  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>One Bad Tape Archive and It&#x27;s Gone Forever | TapeBackup</title> <meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file."
+  "example": "width=device-width, initial-scale=1.0\" name=\"viewport\"/> <title>One Bad Tape Archive and It's Gone Forever | TapeBackup</title> <meta content=\"Should you write files to tape as-is or bundle them into one archive first? The trade-off between tidy archives and losing everything to one bad file."
  },
  {
   "key": "width=device-width, initial-scale={0}\" name=\"viewport\"/&gt; &lt;title&gt;Backup Strategy When an Archive Outgrows Disks | TapeBackup&lt;/title&gt; &lt;meta content=\"Adding another hard drive stops being a backup strategy once an archive grows. Why that is the point where tape enters the picture for many operators.",
@@ -1107,6 +1177,406 @@
   "example": "Current media prices by generation are on the LTO-9 price and LTO-10 price pages, and monthly tape news is on LTO tape news ."
  },
  {
+  "key": "<a1>{0} Price and Compatibility Guide</a1>",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/i-replaced-hard-drives-with-tape-and-accidentally-signed-up-for-a-lifetime-of-noise-bugs-and-obs"
+  ],
+  "example": "LTO-10 Price and Compatibility Guide"
+ },
+ {
+  "key": "{0} Price and Compatibility Guide | TapeBackup.org",
+  "ctx": [
+   "title"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "LTO-10 Price and Compatibility Guide | TapeBackup.org"
+ },
+ {
+  "key": "Buying Guide article",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Buying Guide article"
+ },
+ {
+  "key": "<s1>Buying Guide</s1> <s2>{0} min read</s2> <s3>November {1}, {2}</s3>",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Buying Guide 7 min read November 17, 2026"
+ },
+ {
+  "key": "<a1>Home</a1><s2>/</s2><a3>Blog</a3><s4>/</s4><s5>Buying Guide</s5>",
+  "ctx": [
+   "div"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Home / Blog / Buying Guide"
+ },
+ {
+  "key": "<b1>On our October {0} price data, {1} still costs more per terabyte than {2}, so most tape buyers save money by staying on {3}. Our tapebackup.org price tracker from {4} October {5} shows {6} {7}TB media at {8} to {9} per native TB and external drives from {10}, while {11} media runs {12} to {13} per TB. {14} only pays off when library slot count or cartridge handling outweighs media cost.</b1>",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "On our October 2026 price data, LTO-10 still costs more per terabyte than LTO-9, so most tape buyers save money by staying on LTO-9. Our tapebackup.org price tracker from 23 October 2026 shows LTO-10 30TB media at $8.63 to $10.00 per native TB and external drives from $23,422, while LTO-9 media runs $5.14 to $7.17 per TB. LTO-10 only pays off when library slot count or cartridge handling outweighs media cost."
+ },
+ {
+  "key": "{0} drive and cartridge prices on {1} October {2}",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "LTO-10 drive and cartridge prices on 23 October 2026"
+ },
+ {
+  "key": "Our <a1>tapebackup.org price tracker</a1> recorded US street prices across major resellers on {0} October {1}. {2} {3}TB cartridges are broadly in stock at {4} to {5}, which equals {6} to {7} per native TB. {8} {9}TB cartridges cost {10} to {11}, or {12} to {13} per native TB, with Fujifilm {14}TB in stock at MagStor, limited at {15}, and special order at TapeandMedia.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Our tapebackup.org price tracker recorded US street prices across major resellers on 23 October 2026. LTO-10 30TB cartridges are broadly in stock at $259.00 to $299.99, which equals $8.63 to $10.00 per native TB. LTO-10 40TB cartridges cost $491.00 to $555.00, or $12.28 to $13.88 per native TB, with Fujifilm 40TB in stock at MagStor, limited at Tape4Backup, and special order at TapeandMedia."
+ },
+ {
+  "key": "{0} {1}TB WORM cartridges were out of stock across all four brands at {2} on {3} October {4}, with out-of-stock list prices running {5} to {6} ({7} to {8} per native TB). No {9} {10}TB WORM cartridge appeared at any seller we checked. By comparison, {11} {12}TB cartridges cost {13} to {14} on {15} October {16}, or {17} to {18} per native TB.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "LTO-10 30TB WORM cartridges were out of stock across all four brands at Tape4Backup on 23 October 2026, with out-of-stock list prices running $420.00 to $460.80 ($14.00 to $15.36 per native TB). No LTO-10 40TB WORM cartridge appeared at any seller we checked. By comparison, LTO-9 18TB cartridges cost $92.45 to $129.00 on 23 October 2026, or $5.14 to $7.17 per native TB."
+ },
+ {
+  "key": "Hardware pricing widens the gap further. On {0} October {1}, external {2} drives ranged from {3} to {4} in our tracker, compared with {5} to {6} for external {7} drives. At BackupWorks, a Qualstar Q-Series {8} SAS full-height library add-on drive ({9}) was listed at {10} on {11} October {12}, up from {13} in September {14}. {15} also continued to display its banner on {16} October {17} stating that all LTO tape prices increased from {18} September {19}.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Hardware pricing widens the gap further. On 23 October 2026, external LTO-10 drives ranged from $23,422 to $24,950 in our tracker, compared with $9,199 to $15,225 for external LTO-9 drives. At BackupWorks, a Qualstar Q-Series LTO-10 SAS full-height library add-on drive (800-0110-0) was listed at $28,068 on 23 October 2026, up from $23,509 in September 2026. Tape4Backup also continued to display its banner on 23 October 2026 stating that all LTO tape prices increased from 1 September 2026."
+ },
+ {
+  "key": "Format ({0} October {1})",
+  "ctx": [
+   "th"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Format (23 October 2026)"
+ },
+ {
+  "key": "Media street price",
+  "ctx": [
+   "th"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Media street price"
+ },
+ {
+  "key": "Price per native TB",
+  "ctx": [
+   "th"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Price per native TB"
+ },
+ {
+  "key": "External drive range",
+  "ctx": [
+   "th"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "External drive range"
+ },
+ {
+  "key": "{0} {1}TB WORM (out of stock)",
+  "ctx": [
+   "td"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "LTO-10 30TB WORM (out of stock)"
+ },
+ {
+  "key": "Media math: {0} TB native on {1} vs {2}",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Media math: 300 TB native on LTO-9 vs LTO-10"
+ },
+ {
+  "key": "A simple worked example using the lowest street prices in our {0} October {1} tracker shows why {2} wins on pure media spend for a {3} TB native archive:",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "A simple worked example using the lowest street prices in our 23 October 2026 tracker shows why LTO-9 wins on pure media spend for a 300 TB native archive:"
+ },
+ {
+  "key": "<b1>{0} ({1} TB cartridges at {2}):</b1> {3} TB divided by {4} TB equals {5}, so you buy {6} cartridges ({7} TB total). {8} multiplied by {9} equals {10}.",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "LTO-9 (18 TB cartridges at $92.45): 300 TB divided by 18 TB equals 16.67, so you buy 17 cartridges (306 TB total). 17 multiplied by $92.45 equals $1,571.65."
+ },
+ {
+  "key": "<b1>{0} {1}TB (at {2}):</b1> {3} TB divided by {4} TB equals {5} cartridges. {6} multiplied by {7} equals {8}, which is {9} more than {10}.",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "LTO-10 30TB (at $259.00): 300 TB divided by 30 TB equals 10 cartridges. 10 multiplied by $259.00 equals $2,590.00, which is $1,018.35 more than LTO-9."
+ },
+ {
+  "key": "<b1>{0} {1}TB (at {2}):</b1> {3} TB divided by {4} TB equals {5}, so you buy {6} cartridges ({7} TB total). {8} multiplied by {9} equals {10}, which is {11} more than {12}.",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "LTO-10 40TB (at $491.00): 300 TB divided by 40 TB equals 7.5, so you buy 8 cartridges (320 TB total). 8 multiplied by $491.00 equals $3,928.00, which is $2,356.35 more than LTO-9."
+ },
+ {
+  "key": "Add the drive cost and the difference grows. Comparing the lowest external {0} drive ({1}) against the lowest external {2} drive ({3}) in our {4} October {5} tracker adds {6} upfront. In our reading, {7} only makes sense today when physical slot count, library rack space, or cartridge handling time matters more than cost per TB. You can test your own retention totals in our <a1>backup calculator</a1> or compare tape against spinning disk in our <a2>LTO vs HDD guide</a2>.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Add the drive cost and the difference grows. Comparing the lowest external LTO-10 drive ($23,422) against the lowest external LTO-9 drive ($9,199) in our 23 October 2026 tracker adds $14,223 upfront. In our reading, LTO-10 only makes sense today when physical slot count, library rack space, or cartridge handling time matters more than cost per TB. You can test your own retention totals in our backup calculator or compare tape against spinning disk in our LTO vs HDD guide ."
+ },
+ {
+  "key": "Why {0}TB {1} exists and what changed",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Why 40TB LTO-10 exists and what changed"
+ },
+ {
+  "key": "Blocks &amp; Files reported on {0} November {1} that the <a1>LTO consortium raised {2} raw capacity to {3} TB</a1>, a {4} percent increase over the {5} TB cartridges initially delivered by Fujifilm and Sony with sole drive supplier IBM. {6} had originally been specified for {7} TB native, and the {8} TB upgrade uses a thinner, smoother aramid-based tape ribbon substrate in place of polyethylene naphthalate (PEN) film so longer tape fits inside the standard Ultrium shell. In the same announcement, the consortium lowered its {9} target to {10} TB raw ({11} TB compressed) from {12} TB raw ({13} PB compressed), a shift we covered in our <a2>LTO roadmap analysis</a2>.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Blocks & Files reported on 13 November 2025 that the LTO consortium raised LTO-10 raw capacity to 40 TB , a 33 percent increase over the 30 TB cartridges initially delivered by Fujifilm and Sony with sole drive supplier IBM. LTO-10 had originally been specified for 36 TB native, and the 40 TB upgrade uses a thinner, smoother aramid-based tape ribbon substrate in place of polyethylene naphthalate (PEN) film so longer tape fits inside the standard Ultrium shell. In the same announcement, the consortium lowered its LTO-14 target to 365 TB raw (913 TB compressed) from 576 TB raw (1.44 PB compressed), a shift we covered in our LTO roadmap analysis ."
+ },
+ {
+  "key": "TechRadar reported in September {0} that <a1>Fujifilm began selling its {1}TB {2} cartridge</a1>, which reaches {3} TB at standard {4} to {5} compression and uses Barium Ferrite particles across {6} tracks. TechRadar noted that Fujifilm rates the cartridge at {7}MB per second uncompressed ({8}MB per second compressed), a bit error rate of {9} in {10} to the {11}th power, FIPS {12} compliant {13} encryption, and an archival life of up to {14} years under proper storage conditions. We also tracked the supply side in our <a2>Fujifilm LTO production update</a2>.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "TechRadar reported in September 2026 that Fujifilm began selling its 40TB LTO-10 cartridge , which reaches 100 TB at standard 2.5 to 1 compression and uses Barium Ferrite particles across 15,105 tracks. TechRadar noted that Fujifilm rates the cartridge at 440MB per second uncompressed (1,100MB per second compressed), a bit error rate of 1 in 10 to the 20th power, FIPS 197 compliant AES-256 encryption, and an archival life of up to 30 years under proper storage conditions. We also tracked the supply side in our Fujifilm LTO production update ."
+ },
+ {
+  "key": "Compatibility limits and hardware availability",
+  "ctx": [
+   "h2"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Compatibility limits and hardware availability"
+ },
+ {
+  "key": "{0} drives cannot read or write older LTO generations, as documented in our {1} October {2} price tracker notes. If you hold an {3} archive, an {4} drive cannot restore those tapes, so you must keep at least one {5} drive online or migrate the data before retiring older hardware.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "LTO-10 drives cannot read or write older LTO generations, as documented in our 23 October 2026 price tracker notes. If you hold an LTO-9 archive, an LTO-10 drive cannot restore those tapes, so you must keep at least one LTO-9 drive online or migrate the data before retiring older hardware."
+ },
+ {
+  "key": "For {0}TB media, our {1} October {2} tracker notes confirm that existing full-height {3} drives accept the {4}TB cartridge, while IBM states that its own {5}TB cartridges (models {6} and {7}, announced {8} March {9} in {10}- and {11}-packs with no street price seen) work only in IBM {12} drives. Hardware choice also remains narrow on {13} October {14}: only full-height {15} drives are on the market, no half-height {16} drive was listed at any seller we checked (Symply had expected half-height in Q{17} {18} and the LTO Program said late {19}), and no bare internal standalone {20} drive price was listed at the HPE, IBM, or Quantum resellers we checked. See our <a1>LTO tape drive guide</a1> for form factor basics.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "For 40TB media, our 23 October 2026 tracker notes confirm that existing full-height LTO-10 drives accept the 40TB cartridge, while IBM states that its own 40TB cartridges (models 564 and 664, announced 6 March 2026 in 20- and 5-packs with no street price seen) work only in IBM LTO-10 drives. Hardware choice also remains narrow on 23 October 2026: only full-height LTO-10 drives are on the market, no half-height LTO-10 drive was listed at any seller we checked (Symply had expected half-height in Q2 2026 and the LTO Program said late 2026), and no bare internal standalone LTO-10 drive price was listed at the HPE, IBM, or Quantum resellers we checked. See our LTO tape drive guide for form factor basics."
+ },
+ {
+  "key": "Can an {0} drive read or write {1} tapes?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Can an LTO-10 drive read or write LTO-9 tapes?"
+ },
+ {
+  "key": "No. Per our {0} October {1} price tracker notes, {2} drives cannot read or write any older LTO generation, including {3}.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "No. Per our 23 October 2026 price tracker notes, LTO-10 drives cannot read or write any older LTO generation, including LTO-9."
+ },
+ {
+  "key": "How much does {0} media cost per TB compared to {1}?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "How much does LTO-10 media cost per TB compared to LTO-9?"
+ },
+ {
+  "key": "On {0} October {1}, tapebackup.org tracked {2} {3}TB media at {4} to {5} per native TB, {6} {7}TB media at {8} to {9} per native TB, and {10} {11}TB media at {12} to {13} per native TB.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "On 23 October 2026, tapebackup.org tracked LTO-9 18TB media at $5.14 to $7.17 per native TB, LTO-10 30TB media at $8.63 to $10.00 per native TB, and LTO-10 40TB media at $12.28 to $13.88 per native TB."
+ },
+ {
+  "key": "Do {0}TB {1} cartridges work in existing {2} drives?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Do 40TB LTO-10 cartridges work in existing LTO-10 drives?"
+ },
+ {
+  "key": "Yes, existing full-height {0} drives accept the {1}TB cartridge, though IBM specifies that its own {2}TB cartridges work only in IBM {3} drives, according to our {4} October {5} tracker notes.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Yes, existing full-height LTO-10 drives accept the 40TB cartridge, though IBM specifies that its own 40TB cartridges work only in IBM LTO-10 drives, according to our 23 October 2026 tracker notes."
+ },
+ {
+  "key": "Are half-height or internal {0} drives available yet?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Are half-height or internal LTO-10 drives available yet?"
+ },
+ {
+  "key": "No half-height {0} drive and no bare internal standalone {1} drive price appeared at any reseller checked by tapebackup.org on {2} October {3}, with the LTO Program pointing to late {4} for half-height availability.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "No half-height LTO-10 drive and no bare internal standalone LTO-10 drive price appeared at any reseller checked by tapebackup.org on 23 October 2026, with the LTO Program pointing to late 2026 for half-height availability."
+ },
+ {
+  "key": "When is {0} worth buying over {1}?",
+  "ctx": [
+   "h3",
+   "json-ld name"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "When is LTO-10 worth buying over LTO-9?"
+ },
+ {
+  "key": "In our reading, {0} makes sense when library slot count, rack space, or cartridge handling matters more than media cost per TB, because both {1} media and external drives ({2} to {3} on {4} October {5}) cost substantially more than {6}.",
+  "ctx": [
+   "json-ld text",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "In our reading, LTO-10 makes sense when library slot count, rack space, or cartridge handling matters more than media cost per TB, because both LTO-10 media and external drives ($23,422 to $24,950 on 23 October 2026) cost substantially more than LTO-9."
+ },
+ {
+  "key": "Track monthly street prices on our <a1>LTO tape price trend page</a1>, size your archive with the <a2>backup calculator</a2>, and read how the {0}TB revision affects future generations in our <a3>LTO roadmap post</a3>.",
+  "ctx": [
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "Track monthly street prices on our LTO tape price trend page , size your archive with the backup calculator , and read how the 40TB revision affects future generations in our LTO roadmap post ."
+ },
+ {
+  "key": "<a1>I Replaced Hard Drives With Tape — And Accidentally Signed Up for a Lifetime of Noise, Bugs, and Obsession</a1>",
+  "ctx": [
+   "li"
+  ],
+  "pages": [
+   "/blog/lto-10-price-compatibility-buyers-guide"
+  ],
+  "example": "I Replaced Hard Drives With Tape — And Accidentally Signed Up for a Lifetime of Noise, Bugs, and Obsession"
+ },
+ {
   "key": "LTO Roadmap: {0} TB Tape vs Cloud TCO | TapeBackup.org",
   "ctx": [
    "title"
@@ -1115,6 +1585,20 @@
    "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
   ],
   "example": "LTO Roadmap: 365 TB Tape vs Cloud TCO | TapeBackup.org"
+ },
+ {
+  "key": "The LTO roadmap targets {0} TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills.",
+  "ctx": [
+   "json-ld description",
+   "meta description",
+   "meta og:description",
+   "meta twitter:description",
+   "p"
+  ],
+  "pages": [
+   "/blog/lto-roadmap-365tb-tape-cartridge-capacity"
+  ],
+  "example": "The LTO roadmap targets 365 TB per cartridge. Here is why enterprise cold archives choose tape density and zero-idle power over cloud storage bills."
  },
  {
   "key": "Storage article",
@@ -1406,20 +1890,6 @@
    "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
   ],
   "example": "mLogic unveiled Vault LTO, the first desktop LTO tape drive with Thunderbolt 5 connectivity. What it means for Mac Studio and PC video archiving."
- },
- {
-  "key": "mLogic Vault LTO: First Thunderbolt {0} Desktop Tape Drive",
-  "ctx": [
-   "h1",
-   "h2",
-   "json-ld headline",
-   "meta og:title",
-   "meta twitter:title"
-  ],
-  "pages": [
-   "/blog/mlogic-vault-lto-thunderbolt-5-desktop-tape-drive"
-  ],
-  "example": "mLogic Vault LTO: First Thunderbolt 5 Desktop Tape Drive"
  },
  {
   "key": "Hardware announcement",
